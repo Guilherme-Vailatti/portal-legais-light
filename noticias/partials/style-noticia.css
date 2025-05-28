@@ -65,7 +65,7 @@
 
 /* Hero com imagem de fundo */
 .header-menu.hero {
-    background-image: url('../../../images/header-noticia-2.png');
+    background-image: url('../../images/header-noticia-2.png');
     background-size: cover;
     background-position: center 60%;
     height: 85px; /* Altura suficiente para a barra do menu */
