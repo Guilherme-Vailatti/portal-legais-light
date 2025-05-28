@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS SP - Portaria SRE nº 15/2025 - Alteradas as disciplinas - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>29/04/2025 | ICMS SP - Portaria SRE nº 15/2025 - Alteradas as disciplinas referentes às apurações de crédito acumulado pelos sistemas de custo e simplificado</h1>
+</div>
+<div class="noticia-corpo">
+<p>A portaria altera dispositivos das Portarias CAT 83/09 e CAT 207/09, ambas relacionadas à apuração do crédito acumulado do ICMS em São Paulo.</p><p>O ato publicado formaliza a alteração da nomenclatura dos documentos, substituindo 'Anexo' por 'Manual', os quais serão atualizados conforme necessidade. Além disso, o endereço eletrônico para o download dos referidos manuais foi atualizado e pode ser acessado <a href="https://portal.fazenda.sp.gov.br/servicos/credito-acumulado/Paginas/Downloads.aspx" target="_blank">nesta página</a> da Secretária da Fazenda de São Paulo</p><p>A data de vigência do ato será:</p><ul>
+<li><b>26/03/2025</b>, para a apuração do crédito acumulado do ICMS pelo sistema de custo;</li>
+<li><b>24/04/2025</b>, para a apuração do crédito acumulado do ICMS pelo sistema simplificado.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-15-de-2025.aspx" target="_blank">Portaria SRE nº 15/2025</a> <br/>Publicada em 26/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

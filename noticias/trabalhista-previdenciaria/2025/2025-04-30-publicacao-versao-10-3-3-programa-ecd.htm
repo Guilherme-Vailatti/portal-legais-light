@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED ECD - Publicação da versão 10.3.3 do programa da ECD - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/04/2025 | SPED ECD - Publicação da versão 10.3.3 do programa da ECD</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a versão 10.3.3 do programa da ECD, com as seguintes alterações:</p><ul>
+<li>Correção de erro envolvendo o registro J800; e</li>
+<li>Melhorias diversas de desempenho e validação.</li>
+</ul><p>O programa está disponível na <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-contabil-digital-ecd/escrituracao-contabil-digital-ecd" target="_blank">área de downloads</a> do site do Sped.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7799" target="_blank">Portal SPED</a> <br/>Publicada em 30/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

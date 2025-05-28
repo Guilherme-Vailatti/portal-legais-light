@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Despacho nº 12/2025 - Publicados convênios e ajust - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/04/2025 | Federal - Despacho nº 12/2025 - Publicados convênios e ajustes relacionados aos documentos fiscais e benefícios</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram publicados ajustes e convênios, relacionados principalmente aos documentos fiscais eletrônicos e benefícios fiscais, conforme segue:</p><p style="font-weight: bold;">CONVÊNIO ICMS Nº 64, DE 29 DE ABRIL DE 2025</p><p>Dispõe sobre a adesão do Estado do Ceará e altera o Convênio ICMS nº 57, de 8 de julho de 2016, que autoriza a concessão de isenção do ICMS no fornecimento de refeições realizado pelo Serviço Social do Comércio - SESC e pelo Serviço Nacional de Aprendizagem Comercial - SENAC.</p><p style="font-weight: bold;">CONVÊNIO ICMS Nº 65, DE 29 DE ABRIL DE 2025</p><p>Dispõe sobre a adesão do Estado do Piauí e altera o Convênio ICMS nº 85, de 30 de setembro de 2011, que autoriza os Estados que menciona a conceder crédito outorgado de ICMS destinado a aplicação em investimentos em infraestrutura.</p><p style="font-weight: bold;">AJUSTE SINIEF Nº 11, DE 29 DE ABRIL DE 2025</p><p>Altera o Ajuste SINIEF nº 19, de 9 de dezembro de 2016, que institui a <b>Nota Fiscal de Consumidor Eletrônica, modelo 65</b>, e o Documento Auxiliar da Nota Fiscal de Consumidor Eletrônica. Alterações quanto a identificação do destinatário (CPF) na NFC-e. Quando o destinatário conter CNPJ, deverá ser utilizado a NF-e. Alterações com efeitos a partir de 03/11/2025.</p><p style="font-weight: bold;">AJUSTE SINIEF Nº 12, DE 29 DE ABRIL DE 2025</p><p>Altera o Ajuste SINIEF nº 7, de 30 de setembro de 2005, que institui a <b>Nota Fiscal Eletrônica</b> e o Documento Auxiliar da Nota Fiscal Eletrônica. Facultar a identificação do endereço do destinatário nas operações presenciais. Alterações quanto a emissão em contingência. Alterações com efeitos a partir de 03/11/2025.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despacho-n-12-de-29-de-abril-de-2025-626976293" target="_blank">Despacho nº 12/2025</a> <br/>Publicada em 30/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

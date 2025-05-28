@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DFe - NT Conjunta nº 2025.001, v. 1.00 - Orientações sobre i - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/05/2025 | DFe - NT Conjunta nº 2025.001, v. 1.00 - Orientações sobre implementação do CNPJ alfanumérico nos documentos fiscais eletrônicos</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal do Brasil publicou a Instrução Normativa 2229 de 15 de outubro de 2024 que modifica a regra de formação do CNPJ no Brasil. Essa ação visa ampliar a capacidade de geração de números de CNPJ para abertura de empresas devido ao esgotamento da modelagem atual.</p><p>A repercussão dessa mudança afeta milhares de sistemas, e não será diferente com os sistemas de</p><p>faturamento e emissão de documentos fiscais eletrônicos e seus respectivos ambientes de autorização mantidos pelas Administrações Tributárias.</p><p>Esta nota técnica abrange os ambientes de autorização de documentos fiscais eletrônicos sob a coordenação do ENCAT: NFe, NFCe, CTe, CTe OS, GTVe, MDFe, BPe, BPe TM, NF3e e NFCom.</p><p>A previsão de geração dos primeiros CNPJ Alfanuméricos está definida para julho de 2026.</p><ul>
+<li><b>Homologação</b>: 06/04/2026</li>
+<li><b>Produção</b>: 06/07/2025</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica Conjunta nº 2025.001, versão 1.00</a> <br/>Publicada em 08/05/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
