@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2018.005, v. 1.40 - Ativa algum - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/09/2024 | NF-e NFC-e - Nota Técnica nº 2018.005, v. 1.40 - Ativa algumas regras de validação para o Estado do Paraná</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Técnica divulga as alterações de leiaute da NF-e e da NFC-e, as respectivas regras de validação dos campos criados ou alterados e as alterações no leiaute do DANFE.</p><ul>
+<li>Implementação futura para o grupo de campos de identificação do responsável técnico e geração do hashCSRT.</li>
+<li>Ajuste nas regras de validação N12-81 e N12a-50. Correção do exemplo de geração do hashCSRT.</li>
+<li>Alterações relativas ao campo N26a (tag: pST) e N26b (tag: vICMSSubstituto).</li>
+</ul><p>Para o estado do Paraná, o CSRT será opcional em homologação até 03/02/2025 e em produção até 01/04/2025. Após essas respectivas datas o idCSRT e hashCSRT serão obrigatórios. Portanto, até a obrigatoriedade, esses campos serão facultativos para as empresas. Somente serão validados em produção o idCSRT e hashCSRT a partir de 01/10/2024, caso estes campos sejam informados.</p><p style="font-weight: bold;">Cronograma de Implantação:</p><ul>
+<li>Para o estado do Paraná regra ZD07-10 (Modelo 55)<ul style="list-style-type: circle;"><li>Teste: 03/02/2024</li></ul><ul style="list-style-type: circle;"><li>Produção: 01/04/2025</li></ul></li>
+<li>Para o estado do Paraná regra 7ZD02-10 (Modelo 55)<ul style="list-style-type: circle;"><li>Teste: 16/09/2024</li></ul><ul style="list-style-type: circle;"><li>Produção: 01/04/2025</li></ul></li>
+<li>Para o estado do Paraná regras 7ZD08-10, 7ZD08-20 e 7ZD09-10 (Modelo 55)<ul style="list-style-type: circle;"><li>Teste: 16/09/2024</li></ul><ul style="list-style-type: circle;"><li>Produção: 01/10/2024</li></ul></li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nfe" target="_blank">Nota Técnica nº 2018.005, versão 1.40</a> <br/>Publicada em 13/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

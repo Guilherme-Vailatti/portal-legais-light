@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST RS - Decreto nº 57.848/2024 - Revoga a substituição  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/11/2024 | ICMS ST RS - Decreto nº 57.848/2024 - Revoga a substituição tributária para autopeças a contar de 01/11/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Rio Grande do Sul, com fundamento nos Protocolos ICMS nºs 32 e 33/2024, revogou a aplicação do regime de substituição tributária nas operações realizadas com autopeças, realizadas a contar de 01/11/2024.</p><p>Em vista disso, o estabelecimento comercial (atacadista e/ou varejista) que tiver estoque de autopeças deverá:</p><p>No caso de utilização da Escrituração Fiscal Digital (EFD), esses contribuintes deverão preencher o Bloco H, ficando dispensada a elaboração da relação mencionada na letra "c".</p><p>A restituição será feita pelos contribuintes da categoria geral em 12 parcelas. Nesse caso será emitida a nota fiscal e feitos os lançamentos na EFD, de acordo com as instruções da Receita Estadual. Os contribuintes optantes pelo Simples Nacional deverão apresentar o pedido de restituição do imposto.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.diariooficial.rs.gov.br/materia?id=1159376" target="_blank">Decreto nº 57.848/2024</a> <br/>Publicada em 25/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

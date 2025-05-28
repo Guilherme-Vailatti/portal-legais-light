@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFC-e SC - Correio Eletrônico Circular SEF/DIAT nº 17/2024 - - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/10/2024 | NFC-e SC - Correio Eletrônico Circular SEF/DIAT nº 17/2024 - Esclarecimento sobre o cronograma de obrigatoriedade de uso NFC-e e BP-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Diretoria de Administração Tributária (DIAT) da Secretaria de Estado da Fazenda de Santa Catarina, por meio deste correio, vem esclarecer o seguinte:</p><ul>
+<li>O Ato DIAT 56/2024 não realiza distinção quanto ao CNAE principal ou secundário. Desta forma, a data da obrigatoriedade se inicia na primeira data de enquadramento indicada no Ato DIAT. Por exemplo, um estabelecimento que possua como CNAE primário 4511101 (Anexo V do Ato DIAT) e CNAE secundário 4732600 (Anexo I do Ato DIAT) terá o início da obrigatoriedade no dia 01/03/2025.</li>
+<li>Os estabelecimentos que realizam atividades de venda a consumidor final não citadas de forma explícita no Ato DIAT 56/2024 estão obrigados ao uso da NFC-e a partir de 01/08/2025.</li>
+<li>A obrigatoriedade de uso da NFC-e refere-se ao estabelecimento e não apenas a atividades específicas. Desta forma, iniciada a obrigatoriedade, todas as saídas internas do estabelecimento para consumidor final, não contribuinte, deverão ser acobertadas por NFC-e.</li>
+<li>Novas Inscrições Estaduais estão obrigadas ao uso da NFC-e e BP-e desde a publicação do Ato DIAT 56/2024.</li>
+<li>O Ato DIAT 56/2024 não revogou o Ato DIAT 38/2020. Assim, no momento, deve-se realizar o credenciamento para emissão de NFC-e e BP-e por meio da solicitação do Tratamento Tributário Diferenciado (TTD) tipos 707 ou 709, conforme manual disponível em <a href="https://www.sef.sc.gov.br/saiba-mais/nfc-e-nota-fiscal-de-consumidor-eletronica" target="_blank">www.sef.sc.gov.br/nfce</a>.</li>
+<li>No momento, os contribuintes que não estão obrigados ao uso do ECF em razão de seu faturamento, continuam dispensados do uso da NFC-e e do BP-e. Todavia, há previsão de alteração do Anexo 5 do RICMS-SC ainda em 2024, de forma que não haverá mais a dispensa por faturamento e todos os estabelecimentos varejistas serão obrigados ao uso da NFC-e e do BP-e. Assim, sugerimos que o estabelecimento se atente ao cronograma previsto no Ato DIAT 56/24 com relação às atividades desempenhadas.</li>
+<li>As alterações do regramento não afetam empresas MEI, as quais continuam dispensadas da emissão de documentos fiscais, salvo nas condições explicitadas na LC 123/06</li>
+<li>A partir de 01/08/2025 não será mais permitido o uso de Emissor de Cupom Fiscal (ECF) em Santa Catarina, devendo o contribuinte providenciar sua cessação de uso, no prazo de 90 dias, contados a partir da data de início da obrigatoriedade, adotando o procedimento definido no Art. 40 do Anexo 09 do RICMS/SC.</li>
+</ul><p>Dúvidas adicionais poderão ser esclarecidas pela <a href="https://caf2.sef.sc.gov.br/Views/Shared/NovoTicket.aspx" target="_blank">CAF - Central de Atendimento Fazendári</a>a, assunto: “NFC-E - NOTA FISCAL DE CONSUMIDOR ELETRÔNICA” e “BP-E - BILHETE DE PASSAGEM ELETRÔNICO”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sef.sc.gov.br/saiba-mais/correio-eletronico-circular" target="_blank">Correio Eletrônico Circular SEF/DIAT nº 17/2024</a> <br/>Publicada em 01/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

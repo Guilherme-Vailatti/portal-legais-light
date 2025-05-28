@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Nota Técnica nº 04/2024 - Retorno da alíquo - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>31/10/2024 | SPED EFD Reinf - Nota Técnica nº 04/2024 - Retorno da alíquota de CPRB para empresas de transporte rodoviário coletivo de passageiros</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em decorrência da Ação Direta de Inconstitucionalidade ADI 7633, foi publicada a Nota Técnica EFD-Reinf 04/2024 retornando a alíquota da CPRB dos serviços de transporte rodoviário coletivo de passageiros para 2% com vigência a partir de outubro de 2024.</p><p>Os contribuintes que enviaram eventos R-2060 de CPRB até a data de hoje (25/10/2024) contendo o código "00000060" com fatos geradores a partir de 01/10/2024 deverão enviar evento de retificação do R-2060 enviado anteriormente, mesmo que não haja alterações ou correções, a fim de que o cálculo seja reprocessado gerando novo recibo com a alíquota correta.</p><p>Para baixar a tabela SPED, <a class="link-externo" href="http://www.sped.fazenda.gov.br/spedtabelas/AppConsulta/publico/aspx/ConsultaTabelasExternas.aspx?CodSistema=reinf" target="_blank">clique aqui</a>.</p><p>Para baixar a Nota Técnica 04/2024, <a class="link-externo" href="http://sped.rfb.gov.br/arquivo/show/7591" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7592" target="_blank">Nota Técnica nº 04/2024</a> <br/>Publicada em 25/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

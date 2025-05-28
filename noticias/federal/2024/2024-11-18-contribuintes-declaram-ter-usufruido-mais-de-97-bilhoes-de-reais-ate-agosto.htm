@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIRBI - Contribuintes declararam ter usufruído mais de R$ 97 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/11/2024 | DIRBI - Contribuintes declararam ter usufruído mais de R$ 97,7 bilhões até agosto</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal informa que até 29 de outubro, 54,9 mil contribuintes que utilizam créditos tributários decorrentes de benefícios fiscais declararam ter usufruído R$ 97,7 bilhões (referentes ao período de janeiro a agosto).</p><p style="font-weight: bold;">Confira abaixo detalhamento dos maiores valores por benefício fiscal:</p><p style="font-weight: bold;">
+<img src="../../../Resources/Images/Notícias/beneficio-fiscal-dirbi-janeiro-agosto.png"/>
+</p><p>*No caso da Zona Franca de Manaus, a tabela acima contempla apenas benefício fiscal sobre “Matérias Primas, Produtos Intermediários e Materiais de Embalagem”.</p><p style="font-weight: bold;">Novo Perse</p><p>A <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/L14859.htm" target="_blank">Lei nº 14.859, de 22 de maio de 2024</a>, estabeleceu nova regulamentação para o Perse. De acordo com o novo regramento, o benefício terá o seu custo fiscal (gasto tributário) limitado a R$ 15 bilhões, contados a partir de abril de 2024.</p><p>O valor total do Perse na Dirbi (janeiro a agosto) foi de R$ 9,6 bilhões. Desse valor, cerca de R$ 5 bilhões se referem ao período a partir de abril, quando passou a existir o novo teto de R$ 15 bilhões.</p><p style="font-weight: bold;">Sobre a DIRBI</p><p style="font-weight: bold;">Forma de apresentação</p><p>A Declaração é elaborada em formulário próprio disponível no Centro Virtual de Atendimento ao Contribuinte – e-CAC, cujo acesso deve ser feito pelo endereço eletrônico <a href="https://www.gov.br/receitafederal/pt-br" target="_blank">https://www.gov.br/receitafederal</a>.</p><p>Além dessa forma, existe a possibilidade de os contribuintes transmitirem os dados da DIRBI via API. <a href="https://docs-apicontador-sisenparam.df-1.estaleiro.serpro.gov.br/servicos/" target="_blank">Clique aqui</a> e saiba mais.</p><p style="font-weight: bold;">Prazo de transmissão</p><p>A DIRBI será enviada até o vigésimo dia do segundo mês subsequente ao período de apuração.</p><p style="font-weight: bold;">O que deve ser informado na declaração</p><p>Informações relativas a valores do crédito tributário referente a impostos e contribuições que deixaram de ser recolhidos em razão da concessão dos incentivos, renúncias e benefícios de natureza tributária usufruídos pelas pessoas jurídicas constantes do Anexo Único.</p><ul>
+<li>Acesse a <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=138735" target="_blank">Instrução Normativa RFB nº 2198/2024</a>, que criou a Declaração de Incentivos, Renuncias, Benefícios e Imunidades de Natureza Tributária- DIRBI.</li>
+<li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/agosto/receita-federal-abre-a-partir-de-30-de-agosto-prazo-para-autorregularizacao-do-perse" target="_blank">Clique aqui</a> para mais informações sobre a autorregularização do Perse que começou em 30 de agosto.</li>
+<li><a href="https://dados.gov.br/dados/conjuntos-dados/renuncias-fiscais-de-tributos-federais" target="_blank">Clique aqui</a> para acessar dados da Dirb por empresa. Ao acessar o link, para baixar o arquivo o usuário deve clicar em "Recursos" e "Renúncia Fiscal por Regime Especial de Tributação".</li>
+</ul><p>Mais dados sobre benefícios fiscais podem ser consultados na <a href="https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/dados-abertos/beneficios-e-renuncias-fiscais" target="_blank">página de dados abertos do site da Receita Federal</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2024/11/12/menor-tributacao-da-saude-privada-alivia-governo-dizem-debatedores-na-ccj" target="_blank">Receita Federal</a> <br/>Publicada em 13/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

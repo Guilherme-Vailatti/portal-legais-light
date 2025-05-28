@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DMED - ADE COFIS nº 36/2024 - Aprovado o Programa Gerador da - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/11/2024 | DMED - ADE COFIS nº 36/2024 - Aprovado o Programa Gerador da Declaração de Serviços Médicos e de Saúde (PGD Dmed 2025)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ato Declaratório Executivo Cofis nº 36/2024 aprovou o Programa Gerador da Declaração de Serviços Médicos e de Saúde (PGD Dmed 2025), que deverá ser utilizado para apresentação das informações relativas aos anos-calendário de 2019 a 2024, situação normal, e de 2019 a 2025, nos casos de extinção de pessoa jurídica decorrente de liquidação, incorporação, fusão ou cisão total.</p><p>O PGD Dmed 2025 é de reprodução livre e será disponibilizado pela Secretaria Especial da Receita Federal do Brasil (RFB) no endereço <a href="https://www.gov.br/receitafederal/pt-br" target="_blank">https://www.gov.br/receitafederal/pt-br</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-cofis-n-36-de-18-de-novembro-de-2024-596561576" target="_blank">Ato Declaratório Executivo COFIS nº 36/2024</a> <br/>Publicada em 19/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

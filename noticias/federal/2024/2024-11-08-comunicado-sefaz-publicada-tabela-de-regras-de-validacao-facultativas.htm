@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e MG - Comunicado SEFAZ: Publicada a Tabela de Regr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/11/2024 | NF-e NFC-e MG - Comunicado SEFAZ: Publicada a Tabela de Regras de Validação Facultativas</h1>
+</div>
+<div class="noticia-corpo">
+<p>Prezados(as) usuários(as),</p><p>Comunicamos que foi publicada a Tabela de Regras de Validação Facultativas aplicadas pela SEF MG para os modelos de documento NF-e e NFC-e.</p><p>A tabela compreende todas as regras de validação que são facultativas, que possuem exceções a critério da UF ou que são parametrizáveis, e será atualizada conforme futuras alterações na aplicação dessas regras.</p><p>Em breve serão publicadas também tabelas semelhantes referentes aos outros Documentos Fiscais Eletrônicos.</p><p>A tabela pode ser acessada através da sessão de "Downloads" das abas da NF-e e NFC-e.</p><p>Para maiores explicações sobre cada regra de validação, consulte o Manual de Orientação ao Contribuinte e as Notas Técnicas, disponíveis no Portal Nacional da NF-e.</p><p>Superintendência de Arrecadação e Informações Fiscais – SAIF</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portalsped.fazenda.mg.gov.br/spedmg/noticias/tabela-com-regras/" target="_blank">Fazenda MG</a> <br/>Publicada em 06/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

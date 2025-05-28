@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Mais de 3 mil contribuintes poderão regula - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/10/2024 | Receita Federal - Mais de 3 mil contribuintes poderão regularizar divergências de PIS e Cofins, evitando a aplicação de multa de ofício</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal enviou 3148 comunicados para empresas que apresentaram divergências nas informações entre o declarado na EFD – Contribuições e os débitos declarados na DCTF (Declaração de Débitos e Créditos Tributários Federais) no ano-calendário 2021. O montante é de R$ 919,6 milhões.</p><p>A ação tem como objetivo promover a conformidade tributária, com orientações que auxiliam os contribuintes a regularizarem divergências.</p><p>As empresas têm até 30 de novembro de 2024 para aproveitar a oportunidade de regularização. Após esse prazo, as empresas estarão sujeitas ao lançamento de ofício dos tributos devidos, acrescidos de multa de ofício.</p><p>Os avisos de regularização foram enviados por via postal e também para a caixa postal no <a href="https://cav.receita.fazenda.gov.br/autenticacao/Login" target="_blank">Portal e-CAC</a> (Centro Virtual de Atendimento), cujas orientações para acesso podem ser consultadas <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/atendimento-virtual/minha-caixa-postal" target="_blank">neste link</a>. Para os maiores contribuintes, a saber, as pessoas jurídicas sujeitas ao acompanhamento econômico-tributário diferenciado, utiliza-se o canal de comunicação próprio, conhecido por eles como e-Mac.</p><p>Adicionalmente, informações gerais sobre a ação e orientações sobre como se regularizar estão disponíveis <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/revisao-de-declaracao-malha/pj-parametro-20.001" target="_blank">neste link</a>, no site da Receita Federal e valem para todos os contribuintes, ainda que não tenham recebido comunicação neste momento.</p><p>Por meio do envio de informações aos contribuintes, a Receita Federal busca fornecer assistência para o cumprimento das obrigações tributárias, sejam elas acessórias ou principais, demonstrando sua preocupação em orientar e auxiliar, bem como propiciando um menor custo para os contribuintes e evitando o litígio.</p><p>Segue o detalhamento da quantidade de pessoas jurídicas e do montante da insuficiência apurada por Unidade da Federação.</p><p>A Receita Federal reforça a importância de que os contribuintes estejam atentos aos avisos recebidos e procedam à regularização dentro do prazo estabelecido, evitando maiores custos decorrentes de atuação da fiscalização.</p><p style="font-weight: bold;">Números</p><p>Na edição anterior, cujo foco foi o ano-calendário 2020, 65% dos 2.390 contribuintes alcançados pela ação regularizaram as inconsistências identificadas, sem a incidência de penalidades cabíveis. <b>Sem litígio, o montante regularizado foi superior a R$ 1 bilhão</b>. Já em relação a contribuintes que não aproveitaram a oportunidade, a Receita Federal realizou o lançamento de R$ 794 milhões.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/outubro/mais-de-3-mil-contribuintes-poderao-regularizar-divergencias-de-pis-e-cofins-evitando-a-aplicacao-de-multa-de-oficio" target="_blank">Receita Federal</a> <br/>Publicada em 02/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

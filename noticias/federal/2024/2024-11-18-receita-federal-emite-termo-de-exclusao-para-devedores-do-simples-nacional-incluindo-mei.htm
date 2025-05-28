@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Simples Nacional - Receita Federal emite termo de exclusão p - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/11/2024 | Simples Nacional - Receita Federal emite termo de exclusão para devedores do Simples Nacional, incluindo MEI</h1>
+</div>
+<div class="noticia-corpo">
+<p>Dos dias 30 de setembro a 04 de outubro foram disponibilizados, no Domicílio Tributário Eletrônico do Simples Nacional e MEI (DTE-SN), os Termos de Exclusão do regime Simples Nacional e os respectivos Relatórios de Pendências dos contribuintes que possuem débitos com a Receita Federal e/ou com a Procuradoria-Geral da Fazenda Nacional.</p><p style="font-weight: bold;">Regularização</p><p>Os documentos poderão ser acessados tanto pelo Portal do Simples Nacional, por meio do <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Servicos/Grupo.aspx?grp=13" target="_blank">DTE-SN</a>, ou pelo <a href="https://cav.receita.fazenda.gov.br/autenticacao/Login" target="_blank">Portal e-CAC</a> do site da Receita Federal do Brasil, via acesso Gov.BR, conta nível prata ou ouro ou certificado digital.</p><p>Para evitar a sua exclusão do Simples Nacional a partir de 01/01/2025, o contribuinte deve regularizar a totalidade dos seus débitos, por meio de pagamento à vista ou parcelamento no prazo de 30 dias a contar da data de ciência do Termo de Exclusão.</p><p> </p><p style="font-weight: bold;">Fique Atento aos Prazos</p><p>A ciência se dará no momento da primeira leitura, se o contribuinte acessar a mensagem dentro de 45 (quarenta e cinco) dias contados da disponibilização do Termo de Exclusão, ou no 45º (quadragésimo quinto) dia contado da disponibilização do Termo, caso a primeira leitura seja feita posteriormente a esse prazo.</p><p> </p><p style="font-weight: bold;">Contestação e Orientações</p><p>O contribuinte que regularizar a totalidade de suas pendências dentro do prazo mencionado não será excluído pelos débitos constantes do referido Termo de Exclusão, tornando-o sem efeito. Continuarão, portanto, no regime do Simples Nacional, permanecendo o MEI enquadrado no Simei, não havendo necessidade de que o contribuinte ou seu procurador compareça em unidade da RFB ou realize qualquer outro procedimento.</p><p>O contribuinte que desejar contestar o Termo de Exclusão deverá dirigir a contestação ao Delegado de Julgamento da Receita Federal do Brasil, protocolizada via internet, conforme orientado no <a href="https://www.gov.br/pt-br/servicos/impugnar-exclusao-do-simples-nacional-pela-receita-federal" target="_blank">site da Receita Federal do Brasil</a>.</p><p> </p><p style="font-weight: bold;">Efeitos</p><p>O contribuinte que não tenham regularizado todos os débitos listados no Relatório de Pendências que acompanha o respectivo Termo de Exclusão dentro do prazo legal serão excluídos do Simples Nacional. Se for MEI, será, também, desenquadrado do Simei a partir de 01/01/2025.</p><p>Foram notificados 1.876.334 maiores devedores do Simples Nacional, sendo 1.121.419 MEI e 754.915 ME/EPP, com significativo valor pendente de regularização, correspondendo a um total de dívidas em torno de R$ 26,7 bilhões.</p><p>Para mais informações, consulte o <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Arquivos/noticias/Perguntas e Respostas Contribuinte Exclusão Débitos 2024.pdf" target="_blank">Perguntas e Respostas</a> sobre o assunto.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Noticias/NoticiaCompleta.aspx?id=6f0a68a6-67ff-46ff-a120-ac6e861057ee" target="_blank">Simples Nacional</a> <br/>Publicada em 10/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

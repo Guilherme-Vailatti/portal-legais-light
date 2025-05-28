@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - CAE aprofunda debate sobre transição e  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/10/2024 | Reforma Tributária - CAE aprofunda debate sobre transição e variação de preços na reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>O período de transição para os novos tributos da reforma tributária vai durar nove anos e pode ocasionar flutuação de preços, com alguns produtos e serviços ficando mais caros, enquanto outros, mais baratos. A Comissão de Assuntos Econômicos (CAE) dará continuidade, na quarta-feira (16), às 14h,  ao debate sobre a transição e a fiscalização da reforma tributária que será iniciado na <a href="https://www12.senado.leg.br/noticias/materias/2024/10/10/cae-vai-debater-transicao-e-fiscalizacao-da-reforma-tributaria" target="_blank">audiência pública da terça (15)</a>.</p><p>Foram convidados para o debate dirigentes e representantes da Associação Nacional dos Procuradores e Advogados Públicos Federais; da Federação Brasileira dos Sindicatos das Carreiras da Administração Tributária da União, dos Estados e do DF; e da Federação Nacional dos Fiscos Estaduais e do DF.</p><p>Também devem participar representantes da Associação Nacional das Associações de Fiscais de Tributos Estaduais; do Movimento Brasil Competitivo; da Universidade do Rio de Janeiro; da Receita Estadual do Rio Grande do Sul e do Conselho Federal de Contabilidade.</p><p>O debate duplo será o último da série prevista no plano de atividades do grupo de trabalho que analisa a regulamentação da reforma (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/164914" target="_blank">PLP 68/2024</a> e <a href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2438459" target="_blank">PLP 108/2024</a>).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2024/10/11/cae-aprofunda-debate-sobre-transicao-e-variacao-de-precos-na-reforma-tributaria" target="_blank">Agência Senado</a> <br/>Publicada em 11/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

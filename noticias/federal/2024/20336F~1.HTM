@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Federal - MP nº 1.262/2024 - Governo Federal institui adicio - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>07/10/2024 | Federal - MP nº 1.262/2024 - Governo Federal institui adicional da contribuição para adaptação da legislação brasileira às Regras Globais Contra a Erosão da Base Tributária (Regras GloBE)</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Medida Provisória <b>nº 1.262/2024</b> , cujas disposições <b>entrarão em vigor a partir de 01/01/2025</b>, instituiu o adicional da Contribuição Social sobre o Lucro Líquido (CSLL), com a finalidade de estabelecer <b>tributação mínima efetiva de 15%</b> no processo de adaptação da legislação brasileira às Regras Globais Contra a Erosão da Base Tributária - Regras GloBE (Global Anti-Base Erosion Rules - GloBE Rules) elaboradas pelo Quadro Inclusivo (Inclusive Framework on Base Erosion and Profit Shifting) sob coordenação da Organização para a Cooperação e Desenvolvimento Econômico - OCDE e do Grupo dos Vinte - G20.</p><p>Destacamos a seguir os principais pontos trazidos pela citada norma:</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.262-de-3-de-outubro-de-2024-588158201" target="_blank">DOU</a> e <a href="https://www.iobonline.com.br/" target="_blank">IOB Online</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.262-de-3-de-outubro-de-2024-588158201' target='_blank'>Medida Provisória nº 1.262/2024</a> <br>Publicada em 03/10/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

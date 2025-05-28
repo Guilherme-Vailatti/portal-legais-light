@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - MP nº 1.261/2024 - Medida alonga prazo para deduçã - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/10/2024 | Federal - MP nº 1.261/2024 - Medida alonga prazo para dedução de perdas de instituições bancárias com IRPJ/CSLL</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada em edição extra do DOU de 02/10/24 a <a href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=600&amp;pagina=1&amp;data=02/10/2024&amp;totalArquivos=1" target="_blank">Medida Provisória nº 1.261</a> que alonga prazo para as instituições bancárias deduzirem perdas decorrentes de inadimplência da base de cálculo do IRPJ e da CSLL.</p><p style="font-weight: bold;">Essa mudança foi prevista na Lei nº 14.467/2022, que uniformizou os critérios contábeis e fiscais para registro e dedução dessas perdas.</p><p style="font-weight: bold;">Na transição para as novas regras, os bancos adquiriram o direito de deduzir, na apuração do IRPJ e da CSLL, no prazo de 36 meses contado de janeiro de 2025, o estoque desses ativos.</p><p>A MP prevê um ano de carência para iniciar a dedução passando de janeiro de 2025 para janeiro de 2026; e alongamento do prazo de dedução de 36 meses para 84 meses (sete anos), podendo o banco optar por um prazo ainda mais longo, de 120 meses (10 anos).</p><p>A medida deve gerar uma arrecadação adicional que deve superar os R$ 16 bilhões no próximo ano. Esses recursos serão destinados para outros projetos de lei que podem melhorar o sistema tributário para torná-lo mais justo e eficiente, como as aplicações financeiras e a revisão das regras de TBU (tributação de subsidiárias operacionais no exterior das empresas brasileiras).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/outubro/medida-provisoria-alonga-prazo-para-deducao-de-perdas-de-instituicoes-bancarias-com-irpj-csll" target="_blank">Medida Provisória nº 1.261/2024</a> <br/>Publicada em 03/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

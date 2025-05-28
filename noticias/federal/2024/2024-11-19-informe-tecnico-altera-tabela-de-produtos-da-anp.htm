@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Informe Técnico nº 2023.001, v. 1.10 - Tabela de códi - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/11/2024 | NF-e - Informe Técnico nº 2023.001, v. 1.10 - Tabela de código de produtos da ANP</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado Informe Técnico 2023.001 v.1.10 que altera a tabela de código de produtos da ANP. A implantação em produção da tabela será executada gradualmente pelas UFs autorizadoras a partir de 29/11/2024 até 16/12/2024.</p><p>Nesta versão 1.10 foram acrescentados 16 novos códigos, quais sejam: 840101003 – 840101004 – 620101009 – 610502001 – 610502002 – 620501003 - 620503001 – 420107001 – 611402001 – 611302001 – 610601002 – 610702001 - 611501001 – 611401001 – 611402002 - 610503001</p><p style="font-weight: bold;">Cronograma de Implantação:</p><p>Alteração da Tabela de Códigos de Produtos da ANP (cProdANP) – Inclusão de 16 (dezesseis) novos códigos.</p><ul>
+<li>Teste: Até 28/11/2024</li>
+<li>Produção: 16/12/2024, conforme UF autorizadora</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=iC02P5BPto4=" target="_blank">Informe Técnico nº 2023.001, versão 1.10</a> <br/>Publicada em 18/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

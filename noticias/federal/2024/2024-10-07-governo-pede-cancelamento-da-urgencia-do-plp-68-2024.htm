@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Despacho Mensagem nº 1.240 - Governo pe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/10/2024 | Reforma Tributária - Despacho Mensagem nº 1.240 - Governo pede cancelamento da urgência do PLP nº 68/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>O governo pediu no dia 4 de outubro, para que o Senado Federal deixe de tratar com urgência o Projeto de Lei Complementar nº 68/2024, que institui a cobrança do IBS, CBS e Imposto Seletivo.</p><p>Essa decisão era esperada, já que a votação da proposta estava bloqueada desde 23 de setembro, ultrapassando o prazo para votação em regime de urgência.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despachos-do-presidente-da-republica-588408178" target="_blank">Despacho do Presidente da República. Mensagem 1.240</a> <br/>Publicada em 03/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

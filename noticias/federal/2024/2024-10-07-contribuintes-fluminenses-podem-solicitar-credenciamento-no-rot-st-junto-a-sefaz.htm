@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST RJ - Contribuintes fluminenses podem solicitar crede - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/10/2024 | ICMS ST RJ - Contribuintes fluminenses podem solicitar credenciamento no ROT-ST junto à Sefaz</h1>
+</div>
+<div class="noticia-corpo">
+<p>Os contribuintes que realizam vendas dentro do estado do Rio de Janeiro para consumidor final já podem solicitar o credenciamento no Regime Optativo de Tributação da Substituição Tributária (ROT-ST) junto à Secretaria de Estado de Fazenda (Sefaz-RJ). Mais de 85% do grupo vai utilizar o regime, uma vez que para Microempreendedores Individuais (MEIs) e optantes do Simples Nacional a adesão será automática, simplificando, assim, o recolhimento da Substituição Tributária (ST) do ICMS e reduzindo a abertura de processos.</p><p>A solicitação é gratuita e deve ser feita via Sistema Eletrônico de Informações (SEI-RJ). Para isso, os contribuintes precisam abrir um processo, procurar pela opção “ICMS: Credenciamento de Regime Optativo de Tributação de Substituição Tributária (ROT-ST)” e selecionar a referente à Auditoria Fiscal Regional na qual o Cadastro Nacional da Pessoa Jurídica (CNPJ) do estabelecimento principal está vinculado. Depois, basta fazer um breve resumo do pedido em “Especificação”, informar o CNPJ, preencher e assinar o pedido de credenciamento, e anexar o Comprovante de Inscrição e Situação Cadastral (CISC), o Contrato Social e o documento de identificação do requerente.</p><p>A Auditoria vinculada ao estabelecimento pode ser consultada no <a href="https://sincad-web.fazenda.rj.gov.br/sincad-web/index.jsf" target="_blank">CISC</a>, disponível no Portal de Cadastro da Sefaz-RJ. Conforme definido pela Resolução, caso possua filiais, será necessário encaminhar uma planilha com dados de todas as dependentes e a adesão deve ser informada na Escrituração Fiscal Digital ICMS/IPI através do Registro E115. O credenciamento é válido a partir do mês do pedido.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.fazenda.rj.gov.br/noticias/contribuintes-fluminenses-podem-solicitar-credenciamento-no-rot-st-junto-a-sefaz/" target="_blank">Fazenda RJ</a> <br/>Publicada em 04/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

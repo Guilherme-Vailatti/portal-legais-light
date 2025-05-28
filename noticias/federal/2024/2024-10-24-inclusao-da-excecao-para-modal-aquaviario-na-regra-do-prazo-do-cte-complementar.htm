@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e - Nota Técnica nº 2024.001 v.1.04 - Inclusão da exceção - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/10/2024 | CT-e - Nota Técnica nº 2024.001 v.1.04 - Inclusão da exceção para modal aquaviário na regra do prazo do CTe complementar</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a Nota Técnica 2024.001, versão 1.04 que divulga alterações nas regras de validação do CT-e, CT-e OS e GTV-e. Foram criadas exceções para o modal aquaviário nas regras G161a e H102a.</p><p style="font-weight: bold;">Cronograma:</p><ul>
+<li>Teste: 28/10/2024</li>
+</ul><ul>
+<li>Produção: 28/10/2024</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Cte/Documentos" target="_blank">Nota Técnica 2024.001, versão 1.04</a> <br/>Publicada em 23/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

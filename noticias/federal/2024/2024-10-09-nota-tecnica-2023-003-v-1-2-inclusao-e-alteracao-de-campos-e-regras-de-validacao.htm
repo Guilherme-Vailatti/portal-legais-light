@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2023.003, v 1.2 - Inclusão e al - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/10/2024 | NF-e NFC-e - Nota Técnica nº 2023.003, v 1.2 - Inclusão e alteração de campos e regras de validação</h1>
+</div>
+<div class="noticia-corpo">
+<p>A versão 1.20 dessa Nota Técnica divulga alterações de Regras de Validação da NFC-e versão 4.0 exclusivas para a UF de SP. Também descreve a motivação das outras exceções criadas nas versões anteriores.</p><p>O prazo previsto para a implementação das mudanças é:</p><ul>
+<li>Ambiente de Homologação (ambiente de teste das empresas): 30/09/2024;</li>
+<li>Ambiente de Produção: 07/10/2024.</li>
+</ul><p style="font-weight: bold;">Cronograma de Implantação:</p><ul>
+<li>Teste: 14/10/2024;</li>
+<li>Produção: 21/10/2024.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2023.003, versão 1.2</a> <br/>Publicada em 08/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

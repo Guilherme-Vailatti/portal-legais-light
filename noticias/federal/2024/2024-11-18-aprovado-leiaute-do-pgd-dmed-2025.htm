@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DMED - ADE COFIS nº 34/2024 - Aprovado o leiaute do PGD Dmed - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/11/2024 | DMED - ADE COFIS nº 34/2024 - Aprovado o leiaute do PGD Dmed 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>Aprovado o leiaute aplicável aos campos, registros e arquivos da Declaração de Serviços Médicos e de Saúde (Dmed 2025), para apresentação das informações relativas aos anos-calendário de 2019 a 2024, situação normal, e de 2019 a 2025, nos casos de situação especial.</p><p>Para o preenchimento ou importação de dados pelo PGD Dmed 2025 deverá ser observado o leiaute do arquivo constante do anexo único deste ato declaratório.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-cofis-n-34-de-7-de-novembro-de-2024-595148132" target="_blank">Ato Declaratório Executivo COFIS nº 34/2024</a> <br/>Publicada em 11/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

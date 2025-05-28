@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS DF - Decreto nº 46.456/2024 - Estabelecidas regras para - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/11/2024 | ICMS DF - Decreto nº 46.456/2024 - Estabelecidas regras para entrega da EFD por contribuintes estabelecidos em outra Unidade da Federação</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Fisco do Distrito Federal, por meio de nova normativa, tornou obrigatória a inclusão do registro 0015 na EFD ICMS IPI. Essa exigência se aplica a contribuintes estabelecidos em outras unidades federativas que possuam inscrição no Cadastro Fiscal do Distrito Federal, devendo ser informada mensalmente.</p><p>O registro 0015 deve ser informado sempre que o declarante tiver inscrição de substituto tributário e, como consequência, o registro E200 e filhos deve ser informado.</p><p>O Registro 0015 também deve ser apresentado quando o remetente de outra Unidade Federada tenha inscrição para fins de pagamento do Difal não contribuinte devido ao Distrito Federal. Nesse caso, igualmente, a informação do Registro E300 e filhos deve ser declarada.</p><p>Destacamos que a apresentação das informações supramencionadas na EFD ICMS IPI desobriga os contribuintes da entrega mensal da GIA-ST no Distrito Federal.</p><p>Por fim, foram alteradas regras para inscrição no cadastro de contribuintes, dentre as quais destacamos a possibilidade de o Fisco do Distrito Federal inscrever de ofício no CF/DF os remetentes de bens e prestadores de serviços de outras Unidades da Federação que realizem, com habitualidade, operações e prestações interestaduais destinadas a não contribuinte do imposto localizado no Distrito Federal.</p><p>Estas alterações entram em vigor na data de 30/10/2024, produzindo efeitos a partir de 01/01/2025.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.receita.fazenda.df.gov.br/aplicacoes/UltimasNormasPublicadas/TelaSaidaDocumento.cfm?txtNumero=46456&amp;txtAno=2024&amp;txtTipo=6&amp;txtParte=." target="_blank">Decreto nº 46.456/2024</a> <br/>Publicada em 30/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

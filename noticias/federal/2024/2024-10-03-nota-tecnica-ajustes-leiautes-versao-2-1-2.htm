@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Nota Técnica nº 03/2024 - Ajustes nos leiau - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/10/2024 | SPED EFD Reinf - Nota Técnica nº 03/2024 - Ajustes nos leiautes da versão 2.1.2</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a Nota Técnica 03/2024 com o objetivo de apresentar ajustes nos leiautes da versão 2.1.2 da EFD-Reinf em relação ao:</p><ul>
+<li><b>Registro-4010</b>: apresenta as informações referentes a pagamento, crédito, entrega, emprego ou remessa efetuado por fonte pagadora pessoa física ou jurídica a beneficiário pessoa física, mesmo sem retenção de imposto de renda, nos casos previstos na legislação através de naturezas de rendimentos);</li>
+<li><b>Registro-4020</b>: apresentado as retenções referentes aos pagamentos efetuados a beneficiários (fornecedores) pessoa jurídica tanto para pessoa jurídica residente no Brasil, como para não residentes.</li>
+</ul><p>As alterações dessa nota técnica já estão disponíveis nos ambientes de produção e de produção restrita.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7583" target="_blank">Nota Técnica nº 03/2024, versão 2.1.2</a> <br/>Publicada em 01/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

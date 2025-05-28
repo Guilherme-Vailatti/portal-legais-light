@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Instrução Normativa RFB nº 2.228/2024 - Contribuiç - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/10/2024 | Federal - Instrução Normativa RFB nº 2.228/2024 - Contribuição no processo de adaptação da legislação brasileira às regras globais contra a erosão da base tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB <b>nº 2.228/2024</b>, cujas disposições <b>produzirão efeitos a partir de 01/01/2025</b>, disciplina o Adicional da Contribuição Social sobre o Lucro Líquido (CSLL) de que trata a Medida Provisória <b>1.262/2024</b> , que estabelece uma tributação mínima efetiva de 15% no processo de adaptação da legislação brasileira às Regras Globais Contra a Erosão da Base Tributária (Regras Globe), Global Anti-Base Erosion Rules (GloBE Rules), elaboradas pelo Quadro Inclusivo - Inclusive Framework on Base Erosion and Profit Shifting, sob coordenação da Organização para a Cooperação e Desenvolvimento Econômico - OCDE e do Grupo dos Vinte - G20.</p><p><b>Aplicação</b>: aplica-se o disposto nesta Instrução Normativa a Entidades Constituintes de um Grupo de Empresas Multinacional que tiver auferido receitas anuais de, no mínimo, 750.000.000,00 € (setecentos e cinquenta milhões de euros) nas Demonstrações Financeiras Consolidadas da Entidade Investidora Final em pelo menos dois dos 4 Anos Fiscais imediatamente anteriores ao analisado. Caso um ou mais dos Anos Fiscais refiram-se a período diferente de 12 meses, para cada um desses Anos Fiscais o limite de 750.000.000,00 € será ajustado proporcionalmente.</p><p style="font-weight: bold;">As receitas anuais:</p><p><b>Cálculo do lucro ou prejuízo Globe:</b> o Lucro ou Prejuízo Globe de cada Entidade Constituinte será o Lucro ou Prejuízo Líquido Contábil do Ano Fiscal da Entidade Constituinte, apurado de acordo com o disposto no art. 10, ajustado conforme o disposto nos arts. 12 a 38 da norma em referência.</p><p><b>Lucro ou Prejuízo Líquido Contábil:</b> o Lucro ou Prejuízo Líquido Contábil será o lucro ou prejuízo líquido determinado para a Entidade Constituinte em suas demonstrações financeiras individuais, de acordo com as normas contábeis aplicáveis.</p><p><b>Ajuste:</b> o Lucro ou Prejuízo Líquido Contábil da Entidade Constituinte será ajustado pelos seguintes itens para fins de apuração do Lucro ou Prejuízo Globe:</p><p><b>Tributos Abrangidos Ajustados:</b> os Tributos Abrangidos Ajustados de uma Entidade Constituinte para o Ano Fiscal serão iguais à despesa tributária corrente relativa a Tributos Abrangidos constante na apuração de seu Lucro ou Prejuízo Líquido Contábil no Ano Fiscal, ajustada:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.228-de-3-de-outubro-de-2024-588158200" target="_blank">Instrução Normativa RFB nº 2.228/2024</a> <br/>Publicada em 03/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

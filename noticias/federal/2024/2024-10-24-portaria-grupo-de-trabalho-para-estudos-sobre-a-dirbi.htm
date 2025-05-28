@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIRBI - Portaria RFB nº 471/2024 - Grupo de Trabalho para es - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/10/2024 | DIRBI - Portaria RFB nº 471/2024 - Grupo de Trabalho para estudos sobre a DIRBI</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal do Brasil, publicou no último dia 21/10/2024 a portaria que institui o grupo de trabalho com a finalidade de realizar estudos técnicos que possibilitem a publicação de notas e orientações relacionadas a Declaração de Incentivos, Renúncias, Benefícios e Imunidades de Natureza Tributária (DIRBI).</p><p>O grupo de trabalho será composto por representantes da RFB e do Conselho Federal de Contabilidade (CFC), com o intuito de garantir uma ampla discussão e análise dos temas pertinentes, notadamente em relação à Instrução Normativa RFB nº 2.198/2024, que dispõe sobre a apresentação DIRBI.</p><p>O ato específico designará os servidores da RFB para compor o grupo de trabalho Integração RFB e CFC e indicará o seu supervisor técnico, a quem compete:</p><p>O grupo terá duração de 1 ano, prorrogável por igual período.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-rfb-n-471-de-18-de-outubro-de-2024-591384915" target="_blank">Portaria RFB nº 471/2024</a> <br/>Publicada em 21/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

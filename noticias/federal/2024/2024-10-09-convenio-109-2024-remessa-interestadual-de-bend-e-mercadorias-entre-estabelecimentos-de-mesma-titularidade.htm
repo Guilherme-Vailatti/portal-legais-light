@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Convênio ICMS nº 109/2024 - Remessa interestadual  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/10/2024 | Federal - Convênio ICMS nº 109/2024 - Remessa interestadual de bens e mercadorias entre estabelecimentos de mesma titularidade</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado uma nova disciplina referente a remessa interestadual de mercadorias entre estabelecimentos de mesma titularidade, com efeitos a partir de 1º.11.2024, data em que fica revogado o Convênio ICMS nº 178/2023 que dispõe atualmente sobre a matéria.</p><p>A principal modificação entre os Convênios, é que, o novo Convênio assegura o direito de transferir o crédito do imposto nas operações interestaduais de transferência de mercadoria, sendo que o Convênio ICMS nº 178/2023 tratava como sendo obrigatória a transferência do crédito.</p><p>Desse modo, a Unidade da Federação de origem poderá manter o crédito apenas da parcela correspondente a diferença positiva entre os créditos das entradas e a alíquota interestadual incidente na transferência.</p><p>Além disso, a nova disciplina prevê que o crédito a ser transferido será obtido mediante a multiplicação de uma as alíquotas interestaduais sobre os seguintes valores das mercadorias:</p><p>Cabe destacar que, por opção do contribuinte, a transferência da mercadoria poderá ser equiparada a operação sujeita ao ICMS, hipótese em que se considera valor da operação para determinação da base de cálculo do imposto:</p><p>A opção pela equiparação a uma operação tributada alcançará todos os estabelecimentos do contribuinte devendo ser consignada no Livro de Registro de Utilização de Documentos e Termos de Ocorrências de todos, observado o seguinte:</p><p>Na NF-e que acobertar o trânsito da mercadoria, deverá constar, além dos demais requisitos exigidos na legislação, no campo "Informações Complementares", a expressão "Transferência de mercadoria equiparada a uma operação tributada, nos termos do § 5º do art. 12 da Lei Complementar nº 87/1996 e da cláusula quinta do Convênio ICMS nº 109/2024".</p><p>Para o ano de 2024, a referida opção poderá ser feita até o 30/11/2024, com efeitos a partir de 01/11/2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despacho-n-44-de-4-de-outubro-de-2024-588605863" target="_blank">Convênio ICMS nº 109/2024</a> <br/>Publicada em 08/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

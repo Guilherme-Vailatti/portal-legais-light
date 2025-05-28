@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFC-e SC - Correio Eletrônico Circular SEF/DIAT nº 16/2024 - - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/10/2024 | NFC-e SC - Correio Eletrônico Circular SEF/DIAT nº 16/2024 - Cronograma de obrigatoriedade de uso NFC-e e BP-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Diretoria de Administração Tributária - DIAT, da Secretaria de Estado da Fazenda de Santa Catarina, informa que foi publicado o Ato DIAT Nº 56 de 17 de setembro de 2024 (acesse aqui) instituindo o prazo para início da obrigatoriedade de emissão da NFC-e, modelo 65, e BP-e, modelo 63, em substituição ao cupom fiscal emitido por ECF, e aos documentos fiscais elencados no Art. 167 do Anexo 11 do RICMS.</p><p>O cronograma estabelece o início da obrigatoriedade de acordo com o CNAE principal do estabelecimento, tendo início em 1 de março de 2025 e finalizando em 1 de agosto de 2025, data a partir da qual a não utilização da NFC-e ou do BP-e será considerada inobservância à legislação tributária.</p><p>As emissões de NFC-e e BP-e deverão ser realizadas por meio de programas aplicativos fiscais (PAF) previamente credenciados, os quais deverão atender aos requisitos previstos no Anexo III do Ato DIAT 38/2020 (disponível em <a href="https://www.sef.gov.br/nfce" target="_blank">www.sef.gov.br/nfce</a>) ou Anexo II do Ato DIAT 07/2022 (disponível em <a href="https://www.sef.gov.br/bpe" target="_blank">www.sef.gov.br/bpe</a>), respectivamente.</p><p>A emissão de NFC-e e BP-e exige credenciamento prévio por meio dos Tratamentos Tributários Diferenciados (TTD) de número 707 e 709, respectivamente, os quais deverão ser solicitados pelo contabilista do estabelecimento utilizando a aplicação “TTD - Solicitar Alteração, Prorrogação ou Renúncia de uma Concessão/Perfil Contribuinte/Contabilista” no Sistema S@T. A geração do código CSC (token) deve ser realizada após o credenciamento.</p><p>Um manual para a solicitação do TTD 707 e geração do CSC pode ser encontrado em <a href="https://www.sef.sc.gov.br/saiba-mais/nfc-e-nota-fiscal-de-consumidor-eletronica" target="_blank">www.sef.sc.gov.br/nfce</a>.</p><p>A partir da data de início da obrigatoriedade de uso da NFC-e e BP-e, os estabelecimentos deverão providenciar a cessação de uso de Equipamento Emissor de Cupom Fiscal (ECF) em até 90 (noventa) dias. A cessação deverá ser realizada por empresa interventora credenciada de acordo com o procedimento previsto no Art. 40 do Anexo 09 do RICMS/SC, devendo ser indicado o motivo “Adesão à NFCe” para cessação. Uma lista de empresas interventoras credenciadas pode ser obtida em <a href="https://www.sef.sc.gov.br/saiba-mais/ecf-equipamentos-emissores-de-cupom-fiscal" target="_blank">www.sef.sc.gov.br/ecf</a>.</p><p>A cessação de uso de ECF prevista se aplica aos estabelecimentos detentores dos TTD tipos 706 e 708, e a todos os demais estabelecimentos que utilizam o ECF, ainda que não estejam obrigados ao uso da NFC-e e do BP-e.</p><p>Os estabelecimentos ficam dispensados de registrar a renúncia aos TTD 706 e 708, sendo presumido o tratamento das situações de contingência por meio do PAF-NFC-e a partir da data de cessação de uso do ECF.</p><p>Por fim, destacamos a revogação dos Atos DIAT nº 46/2022 e nº 55/2022, responsáveis pela implementação da exigência do Bloco X, dispensando a sua obrigatoriedade.</p><p>Dúvidas adicionais poderão ser esclarecidas pela <a href="https://caf2.sef.sc.gov.br/Views/Shared/NovoTicket.aspx" target="_blank">CAF - Central de Atendimento Fazendária</a>, assunto: “NFC-E - NOTA FISCAL DE CONSUMIDOR ELETRÔNICA” e “BP-E - BILHETE DE PASSAGEM ELETRÔNICO”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sef.sc.gov.br/saiba-mais/correio-eletronico-circular" target="_blank">Correio Eletrônico Circular SEF/DIAT nº 16/2024</a> <br/>Publicada em 23/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

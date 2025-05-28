@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Receita Federal Publica Manual para Orientar Contr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/11/2024 | Federal - Receita Federal Publica Manual para Orientar Contribuintes sobre a Nova Legislação de Juros sobre Capital Próprio (JCP)</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal lança o Manual com o objetivo de fornecer orientações para promover a conformidade tributária e evitar litígios.</p><p>A divulgação de mais esse manual faz parte de abordagem da fiscalização da Receita Federal de auxiliar o cumprimento das obrigações tributárias por meio de orientações aos contribuintes, promovendo a conformidade e evitando litígios.</p><p>Tratar a “Nova legislação sobre Juros sobre Capital Próprio (JCP)” foi uma das prioridades definidas entre as medidas estruturantes previstas no <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/relatorios/fiscalizacao/relatorio-anual-fiscalizacao_2023-2024.pdf/view" target="_blank">Planejamento Anual da Fiscalização - Pafis 2024</a>. No Manual constam orientações e informações relativas ao entendimento da fiscalização sobre as alterações promovidas pela a <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14789.htm" target="_blank">Lei nº 14.789, de 29 de dezembro de 2023</a>, na redação do artigo 9º da <a href="https://www.planalto.gov.br/ccivil_03/leis/l9249.htm#:~:text=Altera a legislação do imposto,líquido, e dá outras providências." target="_blank">Lei nº 9.249, de 26 de dezembro de 1995</a>, especialmente acerca da dedutibilidade dos juros sobre capital próprio na apuração das bases de cálculo do Imposto sobre a Renda da Pessoa Jurídica (IRPJ) e da Contribuição Social Sobre o Lucro Líquido (CSLL).</p><p style="font-weight: bold;">Entenda um pouco mais:</p><p>Por ato legal, foi excluída a possibilidade de se considerar a reserva de incentivos fiscais na base de cálculo do JCP.</p><p>O art. 30 da Lei nº 12.973, de 13 de maio de 2014, exigia que as subvenções para investimento não fossem distribuídas aos sócios. Ao utilizar tais saldos na base de cálculo do JCP, as empresas encontravam uma forma de distribuir parte dessas subvenções aos seus sócios.</p><p>A nova lei também veda a utilização de variações positivas no patrimônio líquido decorrentes de atos societários entre partes dependentes que não envolvam efetivo ingresso de ativos para a pessoa jurídica. Essas medidas visam evitar operações artificiais, especialmente de ágios internos, que inflavam indevidamente a base de cálculo do JCP.</p><p style="font-weight: bold;">Orientações no Manual:</p><p>Com linguagem simples e objetiva, o Manual orienta os contribuintes sobre a apuração e o registro correto dos JCP após a vigência da Lei nº 14.789, de 2023, facilitando o cumprimento das obrigações tributárias.</p><p>O conteúdo está organizado em perguntas e respostas, cobrindo conceitos e procedimentos sobre a dedutibilidade dos juros sobre capital próprio.</p><p style="font-weight: bold;">Onde encontrar o Manual:</p><p>O Manual está disponível na página da Receita Federal no endereço eletrônico: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/auditoria-fiscal/conformidade" target="_blank">https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/auditoria-fiscal/conformidade</a></p><p>Confira a <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/auditoria-fiscal/conformidade" target="_blank">lista</a> de todos os Manuais de Orientação Tributária.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/novembro/receita-federal-publica-manual-para-orientar-contribuintes-sobre-a-nova-legislacao-de-juros-sobre-capital-proprio-jcp" target="_blank">Receita Federal</a> <br/>Publicada em 07/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

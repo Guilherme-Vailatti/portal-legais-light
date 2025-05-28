@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIRBI - Instrução Normativa RFB nº 2.230/2024 – Pessoas jurí - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/10/2024 | DIRBI - Instrução Normativa RFB nº 2.230/2024 – Pessoas jurídicas imunes estão dispensadas de apresentar a declaração</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.230/2024 alterou o inciso I do art. 2º, e incluiu o inciso IV ao art. 3º da Instrução Normativa RFB nº 2.198/2024, para <b>dispensar as pessoas jurídicas imunes</b> de apresentar a Declaração de Incentivos, Renúncias, Benefícios e Imunidades de Natureza Tributária (DIRBI).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.230-de-18-de-outubro-de-2024-591394464" target="_blank">Instrução Normativa nº 2.230/2024</a> <br/>Publicada em 21/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Unificação da SVAN/SVC-AN de produção - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/09/2024 | NF-e - Unificação da SVAN/SVC-AN de produção</h1>
+</div>
+<div class="noticia-corpo">
+<p>Conforme Informe publicado no dia 25/04/2024 e dando continuidade ao processo de unificação do ambiente de PRODUÇÃO da SVAN (ambiente que autoriza para contribuintes da SEFAZ MA) e SVC-AN (ambiente de contingência para as SEFAZ que autorizam na SVRS e SEFAZ RS), informamos que as URLs abaixo serão <b>descontinuadas a partir do dia 11/02/2025</b>:</p><ul style="list-style-type: circle;">
+<li>https://www.svc.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx </li>
+<li>https://www.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx </li>
+<li>https://www.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx </li>
+<li>https://www.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx</li>
+<li> https://www.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx </li>
+<li>https://www.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx</li>
+</ul><p>Assim, os usuários da SVC-AN devem atualizar seus sistemas de PRODUÇÃO, até <b>10/02/2025</b>,  para utilizar as seguintes URLs:</p><ul style="list-style-type: circle;">
+<li>https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx</li>
+<li>https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx </li>
+<li>https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx </li>
+<li>https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx</li>
+<li> https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx </li>
+<li>https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=sMKEsCOE348=" target="_blank">Portal NF-e</a> <br/>Publicada em 16/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

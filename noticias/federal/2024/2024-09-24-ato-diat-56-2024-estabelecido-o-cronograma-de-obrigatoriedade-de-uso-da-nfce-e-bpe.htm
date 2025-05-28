@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS SC - Ato DIAT nº 56/2024 - Estabelecido o cronograma de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/09/2024 | ICMS SC - Ato DIAT nº 56/2024 - Estabelecido o cronograma de obrigatoriedade de uso da NFC-e e do BP-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram estabelecidos os prazos de obrigatoriedade de uso da Nota Fiscal de Consumidor Eletrônica (NFC-e), modelo 65, e do Bilhete de Passagem Eletrônico (BP-e), no Estado de Santa Catarina.</p><p>Dessa forma, foi definido o seguinte cronograma:</p><p>Os estabelecimentos usuários de Equipamento Emissor de Cupom Fiscal (ECF) e do Programa Aplicativo Fiscal (PAF-ECF), ficam obrigados à emissão de NFC-e, a partir de:</p><p>Nas prestações de serviço de transporte de passageiros, os estabelecimentos usuários de ECF e do PAF-ECF ficam obrigados à emissão de Bilhete de Passagem Eletrônico (BP-e), a partir de 01/08/2025;</p><p>A partir da data de publicação deste Ato (20.09.2024), os estabelecimentos que sejam inscritos no CCICMS deste Estado ficam obrigados à utilização dos seguintes documentos fiscais, nas operações e prestações cujo adquirente ou tomador seja pessoa natural ou jurídica não contribuinte do ICMS:</p><p>Este Ato entra em vigor na data de sua publicação em 20/09/2024, revogando o Ato DIAT nº 46/2022 e o Ato DIAT nº 55/2022.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/atos_diat/2024/atodiat_24_056.htm" target="_blank">ATO DIAT nº 56/2024</a> <br/>Publicada em 20/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

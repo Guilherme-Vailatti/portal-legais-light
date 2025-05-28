@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e - Nota Técnica nº 2024.003, v. 1.00 - Consolidação das  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/09/2024 | CT-e - Nota Técnica nº 2024.003, v. 1.00 - Consolidação das regras de validação relacionadas ao PAA</h1>
+</div>
+<div class="noticia-corpo">
+<p>Nota técnica que consolida as definições e regras de validação do Provedor de Assinatura e Autorização para o CTe.</p><p>O contribuinte emitente de Documento Fiscal Eletrônico poderá utilizar os serviços de um Provedor de Assinatura e Autorização de Documentos Fiscais Eletrônicos - PAA com a finalidade de realizar comunicações com os sistemas de autorização de uso de documentos fiscais eletrônicos providos pelas administrações tributárias, em nome do contribuinte.</p><p>O ambiente de autorização das Administrações Tributárias através do Portal Nacional dos Documentos Fiscais Eletrônicos irá permitir a vinculação entre contribuintes que se enquadrarem nesse perfil (devidamente identificados na plataforma gov.br do governo federal) com Provedores de Assinatura e Autorização previamente homologados pela Coordenação do ENCAT.</p><p>O contribuinte deverá utilizar ferramenta de emissão de documento fiscal fornecida pelo PAA, preferencialmente na internet e com identificação do usuário.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Cte/Documentos" target="_blank">Nota Técnica nº 2024.003, versão 1.00</a> <br/>Publicada em 11/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

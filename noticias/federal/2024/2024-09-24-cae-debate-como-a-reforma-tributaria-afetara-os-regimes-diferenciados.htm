@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária -CAE debate como a reforma tributária afe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/09/2024 | Reforma Tributária -CAE debate como a reforma tributária afetará os regimes diferenciados</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Comissão de Assuntos Econômicos (CAE) vai promover uma audiência pública na terça-feira (24), às 10h, para debater os impactos da reforma tributária nos regimes diferenciados e específicos. Esses regimes são aqueles em que o modelo de apuração difere do padrão, beneficiando determinados setores da economia com redução de carga tributária.</p><p>A audiência faz parte de um ciclo de debates solicitado pelo presidente da comissão, senador Vanderlan Cardoso (PSD-GO), para ajudar o grupo de trabalho coordenado pelo senador Izalci Lucas (PL-DF) na avaliação da regulamentação da reforma tributária (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/164914" target="_blank">PLP 68/2024</a>). A reunião terá a possibilidade de participação popular por meio do portal <a href="https://www12.senado.leg.br/ecidadania" target="_blank">e-Cidadania</a>.</p><p>Entre outros especialistas no tema, estão convidados para a audiência o ministro do Desenvolvimento Agrário e Agricultura Familiar, Paulo Teixeira; e o ex-ministro da Fazenda Maílson da Nóbrega. O ex-presidente da Câmara dos Deputados e diretor-presidente da Confederação Nacional das Instituições Financeiras (CNF); Rodrigo Maia; e o diretor-executivo da Confederação Nacional de Saúde (CNSaúde), Bruno Sobral; também constam na lista de debatedores.</p><p style="font-weight: bold;">Como participar</p><p>O evento será interativo: os cidadãos podem enviar perguntas e comentários pelo telefone da Ouvidoria do Senado (0800 061 2211) ou pelo <a href="https://www12.senado.leg.br/ecidadania/visualizacaoaudiencia?id=31320" target="_blank">Portal e‑Cidadania</a>, que podem ser lidos e respondidos pelos senadores e debatedores ao vivo. O Senado oferece uma declaração de participação, que pode ser usada como hora de atividade complementar em curso universitário, por exemplo. O <a href="http://www12.senado.leg.br/ecidadania" target="_blank">Portal e‑Cidadania</a>  também recebe a opinião dos cidadãos sobre os projetos em tramitação no Senado, além de sugestões para novas leis.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2024/09/19/cae-debate-como-a-reforma-tributaria-afetara-os-regimes-diferenciados" target="_blank">Agência Senado</a> <br/>Publicada em 19/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

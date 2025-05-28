@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - PLP nº 68/2024 - Votação da reforma tri - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/11/2024 | Reforma Tributária - PLP nº 68/2024 - Votação da reforma tributária deve ser concluída em dezembro, diz Pacheco</h1>
+</div>
+<div class="noticia-corpo">
+<p>O presidente do Senado, Rodrigo Pacheco, participou nesta terça-feira (5) do 2º Simpósio Liberdade Econômica. O evento reuniu empresários, acadêmicos e parlamentares para debater a regulamentação da reforma tributária. Pacheco disse esperar que o PLP 68/2024, encaminhado ao Congresso pelo Poder Executivo para regulamentar a Emenda Constitucional 132, da reforma tributária, seja aprovado pelo Senado até o fim do ano.</p><p>Assista o vídeo na <a href="https://www12.senado.leg.br/noticias/videos/2024/11/votacao-da-reforma-tributaria-deve-ser-concluida-em-dezembro-diz-pacheco" target="_blank">integra</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/164914" target="_blank">Projeto de Lei Complementar nº 68/2024</a> <br/>Publicada em 06/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

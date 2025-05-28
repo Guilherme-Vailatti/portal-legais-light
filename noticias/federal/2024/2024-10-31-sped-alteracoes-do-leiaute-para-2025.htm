@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Nota Técnica nº 09/2024 - Alteraçõe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>31/10/2024 | SPED EFD Contribuições - Nota Técnica nº 09/2024 - Alterações do leiaute para 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a Nota Técnica 009, de 29 de outubro de 2024, à qual dispõe sobre as alterações previstas para o leiaute da EFD Contribuições para o ano de 2025.</p><p>A equipe da EFD-Contribuições, considerando o disposto na Nota Técnica 07 / 2018 - Migração da escrituração da CPRB na EFD-Contribuições para a EFD-Reinf, bem como o § 5º do art. 4º da IN RFB nº 1.252/2012, e que não existem mais contribuintes da Contribuição Previdenciária sobre a Receita Bruta (CPRB) obrigados à escrituração desta contribuição na EFD-Contribuições; e, considerando, também, o Ajuste SINIEF nº 7/22, que institui a Nota Fiscal Fatura de Serviços de Comunicação Eletrônica-NFCom, modelo 62, bem como o Ajuste SINIEF 49/2023, prorrogando a obrigatoriedade da NFCom, modelo 62, para 01/04/2025, vem informar que:</p><p>Para mais informações, clique <a href="http://sped.rfb.gov.br/arquivo/show/7593" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7595" target="_blank">Nota Técnica nº 009/2024</a> <br/>Publicada em 29/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

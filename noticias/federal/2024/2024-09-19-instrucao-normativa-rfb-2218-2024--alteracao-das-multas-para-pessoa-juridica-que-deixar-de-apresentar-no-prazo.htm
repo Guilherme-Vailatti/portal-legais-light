@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIMOB - Instrução Normativa RFB nº 2.218/2024 - Alteração da - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/09/2024 | DIMOB - Instrução Normativa RFB nº 2.218/2024 - Alteração das multas para a pessoa jurídica que deixar de apresentar no prazo</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.218/2024 alterou a Instrução Normativa RFB nº 1.115/2010, que dispõe sobre a Declaração de Informações sobre Atividades Imobiliárias (Dimob).</p><p>De acordo com as alterações, a pessoa jurídica que deixar de apresentar a Dimob no prazo estabelecido, ou que apresentá-la com incorreções ou omissões, sujeitar-se-á às seguintes multas:</p><p>As multas a que se referem os incisos I e II têm, por termo inicial, o primeiro dia subsequente ao fixado para a entrega da declaração e, por termo final:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.218-de-17-de-setembro-de-2024-585126128" target="_blank">Instrução Normativa RFB nº 2.218/2024</a> <br/>Publicada em 18/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

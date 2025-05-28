@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Simples Nacional - Receita Federal esclarece sobre retirada  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>12/09/2024 | Simples Nacional - Receita Federal esclarece sobre retirada de pró-labore pelo MEI</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Solução de Consulta COSIT nº 99.014/2024 esclareceu que formalmente, não há na legislação tributária de regência do MEI dispositivo que obrigue a retirada de pró-labore ou que estipule valor pré-determinado dessa parcela. A definição do montante do pró-labore que deverá ser pago em favor do titular do MEI é decisão desse último agente, observado o critério de razoabilidade.</p><p>O pagamento do pró-labore não influencia o valor passível de distribuição com isenção do imposto sobre a renda, apurado na forma do § 1º do art. 14 da Lei Complementar nº 123/2006, cuja base de cálculo é a receita bruta; exceção a essa última regra é a hipótese em que o MEI mantém escrita contábil, caso em que poderá distribuir todo o lucro contábil com a referida isenção.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/solucao-de-consulta-n-99.014-de-9-de-setembro-de-2024-583734698" target="_blank">Solução de Consulta COSIT nº 99.014/2024</a> <br/>Publicada em 11/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

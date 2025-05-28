@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS MG - SEF atinge 25 mil contribuintes dispensados da Dec - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/09/2024 | ICMS MG - SEF atinge 25 mil contribuintes dispensados da Declaração de Apuração e Informações do ICMS</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria de Estado de Fazenda de Minas Gerais (SEF/MG), por intermédio da Receita Estadual, celebra mais um marco rumo à simplificação tributária. No mês de setembro, foi atingida a marca de 25 mil contribuintes dispensados de entrega da Declaração de Apuração e Informações do ICMS (Dapi).</p><p>Para essas empresas, o Conta Corrente Fiscal é gerado pela SEF, com base nos dados da Escrituração Fiscal Digital (EFD). Em médio prazo, todos os cerca de 100 mil contribuintes dos regimes de apuração normal do ICMS (débito/crédito) e aqueles isentos ou imunes não mais precisarão elaborar a Dapi e nem transmiti-la mensalmente à Secretaria de Fazenda.</p><p>Dentre os 25 mil contribuintes, cerca de 2 mil foram desobrigados de ofício. Em torno de 23 mil foram voluntários do projeto Desobrigar DAPI. Para aderir à simplificação, os contribuintes devem fazer a opção por meio de módulo próprio do Sistema de Administração da Receita Estadual (Siare), que validará Dapis e EFDs dos últimos três períodos de apuração, a fim de verificar se estão escriturando corretamente.</p><p>A SEF criou, ainda, uma ferramenta para simplificar duplamente a vida do contribuinte desobrigado de Dapi: o "Gera DAE", cujas funcionalidades são:</p><p>O Gera DAE está disponível para download em www.sped.fazenda.mg.gov.br/spedmg/efd/desobrigardapi/.</p><p>No mesmo sentido de simplificar as obrigações acessórias, a SEF está gerando a Declaração Anual do Movimento Econômico Fiscal (Damef), também com dados da EFD. Essa facilidade permitiu maior agilidade e qualidade na apuração do Valor Adicionado Fiscal (VAF), base para distribuição dos repasses constitucionais da quota do ICMS aos municípios. A partir da Damef gerada pela SEF, os contribuintes fazem a complementação de informações no Siare.</p><p>A Receita Estadual, com essa iniciativa, confere transparência e segurança aos contribuintes mineiros.</p><p>Eventuais dúvidas devem ser encaminhadas ao Fale Conosco da SEF, no assunto “Desobrigar DAPI – geração pela EFD”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.fazenda.mg.gov.br/noticias/2024/2024.09.16_Dapi/index.html" target="_blank">Fazenda MG</a> <br/>Publicada em 16/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>e-Financeira - Instrução Normativa RFB nº 2.219/2024 - RFB c - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/09/2024 | e-Financeira - Instrução Normativa RFB nº 2.219/2024 - RFB consolida as normas que tratam sobre a e-Financeira</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por meio da Instrução Normativa RFB nº 2.219/2024, a Secretaria Especial da Receita Federal do Brasil (RFB) consolidou as normas que tratam sobre a obrigatoriedade de prestação de informações relativas às operações financeiras de interesse da RFB na e-Financeira.</p><p>Uma novidade trazida pela norma em referência é a inclusão de obrigatoriedade de apresentação da e-financeira para:</p><p>Ficam revogados:</p><p>No mais, esta Instrução Normativa entrará em vigor:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.219-de-17-de-setembro-de-2024-585116636" target="_blank">Instrução Normativa RFB nº 2.219/2024</a> <br/>Publicada em 18/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

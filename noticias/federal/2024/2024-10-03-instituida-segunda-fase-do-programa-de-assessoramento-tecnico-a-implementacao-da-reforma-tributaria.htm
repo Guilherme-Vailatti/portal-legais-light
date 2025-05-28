@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Portaria MF nº 1.577/2024 - Instituída  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/10/2024 | Reforma Tributária - Portaria MF nº 1.577/2024 - Instituída a segunda fase do Programa de Assessoramento Técnico à implementação da reforma</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi instituída a 2ª fase do "Programa de Assessoramento Técnico à Implementação da Reforma da Tributação sobre o Consumo, denominado PAT-RTC 2".</p><p>O programa tem como finalidade acompanhar a tramitação no Congresso Nacional dos projetos de lei complementar vinculados a Reforma Tributária sobre o consumo, e apoiar as administrações tributárias na fase inicial de sua implementação.</p><p>Os Projetos de Lei Complementar englobam:</p><ul>
+<li>a PLP 68/2024 que se encontra em tramitação no Senado Federal e estabelece as regras para cobrança do Imposto sobre Bens e Serviços (IBS), a Contribuição sobre Bens e Serviços (CBS) e o imposto Seletivo (IS); e</li>
+<li>a PLP 108/2024 em tramitação na Câmara dos Deputados que tem como foco principal estabelecer as diretrizes do Comite Gestor do IBS.</li>
+</ul><p>Importante destacar que, no âmbito do PAT-RTC 2, será criado o Grupo Técnico destinado à facilitação do desenvolvimento do sistema de recolhimento do IBS e da CBS na liquidação financeira da transação (GT 20 - Split Payment), que é um dos pontos centrais da Reforma Tributária.</p><p>O Grupo Técnico será composto por representantes:</p><p>O PAT-RTC 2 deverá concluir suas atividades até o final do 1º mês subsequente à instalação do Comitê Gestor do Imposto sobre Bens e Serviços.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mf-n-1.577-de-1-de-outubro-de-2024-587897760" target="_blank">Portaria MF nº 1.577/2024</a> <br/>Publicada em 02/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

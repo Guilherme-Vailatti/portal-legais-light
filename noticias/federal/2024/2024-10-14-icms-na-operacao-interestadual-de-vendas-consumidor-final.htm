@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2022.005, v. 1.11 - ICMS na ope - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/10/2024 | NF-e NFC-e - Nota Técnica nº 2022.005, v. 1.11 - ICMS na operação interestadual de vendas a consumidor final</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a v. 1.11 da Nota Técnica 2022.005 que divulga ICMS na Operação Interestadual de Vendas a Consumidor Final.</p><p>Essa versão da Nota Técnica altera a Regra de Validação 3BA02-50, criando exceção que permite NF-e de devolução possuir valor total superior ao da NF-e de saída, no caso de comércio exterior.</p><p style="font-weight: bold;">Banco de Dados: NF-e Referenciada</p><p><b>Exceção 4:</b> A RV não será aplicada à NF-e de Devolução no caso de Comércio Exterior (idDest=3);</p><p><b>Rejeição:</b> NF-e de devolução com valor total superior a NF-e devolvida.</p><p style="font-weight: bold;">Cronograma de Implantação:</p><ul>
+<li>Teste: 31/10/2024</li>
+<li>Produção: 31/10/2024</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2022.005, versão 1.11</a> <br/>Publicada em 08/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

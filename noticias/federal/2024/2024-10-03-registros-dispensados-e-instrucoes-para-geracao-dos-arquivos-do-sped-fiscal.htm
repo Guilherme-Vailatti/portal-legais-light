@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS SC - Portaria SEF nº 243/2024 - Registros dispensados e - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/10/2024 | ICMS SC - Portaria SEF nº 243/2024 - Registros dispensados e instruções para a geração dos arquivos do SPED Fiscal</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Portaria SEF nº 377/2019, que estabelece as diretrizes para a geração da Escrituração Fiscal Digital (EFD ICMS IPI) por contribuintes catarinenses, foi recentemente alterada.</p><p>As modificações abrangem tanto as instruções de preenchimento dos registros quanto a composição da lista de registros dispensados. Dentre as novidades, destaca-se a inclusão do registro 1925 (Informações adicionais da sub-apuração), conforme demonstrado na tabela abaixo.</p><p>
+<img src="../../../Resources/Images/Notícias/registros-dispensados-sped-fiscal.png"/>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sat.sef.sc.gov.br/tax.NET/Sat.Pesef.Web/Publicacao/ViewCompleto.aspx?x=083068105075082083068069079104085120116111087086098113073112068105116073107080050070071108072098109112075111099049056052088082077061" target="_blank">Portaria SEF nº 243/2024</a> <br/>Publicada em 02/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

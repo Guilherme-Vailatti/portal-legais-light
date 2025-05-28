@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Senadores pedem retirada da urgência da - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/09/2024 | Reforma Tributária - Senadores pedem retirada da urgência da reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>O vice-presidente do Senado, Veneziano Vital do Rêgo, disse na terça-feira (24) haver tratativas para que o presidente da República, Luiz Inácio Lula da Silva, retire o pedido de urgência da regulamentação da reforma tributária (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/164914" target="_blank">PLP 68/2024</a>). Como não foi votado no prazo de 45 dias, o projeto tranca a pauta do Plenário desde segunda-feira (22).</p><p>Quando a proposta chegou ao Senado, em julho, líderes partidários solicitaram a retirada da urgência alegando que precisariam de tempo para analisar o texto já aprovado pelos deputados, que define os setores que vão pagar menos impostos, os que serão taxados e a devolução, o chamado cashback. O coordenador do Grupo de Trabalho na Comissão de Assuntos Econômicos (CAE), senador Izalci Lucas (PSDB-DF), também pede um prazo maior para a votação do projeto.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/audios/2024/09/senadores-pedem-retirada-da-urgencia-da-reforma-tributaria" target="_blank">Agência Senado</a> <br/>Publicada em 25/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

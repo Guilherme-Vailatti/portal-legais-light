@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Portaria nº 481/2024 - Instituí o grupo de trabalh - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/11/2024 | Federal - Portaria nº 481/2024 - Instituí o grupo de trabalho para acompanhar a implementação do novo CNPJ Alfanumérico</h1>
+</div>
+<div class="noticia-corpo">
+<p>Fica instituído Grupo de Trabalho com a finalidade de acompanhar a implementação do CNPJ Alfanumérico, em parceria com a Receita Federal do Brasil (RFB), o Conselho Federal de Contabilidade (CFC) e a Federação Brasileira de Bancos (Febraban) - GT CNPJ Alfanumérico.</p><p>O GT será composto por cinco (05) representantes da RFB, dois (02) do CFC e dois (02) da Febraban, com o intuito de garantir uma ampla discussão e análise dos temas pertinentes.</p><p>O GT CNPJ Alfanumérico poderá convidar outras Entidades Públicas ou Privadas para avaliação do processo de implementação.</p><p>O Grupo terá duração de um ano, prorrogável por igual período.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-rfb-n-481-de-30-de-outubro-de-2024-593177841" target="_blank">Portaria nº 481/2024</a> <br/>Publicada em 31/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

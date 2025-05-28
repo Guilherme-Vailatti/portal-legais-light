@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS MG - Prorrogada regra de validação "Dados do cartão de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/09/2024 | ICMS MG - Prorrogada regra de validação "Dados do cartão de crédito/débito</h1>
+</div>
+<div class="noticia-corpo">
+<p>A SEFAZ de Minas Gerais comunicou que a ativação da Regra de Validação 391 - "Dados do cartão de crédito/débito não informados nas Formas de Pagamento da Nota Fiscal [nOcor:999]" — foi prorrogada. A regra está sendo analisada pela SEF quanto sua futura implementação.</p><p>Disponibilizamos em homologação a versão que valida o consumo indevido (NT 2018.002). Sugerimos as empresas que façam os testes necessários para evitar problemas quando da disponibilização no ambiente de produção.</p><ul>
+<li>NT 2022.003 v.1.11: <a href="https://portalsped.fazenda.mg.gov.br/spedmg/export/sites/spedmg/nfe/download/2022.003-V.1.11.pdf" target="_blank">Clique aqui</a> para acessar a tabela com as regras que serão validadas pela SEF-MG.</li>
+<li>NT 2021.004 v.1.35: <a href="https://portalsped.fazenda.mg.gov.br/spedmg/export/sites/spedmg/nfe/download/Tabela-NT-2021.004-v.1.34.pdf" target="_blank">Clique aqui</a> para acessar a tabela com as regras que serão validadas pela SEF-MG.</li>
+<li>NT 2019.001 v.1.53: <a href="https://portalsped.fazenda.mg.gov.br/spedmg/export/sites/spedmg/nfce/downloads/NT2019.001-v.1.53.pdf" target="_blank">Clique aqui</a> para acessar a tabela com as regras que serão validadas pela SEF-MG.</li>
+<li>NT 2018.005 v.1.30: <a href="http://nfce.encat.org/desenvolvedor/regras-de-validacao/" target="_blank">Clique aqui</a> para obter a planilha com as regras de validação adotadas pela SEFAZ-MG.</li>
+<li>NT 2018.004 v.1.00: A partir do dia 17/05/2019 passarão a ser validados os prazos de cancelamento de NFC-e definidos na <a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank">Nota Técnica</a>.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portalsped.fazenda.mg.gov.br/spedmg/nfce/" target="_blank">SEF/MG</a> <br/>Publicada em 09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

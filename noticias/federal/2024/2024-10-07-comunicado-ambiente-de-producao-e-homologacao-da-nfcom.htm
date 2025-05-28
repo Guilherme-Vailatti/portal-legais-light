@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFCom - Comunicado: Ambiente de produção e homologação da NF - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/10/2024 | NFCom - Comunicado: Ambiente de produção e homologação da NFCom</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Coordenação do Encat comunicou que foi liberado no dia 03/10/2024, os ambientes da Nota Fiscal Fatura de Serviços de Comunicação Eletrônica, modelo 62 (NFCom):</p><p>Comunicamos que o <b>ambiente de produção</b> da NFCom na SVRS está aberto para as UF: CE, SC, GO, AC e PB.</p><p>O credenciamento deve ser feito com a SEFAZ de cada Unidade Federada.</p><p>Os <b>ambientes de testes</b> das empresas para a NFCom estão ativos para todas as unidades federadas.</p><p>Nos endereços da SVRS podem ser testados as UF: AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, PA, PB, PR, PE, PI, RJ, RN, RO, RR, RS, SC, SP, SE, TO.</p><p>Possuem ambientes próprios: MG, MS e MT.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Noticias" target="_blank">Portal DF-e</a> <br/>Publicada em 03/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

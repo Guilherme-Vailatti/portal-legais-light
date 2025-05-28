@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Gestão do Imposto Sobre Bens e Serviços - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/10/2024 | Reforma Tributária - Gestão do Imposto Sobre Bens e Serviços será tema de audiência na CAE</h1>
+</div>
+<div class="noticia-corpo">
+<p>Destinado a regulamentar a gestão do Imposto sobre Bens e Serviços (IBS) e outros aspectos da reforma tributária, o Projeto de Lei Complementar (<a href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2438459" target="_blank">PLP</a>) 108/2024 será tema de audiência pública na <a href="https://legis.senado.leg.br/atividade/comissoes/comissao/38/" target="_blank">Comissão de Assuntos Econômicos (CAE)</a> na próxima quarta-feira (2), a partir das 14h.</p><p>Esse projeto é o segundo a ser apresentado com o objetivo de regulamentar a reforma tributária instituída pela <a href="https://normas.leg.br/?urn=urn:lex:br:federal:emenda.constitucional:2023-12-20;132" target="_blank">Emenda Constitucional 132</a> — que foi promulgada em dezembro. Além de instituir o Comitê Gestor do IBS, a proposição também trata da transição do Imposto sobre Circulação de Mercadorias e Serviços (ICMS) para o IBS; define a distribuição dos valores do novo tributo para os entes federados; e altera as normas do Imposto de Transmissão Causa Mortis e Doação (ITCMD) e do Imposto sobre a Transmissão de Bens Imóveis (ITBI).</p><p>O texto-base do PLP 108/2024 foi aprovado na Câmara dos Deputados em 13 de agosto. Após a votação dos destaques, a versão final do projeto será enviada à análise do Senado, onde já tramita o primeiro projeto de regulamentação da reforma tributária (o <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/164914" target="_blank">PLP 68/2024</a>.)</p><p>Foram convidados para a audiência pública:</p><ul>
+<li>Susy Gomes Hoffmann, advogada e doutora em Direito Tributário pela Pontifícia Universidade Católica de São Paulo (PUC-SP);</li>
+<li>Felipe Kertesz Renault, diretor da Associação Brasileira de Direito Financeiro (ABDF);</li>
+<li>Felipe Scudeler Salto, ex-diretor-executivo da Instituição Fiscal Independente (IFI) e economista-chefe e sócio da Warren Investimentos;</li>
+<li>Geraldo da Silva Datas, auditor fiscal estadual e presidente do Conselho de Contribuintes do Estado de Minas Gerais (Comsefaz);</li>
+<li>Melissa Castello, procuradora da Fazenda do Rio Grande do Sul;</li>
+<li>Fernando Mobelli, gerente do Programa de Regulamentação da Reforma Tributária do Consumo;</li>
+<li>Francelino Valença, presidente da Federação Nacional dos Fiscos Estaduais e do Distrito Federal;</li>
+<li>Fábio Macêdo, presidente da Federação Nacional dos Auditores e Fiscais de Tributos Municipais (Fenafim);</li>
+<li>Fellipe Matos Guerra, contador e representante do Conselho Federal de Contabilidade (CFC);</li>
+<li>Zabetta Macarini C. Gorisen, diretora-executiva do Grupo de Estudos Tributários Aplicados (Getap);</li>
+<li>Eduardo Salusse, presidente do Movimento de Defesa da Advocacia.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2024/09/27/gestao-do-imposto-sobre-bens-e-servicos-sera-tema-de-audiencia-na-cae" target="_blank">Agência Senado</a> <br/>Publicada em 27/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

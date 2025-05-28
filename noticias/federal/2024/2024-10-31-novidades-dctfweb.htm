@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - DCTFWeb tem novidades! - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>31/10/2024 | DCTFWeb - DCTFWeb tem novidades!</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em atendimento a demandas dos contribuintes e profissionais da área contábil, foram feitas mudanças nas opções de filtros disponibilizadas na tela inicial da DCTFWeb, no e-CAC. Foram disponibilizados no sistema filtros por data de transmissão e por número de processos de Reclamatória Trabalhista.</p><p>Outra mudança no programa é referente a emissão de Darf/DAE nos casos de débitos parcelados ou inscritos em Dívida Ativa da União - DAU. A partir de agora, a emissão de guia de pagamento deve ser feita, exclusivamente, em consulta à situação fiscal exclusivamente pelo Situação Fiscal do e-CAC: <a href="https://cav.receita.fazenda.gov.br/" target="_blank">https://cav.receita.fazenda.gov.br</a>.</p><p>A alteração se deu porque os Darf/DAE gerados na DCTFWeb não permitem alocação automática nos casos citados acima, o que exigia que o contribuinte solicitasse o aproveitamento do pagamento via processo.</p><p>É importante ressaltar que no caso de DAE que contenha débitos de FGTS, o documento será emitido somente com o FGTS.</p><p>Outra novidade é a construção do Módulo de Inclusão de Tributos – MIT, que irá substituir a atual DCTF fazendária, unificando todos os débitos na DCTFWeb. O prazo previsto para implantação do MIT é janeiro de 2025, com a primeira entrega da declaração prevista para o mês seguinte (fevereiro de 2025).</p><p>Em breve, será publicada a Instrução Normativa com a unificação das declarações, bem como o leiaute do arquivo que poderá ser utilizado para integração entre as aplicações dos contribuintes e a DCTFWeb.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/outubro/dctfweb-tem-novidades" target="_blank">Receita Federal</a> <br/>Publicada em 24/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

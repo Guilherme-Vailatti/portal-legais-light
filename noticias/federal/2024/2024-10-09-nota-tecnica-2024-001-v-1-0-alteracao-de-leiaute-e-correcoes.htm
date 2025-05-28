@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DC-e - Nota Técnica nº 2024.001 v. 1.00 - Alteração de leiau - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/10/2024 | DC-e - Nota Técnica nº 2024.001 v. 1.00 - Alteração de leiaute e correções</h1>
+</div>
+<div class="noticia-corpo">
+<p>A DC-e é o documento eletrônico, instituído pelo Ajuste Sinief nº 5/2021, que passará a ser utilizado a partir de 01/03/2025, no transporte de bens e mercadorias na hipótese de não ser exigida documentação fiscal, a exemplo do transporte de bens em mudanças residenciais contratadas por pessoas físicas não contribuintes do ICMS.</p><p style="font-weight: bold;">Histórico de Alterações</p><ul>
+<li>Corrigidos campos das tags do WebService de eventos, para ficarem de acordo com o schema;</li>
+<li>Corrigido o Id de alguns campos da tabela 2-1 do manual, que fala sobre a chave de acesso da DC-e.</li>
+<li>Corrigido o nome do schema da parte geral dos eventos e retorno dos eventos;</li>
+<li>Incluído tags para uso exclusivo dos correios;</li>
+<li>Incluído e corrigido algumas regras de validações;</li>
+<li>Excluído campos do leiaute de mensagem de retorno dos eventos que não existem no schema;</li>
+<li>Removido regras de validações que estavam em duplicidade no manual;</li>
+<li>Incluído tpEmit=4 para uso dos correios;</li>
+<li>Incluído campos no grupo de informações adicionais (Z) para uso dos correios e corrigido o nome do grupo de uso livre do fisco;</li>
+<li>Alteradas regras de validação do grupo C para inclusão da emissão pelos correios;</li>
+</ul><p style="font-weight: bold;">Cronograma de Implantação:</p><ul>
+<li>Teste: 30/10/2024</li>
+<li>Produção: x</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Dce/Documentos" target="_blank">Nota Técnica 2024.001, versão 1.00</a> <br/>Publicada em 08/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

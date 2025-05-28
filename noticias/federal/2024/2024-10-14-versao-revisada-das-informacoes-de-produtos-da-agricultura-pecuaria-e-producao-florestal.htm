@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Nota Técnica nº 2024.003, v. 1.01 - Versão revisada d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/10/2024 | NF-e - Nota Técnica nº 2024.003, v. 1.01 - Versão revisada das Informações de produtos da agricultura, pecuária e produção florestal</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada a versão 1.01 da Nota Técnica 2023.003 que divulga novos campos relacionados ao responsável técnico do agrotóxico e explicações sobre as guias de trânsito de produtos animais vivos, vegetais e florestais.</p><p>Este documento tem por objetivo detalhar as especificações para fazer constar na NF-e os dados relativos ao trânsito de produtos animais vivos, vegetais e florestais. Esta definição deve permitir aos estados fazer um acompanhamento mais preciso das operações com estes produtos, além de atender solicitação da ENCCLA - Estratégia Nacional de Combate à Corrupção e à Lavagem de Dinheiro, encaminhada pelo Ofício nº 598/202 /CGAI/ DRCI/ SENAJUS/ MJ, do Ministério da Justiça, que solicita inclusão do campo para informação do Documento de Origem Florestal - DOF.</p><p>Todavia conforme Item 5.7 da NOTA TÉCNICA Nº 4/2020/DBFLO do Instituto Brasileiro Do Meio Ambiente e dos Recursos Naturais Renováveis - IBAMA, a informação da nota fiscal é necessária para emissão do DOF, o que inviabiliza a emissão do documento fiscal antes do DOF</p><p>A exceção do Pará e Mato Grosso que utilizam o Sisflora e Minas Gerais o SIAM, a NF-e deve ser emitida antes do DOF, e os dados da NF-e devem constar no DOF conforme Nota Técnica 04 2020 do IBAMA.</p><p><b>Nota Técnica do IBAMA:</b> <a href="https://www.gov.br/ibama/pt-br/centrais-de-conteudo/arquivos/arquivos-pdf/2020-04-09-nota-tecnica-4-2020-dbflo-pdf" target="_blank">https://www.gov.br/ibama/pt-br/centrais-de-conteudo/arquivos/arquivos-pdf/2020-04-09-nota-tecnica-4-2020-dbflo-pdf</a></p><p><b>Sobre o DOF:</b> <a href="https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/flora-e-madeira/documento-de-origem-florestal-dof" target="_blank">https://www.gov.br/ibama/pt-br/assuntos/biodiversidade/flora-e-madeira/documento-de-origem-florestal-dof</a></p><p>Porém decidimos manter o campo na NF-e visando atender as UFs que não utilizam o DOF.</p><p>Já o defensivo agrícola (agrotóxico) visa atender legislação federal e normas estaduais sobre o tema. Para melhor identificação do receituário agrícola é necessário identificar o emissor do receituário, para tal criamos o campo “CPFRespTec” para compor as informações do receituário agrícola.</p><p style="font-weight: bold;">Cronograma de implantação:</p><ul>
+<li>Teste: 04/11/2024</li>
+<li>Produção: 01/04/2025</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2024.003, versão 1.01</a> <br/>Publicada em 09/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFS-e DF - Decreto nº 46.235/2024 - Publicado procedimento s - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/09/2024 | NFS-e DF - Decreto nº 46.235/2024 - Publicado procedimento sobre recusa e declaração da NFS-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Decreto nº 43.982/2022 foi alterado para dispor que, até o 15º dia do mês seguinte ao da emissão da Nota Fiscal de Serviço Eletrônica, o tomador do serviço poderá:</p><p>Também foi definido que o tomador de serviço, substituto ou responsável tributário, deve declarar todas as notas fiscais de outros municípios, mesmo que não tenha que reter o imposto.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.receita.fazenda.df.gov.br/aplicacoes/UltimasNormasPublicadas/TelaSaidaDocumento.cfm?txtNumero=46235&amp;txtAno=2024&amp;txtTipo=6&amp;txtParte=." target="_blank">Decreto nº 46.235/2024</a> <br/>Publicada em 05/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

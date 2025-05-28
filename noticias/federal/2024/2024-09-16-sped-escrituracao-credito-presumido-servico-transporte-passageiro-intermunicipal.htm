@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Escrituração de crédito presumido - - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/09/2024 | SPED EFD Contribuições - Escrituração de crédito presumido - Serviço de transporte passageiro – Intermunicipal</h1>
+</div>
+<div class="noticia-corpo">
+<p>A lei nº 14.789, de 29 de dezembro de 2023, alterou a Lei nº 14.592, de 30 de maio de 2023, para determinar, no seu art. 2º-A,  que no período de 1º de janeiro de 2024 a 31 de dezembro de 2026, a pessoa jurídica poderá descontar da Contribuição devida para o PIS/Pasep e a Cofins, em cada período de apuração, <b>crédito presumido</b> calculado sobre a receita decorrente da prestação de serviços de transporte rodoviário regular de passageiros intermunicipal, exceto metropolitano, e de transporte rodoviário regular de passageiros interestadual.</p><p>Ocorre que receitas decorrentes de prestação de serviços de transporte coletivo rodoviário, metroviário, ferroviário e aquaviário de passageiros estão sob o regime cumulativo, nos termos do art. 10, inciso XII, da Lei nº 10.833/2023. No Programa Gerador de Escrituração – PGE da EFD Contribuições, o registro para se escriturar crédito presumido desse <b>regime cumulativo</b> é o <b>F700 – Deduções Diversas</b>, o qual ainda não se encontra totalmente em conformidade à essa alteração legislativa, de modo permitir a recepção dessa nova modalidade.</p><p>Considerando o exposto e as demandas recebidas pelo canal Fale Conosco, orientamos:</p><ul>
+<li>Escriturar no Registro F700 <b>os créditos presumidos calculados sobre a receita decorrente da prestação de serviços de transporte rodoviário regular de passageiros intermunicipal, exceto metropolitano, e de transporte rodoviário regular de passageiros interestadual (art. 2º-A da Lei nº 14.592, de 2023), conforme exemplo abaixo</b>.<p>Exemplo:</p><ul><li>Considerando que a empresa tenha direito a crédito presumido relativo à receita de transporte rodoviário regular de passageiros interestadual, no valor de R$ 1.000.000,00, a escrituração do crédito será efetuada, no registro “F700”, conforme abaixo:<ul style="list-style-type: circle;"><li>Campo 02 - IND_ORI_DED: 99 (Outras Deduções) (*)</li><li>Campo 03 – IND_NAT_DED: 1 (Dedução de Natureza Cumulativa)</li><li>Campo 04 – VL_DED_PIS:</li><li>Campo 05 – VL_DED_COFINS:</li><li>Campo 06 - VL_BC_OPER: 1.000.000,00</li><li>Campo 07 – CNPJ: xx.xxx.xxx/xxxx-xx (**)</li><li>Campo 08 – INF_COMP: Crédito Presumido art. 2º-A da Lei 14.592/2023.</li></ul></li></ul></li>
+</ul><p>(*) Enquanto não for disponibilizado código específico para o crédito presumido previsto no art. 2º-A da Lei 14.592/2023, o código 99 deverá ser utilizado. A descrição do crédito deverá ser informada no campo 08 – INF_COMP.</p><p>(**) Informar o estabelecimento que auferiu as receitas. Caso a receita seja auferida por mais de um estabelecimento, escriturar um registro F700 para cada estabelecimento.</p><ul>
+<li>Caso ocorram anulações de prestação de serviços, cujas receitas estejam sujeitas ao cálculo do crédito presumido, os correspondentes valores devem ser excluídos na base de cálculo da operação e nos respectivos campos de dedução (VL_DED_PIS e VL_DED_COFINS).</li>
+<li>Escriturar no registro <b>F100</b> os créditos presumidos aplicáveis unicamente ao regime <b>não cumulativo</b>, incidentes sobre as receitas de venda de produtos específicos. Portanto, reforçando, não devem ser informados neste registro os créditos presumidos que também se aplicam ao regime cumulativo, a relativo à prestação de serviço de transporte de passageiros (art. 2º-A da Lei nº 14.592/2023).</li>
+<li>Como regra geral, os valores escriturados nos registros F700 – Deduções Diversas - não são recuperados na geração automática de apuração, devendo sempre ser informados pela própria pessoa jurídica no arquivo importado pelo PGE ou complementado pela edição (digitação no próprio PGE) dos registros M200 (PIS) e M600 (Cofins). No caso específico deste crédito presumido do setor de transportes, os valores serão totalizados e escriturados no campo 11 - VL_OUT_DED_CUM - Outras Deduções no Período, dos registros M200 e M600, de forma a reduzir o valor da contribuição do período. Os valores de receitas e respectivas contribuições, apuradas nos registros M210 e M610, não são alterados por este procedimento.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7507" target="_blank">Portal SPED</a> <br/>Publicada em 13/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

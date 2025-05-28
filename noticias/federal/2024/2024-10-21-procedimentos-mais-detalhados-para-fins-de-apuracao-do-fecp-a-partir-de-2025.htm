@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS RJ - Resolução SEFAZ nº 714/2024 - Procedimentos mais d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/10/2024 | ICMS RJ - Resolução SEFAZ nº 714/2024 - Procedimentos mais detalhados para fins de apuração do FECP, a partir de 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo estadual publicou nova resolução que consolida e detalha as obrigações tributárias relacionadas ao Fundo Estadual de Combate à Pobreza e às Desigualdades Sociais (FECP).</p><p>A partir de 2025, os contribuintes deverão seguir as novas regras para apuração, emissão de documentos fiscais e escrituração do FECP na EFD ICMS IPI, inclusive no regime monofásico de combustíveis.</p><p>A norma revoga a Resolução SEFAZ nº 253/2021 e entra em vigor no início do terceiro/quarto mês subsequente à sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-714-de-10-de-outubro-de-2024/" target="_blank">Resolução SEFAZ nº 714/2024</a> <br/>Publicada em 11/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

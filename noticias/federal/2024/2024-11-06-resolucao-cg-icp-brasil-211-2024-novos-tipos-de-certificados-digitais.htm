@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Resolução CG ICP Brasil nº 211/2024 - Novos tipos  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/11/2024 | Federal - Resolução CG ICP Brasil nº 211/2024 - Novos tipos de certificados digitais</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Resolução dispõe sobre os novos tipos de certificados digitais emitidos no âmbito da Infraestrutura de Chaves Públicas Brasileira - ICP-Brasil.</p><p style="font-weight: bold;">Ficam criados os seguintes tipos de certificado digital no âmbito da ICP-Brasil:</p><p style="font-weight: bold;">Ficam extintos os seguintes tipos de certificado digital no âmbito da ICP-Brasil:</p><p> </p><p style="font-weight: bold;">Regras de transição</p><p>Os certificados digitais dos tipos A1, A2, A3, A4, S1, S2, S3, S4, T3 e T4, com seus perfis e propósitos de uso estabelecidos nos regulamentos da ICP-Brasil anteriores à data de publicação desta Resolução, poderão ser emitidos e utilizados na cadeia de certificação V5 durante toda a sua vigência, até 02 de março de 2029.</p><p>Poderão ser emitidos certificados digitais dos tipos A1 e A3 na cadeia V10 da AC Raiz da ICP-Brasil até 31 de dezembro de 2026 para uso restrito em aplicações específicas.</p><p>As entidades com pedido de credenciamento protocolado junto à ICP-Brasil antes da data de publicação deste regulamento deverão estar aderentes a esta Resolução e terão o prazo de até cento e oitenta dias da data de publicação deste regulamento para efetuar os ajustes necessários no pedido de credenciamento, bem como atender ao item 2.2.2.2.1 do Anexo I da Resolução CG ICP-Brasil n° 178, de 20 de outubro de 2020.</p><p>As entidades com pedido de credenciamento deferido pelo ITI e que não tenham consumado o credenciamento na ICP-Brasil poderão optar pela emissão de certificados na cadeia V5 da AC Raiz da ICP-Brasil no prazo de até cento e oitenta dias da data de publicação deste regulamento.</p><p>As entidades credenciadas na ICP-Brasil que já emitem certificados de equipamentos e aplicações na cadeia V10 terão até cento e oitenta dias, a partir da data de publicação deste regulamento, para incluir as novas políticas de aplicações específicas mediante a realização de credenciamento simplificado a ser definido por instrução normativa do ITI.</p><p>As entidades credenciadas na ICP-Brasil que já emitem certificados de equipamentos e aplicações na cadeia V5 que migrarem para a cadeia V10 em até cento e oitenta dias da data de publicação deste regulamento realizarão credenciamento simplificado nessa cadeia.</p><p>Após o período de cento e oitenta dias da data de publicação deste regulamento, a migração estará sujeita a um novo credenciamento.</p><p>Esta resolução entra em vigor na data de sua publicação.</p><p>Acesse a resolução completa nesse <a href="https://www.in.gov.br/en/web/dou/-/resolucao-cg-icp-brasil-n-211-de-31-de-outubro-de-2024-593690315" target="_blank">link</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/resolucao-cg-icp-brasil-n-211-de-31-de-outubro-de-2024-593690315" target="_blank">Resolução CG ICP Brasil nº 211/2024</a> <br/>Publicada em 04/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

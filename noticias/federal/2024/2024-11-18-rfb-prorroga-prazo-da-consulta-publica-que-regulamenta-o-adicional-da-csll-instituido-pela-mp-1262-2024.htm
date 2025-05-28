@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Instrução Normativa RFB nº 2.228/2024 - RFB prorro - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/11/2024 | Federal - Instrução Normativa RFB nº 2.228/2024 - RFB prorroga o prazo da consulta pública que regulamenta o "Adicional da CSLL" instituído pela MP nº 1.262/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria Especial da Receita Federal do Brasil prorroga o prazo da consulta pública referente a <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.228-de-3-de-outubro-de-2024-588158200" target="_blank">Instrução Normativa RFB nº 2.228, de 2024</a>, que regulamenta a apuração e o recolhimento do Adicional da CSLL.</p><p>Com a prorrogação, as submissões poderão ser efetuadas até <b>29 de novembro de 2024</b>.</p><p>O Adicional da CSLL, instituído pela Medida Provisória nº 1.262, de 3 de outubro de 2024, é uma das medidas adotadas no processo de adaptação da legislação brasileira às Regras Globais Contra a Erosão da Base Tributária - Regras GloBE, que permite ao Brasil exercer a prioridade na cobrança do Tributo Complementar devido pelos Grupos de Empresas Multinacionais em escopo em razão da baixa tributação a que estão sujeitos no País.</p><p>A Medida Provisória determinou que ato da Receita Federal promovesse a <b>regulamentação do Adicional da CSLL</b>, delimitando que esta deveria ser empreendida de modo que o Adicional da CSLL preencha os requisitos para qualificação com um Tributo Complementar Mínimo Doméstico Qualificado (Qualified Domestic Minimum Top-up Tax - QDMTT). Neste sentido, a Instrução Normativa publicada buscou espelhar as Regras-Modelo, observando em especial a definição de QDMTT e os respectivos comentários contidos na documentação de referência acerca desta definição.</p><p>A Instrução Normativa considerou todos os documentos de referência aprovados pelo Quadro Inclusivo da OCDE até 31 de dezembro de 2023 (Modelo de Regras - Model GloBE Rules, o Comentário - Commentary to the GloBE Rules, as Orientações Administrativas - Agreed Adminstrative Guidances e as demais regras, orientações e procedimentos, disponíveis em: <a href="https://www.oecd.org/en/topics/sub-issues/global-minimum-tax/global-anti-base-erosion-model-rules-pillar-two.html" target="_blank">https://www.oecd.org/en/topics/sub-issues/global-minimum-tax/global-anti-base-erosion-model-rules-pillar-two.html</a>).</p><p>A regulamentação será periodicamente atualizada para refletir o conteúdo dos novos documentos de referência publicados após 31 de dezembro de 2023, de modo que o Adicional da CSLL possa continuamente ser considerado um QDMTT.</p><p>Ciente da complexidade envolvida no processo de adaptação e na introdução das Regras GloBE, a Secretaria Especial da Receita Federal do Brasil está empenhada em revisar e aperfeiçoar continuamente os seus atos normativos de forma a privilegiar a segurança jurídica com a correta transposição das regras para o direito doméstico, bem como com a proteção da base tributária nacional. Para isso, buscando o diálogo construtivo, a Secretaria Especial da Receita Federal do Brasil conta com a participação das partes interessadas neste processo de consulta.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/novembro/rfb-prorroga-o-prazo-da-consulta-publica-sobre-a-in-rfb-no-2-228-2024-que-regulamenta-o-adicional-da-csll-instituido-pela-mp-no-1-262-2024" target="_blank">Instrução Normativa RFB nº 2.228/2024</a> <br/>Publicada em 11/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

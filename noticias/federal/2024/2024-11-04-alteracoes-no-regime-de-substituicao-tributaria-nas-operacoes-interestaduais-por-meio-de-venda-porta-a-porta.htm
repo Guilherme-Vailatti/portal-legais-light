@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Convênio ICMS nº 113/2024 - Alterações no regime d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/11/2024 | Federal - Convênio ICMS nº 113/2024 - Alterações no regime de substituição tributária nas operações interestaduais por meio de venda porta-a-porta</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Convênio ICMS nº 45/1999, que trata do regime de substituição tributária em operações interestaduais envolvendo revendedores porta a porta, passou por uma atualização. A partir de agora, esse convênio também abrange as transferências de mercadorias entre estabelecimentos de um mesmo proprietário.</p><p>Uma das principais mudanças é a forma de cálculo do ICMS devido na substituição tributária. A partir de 1º de novembro de 2024, o valor do imposto já pago em operações anteriores poderá ser deduzido do cálculo final, seguindo as regras do Convênio ICMS nº 109/2024.</p><p>Além disso, o novo regramento valida as operações de transferência realizadas entre 1º de janeiro e 31 de outubro de 2024, mesmo que o imposto pago anteriormente não tenha sido deduzido no cálculo da substituição tributária.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despacho-n-46-de-29-de-outubro-de-2024-593177786" target="_blank">Convênio ICMS nº 113/2024 através do Despacho CONFAZ nº 46/2024</a> <br/>Publicada em 31/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - ADE CORAT nº 15/2024 - Canceladas as multas por at - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/10/2024 | DCTFWeb - ADE CORAT nº 15/2024 - Canceladas as multas por atraso na entrega da declaração emitidas em 16/10 referente ao período de apuração setembro de 2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ato Declaratório Executivo Corat nº 15/2024 cancelou as multas por atraso na entrega da Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb), emitidas no dia 16/10/2024, referente ao período de apuração setembro de 2024, entregue por pessoa jurídica cujas atividades tenham data de início em 30/09/2024, constante do Cadastro Nacional da Pessoa Jurídica (CNPJ).</p><p>A pessoa jurídica que já tenha efetuado o pagamento da multa cancelada pela citada norma poderá apresentar Pedido Eletrônico de Restituição, Ressarcimento ou Reembolso e Declaração de Compensação (PER/DCOMP Web).</p><p>Por sua vez, a pessoa jurídica que já tenha compensado o valor da multa cancelada poderá cancelar a declaração de compensação ou retificá-la para excluir o débito, observado o disposto no capítulo VII da Instrução Normativa RFB nº 2.055/2021.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-corat-n-15-de-18-de-outubro-de-2024-591382704" target="_blank">Ato Declaratório Executivo CORAT nº 15/2024</a> <br/>Publicada em 21/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
