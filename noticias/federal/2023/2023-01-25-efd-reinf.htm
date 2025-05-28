@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD-Reinf - Liberação da versão EFD Reinf 2.1.1 - Reten - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/01/2023 | SPED EFD-Reinf - Liberação da versão EFD Reinf 2.1.1 - Retenções</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Senior Sistemas, visando atender de forma completa a entrega da <b>EFD Reinf 2.1.1</b>, disponibilizará na versão do dia <b>10 de fevereiro</b> a família R-4000 das retenções (<b>ERP XT + eDocs</b>).</p><p>Como participante ativa no processo de <b>homologação junto à Receita Federal</b>, a Senior atenderá as melhores práticas para <b>gestão completa</b> dos novos eventos <b>financeiros, fiscais e previdenciários</b>.</p><p>A nova Reinf está prevista para entrar em vigor <b>a partir de março de 2023</b>.</p><p>Acompanhe as notícias no nosso <a href="https://documentacao.senior.com.br/exigenciaslegais/" target="_blank">Portal de Exigências Legais</a> e, a partir do dia 10/02/23, acesse nossa página com as <b>notas da versão</b> e siga as <b>instruções de atualização</b>:</p><p style="text-align: center;"><a class="botao-cinza" href="https://documentacao.senior.com.br/gestaoempresarialerp/notasdaversao/#5-10-2/5-10-2-80.htm" target="_blank">Notas da versão</a></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://materiais.senior.com.br/gdc-lp-notas-da-versao-e-comunicados" target="_blank">Comunicado Senior</a> <br/>Publicada em 25/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

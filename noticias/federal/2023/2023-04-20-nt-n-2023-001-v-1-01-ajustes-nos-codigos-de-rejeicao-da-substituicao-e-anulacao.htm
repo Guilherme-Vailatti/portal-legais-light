@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e CT-e OS - NT nº 2023.001, v. 1.01 - Ajustes nos códigos - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/04/2023 | CT-e CT-e OS - NT nº 2023.001, v. 1.01 - Ajustes nos códigos de rejeição da substituição e anulação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Técnica apresenta ajustes nas regras de validação do CT-e, CT-e OS e GTV-e visando adequar a autorização com a legislação do CT-e conforme Ajuste SINIEF 31/22.</p><p>A versão 1.01 da Nota Técnica 2023.001 traz alteração para os códigos de rejeição 995 e 996. O código de rejeição 995 passa para 990, e o código de rejeição 996 passa para 991.</p><p>Alterações promovidas em razão desses códigos estarem em uso em outro web service.</p><p><b>Cronograma de Implantação</b>
+</p><ul>
+<li><b>Ambiente de homologação</b>: 24/04/2023</li>
+<li><b>Ambiente de produção</b>: 26/06/2023</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Cte/Documentos" target="_blank">Nota Técnica 2023.001 v1.01
+</a> <br/>Publicada em 19/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - IF 2023.001 - Divulga nova tabela de código de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/02/2023 | NF-e NFC-e - IF 2023.001 - Divulga nova tabela de código de produtos da ANP vigente a partir de março/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado Informe Técnico que divulga a tabela de produtos da ANP (Agência Nacional de Petróleo) e planilha eletrônica com códigos de produtos da ANP, <b>vigente a partir de 13/03/2023</b>.</p><p>O objetivo deste Informe Técnico é divulgar a publicação da nova versão da <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=">Tabela de Códigos de Produtos da ANP</a>, disponível no <a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx">Portal Nacional da NF-e</a>, na aba “Documentos”, opção “Diversos”.</p><p>Os prazos dessa atualização de tabelas estão documentados anteriormente, no item que trata de “Controle de Versões”, para a versão mais recente deste Informe Técnico.</p><p>Atualmente as tabelas da ANP, Agência Nacional de Petróleo, podem ser obtidas no site da <a href="https://csa.anp.gov.br/informacoes/simp">Central de Sistemas ANP</a>. Essas tabelas não são usadas no Serviço de Autorização dos Documentos Fiscais Eletrônicos, mas são úteis para as empresas que operam com combustível.</p><p>No site  da Central de Sistemas ANP, informado anteriormente, é possível realizar o download de um arquivo ZIP com as Tabelas de Apoio ao I-SIMP (Sistema de Informações de Movimentação de Produtos), da Agência Nacional de Petróleo. A tabela citada consta no arquivo "T012-Codigos_de_produtos", para os Códigos de produto com a Data Final de Validade não informada.</p><ul>
+<li>Teste: 13/02/2023</li>
+<li>Produção: 13/03/2023</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=pOpc8eWvlKc=&amp;AspxAutoDetectCookieSupport=1" target="_blank">Informe Técnico 2023.001</a> <br/>Publicada em 03/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

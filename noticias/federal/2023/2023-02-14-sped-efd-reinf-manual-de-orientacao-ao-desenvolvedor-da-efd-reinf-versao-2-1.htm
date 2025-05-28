@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Manual de orientação ao desenvolvedor da EF - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/02/2023 | SPED EFD Reinf - Manual de orientação ao desenvolvedor da EFD Reinf, versão 2.1</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi disponibilizada no ambiente de produção restrita uma nova atualização da EFD-Reinf, contendo as novas API´s no formato REST, para consulta dos recibos de entrega dos eventos.</p><p>O manual do desenvolvedor foi atualizado na versão 2.1 com a documentação necessária para a utilização dessas API´s.</p><p>Para ter acesso a essa versão, <a href="http://sped.rfb.gov.br/arquivo/show/7157" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7158" target="_blank">Portal SPED</a> <br/>Publicada em 06/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

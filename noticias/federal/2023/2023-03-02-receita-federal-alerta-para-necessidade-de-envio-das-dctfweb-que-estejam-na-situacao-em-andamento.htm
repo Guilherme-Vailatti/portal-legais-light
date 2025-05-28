@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Receita Federal alerta para necessidade de envio d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/03/2023 | DCTFWeb - Receita Federal alerta para necessidade de envio das DCTFWeb que estejam na situação “em andamento”</h1>
+</div>
+<div class="noticia-corpo">
+<p>Declarações que não forem enviadas poderão gerar pendência fiscal e impedir a emissão de certidão negativa.</p><p>Recentemente, a Receita Federal encaminhou aos contribuintes, via caixa postal do e-CAC, mensagem eletrônica informando sobre a necessidade de transmitir eventuais Declarações de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb) que estiverem na situação “em andamento”.</p><p>A cada novo encerramento mensal do Sistema de Escrituração Digital das Obrigações Fiscais, Previdenciárias e Trabalhistas (eSocial) e da Escrituração Fiscal Digital de Retenções e Outras Informações Fiscais (EFD-Reinf), realizado pelos próprios contribuintes, é gerada uma nova DCTFWeb na situação “em andamento”, <b>que deve ser transmitida mesmo que não tenha havido mudança nos valores confessados</b>.</p><p>A transmissão é obrigatória, nos termos do art. 16, §12, da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=115131" target="_blank">Instrução Normativa RFB nº 2.005/2021</a>, e garante a integridade entre os dados informados no eSocial, EFD-Reinf e DCTFWeb. A falta de transmissão poderá impedir a emissão de Certidão Negativa de Débitos (CND).</p><p><b>Entenda</b>
+</p><p>Para regularizar a situação, basta acessar o serviço relativo à DCTFWeb, no Portal eCAC, e transmitir todas as declarações que estão na situação “em andamento”.</p><p>Para as declarações originais que porventura forem transmitidas após o prazo legal, haverá lançamento automático de multas pelo atraso na entrega (MAED). Não serão lançadas multas para declarações retificadoras.</p><p>Contribuintes que já tenham efetuado o pagamento do DARF e não identificarem alterações nos valores declarados, não precisam realizar novo pagamento. Os sistemas da Receita Federal alocarão o pagamento ao débito de forma automática.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/fevereiro/receita-federal-alerta-para-necessidade-de-envio-das-dctfweb-que-estejam-na-situacao-201cem-andamento201d" target="_blank">Receita Federal</a> <br/>Publicada em 24/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

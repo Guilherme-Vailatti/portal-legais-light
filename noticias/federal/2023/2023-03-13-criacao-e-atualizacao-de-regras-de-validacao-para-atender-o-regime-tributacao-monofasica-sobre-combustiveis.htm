@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - NT 2023.001, versão 1.10 - Criação e atualizaçã - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/03/2023 | NF-e NFC-e - NT 2023.001, versão 1.10 - Criação e atualização de regras de validação para atender o regime tributação monofásica sobre combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada Nota Técnica 2023.001, versão 1.10, trazendo aperfeiçoamentos e sugestões apontadas por empresas que atuam no segmento de combustíveis, juntamente com a atualização da lista de produtos; alíquotas, além de instruções para preenchimento do DANFE (campo Informações Complementares).</p><p style="font-weight: bold;">Alterações na versão 1.10</p><p style="font-weight: bold;">2.4.1. Criação dos campos indicadores da Base de Cálculo do ICMS monofásico (campos: qBCMono, qBCMonoReten , qBCMonoRet e qBCMonoDif)</p><p>Estes campos visam permitir a indicação da Base de Cálculo do ICMS monofásico para cada uma das situações tributárias existentes.</p><p style="font-weight: bold;">2.4.2. Criação dos campos totalizadores das Bases de Cálculo do ICMS monofásico (campos: qBCMono, qBCMonoReten , qBCMonoRet) no Grupo W. Total da NF-e.</p><p>Campos criados para realizar a totalização os valores das Bases de Cálculo do ICMS monofásico informadas nos itens da NF-e. Estes campos possuem preenchimento facultativo para evitar erros de schema neste momento.</p><p style="font-weight: bold;">2.4.3. Criação dos campos pRedAdRem (id: N47) e motRedAdRem (id: N48)</p><p>Estes campos devem ser preenchidos quando houver algum Percentual de redução do valor da alíquota adrem, juntamente com o indicador do motivo desta redução.</p><p style="font-weight: bold;">2.4.4. Alteração da regra de Validação I13-20</p><p>Criada exceção nesta regra para operações de comércio exterior, permitindo que sejam informadas unidades tributárias específicas de exportação</p><p style="font-weight: bold;">2.4.5. Criação da Regra de Validação LA18-20</p><p>A regra LA18-20 visa obrigar o preenchimento do grupo de origem do combustível (tag: origComb) se preenchido um dos campos Percentual de Gás Natural Nacional – GLGNn para o produto GLP (tag: pGNn) ou Percentual de Gás Natural Importado – GLGNi para o produto GLP (tag: pGNi) com valor diferente de “0”.</p><p style="font-weight: bold;">2.4.6. Criação da Regra de Validação LA18-30</p><p>Esta regra visa proibir o preenchimento do grupo indicador da origem do combustível (tag:origComb) para produtos que não estejam presentes na Tabela de Combustíveis Sujeitos à Tributação Monofásica.</p><p style="font-weight: bold;">2.4.7. Criação da Regra de Validação LA21-20</p><p>Para os produtos com os códigos ANP 210203001, 210203003, 210203004, 210203005, caso informado o grupo indicador da origem do combustível (tag: origComb), o somatório dos percentuais originários para a UF (tag: pOrig) deverá ser feito por opção “0” ou “1” informada no campo indicador de importação (tag: indImport). O somatório de cada opção, se informada, deverá totalizar 100.</p><p style="font-weight: bold;">2.4.8. Alteração da Regra de Validação N12-110</p><p>Adicionada exceção à esta regra para permitir também a utilização dos CSTs 40, 41 e 50</p><p style="font-weight: bold;">2.4.9. Alteração das Regras de Validação N39-10, N41-10 e N45-10</p><p>Estas regras foram alteradas para considerar a respectiva Base de Cálculo de cada situação tributária no cálculo do ICMS monofásico correspondente. Além disso, a Regra N41-10 teve sua redação corrigida para considerar o CST correto (CST = 15).</p><p style="font-weight: bold;">2.4.10. Revogação das Regras de Validação N38-10, N40-10 e N44-10</p><p>Estas regras visavam validar o valor informado na alíquota adrem de cada situação tributária do imposto com o valor definido pelo Convênio ICMS 199/2022. No entanto, por se tratar ainda de um período de transição e para melhor análise do impacto em alterações futuras de alíquotas, foram revogadas para posterior reavaliação.</p><p style="font-weight: bold;">2.4.11. Criação das Regras de Validação W06b.1-10, W06c.1-10, W06d.1-10</p><p>O objetivo destas regras é verificar a correta totalização dos valores das quantidades tributadas informadas nos itens da NF-e.</p><p style="font-weight: bold;">Cronograma de Alterações (Atualização):</p><p style="font-weight: bold;">- Versão 1.00</p><p style="font-weight: bold;">Novos campos e alterações de regras existentes abrangendo a nova forma de tributação monofásica sobre combustíveis</p><p>Teste: Até 03/03/2023</p><p>Produção: 30/03/2023</p><p style="font-weight: bold;">Novas regras de validação para tributação monofásica sobre combustíveis</p><p>Teste: Até 03/07/2023</p><p>Produção: 04/09/2023</p><p style="font-weight: bold;">- Versão 1.10</p><p style="font-weight: bold;">Alterações no DANFE NF-e para constar os novos campos de ICMS monofásico sobre combustíveis e inclusão de novos campos.</p><p style="font-weight: bold;">Criação de campos para indicação das Bases de Cálculo do ICMS monofásico e também de seus totais.</p><p>Teste: Até 03/03/2023</p><p>Produção: 30/03/2023</p><p style="font-weight: bold;">Criação de regras de validação para verificação do somatório das bases de cálculo do ICMS monofásico</p><p>Teste: Até 03/07/2023</p><p>Produção: 04/09/2023</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica 2023.001, versão 1.10</a> <br/>Publicada em 10/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

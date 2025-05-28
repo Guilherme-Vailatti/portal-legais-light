@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação RS - Receita Estadual anuncia mais uma simplifica - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/02/2023 | Legislação RS - Receita Estadual anuncia mais uma simplificação das obrigações tributárias acessórias dos contribuintes</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Estadual está promovendo mais uma simplificação das obrigações tributárias acessórias dos contribuintes gaúchos com o ICMS. Trata-se da dispensa da apresentação dos registros de detalhamento das saídas isentas, não tributadas, diferidas, suspensas ou tributadas anteriormente por Substituição Tributária na Escrituração Fiscal Digital ICMS/IPI (EFD), quando relativos a operações acobertadas por Nota Fiscal de Consumidor Eletrônica (NFC-e).</p><p>A novidade, que consta na Instrução Normativa RE Nº 011/23, publicada no Diário Oficial do Estado na segunda-feira (27/2), é válida a partir da entrega da EFD da competência de março de 2023. Na prática, os contribuintes ficam dispensados dos registros E115 da EFD que utilizam os códigos iniciados por “RS51” e “RS52”, e que acabam refletindo nos Anexos V.A e V.B da Guia de Informação e Apuração do ICMS (GIA).</p><p>De acordo com Giovanni Ciliato, auditor-fiscal da Receita Estadual e um dos responsáveis pela implementação da medida, a mudança impacta principalmente na redução do tempo de processamento da EFD. “Isso ocorre porque os registros dispensados trazem informações que, para serem corretamente obtidas, exigem a análise detalhada de cada um dos itens (mercadoria por mercadoria) e de cada uma das NFC-e emitidas. Para alguns contribuintes, como os grandes varejistas, o processamento chega a levar algumas horas para cada estabelecimento”, explica Ciliato.</p><p>Outro ponto a ser destacado é que a funcionalidade está disponível para todos os contribuintes obrigados a entregar a EFD e emitentes de NFC-e, inclusive aqueles que não adotaram o Regime Optativo de Tributação da Substituição Tributária (ROT-ST).</p><p>A medida está inserida na iniciativa Obrigação Fiscal Única da agenda Receita 2030, programa composto por uma série de ações para modernização da administração tributária gaúcha. Nesse contexto, em iniciativa pioneira entre os fiscos estaduais do Brasil, a Receita Estadual oferece, desde junho de 2021, a possibilidade da dispensa da escrituração da NFC-e na EFD, um avanço histórico para a chamada “Apuração Assistida”, que busca calcular o ICMS mensal devido a partir das informações prestadas nos Documentos Fiscais Eletrônicos (DF-e).</p><p>O objetivo, no futuro, é estabelecer a emissão do DF-e como única obrigação do contribuinte, permitindo maior foco nos seus negócios. Entre os benefícios esperados, estão a melhoria do ambiente de negócios e a redução da burocracia e do custo para os contribuintes e para o Estado.</p><p>A agenda Receita 2030 é composta por 30 ações cujo foco é promover a transformação digital do fisco, a simplificação extrema das obrigações dos contribuintes, a melhoria do ambiente de negócios, o desenvolvimento econômico e a otimização das receitas estaduais.</p><p style="font-style: italic;">Texto: Ascom Sefaz</p><p style="font-style: italic;">Edição: Secom</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://estado.rs.gov.br/receita-estadual-anuncia-mais-uma-simplificacao-das-obrigacoes-tributarias-acessorias-dos-contribuintes" target="_blank">SEFAZ RS</a> <br/>Publicada em 28/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

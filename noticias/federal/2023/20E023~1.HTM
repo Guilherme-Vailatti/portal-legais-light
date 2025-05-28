@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e - NT 2020.007, v. 1.23 - Alterada data do novo evento g - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>03/02/2023 | NF-e - NT 2020.007, v. 1.23 - Alterada data do novo evento gerado pelo emitente ou destinatário quanto ao transportador responsável pela movimentação da carga</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Divulgada a especificação do novo evento gerado pelo emitente ou destinatário da NF-e, no qual será possível informar o transportador responsável pela movimentação da carga. Na nova versão 1.23 houve alteração no prazo de implantação.</p><ul>
+<li>Teste: 10/07/2023</li>
+<li>Produção: 21/08/2023</li>
+</ul><p>Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=0xh8W2y+tIA=">Portal NF-e</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&Informe=0xh8W2y+tIA=' target='_blank'>Nota Técnica 2020.007, versão 1.23</a> <br>Publicada em 03/02/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

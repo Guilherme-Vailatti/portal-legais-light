@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Reforma tributária terá regra de transi - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/03/2023 | Reforma Tributária - Reforma tributária terá regra de transição de 20 anos</h1>
+</div>
+<div class="noticia-corpo">
+<p>A reforma tributária terá uma regra “suave” de transição de 20 anos, disse, nesta terça-feira (28), o ministro da Fazenda, Fernando Haddad. Em discurso na Marcha em Defesa dos Municípios, ele afirmou que esse prazo evitará que as prefeituras percam recursos.</p><p>Haddad defendeu a urgência de aprovação da reforma tributária, citando o alto volume de processos judiciais em torno de disputas que envolvem impostos no país. “[Existe uma] briga para pagar ou não pagar imposto. Às vezes, a pessoa nem sabe o que deve”, declarou o ministro durante o evento, organizado pela Confederação Nacional de Municípios (CNM).</p><p>O ministro pediu “um pouquinho de desprendimento” aos municípios. Segundo ele, a união para aprovar a reforma tributária é necessária para mudar o sistema e incentivar o crescimento da economia. “Aqui não é guerra federativa, entre Estados, municípios e União. Estamos ouvindo dos 27 governadores que essa reforma tributária é justa, porque coloca o cidadão acima de tudo. Ele tem que estar no alto das prioridades”, declarou.</p><p>Haddad considerou a reforma tributária entre “as três ou cinco medidas” mais importantes para o país. Além da mudança no sistema de impostos, ele citou a reforma no sistema de crédito e o novo marco fiscal, como as principais medidas do governo na área econômica.</p><p>Também presente no evento, a ministra do Planejamento, Simone Tebet, disse que os prefeitos não devem temer a unificação do Imposto sobre Serviços (ISS), atualmente administrado pelos municípios, com o Imposto sobre a Circulação sobre Mercadorias e Serviços (ICMS). Ela repetiu o argumento de Haddad de que a reforma tributária não retirará recursos dos municípios e poderá resultar em mais receitas, por causa do crescimento da economia.</p><p>“Esta reforma tributária é a única bala de prata que temos. Embora a reforma mantenha a arrecadação igualitária nos primeiros 20 anos, ela alivia a indústria, faz a indústria ser competitiva”, declarou. A ministra reiterou que o governo pretende criar um fundo constitucional para compensar eventuais perdas de recursos durante o prazo de transição.</p><p>Relator da reforma tributária, o deputado Aguinaldo Ribeiro (PP-PB), disse haver comprometimento dos presidentes da Câmara, Arthur Lira, e do Senado, Rodrigo Pacheco, em relação ao tema. Segundo ele, existe a disposição dos dois em botarem o tema em votação ainda este ano. Ribeiro também garantiu que as discussões levam em conta os municípios.</p><p>“Temos o desafio de não olhar cada um para si, mas de olhar o todo. E com essa obrigação, temos de entender que a vida ocorre no município. O prefeito é um pouco de delegado, médico, psicólogo, um pouco de tudo. Precisamos ter um país mais forte do ponto de vista do seu crescimento econômico. Estamos falando de promoção de riqueza, de geração de emprego e renda. Isso vai fazer nossa economia crescer e consolidar o Estado brasileiro como um país forte”, afirmou.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://agenciabrasil.ebc.com.br/economia/noticia/2023-03/reforma-tributaria-tera-regra-de-transicao-de-20-anos" target="_blank">Agência Brasil</a> <br/>Publicada em 28/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

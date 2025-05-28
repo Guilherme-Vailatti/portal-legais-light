@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SC - Ato DIAT nº 25/2023 - Aprovado guia prático  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | Legislação SC - Ato DIAT nº 25/2023 - Aprovado guia prático de escrituração de incentivos e benefícios fiscais para Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado de Santa Catarina aprovou Guia Prático de Escrituração de Incentivos e Benefícios Fiscais, com o objetivo de sistematizar e padronizar as informações que deverão constar nos documentos fiscais eletrônicos e na escrituração fiscal dos contribuintes que promoverem operações e prestações alcançadas por crédito presumido, diferimento, isenção, redução de base de cálculo e suspensão da exigibilidade do ICMS.</p><p>O Guia Prático ficará disponível no endereço eletrônico da Secretaria de Estado da Fazenda de Santa Catarina, na aba "Incentivos Fiscais", localizada dentro da guia "Todos os Assuntos" da seção "Serviços e Orientações".</p><p>Importante observar que as alterações no Guia Prático serão divulgadas por meio de Correio Eletrônico Circular.</p><p>A norma entrou em vigor em 18.04.2023, data da sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/atos_diat/2023/atodiat_23_027.htm" target="_blank">Ato DIAT nº 25/2023
+</a> <br/>Publicada em 18/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

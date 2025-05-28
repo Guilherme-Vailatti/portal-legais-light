@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - NT 2016.003, v.3.5 - Nova tabela de NCM com efe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/02/2023 | NF-e NFC-e - NT 2016.003, v.3.5 - Nova tabela de NCM com efeitos a partir de abril/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Resolução Gecex nº 440, de 27 de dezembro de 2022, divulgou a alteração na tabela de NCM com efeitos a partir de 01/04/2023.</p><p><b>Tabela de códigos de NCM incluídos e excluídos</b>
+</p><ul>
+<li>Teste: 15/03/2023</li>
+<li>Produção: 01/04/2023</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=gHveCSDQhSM=" target="_blank">Nota Técnica 2016.003, versão 3.5</a> <br/>Publicada em 03/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

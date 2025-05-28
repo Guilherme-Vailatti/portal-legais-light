@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NFS-e - Comitê Gestor do Simples Nacional prorroga início da - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>04/04/2023 | NFS-e - Comitê Gestor do Simples Nacional prorroga início da obrigação da emissão da NFS-e para Microempreendedores Individuais</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Comitê Gestor do Simples Nacional (CGSN) decidiu prorrogar para 1º de setembro de 2023 o início do prazo da obrigatoriedade da emissão da Nota Fiscal de Serviços eletrônica (NFS-e) que estava prevista para o próximo dia 3 de abril.</p><p>A Resolução do CGSN também atualiza as normas que tratam da transação tributária no âmbito do Simples Nacional.</p><p>Pela nova regra, débitos que estejam em contencioso administrativo fiscal nas fazendas federal, estadual, municipal e distrital poderão ser transacionados.</p><p>Será permitida também a utilização de precatórios ou direito creditório, que já tenham sentença transitada e julgada, para amortização da dívida tributária principal, juros e multa, desde que o valor a ser utilizado seja de créditos tributários do próprio devedor.</p><p>A Resolução CGSN será publicada em edição extra do Diário Oficial da União desta sexta-feira (31).</p><p>Fonte: <a href="http://www.fazenda.mg.gov.br/noticias/2023/2023.03.22_novo_ricms"><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/marco/comite-gestor-do-simples-nacional-prorroga-inicio-da-obrigacao-da-emissao-da-nfs-e-para-microempreendedores-individuais">Receita Federal</a></a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/marco/comite-gestor-do-simples-nacional-prorroga-inicio-da-obrigacao-da-emissao-da-nfs-e-para-microempreendedores-individuais' target='_blank'>Receita Federal</a> <br>Publicada em 31/03/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

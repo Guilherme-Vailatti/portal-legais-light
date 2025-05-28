@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Senadores concordam que reforma tributá - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2023 | Reforma Tributária - Senadores concordam que reforma tributária seja prioridade em 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Está em análise no Senado a Proposta de Emenda à Constituição (PEC) <a href="http://www25.senado.leg.br/web/atividade/materias/-/materia/137699" target="_blank">110/2019</a>, que altera o sistema tributário brasileiro. O senador Angelo Coronel (PSD-BA) defende que a proposta seja debatida com vários segmentos da sociedade na busca de um consenso.</p><p>Já o senador Plínio Valério (PSDB-AM) destacou que a PEC que está em tramitação deve ser aproveitada, e que a discussão deve acontecer ainda no primeiro semestre. O governo do presidente Lula sinalizou que a reforma tributária deve ser uma das prioridades de 2023.</p><p>Confirma mais sobre os projetos da Reforma Tributária <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/destaques/reforma-tributaria.htm" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/audios/2023/01/senadores-concordam-que-reforma-tributaria-seja-prioridade-em-2023" target="_blank">Agência Senado</a> <br/>Publicada em 23/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

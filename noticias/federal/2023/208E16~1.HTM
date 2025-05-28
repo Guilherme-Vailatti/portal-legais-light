@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e - NT 2022.003 v.1.11 e 2022.005 v.1.10 - Divulgada duas - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>02/02/2023 | NF-e - NT 2022.003 v.1.11 e 2022.005 v.1.10 - Divulgada duas NT com novos campos e regras de validação e outra sobre ICMS na operação interestadual de vendas a consumidor final</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Publicadas novas versões das NT 2022.003 e 2022.005, sendo que as alterações de ambas Notas Técnicas não impactam as empresas (somente as SEFAZ autorizadoras).</p><p>- <b>Nota Técnica 2022.003, versão 1.11 - Novos Campos e Regras de Validação</b></p><p>Essa versão trouxe somente uma adequação ao texto do item 2.1.1 e alterações na documentação das Regras BA02-60 e BA02a-110 que impactam somente as SEFAZ autorizadoras.</p><p><b>Cronograma de Implantação:</b>
+</p><p>Teste: 07/02/2023</p><p>Produção: 03/04/2023</p><p>- <b>Nota Técnica 2022.005, versão 1.10 - ICMS na operação interestadual de vendas a consumidor final</b></p><p>Essa versão da Nota Técnica traz algumas alterações em Regra de Validação, principalmente com a criação de exceções para evitar a rejeição por parte da SEFAZ Autorizadora. A versão, a princípio, não afeta o esforço de implementação por parte das empresas, portanto o prazo de entrada em homologação fica mantido.</p><p>Alterada a data de entrada em produção para 03/04/23, já que foi publicado incorretamente dia 06/04/23, que é véspera de feriado nacional.</p><p><b>Cronograma de Implantação:</b>
+</p><p>Teste: x</p><p>Produção: 03/04/2023</p><p>Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=qhdD5kFexWY=" target="_blank">Portal NF-e</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=' target='_blank'>Nota Técnica 2022.003 v.1.11 e 2022.005 v.1.10</a> <br>Publicada em 25/01/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

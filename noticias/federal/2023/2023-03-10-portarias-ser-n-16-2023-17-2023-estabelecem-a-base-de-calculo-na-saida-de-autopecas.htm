@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST SP - Portarias SRE nº 16/2023 e 17/2023 estabelecem  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/03/2023 | ICMS ST SP - Portarias SRE nº 16/2023 e 17/2023 estabelecem a base de cálculo na saída de autopeças</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria da Fazenda do Estado de São Paulo publicou as Portarias SRE 16 e 17, que alteram o Índice de Valor Adicionado Setorial (IVA-ST) utilizado para calcular o Imposto sobre Circulação de Mercadorias e Serviços por Substituição Tributária (ICMS-ST), sobre as operações com autopeças - Art. 313-o - Anexo XIV da Portaria CAT 68/2019. O Índice de Valor Adicionado Setorial - IVA-ST será:</p><p>No período de 1º de abril de 2023 a 31 de dezembro de 2024, com exceção aos indicados nos itens 53 e 54 - acumuladores elétricos de chumbo, do tipo utilizado para o arranque dos motores de pistão.</p><p>1) <b>47,19%, tratando-se de saída de estabelecimento</b>:</p><p>2) <b>72,15% nos demais casos</b>:</p><p>No período de 1º de abril de 2023 a 30 de setembro de 2023.</p><p>1) <b>47,19%, tratando-se de saída de estabelecimento</b>:</p><p>2) <b>Nos demais casos</b>:</p><p>As referidas Portarias SRE 16 e 17 ainda orientam que na hipótese de entrada de mercadoria proveniente de outra unidade da Federação cuja saída interna seja tributada com alíquota superior à alíquota interestadual aplicada pelo remetente, o estabelecimento destinatário paulista deverá utilizar o "IVA-ST ajustado" da seguinte forma:</p><p><b>IVA-ST ajustado</b> = [(1+IVA-ST original) x (1 - ALQ inter)/(1 - ALQ intra)] -1, onde:</p><p>As portarias entram em vigor em <b>1º de abril de 2023</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Atos.aspx?Tipo=Portarias%20CAT/SRE&amp;StartDate=2023-01-01&amp;EndDate=2023-12-31" target="_blank">Portaria SRE 16/2023</a> <br/>Publicada em 10/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

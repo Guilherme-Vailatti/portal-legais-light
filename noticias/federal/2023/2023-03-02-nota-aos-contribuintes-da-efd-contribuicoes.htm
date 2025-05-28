@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Nota aos contribuintes da EFD Contr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/03/2023 | SPED EFD Contribuições - Nota aos contribuintes da EFD Contribuições</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em face à ampliação da possibilidade de crédito presumido na razão de 75% das alíquotas básicas da não cumulatividade de PIS/Cofins a todas as pessoas jurídicas que contratem serviço de transporte de carga prestados por transportadoras optantes pelo SIMPLES e pessoa física, transportador autônomo (Nova redação do § 19 do art. 3º da Lei 10.833/2003, pela Lei nº 14.440/2022), esclarecemos que:</p><p>Em todos casos acima, a contratação deverá ser escriturada utilizando a natureza da base de cálculo do crédito - 14  “Transporte de Cargas – Contratação de prestador pessoa física ou PJ transportadora, optante pelo SIMPLES”  e um dos códigos CST de crédito presumido abaixo indicados:</p><ul>
+<li>60 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Tributada no Mercado Interno</li>
+<li>61 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita Não-Tributada no Mercado Interno</li>
+<li>62 - Crédito Presumido - Operação de Aquisição Vinculada Exclusivamente a Receita de Exportação</li>
+<li>63 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno</li>
+<li>64 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas no Mercado Interno e de Exportação</li>
+<li>65 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Não-Tributadas no Mercado Interno e de Exportação</li>
+<li>66 - Crédito Presumido - Operação de Aquisição Vinculada a Receitas Tributadas e Não-Tributadas no Mercado Interno e de Exportação</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7166" target="_blank">Portal SPED</a> <br/>Publicada em 02/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SC - Portaria SEF nº 59/2023 - Realizadas novas a - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/03/2023 | Legislação SC - Portaria SEF nº 59/2023 - Realizadas novas alterações no manual de orientação da DIME</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado de Santa Catarina alterou a Portaria SEF nº 153/2012, que aprovou o Manual de Orientação e as Especificações da DIME. Com as alterações, a partir do período de referência março de 2023, não estarão disponíveis para preenchimento:</p><p>Foi acrescentado ao Quadro 11, o campo 116 - Devolução de mercadorias e desfazimento de venda. Nesse campo será lançado o valor do crédito do imposto relativo à substituição tributária, correspondente à devolução de mercadorias ou desfazimento de vendas cujo imposto foi retido por substituição tributária.</p><p>Por fim, foram revogados diversos itens da Portaria SEF nº 153/2012, com destaque ao item 3.14.2 do Anexo II, que dispunha do Registro tipo 34 - Informações sobre Diferença de Alíquota de Operação Interestadual à Consumidor.</p><p>A norma produz efeitos a contar de 1º de março de 2023 em relação ao seu art. 4º, e a contar de 10.03.2023 quanto as demais alterações.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/portarias/2023/port_23_059.htm" target="_blank">Portaria SEF nº 59/2023</a> <br/>Publicada em 10/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - IT 2023.002, v. 1.00 - Correções na tabela de C - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/04/2023 | NF-e NFC-e - IT 2023.002, v. 1.00 - Correções na tabela de CFOP</h1>
+</div>
+<div class="noticia-corpo">
+<p>O objetivo deste Informe Técnico é divulgar a publicação da nova versão da “Tabela CFOP”, disponível no <a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx">Portal Nacional da NF-e</a>, na aba “Documentos”, opção “Diversos”.  </p><ul>
+<li>Divulgar a correção na Tabela CFOP decorrente da criação de CFOP pelo Ajuste SINIEF 10/2021;</li>
+<li>Incluir CFOP: 3.552; 3.667; 7.552 (Conforme Ajuste SINIEF 10/2021);</li>
+<li>Excluir o registro duplicado do CFOP 2.652, por já existir registro igual na tabela atual.</li>
+</ul><p>Os códigos contidos na Tabela CFOP disponível no Portal Nacional da NF-e são criados, alterados ou excluídos a partir de Ajustes SINIEF publicados no Portal do <a href="https://www.confaz.fazenda.gov.br/">CONFAZ</a>.</p><p><b>Cronograma de Implantação:</b>
+</p><ul>
+<li><b>Ambiente de Homologação</b>: até 17/04/2023;</li>
+<li><b>Ambiente de Produção</b>: até 24/04/2023.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=CJMXayJrbQk=" target="_blank">IT 2023.002, versão 1.00</a> <br/>Publicada em 11/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

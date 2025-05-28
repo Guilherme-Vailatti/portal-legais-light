@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SP - Fisco de São Paulo trabalha para eliminar a  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/02/2023 | Legislação SP - Fisco de São Paulo trabalha para eliminar a GIA em 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em busca de eliminar redundância de informações e burocracia, o Grupo de Trabalho coordenado pelo Sescon-SP e formado pelas entidades congraçadas da contabilidade paulista, o Sebrae-SP e uma equipe da Secretaria da Fazenda e Planejamento do Estado de São Paulo tem trabalhado para a extinção da GIA – Guia de Informação e Apuração do ICMS.</p><p>Nesta sexta-feira, 3 de fevereiro, o GT se reuniu com diversas empresas de software de diversas partes do Brasil para um alinhamento de questões tecnológicas, em busca da parametrização dos sistemas de escrituração das empresas de contabilidade e dos contribuintes com o sistema do Fisco Estadual.</p><p>Na oportunidade, o auditor Fiscal da Receita Estadual, Cláudio Roberto Ferreira, fez uma apresentação sobre o projeto que visa eliminar a necessidade de entrega mensal da GIA e a adoção apenas da EFD-ICMS, que contêm informações similares.</p><p>O especialista informou que, em 2023, será iniciado o processo de dispensa progressiva de entrega da GIA pelos contribuintes e explicou que, como o programa da GIA possui algumas validações que não existem na EFD, essa extinção se dará de forma gradual. “Em um primeiro momento, o contribuinte que consegue prestar informações via escrituração fiscal digital de qualidade será premiado com a dispensa”, disse ele, ao destacar que as inconsistências entre as exigências serão analisadas ao longo de doze meses para analisar se é possível desobrigar a empresa da GIA.</p><p>A expectativa é que em meados de 2023, com publicação de uma legislação sobre o assunto, seja iniciado o processo de dispensa para contribuintes que atendam os seguintes critérios:</p><ul>
+<li>Divergências e inconsistências dentro de limites aceitáveis;</li>
+<li>Documentos fiscais devidamente escriturados;</li>
+<li>Avaliados para os últimos 12 meses;</li>
+<li>Inexistência de omissão.</li>
+</ul><p>Durante a reunião, o grupo debateu os próximos passados para a redução gradual dessas inconsistências e o papel importante das empresas de tecnologia para esse processo. “Agora precisamos trabalhar para tratar os grandes problemas e inserir nessa dispensa da GIA o maior número possível de contribuintes”, disse o vice-presidente do Sescon-SP, Antonio Carlos Souza dos Santos.</p><p>O Sescon-SP capitaneará um grupo de trabalho que reunirá as empresas de softwares e empresas contábeis para que se consiga, em curto espaço de tempo, detectar todos os problemas e inconsistências.</p><p>Entre os representantes da Sefaz/SP, estiveram presentes o diretor adjunto de Gestão e Atendimento, Marcel Siqueira, e os auditores fiscais Walter Bentivegna e Sângia Lopes.</p><p>Também participaram representantes das entidades congraçadas da contabilidade paulista, a Afrac e de empresas de software do país, além do consultor da Frente Parlamentar do Empreendedorismo da Alesp, Silvério Crestana.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sescon.org.br/noticias/entidades-contabeis-e-empresas-de-softwares-atuam-junto-a-sefaz-sp-para-eliminacao-da-gia-processo-tera-inicio-este-ano/" target="_blank">SESCON SP</a> <br/>Publicada em 06/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

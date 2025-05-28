@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPED ECF - Entrega antecipada da ECF com os dados de 2022 pe - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>02/02/2023 | SPED ECF - Entrega antecipada da ECF com os dados de 2022 pelas Microempresas e Empresas de Pequeno Porte não optantes do Simples Nacional para o benefício do PRONAMPE</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Para se beneficiar do PRONAMPE agora em 2023, Microempresas e Empresas de Pequeno Porte não optantes pelo Simples Nacional, obrigadas à entrega da ECF, devem entregar a escrituração com os dados do ano de 2022 e autorizar o compartilhamento do faturamento de 2022 no portal e-CAC</p><p>As Microempresas e Empresas de Pequeno Porte optantes pelo Simples Nacional não são obrigadas à entrega da Escrituração Contábil Fiscal - ECF.</p><p>No entanto, há Microempresas e Empresas de Pequeno Porte que, não optando pelo Simples Nacional, entregam a ECF e querem se beneficiar do PRONAMPE agora em 2023.O PRONAMPE é uma linha especial de crédito que visa o desenvolvimento e o fortalecimento dos pequenos negócios. O programa foi instituído pela lei nº 13.999, de 18 de maio de 2020, e tornado permanente pela lei nº 14.161, de 2 de junho de 2021.</p><p>Nesse caso, as Microempresas e Empresas de Pequeno Porte que desejam aproveitar o benefício nesse momento e não são optantes pelo Simples, devem entregar antecipadamente a ECF relativa ao ano-calendário de 2022 e, no portal e-CAC da Receita Federal, autorizar o compartilhamento das informações sobre o faturamento da empresa no ano de 2022, especificando a instituição financeira escolhida para efetuar o empréstimo.</p><p>Note que desde 16/01/2023 está disponível a versão 9.0.0 do programa da ECF, com as atualizações referentes ao leiaute 9, que deve ser utilizado para transmissões de arquivos da ECF referentes ao ano-calendário 2022.</p><p>As instruções referentes ao leiaute 9 constam no Manual da ECF e no arquivo de Tabelas Dinâmicas, publicados no link <a href="http://sped.rfb.gov.br/pasta/show/1644" target="_blank">http://sped.rfb.gov.br/pasta/show/1644</a>.</p><p>O programa está disponível no link abaixo, a partir da área de downloads do sítio do Sped:</p><p><a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-contabil-fiscal-ecf/sped-programa-sped-contabil-fiscal" target="_blank">https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-contabil-fiscal-ecf/sped-programa-sped-contabil-fiscal</a>
+</p><p>Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7152" target="_blank">Portal SPED</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://sped.rfb.gov.br/pagina/show/7152' target='_blank'>Portal SPED</a> <br>Publicada em 25/01/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

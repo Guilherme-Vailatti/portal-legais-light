@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>MDF-e - NT nº 2023.001, v. 1.00 - Permitir encerramento e co - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/03/2023 | MDF-e - NT nº 2023.001, v. 1.00 - Permitir encerramento e consulta não encerrados independente da situação do emitente</h1>
+</div>
+<div class="noticia-corpo">
+<p>Especifica a NT 2023.001 do MDF-e que deixa de executar a rejeição 203 no evento de encerramento e na consulta MDF-e não encerrados.</p><p>Esta Nota Técnica modifica a regra de validação do evento de encerramento do MDF-e para permitir que filiais possam encerrar os MDF-e mesmo que em situação cadastral diferente de ativo no CCC. O serviço de eventos já garante que o autor e o CNPJ do certificado de transmissão sejam do mesmo CNPJ base, portanto, impedir que um MDF-e seja encerrado por filiais que deixaram de operar gera apenas dificuldade operacional e necessidade de atendimento especializado do fisco para resolver o problema de forma manual.</p><p>A NT também permite que os emitentes possam consultar MDF-e não encerrados sem considerar a situação cadastral da filial.</p><p>Com essa modificação, o MDF-e busca trazer simplificação para as empresas de transporte.</p><ul>
+<li>Desativar rejeição da situação do emitente no encerramento do MDF-e;</li>
+<li>Desativar rejeição da situação do emitente na consulta MDF-e não encerrados;</li>
+<li>Correção do tamanho da placa no leiaute do MDF-e.</li>
+</ul><p><b>Cronograma de Implantação:</b>
+</p><ul>
+<li>Homologação: 03/2023</li>
+<li>Produção: 04/2023</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Mdfe/Documentos" target="_blank">Nota Técnica nº 2020.0001, versão 1.04</a> <br/>Publicada em 23/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

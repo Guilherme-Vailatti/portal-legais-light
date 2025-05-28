@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SEFAZ MG - Acordo fechado entre a Confaz e STF adiam vigênci - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/04/2023 | SEFAZ MG - Acordo fechado entre a Confaz e STF adiam vigência do novo ICMS do diesel e do gás de cozinha para 1º de maio/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Prevista na Lei Complementar 192, a alteração no sistema de cobrança do ICMS do diesel e do gás de cozinha <b>não vai mais vigorar a partir de 1º de abril</b>. Uma negociação fechada entre o Conselho Nacional de Política Fazendária (Confaz) e o ministro André Mendonça, do Supremo Tribunal Federal (STF), <b>autoriza a mudança para 1º de maio, ou seja, um adiamento de 30 dias</b>.</p><p>O acordo referente ao diesel e ao gás de cozinha atende parcialmente os estados, que buscavam adiar em três meses o início da nova tributação. Já no caso da gasolina e do etanol, o novo modelo tributário <b>será antecipado em 30 dias e passará a valer a partir de 1º de junho</b>.</p><p>A LC 192 determina alteração na metodologia atual de tributação dos combustíveis. O sistema passará de ad valorem (cobrança com base em uma alíquota que incide sobre o valor da transação) para ad rem (cobrança com valor único que incide sobre a quantidade de litros).</p><p>Conforme definido em dezembro de 2022, a alíquota do diesel será de R$ 0,94 por litro e do gás de cozinha de R$ 1,28 por quilo. Os valores serão os mesmos em todos estados. Já o novo valor do ICMS da gasolina, inicialmente estabelecido em R$ 1,45 por litro, será reduzido para R$ 1,22, em reunião prevista para a tarde desta sexta-feira (31/3).</p><p>Apesar da diminuição R$ 0,23 no valor do imposto, que será cobrado em apenas uma etapa da cadeia (monofásica), os estados não terão perdas adicionais na arrecadação.</p><p>Segundo Luiz Claudio Gomes, secretário adjunto de Fazenda de Minas Gerais, a alteração na forma de tributação da gasolina é complexa do ponto de vista operacional, por isso os estados decidiram criar uma contingência de dois meses para fazer a transição. Nesse período, o foco dos estados e das empresas estará no faturamento. Isso significa que os sistemas de arrecadação terão filtros flexibilizados para facilitar a emissão de notas fiscais pelas empresas.</p><p>“O objetivo desse período de transição é evitar eventuais problemas de abastecimento”, explicou o secretário adjunto</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.fazenda.mg.gov.br/noticias/2023/2023.03.31_confaz/" target="_blank">SEFAZ MG</a> <br/>Publicada em 31/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

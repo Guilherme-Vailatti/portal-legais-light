@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>IRPF - Receita libera nesta quinta-feira (9/3) o programa do - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/03/2023 | IRPF - Receita libera nesta quinta-feira (9/3) o programa do Imposto de Renda 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p><b>Prazo de entrega ocorrerá no período de 15 de março a 31 de maio</b>
+</p><p>A Receita Federal informa que o Programa do Imposto de Renda (PGD/2023)  será liberado às 9h desta quinta-feira (9/3). Em princípio o Programa seria disponibilizado no próximo dia 15 de março, quando inicia o prazo de entrega das declarações.</p><p>A antecipação do PGD ajuda o contribuinte que, ao ter acesso às informações necessárias para a entrega da declaração, pode se organizar e juntar a documentação que for necessária. Além disso, deve evitar possíveis congestionamentos.</p><p>A Receita lembra que as funcionalidades de entrega e transmissão, juntamente com as informações da pré-preenchida, terão início, conforme já divulgado, no dia 15 de março.</p><p>Acesse <a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda">Meu Imposto de Renda</a> para verificar todas as informações sobre a Declaração do Imposto de Renda 2023.</p><p>Para baixar o programa gerador o imposto de renda 2023 acesse <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dirpf">Download do Programa de Imposto de Renda</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/marco/receita-libera-nesta-quinta-feira-9-3-o-programa-do-imposto-de-renda-2023" target="_blank">Receita Federal</a> <br/>Publicada em 08/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

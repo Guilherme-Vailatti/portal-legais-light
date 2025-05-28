@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - Projeto determina que obrigações tribut - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/02/2023 | Congresso Nacional - Projeto determina que obrigações tributárias acessórias terão de ser criadas por lei</h1>
+</div>
+<div class="noticia-corpo">
+<p>Objetivo é garantir maior legitimidade às obrigações acessórias, instrumentos de prestação de informações ao Fisco.</p><p>O Projeto de Lei Complementar (PLP) 132/22 prevê que as obrigações tributárias acessórias serão definidas em lei (princípio da reserva legal) e só terão validade 90 dias após a norma que as instituiu ou alterou (noventena). O texto em análise na Câmara dos Deputados altera o <a href="https://www2.camara.leg.br/legin/fed/lei/1960-1969/lei-5172-25-outubro-1966-358971-norma-pl.html" target="_blank">Código Tributário Nacional</a>.</p><p>Autor da proposta, o ex-deputado <a href="https://www.camara.leg.br/deputados/204516" target="_blank">Alexis Fonteyne (SP)</a> afirmou que, com as mudanças, os contribuintes poderão participar desse processo legislativo. “Isso garantirá maior legitimidade às obrigações acessórias, bem como proporcionará a criação de obrigações mais adaptadas à realidade e menos onerosas”, avaliou.</p><p>“As obrigações acessórias são instrumentos de prestação de informações ao Fisco, no interesse da arrecadação e fiscalização. Ocorre que hoje são criadas pelo Poder Executivo, que acabam por acatá-las da forma como propostas pelo Fisco, ficando os pagadores de tributos fora da discussão”, disse Fonteyne.</p><p>Obrigações acessórias envolvem os trâmites burocráticos relacionados à quitação de tributos e futura fiscalização. Emissão de notas fiscais e guias de recolhimento; escrituração de livros fiscais; demonstrações contábeis; declarações de informações sociais; e confecção de contracheques são alguns exemplos.</p><p>O projeto será analisado pelas comissões de Finanças e Tributação; e de Constituição e Justiça e de Cidadania. Depois seguirá para o Plenário.</p><ul>
+<li><a href="https://www.camara.leg.br/noticias/606442-conheca-a-tramitacao-de-projetos-de-lei-complementar/" target="_blank">Conheça a tramitação de projetos de lei complementar</a>
+</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/920742-projeto-determina-que-obrigacoes-tributarias-acessorias-terao-de-ser-criadas-por-lei/" target="_blank">Projeto de Lei Complementar nº 132/2022</a> <br/>Publicada em 07/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

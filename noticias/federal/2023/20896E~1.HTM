@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICMS ST SC - Lei nº 18.591/2023 - Excluídos sorvetes, picolé - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>20/01/2023 | ICMS ST SC - Lei nº 18.591/2023 - Excluídos sorvetes, picolés, derivados e produtos necessários à fabricação sujeitos à Substituição Tributária</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Estado de Santa Catarina excluiu <b>sorvetes, picolés, seus derivados e demais mercadorias necessárias à sua fabricação do rol de produtos</b> sujeitos ao regime de substituição tributária.</p><p>A norma entrou em vigor na data da sua publicação, em 17/01/2023.</p><p>Para saber mais, acesse o link abaixo:</p><p>Fonte: <a href="https://legislacao.sef.sc.gov.br/html/leis/2023/lei_23_18591.htm" target="_blank">SEFAZ SC</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://legislacao.sef.sc.gov.br/html/leis/2023/lei_23_18591.htm' target='_blank'>Lei nº 18.591/2023</a> <br>Publicada em 17/01/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

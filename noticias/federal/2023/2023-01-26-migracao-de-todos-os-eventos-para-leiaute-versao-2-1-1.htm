@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Migração de todos os eventos para leiaute v - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2023 | SPED EFD Reinf - Migração de todos os eventos para leiaute versão 2.1.1</h1>
+</div>
+<div class="noticia-corpo">
+<p><b>Atenção:</b> assim que for implantada em produção a nova versão da EFD-REINF para receber os eventos da série R-4000, todos os eventos deverão migrar para o leiaute versão 2.1.1, incluindo os eventos de tabela R-1000, R-1070 e os eventos da série R-2000 e R-3010.</p><p>O ambiente de produção restrita permanecerá temporariamente recebendo eventos do leiaute da versão 1.5.1 até um mês antes da implantação da versão 2.1.1 em produção, para permitir eventuais testes com a versão que está em produção atualmente.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7153" target="_blank">Portal SPED</a> <br/>Publicada em 26/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

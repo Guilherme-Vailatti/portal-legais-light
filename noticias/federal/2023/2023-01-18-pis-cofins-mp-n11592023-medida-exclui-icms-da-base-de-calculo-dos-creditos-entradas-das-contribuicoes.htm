@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>PIS/COFINS - MP nº 1.159/2023 - Medida exclui o ICMS da base - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/01/2023 | PIS/COFINS - MP nº 1.159/2023 - Medida exclui o ICMS da base de cálculo dos créditos (entradas) das contribuições</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Medida Provisória nº 1.159/2023 alterou, com efeitos a partir de 01/05/2023 (referente à base de cálculo dos créditos, conforme art. 3º, I), para excluir o ICMS da incidência e da base de cálculo dos créditos, (entradas) da contribuição para o PIS/PASEP e da COFINS.</p><p>Acesse a norma completa no link abaixo.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/medida-provisoria-n-1.159-de-12-de-janeiro-de-2023-457601785" target="_blank">Medida Provisória nº 1.159/2023</a> <br/>Publicada em 13/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

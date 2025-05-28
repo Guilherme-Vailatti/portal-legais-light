@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Criado grupo de trabalho para analisar  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/02/2023 | Reforma Tributária - Criado grupo de trabalho para analisar proposta de reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>Grupo terá o prazo de 90 dias para concluir os trabalhos, podendo ser prorrogado.</p><p>O ato de criação do grupo de trabalho que vai analisar a proposta da reforma tributária (PEC 45/19) foi publicado nesta quarta-feira (15) no Diário da Câmara dos Deputados.</p><p>O grupo terá o prazo de 90 dias para concluir os trabalhos, podendo ser prorrogado a pedido. O colegiado é coordenado pelo deputado Reginaldo Lopes (PT-MG). O relator é o deputado Aguinaldo Ribeiro (PP-PB). Ele também relatou essa PEC na legislatura passada.</p><p>Além deles, integram o grupo os seguintes deputados: Saullo Vianna (União-AM), Mauro Benevides Filho (PDT-CE), Glaustin da Fokus (PSC-GO), Newton Cardoso Jr (MDB-MG), Ivan Valente (Psol-SP), Jonas Donizette (PSB - SP), Sidney Leite (PSD-AM), Luiz Philippe de Orleans e Bragança (PL-SP), Vitor Lippi (PSDB-SP) e Adail Filho Republicanos-AM).</p><p>A critério do colegiado, poderão ser realizadas audiências públicas e reuniões com órgãos e entidades da sociedade civil organizada, bem assim com profissionais, juristas e autoridades.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/939860-criado-grupo-de-trabalho-para-analisar-proposta-de-reforma-tributaria/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 15/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

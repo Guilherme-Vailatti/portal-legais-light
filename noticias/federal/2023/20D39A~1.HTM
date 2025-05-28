@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>DCTFWeb - Mudanças na obrigatoriedade da entrega da DCTF Web - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>20/01/2023 | DCTFWeb - Mudanças na obrigatoriedade da entrega da DCTF Web para empresas sem movimento</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A partir de janeiro de 2023, a Instrução Normativa (IN) RFB n.º 2.094 alterou o envio das obrigações contábeis, no que dispõe sobre a situação "Sem Movimento" de empresas sem atividade, detalhada no Manual de Orientação do e-Social, no Capítulo I – Item 12. Com a nova regra, as empresas sem atividade precisam transmitir uma única vez a declaração sem movimento; assim, não é necessário informar novamente a situação até que uma declaração com tributos seja entregue.</p><p>Anteriormente à nova regra, as empresas em situação "Sem Movimento" deveriam entregar a Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb), obrigatoriamente, todos os anos, no mês de janeiro. A partir de agora, caso o contribuinte permaneça na situação de inativo, só existe a necessidade de transmitir a declaração uma única vez.</p><p style="font-weight: bold;">O que é a DCTFWeb?</p><p>Criada pela Instrução Normativa RFB n.º 2.005/2021, a DCTFWeb é uma forma de substituir a Guia de Recolhimento do FGTS e de Informações à Previdência Social (GFIP). A declaração tem o objetivo de relatar à Receita Federal as contribuições previdenciárias existentes da empresa, mas também de integrar informações fornecidas no e-Social e na EFD-Reinf.</p><p>Fonte: <a href="https://cfc.org.br/noticias/mudancas-na-obrigatoriedade-da-entrega-da-dctf-web-para-empresas-sem-movimento-comecam-a-valer-a-partir-de-janeiro-de-2023/" target="_blank">Comunicação CFC</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2022/2022-07-20-dctfweb-receita-publica-alteracoes.htm' target='_blank'>Instrução Normativa RFB nº 2.094/2022</a> <br>Publicada em 18/01/2022</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

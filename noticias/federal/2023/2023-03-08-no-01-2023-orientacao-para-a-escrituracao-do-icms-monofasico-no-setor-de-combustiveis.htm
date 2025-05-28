@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - NO 01/2023 - Orientação para a escritura - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/03/2023 | SPED EFD ICMS IPI - NO 01/2023 - Orientação para a escrituração do ICMS monofásico no setor de combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta nota orientativa instrui a escrituração de operações com ICMS monofásico, a partir dos <b>novos CSTs criados pelo Ajuste Sinief 01/2023</b>. Com a publicação da <a href="2023-02-23-tributacao-monofasica-sobre-combustiveis.htm">NT 2023.001 da NFe/NFCe</a>, adotando os CSTs 02, 15, 53 e 61, a escrituração das operações seguirá as instruções que se acrescentam às demais publicadas no Guia prático da EFD ICMS IPI.</p><p>Registros:</p><ul>
+<li>REGISTRO 0200: TABELA DE IDENTIFICAÇÃO DO ITEM (PRODUTO E SERVIÇOS);</li>
+<li>REGISTRO C170: ITENS DO DOCUMENTO (CÓDIGO 01, 1B, 04 e 55);</li>
+<li>REGISTRO C190: REGISTRO ANALÍTICO DO DOCUMENTO (CÓDIGO 01, 1B, 04, 55 e 65).</li>
+</ul><p>Para fazer o download do arquivo da nota, acesse <a href="http://sped.rfb.gov.br/arquivo/show/7173">Nota Orientativa 01/2023 - ICMS Monofásico - setor de combustíveis</a>.</p><p>O Programa Validador Assinador (PVA) será disponibilizado no mês de abril com as regras atualizadas. As dúvidas relacionadas com a escrituração monofásica do ICMS deverão ser encaminhadas para a SEFAZ de domicílio do estabelecimento conforme os endereços listados na relação de <a href="http://sped.rfb.gov.br/pagina/show/1577">Contatos nas SEFAZ</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/estatico/8E/594D47A038C695D44A2FFAC7F88225CAC71F7F/Nota Orientativa 2023_001 v1_0.pdf" target="_blank">Nota Orientativa 01/2023</a> <br/>Publicada em 08/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

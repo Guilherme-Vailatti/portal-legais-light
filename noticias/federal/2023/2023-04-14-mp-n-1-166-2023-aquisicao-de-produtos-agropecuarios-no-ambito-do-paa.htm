@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - MP nº 1.166/2023 - Aquisição de produtos ag - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/04/2023 | SPED EFD Reinf - MP nº 1.166/2023 - Aquisição de produtos agropecuários no âmbito do PAA</h1>
+</div>
+<div class="noticia-corpo">
+<p>Atendendo ao disposto no art. 10, § 4º, inciso III da Medida Provisória nº 1.166/2023 que, na aquisição de produtos agropecuários no âmbito do PAA, compete à União arcar com a contribuição do produtor rural pessoa física ou jurídica ao Serviço Nacional de Aprendizagem Rural – SENAR, os totalizadores (R-9001) gerados a partir dos eventos de comercialização de produção (R-2050) e de aquisição de produção rural (R-2055) enviados desde o dia 11/04/2023, para o período de apuração a partir de 04/2023 sofrerão as seguintes alterações:</p><ul>
+<li><b>R-2050 – Comercialização de produção</b>: receitas informadas com o indicativo de comercialização {indCom} igual a “8 - Comercialização da produção para entidade executora do PAA” não mais gerarão o código de receita “1213” a recolher no totalizador R-9001.</li>
+<li><b>R-2055 - Aquisição de produção rural</b>: aquisições informadas por contribuinte pessoa jurídica com os indicativos {indAquis} igual a “3 - Aquisição de produção de produtor rural pessoa jurídica por entidade executora do PAA” ou “6 - Aquisição de produção de produtor rural pessoa jurídica por entidade executora do PAA - Produção isenta (Lei 13.606/2018)” gerarão o código de receita “1213” a recolher no totalizador R-9001.</li>
+</ul><p><b>Caso já tenham sido enviados</b> eventos <b>R-2050</b> ou <b>R-2055</b> com os indicativos mencionados acima para o <b>período de apuração 04/2023, antes do dia 11/04/2023</b>, o contribuinte <b>deverá reenviá-los</b> para que as mencionadas alterações possam refletir nos respectivos eventos totalizadores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7191" target="_blank">Medida Provisória nº 1.166/2023</a> <br/>Publicada em 11/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

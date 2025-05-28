@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária  - O que está em discussão - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/04/2023 | Reforma Tributária  - O que está em discussão</h1>
+</div>
+<div class="noticia-corpo">
+<p>Instituído na década de 1960 e modificado com a Constituição de 1988, o modelo brasileiro de tributação sobre o consumo tornou-se, ao longo do tempo, complexo, disfuncional, ineficiente, desequilibrado e injusto. Pelo menos desde 1995, o Brasil vive sucessivas tentativas de reforma – todas envolvendo um ponto de consenso: o sistema tributário nacional precisa ser simplificado.</p><p>Uma nota técnica dos consultores legislativos Fabiano da Silva Nunes, José Evande Carvalho Araujo e Marco Antônio Oliveira discute os problemas do nosso sistema e explica as propostas atualmente em tramitação no Congresso Nacional</p><p>Substitui todos os tributos sobre o consumo por um imposto sobre o valor agregado, pago pelo consumidor final, cobrado de forma não cumulativa em todas as etapas da cadeia produtiva</p><p>Os cinco tributos atuais sobre o consumo – IPI, PIS, Cofins, ICMS e ISS – são substituídos por um ou dois impostos sobre consumo (IBS e CBS) e por um Imposto Seletivo (IS).</p><p>Para verificar os detalhes de <b>quais são as mudanças da reforma</b>, o <b>por que fazer a reforma tributári</b>a e <b>os impactos previstos</b>, acesse a página da <b><a href="https://www.camara.leg.br/internet/agencia/infograficos-html5/reforma-tributaria-o-que-esta-em-discussao/index.html">Câmara dos Deputados</a></b> e leia o texto na íntegra.</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/internet/agencia/infograficos-html5/reforma-tributaria-o-que-esta-em-discussao/index.html" target="_blank">Agência Câmara de Notícias
+</a> <br/>Publicada em 18/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

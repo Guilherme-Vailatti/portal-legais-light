@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - IN RFB nº 2121/2022 - Receita Federal atualiza  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | Legislação - IN RFB nº 2121/2022 - Receita Federal atualiza legislação sobre PIS/Pasep e Cofins</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por meio de um único ato, elaborado de forma lógica e organizada, o cidadão agora tem disponível tudo o que precisa saber em relação às complexas contribuições para o PIS/Pasep e Cofins. A Instrução Normativa RFB nº 2121, de 15 de dezembro de 2022, consolida a legislação sobre o tema.</p><p>Além de substituir a IN anterior (Instrução Normativa RFB nº 1.911, de 11 de outubro de 2019), diversas outras normas foram condensadas em um único ato, de forma estruturada e sistematizada, a fim de facilitar a apuração dessas contribuições e o cumprimento de obrigações acessórias pelas empresas.</p><p>A Instrução Normativa RFB nº 1.911, de 2019, já havia revogado grande parte do arcabouço de instruções normativas hoje aplicáveis às contribuições. A nova IN, além de revogar a anterior, também consolida e elimina os atos que foram editados desde 2019. Tais regras, após depuradas e atualizadas, passaram a compor a última consolidação. Para isso foram compiladas leis, decretos, instruções normativas, decisões judiciais e normas operacionais, incluindo formulários e requerimentos necessários para viabilizarem o exercício dos mais diversos regimes e benefícios.</p><p>Com a edição da Instrução Normativa, a Receita Federal dá importante passo em direção à melhoria do ambiente de negócios do país.</p><p><a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.121-de-15-de-dezembro-de-2022-452045866" target="_blank">Clique aqui</a> para ler o texto na íntegra.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.121-de-15-de-dezembro-de-2022-452045866" target="_blank">Instrução Normativa RFB nº 2.121/2022</a> <br/>Publicada em 22/12/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

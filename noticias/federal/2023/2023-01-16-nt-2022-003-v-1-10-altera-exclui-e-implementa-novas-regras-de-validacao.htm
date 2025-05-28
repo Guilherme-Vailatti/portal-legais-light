@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - NT 2022.003, v. 1.10 - Altera, exclui e impleme - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | NF-e NFC-e - NT 2022.003, v. 1.10 - Altera, exclui e implementa novas regras de validação</h1>
+</div>
+<div class="noticia-corpo">
+<p><b>2.3. Alterações introduzidas na versão 1.10</b>
+</p><p><b>2.3.1. Criação das Regras de Validação BA02-60 e BA02a-110</b>
+</p><p>Estas regras visam garantir que quando houver uma Chave referenciada (tag: refNFe) ou uma Chave Referenciada com código numérico zerado (tag: refNFeSig), o tipo de emissão da chave referenciada seja válido.</p><p><b>2.3.2. Criação das Regras de Validação BA02-70 e BA02-80</b>
+</p><p>Estas regras visam evitar que sejam referenciados documentos eletrônicos diferentes do modelo 55 em devoluções internas de mercadoria e também em devoluções envolvendo consumidor final. Regras com implementação futura.</p><p style="font-weight: bold;">2.3.3. Criação da Regra de Validação BA02a-74</p><p>Esta regra visa garantir que, quando houver uma Chave Referenciada com código numérico zerado (tag: refNFeSig), o código numérico seja efetivamente zerado.</p><p><b>2.3.4. Alteração da documentação da Regra BA02a-90</b>
+</p><p>A coluna de modelo desta regra havia sido deixada em branco equivocadamente, alterada para constar sua aplicabilidade somente para o modelo 55.</p><p><b>2.3.5. Criação da Regra de Validação BA02a-120</b>
+</p><p>Esta regra visa evitar que seja utilizado o campo de Nota Referenciada com código numérico zerado (tag: refNFeSig) em UF que não permite tal referência.</p><p><b>2.3.6. Exclusão da Regra I08-186</b>
+</p><p>Esta regra foi removida pois a UF que assim desejar pode bloquear Cupom Fiscal referenciado através da ativação da Regra BA20-30 (NT 2019.001). Como a Regra I08-196 sequer chegou a ser implementada, o código de Rejeição inicialmente alocado a ela foi reaproveitado nesta mesma NT.</p><p><b>2.3.7. Alteração da descrição da Regra de Validação N17c-30</b>
+</p><p>Alterada a descrição da RV N17c-30 para que fique claro que ela somente se aplica, neste momento, para o Ceará. O Estado do Ceará realiza o controle do FCP de forma diferente das demais UF, o que acarreta na necessidade de implementação desta regra.</p><p><b>Cronograma de implantação:</b>
+</p><p>Teste: 07/02/2023</p><p>Produção: 03/04/2023</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica 2022.003, versão 1.10</a> <br/>Publicada em 22/12/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

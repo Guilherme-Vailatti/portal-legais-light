@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - MP nº 1152/2022 – Medida altera legislação sobre r - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | Federal - MP nº 1152/2022 – Medida altera legislação sobre renda e contribuição social de empresas</h1>
+</div>
+<div class="noticia-corpo">
+<p>Norma abrange pessoas jurídicas que realizam transações com partes relacionadas no exterior.</p><p>Foi publicada no Diário Oficial desta quinta-feira (29/12) a <a href="https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.152-de-28-de-dezembro-de-2022-454516132" target="_blank">Medida Provisória nº 1.152</a>, de 28 de dezembro de 2022, que altera a legislação do Imposto sobre a Renda da Pessoa Jurídica (IRPJ) e da Contribuição Social sobre o Lucro Líquido (CSLL) visando introduzir um novo marco legal para a matéria de preços de transferência no Brasil. Nesse sentido, são abrangidas as pessoas jurídicas que realizam transações com partes relacionadas no exterior.</p><p>A medida é resultado da constatação de lacunas e fragilidades existentes no atual sistema e de problemas decorrentes do seu desalinhamento e das interações com o padrão estabelecido pela Organização para a Cooperação e Desenvolvimento Econômico (OCDE), que prejudicam o ambiente de negócios, a inserção do país nas cadeias globais de valor, a segurança jurídica e a arrecadação de receitas tributárias.</p><p>A implementação desse novo arcabouço facilitará e permitirá uma maior integração da economia brasileira ao mercado internacional, eliminando barreiras que dificultam e prejudicam o comércio, a competitividade entre as empresas, o desenvolvimento de novas tecnologias no país, a atração de investimentos e, consequentemente, a geração de emprego e o desenvolvimento nacional. O regramento elimina, ainda, lacunas hoje existentes no sistema, que permitem que a base tributária brasileira seja desgastada e oferecem espaços para a utilização de abordagens nocivas à arrecadação das receitas necessárias para suportar os gastos sociais.</p><p>A urgência da medida decorre da recente alteração na política tributária dos Estados Unidos, que deixou de permitir o crédito tributário referente aos impostos pagos no Brasil devido aos desvios existentes no sistema de preços de transferência brasileiro em relação ao princípio arm’s length – ou seja, condição ou fato de as partes numa transação serem independentes e estarem em pé de igualdade. Assim, a menos que uma ação legislativa imediata seja tomada, o país poderá experimentar uma redução significativa do investimento atual e perderá a competitividade para a atração de novos capitais, com impacto nos níveis de emprego, na economia, na transferência de conhecimento e tecnologia e, em última análise, também levar a perdas de receita tributária.</p><p>Outra razão se deve às perdas de arrecadação tributária que o Brasil experimenta ano após ano devido às diversas deficiências existentes na legislação brasileira, que permitem a erosão da base tributável e transferência de lucros (BEPS).</p><p>A medida não irá gerar impacto financeiro orçamentário. Entra em vigor a partir de 1º de janeiro de 2023 para os contribuintes que optarem pela aplicação das novas regras de preços de transferência e, para os demais, a partir de 1º de janeiro de 2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/economia/pt-br/assuntos/noticias/2022/dezembro/medida-provisoria-altera-legislacao-sobre-renda-e-contribuicao-social-de-empresas" target="_blank">Medida Provisória nº 1152/2022</a> <br/>Publicada em 29/12/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

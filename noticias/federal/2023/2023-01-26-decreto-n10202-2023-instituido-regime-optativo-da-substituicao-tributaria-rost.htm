@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST GO - Decreto nº 10.202/2023 - Instituído o Regime Op - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2023 | ICMS ST GO - Decreto nº 10.202/2023 - Instituído o Regime Optativo da Substituição Tributária (ROST)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O regulamento passa a ser acrescido do art. 42-A, a fim de estabelecer o <b>Regime Optativo da Substituição Tributária</b> (ROST).</p><p>Com a instituição do ROST, o contribuinte goiano participante, fica dispensado do pagamento do imposto correspondente à complementação do ICMS retido por substituição tributária (ST), nos casos em que o preço praticado na operação a consumidor final for superior à base de cálculo utilizada para o cálculo do débito de responsabilidade por ST.</p><p>Por outro lado, o contribuinte que aderir ao referido regime, terá que firmar compromisso também pela não exigência de restituição quando o preço praticado na venda ao consumidor for inferior a base de cálculo presumida.</p><p>Importante mencionar que a adesão ao ROST deve:</p><p>Embora já esteja vigorando o regime optativo, ato do Subsecretário da Receita Estadual, irá dispor da forma do substituído efetuar a sua opção, bem como delimitar os segmentos econômicos autorizados a optar pelo ROST.</p><p>Entretanto, consideram-se automaticamente aderidos, o Microempreendedor Individual - MEI e o contribuinte optante pelo Simples Nacional, sendo permitido ao contribuinte optante pelo Simples Nacional solicitar sua exclusão do regime, também na forma prevista em ato do Subsecretário da Receita Estadual.</p><p>Acesse o <a href="https://www.economia.go.gov.br/acesso-a-informacao/legislacao-tributaria/134-institucional/legislação/tributaria/8583-decretos-de-janeiro-de-2023.html" target="_blank">link</a> para saber mais.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.economia.go.gov.br/acesso-a-informacao/legislacao-tributaria/134-institucional/legislação/tributaria/8583-decretos-de-janeiro-de-2023.html" target="_blank">Decreto nº 10.202/2023</a> <br/>Publicada em 23/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

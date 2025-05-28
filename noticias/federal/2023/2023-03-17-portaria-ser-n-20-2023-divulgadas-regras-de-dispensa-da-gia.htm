@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SP - Portaria SRE nº 20/2023 - Divulgadas regras  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/03/2023 | Legislação SP - Portaria SRE nº 20/2023 - Divulgadas regras de dispensa da GIA</h1>
+</div>
+<div class="noticia-corpo">
+<p>O governo paulista por meio da Portaria SRE nº 20/2023 publicada no Diário Oficial de 17/03/2023, altera a Portaria CAT 92/98 para divulga regras de dispensa da GIA para o contribuinte do ICMS. </p><p><b>Estão dispensados da GIA em SP:</b>
+</p><p><b>Em resumo ao disposto na Portaria:</b>
+</p><p><b>Os principais requisitos para dispensa da GIA para contribuintes já inscritos são:</b>
+</p><p>Portanto, aqueles já possuem inscrição estadual no Estado de São Paulo, na data da publicação da Portaria SRE nº 20/2023 (17/03) serão notificados da dispensa via DEC.</p><p><b>Novo prazo de entrega da GIA:</b>
+</p><p>A GIA agora deve ser entregue até o dia 20 do mês seguinte ao da apuração. Foi revogado o prazo que era definido de acordo com o final da Inscrição Estadual, que começava dia 16 e terminava dia 19. Sendo assim, o contribuinte que ainda vai continuar entregando a GIA, porque não preenche os requisitos de dispensa, terá como prazo de entrega a mesma data da EFD-ICMS, ou seja, dia 20 de cada mês.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Atos.aspx?Tipo=Portarias%20CAT/SRE&amp;StartDate=2023-01-01&amp;EndDate=2023-12-31" target="_blank">Portaria SRE nº 20/2023</a> <br/>Publicada em 17/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

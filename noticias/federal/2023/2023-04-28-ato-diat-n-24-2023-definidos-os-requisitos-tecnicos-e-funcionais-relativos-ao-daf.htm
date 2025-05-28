@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SC - Ato DIAT nº 24/2023 - Definidos os requisito - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | Legislação SC - Ato DIAT nº 24/2023 - Definidos os requisitos técnicos e funcionais relativos ao Dispositivo Autorizador Fiscal (DAF)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Fisco estadual definiu os requisitos técnicos e funcionais do equipamento de que trata o art. 95 do Anexo 11 do RICMS-SC/2001, denominado Dispositivo Autorizador Fiscal (DAF) que estão estabelecidos no arquivo eletrônico denominado "Especificação de Requisitos do DAF - versão 3.0.0", disponibilizado no endereço eletrônico da Secretaria da Fazenda, no endereço <a href="http://www.sef.sc.gov.br/daf">DAF - Dispositivo Autorizador Fiscal</a>.</p><p>O ato em questão entra em vigor na data de 18/04/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/atos_diat/2023/atodiat_23_024.htm" target="_blank">Ato DIAT nº 24/2023
+</a> <br/>Publicada em 27/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

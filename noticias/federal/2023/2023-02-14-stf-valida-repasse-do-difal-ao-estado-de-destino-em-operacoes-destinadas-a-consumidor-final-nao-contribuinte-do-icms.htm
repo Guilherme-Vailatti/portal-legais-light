@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIFAL - STF valida repasse do DIFAL ao estado de destino em  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/02/2023 | DIFAL - STF valida repasse do DIFAL ao estado de destino em operações destinadas a consumidor final não contribuinte do ICMS</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por unanimidade, o Plenário do Supremo Tribunal Federal (STF) julgou <b>constitucionais</b> regras que disciplinam a cobrança do Imposto sobre Circulação de Mercadorias e Serviços (ICMS) devido nas operações e nas prestações interestaduais destinadas a consumidor final não contribuinte do tributo.</p><p> </p><p>Desta forma os ministros do STF validaram o dispositivo da Lei Kandir que define que o produto da arrecadação do diferencial de alíquota (Difal) de ICMS deve ser repassado ao estado de destino das mercadorias ou do fim da prestação dos serviços. Trata-se do parágrafo sétimo, do artigo 11, da Lei Kandir (LC 87/96), com redação dada pela LC 190/22.</p><p>A decisão se deu, na sessão virtual finalizada em 6/2, no julgamento da Ação Direta de Inconstitucionalidade (ADI) 7158 ajuizada pelo Governo do Distrito Federal fixando a seguinte tese:</p><p>“É constitucional o critério previsto no § 7º do art. 11 da Lei Complementar nº 87/1996, na redação dada pela Lei Complementar nº 190/2022, que considera como Estado destinatário, para efeito do recolhimento do diferencial de alíquota do ICMS, aquele em que efetivamente ocorrer a entrada física da mercadoria ou o fim da prestação do serviço, uma vez que conforme a Emenda Constitucional nº 87/2015". Tudo nos termos do voto do Relator. Plenário, Sessão Virtual de 16.12.2022 a 6.2.2023.</p><p> </p><p>Inteiro Teor do Acórdão - <a href="https://portal.stf.jus.br/processos/downloadPeca.asp?id=15355826141&amp;ext=.pdf" target="_blank">ADI 7.158 - DF</a></p><p style="font-weight: bold;"> <madcap:snippettext src="../../../Resources/Snippets/portal-legais/tag-erp.flsnp"></madcap:snippettext></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=502293&amp;ori=1" target="_blank">Supremo Tribunal Federal</a> <br/>Publicada em 07/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

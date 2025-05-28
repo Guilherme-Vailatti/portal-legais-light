@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - Atualização do perguntas frequentes do S - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2023 | SPED EFD ICMS IPI - Atualização do perguntas frequentes do SPED Fiscal</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a versão 7.2 do arquivo de perguntas frequentes do SPED fiscal, com as seguintes atualizações:</p><p>- Alteração da resposta da questão 16.2.2.1, inclusão da frase: “*** A partir de janeiro de 2022, esse registro deixou de existir na EFD.”</p><ul>
+<p style="font-style: italic;"><b>16.2.2.1 – Deverá ser reportada uma lista técnica - lista de todos os materiais e quantidades necessários em um processo no registro 0210?</b>
+</p>
+<p style="font-style: italic;">O consumo específico padronizado a ser informado no registro 0210 se refere ao consumo que se espera realizar para se produzir uma unidade do produto resultante (constante do registro pai – 0200 – Tabela de identificação do item). Até dezembro de 2017, este registro deve ser apresentado, caso exista produção e/ou consumo nos Registros K230/K235 e K250/K255.</p>
+<p style="font-style: italic;">*** A partir de janeiro de 2018, a obrigatoriedade da apresentação deste registro ficará a critério de cada Sefaz e/ou da Receita Federal (com relação a regimes especiais), caso exista produção e consumo nos Registros K230/K235 e K250/K255.</p>
+<p style="font-style: italic;">*** A partir de janeiro de 2022, esse registro deixou de existir na EFD.</p>
+</ul><p>- Inclusão das perguntas e respostas: 16.13.1.7 e 16.9.4.10</p><ul>
+<p style="font-style: italic;"><b>16.13.1.7 – A empresa informa o bloco K com o leiaute simplificado. Ao tentar entregar o registro K270 com o campo 08 (ORIGEM) com o valor “5 – correção de apontamento de movimentação interna relativo ao Registro K220”, o PVA informa que o registro K275 deve ser informado. Por que o registro K275 é exigido nessa situação, se o leiaute simplificado não obriga a sua informação?</b>
+</p>
+<p style="font-style: italic;">O registro K220 é obrigatório tanto para o leiaute completo como simplificado. Havendo necessidade de correção de apontamento do registro K220 torna-se, consequentemente, obrigatória a informação do item de destino através do registro K275. Essa, portanto, é uma exceção à regra que desobriga o registro K275 quando o registro K010 é informado com o campo 02 IND_TP_LEIAUTE como o valor “0 – Leiaute simplificado”.</p>
+<p style="font-style: italic;"><b>16.9.4.10 – Com a desobrigação da escrituração dos registros K260 e K265 após a criação do leiaute simplificado para o bloco K, ambos referentes aos reprocessamentos das produções realizadas, perguntamos como deverão ser escrituradas as ordens de produção referentes aos reprocessamentos? As ordens de produção referentes aos reprocessamentos não deverão ser informadas quando o leiaute for simplificado? Ou as ordens de produção de reprocessamentos deverão ser escrituradas como K230, já que o consumo do produto/insumo (não haverá a validação COD_ITEM resultante igual COD_ITEM insumo) não será informado devido a desobrigação do K235 no leiaute simplificado?</b>
+</p>
+<p style="font-style: italic;">Com o leiaute simplificado desobrigando a informação dos insumos consumidos, o contribuinte não deve informar os registros relacionados com reprocessamento. Entretanto, se possuir um reprocessamento que dará origem a um item produzido ele deverá informar no K230 a ordem de produção deste item.
+            </p>
+</ul><p>O arquivo está disponível <a href="http://sped.rfb.gov.br/arquivo/show/5995" target="_blank">neste link</a></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7149" target="_blank">Portal SPED</a> <br/>Publicada em 20/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

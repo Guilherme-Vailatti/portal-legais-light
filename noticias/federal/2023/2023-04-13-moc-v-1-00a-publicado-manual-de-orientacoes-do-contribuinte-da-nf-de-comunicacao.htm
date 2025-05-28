@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFCom - MOC v. 1.00a - Publicado manual de orientações do co - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/04/2023 | NFCom - MOC v. 1.00a - Publicado manual de orientações do contribuinte da NF de Comunicação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado no Portal da NFCom, na seção "Documentos", o Manual de Orientações do Contribuinte - NFCom, previsto no Ajuste SINIEF nº 7/22 que institui a Nota Fiscal Fatura de Serviços de Comunicação Eletrônica, modelo 62, e o Documento Auxiliar da Nota Fiscal Fatura de Serviços de Comunicação Eletrônica.</p><p>A versão atualizada do Manual de Orientações do Contribuinte - MOC - da NFCom Versão 1.00a e seu anexo, que estabelecem as especificações técnicas e critérios técnicos dos Pedidos de Concessão de Uso, Cancelamento, Inutilização e Consulta via WebServices, foram publicados em conformidade com o <a href="https://www.confaz.fazenda.gov.br/legislacao/atos/2023-1/ato-cotepe-icms-26-23">Ato COTEPE/ICMS nº 26/2023</a>, publicado no DOU - de 23.03.2023</p><ul>
+<li><a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos#">MOC NFCom 1.00a - Anexo I Leiaute e Regras de Validação</a> - Manual de Orientações do Contribuinte da NFCom Anexo I Leiaute e Regras de Validação - versão 1.00a.</li>
+<li><a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos#">MOC NFCom 1.00a - Visão Geral</a> - Manual de Orientações do Contribuinte da NFCom Visão Geral - versão 1.00a.</li>
+</ul><p style="font-weight: bold;"><b>Cronograma de Implantação:</b>
+</p><ul>
+<li style="font-weight: normal;"><b>Ambiente de Homologação</b>: 04/2023</li>
+<li><b>Ambiente de Produção</b>: 05/2023</li>
+</ul><p>A obrigatoriedade de emissão da NFCom para contribuintes de ICMS será <b>a partir de 01/07/2024</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos" target="_blank">Manual de Orientação do Contribuinte, versão 1.00a</a> <br/>Publicada em 11/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

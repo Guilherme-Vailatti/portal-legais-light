@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - Despacho nº 12/2023 - Apresenta os Convênio ICM - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/04/2023 | Legislação - Despacho nº 12/2023 - Apresenta os Convênio ICMS nº 12/2023 e ICMS nº 13/2023 para o segmento de combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>A CONFAZ através do Despacho nº 12/2023 publicou no diário oficial da união em edição extra no dia 31/03/2023 os Convênio ICMS nº 12/2023 e ICMS nº 13/2023. Onde:</p><ul>
+<li>O <a href="https://in.gov.br/en/web/dou/-/despacho-n-12-de-31-de-marco-de-2023-474433946">Convênio ICMS nº 12/2023</a> altera o Convênio ICMS nº 199/22, que dispõe sobre o regime de tributação monofásica do ICMS a ser aplicado nas operações com combustíveis nos termos da Lei Complementar nº 192, de 11 de março de 2022, e estabelece procedimentos para o controle, apuração, repasse e dedução do imposto.</li>
+<li>O <a href="https://www.confaz.fazenda.gov.br/legislacao/convenios/2023/CV013_23#:~:text=Prorroga e altera as disposições,GLP, e dá outras providências.">Convênio ICMS nº 13/2023</a> prorroga e altera as disposições do Convênio ICMS nº 198/22, que dispõe sobre a base de cálculo do ICMS nas operações sujeitas ao regime de substituição tributária para Diesel S10, Óleo Diesel, Gás Liquefeito de Petróleo GLP/P13 e GLP, e dá outras providências.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/despacho/2023/despacho-12-23" target="_blank">Despacho nº 12/2023 </a> <br/>Publicada em 31/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

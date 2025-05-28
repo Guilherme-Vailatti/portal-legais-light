@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Reforma tributária deve ser encaminhada - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/02/2023 | Reforma Tributária - Reforma tributária deve ser encaminhada até abril, diz líder do governo</h1>
+</div>
+<div class="noticia-corpo">
+<p>Deputado diz que Executivo vai aproveitar propostas que já tramitam no Congresso.</p><p>O líder do governo na Câmara, deputado <a href="https://www.camara.leg.br/deputados/141470" target="_blank">José Guimarães (PT-CE)</a>, anunciou em coletiva de imprensa nesta quinta-feira (2) que o Executivo deve enviar proposta sobre reforma tributária ao Congresso até abril. Ele informou que a discussão do tema deve ser iniciada no início da próxima semana com o ministro da Fazenda, Fernando Haddad.</p><p>“Está sob o comando do ministro Fernando Haddad. Nós vamos começar a dialogar a partir de segunda-feira (6) sobre o conteúdo dela, sobre o que nós podemos fazer antecipadamente para termos uma reforma tributária robusta e que dê conta dos problemas”, informou o líder.</p><p>O texto vai aproveitar aspectos da <a href="https://www.camara.leg.br/noticias/555563-proposta-simplifica-sistema-tributario-e-unifica-tributos-sobre-consumo" target="_blank">Propostas de Emenda à Constituição (PEC) 45/19</a>, do deputado <a href="https://www.camara.leg.br/deputados/178975" target="_blank">Baleia Rossi (MDB-SP)</a>, que simplifica o sistema tributário nacional pela unificação de tributos sobre o consumo, e da <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/137699" target="_blank">PEC 110/19</a>, do Senado, para dar mais agilidade à tramitação da matéria.</p><p>“Tem coisas muito boas do ponto de vista do pacto federativo na proposta da PEC 110, como tem coisas muito relevantes na PEC 45, que trata mais da certificação dos tributos. Não será uma nova PEC", disse. Sobre o novo arcabouço fiscal, que vai substituir a disciplina de teto de gastos, o líder informou que uma proposta deve ser apresentada até julho.</p><p>Guimarães disse que não há definição sobre qual Casa iniciará a apreciação da proposta de reforma tributária, o que depende, segundo ele, de entendimento entre os presidentes da Câmara, deputado <a href="https://www.camara.leg.br/deputados/160541" target="_blank">Arthur Lira (PP-AL)</a> e do Senado, Rodrigo Pacheco (PSD-MG).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/936911-reforma-tributaria-deve-ser-encaminhada-ate-abril-diz-lider-do-governo/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 02/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

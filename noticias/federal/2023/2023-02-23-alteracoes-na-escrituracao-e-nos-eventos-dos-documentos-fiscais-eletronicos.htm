@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação MG - Decreto nº 48.573/2023 - Alterações na escri - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/02/2023 | Legislação MG - Decreto nº 48.573/2023 - Alterações na escrituração e nos eventos dos documentos fiscais eletrônicos</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram promovidas diversas alterações no Regulamento do ICMS em decorrência do disposto no Ajuste Sinief nº 22/2019, no Ajuste Sinief nº 38/2021 , e no art. 39 do CTE-MG/1975, alterações essas que entram em vigor a partir de 16/02/2023.</p><p>a) foi determinado que as informações do comprovante de entrega dos produtos, do canhoto destacável da 1ª via da nota fiscal, relativas à declaração de recebimento dos produtos, a data do recebimento dos produtos, e a identificação e assinatura do recebedor dos produtos, poderão ser inseridas de forma manuscrita no Danfe, ou enviadas, por meio eletrônico, nos termos do art. 11-K da Parte 1 do Anexo V do RICMS-MG/2002;</p><p>b) o remetente realizará o evento "Comprovante de Entrega da NF-e", correspondente ao registro de entrega da mercadoria, por meio da captura eletrônica de informações relacionadas com a confirmação da entrega da carga, que substituirá o canhoto em papel do documento auxiliar;</p><p>c) o remetente registrará o cancelamento do registro de entrega da mercadoria por meio do evento Cancelamento do Comprovante de Entrega da NF-e;</p><p>d) NF-e que for cancelada será escriturada, sem valores monetários, de acordo com a legislação tributária;</p><p>a) o comprovante de entrega do CT-e e o cancelamento do comprovante de entrega do CT-e serão registrados de forma automática pela propagação do registro do evento correspondente relacionado em um CT-e que referência a NF-e por meio dos ambientes autorizadores dos documentos fiscais eletrônicos;</p><p>b) a comprovação da entrega da mercadoria nos termos da letra "a" anterior substitui o canhoto em papel do documento auxiliar;</p><p>Foi determinado, por fim, que a averbação de exportação, o registro da data de embarque e de averbação da DU-E, e a quantidade de mercadoria na unidade tributável efetivamente embarcada para o exterior serão registrados de forma automática por propagação por meio dos ambientes autorizadores dos documentos fiscais eletrônicos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/decretos/2023/d48573_2023.html" target="_blank">Decreto nº 48.573/2023</a> <br/>Publicada em 16/02/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
