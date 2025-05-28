@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista  - Circular Caixa nº 1.046/2024 FGTS - Divulgada - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/03/2024 | Trabalhista  - Circular Caixa nº 1.046/2024 FGTS - Divulgadas orientações para uso contingencial da SEFIP e da GRRF para competência a partir de março/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por meio da Circular Caixa nº 1.046/2024 , a Caixa Econômica Federal (Caixa) divulgou orientação acerca do uso do SEFIP para efetivação de depósito mensal, da reclamatória trabalhista e da contribuição social, no prazo ou em atraso, sobre a remuneração paga ou devida a cada trabalhador a partir da competência 03/2024, bem como dos depósitos rescisórios por meio da GRRF, de maneira contingencial, servindo como instrumento a ser adotado, doravante, por todos os entes envolvidos no processo do FGTS.</p><p>Ressalte-se que o uso do SEFIP e GRRF estará permitido a partir da comunicação pública divulgada pelo Ministério do Trabalho e do Emprego/Secretaria de Inspeção do Trabalho, exceto para recolhimentos da administração pública.</p><p>As orientações para recolhimento via SEFIP e GRRF, ainda segundo a Caixa, estão divulgadas no Manual de Orientação ao Empregador - Recolhimentos Mensais e Rescisórios ao FGTS e das Contribuições Sociais, disponível no site da Caixa Econômica Federal, na área de <a href="https://www.caixa.gov.br/site/Paginas/downloads.aspx" target="_blank">Downloads</a>, item FGTS Manuais e Cartilhas Operacionais</p><p>Observação: A versão 18 deste Manual foi divulgado pela <a href="2024-03-04-divulgado-novo-manual-fgts-recolhimentos-mensais-e-rescisorios.htm" target="_blank">Circular Caixa nº 1.045/2024</a> - DOU de 01/03/2024</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/circular-n-1.046-de-29-de-fevereiro-de-2024-546038662" target="_blank">Circular Caixa nº 1.046/2024</a> <br/>Publicada em 01/03/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Prazo para atualização sindical de 2024 termin - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/11/2024 | Trabalhista - Prazo para atualização sindical de 2024 termina em dezembro</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ministério do Trabalho e Emprego, por meio da Secretaria de Relações do Trabalho, informa que restam apenas dois meses para o fim do prazo de atualização de dados para sindicatos, federações e confederações de trabalhadores e empregadores no Cadastro Nacional de Entidades Sindicais (CNES). Esse processo é fundamental para manter o cadastro atualizado, assegurando a confiabilidade das informações sobre organizações sindicais e sua atuação nas relações de trabalho.</p><p>Confira os Prazos:</p><ul>
+<li style="font-weight: bold;">SD (Solicitação de Atualização de Dados Perenes): 28 de dezembro de 2024</li>
+</ul><p>Prazo final para a atualização dos dados de diretoria das entidades sindicais cujos mandatos estejam vencidos no CNES há mais de 8 anos. Para atualizar, as entidades devem acessar a opção “Solicitação de Atualização de Dados Perenes – SD” no CNES, conforme estabelecido na Portaria do MTE nº 3472/23, artigo 2º, VI, artigos 41 e 42.</p><ul>
+<li style="font-weight: bold;">SR (Solicitação de Recadastramento – Atualização Sindical): 31 de dezembro de 2024</li>
+</ul><p>Prazo final para o recadastramento das entidades sindicais com registro sindical concedido antes de 18 de abril de 2005, mas que ainda não migraram para o CNES. O recadastramento deve ser realizado via “Solicitação de Recadastramento – Atualização Sindical – SR”, conforme Portaria do MTE nº 3472/23, artigo 2º, V, artigo 35 e artigo 36. Entidades com cadastro ativo no CNES não precisam realizar atualização via SR.</p><p>De acordo com o Secretário de Relações do Trabalho do MTE, Marcos Perioto, o CNES é instrumento vital para cumprimento do comando constitucional que rege a estrutura sindical brasileira, que é a unicidade sindical. É o coração de todos os procedimentos de registro sindical, fonte fundamental de dados e informações sobre relações do trabalho, organização sindical e sindicalização, de trabalhadores e empregadores. Daí a importância de mantê-lo atualizado e em boas condições de operação e acesso público. “A não atualização dos dados resultará no cancelamento do registro sindical da entidade, conforme estabelecido no artigos 38, IV e V e parágrafos 1º, 2º e 3º ”, alerta Perioto.</p><p>Para acessar o Cadastro Nacional de Entidades Sindicais (CNES), visite: <a href="https://cnes.trabalho.gov.br/" target="_blank">cnes.trabalho.gov.br</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2024/Novembro/prazo-para-atualizacao-sindical-de-2024-termina-em-dezembro" target="_blank">Ministério do Trabalho e Emprego</a> <br/>Publicada em 04/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

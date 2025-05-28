@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Agilidade na geração das guias rescisórias - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/12/2024 | Trabalhista - Agilidade na geração das guias rescisórias</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir do início da arrecadação por meio do FGTS Digital, a data de vencimento do FGTS mensal foi alterada para o dia 20 do mês subsequente. No entanto, nas rescisões de contrato de trabalho em que o desligamento com direito ao saque do FGTS ocorre entre os dias 1º e 9 do mês, o recolhimento referente ao mês anterior deve respeitar o prazo rescisório (D+10), conforme o art. 18 da Lei nº 8.036/1990.</p><p>Nessas situações, ao processar o desligamento no período mencionado, o sistema FGTS Digital ajusta automaticamente a data de vencimento do débito mensal referente ao mês anterior, antecipando-a para atender ao prazo de recolhimento rescisório.</p><p>Com o objetivo de facilitar o processo, foi implementada uma atualização no FGTS Digital, que ajusta automaticamente o vencimento dos débitos mensais de empregados desligados entre os dias 1º e 9 do mês. Dessa forma, ao utilizar as funcionalidades EMISSÃO DE GUIA RÁPIDA ou PARAMETRIZADA, o usuário já encontrará os vencimentos antecipados adequados à nova regra.</p><p>Além disso, na funcionalidade EMISSÃO DE GUIA PARAMETRIZADA, foi incluído o filtro “Vínculo Desligado com Direito ao Saque”, otimizando o procedimento de emissão de guias e garantindo maior praticidade ao usuário.</p><p>Consulte o Manual do FGTS Digital <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/manual-e-documentacao-tecnica" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/fgts-digital-facilidade-na-geracao-de-guias-rescisorias" target="_blank">Ministério do Trabalho e Emprego</a> <br/>Publicada em 06/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 1.794/2024 - NR 28 - Multa de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>31/10/2024 | Trabalhista - Portaria MTE nº 1.794/2024 - NR 28 - Multa de SST tem alteração</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Anexo II da Norma Regulamentadora - NR 28 - Fiscalização e Penalidades, com redação dada pela Portaria SEPRT nº 1.067/2019, que traz o quadro de classificação das infrações às normas de segurança e saúde no trabalho (SST), sofreu alteração (atualização) para dar nova redação aos códigos de ementas da NR 22 - Segurança e Saúde Ocupacional na Mineração e de seus anexos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.794-de-24-de-outubro-de-2024-592474456" target="_blank">Portaria MTE nº 1.794/2024</a> <br/>Publicada em 25/10/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Supremo valida decreto que desobrigou Brasil d - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>26/08/2024 | Trabalhista - Supremo valida decreto que desobrigou Brasil de cumprir norma internacional sobre demissão sem justa causa</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Plenário do Supremo Tribunal Federal confirmou, por unanimidade, a validade do Decreto Presidencial 2100/1996, que retirou o Brasil da Convenção 158 da Organização Internacional do Trabalho. A convenção cria parâmetros de proteção a trabalhadores nos casos de dispensa sem justa causa e, entre outros pontos, prevê que o empregado tem o direito de saber os motivos da sua demissão.</p><p>A decisão foi tomada na conclusão do julgamento da Ação Direta de Inconstitucionalidade <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=1675413" target="_blank">(ADI) 1625</a>, nesta quinta-feira (22).</p><p>A validade do decreto presidencial de 1996 já tinha sido examinada pelo Plenário em 2023, no julgamento da Ação Declaratória de Constitucionalidade (ADC) 39. Como o decreto não havia passado pelo Congresso Nacional, a dúvida girava em torno da validade de um decreto não analisado pelos parlamentares.</p><p>Nesse julgamento, foi firmada a tese de que a retirada do país desse tipo de tratado tem de passar pelo Congresso Nacional. Porém, para garantir a segurança jurídica, a decisão só teve efeitos a partir da data em que foi tomada, ou seja, sem alcançar decretos anteriores. Por essa razão, a validade do decreto de 1996 foi mantida.</p><p>No julgamento da ADI 1625, a mesma tese foi aplicada.</p><p>Confira o <a href="https://noticias-stf-wp-prd.s3.sa-east-1.amazonaws.com/wp-content/uploads/wpallimport/uploads/2024/08/23085407/ADI-1625-denuncia-unilateral-de-tratados_revFSP.pdf" target="_blank">resumo do julgamento</a>.</p><p>Fonte: <a href="https://noticias.stf.jus.br/postsnoticias/supremo-valida-decreto-que-desobrigou-brasil-de-cumprir-norma-internacional-sobre-demissao-sem-justa-causa/" target="_blank">Portal STF</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://noticias.stf.jus.br/postsnoticias/supremo-valida-decreto-que-desobrigou-brasil-de-cumprir-norma-internacional-sobre-demissao-sem-justa-causa/' target='_blank'>Portal STF</a> <br>Publicada em 22/08/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

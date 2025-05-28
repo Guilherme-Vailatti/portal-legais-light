@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - Ato COTEPE/ICMS nº 131/2024 - Aprovada a - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/09/2024 | SPED EFD ICMS IPI - Ato COTEPE/ICMS nº 131/2024 - Aprovada a versão 3.1.7 do SPED Fiscal e novas regras de validação para o ano de 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir de 01/01/2025 os contribuintes passam a observar as regras de escrituração e de validação do Guia Prático da Escrituração Fiscal Digital EFD ICMS/IPI, versão 3.1.7 e da Nota Técnica EFD ICMS IPI nº 2024.001 versão 1.0.</p><p>As principais alterações para 2025 são:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/ato-cotepe/icms-n-131-de-24-de-setembro-de-2024-586488927" target="_blank">Ato COTEPE/ICMS nº 131/2024</a> <br/>Publicada em 25/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

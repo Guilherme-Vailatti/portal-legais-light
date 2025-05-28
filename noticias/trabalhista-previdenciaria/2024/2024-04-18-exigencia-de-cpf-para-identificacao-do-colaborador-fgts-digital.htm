@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital  - Exigência de uso do CPF para identificação d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/04/2024 | FGTS Digital  - Exigência de uso do CPF para identificação do colaborador</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ministério do Trabalho e Emprego (MTE) tem anunciado mudanças significativas nas regras que regem as relações trabalhistas, com destaque para a recente implementação do FGTS digital, que entrou em vigor em 1º de abril de 2024.</p><p>Uma das alterações trazidas pelo FGTS digital é a exigência do uso do Cadastro de Pessoas Físicas (CPF) como identificação do colaborador, substituindo o PIS. Essa alteração segue uma tendência normativa iniciada com a implantação do eSocial e consolidada pela Portaria nº 671/2021, que estabelece o CPF como identificador nos sistemas de controle de jornada.</p><p>Com o FGTS Digital, a identificação do empregado será feita exclusivamente pelo CPF, eliminando a necessidade de geração e uso do PIS dos trabalhadores. Essa mudança resolve problemas relacionados à utilização do PIS, como a possibilidade de um trabalhador possuir mais de um número associado a ele.</p><p>Essa medida visa melhorar a gestão empresarial e aumentar a precisão das informações prestadas pelos empregadores. No entanto, para a marcação e gestão do ponto, ainda é possível usar o PIS, mas apenas em registradores eletrônicos de ponto convencionais (REP-C) homologados antes da Portaria 1510/2009, conforme estabelece o Art. 96 da Portaria 671, in verbis:</p><ul style="list-style-type: circle;">
+<li>Art. 96. Os modelos de registradores eletrônicos de ponto já certificados na vigência da Portaria MTE nº 1.510, de 21 de agosto de 2009, poderão continuar a ser fabricados, bem como utilizados pelos empregadores.</li>
+<p>§ 1º Os registradores eletrônicos de ponto especificados no caput podem continuar a gerar o Arquivo Fonte de Dados em conformidade com o leiaute especificado à época de sua certificação.</p>
+<p>§ 2º Com relação à geração do arquivo mencionado no § 1º, o preenchimento do campo de doze caracteres reservado ao Programa de Integração Social - PIS para inclusão de empregados nos registradores eletrônicos de ponto certificados nos termos da Portaria MTE nº 1.510, de 2009, deve ser preenchido da seguinte forma:</p>
+<p>I - empregados que possuem PIS: colocar "0" na primeira posição do campo e o PIS completo nas próximas onze posições ou informar o PIS completo nas onze primeiras posições e preencher com espaço na última posição (conforme redação da Portaria 1486/2022).</p>
+<p>II - empregados que não possuem PIS e o REP <b>não</b> faz validação do PIS: colocar "9" na primeira posição e o CPF completo nas próximas onze posições; e</p>
+<p>III - empregados que não possuem PIS e o REP faz validação do PIS: colocar "8" na primeira posição, os dez primeiros dígitos do CPF nas posições seguintes e na última posição, o dígito verificador do PIS considerando os dez primeiros dígitos do CPF.</p>
+</ul><p>Saiba mais em: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes#:~:text=No FGTS Digital, a identificação,utilização do PIS dos trabalhadores." target="_blank">Perguntas Frequentes - Ministério do Trabalho e Emprego</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://agenciagov.ebc.com.br/noticias/202402/fgts-digital-comeca-a-funcionar-nesta-sexta-feira-1o-para-os-empregadores" target="_blank">Agência GOV</a> <br/>Publicada em 27/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

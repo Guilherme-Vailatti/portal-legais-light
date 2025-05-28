@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Aviso: Erro no fechamento do eSocial/integração co - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/12/2024 | eSocial - Aviso: Erro no fechamento do eSocial/integração com a DCTFWeb - PIS sobre folha de salários</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi Identificado um erro na recepção do PIS sobre a folha de salários, especificamente na folha anual (13º salário), o qual impede o encerramento do eSocial por uma falha na integração com a DCTFWeb. O problema impacta todos os contribuintes que mantém a tributação do PIS sobre a folha de salários.</p><p>A Receita Federal está trabalhando para ajustar os sistemas, e a previsão de publicação da correção em produção é 09/12/2024. Os contribuintes impactados devem aguardar os ajustes para efetuar o fechamento do eSocial relativo à folha de pagamento do 13º salário.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/erro-no-fechamento-do-esocial-integracao-com-a-dctfweb-2013-pis-sobre-folha-de-salarios" target="_blank">Portal eSocial</a> <br/>Publicada em 03/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

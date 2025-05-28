@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Nota Técnica S-1.2 nº 03/2024 - Ajustes dos leiaut - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | eSocial - Nota Técnica S-1.2 nº 03/2024 - Ajustes dos leiautes da versão S-1.2</h1>
+</div>
+<div class="noticia-corpo">
+<p>Encontra-se publicado a Nota Técnica nº 03/2024, no Portal do eSocial, com ajustes dos leiautes do eSocial S-1.2.</p><p>Esta Nota Técnica tem como objetivo apresentar os ajustes dos leiautes do eSocial que se fazem necessários para inclusão do evento <b>S-2221 – Exame Toxicológico do Motorista Profissional Empregado</b> visando cumprir as normas regulamentadoras e legais.</p><p>O empregador que tenha contratado motorista profissional de transporte rodoviário de passageiros e de cargas é obrigado a informar no eSocial o evento S-2221 que será o responsável por registrar adequadamente os exames toxicológicos conforme as exigências legais. A Nota Orientativa S-1.2 - 2024.07 divulgada juntamente com esta Nota Técnica complementa a orientação aos empregadores sobre como corretamente reportar os resultados dos exames toxicológicos no eSocial em conformidade com a CLT e a Lei 14.599/2023;</p><p>As informações do exame devem ser enviadas até o dia 15 do mês subsequente ao da realização do exame. Para exames pré-admissionais, o prazo é até o dia 15 do mês subsequente à admissão do empregado.</p><p><b>Pré-requisitos</b>: Antes de enviar as informações do exame toxicológico, é necessário enviar os eventos S-2190 ou S-2200, que são referentes ao vínculo trabalhista do empregado.</p><p>Importante destacar que:</p><ul>
+<li>Todos os exames realizados após a obrigatoriedade do evento devem ser registrados;</li>
+<li>É obrigatório enviar as informações dos exames, independentemente de seus resultados serem negativos ou positivos.</li>
+</ul><p>Alterações previstas para serem implantadas nas seguintes datas:</p><ul>
+<li>Ambiente de produção restrita: 30/06/2024</li>
+<li>Ambiente de produção: 01/08/2024</li>
+</ul><p> </p><p><b>Observações:</b>
+</p><p>A mudança nos leiautes inclui a atualização de tabelas, regras de validação, e esquemas XSD, todos consolidados até esta última nota técnica. Sendo assim, foram publicados também os seguintes documentos:</p><ul style="list-style-type: circle;">
+<li>Leiautes do eSocial v. S-1.2 (cons. até NT 03.2024);</li>
+<li>Leiautes do eSocial v. S-1.2 - Anexo I - Tabelas (cons. até NT 03.2024);</li>
+<li>Leiautes do eSocial v. S-1.2 - Anexo II - Regras (cons. até NT 03.2024);</li>
+<li>Esquemas XSD v. S-1.2 (NT 03.2024).</li>
+</ul><p> </p><p>Acesse na íntegra a <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-tecnica-s-1-2-03-2024.pdf" target="_blank">Nota Técnica v. S-1.2 03/2024</a> e a <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-orientativa-2024-07.pdf" target="_blank">Nota Orientativa v. S-1.2 07/2024</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/centrais-de-conteudo/agenda/agenda-1" target="_blank">Portal eSocial</a> <br/>Publicada em 30/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

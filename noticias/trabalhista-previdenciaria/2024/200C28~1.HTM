@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista  - Circular Caixa nº 1.044/2024 - Divulga novo M - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>04/03/2024 | Trabalhista  - Circular Caixa nº 1.044/2024 - Divulga novo Manual FGTS para retificação de dados/transferência de contas vinculadas/devolução de valores recolhidos a maior</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi divulgada a versão 6 do Manual de Orientação Retificação de Dados, Transferência de Contas Vinculadas e Devolução de Valores Recolhidos a Maior, como instrumento disciplinador dos procedimentos pertinentes junto ao FGTS.</p><p>O citado Manual de Orientação está disponível no sítio da Caixa Econômica Federal, na área de <a href="https://www.caixa.gov.br/site/Paginas/downloads.aspx" target="_blank">Downloads</a>, item FGTS Manuais e Cartilhas Operacionais.</p><p>Fica revogada a Circular CAIXA nº 1.027/2023, que havia aprovado a versão 5 do referido Manual.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/circular-n-1.044-de-29-de-fevereiro-de-2024-546045248" target="_blank">DOU</a>  e IOB Online<![CDATA[ ]]></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/circular-n-1.044-de-29-de-fevereiro-de-2024-546045248' target='_blank'>Circular Caixa nº 1.044/2024</a> <br>Publicada em 01/03/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

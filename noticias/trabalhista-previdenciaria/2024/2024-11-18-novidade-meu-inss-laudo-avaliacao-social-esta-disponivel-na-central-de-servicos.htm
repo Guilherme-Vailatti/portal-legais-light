@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdência - Tem novidade no Meu INSS: Laudo de Avaliação S - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/11/2024 | Previdência - Tem novidade no Meu INSS: Laudo de Avaliação Social já está disponível na central de serviços</h1>
+</div>
+<div class="noticia-corpo">
+<p>Os requerentes do Benefício de Prestação Continuada (BPC) à pessoa com deficiência têm uma nova ferramenta no site <a href="https://meu.inss.gov.br/" target="_blank">Meu INSS</a>. Aqueles que já passaram pelas avaliações médica e social agora podem ter acesso aos laudos de uma maneira bem mais rápida. Basta clicar em um botão no site ou aplicativo que já chega ao resultado.</p><p>Quem utilizou a novidade percebeu a diferença. "Lembro do tempo em que o requerente, para ter o resultado, precisava ir a uma agência do INSS, pegar senha e esperar em uma fila. Agora basta clicar no botão do aplicativo", comentou o gerente-executivo do INSS em Teresina, William Machado.</p><p>O Benefício de Prestação Continuada à pessoa com deficiência é da Lei Orgânica da Assistência Social (BPC -Loas) e prevê um salário mínimo mensal à pessoa que comprove não possuir meios de prover a própria manutenção, mesmo com ajuda da família. A avaliação social verifica as condições socioeconômicas e a avaliação médica examina a deficiência.</p><p>Os resultados das avaliações agora estão disponíveis na plataforma Meu INSS, com o serviço de nome "Laudo Médico e Avaliação Social". "As conclusões são decisivas para quem pleiteia esse tipo de benefício. Quando são favoráveis, por exemplo, o requerente já fica próximo de ter os pagamentos liberados", lembra Edimilson Saraiva, chefe do serviço de gerenciamento de relacionamento com o cidadão, da Gerência-Executiva do INSS em Teresina.</p><p>Um detalhe é que pode acontecer do INSS reaproveitar avaliações feitas em pedidos anteriores. Nesse tipo de caso, os laudos estarão disponíveis no benefício de origem, não no novo requerimento. Outra informação é que, para pedidos de BPC realizados antes de junho de 2021 e para outros tipos de benefícios, é necessário pedir a cópia do processo.</p><p>O serviço "Laudo Médico e Avaliação Social" está disponível no site (<a href="https://meu.inss.gov.br/" target="_blank">meu.inss.gov.br</a>) ou aplicativo do Meu INSS.</p><p style="font-weight: bold;">Como pedir o documento</p><p>Basta fazer login no Meu INSS com a conta gov.br, localizar a opção "Laudo Médico e Avaliação Social" e baixar os arquivos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/previdencia/pt-br/noticias/2024/novembro/tem-novidade-no-meu-inss-laudo-de-avaliacao-social-ja-esta-disponivel-na-central-de-servicos" target="_blank">Ministério da Previdência Social</a> <br/>Publicada em 08/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

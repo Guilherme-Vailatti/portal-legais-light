@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 1.420/2024 - Alteradas disposi - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/08/2024 | Trabalhista - Portaria MTE nº 1.420/2024 - Alteradas disposições sobre contêineres nas áreas de vivência na indústria da construção</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Norma Regulamentadora nº 18 (NR 18) - Portaria SEPRT nº 3.733/2020, que trata das condições de segurança e saúde no trabalho na indústria da construção, sofreu as seguintes alterações:</p><p>A Portaria MTE nº 1.420/2024, por sua vez, passou a estabelecer, com relação ao uso ou reuso de contêiner originalmente utilizado para transporte de cargas em área de vivência, que:</p><p>(*) O subitem 24.9.7.1 da NR 24 prevê:</p><ul style="list-style-type: circle;">
+<li>"Na ausência de código de obra local, deve ser garantido pé direito mínimo de 2,50 m (dois metros e cinquenta centímetros), exceto nos quartos de dormitórios com beliche, cuja medida mínima será de 3,00 m (três metros)."</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.420-de-27-de-agosto-de-2024-580835219" target="_blank">Portaria TEM nº 1.420/2024</a> <br/>Publicada em 28/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

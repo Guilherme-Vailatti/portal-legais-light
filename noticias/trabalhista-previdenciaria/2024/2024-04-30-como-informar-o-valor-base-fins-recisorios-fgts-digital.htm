@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Informando o valor base para fins rescisórios - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/04/2024 | FGTS Digital - Informando o valor base para fins rescisórios no FGTS Digital</h1>
+</div>
+<div class="noticia-corpo">
+<p>No Sistema FGTS Digital foi disponibilizada uma ferramenta para que o empregador faça a gestão do histórico de remunerações dos empregados, que são utilizadas para fins de cálculo da indenização compensatória.</p><p style="text-align: center;">
+<img src="../../../Resources/Images/Notícias/fgts-digital-informando-valor-base.png"/>
+</p><p>O Sistema faz automaticamente o cálculo dos valores de multa rescisória a recolher, nos casos em que o motivo de desligamento gera direito ao pagamento da multa rescisória (40% ou 20%), trazendo as bases já informadas ao eSocial, inclusive de competências anteriores ao início do FGTS Digital.</p><p>Caso o sistema não encontre base de cálculo para alguma competência, seja porque a competência é anterior ao uso do eSocial, ou porque não foi declarada, o histórico de remunerações do empregado será mostrado como pendente e o empregador deve, preferencialmente, realizar a recomposição do histórico de valores de FGTS preenchendo manualmente as bases de cálculo, utilizando o preenchimento em bloco ou carregando um arquivo com as remunerações faltantes do trabalhador.</p><p>Alternativamente, o empregador pode declarar o valor total atualizado da base de cálculo da indenização compensatória, incluídos os valores de FGTS decorrentes da rescisão. Ao optar por esta forma de declaração, o empregador deve preencher o campo “Valor da Base para Fins Rescisórios” com o valor total da base de cálculo, informando se o valor inclui as verbas para fins rescisórios e o mês anterior à rescisão.</p><p>Cumpre aqui esclarecer que o valor informado neste caso é <b>sempre o valor total da base de cálculo</b>, portanto, caso haja necessidade de majoração do saldo para fins rescisórios, o empregador deve informar o novo valor total, ainda que a guia já tenha sido gerada e paga.</p><p>Em outras palavras, caso seja necessário recolher uma diferença na indenização compensatória em razão de majoração no valor para fins rescisórios, o empregador não deve preencher este campo apenas com a diferença na base de cálculo.</p><p><b>Por exemplo:</b>
+</p><p>O empregador opta por declarar o valor total de R$ 100.000,00 para fins rescisórios, emite a guia e faz o respectivo pagamento; mais adiante, percebe que houve um equívoco e que o valor para fins rescisórios é, na verdade, R$110.000,00.</p><p>Neste caso, o empregador deve alterar o histórico de remunerações, preenchendo o campo “Valor da Base para Fins Rescisórios” com o novo valor total de R$ 110.000,00, e não apenas com a diferença de R$ 10.000,00 como seria o procedimento na antiga sistemática da SEFIP.</p><p>O sistema, automaticamente calculará a diferença de indenização compensatória a recolher.</p><p>Se uma guia houver sido emitida, mas ainda não quitada, o empregador deve gerar nova guia com o valor integral e desconsiderar a anterior.</p><p>Veja também: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/apuracao-de-fgts-mensal-e-indenizacao-compensatoria-complementar" target="_blank">Apuração de FGTS mensal e indenização compensatória complementar</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=534157&amp;ori=1" target="_blank">Portal MTE</a> <br/>Publicada em 26/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

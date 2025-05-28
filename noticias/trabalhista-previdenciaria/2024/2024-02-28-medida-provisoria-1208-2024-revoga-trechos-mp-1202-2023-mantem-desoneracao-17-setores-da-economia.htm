@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal  - Medida Provisória nº 1.208/2024 - Revoga trechos  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/02/2024 | Federal  - Medida Provisória nº 1.208/2024 - Revoga trechos da MP 1.202/2023 e mantém desoneração a 17 setores da economia</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo Federal publicou no DOU do dia 28/02/2024 a Medida Provisória nº 1.208 que revoga dispositivos da Medida Provisória nº 1.202, de 28 de dezembro de 2023.</p><p>O presidente Luiz Inácio Lula da Silva assinou no dia 27 de fevereiro de 2024 a revogação de trechos da Medida Provisória nº 1.202/2023 que reonerava a folha de pagamento de 17 setores da economia logo após o Congresso ter aprovado a prorrogação da desoneração até 2027.</p><p>Com a revogação parcial, passa a valer a MP 1.208 de 2024 que mantém a desoneração.</p><p>Art. 1º Ficam revogados os seguintes dispositivos da Medida Provisória nº 1.202, de 28 de dezembro de 2023:</p><p><b>I</b> - os art. 1º a art. 3º;</p><p><b>II</b> - as alíneas "b", "c" e "d" do inciso II docaputdo art. 6º; e</p><p><b>III</b> - os Anexos I e II.</p><p>Art. 2º Esta Medida Provisória entra em vigor em 1º de abril de 2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.208-de-27-de-fevereiro-de-2024-545406999" target="_blank">MP 1.208/2024</a> <br/>Publicada em 28/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

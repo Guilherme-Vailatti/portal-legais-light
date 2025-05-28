@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTF - Imposto de renda sobre aplicações em fundos de invest - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/01/2024 | DCTF - Imposto de renda sobre aplicações em fundos de investimento: novas regras de declaração na DCTF</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal  divulgou, por meio da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=135339" target="_blank">Instrução Normativa RFB nº 2.166, de 15 de dezembro de 2023</a>, as novas obrigações referentes ao Imposto de Renda sobre aplicações em fundos de investimento. Conforme o art. 5º dessa normativa, os fundos de investimento agora estão obrigados a declarar, na Declaração de Débitos e Créditos Tributários Federais (DCTF), os valores relativos ao imposto sobre a renda incidente sobre os rendimentos apurados até 31 de dezembro de 2023.</p><p>O recente Ato Declaratório Executivo Codar nº 21, datado de 14 de dezembro de 2023, trouxe consigo a instituição dos códigos de receita 6216, 6222 e 6239. Esses códigos serão utilizados para sinalizar as diferentes regras de transição do Imposto de Renda Retido na Fonte (IRRF), conforme detalhado nos §§ 1º e 2º do art. 5º e no anexo único da IN RFB nº 2.166/2023.</p><p>Para a correta declaração dos valores, os fundos de investimento devem observar as seguintes orientações:</p><ul>
+<li>Código 6216: Deve ser utilizado para rendimentos distribuídos em até quatro parcelas;</li>
+<li>Código 6222: Destinado aos rendimentos distribuídos em uma única parcela;</li>
+<li>Código 6239: Indicado para rendimentos distribuídos em até 24 parcelas.</li>
+</ul><p>Os valores correspondentes aos códigos mencionados devem ser reportados no grupo IRRF da DCTF, através de extensões específicas. Para facilitar esse processo, os contribuintes têm a responsabilidade de incluir manualmente as extensões na Tabela de Códigos do Programa Gerador da Declaração (PGD DCTF), acessível por meio da opção "Manutenção da Tabela de Códigos" no menu Ferramentas.</p><p>Essas mudanças representam um esforço para aprimorar a transparência e a conformidade na declaração de impostos sobre investimentos, proporcionando maior clareza e facilitando o cumprimento das obrigações fiscais por parte dos contribuintes.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/dezembro/imposto-de-renda-sobre-aplicacoes-em-fundos-de-investimento-novas-regras-de-declaracao-na-dctf" target="_blank">Receita Federal</a> <br/>Publicada em 29/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

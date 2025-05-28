@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Nota Orientativa nº 03/2024 - Situação de Cont - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>23/05/2024 | Trabalhista - Nota Orientativa nº 03/2024 - Situação de Contingência para o recolhimento do FGTS por meio dos sistemas vinculados ao Conectividade Social</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Secretaria de Inspeção do Trabalho - SIT publicou a Nota Orientatva para Situação de Contingência N° 03/2024 com esclarecimentos sobre a prorrogação dos prazos para recolhimento de FGTS via Conectividade Social para a Administração Pública.</p><p><b>Confira na íntegra o conteúdo:</b>
+</p><p>Prorroga o prazo dos procedimentos excepcionais para recolhimento de FGTS por meio dos sistemas vinculados ao Conectividade Social para os entes públicos federais pertencentes ao orçamento fiscal da seguridade social, em razão de situação de contingência verificada Processo SEI nº 19966.111642/2023-58.</p><p>Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/nota-orientativa-para-situacao-de-contigencia-no-03-2024" target="_blank">Ministério do Trabalho e Emprego</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/nota-orientativa-para-situacao-de-contigencia-no-03-2024' target='_blank'>Nota Orientativa nº 03/2024</a> <br>Publicada em 22/05/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

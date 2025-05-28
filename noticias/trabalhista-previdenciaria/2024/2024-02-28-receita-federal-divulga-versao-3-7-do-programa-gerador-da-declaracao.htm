@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTF  - Receita Federal divulga versão 3.7 do programa gerad - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/02/2024 | DCTF  - Receita Federal divulga versão 3.7 do programa gerador da declaração</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria Especial da Receita Federal (RFB) disponibilizou em seu site na Internet a versão 3.7 do Programa Gerador de Declaração da Declaração de Débitos e Créditos Tributários Federais (DCTF), a qual permite o preenchimento das declarações referentes ao ano-calendário de 2024.</p><p>Cabe observar, entretanto, que a transmissão de DCTF preenchidas no novo programa somente será liberada a partir do dia <b>29/02/2024</b>.</p><p>Vale ressaltar, ainda que, apesar de alguns códigos de tributo passarem a ser declarados na DCTFWeb a partir de janeiro de 2024, não houve alteração nas regras de obrigatoriedade da DCTF.</p><p><b>Principais novidades da versão 3.7 do PGD DCTF:</b>
+</p><ul>
+<li>Permite o preenchimento das declarações referentes ao ano de 2024;</li>
+<li>Desabilita a ficha CSRF (CSLL/COFINS/PIS/PASEP Retidas na Fonte) a partir de janeiro de 2024, a partir de janeiro de 2024, mês em que as contribuições sociais retidas na fonte pelas pessoas jurídicas de direito privado (art. 30 da Lei nº 10.833, de 29 de dezembro de 2003) passaram a ser informadas na Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb);</li>
+<li>Permite informar um CNPJ da incorporação filial do CNPJ declarante quando o débito do Regime Especial de Tributação/Pagamento Unificado de Tributos (RET) for de Sociedade em Conta de Participação (SCP); e</li>
+<li>Atualização da tabela de códigos de receitas, facilitando a seleção e classificação dos tributos.</li>
+</ul><p>Acesse a página oficial da <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dctf" target="_blank">Receita Federal</a> para fazer o download do PGD DCTF.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/fevereiro/nova-versao-do-programa-gerador-da-dctf-ja-esta-disponivel-para-download-no-site-da-receita" target="_blank">Receita Federal</a> <br/>Publicada em 27/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

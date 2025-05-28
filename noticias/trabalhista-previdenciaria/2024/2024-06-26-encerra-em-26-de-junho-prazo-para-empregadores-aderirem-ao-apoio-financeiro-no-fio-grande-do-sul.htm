@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista RS - Portaria MTE nº 991/2024 - Encerra em 26 de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/06/2024 | Trabalhista RS - Portaria MTE nº 991/2024 - Encerra em 26 de junho o prazo para os empregadores aderirem ao apoio financeiro de R$ 1.412,00</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo Federal instituiu o apoio financeiro de R$ 1.412,00 para empregados inscritos no eSocial até 31 de maio de 2024, que trabalham em empresas situadas em áreas efetivamente atingidas pelos eventos climáticos no Rio Grande do Sul, conforme delimitação estabelecida pelo Ministério do Trabalho e Emprego, em municípios em estado de calamidade ou situação de emergência.</p><p>Esse apoio terá natureza de auxílio à empresa que atender às exigências estabelecidas na Medida Provisória nº 1.230/2024 e, também, na Portaria MTE nº 991/2024 , será pago pela Caixa Econômica Federal diretamente ao empregado, e consiste no pagamento de duas parcelas de R$ 1.412,00 cada, nos meses de julho e agosto de 2024.</p><p>Para que o auxílio financeiro seja pago é necessário que a empresa faça a adesão ao programa via Portal Emprega Brasil - Empregador, no endereço <a href="https://servicos.mte.gov.br/empregador/#/" target="_blank">https://servicos.mte.gov.br/empregador/</a>, entre às zero horas do dia 20 de junho até as 23 horas e 59 minutos do dia 26 de junho de 2024.</p><p>Também é necessário que, no momento da adesão, seja feita a declaração de redução do faturamento e da capacidade de operação do estabelecimento em decorrência dos eventos climáticos, que impossibilite o cumprimento de suas obrigações de pagamento da folha salarial.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-991-de-19-de-junho-de-2024-566898958" target="_blank">Portaria MTE nº 991/2024</a> <br/>Publicada em 20/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

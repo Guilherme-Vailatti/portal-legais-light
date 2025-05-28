@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Medida Provisória nº 1.206/2024 - Altera os va - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>09/02/2024 | Trabalhista - Medida Provisória nº 1.206/2024 - Altera os valores da tabela progressiva mensal do Imposto sobre a Renda da Pessoa Física</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Publicada no DOU na edição extra a Medida Provisória nº 1.206/2024 que altera os valores da tabela progressiva mensal do Imposto sobre a Renda da Pessoa Física de que trata o art. 1º da Lei nº 11.482/2007.</p><p>O Presidente da República, no uso da atribuição que lhe confere o art. 62 da Constituição, adota a seguinte Medida Provisória, com força de lei:</p><p>.Art. 1º A Lei nº 11.482, de 31 de maio de 2007 , passa a vigorar com as seguintes alterações:</p><p>" Art. 1º .....</p><p>X - a partir do mês de maio do ano-calendário de 2023 até o mês de janeiro do ano-calendário de 2024:</p><p>.....</p><p>XI - a partir do mês de fevereiro do ano-calendário de 2024:</p><p><b>Tabela Progressiva Mensal</b>
+</p><p>....." (NR)</p><p>Art. 2º Esta Medida Provisória entra em vigor na data de sua publicação.</p><p>Para consultar a Instrução Normativa RFB nº <b>2.174/2024</b> referente à tabela de PLR (Participação nos Lucros ou Resultados das Empresas), acesse a <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/gp/2024/2024-03-01-in-rfb-2174-2024-altera-tabelas-progressivas-imposto-sobre-renda-pessoa-fisica.htm" target="_blank">notícia</a> em nosso Portal de Exigências Legais.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.206-de-6-de-fevereiro-de-2024-541721723" target="_blank">DOU</a> e <a href="https://noticias.iob.com.br/tabela-do-imposto-de-renda-governo-altera-faixa-de-isencao/" target="_blank">IOB Online</a></p><p>Para alteração no <b>Gestão de Pessoas | HCM</b> da Senior, acesse o caminho Menu - Tabelas &gt; Valores &gt; Imposto de Renda e preencha os campos conforme exemplo a seguir:</p><p>
+<img src="../../../Resources/Images/Notícias/09-02-24-mp1206-2024.png"/>
+</p><p> </p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.206-de-6-de-fevereiro-de-2024-541721723' target='_blank'>Medida Provisória nº 1.206</a> <br>Publicada em 06/02/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

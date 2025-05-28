@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Resolução CFM nº 2.382/2024 - Emissão e gerenc - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>09/09/2024 | Trabalhista - Resolução CFM nº 2.382/2024 - Emissão e gerenciamento de atestados médicos físicos e digitais em todo o território nacional (Atesta CFM)</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Conselho Federal de Medicina (CFM) lançou na quinta-feira 05/09/2024 o Atesta CFM, uma plataforma online que vai oferecer à sociedade serviços de validação sobre atestados médicos emitidos no país. Entre suas disposições a resolução institui a plataforma atesta CFM como o sistema oficial e obrigatório para emissão e gerenciamento de atestados médicos, inclusive de saúde ocupacional, em todo o território nacional.</p><p>Acesse a notícia publicada pelo Portal do Conselho Federal de Medicina: <a href="https://portal.cfm.org.br/noticias/cfm-lanca-plataforma-online-para-combater-a-emissao-de-atestados-medicos-falso-no-brasil" target="_blank">CFM lança plataforma online para combater a emissão de atestados médicos falsos no Brasil</a>.</p><p><b>Cronograma previsto do projeto Atesta CFM:</b>
+</p><ul>
+<li>Resolução publicada em 06/09/2024;</li>
+<li>Resolução em vigor 05/11/2024;</li>
+<li>Resolução em obrigatoriedade 06/03/2025.</li>
+</ul><p>Fonte: <a href="https://www.in.gov.br/web/dou/-/resolucao-cfm-n-2.382-de-21-de-junho-de-2024-582933624" target="_blank">DOU</a></p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/web/dou/-/resolucao-cfm-n-2.382-de-21-de-junho-de-2024-582933624' target='_blank'>Resolução CFM nº 2.382/2024</a> <br>Publicada em 06/09/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

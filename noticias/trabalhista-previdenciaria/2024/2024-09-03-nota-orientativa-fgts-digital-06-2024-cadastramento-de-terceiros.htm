@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Nota Orientativa FGTS Digital nº 06/2024 - Ca - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/09/2024 | FGTS Digital - Nota Orientativa FGTS Digital nº 06/2024 - Cadastramento de terceiros</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria de Inspeção do Trabalho - SIT publicou a Nota Orientativa nº 06/2024, que substitui a Nota Orientativa nº 01/2024, que trata dos procedimentos junto ao FGTS Digital para solicitação de cadastramento de administrador judicial, inventariante, curador e correlatos.</p><p>A publicação poderá ser conferida na área de <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/manual-e-documentacao-tecnica" target="_blank">Documentação Técnica</a> do Ministério do Trabalho e Emprego</p><p>Confira na íntegra o conteúdo:</p><p>Altera e substitui a NOTA ORIENTATIVA FGTS DIGITAL Nº 01/2024, que define procedimentos para cadastramento de terceiros para acessar o sistema FGTS Digital como Administrador Judicial, Inventariante, Curador e correlatos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/nota-orientativa-fgts-digital-no-06-2024" target="_blank">Nota Orientativa FGTS Digital nº 06/2024</a> <br/>Publicada em 29/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

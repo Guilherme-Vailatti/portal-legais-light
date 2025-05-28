@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 1.369/2024 - Alterada tabela c - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/08/2024 | Trabalhista - Portaria MTE nº 1.369/2024 - Alterada tabela com normas técnicas dos Equipamentos de Proteção Individual (EPI)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi alterada a Tabela 1 do Anexo I da Portaria MTP nº 672/2021, a qual dispõe sobre as normas técnicas aplicáveis aos Equipamentos de Proteção Individual (EPI), no tocante aos aspectos desses equipamentos sobre:</p><p>Fazem parte dos EPI constantes na referida Tabela 1 os equipamentos para:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.369-de-14-de-agosto-de-2024-578473850" target="_blank">Portaria MTE nº 1.369/2024</a> <br/>Publicada em 15/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

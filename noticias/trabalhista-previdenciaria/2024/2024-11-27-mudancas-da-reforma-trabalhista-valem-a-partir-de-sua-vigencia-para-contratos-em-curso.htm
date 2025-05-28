@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Mudanças da Reforma Trabalhista valem a partir - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/11/2024 | Trabalhista - Mudanças da Reforma Trabalhista valem a partir de sua vigência para contratos em curso</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Tribunal Superior do Trabalho decidiu, nesta segunda-feira (25), que a Reforma Trabalhista (Lei 13.467/2017) tem aplicação imediata aos contratos de trabalho em curso, mas apenas em relação aos fatos que forem ocorrendo a partir de sua vigência. A decisão foi tomada por maioria em julgamento de Incidente de Recursos Repetitivos (IRR), e a tese fixada (Tema 23) é de observância obrigatória em toda a Justiça do Trabalho.</p><p>No julgamento, o Pleno do TST analisou o caso de uma trabalhadora da JBS S.A., em Porto Velho (RO), que reivindicava o pagamento do período de deslocamento (horas in itinere) em transporte fornecido pela empresa, que era considerado tempo à disposição do empregador. Contudo, a Reforma Trabalhista, que entrou em vigor em novembro de 2017, eliminou essa obrigação. A controvérsia era se a nova regra atingiria contratos vigentes antes da reforma ou apenas os firmados após a mudança.</p><p>A Terceira Turma do TST havia decidido que o direito à parcela era parte do patrimônio jurídico da trabalhadora e não poderia ser suprimido, condenando a empresa a pagar o benefício por todo o período contratual, de dezembro de 2013 a janeiro de 2018.</p><p>A JBS recorreu à Subseção I Especializada em Dissídios Individuais (SDI-1), que encaminhou o caso ao Tribunal Pleno em razão da relevância do tema. O objetivo era estabelecer um precedente vinculante para casos semelhantes em todas as instâncias trabalhistas.</p><p>A maioria do colegiado concluiu que a Reforma Trabalhista deve ser aplicada imediatamente aos contratos em curso, mas apenas para situações ocorridas após sua vigência. Segundo o relator, ministro Aloysio Corrêa da Veiga, presidente do TST, quando os termos de um contrato decorrem de lei, a lei nova se aplica imediatamente aos fatos pendentes ou futuros. “É que, nestes casos, a lei nova não afeta um verdadeiro ajuste entre as partes, mas apenas o regime jurídico imperativo, que independe da vontade daquelas e, por isso, se sujeita a eventuais alterações subsequentes”, assinalou.</p><p>O relator destacou que o princípio da irredutibilidade salarial, garantido pela Constituição, protege o valor nominal das parcelas permanentes, mas não a forma de cálculo ou os benefícios variáveis dependentes de fatos futuros. Dessa maneira, as alterações legais que tenham impacto em parcelas não permanentes, condicionadas a situações específicas, podem ser aplicadas aos contratos em curso.</p><p>A decisão afastou a aplicação de princípios como a vedação ao retrocesso social, norma mais favorável e condição mais benéfica. O relator destacou que esses princípios não regulam a relação entre leis que se sucedem, e são aplicáveis apenas para compatibilizar normas vigentes simultaneamente ou preservar cláusulas contratuais contra alterações desfavoráveis promovidas por um dos contratantes, mas não pelo legislador.</p><p>Com esse entendimento, a condenação da JBS foi limitada ao pagamento de horas de deslocamento até 10 de novembro de 2017, véspera da entrada em vigor da reforma.</p><p>Além desse ponto específico, o entendimento se aplica a outras mudanças promovidas pela Reforma Trabalhista.</p><p>A tese vinculante firmada foi a seguinte:</p><p>“A Lei nº 13.467/2017 possui aplicação imediata aos contratos de trabalho em curso, passando a regular os direitos decorrentes de lei cujos fatos geradores tenham se efetivado a partir de sua vigência.”</p><p>Votaram com o relator os ministros Vieira de Mello Filho (corregedor-geral da Justiça do Trabalho), Ives Gandra Martins Filho, Caputo Bastos, Agra Belmonte, Douglas Alencar Rodrigues, Breno Medeiros, Alexandre Ramos, Dezena da Silva, Evandro Valadão, Amaury Rodrigues e Sergio Pinto Martins e as ministras Maria Cristina Peduzzi, Dora Maria da Costa e Morgana de Almeida Richa.</p><p>O ministro Mauricio Godinho Delgado, vice-presidente do TST, abriu divergência, por entender que os contratos de trabalho firmados antes da reforma deveriam permanecer sob as regras vigentes na época da celebração. Seguiram esse entendimento os ministros Augusto César, José Roberto Pimenta, Hugo Scheuermann, Cláudio Brandão e Alberto Balazeiro e as ministras Kátia Arruda, Delaíde Miranda Arantes, Maria Helena Mallmann e Liana Chaib.</p><p>A Confederação Nacional da Indústria (CNI), a Confederação da Agricultura e Pecuária do Brasil (CNA), a Confederação Nacional do Sistema Financeiro (Consif) e a Central Única dos Trabalhadores participaram do julgamento.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.trt5.jus.br/noticias/mudancas-reforma-trabalhista-valem-partir-sua-vigencia-para-contratos-curso" target="_blank">Justiça do Trabalho</a> <br/>Publicada em 19/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

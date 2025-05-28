@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Nota SEI nº 1/2024/CFGTS/DEFIT/SIT/TEM - Proc - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/04/2024 | FGTS Digital - Nota SEI nº 1/2024/CFGTS/DEFIT/SIT/TEM - Procedimentos excepcionais para recolhimento de FGTS</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Nota Orientativa para Situação de Contingência Nº 01/2024, publicada pela Secretaria de Inspeção do Trabalho - SIT, estabelece procedimentos excepcionais para o recolhimento do Fundo de Garantia do Tempo de Serviço (FGTS) por meio dos sistemas vinculados ao Conectividade Social. Esses procedimentos aplicam-se aos entes públicos federais pertencentes ao orçamento fiscal da seguridade social em razão de uma situação de contingência verificada.</p><p>Aqui estão os principais pontos da nota:</p><ul>
+<li>O Manual Simplificado de Ordens Bancárias do Tesouro Nacional orienta os gestores públicos federais sobre os procedimentos relacionados aos pagamentos por meio do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI);</li>
+<li>No governo federal, os pagamentos são realizados por meio do SIAFI, com a emissão de Ordem Bancária (OB). Existem várias espécies de OB, incluindo o OB-PIX, que é utilizado para pagamentos específicos;</li>
+<li>Recentemente, o sistema de pagamento OB-PIX enfrentou uma grave indisponibilidade, sem previsão de retorno efetivo. Isso está impedindo que as entidades pertencentes ao orçamento fiscal da seguridade social cumpram suas obrigações de recolhimento do FGTS. O não recolhimento desses valores pode afetar a arrecadação do FGTS e prejudicar milhares de trabalhadores;</li>
+<li>A Portaria MTE nº 240, de 29 de fevereiro de 2024, prevê que a Secretaria de Inspeção do Trabalho pode estabelecer procedimentos específicos para geração de guias de recolhimento do FGTS em situações de contingência. Além disso, a portaria autoriza a adoção de procedimentos pela SIT em situações de contingência, conforme consta no Edital/SIT nº 03/2024.</li>
+</ul><p>Em caráter excepcional, considerando a indisponibilidade do OB-PIX, os órgãos e entidades pertencentes ao orçamento fiscal da seguridade social estão autorizados a:</p><ul>
+<li>Utilizar os sistemas vinculados ao Conectividade Social para o recolhimento do FGTS mensal e rescisório referente às competências de março e abril de 2024;</li>
+<li>Informar no Conectividade Social, apenas para viabilizar a transmissão dos dados e o recolhimento do FGTS, uma classificação enquadrada na Seção O e Divisão 84 (CNAE 84 e suas variações) da Classificação Nacional de Atividades Econômicas (CNAE) divulgada pelo Instituto Brasileiro de Geografia e Estatística (IBGE), mesmo que esse CNAE não conste como atividade principal ou secundária em seu cadastro.</li>
+</ul><p>Para mais detalhes, você pode conferir a referida Nota Orientativa na íntegra na área de <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/manual-e-documentacao-tecnica" target="_blank">Documentação Técnica</a> do site do Ministério do Trabalho e Emprego.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/comunicados/nota-orientativa-para-situacao-de-contingencia-no-01-2024" target="_blank">Nota Orientativa para Situação de Contingência nº 01/2024</a> <br/>Publicada em 19/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

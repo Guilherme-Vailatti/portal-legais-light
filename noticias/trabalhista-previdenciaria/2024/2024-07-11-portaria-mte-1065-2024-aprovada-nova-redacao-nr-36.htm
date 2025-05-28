@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 1.065/2024 - Aprovada nova red - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | Trabalhista - Portaria MTE nº 1.065/2024 - Aprovada nova redação da NR 36</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por meio da Portaria MTE nº 1.065/2024 foi aprovada a nova redação da Norma Regulamentadora nº 36 (NR 36), que trata sobre Segurança e Saúde no Trabalho nas Organizações de Abate e Processamento de Carnes e Derivados.</p><p>O Anexo II da NR-36 que trata sobre requisitos de segurança específicos para máquinas utilizadas nas indústrias de abate e processamento de carnes e derivados destinados ao consumo humano permanece vigente com a redação dada pela Portaria MTPS nº 511/2016, Portaria MTb nº 97/2018, Portaria MTb nº 99/2018 e Portaria MTb nº 1.087/2018.</p><p>A referida Portaria entra em vigor em 02/07/2024 e ficando revogados os seguintes dispositivos:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.065-de-1-de-julho-de-2024-569302550" target="_blank">Portaria MTE nº 1.065/2024</a> <br/>Publicada em 02/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

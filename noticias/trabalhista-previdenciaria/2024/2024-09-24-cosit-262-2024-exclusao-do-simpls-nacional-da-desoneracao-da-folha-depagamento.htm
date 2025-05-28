@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdenciária - Solução de Consulta COSIT nº 262/2024 - Exc - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/09/2024 | Previdenciária - Solução de Consulta COSIT nº 262/2024 - Exclusão do Simples Nacional da Desoneração da folha de pagamento</h1>
+</div>
+<div class="noticia-corpo">
+<p>A exclusão do Simples Nacional que opera efeitos dentro de determinado ano calendário implica a apuração da Contribuição Previdenciária (CP) sobre a folha de salários para os períodos restantes do mesmo ano calendário nos casos em que os recolhimentos do Simples Nacional a contemplavam.</p><p>A opção pela Contribuição Previdenciária sobre a Receita Bruta (CPRB) só poderá ser efetivada para o ano calendário subsequente ao da exclusão do Simples Nacional, independentemente de haver retroação dos efeitos de exclusão e do marco adotado, mediante pagamento da contribuição incidente sobre a receita bruta relativa a janeiro ou apresentação de instrumento de confissão de dívida como a Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb) ou a Declaração de Compensação (PER/DCOMP).</p><p>No ano calendário subsequente ao da exclusão do Simples Nacional, a manifestação da opção pela CPRB poderá ocorrer em momento posterior ao vencimento da contribuição previdenciária devida do mês de janeiro.</p><p>Dispositivos Legais: Lei Complementar nº 123, de 2006, arts. 31 e 32; Lei n.º 12.546, de 2011, art. 9º, § 13; IN RFB nº 2.053, de 2021, art. 2º, § 6º, II e art. 21.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/solucao-de-consulta-n-262-de-17-de-setembro-de-2024-585413613" target="_blank">Solução de Consulta COSIT nº 262/2024</a> <br/>Publicada em 20/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

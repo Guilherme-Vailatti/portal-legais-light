@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Portaria MTE nº 1.419/2024 - Prevista alteraçã - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>28/08/2024 | Trabalhista - Portaria MTE nº 1.419/2024 - Prevista alteração da Norma Regulamentadora nº 1 (NR-1) - Disposições Gerais e Gerenciamento de Riscos Ocupacionais</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Dentro de 270 (duzentos e setenta dias) contados da publicação da Portaria MTE nº 1.419/2024, que ocorreu na data de hoje, será alterada a Norma Regulamentadora nº 1 (NR-1) - Disposições Gerais e Gerenciamento de Riscos Ocupacionais, em relação ao capítulo "1.5 Gerenciamento de riscos ocupacionais", constante do Anexo da mencionada Portaria.</p><p>Também no mesmo prazo, o termo "Perigo ou fator de risco ocupacional/Perigo ou fonte de risco ocupacional" do "Anexo I - Termos e definições" da Norma Regulamentadora nº 1 (NR-1) - Disposições Gerais e Gerenciamento de Riscos Ocupacionais, passará a vigorar com a seguinte redação: "Perigo ou fator de risco ocupacional: Elemento ou situação que, isoladamente ou em combinação, tem o potencial de dar origem a lesões ou agravos à saúde".</p><p>Por fim, também no prazo de 270 (duzentos e setenta) dias contados da publicação da Portaria MTE nº 1.419/2024, serão inseridos termos e definições no "Anexo I - Termos e definições" da Norma Regulamentadora nº 1 (NR-1) - Disposições Gerais e Gerenciamento de Riscos Ocupacionais, conforme mencionados no próprio texto legal da referida Portaria do Ministério do Trabalho e Emprego.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.419-de-27-de-agosto-de-2024-580778271" target="_blank">DOU</a> e IOB Online</p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.419-de-27-de-agosto-de-2024-580778271' target='_blank'>Portaria TEM nº 1.419/2024</a> <br>Publicada em 28/08/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

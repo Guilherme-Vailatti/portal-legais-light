@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista  - Instrução Normativa RFB nº 2.174/2024 - Alter - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/03/2024 | Trabalhista  - Instrução Normativa RFB nº 2.174/2024 - Altera as tabelas progressivas do Imposto sobre a Renda da Pessoa Física, anexos II a IV e VII da Instrução Normativa RFB nº 1.500/2014</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada no DOU no dia 16/02/2024 a Instrução Normativa nº 2.174 que altera os valores das tabelas progressivas constante dos Anexos da IN RFB nº 1.500/2014, que dispõe sobre normas gerais de tributação relativas ao Imposto sobre a Renda das Pessoas Físicas.</p><p><b>Anexo III - Participação nos Lucros ou Resultados das Empresas</b>
+</p><p>O Anexo III da Instrução Normativa RFB nº 1.500, de 2014, passa a vigorar com as seguintes alterações:</p><p>"V - a partir do mês de maio do ano-calendário de 2023 até o mês de janeiro do ano-calendário de 2024:</p><p>..................................................................................................................................</p><p>VI - a partir do mês de fevereiro do ano-calendário de 2024:</p><p>Para consultar a Medida Provisória <b>nº 1.206/2024</b> referente a alteração de valores da Tabela Progressiva Mensal, acesse a <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/gp/2024/2024-02-09-medida-provisoria-1206-2024-altera-valores-tabela-progressiva-mensal-imposto-sobre-renda-pessoa-fisica.htm" target="_blank">notícia</a> em nosso Portal de Exigências Legais.</p><p>Para alteração no Gestão de Pessoas | HCM da Senior, acesse o caminho Menu - Tabelas &gt; Valores &gt; Imposto de Renda e preencha os campos conforme exemplo a seguir:</p><p>
+<img src="../../../Resources/Images/Notícias/01-03-2024.png"/>
+</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.174-de-14-de-fevereiro-de-2024-543191604" target="_blank">IN RFB nº 2.174/2024</a> <br/>Publicada em 14/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

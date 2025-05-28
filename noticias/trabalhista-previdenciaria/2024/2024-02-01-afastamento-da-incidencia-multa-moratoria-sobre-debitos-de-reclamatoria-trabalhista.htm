@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Afastamento da incidência da multa moratória sobre - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/02/2024 | DCTFWeb - Afastamento da incidência da multa moratória sobre débitos de Reclamatória Trabalhista (RT)</h1>
+</div>
+<div class="noticia-corpo">
+<p>De acordo com a Súmula 368 do TST, a incidência da multa de mora somente é devida após expirado o prazo da citação para pagamento determinado pela Justiça do Trabalho.</p><p>Em 29 de dezembro de 2023, a Súmula 368 do TST se tornou vinculante para a Secretaria Especial da Receita Federal do Brasil (RFB), em razão da aprovação do Parecer SEI nº 4.825/2023/MF, emitido pela Procuradoria-Geral da Fazenda Nacional (PGFN).</p><p>Assim, em 9 de janeiro de 2024 foi implantada uma nova versão da DCTFWeb – Reclamatória Trabalhista (DCTFWeb RT) que afastou a incidência da multa de mora sobre débitos de Reclamatória Trabalhista (RT).</p><p>Desse modo, a partir de 9 de janeiro de 2024, os Darfs de débitos de RT gerados no Portal da DCTFWeb, no ambiente e-CAC, serão compostos apenas por principal e juros de mora, <b>sem a aplicação da multa de mora</b>.</p><p>Em breve será divulgado um código de receita específico para recolhimento do correto valor da multa de mora devida, nos termos da Súmula 368 do TST, que deverá ser calculado pelo próprio contribuinte.</p><p>Futuramente, o eSocial e a DCTFWeb RT serão adaptados para calcular a multa de mora após exaurido o prazo da citação para pagamento determinado pela Justiça do Trabalho.</p><p>Destaca-se que, em relação à DCTFWeb RT transmitida antes de 9 de janeiro de 2024, o contribuinte deverá transmitir retificadora para afastar a incidência da multa de mora.</p><p>Após a retificação, o contribuinte que realizou pagamento indevido da multa de mora poderá apresentar Pedido de Restituição ou Declaração de Compensação em formulário (Anexo I ou IV da IN RFB nº 2.055, de 6 de dezembro de 2021).</p><p>Ressalta-se que enquanto a DCTFWeb RT não for retificada, o sistema permanecerá exigindo a multa de mora, o que impedirá o deferimento de eventual pedido de restituição/compensação e, no caso de falta de pagamento, resultará em restrições no relatório de situação fiscal do contribuinte.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/receita-federal/dctfweb-afastamento-da-incidencia-da-multa-moratoria-sobre-debitos-de-reclamatoria-trabalhista-rt" target="_blank">Receita Federal</a> <br/>Publicada em 23/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

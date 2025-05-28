@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - MTE inclui 19 novas profissões na Classificaçã - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/06/2024 | Trabalhista - MTE inclui 19 novas profissões na Classificação Brasileira de Ocupações</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ministério do Trabalho e Emprego (MTE) e a Organização Internacional do Trabalho (OIT) anunciaram a inclusão de 19 novas ocupações na Classificação Brasileira de Ocupações (CBO).</p><p>A recente atualização da Classificação Brasileira de Ocupações (CBO) reflete as mudanças dinâmicas no mercado de trabalho brasileiro. Além das inclusões foram também revisadas e atualizadas outras 424 ocupações existentes, demonstrando um esforço contínuo do Governo Brasileiro para adaptar-se às novas demandas e tendências profissionais.</p><p><b>As novas ocupações incluídas são</b>: Analista de sucesso do cliente, Analista de experiência do cliente, Ergonomista, Biólogo em meio ambiente e diversidade, Biólogo em saúde, Facilitador de biodança, Terapeuta Reiki, Instrutor de Yoga, Instrutor de meditação, Facilitador de grupos de movimento (bioenergética), Brinquedista, Lactarista, Hidrojatista, Confeccionador de Perucas, Ufólogo, Monitor de animais domésticos, Condutor de cães domésticos (passeador), Instrutor de mobilidade com cães-guia e Condutor escolar (terrestre).</p><p><b>Processo de Inclusão</b>: Entidades e associações de trabalhadores podem solicitar ao MTE a inclusão de novas ocupações, que são avaliadas para refletir as mudanças no mercado de trabalho.</p><p><b>Finalidade do CBO:</b> A finalidade é dar visibilidade a uma ocupação, diferentemente de profissão, que necessita ser regulamentada por meio de lei, passando por apreciação do Congresso Nacional e sanção do Presidente da República. As informações da CBO alimentam as bases estatísticas referente ao mercado de trabalho, além de servir de subsídios para a formulação de políticas públicas de emprego.</p><p>O Guia Brasileiro de Ocupações, uma nova plataforma online, amplia ainda mais o acesso a informações sobre o mercado de trabalho, integrando dados da CBO com os do Cadastro Geral de Empregados e Desempregados (CAGED), da Relação Anual de Informações Sociais (RAIS) e do Sistema Nacional de Emprego (SINE). Esta iniciativa representa um passo significativo para a modernização e a transparência das informações sobre emprego no Brasil, permitindo uma análise mais aprofundada e atualizada das tendências de emprego no país.</p><p>A atualização periódica da CBO e a criação de recursos como o Guia Brasileiro de Ocupações são fundamentais para manter a relevância e a precisão das informações do mercado de trabalho, garantindo que o Brasil continue a prosperar em um ambiente econômico em constante evolução.</p><p>Clique <a href="http://pdet.mte.gov.br/guia-brasileiro-de-ocupacoes" target="_blank">aqui</a> e conheça o Guia.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2024/Junho/mte-inclui-19-novas-profissoes-na-classificacao-brasileira-de-ocupacoes" target="_blank">Portal MTE</a> <br/>Publicada em 10/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

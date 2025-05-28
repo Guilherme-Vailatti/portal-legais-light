@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - STF suspende por 60 dias os efeitos de sua decisão - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>23/05/2024 | eSocial - STF suspende por 60 dias os efeitos de sua decisão que reconheceu a inconstitucionalidade da Lei nº 14.784/2023</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Considerando <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/maio/nota-de-esclarecimento-1" target="_blank">nota</a> publicada no portal da Receita Federal do Brasil, o ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), adiou por 60 dias os efeitos da decisão cautelar na Ação Direta de Inconstitucionalidade (ADI) 7633, relativa à Lei nº 14.784/2023, que prorroga a desoneração da folha de pagamento de municípios e de diversos setores produtivos até 2027.</p><p>A Receita Federal reitera que as empresas e municípios beneficiados pelas desonerações podem retificar as declarações (DCTFWeb/eSocial/EFD-Reinf) relativas ao mês de abril de 2024, prestadas até o dia 15 de maio, para que o recolhimento do tributo com vencimento até o dia 20 de maio seja feito conforme a norma aplicável. As alterações nos cálculos do eSocial foram implantadas em produção em 18/05/2024.</p><p><b>Orientamos às empresas, aos órgãos gestores de mão de obra (OGMO) e municípios a realizarem os seguintes procedimentos:</b>
+</p><p>Em qualquer dos casos, é necessário previamente ajustar o S-1000 para informar a opção pela desoneração (empresas e municípios). O S-1000 vigente deverá ter o campo {indDesFolha}=[1 – Empresa enquadrada nos critérios da legislação vigente], para empresas e OGMO abrangidos pela desoneração; ou {indDesFolha}=[2 – Município enquadrado nos critérios da legislação vigente] para municípios com fator populacional inferior a 4.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/stf-suspende-por-60-dias-os-efeitos-de-sua-decisao-que-reconheceu-a-inconstitucionalidade-da-lei-no-14-784-2023" target="_blank">Portal eSocial</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/stf-suspende-por-60-dias-os-efeitos-de-sua-decisao-que-reconheceu-a-inconstitucionalidade-da-lei-no-14-784-2023' target='_blank'>Portal eSocial</a> <br>Publicada em 19/05/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

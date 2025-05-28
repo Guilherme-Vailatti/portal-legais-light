@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - Projeto de Lei do Congresso Nacional n° - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/09/2024 | Congresso Nacional - Projeto de Lei do Congresso Nacional n° 26/2024 - Governo prevê salário mínimo de R$ 1.509 em 2025, com aumento de 6,87% em relação ao atual</h1>
+</div>
+<div class="noticia-corpo">
+<p>A proposta orçamentária para 2025 (PLN 26/24) foi entregue pelo governo ao Congresso Nacional e prevê um salário mínimo de <b>R$ 1.509</b>, um aumento de 6,87% em relação ao atual, de R$ 1.412. O projeto prevê despesas de 2,93 trilhões com meta de déficit fiscal zero, mesma meta deste ano.</p><p>O valor do salário mínimo é uma projeção porque ainda depende da variação anual do INPC até novembro acrescido do crescimento do PIB em 2023, que foi de 2,91%.</p><p>O orçamento total previsto para o ano que vem é de R$ 5,87 trilhões, dos quais R$ 2,77 trilhões são despesas com a rolagem da dívida pública. O projeto prevê aumento real de receitas de 5,78%, mas limita o crescimento real das despesas em 2,50%. Para calcular o limite de despesas, conforme o novo arcabouço fiscal, foi considerada uma variação anualizada do IPCA de 4,23% até junho.</p><p><b>Grandes despesas:</b>
+</p><ul>
+<li>Ministério da Saúde: R$ 241,6 bilhões</li>
+<li>Ministério da Educação: R$ 200,5 bilhões</li>
+<li>Piso de investimento: R$ 74,3 bilhões</li>
+<li>Novo PAC: R$ 60,9 bilhões</li>
+<li>Despesas obrigatórias: R$ 2,71 trilhões</li>
+<li>Benefícios da Previdência: R$ 1,01 trilhão</li>
+<li>Pessoal e encargos: R$ 416,2 bilhões</li>
+<li>Bolsa Família: R$ 167,2 bilhões</li>
+<li>Transferências por Repartição de Receita: R$ 558,7 bilhões</li>
+<li>Despesas discricionárias: R$ 229,9 bilhões</li>
+<li>Reserva para emendas parlamentares impositivas: R$ 38,9 bilhões</li>
+</ul><p>Como cenário econômico para 2025, foi considerado um crescimento econômico de 2,64% e inflação de 3,3%. Para a taxa de juros básica, o governo considera uma queda do atual patamar de 10,50% ao ano para 9,61%. Para o dólar, a estimativa é R$ 5,19 como média anual.</p><p>O projeto do Orçamento de 2025 vai ser analisado pela Comissão Mista de Orçamento. Em seguida, será votado no Plenário do Congresso Nacional.</p><ul style="list-style-type: square;">
+<li>Valor Total: R$ 5,86 trilhões</li>
+<li>Limite de despesas primárias: R$ 2,249 trilhões</li>
+<li>Meta fiscal: equilíbrio entre receitas e despesas</li>
+<li>Salário mínimo: R$ 1.509,00</li>
+</ul><p>Projeto da Lei Orçamentária Anual (PLOA) de 2025 (PLN 26/24).</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1093250-governo-preve-salario-minimo-de-r-1-509-em-2025-com-aumento-de-687-em-relacao-ao-atual/" target="_blank">Projeto de Lei do Congresso Nacional n° 26/2024</a> <br/>Publicada em 31/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

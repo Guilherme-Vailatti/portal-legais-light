@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Nota Orientativa v. S-1.2 06/2024 - Novas regras d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/01/2024 | eSocial - Nota Orientativa v. S-1.2 06/2024 - Novas regras da desoneração de folha</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Orientativa tem como objetivo orientar sobre os ajustes necessários para atender as alterações trazidas pela Medida Provisória nº 1202/2023.</p><p>Empresas e municípios enquadrados nos critérios legais para a redução da alíquota da contribuição previdenciária devem declarar no eSocial sua opção pela desoneração, para que o sistema passe a realizar os cálculos de acordo com esse enquadramento.</p><p><b>Orientações</b>
+</p><p><b>a) Municípios com coeficiente populacional inferior a 4.0.</b>
+</p><p>Conforme previsto no § 17 do art. 22 da Lei 8.212/91, os municípios com coeficiente populacional inferior a 4.0 terão, nos meses de janeiro a março de 2024, a alíquota da contribuição previdenciária patronal sobre a remuneração de segurados empregados reduzida para 8%.</p><p>Para que os municípios possam informar essa condição será acrescentado um item de domínio no Registro {indDesFolha} em S-1000.</p><p><b>indDesFolha</b> - Indicativo de opção/enquadramento de desoneração da folha.</p><p><b>Valores válidos:</b>
+</p><p>0 - Não aplicável</p><p>1 - Empresa enquadrada nos critérios da legislação vigente</p><p>2 - Município enquadrado nos critérios da legislação vigente</p><p><b>Validação:</b> Pode ser igual a [1] apenas se classTrib = [02, 03, 99]. Pode ser igual a [2] apenas para as naturezas jurídicas iguais a [103- 1, 106-6, 124-4, 133-3]. Nos demais casos, deve ser igual a [0].</p><p><b>Observação:</b> A previsão de implantação em produção é <b>01/02/2024</b>. Os Municípios que se enquadrarem como indDesFolha = 2 <b>devem enviar o evento de fechamento dos eventos periódicos (S-1299), relativo ao período de apuração de 01/2024, após essa data.</b></p><p> </p><p><b>b) Alteração na forma de desoneração da folha de pagamento.</b>
+</p><p>A MP 1.202/23 definiu que, a partir de <b>01 de abril de 2024</b>, as empresas com a atividade principal listada em seus anexos terão a alíquota reduzida aplicável sobre a base da contribuição previdenciária patronal <b>até o valor de um (01) salário-mínimo</b>. Para aplicar o disposto acima, é necessário separar da atual base da contribuição previdenciária {tpValor}, gerada nos totalizadores (S-5001 e S-5011), a parcela desta até o valor de um (01) salário-mínimo, além de realizar ajustes em item de domínio em S1280.</p><p>Para mais detalhes destas instruções, consulte a <b>Nota Orientativa v. S-1.2 06/2024</b> <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-orientativa-s-1-2-06-2024.pdf" target="_blank">clicando aqui</a>.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-orientativa-s-1-2-06-2024.pdf" target="_blank">Nota Orientativa v. S-1.2 06/2024</a> <br/>Publicada em 10/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
