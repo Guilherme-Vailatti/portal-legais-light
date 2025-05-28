@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Informe Técnico nº 2024.001, v. 1.00 -  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/12/2024 | Reforma Tributária - Informe Técnico nº 2024.001, v. 1.00 - Tabela de Código de Classificação Tributária do IBS e da CBS</h1>
+</div>
+<div class="noticia-corpo">
+<p>O objetivo deste Informe Técnico é divulgar a publicação da “Tabela de Código de Classificação Tributária do IBS e da CBS”, disponível no Portal Nacional da NF-e (<a href="https://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank">www.nfe.fazenda.gov.br</a>), na aba “Documentos”, opção “Diversos”.</p><p>De forma geral, o Informe Técnico tem a finalidade de:</p><ul>
+<li>Divulgar orientações e aperfeiçoamentos para os Serviços de Autorização de Uso dos DF-e, que são usados pelas Empresas;</li>
+<li>Divulgar e manter registro da atualização de tabelas de domínio usadas pelo Serviço de Autorização, não significando obrigatoriamente a necessidade de alteração no Sistema de Computação das Empresas;</li>
+<li>Divulgar e manter registro de orientações sobre a prestação de informações no leiaute do DF-e, informando sobre o preenchimento de campo e outros;</li>
+<li>Divulgar e manter registro de comunicados e outras necessidades de comunicação com as empresas.</li>
+</ul><p>Acesse a <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=XBgqrMtxPVY=" target="_blank">Tabela de Código de Classificação Tributária do IBS e da CBS</a>. </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=XBgqrMtxPVY=" target="_blank">Informe Técnico nº 2024.001, v. 1.00</a> <br/>Publicada em 07/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI SC - Portaria SEF nº 337/2024 - Alteradas  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/12/2024 | SPED EFD ICMS IPI SC - Portaria SEF nº 337/2024 - Alteradas as instruções adicionais para a geração dos arquivos da EFD</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado de Santa Catarina alterou a Portaria SEF nº 337/2024, que define instruções adicionais para a geração dos arquivos da Escrituração Fiscal Digital.</p><p>Ficam dispensados os seguintes registros e seus eventuais registros filhos:</p><p>
+<img src="../../../Resources/Images/Notícias/tabela-geracao-arquivos-efd.png"/>
+</p><p>Excluído o registro E115 (Informações adicionais da apuração - Valores declaratórios) do rol dos registros dispensados pelo Estado de Santa Catarina. O registro E115 deve ser informado pelo contribuinte apenas quando exigido no campo de Informações Complementares Adicionais dos códigos de ajustes das tabelas externas da EFD presentes no Ato Diat nº 73/2022.</p><p>Revogado item que previa a escrituração da apuração do ICMS em subapuração 2 e à entrega dos registros 1900 a 1990 da EFD, pelos contribuintes obrigados pela legislação tributária que promoverem operações com "Créditos Presumidos em substituição aos créditos pelas entradas", previstas no RICMS-SC/2001, Anexo 2 , art. 23 , V.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sat.sef.sc.gov.br/tax.NET/Sat.Pesef.Web/Publicacao/ViewCompleto.aspx?x=083068105075082083068069079104085120116111087086098113073112068103071051109106098067098080111109076088083084090043051087078113077061" target="_blank">Portaria SEF nº 337/2024</a> <br/>Publicada em 09/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

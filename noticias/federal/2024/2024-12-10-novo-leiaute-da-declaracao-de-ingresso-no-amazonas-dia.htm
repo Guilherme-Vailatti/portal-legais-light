@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS AM - Resolução GSEFAZ nº 47/2024 - Novo leiaute da Decl - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/12/2024 | ICMS AM - Resolução GSEFAZ nº 47/2024 - Novo leiaute da Declaração de Ingresso no Amazonas (DIA)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Secretário de Estado da Fazenda no uso de suas atribuições legais; e considerando a necessidade de regulamentar os procedimentos internos de desembaraço e do controle da Declaração de Ingresso no Amazonas - DIA.</p><p><b>Art. 1º</b> ESTABELECER que o leiaute do arquivo da <b>Declaração de Ingresso no Amazonas - DIA</b> é o estabelecido no Anexo II.</p><p><b>Art. 2º</b> Para o preenchimento da DIA em seus próprios sistemas informáticos, será disponibilizado a cada mês o arquivo de notas a declarar, em área própria do Domicílio Tributário Eletrônico - DT-e, no sítio da SEFAZ-AM, cujo leiaute é o estabelecido no Anexo I.</p><p><b>Art. 3º</b> O glossário para o correto entendimento e preenchimento do campo 'indiceCodGeralProduto' encontra-se no Anexo III.</p><p><b>Art. 4º</b> Ficam convalidados os leiautes anteriormente utilizados, disponibilizados aos contribuintes através do Domicílio Tributário Eletrônico - DT-e, no sítio de Internet da SEFAZ, no formato de arquivos eletrônicos.</p><p><b>Art. 5º</b> Esta Resolução entra em vigor na data de sua publicação, produzindo efeitos, para fins de validação do novo leiaute, para fatos geradores ocorridos a partir de 1º de janeiro de 2025.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sistemas.sefaz.am.gov.br/silt/norma/resolucao" target="_blank">Resolução GSEFAZ nº 47/2024</a> <br/>Publicada em 06/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

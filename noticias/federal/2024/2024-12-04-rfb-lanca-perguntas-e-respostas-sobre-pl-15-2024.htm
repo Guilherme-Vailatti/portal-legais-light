@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - RFB lança perguntas e respostas sobre PL 1 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/12/2024 | Receita Federal - RFB lança perguntas e respostas sobre PL 15/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>​A Receita Federal lança nesta terça-feira (3/12) um perguntas e respostas sobre o Projeto de Lei nº 15/2024.</p><p>O perguntas e respostas lançado hoje reforça o compromisso da Receita Federal com a transparência.</p><p>O PL viabiliza a mudança estrutural da Receita Federal, que passará a ser prioritariamente orientadora. Serão três Programas de Conformidade com o propósito de beneficiar os bons contribuintes:</p><p> </p><ul>
+<li>Esses programas permitem que os agentes do fisco atuem como orientadores, privilegiando a autorregularização, deixando a autuação e aplicação de sanções como último recurso.</li>
+<li>Os programas criam benefícios concretos para os bons contribuintes, com histórico de regularidade na prestação de informações, declarações e recolhimento de tributos.</li>
+<li>Os benefícios são a ferramenta prioritária para induzir a conformidade, em substituição às penalidades.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/dezembro/receita-federal-lanca-perguntas-e-respostas-sobre-pl-15-2024" target="_blank">Projeto de Lei nº 15/2024</a> <br/>Publicada em 03/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

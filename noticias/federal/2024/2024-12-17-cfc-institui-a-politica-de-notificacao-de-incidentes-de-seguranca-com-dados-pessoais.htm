@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>LGPD - Resolução CFC nº 1.747/2024 - CFC institui a Política - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/12/2024 | LGPD - Resolução CFC nº 1.747/2024 - CFC institui a Política de Notificação de Incidentes de Segurança com Dados Pessoais</h1>
+</div>
+<div class="noticia-corpo">
+<p>Fica instituída a Política de Comunicação de Incidente de Segurança com Dados Pessoais do Conselho Federal de Contabilidade (CFC), em conformidade com a Lei nº 13.709/2018, que trata da Lei Geral de Proteção de Dados Pessoais (LGPD), e com a Resolução CD/ANPD nº 15/2024, do Conselho Diretor (CD) da Autoridade Nacional de Proteção de Dados (ANPD), que aprova o Regulamento de Comunicação de Incidente de Segurança.</p><p>Política tem por objetivo descrever os procedimentos necessários para a identificação e comunicação do incidente de segurança com dados pessoais.</p><p>A partir de 2 de janeiro de 2025, a Resolução CFC nº 1.634/2021 será substituída pela Resolução nº 1.747/2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/resolucao-cfc-n-1.747-de-12-dezembro-de-2024-601429236" target="_blank">Resolução CFC nº 1.747/2024</a> <br/>Publicada em 13/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

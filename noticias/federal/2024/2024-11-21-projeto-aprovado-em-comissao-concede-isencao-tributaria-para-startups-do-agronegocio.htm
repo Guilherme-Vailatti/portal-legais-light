@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PL nº 9362/2017 - Projeto aprovado em c - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/11/2024 | Congresso Nacional - PL nº 9362/2017 - Projeto aprovado em comissão concede isenção tributária para startups do agronegócio</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural da Câmara dos Deputados aprovou projeto que isenta as empresas de tecnologia do agronegócio de impostos federais por dois anos.</p><p>A proposta define como Startup Agro as empresas que desenvolvam e comercializem produtos, serviços ou soluções inovadoras que atendam às necessidades do setor agrícola, pecuário e aquícola.</p><p>A medida vale para empresas que tenham iniciado suas operações antes da vigência da lei e que atendam a critérios de inovação e potencial de crescimento estabelecidos em regulamento.</p><p style="font-weight: bold;">Mudanças no texto original</p><p>O texto aprovado é um substitutivo da deputada Coronel Fernanda (PL-MT) ao <a href="https://www.camara.leg.br/noticias/803685-projeto-preve-regime-tributario-especial-para-startups-em-fase-de-consolidacao" target="_blank">Projeto de Lei 9362/17</a>.</p><p>A versão original cria uma política de incentivo a todas as startups em fase de consolidação, por meio de um regime tributário diferenciado, que prevê, entre outros benefícios, a isenção do Imposto de Renda (IR) por 12 meses.</p><p>No entanto, a relatora optou por restringir a proposta às empresas vinculadas ao agronegócio. "A demanda por alimentos tem aumentado constantemente, fato que exige cada vez mais eficiência no processo produtivo", justificou.</p><p>O texto aprovado isenta pessoas físicas e jurídicas que investirem nas startups do agronegócio, por dois anos, de até 5% o Imposto de Renda devido.</p><p>A proposta também cria os ambientes regulatórios experimentais para as startups, conhecidos como "sandboxes regulatórios". Esses ambientes oferecem um espaço controlado onde as empresas podem testar inovações tecnológicas sob supervisão regulatória flexíveis.</p><p style="font-weight: bold;">Próximos passos</p><p>O projeto, que já <a href="https://www.camara.leg.br/noticias/803692-COMISSAO-REJEITA-PROJETO-QUE-INSTITUI-POLITICA-DE-INCENTIVO-AS-STARTUPS" target="_blank">foi rejeitado pela Comissão de Desenvolvimento Econômico, Indústria, Comércio e Serviços</a>, ainda precisa ser analisado pelas comissões de Finanças e Tributação; e de Constituição e Justiça e de Cidadania (CCJ); e pelo Plenário da Câmara.</p><p>Para virar lei, a proposta precisa ser aprovada por deputados e senadores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1111845-projeto-aprovado-em-comissao-concede-isencao-tributaria-para-startups-do-agronegocio/" target="_blank">Projeto de Lei nº 9362/2017</a> <br/>Publicada em 19/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

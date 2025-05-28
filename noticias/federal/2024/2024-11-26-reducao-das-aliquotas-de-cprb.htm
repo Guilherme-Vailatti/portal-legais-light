@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Nota Técnica nº 05/2024 - Redução das alíqu - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/11/2024 | SPED EFD Reinf - Nota Técnica nº 05/2024 - Redução das alíquotas de CPRB</h1>
+</div>
+<div class="noticia-corpo">
+<p>Tendo em vista a redução gradual das alíquotas da Contribuição Previdenciária sobre a Receita Bruta (CPRB) a partir de 2025 estipulada pela Lei 14.973/2024, foi publicada a Nota Técnica EFD-Reinf 05/2024.</p><p>Essa Nota Técnica tem como objetivo apresentar ajustes na “Tabela 09 – Código de atividades, produtos e serviços sujeitos à CPRB” do anexo I dos leiautes da EFD-Reinf conforme o previsto na Lei 14.973/2024, que mantém a desoneração da folha de pagamento até 31 de dezembro de 2024 e reduz gradualmente a alíquota da Contribuição Previdenciária sobre a Receita Bruta (CPRB) a partir de 2025, enquanto retoma a alíquota sobre a folha de pagamentos para os setores beneficiados.</p><p>A redução estipulada para a alíquota da CPRB, apurada pelo evento R-2060 da EFD-Reinf, é de 80% em 2025, 60% em 2026 e 40% em 2027. Assim, as alíquotas por códigos de atividades, produtos ou serviços sujeitos à CPRB foram atualizadas conforme a tabela abaixo:</p><p>Para que os resultados dos cálculos possam ser verificados e confirmados pelas empresas por meio de testes e de forma antecipada a janeiro de 2025, quando ocorrerá a primeira redução de alíquota, as datas correspondentes no ambiente de produção restrita foram alteradas para início de vigência em novembro de 2024 conforme a tabela abaixo:</p><p>As alterações nas datas desta tabela do ambiente de produção restrita serão mantidas de forma provisória apenas até janeiro de 2025, quando será reestabelecida a utilização da mesma tabela aplicada no ambiente de produção.</p><p>A tabela completa por código de atividades, produtos ou serviços do ambiente de produção pode ser consultada e baixada no portal SPED selecionando o pacote “Tabelas específicas do Reinf” e a opção “Reinf – Tabela de Código de Atividades, Produtos e Serviços Sujeitos à Contribuição Sobre a Receita Bruta” no seguinte link: <a class="link-externo" href="http://www.sped.fazenda.gov.br/spedtabelas/AppConsulta/publico/aspx/ConsultaTabelasExternas.aspx?CodSistema=Reinf" target="_blank">http://www.sped.fazenda.gov.br/spedtabelas/AppConsulta/publico/aspx/ConsultaTabelasExternas.aspx?CodSistema=Reinf</a></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7603" target="_blank">Nota Técnica nº 05/2024</a> <br/>Publicada em 25/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

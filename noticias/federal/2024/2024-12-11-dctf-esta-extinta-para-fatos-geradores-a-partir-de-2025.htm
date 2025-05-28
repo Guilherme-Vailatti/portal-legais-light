@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - DCTF está extinta para fatos geradores a partir de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/12/2024 | DCTFWeb - DCTF está extinta para fatos geradores a partir de 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada hoje, 5 de dezembro de 2024, a <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=141910" target="_blank">Instrução Normativa RFB nº 2.237/2024</a> que unifica a Declaração de Débitos e Créditos Tributários Federais - DCTF e a Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos - DCTFWeb.</p><p>Trata-se de um grande avanço para o cumprimento das obrigações acessórias, pois unifica as duas principais declarações que constituem débitos, simplificando a prestação de informações pelos contribuintes.</p><p>Para os fatos geradores que ocorrerem a partir de 1º de janeiro de 2025, os débitos atualmente declarados na DCTF PGD passarão a ser declarados na DCTFWeb mensal, por intermédio do Módulo de Inclusão de Tributos - MIT. Ele funcionará como uma nova escrituração geradora de DCTFWeb, assim como o eSocial, a EFD-Reinf e o Sero.</p><p>Dentre as melhorias destaca-se:</p><ul>
+<li>Ampliação do prazo de entrega da DCTFWeb, que passará para o dia 25 do mês seguinte ao de ocorrência dos fatos geradores;</li>
+<li>Dispensa da renovação anual da declaração de inatividade prestada na DCTF PGD;</li>
+<li style="text-align: left;">Possibilidade de importação de arquivos com débitos e suspensões para alimentação do MIT. Arquivo no formato JSON, cujos leiaute e instruções de geração serão disponibilizados em breve;</li>
+<li>Possibilidade de geração de DCTFWeb sem movimento a partir do próprio Portal da DCTFWeb, no e-CAC, via transmissão de MIT sem movimento;</li>
+<li>Possibilidade de geração de Darf antes da transmissão da DCTFWeb, reduzindo a necessidade de utilização do Sicalcweb;</li>
+<li>Otimização da sistemática de declaração de débitos em cotas;</li>
+<li>Redução das obrigações acessórias, com a extinção da DCTF PGD;</li>
+<li>Permissão para assinatura da DCTFWeb de contribuintes pessoas físicas por meio da conta GOV.BR.</li>
+</ul><p>Ressalta-se que havendo necessidade de apresentação de declaração original ou retificadora para períodos de apuração até dezembro de 2024, devem ser utilizadas as atuais DCTF PGD e DCTFWeb, de acordo com as regras previstas na <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=115131" target="_blank">Instrução Normativa RFB nº 2.005/2021</a>.</p><p>Para que não haja prejuízo no tratamento dos débitos, os diversos sistemas que interagem no ciclo de confissão, suspensão e extinção do crédito tributário estão sendo adaptados e aperfeiçoados.</p><p>A RFB está planejando a realização de eventos para preparar os contribuintes e profissionais das áreas envolvidas, de forma a facilitar o cumprimento desta importante obrigação acessória. Esses eventos serão divulgados em breve.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/dezembro/publicada-instrucao-normativa-que-institui-o-modulo-de-inclusao-de-tributos-2013-mit-na-dctfweb-e-substitui-a-dctf" target="_blank">Instrução Normativa RFB nº 2.237/2024</a> <br/>Publicada em 06/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

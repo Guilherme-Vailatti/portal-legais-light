@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>IRRF - Instrução Normativa RFB nº 2.239/2024 - Mudanças nas  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/12/2024 | IRRF - Instrução Normativa RFB nº 2.239/2024 - Mudanças nas regras de retenção do imposto sobre os pagamentos efetuados por órgãos da administração pública</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.239/2024, ao alterar a legislação vigente, determina que os órgãos da administração pública direta dos estados, do Distrito Federal e dos municípios, bem como suas autarquias e fundações, devem reter na fonte o Imposto de Renda incidente sobre os pagamentos efetuados a pessoas jurídicas, em contraprestação ao fornecimento de bens ou à prestação de serviços, incluindo obras de construção civil.</p><p>A norma em questão, ainda, acrescenta os § 4º e 5º ao dispositivo mencionado, estabelecendo que as fundações abrangidas são aquelas com natureza autárquica ou com mais da metade das receitas provenientes do poder público.</p><p>Acesse a norma completa <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.239-de-9-de-dezembro-de-2024-600520110" target="_blank">nesse link</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.239-de-9-de-dezembro-de-2024-600520110" target="_blank">Instrução Normativa RFB nº 2.239/2024</a> <br/>Publicada em 10/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

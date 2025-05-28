@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFCe SC - CEC SEF/DIAT nº 22/2024 – Alterações na forma de c - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/12/2024 | NFCe SC - CEC SEF/DIAT nº 22/2024 – Alterações na forma de credenciamento para emissão da NFCe e BPe</h1>
+</div>
+<div class="noticia-corpo">
+<p>Confira o Correio Eletrônico Circular SEF/DIAT/Nº 22 / 2024:</p><p>Informamos que, a partir do dia 31 de janeiro de 2025, o credenciamento para EMISSÃO de NFC-e (modelo 65) e BP-e (modelo 63) será realizado exclusivamente por meio da autorização de uso do Programa Aplicativo Fiscal (PAF). A partir de 01/02/2025, não será possível realizar o credenciamento para emissão de NFC-e e BP-e utilizando os Tratamentos Tributários Diferenciados (TTDs) 706, 707, 708 e 709.</p><p>As empresas DESENVOLVEDORAS deverão providenciar a vinculação de todos os estabelecimentos usuários atuais até a data limite de 31/01/2025, sob o risco da suspensão do credenciamento para emissão de NFC-e e/ou BP-e de seus estabelecimentos usuários.</p><p style="font-weight: bold;">No momento, não há ação necessária a ser realizada pelos estabelecimentos EMISSORES de NFC-e e BP-e.</p><p>A vinculação entre a empresa desenvolvedora responsável pelo PAF e o estabelecimento usuário deve ser realizada por meio da aplicação “CEI - Manutenção de Autorização de Uso de PAF-NFC-e e de BP-e” do sistema SAT, acessível pelo login (usuário e senha) fornecido no momento do credenciamento como desenvolvedor. Um “<a href="https://www.sef.sc.gov.br/api-portal/Documento/Ver/6351" target="_blank">Manual para vinculação de empresa desenvolvedora de PAF e empresa emissora</a>” pode ser encontrado em <a href="https://www.sef.sc.gov.br/saiba-mais/nfc-e-nota-fiscal-de-consumidor-eletronica" target="_blank">www.sef.sc.gov.br/nfce</a>.</p><p>Caso o cadastro da empresa desenvolvedora no sistema SAT esteja desativado, ou seja necessária a troca do e-mail vinculado, deverá ser seguido o procedimento previsto em <a href="https://www.sef.sc.gov.br/saiba-mais/nfc-e-nota-fiscal-de-consumidor-eletronica" target="_blank">http://www.sef.sc.gov.br/nfce</a>, no documento "<a href="https://www.sef.sc.gov.br/api-portal/Documento/Ver/1396" target="_blank">PAF-NFCe - Instruções sobre Reativação de Login</a>". Não é possível o reaproveitamento de eventuais taxas já pagas.</p><p><b>Por fim, informamos que em breve será instituída a obrigatoriedade de homologação do PAF-NFC-e, o que deverá ser realizado por meio de Órgão Técnico Homologador (OTH) independente. Fique atento às alterações legislativas e aos e-mails de avisos para mais detalhes.</b>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1117811-aprovada-urgencia-para-projeto-que-torna-permanente-mecanismo-de-tributacao-diferenciada-para-multinacionais-acompanhe/" target="_blank">Correio Eletrônico Circular SEF/DIAT nº 22/2024</a> <br/>Publicada em 04/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Instrução Normativa RFB nº 2.235/2024 - Re - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/11/2024 | Receita Federal - Instrução Normativa RFB nº 2.235/2024 - Receita Federal estabelece a definição de "juros" em debêntures de infraestrutura</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal publicou nesta sexta-feira (22) a <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=141742" target="_blank">Instrução Normativa RFB nº 2.235/2024</a>, que especifica os benefícios fiscais aplicáveis às debêntures de infraestrutura. A norma atualiza disposições da IN RFB nº 1.700/2017, em conformidade com a Lei nº 14.801/2024.</p><p><b>Definição de "juros":</b> Todos os componentes da remuneração das debêntures, incluindo aqueles atrelados a índices de preços, devem ser considerados juros para fins da Lei nº 14.801/2024.</p><p><b>Benefícios fiscais para empresas emissoras:</b> Os juros pagos aos investidores poderão ser deduzidos para fins de apuração do lucro líquido. Além disso, até 30% dos juros poderão ser excluídos da base de cálculo do IRPJ e da CSLL.</p><p><b>Compensação de prejuízos:</b> Os valores excluídos podem ser utilizados para compor prejuízos fiscais ou bases negativas de CSLL, permitindo que as empresas compensem perdas em exercícios futuros, conforme os limites legais.</p><p>Os incentivos fiscais para debêntures de infraestrutura são ferramentas fundamentais para fomentar investimentos em setores estratégicos, garantindo recursos para projetos que impulsionam o desenvolvimento econômico.</p><p>Com essa atualização normativa, a Receita Federal busca conferir segurança jurídica e prevenir litígios tributários, consolidando as regras para aplicação prática dos benefícios. Além de complementar o esforço do governo em fomentar investimentos privados em infraestrutura, setor considerado essencial para o desenvolvimento econômico do país.</p><ul>
+<li><a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14801.htm" target="_blank">Lei nº 14.801/2024</a> – Institui incentivos fiscais para debêntures de infraestrutura.</li>
+<li><a href="https://legislacao.presidencia.gov.br/atos?tipo=DEC&amp;numero=11964&amp;ano=2024&amp;ato=291ATSU1ENZpWT2da" target="_blank">Decreto nº 11.964/2024</a> – Regulamenta os dispositivos da lei nº 14.801/2024.</li>
+<li><a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=81268" target="_blank">IN RFB nº 1.700/2017</a> – Regulamento do IRPJ, atualizado para incorporar as novas regras.</li>
+</ul><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/novembro/receita-federal-estabelece-a-definicao-de-juros-em-debentures-de-infraestrutura" target="_blank">Instrução Normativa RFB nº 2.235/2024</a> <br/>Publicada em 26/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

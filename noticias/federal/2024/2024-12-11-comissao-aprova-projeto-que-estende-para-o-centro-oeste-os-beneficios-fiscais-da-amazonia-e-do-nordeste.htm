@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PL nº 781/2024 - Comissão aprova projet - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/12/2024 | Congresso Nacional - PL nº 781/2024 - Comissão aprova projeto que estende para o Centro-Oeste os benefícios fiscais da Amazônia e do Nordeste</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei 781/24 estende para a área de atuação da Superintendência do Desenvolvimento do Centro-Oeste (Sudeco) os atuais benefícios fiscais existentes nas regiões das superintendências da Amazônia (Sudam) e do Nordeste (Sudene).</p><p>O texto em análise na Câmara dos Deputados altera a Medida Provisória 2.199-14/01. Em dezembro último, a <a href="https://www.camara.leg.br/noticias/1025832-LEI-PRORROGA-INCENTIVOS-PARA-EMPRESAS-DO-NORDESTE-E-DA-AMAZONIA" target="_blank">Lei 14.753/23 estendeu até 2028</a> o prazo para aprovação de projetos que receberão incentivos no Nordeste e na Amazônia.</p><p>“Mato Grosso, por fazer parte da área de atuação da Sudam, já tem acesso aos benefícios fiscais, o que acentua a atual omissão em relação aos demais estados do Centro-Oeste”, disse a autora da proposta, deputada Flávia Morais (PDT-GO).</p><p>A Sudeco abrange Mato Grosso, Mato Grosso do Sul, Goiás e Distrito Federal. A Sudam atua na Amazônia Legal (região Norte e parte do Maranhão); a Sudene, no Nordeste e em mais 249 municípios de Minas Gerais e 31 do Espírito Santo.</p><p>Hoje, os incentivos fiscais nas áreas de atuação da Sudam e da Sudene são:</p><ul>
+<li>redução de 75% do Imposto de Renda e adicionais calculados com base no lucro da exploração; e</li>
+<li>possibilidade de reinvestir 30% do Imposto de Renda devido, acrescido de 50% de recursos próprios.</li>
+</ul><p>Pela legislação, podem obter esses benefícios as empresas que apresentarem projetos de instalação, ampliação, modernização ou diversificação em setores da economia considerados prioritários para o desenvolvimento regional.</p><p>O projeto tramita em caráter conclusivo e será analisado pelas comissões de Integração Nacional e Desenvolvimento Regional; de Finanças e Tributação; e de Constituição e Justiça e de Cidadania.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1048682-proposta-estende-ao-centro-oeste-os-incentivos-para-desenvolvimento-da-amazonia-e-do-nordeste" target="_blank">Projeto de Lei 781/2024</a> <br/>Publicada em 06/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>IPI - ADI RFB nº 3/2024 - Divulgada interpretação sobre praz - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/11/2024 | IPI - ADI RFB nº 3/2024 - Divulgada interpretação sobre prazo de vigência de benefícios</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado o Ato Declaratório nº 3/2024, com objetivo de esclarecer sobre o prazo de vigência do benefício de crédito presumido do IPI, prorrogado nos termos do art. 19 da Emenda à Constituição nº 132/2023.</p><p>O crédito presumido de IPI em questão, será atribuído como forma de ressarcimento das contribuições (PIS / COFINS), de que tratam a Lei nº 9.440/1997 e da Lei nº 9.826/1999, por serem apurados na forma cumulativa, relativamente aos incentivos destinados ao "Desenvolvimento Regional".</p><p>Importante esclarecer também, que são voltados exclusivamente às empresas instaladas ou que venham a se instalar nas regiões Norte, Nordeste e Centro-Oeste, e que sejam montadoras e fabricantes de:</p><p>Até então, estava previsto a possibilidade do crédito presumido nas vendas ocorridas entre 01/01/2021 e 31/12/2025, desde que as empresas apresentem projetos que contemplem novos investimentos e pesquisa para o desenvolvimento de novos produtos ou de novos modelos de produtos já existentes.</p><p>Conforme o ato interpretativo, os créditos presumidos passam a ter nova vigência, podendo ser apurados em relação às vendas ocorridas até 31/12/2026 e serão concedidos exclusivamente:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-interpretativo-rfb-n-3-de-21-de-novembro-de-2024-597413547" target="_blank">Ato Declaratório Interpretativo RFB nº 3/2024</a> <br/>Publicada em 25/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

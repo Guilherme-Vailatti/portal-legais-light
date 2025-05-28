@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI MG - Resolução SEF nº 5.856/2024 - Publica - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>12/12/2024 | SPED EFD ICMS IPI MG - Resolução SEF nº 5.856/2024 - Publicado os Manuais de Escrituração Fiscal Digital</h1>
+</div>
+<div class="noticia-corpo">
+<p>O estado de Minas Gerais divulgou vários Manuais de Escrituração Fiscal Digital para orientação e correta escrituração pelo contribuinte, disponibilizados no endereço eletrônico da Secretaria de Estado de Fazenda na internet (<a href="https://portalsped.fazenda.mg.gov.br/spedmg/efd/Manuais-de-Escrituracao/" target="_blank">https://portalsped.fazenda.mg.gov.br/spedmg/efd/Manuais-de-Escrituracao/</a>).</p><ul>
+<li>Manual Consolidado de Escrituração Fiscal Digital;</li>
+<li>Manual de Escrituração - FEM (Fundo de Erradicação da Miséria);</li>
+<li>Manual de Escrituração - ST Interna;</li>
+<li>Manual de Orientação de Escrituração - DIFAL MG;</li>
+<li>Manual de Escrituração - Opção pelo Simples Nacional;</li>
+<li>Impedimento ou Exclusão do Simples Nacional;</li>
+<li>Manual de Escrituração EFD - IE Única - Fusão/Cisão/Incorporação;</li>
+<li>Manual de Escrituração - Complemento e Restituição do ICMS ST Aspecto Quantitativo;</li>
+<li>Manual de Escrituração - Restituição do ICMS ST - Fato Gerador Presumido Não Realizado;</li>
+<li>Manual de Escrituração - Documentos Extemporâneos e Pagamentos Efetuados em Período Diverso do Fato Gerador;</li>
+<li>Manual de Escrituração - Dedução por Incentivo à Cultura e Esporte;</li>
+<li>Manual de Escrituração - Dedução por incentivo à pontualidade de recolhimento de tributos;</li>
+<li>Manual de Escrituração - Operações com Energia Elétrica;</li>
+<li>Manual de Escrituração - ICMS/ST Serviço de Transporte;</li>
+<li>Manual de Controle de Créditos Fiscais na EFD para a geração dos Registros 1200 e 1210;</li>
+<li>Manual de Ajustes por Documento;</li>
+<li>Manual de Ajustes de Apuração;</li>
+<li>Manual Introdutório para Lançamentos e Ajustes na EFD.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/resolucoes/2024/rr5856_2024.html" target="_blank">Resolução SEF nº 5.856/2024</a> <br/>Publicada em 11/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

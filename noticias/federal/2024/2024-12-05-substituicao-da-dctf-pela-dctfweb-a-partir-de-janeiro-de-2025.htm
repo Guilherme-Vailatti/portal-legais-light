@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Instrução Normativa nº 2.237/2024 - Substituição d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/12/2024 | DCTFWeb - Instrução Normativa nº 2.237/2024 - Substituição da DCTF pela DCTFWeb a partir de janeiro de 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Declaração de Débitos e Créditos Tributários Federais (DCTF), instituída pela Instrução Normativa nº 2.005/2021, será revogada a partir de janeiro de 2025.</p><p>Esta revogação se efetiva pela entrada em vigor da Instrução Normativa RFB nº 2.237/2024, em janeiro de 2025, a qual estabelece novos procedimentos para a DCTFWeb, devendo substituir a obrigação da geração da DCTF.</p><p style="font-weight: bold;">a) será aplicada às informações relativas a:</p><p><b>b) entre outros atos legais, revoga a Instrução Normativa RFB nº 2.005/2021, que até 31/12/2024 dispõe sobre:</b>
+</p><p>Ressalte-se que para as informações relativas aos fatos geradores não enquadrados na letra "a" do parágrafo anterior, será aplicado o disposto na legislação vigente anteriormente a 01/01/2025.</p><p>Entre as principais alterações destacamos:</p><p>Passarão a ser obrigados ao envio da DCTFWeb (além daqueles já previstos anteriormente):</p><p>A <b>DCTFWeb mensal</b> deverá passar a ser apresentada <b>até o dia 25</b> do mês seguinte ao da ocorrência dos fatos geradores, ou até o primeiro dia útil subsequente, caso o dia 25 recaia em dia não útil para fins fiscais. Até a competência dezembro/2024 (envio em janeiro/2025) observa-se o prazo <b>até o dia 15</b> do mês subsequente, ou primeiro dia útil seguinte.</p><p>A <b>DCTFWeb Aferição de Obra</b>s, por sua vez deverá passar a ser transmitida pelo responsável pela obra de construção civil até o último <b>dia ÚTIL</b> do mês (até a competência dezembro/2024 o prazo é até o último dia do mês) em que realizar a aferição da obra por meio do Sero.</p><p>Passa a ser prevista essa nova declaração, para a prestação de informações relativas aos tributos decorrentes de ações judiciais perante a Justiça do Trabalho ou de acordos firmados perante as Comissões de Conciliação Prévia (CCP) ou os Núcleos Intersindicais de Conciliação Trabalhista (Ninter).</p><p>A DCTFWeb Reclamatória Trabalhista deverá ser transmitida <b>até o dia 25</b> do mês seguinte ao da ocorrência dos fatos geradores, ou até o primeiro dia útil subsequente, caso o dia 25 recaia em dia não útil para fins fiscais.</p><p>A DCTFweb já era existente, porém, era obrigada apenas para determinados tributos federais, sendo que o <b>IPI</b> não estava abrangido por esta obrigação.</p><p>Portanto, os contribuintes do IPI, a partir de janeiro de 2025, estarão obrigados a geração da DCTFweb, ficando desobrigados da DCTF convencional decorrente a sua revogação.</p><p>A DCTFWeb passará a conter informações relativas aos seguintes tributos administrados pela RFB, as quais até a competência dezembro/2024 constarão na DCTF convencional:</p><p>Continuarão a ser informadas na DCTFWeb, como ocorre atualmente:</p><p>A DCTFWeb deverá ser elaborada com base nas informações prestadas:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.237-de-4-de-dezembro-de-2024-599911204" target="_blank">Instrução Normativa RFB nº 2.237/2024</a> <br/>Publicada em 05/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

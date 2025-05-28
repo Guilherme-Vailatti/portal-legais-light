@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Simples Nacional - Portaria CGSN nº 49/2024 - Sublimite de r - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/11/2024 | Simples Nacional - Portaria CGSN nº 49/2024 - Sublimite de receita bruta para o ano de 2025 em relação ao ICMS e ISS</h1>
+</div>
+<div class="noticia-corpo">
+<p>O sublimite de receita bruta para fins de recolhimento do ICMS e do ISS no Simples Nacional, para o exercício de 2025, será de R$ 3.600.000,00.</p><p>Vale ressaltar que o limite máximo de receita bruta anual para a apuração dos tributos incidentes sobre o faturamento no âmbito do Regime Simplificado de Tributação (Simples Nacional) é de R$ 4.800.000,00.</p><p>No entanto, para o ICMS e ISS, aplica-se um sublimite específico de R$ 3.600.000,00. Desse modo, o contribuinte que ultrapassar este sublimite no decorrer do ano-calendário estará sujeito ao recolhimento desses tributos fora do regime simplificado, nos termos da legislação vigente.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-cgsn-n-49-de-25-de-novembro-de-2024-598232621" target="_blank">Portaria CGSN nº 49/2024</a> <br/>Publicada em 27/11/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
