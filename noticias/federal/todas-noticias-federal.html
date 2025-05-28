@@ -126,7 +126,7 @@ label[for="filtro-ano"] {
   let todasNoticias = [];
 
   try {
-    const anos = ['2022', '2023', '2024', '2025'];
+    const anos = ['2023', '2024', '2025'];
     for (const ano of anos) {
       const noticias = await fetch(`${ano}/index.json`).then(r => r.json());
       noticias.forEach(n => n.temaSlug = 'federal');
