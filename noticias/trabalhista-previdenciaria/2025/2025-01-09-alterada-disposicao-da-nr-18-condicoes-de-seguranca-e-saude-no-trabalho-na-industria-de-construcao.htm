@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Portaria MTE nº 9/2025 - Alterada disposição d - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>09/01/2025 | Trabalhista - Portaria MTE nº 9/2025 - Alterada disposição da NR 18 - Condições de Segurança e Saúde no Trabalho na Indústria da Construção</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Fica prorrogado, até 05/01/2026, o início da vigência da obrigatoriedade de cabine climatizada, prevista no item 18.10.1.13 da Norma Regulamentadora nº 18 - Condições de Segurança e Saúde no Trabalho na Indústria da Construção, aprovada pela Portaria SEPRT nº 3.733/2020, em máquinas autopropelidas novas, tipo pavimentadoras, alimentadores móveis para asfalto, fresadoras de pavimento e máquinas de textura e cura de concreto.</p><p>Dispõe o item 18.10.1.13 da Norma Regulamentadora nº 18:</p><p>"18.10.1.13 A máquina autopropelida com massa (tara) superior a 4.500 kg (quatro mil e quinhentos quilos) deve possuir cabine climatizada e oferecer proteção contra queda e projeção de objetos e contra incidência de raios solares e intempéries."</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-9-de-2-de-janeiro-de-2025-605404955" target="_blank">DOU</a> e <a href="https://www.iobonline.com.br/index/login" target="_blank">IOB Online</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/portaria-mte-n-9-de-2-de-janeiro-de-2025-605404955' target='_blank'>Portaria MTE nº 09/2025</a> <br>Publicada em 03/01/2025</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>
