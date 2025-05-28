@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SP - Decreto nº 67.761/2023 - Alterado o RICMS em - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>29/06/2023 | Legislação SP - Decreto nº 67.761/2023 - Alterado o RICMS em relação a diversas operações</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram promovidas modificações no RICMS-SP/2000, cujo intuito, de acordo com o Secretário da Fazenda e Planejamento (Fazenda/SP), é simplificar e retirar os regramentos de determinadas operações do RICMS e deixá-los todos em uma única disciplina a ser estabelecida pela Secretaria da Fazenda.</p><p>Desse modo, foram promovidas alterações/revogações no RICMS/SP, vinculadas as seguintes operações:</p><p>Desse modo, a regulamentação de tais operações passa a prever a observância ao ato a ser publicado pela Secretaria da Fazenda e Planejamento de São Paulo e, os dispositivos do RICMS, vinculados a essas operações que disciplinavam sobre a emissão de documentos fiscais e forma de escrituração ficam revogados.</p><p>Ressalta-se que, até a presente data a Secretaria da Fazenda e Planejamento não publicou o ato normativo vinculado essas operações.</p><p>O ato noticiado entra em 21/06/2023.</p><p>Acesse o decreto completo no link da SEFAZ SP logo abaixo.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7224" target="_blank">Decreto nº 67.761/2023</a> <br/>Publicada em 21/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

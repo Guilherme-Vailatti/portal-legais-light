@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - NO nº 01/2023 v 1.2 - ICMS Monofásico pa - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/05/2023 | SPED EFD ICMS IPI - NO nº 01/2023 v 1.2 - ICMS Monofásico para o setor de combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>A versão 1.2 - apresenta novas instruções para o preenchimento do campo 09 do registro C190.</p><p style="font-weight: bold;">REGISTRO C190: REGISTRO ANALÍTICO DO DOCUMENTO (CÓDIGO 01, 1B, 04, 55 e 65)</p><p>Campo 09 (VL_ICMS_ST) - Preenchimento: informar o valor creditado/debitado do ICMS da substituição tributária, referente à combinação dos campos CST_ICMS, CFOP, e ALIQ_ICMS deste registro. A partir de 2.023, este campo deve ser utilizado para lançar o ICMS monofásico a partir dos itens da NFe com CST 02, 15 ou 53 com a soma dos valores das tags vICMSMono (Valor do ICMS próprio) e ICMSMonoReten (Valor do ICMS com retenção).</p><p>Nas operações interestaduais com B100 e GLGN com diferimento parcial, em que a tributação corresponda à parcela que cabe à UF de origem, o valor da tag vICMSMono (Valor do ICMS próprio) deve ser lançado através de ajuste de apuração em “Outros Créditos/Outros Débitos”. Consulte a legislação da UF para obter os códigos de ajuste e o procedimento a ser adotado.</p><p>Esta nota orientativa instrui a escrituração de operações com ICMS monofásico, a partir dos novos CSTs criados pelo Ajuste Sinief 01/2023. Com a publicação da NT 2.023.001 da NFe/NFCe, adotando os CSTs 02, 15, 53 e 61, a escrituração das operações seguirá as instruções que se acrescentam às demais publicadas no Guia prático da EFD ICMS IPI.</p><p>O Programa Validador Assinador (PVA) será disponibilizado no mês de maio com as regras atualizadas. As dúvidas relacionadas com a escrituração monofásica do ICMS deverão ser encaminhadas para a SEFAZ de domicílio do estabelecimento conforme os endereços listados no link: http://sped.rfb.gov.br/pagina/show/1577</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7211" target="_blank">Nota Orientativa 01/2023 v 1.2</a> <br/>Publicada em 09/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI PA - IN 14 e 15/2023 - Dispensa da DIEF PA - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/09/2023 | SPED EFD ICMS IPI PA - IN 14 e 15/2023 - Dispensa da DIEF PA para contribuintes do ICMS</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria de Estado da Fazenda (Sefa) publicou hoje (31/08), no Diário Oficial do Estado (DOE) as Instruções Normativas 14 e 15/23, que regulamentam e definem critérios para a dispensa da Declaração de Informações Econômico-Fiscais (Dief) e as regras de emissão da Escrituração Fiscal Digital (EFD). As normas complementam o decreto estadual 3.290/23, que altera dispositivos do Regulamento do Imposto sobre Operações Relativas à Circulação de Mercadorias e sobre Prestações de Serviços de Transporte Interestadual e Intermunicipal e de Comunicação - RICMS, definindo regras para a dispensa da entrega da Declaração de Informações Econômico-Fiscais, (DIEF), para contribuintes obrigados a entrega da Escrituração Fiscal Digital (EFD).</p><p>O contribuinte do ICMS obrigado a apresentar somente a Escrituração Fiscal Digital (EFD) efetuará o recolhimento do imposto estadual (ICMS) até o 15º dia do mês subseqüente a apuração, informou o secretário de Estado da Fazenda do Pará, René Sousa Júnior.  Ou seja, o prazo para entrega foi postergado em cinco dias, em relação a norma anterior.</p><p>Segundo o titular da Sefa “esta é uma reivindicação antiga dos contadores e dos empresários que a Secretaria da Fazenda conseguiu atender este ano, pois foi preciso fazer várias adaptações e melhorias internas para chegar a dispensa da Dief. A mudança será progressiva, por meio de critérios, e o Fisco passará a utilizar as informações da Escrituração Fiscal  Digital (EFD). Tivemos que fazer adaptações no sistema informatizado para poder dispensar a Dief. A principal delas foi estabelecer regras de validação, a fim de garantir a qualidade da informação recebida”, explica o secretário da Fazenda.</p><p>As informações da Dief são utilizadas, entre outras coisas, no cálculo da cota-parte do ICMS destinada aos municípios. Com a mudança, passarão a ser usadas as informações da EFD.</p><p>De acordo com a IN 14/23 serão dispensados da entrega da Declaração de Informações Econômico-Fiscais - DIEF, os contribuintes que atenderem, cumulativamente, aos requisitos de estar com o cadastro de contribuintes ativo; ter inscrição definitiva no cadastro de contribuintes; não recolher ICMS pelo Regime Especial do Simples Nacional; ser obrigado compulsoriamente a entrega da EFD; recolher ICMS recorrente mínimo de R$ 1.000,00; ter enviado o arquivo EFD ICMS/IPI no prazo e com movimento econômico.</p><p>A dispensa da Dief também exige que o contribuinte tenha enviado o arquivo EFD ICMS/IPI, com a escrituração das Notas Fiscais Eletrônicas - NFe de emissão própria; das Notas Fiscais de Consumidor Eletrônica - NFCe de emissão própria; dos Conhecimentos de Transporte Eletrônico - CTe de emissão própria; dos Bilhetes de Passagem Eletrônico - BPe de emissão própria e que o arquivo EFD ICMS/IPI esteja em conformidade com a DIEF, relativamente ao imposto recolhido ou a recolher.</p><p>A avaliação das informações enviadas por meio da Dief será feita pela Secretaria de Estado da Fazenda, a partir do mês de outubro de 2023, considerando o trimestre imediatamente anterior a avaliação. Os contribuintes dispensados da entrega da DIEF serão comunicados por meio do Domicílio Eletrônico do Contribuinte - DEC.</p><p>Já a IN 15/23 detalha os procedimentos  em relação a entrega da EFD.</p><p>São obrigados à Escrituração Fiscal Digital - EFD, todos os contribuintes do Imposto sobre Operações Relativas à Circulação de Mercadorias e Serviços (ICMS) exceto os optantes do Simples Nacional e o produtor rural e o extrator de produtos vegetal e animal e os estabelecimentos com inscrição no Cadastro de Contribuintes do ICMS, localizados em território paraense, que não exercem nenhuma atividade geradora de ICMS.</p><p>Para dúvidas e informações, ligar ou mandar mensagem para o call Center Sefa pelo telefone 0800.725.5533, de segunda a sexta-feira, das 8h às 18h.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.sefa.pa.gov.br/noticias/21102-dispensa-da-dief-para-contribuintes-do-icms" target="_blank">Instruções Normativas 14 e 15/2023</a> <br/>Publicada em 01/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

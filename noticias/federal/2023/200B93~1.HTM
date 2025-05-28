@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simples Nacional - Resolução CGSN nº 173/2023 - Comitê Gesto - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>14/08/2023 | Simples Nacional - Resolução CGSN nº 173/2023 - Comitê Gestor do Simples Nacional atualiza dispositivo sobre prorrogação de tributos em casos de calamidade pública</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Comitê Gestor do Simples Nacional (CGSN) aprovou, em reunião presencial realizada na manhã de ontem (08/08), a <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132603">Resolução CGSN nº 173</a>, de 8 de agosto de 2023, que atualiza dispositivos sobre a prorrogação de tributos em casos de calamidade pública, prevista nos artigos 40-A e 104, da Resolução CGSN nº 140/2018.</p><p>Pela nova Resolução, Estados e o Distrito Federal poderão indicar a prorrogação da data de vencimento dos tributos abrangidos pelo Simples Nacional por até 6 meses. Será possível prorrogar o vencimento de até 3 períodos de apuração, contados da data do evento que ensejou a decretação do estado de calamidade.</p><p>O CGSN  deliberou, também, sobre a utilização em caráter excepcional, até 1º de julho de 2024, do Documento de Arrecadação do Simples Nacional (DAS) para o recolhimento do Imposto sobre Serviços de Qualquer Natureza (ISS) dos contribuintes sujeitos ao regime geral de apuração (não optantes pelo Simples Nacional), que utilizarem o Módulo de Apuração Nacional - MAN (Guia Única de Recolhimento) da Nota Fiscal de Serviços eletrônica (NFS-e) de padrão nacional, na forma estabelecida pelo Comitê Gestor da Nota Fiscal de Serviços Eletrônica de padrão nacional (CGNFSe). O DAS gerado pelo MAN terá indicação de que se trata de um documento para recolhimento exclusivo do ISS dos contribuintes não optantes pelo Simples Nacional, e conterá a marca d’agua NFS-e.</p><p>A Resolução, publicada no DOU desta quarta-feira (9/8/2023) traz, ainda, novos procedimentos relativos à Malha PGDAS-D para os entes federados e a Receita Federal. Essas alterações devem possibilitar maior celeridade na análise das declarações retidas.</p><p>Os dispositivos da Resolução <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132603">CGSN nº 173/2023</a> entram em vigor em 1º de janeiro de 2024, em relação aos dispositivos que tratam da prorrogação por calamidade pública e na data de sua publicação, em relação aos demais dispositivos.</p><p>Fonte: <a href="https://www8.receita.fazenda.gov.br/SimplesNacional/Noticias/NoticiaCompleta.aspx?id=5214013d-d5fb-40da-8921-01868d5a1c27">Simples Nacional</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132603' target='_blank'>Resolução CGSN nº 173/2023</a> <br>Publicada em 09/08/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

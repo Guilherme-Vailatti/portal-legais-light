@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - RE 835.818 - Tema 843 - STF suspendeu decisões  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | Legislação - RE 835.818 - Tema 843 - STF suspendeu decisões do STJ sobre benefícios do ICMS no cálculo do IRPJ e da CSLL</h1>
+</div>
+<div class="noticia-corpo">
+<p>Inicialmente em julgamento de recursos repetitivos (26.04.2023), o STJ decidiu que não é possível excluir os benefícios fiscais relacionados ao ICMS, tais como: redução de base de cálculo, diminuição de alíquota, isenção, diferimento, entre outros, do cálculo do Imposto de Renda das Pessoas Jurídicas e da Contribuição Social sobre o Lucro Líquido, salvo se comprovados que tais benefícios foram concedidos como estímulo à implantação ou expansão de empreendimentos econômicos (Art. 30 , Caput da Lei nº 12.973/2014 ).</p><p>Entretanto, na sequência o STF suspendeu a decisão em nome da segurança jurídica, levando em consideração pendência de julgamento de matéria semelhante pelo Supremo sob o rito da repercussão geral (RE 835.818 - Tema 843). O órgão ressaltou que é necessária a suspensão dos processos que seriam afetados pela decisão do STJ até que o Supremo decida sobre o tema.</p><p>Em regra, o que permanece sendo observado pelos contribuintes em geral, são os requisitos previstos na Lei 12.973/2014, art. 30 caput e parágrafos, inclusive para que não sejam computados os valores de incentivos no Lucro Real, que tais benefícios sejam concedidos como estímulo à implantação ou expansão de empreendimentos econômicos, até que o Plenário do STF decida sobre a matéria, prevista para a semana que vem.</p><p>Por fim, com essas decisões e reviravoltas, destaca-se que não há vinculação da Receita Federal a nenhum entendimento, e nenhuma nota foi emitida pelo Órgão sobre o tema.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/jurisprudenciaRepercussao/verAndamentoProcesso.asp?incidente=4630911&amp;numeroProcesso=835818&amp;classeProcesso=RE&amp;numeroTema=843" target="_blank">RE 835.818 - Tema 843
+</a> <br/>Publicada em 27/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

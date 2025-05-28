@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Projeto DT-e - Publicada nova atualização no ambie - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | Federal - Projeto DT-e - Publicada nova atualização no ambiente de Homologação</h1>
+</div>
+<div class="noticia-corpo">
+<ul>
+<li>O Documento Eletrônico de Transporte - DT-e tem como principal finalidade reunir informações das operações de transporte de carga.</li>
+<li>O Projeto se encontra em fase de desenvolvimento e homologação, o Ministério de Infraestrutura divulgou no Portal do Governo Federal alterações nos Ambientes de Testes.</li>
+<li>O ambiente de homologação foi atualizado e as funcionalidades que foram adicionadas ou alteradas, podem ser consultadas na aba "Homologação Atual". Haverá também a limpeza do banco de dados, devido à mudança do leiaute de dados.</li>
+<li>O endereço do ambiente de Validação das funcionalidades a serem implantadas em homologação foi alterado e pode ser obtido através de adesão aos testes, para quem já tem o endereço, as alterações são: Sufixo "-val" ou "-hml" serão colocados após "doc"; Domínio muda de "infraestrutura.gov.br" para "sistema.gov.br".</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/infraestrutura/pt-br/assuntos/dt-e" target="_blank">Ministério da Infraestrutura
+</a> <br/>Publicada em 24/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

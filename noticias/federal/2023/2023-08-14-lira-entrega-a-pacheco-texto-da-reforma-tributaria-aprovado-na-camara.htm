@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Lira entrega a Pacheco texto da reforma - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/08/2023 | Reforma Tributária - Lira entrega a Pacheco texto da reforma tributária aprovado na Câmara</h1>
+</div>
+<div class="noticia-corpo">
+<p>O presidente da Câmara, Arthur Lira (PP-AL), fez a entrega simbólica ao presidente do Senado, Rodrigo Pacheco, do texto da reforma tributária (<a href="https://www.camara.leg.br/noticias/978334-camara-aprova-reforma-tributaria-em-dois-turnos-texto-vai-ao-senado/">PEC 45/19</a>) aprovado pelos deputados no final do semestre passado.</p><p>Rodrigo Pacheco afirmou que o Senado dará celeridade à tramitação da proposta para que a matéria seja aprovada e possa ser promulgada ainda neste ano.</p><p>“É importante como um pilar estrutural da economia brasileira e do desenvolvimento da nossa nação”, defendeu Pacheco.</p><p>A proposta de emenda à Constituição da reforma tributária será encaminhada à CCJ do Senado, onde será relatada pelo líder do MDB naquela Casa, senador Eduardo Braga (AM), informou Pacheco.</p><p>A proposta simplifica impostos sobre o consumo, prevê a criação de fundos para o desenvolvimento regional e para bancar créditos do ICMS até 2032, e unifica a legislação dos novos tributos.</p><p>Lira destacou o empenho dos deputados na aprovação do texto e afirmou que a proposta é fruto de muito diálogo entre todos os setores. “É importante para o País, para as duas Casas, para as novas gerações, que tenhamos um sistema simplificado, desburocratizado e com segurança jurídica. Entregamos um texto num clima de muita responsabilidade”, disse Lira em entrevista coletiva após a entrega.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/982775-lira-entrega-a-pacheco-texto-da-reforma-tributaria-aprovado-na-camara/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 03/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

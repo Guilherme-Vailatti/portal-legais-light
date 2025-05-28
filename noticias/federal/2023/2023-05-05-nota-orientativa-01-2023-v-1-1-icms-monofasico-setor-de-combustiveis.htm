@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - Nota Orientativa 01/2023 v 1.1 - ICMS Mo - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | SPED EFD ICMS IPI - Nota Orientativa 01/2023 v 1.1 - ICMS Monofásico - setor de combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta nota orientativa instrui a escrituração de operações com ICMS monofásico, a partir dos novos CSTs criados pelo Ajuste Sinief 01/2023. Com a publicação da NT 2.023.001 da NFe/NFCe, adotando os CSTs 02, 15, 53 e 61, a escrituração das operações seguirá as instruções que se acrescentam às demais publicadas no Guia prático da EFD ICMS IPI.</p><p style="font-weight: bold;">A versão 1.1 - apresenta alterações nas regras de validação e preenchimento dos campos 14 e 17 do registro C170 e campo 09 do registro C190.</p><p style="text-decoration: underline;">Escrituração do ICMS monofásico</p><p style="font-weight: bold;">1 - Registros REGISTRO 0200: TABELA DE IDENTIFICAÇÃO DO ITEM (PRODUTO E SERVIÇOS)</p><p><b>Campo 12</b> (ALIQ_ICMS) - <b>Preenchimento</b>: Quando houver tributação monofásica, utilizar a alíquota do produto (óleo diesel ou GLP) e não a alíquota do biocombustível a ser adicionado para a composição da mistura vendida a consumidor final. Se não houver precisão suficiente no campo, o valor deve ser informado desprezando as casas decimais sem arredondamento.</p><p><b>REGISTRO C170: ITENS DO DOCUMENTO (CÓDIGO 01, 1B, 04 e 55).</b>
+</p><p>As instruções a seguir se aplicam para as devoluções de operações com ICMS monofásico e para as situações em que a legislação da UF permita o crédito do ICMS monofásico nas entradas utilizando o Registro C170 em documentos de emissão de terceiros.</p><p><b>Campo 13</b> (VL_BC_ICMS) - <b>Validação</b>: Se o campo IND_OPER do registro C100 for igual a “0” (zero) e se os dois últimos caracteres do CST_ICMS forem 02, 15, 53 ou 61, o campo VL_BC_ICMS deve ser igual a “0” (zero).</p><p><b>Campo 14</b> (ALIQ_ICMS) - <b>Validação</b>: Se o campo IND_OPER do registro C100 for igual a “0” (zero) e:</p><p>1) se os dois últimos caracteres do CST_ICMS forem 02 ou 15, o campo ALIQ_ICMS deve ser maior que “0” (zero).</p><p>2) se os dois últimos caracteres do CST_ICMS forem 53, o campo ALIQ_ICMS poderá ser maior ou igual a “0” (zero).</p><p>3) se os dois últimos caracteres do CST_ICMS forem 61, o campo ALIQ_ICMS deverá ser igual a “0” (zero).</p><p><b>Preenchimento</b>: Deve ser preenchido com o valor da tag adRemICMS (Alíquota ad rem do imposto) da NFe nos itens com CST 02, 15 ou 53 se estiver preenchida. Se não houver precisão suficiente no campo, o valor deve ser informado desprezando as casas decimais sem arredondamento.</p><p><b>Campo 16</b> (VL_BC_ICMS_ST) - <b>Validação</b>: Se o campo IND_OPER do registro C100 for igual a “0” (zero) e se os dois últimos caracteres do CST_ICMS forem 02, 15, 53 ou 61, o campo VL_BC_ICMS_ST deve ser igual a “0” (zero).</p><p><b>Campo 17</b> (ALIQ_ST) - <b>Validação</b>: Se o campo IND_OPER do registro C100 for igual a “0” (zero) e se os dois últimos caracteres do CST_ICMS forem 02 ou 61, o campo ALIQ_ST deve ser igual a “0” (zero). Se os dois últimos caracteres do CST_ICMS forem 15, o campo ALIQ_ST deve ser maior que “0” (zero). Se os dois últimos caracteres do CST_ICMS forem 53, o campo ALIQ_ST deve ser maior ou igual a “0” (zero).</p><p><b>Preenchimento</b>: Deve ser preenchido com o valor da tag adRemICMSReten (Alíquota ad rem do imposto com retenção) da NFe. Se não houver precisão suficiente no campo, o valor deve ser informado desprezando as casas decimais sem arredondamento.</p><p><b>REGISTRO C190: REGISTRO ANALÍTICO DO DOCUMENTO (CÓDIGO 01, 1B, 04, 55 e 65)</b>
+</p><p><b>Campo 04</b> (ALIQ_ICMS) - <b>Preenchimento</b>: Para as operações de saída, nos itens da NFe com CST 02 , 15 ou 53, o valor deste campo deve corresponder ao valor da tag adRemICMS (Alíquota ad rem do imposto). Se não houver precisão suficiente no campo, o valor deve ser informado desprezando as casas decimais sem arredondamento.</p><p><b>Campo 06</b> (VL_BC_ICMS) – <b>Validação</b>: Para as operações com CST 02, 15, 53 ou 61, o valor deve ser 0 (zero).</p><p><b>Campo 08</b> (VL_BC_ICMS_ST) - Validação: Para as operações com CST 02, 15, 53 ou 61, o valor deve ser 0 (zero).</p><p><b>Campo 09</b> (VL_ICMS_ST) - <b>Preenchimento</b>: informar o valor creditado/debitado do ICMS da substituição tributária, referente à combinação dos campos CST_ICMS, CFOP, e ALIQ_ICMS deste registro.</p><p>A partir de 2.023, este campo deve ser utilizado para lançar o ICMS monofásico a partir dos itens da NFe com CST 02, 15 ou 53. com a soma dos valores das tags vICMSMono (Valor do ICMS próprio) e ICMSMonoReten (Valor do ICMS com retenção). Os lançamentos nesse registro devem indicar o ICMS monofásico em sua integralidade para a UF de destino do documento fiscal.</p><p>As seguintes regras serão executadas somente nas operações de saídas:</p><p><u>ICMS Normal</u>:</p><p>a) se os dois últimos dígitos do campo CST_ICMS forem iguais a 02 ou 15, então os valores dos campos VL_BC_ICMS e VL_ICMS deverão ser iguais a “0” (zero) e o valor do campo ALIQ_ICMS deverá ser maior que “0” (zero).</p><p>b) se os dois últimos dígitos do campo CST_ICMS forem iguais a 53, então os valores dos campos VL_BC_ICMS e VL_ICMS deverão ser iguais a “0” (zero) e o valor do campo ALIQ_ICMS deverá ser maior ou igual a “0” (zero).</p><p>c) se os dois últimos dígitos do campo CST_ICMS forem iguais a 61, então os valores dos campos ALIQ_ICMS, VL_BC_ICMS e VL_ICMS deverão ser iguais a “0” (zero).</p><p><u>ICMS ST</u>:</p><p>a) se os dois últimos dígitos do campo CST_ICMS forem iguais a 02, 15 ou 53, então o valor do campo VL_BC_ICMS_ST deverá ser igual a “0” (zero) e o valor do campo VL_ICMS_ST deverá ser maior ou igual a “0” (zero).</p><p>b) se os dois últimos dígitos do campo CST_ICMS forem iguais a 61, então os valores dos campos VL_BC_ICMS_ST e VL_ICMS_ST deverão ser iguais a “0” (zero).</p><p>O Programa Validador Assinador (PVA) será disponibilizado no <b>mês de maio</b> com as regras atualizadas. As dúvidas relacionadas com a escrituração monofásica do ICMS deverão ser encaminhadas para a SEFAZ de domicílio do estabelecimento conforme os endereços listados no link: http://sped.rfb.gov.br/pagina/show/1577</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/arquivo/download/7203" target="_blank">Nota Orientativa 01/2023 v 1.1</a> <br/>Publicada em 03/05/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

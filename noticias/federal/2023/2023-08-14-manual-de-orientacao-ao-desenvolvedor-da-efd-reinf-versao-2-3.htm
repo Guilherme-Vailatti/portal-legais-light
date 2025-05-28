@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Manual de Orientação ao desenvolvedor da EF - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/08/2023 | SPED EFD Reinf - Manual de Orientação ao desenvolvedor da EFD-Reinf - Versão 2.3</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada versão 2.3 do Manual de Orientação ao Desenvolvedor da EFD-Reinf contendo as seguintes atualizações:</p><ul>
+<li>Atualização do item “3.6”, relativo à assinatura digital com certificados digitais cuja raiz seja a ICP Brasil versão 10;</li>
+<li>Atualização dos principais códigos de retorno HTTP e seu significado para as novas APIs do modelo assíncrono;</li>
+<li>Atualização das URLs de produção das APIs de envio e consulta do modelo assíncrono a partir de 21/09/2023*;</li>
+</ul><p>Para ter acesso à versão, acesse o <a href="http://sped.rfb.gov.br/pagina/show/7259">Manual de Orientação ao Desenvolvedor da EFD-Reinf – Versão 2.3</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7259" target="_blank">Portal SPED</a> <br/>Publicada em 03/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

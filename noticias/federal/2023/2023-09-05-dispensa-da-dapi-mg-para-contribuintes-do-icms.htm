@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI MG - Portaria SER nº 226/2023 - Dispensa d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/09/2023 | SPED EFD ICMS IPI MG - Portaria SER nº 226/2023 - Dispensa da DAPI MG para contribuintes do ICMS</h1>
+</div>
+<div class="noticia-corpo">
+<p>Altera Portaria SRE nº 177, de 26 de agosto de 2020, que estabelece os requisitos para a opção pela apuração do ICMS a partir de informações lançadas na Escrituração Fiscal Digital – EFD, em substituição à Declaração de Apuração e Informação do ICMS, modelo 1 – Dapi 1, e dispõe sobre a obrigatoriedade de apuração do imposto da referida forma.</p><p><b>O SUBSECRETÁRIO DA RECEITA ESTADUAL</b>, no uso de suas atribuições e tendo em vista o disposto nos arts. 138,141 e 142 do Decreto nº 48.589, de 22 de março de 2023,</p><p><b>RESOLVE</b>:</p><p><b>Art. 1º</b> – A alínea “a” do inciso III do caput do art. 2º da Portaria SRE nº 177, de 26 de agosto de 2020, passa a vigorar com a seguinte redação:</p><p>“Art. 2º – (...)</p><p>III – (...)</p><p>a) não esteja omisso de entrega da EFD e da Dapi 1 relativamente aos últimos quatro períodos de apuração.”.</p><p><b>Art. 2º</b> – Esta portaria entra em vigor na data de sua publicação.</p><p>Belo Horizonte, aos 30 de agosto de 2023; 235º da Inconfidência Mineira e 202º da Independência do Brasil.</p><p>Osvaldo Lage Scavazza</p><p>Subsecretário da Receita Estadual</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/portarias/2023/port_subsec226_2023.html" target="_blank">Portaria SRE Nº 226,/2023</a> <br/>Publicada em 30/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

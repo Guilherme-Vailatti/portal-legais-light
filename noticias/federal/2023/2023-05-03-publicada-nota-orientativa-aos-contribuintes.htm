@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Publicada nota orientativa aos cont - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/05/2023 | SPED EFD Contribuições - Publicada nota orientativa aos contribuintes</h1>
+</div>
+<div class="noticia-corpo">
+<p>MP nº 1.159, de janeiro de 2023.</p><p>Tendo em vista a Medida Provisória nº 1.159, de 12 de janeiro de 2023, que incluiu o inciso III do § 2º do art. 3º da Lei nº 10.637, de 2002 e o inciso III do § 2º do art. 3º da Lei nº 10.833, de 2003, com vigência a partir de 1º de maio de 2023, dispondo que não dará direito a crédito o valor do ICMS que tenha incidido sobre a operação de aquisição, a Receita Federal informa que os contribuintes devem efetuar o ajuste da base de cálculo do crédito de PIS/Cofins, pela exclusão do ICMS que incidiu na operação, de forma individualizada em cada um dos registros a que se referem os documentos fiscais, de acordo com a tabela abaixo:</p><p>Observações:</p><ul>
+<li>1 - Não existe campo específico para quaisquer exclusões de base de cálculo (desconto incondicional, ICMS incidente na aquisição). O ajuste de exclusão deverá ser realizado diretamente no campo de base de cálculo.</li>
+<li>2 - Registro utilizado de forma subsidiária, para casos excepcionais de documentação que não deva ser informada nos demais registros da escrituração e tenha ocorrido destaque do ICMS.</li>
+</ul><p>Com relação aos registros F120 - Bens Incorporados ao Ativo Imobilizado – Operações Geradoras de Créditos com Base nos Encargos de Depreciação e Amortização e F130 - Bens Incorporados ao Ativo Imobilizado – Operações Geradoras de Créditos com Base no Valor de Aquisição/Contribuição, quaisquer valores que devam ser excluídos da base de cálculo destes créditos sempre são informados, respectivamente, nos campos “07 - PARC_OPER_NAO_BC_CRED - Parcela do Valor do Encargo de Depreciação/Amortização a excluir da base de cálculo de Crédito” ou “08 - PARC_OPER_NAO_BC_CRED - Parcela do Valor de Aquisição a excluir da base de cálculo de Crédito”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7202" target="_blank">Medida Provisória nº 1.159/2023
+</a> <br/>Publicada em 28/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

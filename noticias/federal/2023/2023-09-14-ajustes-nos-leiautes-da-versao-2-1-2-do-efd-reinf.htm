@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - NT 03/2023, v 2.1.2 - Nota Técnica e esquem - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/09/2023 | SPED EFD Reinf - NT 03/2023, v 2.1.2 - Nota Técnica e esquemas republicados XSD R-4010</h1>
+</div>
+<div class="noticia-corpo">
+<p>Informamos que a Nota Técnica EFD-Reinf 03/2023 foi republicada com a inclusão do tipo de dedução “8 – Desconto simplificado mensal” também no grupo de informações {detDed} do evento R-4010.</p><p>Para mais detalhes, acesse  <a href="http://sped.rfb.gov.br/arquivo/show/7267">Nota Técnica 03/2023 – Ajustes nos leiautes da versão 2.1.2</a>.</p><p>Considerando a alteração nos valores válidos dos campos {indTpDeducao} pela Nota Técnica EFD-Reinf 03/2023, o esquema XSD referente ao leiaute do evento R-4010 foi republicado e deve ser substituído ao baixado anteriormente na versão v2_01_02.</p><p>Para mais detalhes, acesse <a href="http://sped.rfb.gov.br/arquivo/show/7269">XSD Evento EFD Reinf R-4010 v 2.1.2</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/estatico/E7/4ABD6D06FD7D60883179A0588D95B53DB1AE4D/Nota técnica EFD-Reinf 3-2023.pdf" target="_blank">Nota Técnica 03/2023, versão 2.1.2</a> <br/>Publicada em 13/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

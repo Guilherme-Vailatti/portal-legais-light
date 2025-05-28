@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PLC nº 332/2018 - Adiada votação sobre  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | Congresso Nacional - PLC nº 332/2018 - Adiada votação sobre fim do ICMS para trânsito de produto da mesma empresa</h1>
+</div>
+<div class="noticia-corpo">
+<p>A pedido da senadora Margareth Buzetti (PSD-MT), foi adiada para a semana que vem a votação do projeto de lei que acaba com a cobrança de ICMS sobre mercadorias que saem do depósito em um estado e vão para uma loja da mesma rede varejista em outro estado. O <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/133899?_gl=1*qgcsso*_ga*MTk0MTM4Njk2My4xNjgzMzEzMDYz*_ga_CW3ZH25XMK*MTY4MzMxMzA2Mi4xLjEuMTY4MzMxMzE0OS4wLjAuMA.." target="_blank">PLS 332/2018</a> é relatado pelo senador Irajá (PSD-TO).</p><p>— O Comsefaz [Comitê Nacional de Secretários de Fazenda dos Estados e do DF] está fechando um texto para ser apresentado na próxima semana, para que não se gere uma briga entre os estados da Federação e todos saiam bem desta situação — disse Margareth Buzetti.</p><p>De acordo com o relator, o projeto busca proibir a cobrança de imposto em uma simples transferência de estoque, por exemplo. O autor do projeto, <a href="https://www12.senado.leg.br/noticias/materias/2023/2022/04/27/volta-ao-plenario-projeto-que-veda-icms-em-transferencia-de-produtos-da-mesma-empresa?_gl=1*1a3ytx4*_ga*MTk5NDc3NjkyOS4xNTg2MTk3NTky*_ga_CW3ZH25XMK*MTY4MzEzMTg3NS42MC4xLjE2ODMxMzE5MTcuMC4wLjA." target="_blank">já aprovado pela Comissão de Assuntos Econômicos</a>, é o ex-senador Fernando Bezerra Coelho.</p><p>Atualmente a Lei Kandir (<a href="https://normas.leg.br/?urn=urn:lex:br:federal:lei.complementar:1996-09-13;87" target="_blank">Lei Complementar 87, de 1996</a>) determina a incidência de ICMS no momento da saída de mercadoria do estabelecimento, ainda que para outro estabelecimento do mesmo proprietário. O projeto retira a possibilidade de essa cobrança ser feita quando da transferência entre estados da mercadoria para estabelecimento do mesmo titular.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/133899" target="_blank">Projeto de Lei do Senado n° 332/2018</a> <br/>Publicada em 03/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

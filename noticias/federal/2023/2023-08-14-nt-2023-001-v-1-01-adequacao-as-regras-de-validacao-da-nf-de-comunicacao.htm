@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFCom - NT 2023.001, v. 1.01 - Adequação as regras de valida - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/08/2023 | NFCom - NT 2023.001, v. 1.01 - Adequação as regras de validação da NF de Comunicação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Técnica busca adequar as regras de validação da NFCom visando permitir a operação das operadoras em cenários não explorados e não identificados na fase inicial do projeto. As regras devem ser aplicadas já na primeira versão quando for disponibilizado o ambiente de autorização da NFCOM.</p><p>Versão 1.01 - Correção na grafia do nome do campo de envio de dados para os serviços da NFCom.</p><ul>
+<li>Ajuste na quantidade de itens permitidos;</li>
+<li>Ajuste nas tags de UF dos terminais;</li>
+<li>Aumento no tamanho da tag código do assinante;</li>
+<li>Ajuste na descrição do tipo de finalidade 4 da NFCom;</li>
+<li>Aceitar UF exterior para destinatário;</li>
+<li>Permitir informar código de barras e código de débito automático;</li>
+<li>Ajustes em regras de validação;</li>
+<li>Correção na grafia da área de dados e resultado da mensagem SOAP da NFCom.</li>
+</ul><p><b>Ambiente de Homologação:</b> 08/2023</p><p><b>Ambiente de Produção:</b> junto com produção</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos" target="_blank">Nota Técnica 2023.001, versão 1.01</a> <br/>Publicada em 01/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

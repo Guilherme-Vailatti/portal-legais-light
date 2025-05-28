@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - Ato Cotepe/ICMS nº 45/23 - Alterado o manual de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | Legislação - Ato Cotepe/ICMS nº 45/23 - Alterado o manual de orientação do sistema de autenticação e transmissão de CF-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi alterado o Ato Cotepe/ICMS nº 32/2011 que dispõe sobre o manual de orientação do sistema de autenticação e transmissão de cupom fiscal eletrônico (SAT), o qual estabelece a disciplina geral e as especificações técnicas básicas do SAT, cuja especificação estará disponível no site do Confaz, www.fazenda.gov.br/confaz, identificada como Manual Orientação_ SAT_ v_ MO_ 2_ 19_ 04.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://in.gov.br/web/dou/-/ato-cotepe/icms-n-45-de-2-de-maio-de-2023-480530226" target="_blank">Cotepe/ICMS nº 45/2023</a> <br/>Publicada em 03/05/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

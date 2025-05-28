@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - IT 2023.004, v. 1.00 - Alteração tabela do Fund - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | NF-e NFC-e - IT 2023.004, v. 1.00 - Alteração tabela do Fundo de Combate à Pobreza (FCP)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O objetivo deste Informe Técnico é divulgar a alteração da Tabela de FCP para as UF AM, MG, PI e SE, disponível no Portal Nacional da NF-e (www.nfe.fazenda.gov.br), na aba <b>Documentos</b>, opção <b>Diversos</b>.</p><p><b>Alterações realizadas na Tabela de FCP</b>
+</p><p>• <b>O Estado do Amazonas</b> corrige uma das alíquotas da Tabela de FCP, tendo, portanto, as alíquotas de <b>1,5% e 2,0%</b>, que devem ser observadas conforme legislação estadual.</p><p>• <b>O Estado de Minas Gerais</b> corrige a informação na Tabela de FCP, <b>destacando que já extinguiu sua alíquota de FCP</b> conforme legislação estadual.</p><p>• <b>O Estado do Piauí</b>, desde 10/04/2023, no ambiente de autorização em Produção, alterou sua alíquota de FCP para <b>2%</b>;</p><p>• <b>Estado de Sergipe</b> passa a ter duas alíquotas de FCP <b>(1% e 2%)</b>, que devem ser observadas pelos contribuintes conforme legislação estadual.</p><p style="font-weight: bold;">Cronograma de Sergipe:</p><p>No dia 19/04/2023, a alteração ocorrerá no ambiente em HOMOLOGAÇÃO.</p><p>No dia 01/05/2023, a alteração ocorrerá no ambiente em PRODUÇÃO.</p><p style="font-weight: bold;">Cronograma Geral:</p><p>Os prazos dessa atualização de tabelas estão documentados em abril/2023</p><p>Veja o tabela completa <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2023/2023-04-28-atualizada-tabela-contendo-as-aliquotas-por-uf-do-fundo-de-combate-a-pobreza-fcp.htm">aqui</a></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Informe Técnico nº 2023.004, versão 1.00</a> <br/>Publicada em 03/05/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

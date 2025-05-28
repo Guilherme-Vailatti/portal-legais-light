@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Receita Federal edita norma que consolida  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/07/2023 | Receita Federal - Receita Federal edita norma que consolida a legislação do PIS e da COFINS</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada, no Diário Oficial da União (DOU) nesta terça-feira (18/7), a Instrução Normativa RFB nº 2.152, de 14 de julho de 2023, alterando a Instrução Normativa RFB nº 2121, de 15 de dezembro de 2022, que consolida a legislação da Contribuição para o PIS/Pasep e da COFINS.</p><p>A medida tem por objetivo atualizar as regras de apuração dessas contribuições em razão das recentes alterações legais promovidas, principalmente as que tratam da tributação de combustíveis fósseis.</p><p>A nova Instrução Normativa também reformula entendimentos sobre a matéria, em atendimento a recentes decisões judiciais de caráter vinculante.</p><p>Para verificar a Instrução Normativa na íntegra, acesse o site da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132085#:~:text=IN%20RFB%20n%C2%BA%202152%2F2023&amp;text=Altera%20a%20Instru%C3%A7%C3%A3o%20Normativa%20RFB,Importa%C3%A7%C3%A3o%20e%20da%20Cofins%2DImporta%C3%A7%C3%A3o.">Receita Federal</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7251" target="_blank">Instrução Normativa RFB nº 2.152/2023</a> <br/>Publicada em 18/07/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

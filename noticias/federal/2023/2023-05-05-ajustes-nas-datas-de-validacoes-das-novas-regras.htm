@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e - NT 2023.001, v. 1.02 - Ajustes nas datas de validaçõe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | CT-e - NT 2023.001, v. 1.02 - Ajustes nas datas de validações das novas regras</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram realizados ajustes nas <b>datas de liberações da versão 4.00 e NT 2023.001</b> nos ambientes de autorização.</p><p>Esta Nota Técnica promove ajustes nas regras de validação do CT-e, CT-e OS e GTV-e visando adequar o sistema à legislação aprovada no AJUSTE SINIEF.</p><p><b>Cronograma de Implantação:</b>
+</p><ul>
+<li><b>Ambiente de homologação</b>: 24/04/2023 até 12/06/2023</li>
+<li><b>Ambiente de produção</b>: 26/06/2023 (a confirmar)</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.cte.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=Y0nErnoZpsg=" target="_blank">Nota Técnica nº 2023.001, versão 1.02</a> <br/>Publicada em 03/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

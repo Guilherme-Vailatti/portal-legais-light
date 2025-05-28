@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - Lei nº 14.596/2023 - Convertida em Lei Medida P - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/06/2023 | Legislação - Lei nº 14.596/2023 - Convertida em Lei Medida Provisória que altera regras de preços de transferência (Transfer Pricing)</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Lei nº 14.596/2023, resultante da conversão da Medida Provisória nº 1.152/2022, entre outras providências, trouxe novas disposições sobre regras de preços de transferência relativas ao Imposto sobre a Renda Pessoa Jurídicas (IRPJ) e à Contribuição Social sobre o Lucro (CSL), as quais entrarão em vigor a partir de 1º.01.2024.</p><p>É facultado à pessoa jurídica optar pela aplicação das novas regras dos preços de transferência já no ano-calendário de 2023, sendo essa opção irretratável, e devendo ser observadas, para esse efeito, as disposições constantes da Instrução Normativa RFB nº 2.132/2023.</p><p>Por fim, a norma em referência revoga, a partir de 1º.01.2024, alguns dispositivos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7224" target="_blank">Lei nº 14.596/2023</a> <br/>Publicada em 15/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - LC nº 199/2023 - Instituído o Estatuto Nacional - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/08/2023 | Legislação - LC nº 199/2023 - Instituído o Estatuto Nacional de Simplificação de Obrigações Tributárias Acessórias</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por intermédio da Lei Complementar nº 199/2023, foi instituído o <b>Estatuto Nacional de Simplificação de Obrigações Tributárias Acessórias</b>, com a finalidade de <b>diminuir os custos de cumprimento das obrigações tributárias</b> e de incentivar a conformidade por parte dos contribuintes, no âmbito dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios, especialmente no que se refere à:</p><p>Para a emissão unificada de documentos fiscais eletrônicos considerar-se-ão os sistemas, as legislações, os regimes especiais, as dispensas e os sistemas fiscais eletrônicos existentes, de forma a promover a sua integração, inclusive com redução de custos para os contribuintes.</p><p>As administrações tributárias da União, dos Estados, do Distrito Federal e dos Municípios poderão compartilhar dados fiscais e cadastrais, sempre que necessário para reduzir obrigações acessórias e aumentar a efetividade da fiscalização.</p><p>As disposições desta Lei Complementar não afastam o tratamento diferenciado e favorecido dispensado às microempresas e às empresas de pequeno porte e ao microempreendedor individual optantes pelo regime do Simples Nacional, nos termos da Lei Complementar nº 123/2006 e das legislações correlatas.</p><p>Esta Lei Complementar entra em vigor na data de sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/lei-complementar-n-199-de-1-de-agosto-de-2023-500154324" target="_blank">Lei Complementar nº 199/2023</a> <br/>Publicada em 02/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

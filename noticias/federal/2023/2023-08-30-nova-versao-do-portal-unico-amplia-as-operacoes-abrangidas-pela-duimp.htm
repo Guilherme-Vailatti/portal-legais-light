@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SISCOMEX - Nova Versão do Portal Único amplia as operações a - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/08/2023 | SISCOMEX - Nova Versão do Portal Único amplia as operações abrangidas pela DUIMP</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria Especial da Receita Federal do Brasil (RFB) e a Secretaria de Comércio Exterior (Secex) informam que foi implantada, em 21/08/2023, nova versão do Portal Único Siscomex. As evoluções concentram-se, principalmente, no contexto da implantação do Novo Processo de Importação, dentre as quais destacamos as seguintes.</p><p>O importador passa a poder utilizar a Declaração Única de Importação (Duimp) nos casos em que a importação utilize os seguintes regimes aduaneiros especiais:</p><ul>
+<li>Admissão Temporária com Suspensão Total de Tributos</li>
+<li>Admissão Temporária para Utilização Econômica - com Pagamento Proporcional</li>
+<li>Admissão no Repetro-Temporário</li>
+<li>Admissão no GNL-Temporário</li>
+<li>Admissão Temporária para Aperfeiçoamento Ativo</li>
+<li>Admissão no Repetro-Industrialização</li>
+<li>Admissão no Repetro-Permanente</li>
+<li>Retorno de bens admitidos em Regimes Especiais enviados ao Exterior para Conserto</li>
+<li>Reimportação no mesmo estado de Bens Exportados Temporariamente</li>
+<li>Admissão em Depósito Especial</li>
+<li>Admissão em Depósito Afiançado</li>
+<li>Admissão em Loja Franca em Porto ou Aeroporto</li>
+<li>Admissão em Loja Franca em Fronteira Terrestre</li>
+<li>Admissão em Entreposto Aduaneiro na Importação</li>
+</ul><p>O importador também poderá registrar a Duimp para cargas depositadas em recintos de zona secundária e que sofreram trânsito aduaneiro, desde que importadas pelo modal aquaviário e por pessoa jurídica com habilitação para operar no comércio exterior na modalidade <b>ilimitada</b>.</p><p>As novas evoluções ampliam consideravelmente a capacidade operacional do Novo Processo de Importação no âmbito do Portal Único de Comércio Exterior, permitindo que se processe aproximadamente 60% das importações brasileiras por meio da nova declaração de importação, já com o canal único de atuação entre a RFB, a Anvisa e o Vigiagro.</p><p>Para verificar todas as evoluções da nova versão, consulte o disposto no <a href="https://api-docs.portalunico.siscomex.gov.br/rn/r51-reno/">release notes</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/agosto/nova-versao-do-portal-unico-amplia-as-operacoes-abrangidas-pela-duimp" target="_blank">Receita Federal</a> <br/>Publicada em 23/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

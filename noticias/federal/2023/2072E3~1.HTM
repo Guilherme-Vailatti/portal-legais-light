@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Receita Federal - Receita Federal oferece oportunidade de au - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>19/07/2023 | Receita Federal - Receita Federal oferece oportunidade de autorregularização para mais de 22,7 mil empresas que deixaram de recolher o IRPJ e a CSLL referentes ao ano-calendário de 2019</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Receita Federal identificou que 22.754 empresas deixaram de declarar e de recolher o Imposto de Renda da Pessoa Jurídica (IRPJ) e a Contribuição sobre o Lucro Líquido (CSLL) referentes ao ano-calendário de 2019.  O valor estimado de indício de insuficiência verificado é cerca de R$ 3,4 bilhões.</p><p>A fim de promover a autorregularização, sem autuação e cobrança de multas de ofício, a Receita Federal enviou dois lotes de avisos para a Caixa Postal das empresas identificadas.</p><ul>
+<li>O primeiro lote com 18.554 avisos foi encaminhado para empresas tributadas pelo Lucro Presumido, em maio de 2023. O prazo concedido para a autorregularização para esse lote se encerraria em 16 de julho, contudo foi prorrogado para 15 de agosto de 2023.</li>
+<li>O segundo lote com 4.200 avisos foi encaminhado para empresas tributadas pelo Lucro Real Trimestral, em 10 de julho de 2023, e o prazo para autorregularização encerrar-se-á em 15 de setembro de 2023.</li>
+</ul><p>Regularizar as divergências dentro do prazo concedido na fase de autorregularização permite que o contribuinte recolha ou parcele os valores devidos apenas com os acréscimos legais, sem incidência da multa de ofício de que trata o art. 44 da lei 9.430/1996.</p><p>As empresas que desejarem proceder à autorregularização não precisam comparecer às unidades de atendimento da Receita Federal, basta seguir as instruções constantes nos seguintes endereços na Internet, conforme a forma de tributação:</p><p>As empresas estarão sujeitas à autuação e cobrança de multas depois de decorridos os prazos para autorregularização.</p><p>Segue, abaixo, o detalhamento dos valores de divergência de IRPJ e CSLL apurados nesta operação por Unidade da Federação:</p><p>Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/julho/receita-federal-oferece-oportunidade-de-autorregularizacao-para-mais-de-22-mil-empresas-que-deixaram-de-recolher-o-irpj-e-a-csll-referentes-ao-ano-calendario-de-2019">Receita Federal</a><![CDATA[
+]]></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://sped.rfb.gov.br/pagina/show/7251' target='_blank'>Receita Federal</a> <br>Publicada em 13/07/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

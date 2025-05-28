@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST RS - Decreto nº 57.181/2023 - Prorrogado prazo para  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/09/2023 | ICMS ST RS - Decreto nº 57.181/2023 - Prorrogado prazo para opção pelo Regime Optativo de Tributação da Substituição Tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi prorrogado, de 31/12/2023 para 31/12/2024, o Regime Optativo de Tributação da Substituição Tributária (ROT ST) que poderá ser adotado pelos contribuintes substituídos, independentemente do faturamento.</p><p>A opção poderá ser formalizada para o período de 1º de janeiro a 31/12/2024:</p><p>O optante que estiver enquadrado no ROT ST em 31/12/2023 permanecerá automaticamente enquadrado no exercício de 2024. No caso de exclusão, nas hipóteses previstas na legislação, a solicitação deve ser feita até 31/01/2024, caso não queira permanecer. A opção pelo ROT ST exercida nos mencionados prazos, produzirá efeitos a partir:</p><p>O ato legal noticiado entrou em vigor em 12/09/2023, data de sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.diariooficial.rs.gov.br/materia?id=901901" target="_blank">Decreto nº 57.181/2023</a> <br/>Publicada em 12/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

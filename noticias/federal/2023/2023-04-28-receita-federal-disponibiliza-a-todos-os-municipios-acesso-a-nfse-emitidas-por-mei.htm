@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Receita Federal disponibiliza a todos os m - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | Receita Federal - Receita Federal disponibiliza a todos os municípios acesso às Notas Fiscais de Serviços eletrônica emitidas por MEI</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal informa que todos os municípios podem acessar as notas fiscais de Serviços eletrônica (NFS-e), no padrão nacional, emitidas por Microempreendedores Individuais (MEI). Essa possibilidade estava disponível apenas para os entes conveniados.</p><p>Desde o início do ano, os MEIs prestadores de serviços podem emitir, de forma facultativa, notas fiscais de serviço eletrônica no padrão nacional.</p><p>As emissões são realizadas a partir dos emissores públicos disponibilizados:</p><ul>
+<li>Emissor Web (versão para navegador): <a href="https://www.nfse.gov.br/EmissorNacional">Portal de Gestão NFS-e - Contribuinte</a>;</li>
+<li>NFS-e Mobile (versão para dispositivos móveis): disponível na App Store (Apple) e Play Store (Google).</li>
+</ul><p>Os MEIs que optarem pela emissão do documento eletrônico devem efetuar um cadastro inicial no Emissor Web para a criação de uma senha de acesso.</p><p>A partir dos cadastros realizados , as notas emitidas na plataforma poderão ser acessadas pelos municípios via Application Programming Interface (API). Toda a documentação necessária para integração à API também pode ser acessada no <a href="https://www.gov.br/nfse/pt-br">Portal NFS-e</a>.</p><p>Os agentes municipais autorizados poderão também acessar o ambiente de testes do Painel Administrativo Municipal (PAM). Esse painel é responsável pelas configurações municipais na plataforma em relação às suas respectivas legislações.</p><p>As informações inseridas pelos municípios neste ambiente não possuem validade jurídica, servindo de testes e familiarização dos agentes municipais às telas de configuração.</p><p>O primeiro acesso ao ambiente de testes deve se dar via certificado digital do gestor municipal (prefeito): <a href="https://www.producaorestrita.nfse.gov.br/PainelMunicipal/">PORTAL DE GESTÃO NFS-e - ADMINISTRAÇÃO MUNICIPAL</a></p><p>Municipios e MEIs podem obter todas as informações necessárias pelo <a href="https://www.gov.br/nfse">Portal da NFS-e</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/infraestrutura/pt-br/assuntos/dt-e" target="_blank">Ministério da Infraestrutura
+</a> <br/>Publicada em 27/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI SC - Portaria SEF nº 118/2023 - Alteradas  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/06/2023 | SPED EFD ICMS IPI SC - Portaria SEF nº 118/2023 - Alteradas as instruções adicionais para a geração dos arquivos da EFD no Estado de Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram promovidas diversas alterações na Portaria SEF nº 377/2019 que define instruções adicionais para a geração dos arquivos da Escrituração Fiscal Digital - EFD, as quais destacamos:</p><ul>
+<li>a) prorroga de 1º.05.2023 para 1º.07.2023 a obrigatoriedade de utilização do registro "E115" e seus eventuais registros filhos;</li>
+<li>b) altera o Anexo II que dispõe sobre os requisitos complementares da escrituração fiscal digital:<ol style="list-style-type: lower-roman;"><li>requisito VII - registros 1900 a 1990 (das operações sujeitas a subapurações do imposto);</li><li>requisito IX - registros 1900 a 1990 (regras complementares, específicas da escrituração e subapuração do imposto nas operações beneficiadas por crédito presumido em substituição aos créditos pelas entradas, previstas no inciso V do caput do art. 23 do Anexo V do RICMS-SC/2001);</li><li>requisito XIV - registro C197 (ajustes e informações provenientes de documento fiscal);</li><li>requisito XVI - registro E11 (ajustes na apuração do ICMS normal);</li><li>requisito XXVII - registro E115 (informações adicionais da apuração - valores declaratórios).</li></ol></li>
+</ul><p>O ato em questão entra em vigor na data de 06/06/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sat.sef.sc.gov.br/tax.NET/Sat.Pesef.Web/Publicacao/ViewCompleto.aspx?x=102115065079110102099047052055043056113067110099107067111056083111071076069121103083118078053099056087043055109104070080099089065061" target="_blank">Portaria SEF nº 118/2023
+</a> <br/>Publicada em 06/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Legislação RS - Decreto nº 57.061/2023 - Regulamentado crédi - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>29/06/2023 | Legislação RS - Decreto nº 57.061/2023 - Regulamentado crédito do imposto na aquisição de combustíveis tributados pelo regime monofásico</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foram promovidas alterações no Regulamento do ICMS, a fim de incorporar as disposições do Convênio ICMS nº 26/2023.</p><p>Em vista disso, os contribuintes que adquirirem os combustíveis tributados pelo regime monofásico (gasolina "C", óleo diesel "B", GLP e GLGN) podem apropriar o crédito fiscal, conforme a quantidade de litros utilizados como insumo em operações e prestações posteriores tributadas, cujo imposto seja devido a este Estado, ou destinadas ao exterior.</p><p>O contribuinte que adquirir esses combustíveis e tiver o direito ao crédito, deverá emitir nota fiscal indicando no campo "Informações complementares" a expressão "Crédito fiscal adjudicado nos termos do Livro I, art. 31, I, "a", nota 05 do RICMS".</p><p>Esse crédito fiscal será registrado na Escrituração Fiscal Digital (EFD), bem como as demais informações exigidas, de acordo com o estabelecido em instruções da Receita Estadual.</p><p>Além disso, o contribuinte deverá elaborar e manter à disposição do Fisco, relação dos documentos fiscais referentes a tais aquisições que ensejaram o crédito fiscal, discriminando todos os elementos necessários para a apuração do valor desse crédito</p><p>Observa-se que tal crédito não poderá ser apropriado em relação a tais combustíveis utilizados como insumo por:</p><p>O ato noticiado entrou em vigor na data de sua publicação, com efeitos retroativos a 01/05/2023.</p><p>Fonte: <a href="https://www.diariooficial.rs.gov.br/materia?id=870098">DOE RS</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://sped.rfb.gov.br/pagina/show/7224' target='_blank'>Decreto nº 57.061/2023</a> <br>Publicada em 19/06/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

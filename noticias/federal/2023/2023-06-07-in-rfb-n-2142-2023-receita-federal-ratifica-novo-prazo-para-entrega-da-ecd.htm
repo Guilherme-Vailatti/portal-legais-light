@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED ECD - IN RFB nº 2.142/2023 - Receita Federal ratifica n - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/06/2023 | SPED ECD - IN RFB nº 2.142/2023 - Receita Federal ratifica novo prazo para entrega da ECD</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.142/2023 publicado no DOU do dia 26/05/2023 em edição extra alterou a Instrução Normativa RFB nº 2.003/2021, que dispõe sobre a Escrituração Contábil Digital (ECD), para definir novo prado de entrega da escrituração.</p><p>Por força dessas alterações, a ECD deve agora ser transmitida ao Sistema Público de Escrituração Digital (Sped) até o último dia útil do mês de junho do ano subsequente ao ano-calendário a que se refere a escrituração. Logo, a escrituração relativa ao ano-calendário de 2022, cujo prazo de entrega inicialmente seria encerrado às 23h59m59s do próximo dia 31.05.2023, poderá agora ser entregue até às 23h59m59s do dia 30.06.2023.</p><p>Nos casos de extinção da pessoa jurídica, cisão parcial, cisão total, fusão ou incorporação, a ECD deve ser entregue pela pessoa jurídica extinta, cindida, fusionada, incorporada e incorporadora, observados os seguintes prazos:</p><p>a) se o evento ocorrer no período compreendido entre janeiro e maio, a ECD deve ser entregue até o último útil do mês de junho do mesmo ano; ou</p><p>b) se o evento ocorrer no período compreendido entre junho e dezembro, a ECD deve ser entregue até o último dia útil do mês subsequente ao do evento.</p><p>Para mais detalhes, acesse a <a href="https://in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.142-de-26-de-maio-de-2023-486219317">publicação da Instrução Normativa</a> e veja o texto na íntegra.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.142-de-26-de-maio-de-2023-486219317" target="_blank">Instrução Normativa RFB nº 2.142/2023</a> <br/>Publicada em 29/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

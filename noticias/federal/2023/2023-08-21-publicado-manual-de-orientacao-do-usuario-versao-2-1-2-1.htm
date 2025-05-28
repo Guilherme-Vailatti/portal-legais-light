@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Publicado manual de orientação do usuário,  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/08/2023 | SPED EFD Reinf - Publicado manual de orientação do usuário, versão 2.1.2.1</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada a versão 2.1.2.1 do Manual de Orientação do Usuário da EFD-Reinf com atualizações relacionadas à versão 2.1.2 dos leiautes.</p><p>Este manual tem como objetivo orientar o sujeito passivo para o preenchimento da Escrituração Fiscal Digital de Retenções e Outras Informações Fiscais (EFD-Reinf), instituída pela Instrução Normativa RFB nº 1701, de 17 de março de 2017, mas atualmente disciplinada pela Instrução Normativa RFB nº 2043, de 12 de agosto de 2021, como módulo integrante do Sistema Público de Escrituração Digital (SPED), criado pelo Decreto nº 6.022, de 22 de janeiro de 2007, na qual deverão constar todas as informações necessárias para a apuração das contribuições sociais previdenciárias e das contribuições devidas a outras entidades e fundos (Terceiros), previstas nos arts. 2º e 3º da Lei nº 11.457, de 16 de março de 2017.</p><p>A EFD-Reinf, que foi implementada progressivamente a partir de maio de 2018, nos termos do §1º, do art. 2º da Instrução Normativa RFB nº 1.701 e alterações, foi concebida, originalmente, para, em conjunto com o Sistema de Escrituração Digital das Obrigações Fiscais, Previdenciárias e Trabalhistas (eSocial), substituir a Declaração do Imposto Retido na Fonte (DIRF), a Guia de Recolhimento do FGTS e Informações à Previdência Social (GFIP), o módulo da EFD-Contribuições, que apura a contribuição previdenciária sobre a receita bruta (CPRB) e o Manual Normativo de Arquivos Digitais (MANAD).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7262" target="_blank">Manual de Orientação do Usuário, versão 2.1.2.1</a> <br/>Publicada em 14/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

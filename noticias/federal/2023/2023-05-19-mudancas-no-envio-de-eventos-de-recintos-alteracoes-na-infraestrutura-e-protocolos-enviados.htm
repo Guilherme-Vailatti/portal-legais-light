@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Siscomex - Sistemas nº 002/2023 - Mudanças no envio de event - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/05/2023 | Siscomex - Sistemas nº 002/2023 - Mudanças no envio de eventos de Recintos, alterações na infraestrutura e protocolos enviados</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal do Brasil devido a importância do controle que deve ser efetuado nos Recintos Aduaneiros, com objetivo de proporcionar à aduana maior robustez no gerenciamento de riscos e no controle aduaneiro e, consequentemente, mais agilidade, desenvolveu no Portal Único Siscomex o módulo Recintos.</p><p>O ambiente é voltado ao recebimento e armazenamento de informações de movimentação física de pessoas, veículos e cargas prestadas por recintos e por outros operadores.</p><p>No comunicado 002/2023 publicado no Portal Siscomex no dia 10/05/2023, a Receita Federal alerta que a partir da implantação da primeira release do Portal Único de Comércio exterior de 2024, que ocorrerá na data provável de 05/01/2024, o sistema irá realizar atualização em sua infraestrutura.</p><p>As alterações são de âmbito técnico, e poderá causar problemas de integração em alguns sistemas no envio de eventos para o Recinto no Portal, no serviço de autenticação.</p><p>Especificamente, a sessão 8.1.2 (link: https://www.rfc-editor.org/rfc/rfc7540#section-8.1.2) da RFC estabelece que os pares de chave-valor dos headers devem ser implementados em letras minúsculas.</p><p>Tal alteração tem impacto direto em todos os serviços da API, em especial na autenticação de sistemas integrados ao Portal, uma vez que os headers "set-token", "x-csrf-token" e "x-csrf-expiration" (assim como todos os demais headers) passarão a ser retornado em letras minúsculas, portanto sistemas que utilizem comparação case sensitive de strings para obter os valores dos headers do serviço de autenticação (/portal/api/autenticar e /portal/api/autenticar/sistema, link: https://docs.portalunico.siscomex.gov.br/introducao-api-publica/) poderão apresentar mal funcionamento</p><p>Cronograma:</p><p>Alterações na infraestrutura e protocolos enviados em todos as API’s a partir de 2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/siscomex/pt-br/noticias/noticias-siscomex-sistemas/comunicados/sistemas-no-2023-002" target="_blank">Sistemas n° 002/2023</a> <br/>Publicada em 10/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

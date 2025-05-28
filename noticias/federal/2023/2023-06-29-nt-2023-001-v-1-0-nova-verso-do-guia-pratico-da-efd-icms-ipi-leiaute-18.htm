@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - NT 2023.001, v 1.0 - Nova versão do guia - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>29/06/2023 | SPED EFD ICMS IPI - NT 2023.001, v 1.0 - Nova versão do guia prático da EFD ICMS IPI, leiaute 18</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada o <a href="https://www.in.gov.br/en/web/dou/-/ato-cotepe/icms-n-87-de-26-de-junho-de-2023-492245018">ATO COTEPE/ICMS nº 87/2023</a> com a nova versão 3.1.4 do Guia Prático e a Nota Técnica 2023.001 v1.0 com vigência a partir de janeiro/2024, com as seguintes alterações:</p><p>Para verificar a documentação, acesse <a href="http://sped.rfb.gov.br/pasta/show/1573">Manuais e Guias Práticos</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pasta/show/1573" target="_blank">Nota Técnica 2023.001, versão 1.0 - Leiaute 18</a> <br/>Publicada em 27/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

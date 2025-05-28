@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFS-e - A distribuição de notas, para os municípios convenia - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/05/2023 | NFS-e - A distribuição de notas, para os municípios conveniados (todas as notas) e não conveniados (notas do MEI), ficará suspensa temporariamente</h1>
+</div>
+<div class="noticia-corpo">
+<p>Na segunda-feira, 08 de maio, será executada uma rotina de reprocessamento dos NSUs das notas de distribuição.</p><p>Essa rotina tem como objetivo a correção de uma inconsistência detectada e, portanto, o serviço de distribuição de notas por API para os municípios conveniados (todas as notas) e não conveniados (notas do MEI) ficará suspenso por alguns dias. A estimativa inicial é que essa execução deve ser concluída em 5 dias, até o dia 12 de maio.</p><p>Importante esclarecer alguns pontos:</p><p>1) Não haverá qualquer impacto nas 23 milhões de notas já compartilhadas/emitidas no Ambiente de Dados Nacional (ADN);</p><p>2) Aqueles municípios que já receberam notas pela API de Distribuição devem descartá-las. Reiniciando a busca por notas, após a conclusão do processamento da rotina, a partir do NSU (Número Sequencial Único) de número 1;</p><p>3) Foi analisado o impacto dessa rotina junto ao município de Belo Horizonte/MG, responsável por 95% das notas compartilhadas no ADN, e o retorno foi positivo;</p><p>4) Os serviços de emissão e compartilhamento de notas continuarão ativos. A rotina tem impacto tão somente na distribuição;</p><p>5) Informaremos quando o serviço de distribuição de notas por API estiver novamente ativo.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/nfse/pt-br/noticias/api-de-distribuicao-nfs-e-ficara-suspensa" target="_blank">Receita Federal</a> <br/>Publicada em 04/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

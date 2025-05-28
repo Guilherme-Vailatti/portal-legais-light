@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - NT 2020.007 v.1.30 - Evento Ator Interessado na NF-e  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>29/06/2023 | NF-e - NT 2020.007 v.1.30 - Evento Ator Interessado na NF-e - Transportador</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada nova versão da NT 2020.007 que divulga a especificação do novo evento gerado pelo Emitente ou Destinatário da NF-e, no qual é possível informar o transportador responsável pela movimentação da carga. O objetivo desta Nota Técnica é permitir que o Emitente informe a identificação do Transportador a qualquer momento, como uma das pessoas autorizadas a acessar o XML da NF-e.</p><p>No caso em que o transporte não é de responsabilidade do Emitente, o Destinatário poderá gerar o evento, com o mesmo objetivo de autorizar que o Transportador fique autorizado a acessar o XML da NF-e. Nos casos de Redespacho ou Subcontratação, definido o transportador contratado, este poderá também autorizar outro transportador participante da mesma operação de transporte a acessar o XML da NF-e.</p><p>O Transportador precisa dos dados da NF-e para instrumentalizar seus processos de transporte e, a partir da geração deste evento, possibilita o transportador em buscar o XML da NF-e no Ambiente Nacional, por meio do “Web Service de Distribuição de DF-e de Interesse dos Atores da NF-e”, conforme documentado na NT2014.002.</p><p>Este evento somente pode ser gerado no prazo de 6 meses após a data de autorização da NF-e.</p><p>Alteração no prazo de implantação e melhorias na documentação</p><ul>
+<li><b>Teste</b>: 29/04/2024</li>
+<li><b>Produção</b>: 03/06/2024</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica 2020.007, versão 1.30</a> <br/>Publicada em 26/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

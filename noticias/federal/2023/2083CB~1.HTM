@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e NFC-e SC - Ato DIAT nº 49/2023 - Prorroga a obrigatorie - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>04/07/2023 | NF-e NFC-e SC - Ato DIAT nº 49/2023 - Prorroga a obrigatoriedade de preenchimento do campo “cBenef” - Código de Benefício Fiscal para novembro</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Estado de Santa Catarina <b>prorrogou de 10/07/2023 para 01/11/2023</b> a obrigatoriedade de preenchimento do campo "cBenef - Código de Benefício Fiscal". O campo cBenef identifica as mercadorias e os produtos alcançados por <b>incentivos fiscais, não-incidência tributária, diferimento e suspensão da exigibilidade</b> do imposto e se aplica à Nota Fiscal Eletrônica (<b>NF-e</b>), modelo 55; e a Nota Fiscal de Consumidor Eletrônica (<b>NFC-e</b>), modelo 65.</p><p>A Secretaria de Estado da Fazenda (SEF/SC) prorrogou para 1º de novembro o prazo para que o contribuinte passe a informar o campo cBenef - Código de Benefício Fiscal no momento de emitir a Nota Fiscal Eletrônica (NF-e) ou a Nota Fiscal de Consumidor Eletrônica (NFC-e). Este é o segundo adiamento desde a publicação, em dezembro do ano passado, de ato da Diretoria de Administração Tributária (DIAT/SEF) regulamentando a obrigatoriedade. Ao conceder outros 120 dias de prazo para que o contribuinte se adapte à mudança, o Fisco atende a novo pedido das associações empresariais de Santa Catarina.</p><p>A criação do campo cBenef vem sendo discutida pela Secretaria de Estado da Fazenda desde 2021 e está alinhada às recomendações do Tribunal de Contas e do próprio Ministério Público - os dois vêm reiterando que o Governo do Estado deve dar transparência à renúncia fiscal. Em dezembro de 2022, foi publicado o Ato DIAT n. 79/2022 tornando o preenchimento dos dados obrigatório a partir de 1º de maio de 2023. Diante dos apelos do empresariado, a SEF/SC prorrogou o prazo para 1º de julho (Ato DIAT n. 35/2023) e agora, às vésperas do início da vigência, adiou a obrigatoriedade para 1º de novembro.</p><p>O campo cBenef na nota fiscal é usado para identificar quais incentivos fiscais estão sendo concedidos pelo Governo do Estado na comercialização de mercadorias e produtos. Apesar de ser facultativa, a medida é regulamentada pelo Conselho Nacional de Política Fazendária (Confaz) e já foi adotada pelo Rio Grande do Sul, Paraná, Rio de Janeiro e Goiás - outros Estados também estão estudando a alternativa. Ao solicitar que o contribuinte informe os códigos, a SEF/SC está padronizando a escrituração fiscal e garantindo mais transparência ao processo. "O preenchimento do campo cBenef é importante para que o Governo do Estado tenha cada vez mais controle sobre a arrecadação, além de criar os mecanismos necessários para que seja possível disponibilizar à sociedade os dados da renúncia fiscal no Portal da Transparência, o que atende às recomendações dos órgãos de controle externo como o TCE e o Ministério Público", explica o secretário Cleverson Siewert.</p><p><b>Autorregularização</b> - Outro objetivo da Secretaria de Estado da Fazenda é reduzir a margem de erro no preenchimento da documentação fiscal. Para tanto, a DIAT preparou e publicou o Guia Prático de Escrituração de Incentivos e Benefícios Fiscais com todas as instruções para o contribuinte. “Com a publicação do Guia Prático, o Estado facilita o cumprimento das obrigações fiscais, garantindo a autorregularização do contribuinte sem a necessidade de uma autuação fiscal”, explica o diretor de Administração Tributária, o auditor fiscal Dilson Takeyama.</p><p>O <a href="https://www.sef.sc.gov.br/arquivos_portal/assuntos/108/Guia_Pratico_de_Escrituracao_de_Incentivos_e_Beneficios_Fiscais___3_edicao.pdf">Guia Prático de Escrituração - Incentivos e Benefícios Fiscais</a> está disponível na página da Fazenda e traz orientações sobre o preenchimento do cBenef e de outros campos nos documentos fiscais eletrônicos. A omissão no preenchimento das informações ou a sua entrega de forma incorreta configura infração à legislação tributária e é passível de aplicação de multa.</p><p>Fonte: <a href="https://www.sef.sc.gov.br/midia/noticia/3402/Contribuinte_terá_mais_prazo_para_informar_código_de_benefícios_fiscais_em_notas">SEFAZ SC</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://legislacao.sef.sc.gov.br/html/atos_diat/2023/atodiat_23_049.htm' target='_blank'>Ato DIAT nº 49/2023</a> <br>Publicada em 03/07/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

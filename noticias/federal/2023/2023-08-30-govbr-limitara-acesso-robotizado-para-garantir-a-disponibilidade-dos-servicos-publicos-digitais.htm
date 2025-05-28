@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>e-CAC - GOV.BR limitará acesso robotizado para garantir a di - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/08/2023 | e-CAC - GOV.BR limitará acesso robotizado para garantir a disponibilidade dos serviços públicos digitais</h1>
+</div>
+<div class="noticia-corpo">
+<p>O acesso robotizado à Plataforma GOV.BR será limitado a partir de 25/09/2023, restringindo, consequentemente, a utilização de robôs no Centro de Atendimento Virtual (e-CAC) da Receita Federal. A medida visa garantir a disponibilidade do GOV.BR a todos os cidadãos brasileiros, mitigando problemas de indisponibilidade dos mais de 4 mil serviços oferecidos pelo Governo Federal.</p><p>Após o ajuste serão permitidas, no máximo, 15 sessões simultâneas por contribuinte. A ação, portanto, não terá qualquer impacto para usuários que acessam normalmente o Portal e-Cac.</p><p>Sessões são conexões para comunicação entre dois dispositivos, dois sistemas ou duas partes de um sistema. De forma simples, uma sessão seria um acesso de um contribuinte ao e-Cac por meio de um único dispositivo, como 1 computador, 1 celular ou 1 tablet.</p><p>A robotização desproporcional prejudica o acesso de milhares de cidadãos às plataformas de serviços públicos digitais, pois executa, num curtíssimo intervalo de tempo, consultas sobre diversas pessoas, ou diversas consultas sobre a mesma pessoa, resultando no consumo de recursos computacionais muito acima do esperado para acessos típicos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/agosto/gov-br-limitara-acesso-robotizado-para-garantir-a-disponibilidade-dos-servicos-publicos-digitais" target="_blank">Receita Federal</a> <br/>Publicada em 28/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

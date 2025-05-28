@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Simples Nacional - NT 2023/002, v. 1.0 - Altera o retorno do - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/08/2023 | Simples Nacional - NT 2023/002, v. 1.0 - Altera o retorno do WebService de consulta situação para MDFe - Integração com InfraSA</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Técnica modifica o retorno do serviço de consulta situação do MDFe apenas para documentos de transporte de carga dos modais rodoviário e ferroviário. O objetivo é indicar o número de protocolo e data de disponibilização do MDFe para geração do DTe pela InfraSA (governo federal) de forma automatizada e utilizando os dados do próprio MDFe.</p><p>As informações também serão disponibilizadas nas consultas públicas do portal nacional do MDFe em <a href="https://dfe-portal.svrs.rs.gov.br/MDFe" target="_blank">Portal do Manifesto Eletrônico de Documentos Fiscais - SVRS</a>. </p><ul>
+<li><b>Ambiente de Homologação:</b> 09/2023</li>
+<li><b>Ambiente de Produção:</b> 09/2023</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Mdfe/Documentos" target="_blank">Nota Técnica nº 2020.0001, versão 1.04</a> <br/>Publicada em 23/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

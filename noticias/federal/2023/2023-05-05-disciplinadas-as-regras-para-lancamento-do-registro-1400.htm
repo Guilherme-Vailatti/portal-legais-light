@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI RJ - Resolução SEFAZ nº 517/2023 - Discipl - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | SPED EFD ICMS IPI RJ - Resolução SEFAZ nº 517/2023 - Disciplinadas as regras para lançamento do registro 1400</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram disciplinadas as regras para lançamento do registro 1400 na EFD-ICMS/IPI, relativo as informações para o cálculo do valor adicionado por município.</p><p>Dessa forma, o registro deverá ser preenchido com os dados da receita bruta anual do estabelecimento, conforme a seguir:</p><p>a) no campo 02 (COD_ITEM_IPM), preencher com o código "RJREC00001";</p><p>b) no campo 03 (MUN), preencher com o código do município onde estiver situado o estabelecimento declarante;</p><p>c) no campo 04 (VALOR) do registro 1400 da EFD-ICMS/IPI, referente ao período de dezembro do ano em curso, preencher com o valor total da receita bruta do exercício.</p><p>Esta resolução entra em vigor na data de sua publicação em 04.05.2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.fazenda.rj.gov.br/sefaz/faces/menu_structure/legislacao/legislacao-estadual-navigation/coluna2/menu_legislacao_resolucoes/Resolucoes-Tributaria?_afrLoop=102295511687592533&amp;datasource=UCMServer%23dDocName%3AWCC42000044718&amp;_adf.ctrl-state=fio1mpv4g_58" target="_blank">Resolução SEFAZ nº 517/2023</a> <br/>Publicada em 04/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

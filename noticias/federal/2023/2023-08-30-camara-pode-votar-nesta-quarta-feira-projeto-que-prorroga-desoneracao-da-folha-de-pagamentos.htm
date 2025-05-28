@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - Câmara pode votar nesta quarta-feira pr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/08/2023 | Congresso Nacional - Câmara pode votar nesta quarta-feira projeto que prorroga desoneração da folha de pagamentos</h1>
+</div>
+<div class="noticia-corpo">
+<p>O presidente da Câmara dos Deputados, Arthur Lira (PP-AL), afirmou que o Plenário deverá votar nesta quarta-feira (30) o projeto que prorroga a desoneração da folha de pagamentos para alguns setores da economia. O regime de urgência da proposta foi aprovado nesta terça (29). Segundo o presidente, uma discussão que envolve a questão previdenciária dos municípios ainda não foi consensuada entre os líderes.</p><p>Lira afirmou que o projeto foi aprovado pelo Senado de forma terminativa, isto é, sem passar pelo Plenário da outra Casa, e que a Câmara tem que dar solução a um problema que não é fácil. Ele criticou a articulação política do governo em determinadas pautas.</p><p>“O governo não se posicionou claramente com tanta incisividade no Senado, essa matéria foi votada terminativa numa comissão, e o momento em que chega na Câmara não é fácil. Estamos tentando dar uma solução. A Câmara e os líderes têm se queixado de matérias mal conduzidas do Senado para a Câmara”, afirmou Lira.</p><p>A urgência aprovada nesta terça é para o <a href="https://www.camara.leg.br/noticias/975740-projeto-prorroga-por-quatro-anos-desoneracao-da-folha-de-pagamentos-da-cofins-importacao">Projeto de Lei 1016/23</a>, do deputado Ricardo Ayres (Republicanos-TO), que prorroga a desoneração da folha de pagamentos até 2027. O tema também está no <a href="https://www.camara.leg.br/noticias/981079-camara-vai-analisar-projeto-que-estende-desoneracao-da-folha-ate-2027">PL 334/23</a> (apensado), do Senado.</p><p>Por acordo entre as lideranças partidárias, o mérito da proposta deve ser analisado nesta quarta-feira para dar tempo à relatora, deputada Any Ortiz (Cidadania-RS), de costurar um texto com uma solução política a outro assunto constante do PL 334/23, a diminuição de 20% para 8% da alíquota do Instituto Nacional do Seguro Social (INSS) para municípios com até 156 mil habitantes.</p><p>Os deputados vão analisar uma proposta de desoneração da folha que substitui a contribuição previdenciária patronal, de 20% sobre a folha de salários, por alíquotas de 1% a 4,5% sobre a receita bruta. A ideia é que esse mecanismo reduza os encargos trabalhistas dos setores desonerados e estimule a contratação de pessoas. O projeto prorroga até 31 de dezembro de 2027 essa desoneração para 17 setores da economia.</p><p>Arthur Lira anunciou para a próxima semana a votação do <a href="https://www.camara.leg.br/noticias/991463-deputados-podem-analisar-proposta-que-regulamenta-juros-dos-cartoes-de-credito">Projeto de Lei 2685/22</a>, que trata do endividamento das famílias e do crédito rotativo e parcelado. O projeto também vai conter as regras do programa Desenrola. "Foi discutido hoje para que as lideranças pudessem conhecer o texto para ser votado na semana que vem", disse.</p><p>A regulamentação dos jogos (<a href="https://www.camara.leg.br/noticias/981180-PROJETO-DO-GOVERNO-REGULAMENTA-PROCESSO-ADMINISTRATIVO-ENVOLVENDO-FRAUDES-EM-APOSTAS-ESPORTIVAS">PL 3626/23</a>) é outro projeto, que segundo o presidente da Câmara, pode ser analisado na semana que vem. O projeto tem urgência constitucional e passa a trancar a pauta no dia 9.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/992619-camara-pode-votar-nesta-quarta-feira-projeto-que-prorroga-desoneracao-da-folha-de-pagamentos/" target="_blank">Agência Câmara Notícias</a> <br/>Publicada em 29/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

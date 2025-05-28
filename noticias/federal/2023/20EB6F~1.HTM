@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CT-e - NT 2015.002, v. 1.02 - Web service de distribuição de - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>19/07/2023 | CT-e - NT 2015.002, v. 1.02 - Web service de distribuição de DF-e de interesse dos atores do CT-e (PF ou PJ), trazendo a Inclusão do evento “Insucesso na Entrega”</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi publicada a versão 1.02 da NT 2015.002 que divulga o Web Service de Distribuição de DF-e de Interesse dos Atores do CT-e (PF ou PJ), trazendo a Inclusão do evento <b>Insucesso na Entrega</b>.</p><ul>
+<li><b>Ambiente de Homologação</b>: 15/06/2023</li>
+<li><b>Ambiente de Produção</b>: 26/06/2023</li>
+</ul><p>Fonte: <a href="https://www.cte.fazenda.gov.br/portal/informe.aspx?informe=111">Portal CT-e</a><![CDATA[
+]]></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://sped.rfb.gov.br/pagina/show/7251' target='_blank'>Nota Técnica 2015.002, versão 1.02</a> <br>Publicada em 12/07/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

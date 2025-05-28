@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Confira os principais pontos do parecer - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>29/06/2023 | Reforma Tributária - Confira os principais pontos do parecer preliminar do relator da reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p><b>Eliminação de impostos</b> – Substituição de cinco tributos (IPI, PIS, Cofins, ICMS e ISS) por uma Contribuição sobre Bens e Serviços (CBS), gerida pela União, e um Imposto sobre Bens e Serviços (IBS), gerido pelos estados e municípios. Também será criado o Imposto Seletivo.</p><ul>
+<li>CBS e IBS – Tributos a serem cobrados no local de consumo dos bens e serviços, com desconto do tributo pago em fases anteriores da produção;</li>
+<li>Imposto seletivo – Será uma espécie de sobretaxa sobre produtos e serviços que prejudiquem a saúde ou o meio ambiente.</li>
+</ul><p><b>Alíquotas</b> – Haverá uma alíquota padrão, uma reduzida em 50% e uma alíquota zero. Os percentuais serão discutidos em lei complementar.</p><ul>
+<li>Alíquota reduzida -  Para atender as seguintes áreas: transporte público, serviços de saúde, serviços de educação, produtos agropecuários, cesta básica, atividades artísticas e culturais e parte dos medicamentos. Isso porque esses grupos não têm muitas etapas como a indústria e teriam menos créditos tributários;</li>
+<li>Alíquota zero – Medicamentos, Prouni, produtor rural pessoa física.</li>
+</ul><p><b>Exceções</b> – A Zona Franca de Manaus e o Simples manteriam suas regras atuais. E alguns setores teriam regimes fiscais específicos: operações com bens imóveis, serviços financeiros, seguros, cooperativas, combustíveis e lubrificantes, planos de saúde.</p><p><b>Cashback</b> – A emenda constitucional deve prever a implantação de um cashback ou devolução de parte do imposto pago. Mas o funcionamento do mecanismo ficará para a lei complementar.</p><p><b>Fundo de Desenvolvimento Regional</b> – para compensar o fim da guerra fiscal, será criado esse fundo com recursos da União para promover regiões menos desenvolvidas. O objetivo é ter R$ 40 bilhões por ano a partir de 2033.</p><p><b>Fundo de Compensação de Benefícios Fiscais</b> – Os benefícios já concedidos pelos estados seriam garantidos até 2032 por este fundo, também com recursos da União. No seu ponto máximo, em 2028, teria recursos de R$ 32 bilhões.</p><p><b>Transição federativa</b> – Será feita uma transição de 50 anos, entre 2029 e 2078, para manter a arrecadação da União, estados e municípios. Sem a transição, estados e municípios “produtores” seriam prejudicados com a cobrança do IBS no local de consumo.</p><p><b>Transição dos tributos</b> – Apesar de serem feitos modelos, a arrecadação dos novos tributos não é conhecida. Então, essa transição, de oito anos, terá o objetivo de calibrar as alíquotas de forma a manter a carga tributária.</p><p><b>IPVA</b> – Será cobrado também sobre veículos aquáticos e terrestres. Será menor para veículos de menor impacto ambiental.</p><p><b>IPTU</b> – Os municípios poderão mudar a base de cálculo do imposto por decreto, mas a partir de critérios estabelecidos em lei municipal.</p><p><b>ITCMD</b> – A ideia é determinar a progressividade do imposto. Ou seja, alíquotas maiores para valores maiores de herança ou doação. Permite a cobrança de heranças no exterior.</p><p><b>Fim da guerra fiscal</b> – A redução de impostos para atrair fábricas não se justifica mais porque o imposto será cobrado no destino do bem ou serviço.</p><p><b>Crescimento econômico</b> – O IBS simplifica o sistema, eliminando custos para as empresas. A indústria é mais favorecida porque pode ter mais créditos de tributos pagos por insumos.</p><p><b>Desoneração das exportações</b> – Como o imposto só é cobrado no consumo, as vendas externas podem ser totalmente desoneradas. Por outro lado, as importações terão a mesma taxação do produto nacional.</p><p><b>Segurança jurídica</b> – Cai a diferenciação entre produtos e serviços, evitando conflitos sobre qual alíquota deve ser aplicada sobre determinado consumo.</p><p><b>Transparência</b> – O consumidor vai saber quanto está pagando de imposto em cada produto ou serviço.</p><p>Reportagem - Sílvia Mugnatto</p><p>Edição - Wilson Silveira</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7224" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 23/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

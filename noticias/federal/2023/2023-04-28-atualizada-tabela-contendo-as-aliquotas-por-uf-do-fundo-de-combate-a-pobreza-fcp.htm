@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Atualizada tabela contendo as alíquotas por UF do Fun - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | NF-e - Atualizada tabela contendo as alíquotas por UF do Fundo de Combate à Pobreza (FCP)</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Sefaz atualizou no portal da NF-e a tabela contendo as alíquotas por UF do Fundo de Combate à Pobreza (FCP): </p><ul>
+<li>Acre – estado não possui FCP</li>
+<li>Alagoas – estado com até 3 alíquotas possíveis com valores fixos em 1.00% e 2.00%</li>
+<li>Amapá – estado não possui FCP</li>
+<li>Amazonas – estado com até 2 alíquotas possíveis com valores fixos em 1.30% e 2.00%</li>
+<li>Bahia – estado com alíquota única de 2.00%</li>
+<li>Ceará – estado com alíquota única de 2,0% a partir de 01/02/2024</li>
+<li>Distrito Federal – estado com alíquota única de 2.00%</li>
+<li>Espírito Santo – estado com alíquota única de 2.00%</li>
+<li>Goiás – estado com alíquota máxima de 2.00%, por padrão</li>
+<li>Maranhão – estado com alíquota única de 2.00%</li>
+<li>Mato Grosso – estado com alíquota máxima de 2.00%, por padrão</li>
+<li>Mato Grosso do Sul – estado com alíquota única de 2.00%</li>
+<li>Minas Gerais – estado com alíquota única de 2.00% a partir de 01/01/24</li>
+<li>Pará – estado não possui FCP</li>
+<li>Paraíba – estado com alíquota única de 2.00%</li>
+<li>Paraná – estado com alíquota única de 2.00%</li>
+<li>Pernambuco – estado com alíquota única de 2.00%</li>
+<li>Piauí – estado com alíquota única de 2.00%</li>
+<li>Rio de Janeiro – estado com alíquota máxima de 4.00%</li>
+<li>Rio Grande do Norte – estado com alíquota única de 2.00%</li>
+<li>Rio Grande do Sul – estado com alíquota única de 2.00%</li>
+<li>Rondônia – estado com alíquota única de 2.00%</li>
+<li>Roraima – estado com alíquota máxima de 2.00%, por padrão</li>
+<li>Santa Catarina – estado não possui FCP</li>
+<li>São Paulo – estado com alíquota única de 2.00%</li>
+<li>Sergipe – estado com 2 alíquotas com valores fixos de 1.00% e 2.00%</li>
+<li>Tocantins – estado com alíquota única de 2.00%</li>
+</ul><p>A nova tabela pode ser baixada do Portal Nacional de NF-e clicando no <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=">link para download</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=sZnr9gC3XJo=" target="_blank">Tabela_Aliquota_FCP_por_UF_2023_04
+</a> <br/>Publicada em 24/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

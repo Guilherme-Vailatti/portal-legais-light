@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Receita Federal lança Manual da Malha Fina - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/07/2023 | Receita Federal - Receita Federal lança Manual da Malha Fina das Pessoas Físicas e a Nova Malha Digital de Pessoas Jurídicas</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal realizou nessa quinta-feira (13/7) o lançamento do Manual da Malha Fina e apresentou a Nova Malha Digital. Os novos mecanismos refletem o esforço constante da Instituição em orientar e dar assistência ao contribuinte — Pessoa Física ou Pessoa Jurídica — no cumprimento das suas obrigações fiscais, apontou a subsecretária de Fiscalização da RFB, Andrea Costa, em live promovida pelo Conselho Federal de Contabilidade (CFC), Receita Federal e Federação Nacional das Empresas de Serviços Contábeis e das Empresas de Assessoramento, Perícias e Pesquisas (Fenacon). Ao priorizar a autorregularização, com orientações completas e viáveis para a correção de falhas na declaração, as iniciativas ajudarão a reduzir a abertura de procedimentos fiscais, evitando o litígio e melhorando a relação entre o Fisco e o contribuinte, aponta a Receita. “Muitos contribuintes querem fazer o certo e precisam ter muita clareza de como fazer”, afirmou.</p><p>“O manual lançado hoje é uma iniciativa de assistência à Pessoa Física que caiu na malha. Levamos clareza ao contribuinte sobre como corrigir ou apresentar documentos para atender a situações identificadas pela Receita”, reforçou Andrea. Divergências entre as informações declaradas pelo cidadão e os dados fornecidos por outras entidades que também entregam declarações (como empresas, instituições financeiras, planos de saúde) podem levar à malha fina.</p><ul>
+<li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/meu-imposto-de-renda/malha-fiscal">Acesse aqui o Manual da Malha Fina - Pessoa Física</a>
+</li>
+<li><a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/revisao-de-declaracao-malha">Clique aqui para acessar a Nova Malha Digital - Pessoa Jurídica</a>
+</li>
+</ul><p>O coordenador-Geral de Fiscalização da RFB, Ricardo Moreira, ressaltou que os mecanismos lançados nessa quinta-feira refletem um esforço de ampla parceria. “Esse é o resultado de um trabalho elaborado por muitas mãos dentro da Receita Federal. É motivo de grande orgulho para nós estar comprometidos em facilitar e fornecer assistência aos contribuintes no cumprimento de suas obrigações tributárias, tanto acessórias quanto principais, diante da complexidade da legislação tributária", explicou o coordenador-geral. O novo Manual da Malha Fina mostra, de forma simples e de fácil acessibilidade, como a Pessoa Física pode solucionar a questão. Há instruções para o contribuinte consultar se está na malha fina e os motivos que levaram a tal situação; orientação para sair da malha e como proceder no caso do recebimento de uma intimação ou notificação da Receita Federal.</p><p>A malha fiscal digital PJ é, igualmente, um mecanismo de assistência à Pessoa Jurídica, destacou a subsecretária de Fiscalização da RFB, com fácil acesso por meio da página da Receita na Internet. A implantação de um sistema mais simples e amigável de acesso a informações para Pessoas Jurídicas que entraram na malha fina visa impulsionar a regularização espontânea das divergências identificadas pela Receita. A malha digital PJ aponta divergências entre valores a pagar do Imposto de Renda da Pessoa Jurídica (IRPJ) e da Contribuição Social sobre o Lucro Líquido (CSLL) e débitos na Declaração de Débitos e Créditos Tributários Federais (DCTF) e os caminhos para solucionar eventuais inconsistências.</p><p>“Medidas como essas proporcionam ao contribuinte e aos profissionais da contabilidade a possibilidade de correção de algumas informações que eventualmente não tenham sido colocadas da forma adequada, antes da abertura de um procedimento fiscalizatório”, reforçou o presidente do CFC, Aécio Dantas Júnior, na abertura do evento. “Tudo que for feito para que a fiscalização orientativa prospere é muito bem-vindo”, disse o diretor técnico da Fenacon, Wilson Gimenez.</p><p>Além da subsecretária de Fiscalização, Andrea Costa, e do coordenador-geral de Fiscalização, Ricardo Moreira, a live contou com a participação de equipes da Receita, que detalharam o Manual da Malha Fina PF e a nova malha digital PJ. Houve apresentações dos auditores-fiscais Osvaldo Bruno Pedrosa de Sousa Martins Barbosa; Elaine Pereira de Souza; Dafne Calatroni Cardoso; Haylton Simões e João Augusto Cunha, em debate conduzido pelo coordenador operacional de Fiscalização da RFB, Adriano Pereira Subirá.</p><p>Confira a live de lançamento do Manual da Malha Fina e da Nova Malha Fiscal Digital.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7251" target="_blank">Receita Federal</a> <br/>Publicada em 14/07/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SP - Projeto de eliminação da GIA, mais de 57 mil - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | Legislação SP - Projeto de eliminação da GIA, mais de 57 mil empresas de São Paulo já estão dispensadas de entregar a GIA</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo do Estado de São Paulo continua o processo de desburocratização e simplificação de obrigações acessórias, com a dispensa gradativa de contribuintes entregarem a Guia de Informação e Apuração do ICMS (GIA).</p><p>Desde o início do processo, 57.085 empresas não precisarão mais apresentar <b>a partir de maio</b> o documento – bastando apenas a Escrituração Fiscal Digital (EFD) - arquivo digital com os livros fiscais e registros de apuração de ICMS referentes às operações. A informação é pública e consta da <a href="https://portal.fazenda.sp.gov.br/servicos/gia/Paginas/Dispensadas.aspx" target="_blank">página da GIA, no Portal da Sefaz-SP</a>.</p><p>As empresas que tenham apresentado regularmente ambos os documentos (GIA e EFD) desde janeiro de 2022 e não tenham apresentado nenhuma divergência de informações nos últimos 12 meses ficam dispensadas da entrega da GIA a partir do 1º dia do mês seguinte à notificação. Já as empresas que forem constituídas a partir de 1° de abril ficam dispensadas de apresentar a GIA dos meses seguintes, bastando a entrega regular da EFD.</p><p>No dia 20 de abril, a Sefaz-SP enviou pelo Domicílio Eletrônico do Contribuinte (DEC) a notificação para os contribuintes dispensados. O DEC é uma caixa postal eletrônica que proporciona ao contribuinte segurança e agilidade ao receber diretamente da Sefaz-SP comunicações, como, por exemplo, orientações sobre autorregularização e sobre a eliminação de obrigações acessórias - caso da GIA.</p><p>O credenciamento, único por pessoa jurídica e válido para todos os estabelecimentos com o mesmo CNPJ base, deve ser feito no link https://www.dec.fazenda.sp.gov.br/DEC/UCLogin/login.aspx, acessando com certificado digital e selecionando no menu “Credenciamento" a funcionalidade “Opção DEC".</p><p>Uma vez credenciado, mesmo que o contribuinte ou contabilista não acesse, ao tentar enviar a GIA não conseguirá e receberá uma mensagem automática de não recepção da GIA.</p><p>Para mais informações, basta acessar a página sobre Eliminação da GIA no portal da Secretaria da Fazenda e Planejamento.</p><p>A Sefaz-SP pretende avançar ainda mais para a eliminação de obrigações acessórias ao longo dos próximos meses, de maneira a simplificar a vida dos contribuintes e dos cidadãos.</p><p>Acesse a página sobre eliminação da GIA <a href="https://portal.fazenda.sp.gov.br/servicos/gia/Paginas/Eliminacao-da-GIA.aspx" target="_blank">aqui</a></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.fazenda.sp.gov.br/Noticias/Paginas/Mais-de-57-mil-empresas-já-estão-dispensadas-de-entregar-a-GIA.aspx#:~:text=As empresas que tenham apresentado,do mês seguinte à notificação." target="_blank">Projeto Eliminação da GIA</a> <br/>Publicada em 27/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

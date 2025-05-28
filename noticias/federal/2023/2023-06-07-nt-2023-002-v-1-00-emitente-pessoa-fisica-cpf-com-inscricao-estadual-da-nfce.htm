@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - NT 2023.002, v.1.00 - Emitente Pessoa Física (C - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/06/2023 | NF-e NFC-e - NT 2023.002, v.1.00 - Emitente Pessoa Física (CPF) com Inscrição Estadual da NFC-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada NT 2023.002 v.1.00, que objetiva viabilizar a emissão de NFC-e por Produtor Rural Pessoa Física (CPF) e eliminar a denegação e o uso de lote na NFC-e.</p><p>Emissão de NFC-e para Produtor Rural Pessoa Física e Eliminação da Denegação:</p><ul>
+<li><b>Ambiente de Homologação:</b> 24/07/2023</li>
+<li><b>Ambiente de Produção:</b> até 04/09/2023</li>
+</ul><p>Elimina Lote para a NFC-e:</p><ul>
+<li><b>Ambiente de Homologação:</b> 24/07/2023</li>
+<li><b>Ambiente de Produção:</b> até 04/09/2023</li>
+</ul><p>É possível realizar o download do arquivo desta nota técnica através do seguinte link: <a href="../../../Resources/Documentos para download/2023/NT2023.002_v1.0 - Emitente CPF - NFCe .pdf" target="_blank">NT 2023.002</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2023.002 v.1.00</a> <br/>Publicada em 24/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

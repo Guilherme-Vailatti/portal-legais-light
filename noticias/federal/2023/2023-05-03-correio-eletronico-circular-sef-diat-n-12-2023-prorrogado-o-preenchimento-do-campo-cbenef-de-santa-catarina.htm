@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e SC - Correio Eletrônico Circular SEF/DIAT/nº 12/2 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/05/2023 | NF-e NFC-e SC - Correio Eletrônico Circular SEF/DIAT/nº 12/2023 – Prorrogado o preenchimento do campo cbenef de Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p>Tendo em vista a quantidade significativa de dúvidas que chegaram à Central de Atendimento Fazendário - CAF, e levando em consideração a necessidade de adequação dos sistemas contábeis às regras de preenchimento das informações com as regras de validação da NF-e/NFC-e, a Diretoria de Administração Tributária vem informar, por meio do presente correio eletrônico, <b>que o prazo de obrigatoriedade da entrega das informações será prorrogado para o dia 01/07/2023</b>.</p><p>Ademais, esta Diretoria aproveita oportunidade para ratificar a necessidade de preenchimento do campo <b>cbenef</b> pelas empresas optantes pelo Simples Nacional, conforme dispõe o <a href="../2022/2022-12-23-nf-e-nfc-e-sc-ato-diat-79-2022-obrigatoriedade-de-preenchimento-de-codigo-relacionado-a-incentivos-fiscais-na-nota-fiscal.htm">Ato DIAT nº 79/2022</a>.</p><p>Assim, as empresas optantes pelo Simples Nacional deverão informar os <b>códigos de benefícios previstos na Tabela de Informações Adicionais da Apuração - Valores Declaratórios – cBenef (Tabela 5.2)</b>, identificando as mercadorias e os produtos alcançados por não-incidência tributária, diferimento e suspensão da exigibilidade do imposto, conforme previstos no Regulamento do ICMS de Santa Catarina – RICMS/SC, aprovado pelo Decreto Estadual nº 2.870, de 27 de agosto de 2001.</p><p>Ressalta-se que o preenchimento do documento fiscal com omissões ou incorreções podem constituir infração à legislação tributária, passível de aplicação de multa, nos termos dos art. 70 da Lei Estadual nº 10.297/1996.</p><p>Eventuais dúvidas acerca dos assuntos tratados neste Correio Eletrônico Circular também podem ser dirimidas na Central de Atendimento Fazendário (CAF), no site desta secretaria, na Internet, usando o link da <a href="https://caf2.sef.sc.gov.br/Views/Shared/NovoTicket.aspx">Secretaria de Estado da Fazenda</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sef.sc.gov.br/arquivos_portal/servicos/128/CorreioEletronico_2023_12__GEFIS__preenchimento_do_campo_cbenef_e_do_Guia_Pratico_de_Escrituracao_de_Incentivos_e_Beneficios_Fiscais.pdf" target="_blank">Correio Eletrônico Circular SEF/DIAT/nº 12/2023
+</a> <br/>Publicada em 28/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

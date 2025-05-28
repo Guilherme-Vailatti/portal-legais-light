@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD REINF - Nota Técnica 02/2023 - Ajustes nos leiautes - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/07/2023 | SPED EFD REINF - Nota Técnica 02/2023 - Ajustes nos leiautes da versão 2.1.2</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a Nota Técnica 02/2023 com o objetivo de apresentar ajustes nos seguintes leiautes da versão 2.1.2 da EFD-Reinf:</p><ul>
+<li>Leiaute do R-4010.</li>
+<li>Leiautes do R-9001, R-9005, R-9011 e R-9015.</li>
+<li>Leiaute do R-9015.</li>
+<li>Tabela 01 - Natureza de Rendimentos, do anexo I dos leiautes.</li>
+</ul><p>Para acessar a nota técnica na íntegra, acesse o link referente à fonte desta matéria logo abaixo.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/arquivo/show/7245" target="_blank">Nota Técnica 02/2023, versão 2.1.2</a> <br/>Publicada em 30/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SP - Publicado ato que disciplina sobre diversas  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>29/06/2023 | Legislação SP - Publicado ato que disciplina sobre diversas operações de circulação de mercadoria em São Paulo</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a Portaria SRE nº 41/2023, cujos efeitos se aplicam desde 21.06.2023, para disciplinar diversas operações de circulação de mercadorias. Ressalta-se que, o ato noticiado está vinculado ao Decreto nº 67.761/2023 publicado no dia 21.06.2023, o qual promoveu várias alterações no RICMS/SP.</p><p>Relativamente às operações descritas a seguir, os contribuintes do ICMS devem adotar os procedimentos disciplinados nos correspondentes anexos da referida Portaria:</p><p>Também foram revogadas as seguintes Portarias:</p><ul>
+<li>Portaria CAT nº 154/2008, que disciplinava o procedimento na distribuição de produtos aos empregados; e</li>
+<li>Portaria SRE nº 56/2022, que disciplinava as operações de demonstração e mostruário.</li>
+</ul><p>Para acessar o texto completo, acesse a Portaria disponibilizada logo abaixo na fonte da matéria.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-41-de-2023.aspx" target="_blank">Portaria SRE nº 41/2023</a> <br/>Publicada em 22/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

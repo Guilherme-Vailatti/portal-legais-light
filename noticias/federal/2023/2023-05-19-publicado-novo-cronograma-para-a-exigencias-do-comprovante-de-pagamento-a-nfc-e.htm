@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação RS - IN nº 37/2023 - Publicado novo cronograma pa - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/05/2023 | Legislação RS - IN nº 37/2023 - Publicado novo cronograma para a exigências do comprovante de pagamento à NFC-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Estadual no Rio Grande do Sul publicou no dia 16/05/2023 a Instrução Normativa nº 037/2023 que criou um cronograma para à exigência da vinculação do comprovante de pagamento do cartão junto à NFC-e.</p><p>Em 08/03/2023 já havia sido publicada a IN nº 016/2023 alterando o texto da IN nº 045/98, onde a partir de 01/04/2023, os estabelecimentos com atividade de supermercados, hipermercados e minimercados e cujo faturamento da empresa no ano de 2022 tenha sido superior a R$ 360.000,00, devem vincular á NFC-e o comprovante de transação de pagamento eletrônico.</p><p>O objetivo é vincular as operações de vendas ou serviços, realizados de forma presencial, aos pagamentos efetuados com cartões de crédito, débito, PIX, de loja (“private label”), transferência de recursos, transações eletrônicas do Sistema de Pagamento Instantâneo e demais instrumentos de pagamento eletrônico.</p><p>Com isto, Receita publicou o cronograma a seguir para adequação das empresas à obrigação:</p><p>a) 01/04/23, para estabelecimentos cuja atividade econômica esteja enquadrada no CGC/TE nas classes 4711-3 e 4712-1 da CNAE, tais como supermercados, hipermercados e minimercados e cujo faturamento da empresa no ano de 2022 tenha sido superior a R$ 1.800.000,00;</p><p>b) 01/07/23, para estabelecimentos cujo faturamento da empresa no ano de 2022 tenha sido superior a R$ 720.000,00;</p><p>c) 01/10/23, para estabelecimentos cujo faturamento da empresa no ano de 2022 tenha sido superior a R$ 360.000,00;</p><p>d) 01/01/24, para os demais estabelecimentos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.legisweb.com.br/legislacao?id=445385" target="_blank">Instrução Normativa nº 37/2023</a> <br/>Publicada em 16/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
