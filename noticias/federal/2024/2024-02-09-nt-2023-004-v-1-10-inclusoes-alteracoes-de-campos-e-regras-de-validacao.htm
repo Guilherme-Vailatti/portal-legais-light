@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e  - Nota Técnica 2023.004, v.1.10 - Inclusões e al - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/02/2024 | NF-e NFC-e  - Nota Técnica 2023.004, v.1.10 - Inclusões e alterações de campos e regras de validação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e em 02/02/2024, versão 1.10 da Nota Técnica 2023.004, que transfere o Evento de Conciliação Financeira (ECONF) para Nota Técnica futura a ser divulgada. Também divulga alteração de campos e regras de validação da NF-e.</p><ul>
+<li>Retirada da Nota Técnica 2023.004 o Evento de Conciliação Financeira (ECONF).</li>
+<li>A versão 1.10 transfere o Evento de Conciliação Financeira, que estava previsto pela versão 1.00 para outra Nota Técnica que tratará apenas do referido evento.</li>
+</ul><p>A Nota Técnica 2023.004, cria nova tag chamada “<b>CPF</b>” prevendo a possibilidade de que no “Grupo I01. Produtos e Serviços / Declaração de Importação” seja permitindo também que pessoa física seja adquirente ou encomendante, com isso retorna o nome da tag de “CNPJ” que na versão 1.00 estava sendo alterada para “CNPJ/CPF”, conforme imagem abaixo:</p><p>
+<img src="../../../Resources/Images/nt-2023-004-v1-10-1.png" style="max-width: 100%"/>
+</p><p>No grupo YA. Informações de Pagamento, houve: inclusão do campo dPag (YA03a) e ajustes na descrição dos ID dos campos YA03a, YA03b, YA03c, YA03d, YA07a, YA07b. Foi alterada a descrição do campo cAut para deixar claro que o preenchimento é também para PIX, boletos e outros pagamentos eletrônicos.</p><p>
+<img src="../../../Resources/Images/nt-2023-004-v1-10-2.png" style="max-width:100%"/>
+</p><p>Criada a I23d1-10 para validar o CPF, a regra de validação I23d-10 teve pequeno ajuste na descrição e a regra de validação I23d-20 volta a ter apenas o CNPJ.</p><p>
+<img src="../../../Resources/Images/nt-2023-004-v1-10-3.png" style="max-width:100%"/>
+</p><p>Incluída regra de validação N28-12 específica para desoneração para o motivo de desoneração 7 – SUFRAMA</p><p>
+<img src="../../../Resources/Images/nt-2023-004-v1-10-4.png" style="max-width:100%"/>
+</p><p>As regras de validação YA03b-10, YA04-20 e YA09-20 tiveram os números das mensagens de rejeição corrigidos. A regra de validação YA04-10 prevê que, no pagamento por PIX, deve-se informar o grupo de cartões:</p><p>
+<img src="../../../Resources/Images/nt-2023-004-v1-10-5.png" style="max-width:100%"/>
+</p><p>A regra de validação W16-10 foi corrigida para considerar na regra o valor do ICMS Monofásico sujeito a retenção no faturamento direto de veículos novos (Exceção 1).</p><p>Para acessar na integra a versão 1.10 da Nota Técnica 2023.004, <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=eWTd1q6pRMM=" target="_blank">clique aqui</a>.</p><p>Ambiente de homologação: 11/03/2024</p><p>Ambiente de produção: 01/04/2024</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2023.004, versão 1.10</a> <br/>Publicada em 02/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

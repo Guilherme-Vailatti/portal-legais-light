@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Criados os grupos de trabalho para disc - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/05/2024 | Reforma Tributária - Criados os grupos de trabalho para discutir a regulamentação da reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>O presidente da Câmara dos Deputados, Arthur Lira (PP-AL), divulgou na noite desta terça-feira (21) os <a href="https://imagem.camara.gov.br/Imagem/d/pdf/DCD0020240521000740000.PDF#page=" target="_blank">atos de criação dos grupos de trabalho</a> que vão discutir a regulamentação da reforma tributária.</p><p>Um dos GTs vai analisar o texto principal da regulamentação da reforma tributária (<a href="https://www.camara.leg.br/noticias/1056840-proposta-do-governo-regulamenta-impostos-criados-pela-reforma-tributaria" target="_blank">PLP 68/24</a>). A proposta institui a Lei Geral do Imposto sobre Bens e Serviços (IBS), da Contribuição Social sobre Bens e Serviços (CBS) e do Imposto Seletivo (IS) e contém a maior parte das regras que regulamentam a reforma.</p><p>Os participantes são os deputados Claudio Cajado (PP-BA), Reginaldo Lopes (PT-MG), Hildo Rocha (MDB-MA), Joaquim Passarinho (PL-PA), Augusto Coutinho (Republicanos-PE), Moses Rodrigues (União-CE) e Luiz Gastão (PSD-CE).</p><p>O segundo grupo vai tratar da atuação do Comitê Gestor do IBS e da distribuição das receitas do IBS entre os entes federativos e será formado pelos deputados  Vitor Lippi (PSDB-SP), Pedro Campos (PSB-PE), Mauro Benevides Filho (PDT-CE), Luiz Carlos Hauly (Pode-PR), Ivan Valente (Psol-SP), Aureo Ribeiro (Solidariedade-RJ) e Bruno Farias (Avante-MG).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1064920-criados-os-grupos-de-trabalho-para-discutir-a-regulamentacao-da-reforma-tributaria/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 21/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

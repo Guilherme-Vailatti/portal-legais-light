@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Desoneração da Folha - STF abre prazo para poderes discutire - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/05/2024 | Desoneração da Folha - STF abre prazo para poderes discutirem solução consensual sobre desoneração da folha</h1>
+</div>
+<div class="noticia-corpo">
+<p>O ministro Cristiano Zanin, do Supremo Tribunal Federal (STF), deu prazo de 60 dias, contados a partir de 25/04, para que o Congresso Nacional e o Executivo busquem uma solução consensual sobre a desoneração da folha de pagamento. Com isso, fica mantida, neste prazo, a possibilidade de substituir a contribuição previdenciária dos empregados por um percentual do faturamento, entre outros pontos.</p><p>Depois do período estipulado, o ministro vai reavaliar a questão. Em 25/04, Zanin suspendeu a validade da lei que estendia até 2027 a desoneração na Ação Direta de Inconstitucionalidade (ADI) 7633, ajuizada pelo governo federal.</p><p>A nova decisão foi tomada nesta sexta-feira (17), após o Congresso Nacional concordar com a sugestão do Executivo de discutir um novo projeto de lei.</p><p>Ao analisar o pedido da Advocacia-Geral da União (AGU), Zanin observou que o Executivo e o Legislativo demonstraram engajamento no diálogo institucional para resolver o impasse envolvendo o benefício. A seu ver, a nova negociação entre os Poderes é medida eficiente para superar ou atenuar o conflito discutido na ação apresentada ao STF. "A busca pela solução dialogada favorece a realização do princípio democrático, permitindo-se que diversos atores participem do processo decisório, com valiosas contribuições à jurisdição constitucional", assinalou.</p><p>Caso não haja acordo após os 60 dias fixados pelo ministro, voltarão a valer os efeitos da liminar que suspendeu a prorrogação da desoneração da folha de pagamentos até 2027.</p><p>A decisão será levada a referendo do Plenário na sessão virtual marcada para a próxima sexta-feira (24/05).</p><p>Leia a <a href="https://portal.stf.jus.br/processos/downloadPeca.asp?id=15367112543&amp;ext=.pdf" target="_blank">íntegra</a> da decisão.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=537766&amp;ori=1" target="_blank">Supremo Tribunal Federal</a> <br/>Publicada em 17/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal  - Pacheco promulga a Lei 14.784/2023 que prorroga d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/01/2024 | Federal  - Pacheco promulga a Lei 14.784/2023 que prorroga desoneração da folha de pagamentos para dezembro de 2027</h1>
+</div>
+<div class="noticia-corpo">
+<p>O presidente do Senado, Rodrigo Pacheco, promulgou a Lei <b>14.784</b>, de 2023, que prorroga por quatro anos a desoneração da folha salarial para os 17 setores da economia que mais empregam no país.</p><p>A norma é resultado do projeto de lei (PL) 334/2023, que havia sido vetado integralmente pelo presidente Luiz Inácio Lula da Silva. O veto (VET 38/2023) foi derrubado pelo Congresso Nacional.</p><p>A nova lei foi promulgada no dia 27/12/2023 e foi publicada no dia seguinte no DOU.</p><p>A desoneração da folha começou a valer como medida temporária em 2012. Desde então, a validade do incentivo fiscal vinha sendo estendida. A última prorrogação perderia a validade em 31 de dezembro de 2023. A Lei 14.784, de 2023, fixa o novo prazo em 31 de dezembro de 2027.</p><p>Os 17 setores beneficiados pela desoneração são os seguintes: confecção e vestuário, calçados, construção civil, call center, comunicação, construção e obras de infraestrutura, couro, fabricação de veículos e carroçarias, máquinas e equipamentos, proteína animal, têxtil, tecnologia da informação (TI), tecnologia da informação e comunicação (TIC), projeto de circuitos integrados, transporte metroferroviário de passageiros, transporte rodoviário coletivo e transporte rodoviário de cargas.</p><p>Com a desoneração, as empresas beneficiadas podem substituir o recolhimento de 20% de imposto sobre a folha de salários por alíquotas de 1% até 4,5% sobre a receita bruta.  A nova lei também reduz, de 20% para 8%, a alíquota da contribuição previdenciária sobre a folha dos municípios com população de até <b>156.216 habitantes</b>.</p><p>Para compensar a diminuição da arrecadação, o texto prorroga até dezembro de 2027 o aumento de 1% da alíquota da Cofins-Importação.</p><p>Para acessar a Lei 14.784/2023, <a href="https://www.in.gov.br/en/web/dou/-/lei-n-14.784-de-27-de-dezembro-de-2023-533927931" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/lei-n-14.784-de-27-de-dezembro-de-2023-533927931" target="_blank">Lei 14.784/2023</a> <br/>Publicada em 28/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

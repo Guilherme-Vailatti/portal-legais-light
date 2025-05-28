@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - Publicado PVA versão 4.0.0 com as altera - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/01/2024 | SPED EFD ICMS IPI - Publicado PVA versão 4.0.0 com as alterações do leiaute válido a partir de janeiro de 2024.</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi disponibilizada a versão 4.0.0 do PVA EFD ICMS IPI, com as alterações do leiaute válido a partir de janeiro de 2024.</p><p>Observação: Foi implementada a funcionalidade “Pré Validar Arquivo” destinada a pré-validações definidas pelos estados.  Esta funcionalidade é acessada através do menu “Escrituração Fiscal -&gt; Pré-Validar Arquivo”, estando disponível caso a SEFAZ de domicílio tenha implementado suas validações adicionais. Em caso de dúvidas, por gentileza entrar em contato com a SEFAZ de domicílio através dos endereços listados neste link: http://sped.rfb.gov.br/pagina/show/1577</p><p>Download através do link: https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-fiscal-digital-efd/escrituracao-fiscal-digital-efd</p><p>A versão 3.0.7 poderá ser utilizada para transmissão dos arquivos da EFD até 31/12/2023. A partir de 1º de janeiro de 2024, somente a versão 4.0.0 estará ativa.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7299" target="_blank">Portal SPED</a> <br/>Publicada em 19/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

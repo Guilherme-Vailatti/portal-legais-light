@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Decreto nº 601/2024 - Legislação de SC prorroga a dat - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | NF-e - Decreto nº 601/2024 - Legislação de SC prorroga a data de obrigatoriedade de NF-e para Produtores Rurais</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo do Estado de Santa Catarina publicou na edição extra do Diário Oficial (DOE) do dia 24/05/2024 o decreto que regulamenta a prorrogação do uso obrigatório da Nota Fiscal de Produtor Eletrônica (NFP-e) para <b>2 de janeiro de 2025</b>.</p><p>Sendo assim, fica prorrogado de 01/05/2024 para 02/01/2025:</p><p>Importante destacar que atualmente existe a obrigatoriedade de uso da NFP-e pelo produtor primário inscrito no CPP, relativamente às operações:</p><p>A norma produz efeitos desde 01/05/2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.doe.sea.sc.gov.br/repositorio/2024/20240524/Jornal/22273-A.pdf" target="_blank">Decreto nº 601/2024</a> <br/>Publicada em 24/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

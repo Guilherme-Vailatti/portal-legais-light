@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal  - Presidente Lula edita Medida Provisória 1.202/202 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/01/2024 | Federal  - Presidente Lula edita Medida Provisória 1.202/2023 que altera algumas regras da desoneração da folha de pagamentos</h1>
+</div>
+<div class="noticia-corpo">
+<p>Na última quinta-feira dia 28/12/2023, um dia depois a promulgação da Lei <b>14.784/2023</b> que prorroga a desoneração da Folha de Pagamento, o presidente Luiz Inácio Lula da Silva editou uma medida provisória <b>MP 1.202/2023</b> que prevê a reoneração gradual da folha de pagamentos, neste sentido, a MP prevê alíquota menor de imposto, a partir de abril, apenas para um salário mínimo por trabalhador e redução gradual do benefício até 2027.</p><p>O governo espera que essa medida ajude a alcançar a meta de déficit zero nas contas públicas e colocar em ordem o Orçamento.</p><p>A medida provisória ainda limita compensações tributárias decorrentes de decisões judiciais pelas empresas contra a administração pública, e retoma a tributação sobre o setor de eventos.</p><p>Embora entre em vigor na data de sua publicação, como toda medida provisória, o texto prevê algumas mudanças que só passarão a valer 90 dias após a publicação.</p><p>Para conhecer na íntegra a Media Provisória, <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1202.htm" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://in.gov.br/en/web/dou/-/medida-provisoria-n-1.202-de-28-de-dezembro-de-2023-534928947" target="_blank">MP 1.202/2023</a> <br/>Publicada em 29/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

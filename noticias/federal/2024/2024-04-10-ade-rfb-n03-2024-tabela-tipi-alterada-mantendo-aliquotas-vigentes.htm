@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>IPI - ADE RFB n° 03/2024 - Altera a tabela TIPI mantendo as  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/04/2024 | IPI - ADE RFB n° 03/2024 - Altera a tabela TIPI mantendo as alíquotas vigentes</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Diário Oficial da União desta quarta-feira, 03/04/2024, o Ato Declaratório Executivo RFB n° 03/2024, que altera a Tabela de Incidência do Imposto sobre Produtos Industrializados (TIPI) aprovada pelo Decreto n° 11.158/2022, em decorrência de alterações na Nomenclatura Comum do Mercosul (NCM) promovida pela Resolução GECEX n° 547/2023, destacando-se a supressão e a criação dos códigos NCM que especifica o desmembramento de itens do segmento de combustíveis minerais, produtos químicos orgânicos, plásticos, papel e cartão, cobre e suas obras, máquinas, aparelhos e materiais elétricos, e suas partes e instrumentos e aparelhos de óptica.</p><p>O ato compõe de três anexos sendo que:</p><p>Também foi suprimido os seguintes códigos de classificação fiscal NCM: 2827.39.98, 2929.90.2, 2929.90.21, 2929.90.22, 2929.90.29 e 3002.49.93.</p><p>As alterações são válidas desde <b>01/04/2024</b>.</p><p>Clique <a href="https://in.gov.br/en/web/dou/-/ato-declaratorio-executivo-rfb-n-3-de-2-de-abril-de-2024-551526783">aqui</a> para acessar o ADE RFB n° 03/2024 em sua integra</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://in.gov.br/en/web/dou/-/ato-declaratorio-executivo-rfb-n-3-de-2-de-abril-de-2024-551526783" target="_blank">Ato Declaratório Executivo RFB n° 03/2024</a> <br/>Publicada em 03/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

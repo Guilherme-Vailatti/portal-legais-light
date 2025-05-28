@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e  - Nota Técnica 2019.001, v.1.61 - Prorroga ambie - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/02/2024 | NF-e NFC-e  - Nota Técnica 2019.001, v.1.61 - Prorroga ambiente de testes e comunicado sobre schemas</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no dia 05/02/2024, a versão 1.61 da Nota Técnica 2019.001 que prorroga a implantação da versão 1.60 em homologação para o dia 11/03/2024 e informa que o schemas da versão 1.60 desta nota técnica será publicado em conjunto com o schema da Nota Técnica 2023.004.</p><p>Para ter acesso as alterações previstas pela versão 1.60 da Nota Técnica 2019.001, <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2024/2024-01-03-nt-2019-001-v-1-60-inclusao-campos-credito-presumido-cbenefrbc-referente-ao-codigo-beneficio-fiscal-de-reducao-de-base-calculo.htm" target="_blank">clique aqui</a>.</p><p>Ambiente de homologação: 11/03/2024</p><p>Ambiente de produção: 01/04/2024</p><p>Para ter acesso na integra da versão 1.61 da NT 2019.001, utilize <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nfe.fazenda.gov.br%2Fportal%2FexibirArquivo.aspx%3Fconteudo%3DGCguA5ZEWjM%3D&amp;data=05%7C02%7CGuilherme.Vailatti%40senior.com.br%7Cdd48a7872669431472a708dc28ca2d7c%7C62c7b02da95c498b9a7f6e00acab728d%7C0%7C0%7C638430096029663055%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=%2BuocVKh8vE3SXFhDZp9TvsEs7meM4hhvWroeiNwyBSY%3D&amp;reserved=0" target="_blank">esse link</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2019.001, versão 1.61</a> <br/>Publicada em 05/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

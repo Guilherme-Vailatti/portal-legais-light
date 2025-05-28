@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2024.001, v. 100 - Substitui de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/04/2024 | NF-e NFC-e - Nota Técnica nº 2024.001, v. 100 - Substitui denegação da NF-e por rejeição e altera campos e regras para emissão de NF-e/NFC-e com CRT=4(MEI)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada a Nota Técnica nº 2024.001, v.1.00, que traz as alterações necessárias para permitir a emissão de NF-e/NFC-e nas operações por MEI utilizando o código de regime tributário (CRT) “<b>4 - Simples Nacional - Microempreendedor Individual - MEI</b>", previstas no Convênio S/N de 1970.</p><p>Além disso, esta Nota Técnica elimina o processo de denegação também para a NF-e (modelo 55), substituindo por processo de rejeição, conforme Ajuste SINIEF 43/2023.</p><p>Alterações previstas na versão 1.00 da Nota Técnica 2024.001:</p><ul>
+<li>No grupo de identificação do Emitente da Nota Fiscal eletrônica (Grupo C) foi incluído o código “4=Simples Nacional – Microempreendedor Individual – MEI”, previsto no Convênio S/N/70, para o campo Código de Regime Tributário – CRT;</li>
+<li>Foi alterado a descrição dos campos ICMSSN102 e ICMSSN900 para incluir “CRT=4 – MEI”.</li>
+</ul><ul>
+<li>Alteradas as regras I03-30 e I12-60 para tornar o GTIN e o GTIN da unidade tributável facultativos quando o CRT for igual a “4=Simples Nacional – Microempreendedor Individual – MEI”;</li>
+<li>Alterada a regra I05-10 para não exigir o NCM completo para CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI” em operações internas. Portanto, quando o emitente da NF-e for MEI e a operação for interna poderá informar NCM 00000000. Porém, em operações interestaduais e de comércio exterior é necessário informar o NCM correto e completo;</li>
+<li>Alterada as regras N12-20 e N12a-10 para exigir o preenchimento correto do CSOSN quando CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI”, e não permitir CST para este CRT;</li>
+<li>Alterada a regra NA01-20 para não exigir o grupo de ICMS para a UF de destino quando CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI”;</li>
+<li>Alterada a regra 7C21-10 para verificar se CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI” é realmente utilizado por contribuinte enquadrado como MEI;</li>
+<li>Alteradas as regras para incluir o CFOP - Inclusão de utilização na NFC-e do CFOP 5910 - Remessa em bonificação, doação ou brinde, na NFC-e para tratamento de cortesias;</li>
+<li>Alterada à RV 1C17-38 que amplia a rejeição por não autorização de emissão ou irregularidade fiscal do emitente também para o modelo 55, visto que a denegação também deixa de existir para a NF-e;</li>
+<li>Alteradas as RV 5E17-40 e 5E17-60, transformando as respectivas denegações em rejeições para os destinatários do modelo 55.</li>
+</ul><ul>
+<li>Regra N17c-30 (FCP não deve ser destacado na NF-e conforme legislação Estadual)  foi excluída a pedido do Estado do Ceará;</li>
+<li>Excluída a RV 1C17-40, eliminando a denegação também para o modelo 55.</li>
+</ul><ul>
+<li>Criada a regra de validação N11-10 para exigir o preenchimento da origem da mercadoria quando o emitente não for CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI”;</li>
+<li>Incluídas as regras N12a-80 e N12a-81 que verifica o correto preenchimento do CSOSN quando CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI”, nas operações internas e interestaduais;</li>
+<li>Incluída a regra N12a-90 que verifica o correto preenchimento dos CFOPs quando CRT igual a “4=Simples Nacional – Microempreendedor Individual – MEI”, nas operações internas e interestaduais;</li>
+</ul><ul>
+<li>Ambiente de Homologação: 03/06/2024;</li>
+<li>Ambiente de Produção: 02/09/2024.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=6luq3tpmg08=" target="_blank">Nota Técnica nº 2024.001 versão 1.00</a> <br/>Publicada em 12/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Informe Técnico nº 2024.002, v. 1.01 - Altera tabela  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/06/2024 | NF-e - Informe Técnico nº 2024.002, v. 1.01 - Altera tabela de meios de pagamento</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e, versão 1.01 do Informe Técnico 2024.002, que tem o objetivo de divulgar as alterações da Tabela de Meios de Pagamento citada no referido documento.</p><p>O item 5 da Tabela teve apenas o texto corrigido para contemplar outras formas de crediário.</p><p>Na versão 1.00 deste Informe Técnico o texto havia sido alterado de “Crédito de Loja” para “Cartão da Loja (Private Label)”, agora com a nova correção, o texto passa a ser “Cartão da Loja (Private Label), Crediário Digital, Outros Crediários” para melhor definir esse tipo de pagamento.</p><p>Foi Incluído também a seguinte observação para o Item:</p><ul>
+<li>Cartão da loja (na forma de crediário), Crediário Digital, Crediário com ou sem Carnê etc;</li>
+<li>Não usar para o cartão de loja "bandeirado".</li>
+</ul><p> </p><p>Para ter acesso a Tabela de Meio de Pagamento vigente a partir de 07/2024, <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=hXzemuyNHW4=" target="_blank">Informe Técnico nº 2024.002, versão 1.01</a> <br/>Publicada em 07/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

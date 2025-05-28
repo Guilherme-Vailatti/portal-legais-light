@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED ECD e ECF - Postergação do prazo de entrega da ECD e da - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | SPED ECD e ECF - Postergação do prazo de entrega da ECD e da ECF nos municípios do Rio Grande do Sul</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada a <b>Portaria RFB nº 421</b>, de 21 de maio de 2024, que posterga prazos para entrega da Escrituração Contábil Digital – ECD – e da Escrituração Contábil Fiscal – ECF – nos municípios localizados no estado do Rio Grande do Sul.</p><p>Eventuais adições, exclusões ou alterações devem ser acompanhadas pelo contribuinte nas Portarias publicadas em Diário Oficial.</p><p>A íntegra da Portaria está disponível em: <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=138209" target="_blank">Port. RFB nº 421/2024 (fazenda.gov.br)</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7441" target="_blank">Portal SPED</a> <br/>Publicada em 24/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

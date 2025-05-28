@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SC  - Alterado o Manual da DIME, quanto ao cancel - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/02/2024 | Legislação SC  - Alterado o Manual da DIME, quanto ao cancelamento e a substituição de um DCIP</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado de Santa Catarina alterou o Manual de Orientação da Declaração de Informações do ICMS e Movimento Econômico (DIME), especificamente quanto ao cancelamento e a substituição do Demonstrativo de Créditos Informados Previamente (DCIP).</p><p>Com a nova redação, fica permitido o cancelamento e a substituição de um DCIP informado na DIME enquanto for possível a retificação desta, conforme disposto no art. 172 do Anexo 5 do RICMS-SC/2001 , observado o seguinte:</p><ul>
+<li>O DCIP substituído deverá ser cancelado, via Internet, por meio de aplicativo específico disponibilizado na página oficial da Secretaria de Estado da Fazenda, desde que não esteja lançado em DIME enviada para o período;</li>
+<li>no último  dia do 3º mês seguinte ao do período de referência para o qual foi emitido, o DCIP ativo e não utilizado em DIME passará à situação de inabilitado para uso.</li>
+</ul><p>Importante destacar que o RICMS-SC/2001 permite o   envio da DIME relativa ao exercício anterior, não entregue ou retificando a já entregue, até o dia 31 de março do exercício seguinte.</p><p>A norma entrou em vigor em <b>20/02/2024, data da sua publicação</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/portarias/2024/port_24_046.htm#:~:text=PORTARIA SEF N° 046/2024&amp;text=Altera o Manual de Orientação,SEF nº 153, de 2012.&amp;text=Art. 2º Esta Portaria entra,16 de fevereiro de 2024." target="_blank">Portaria SEF nº 46/2024 - Pe/SEF SC</a> <br/>Publicada em 20/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

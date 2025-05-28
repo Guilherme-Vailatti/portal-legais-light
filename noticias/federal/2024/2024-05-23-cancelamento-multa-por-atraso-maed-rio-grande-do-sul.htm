@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Enchentes no RS - Cancelamento de m - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/05/2024 | SPED EFD Contribuições - Enchentes no RS - Cancelamento de multa por atraso (MAED)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em atendimento ao disposto na Portaria RFB nº 415, de 2024, com a redação dada pela Portaria RFB nº 419, de 2024, comunicamos aos contribuintes domiciliados nos 397 Municípios do Estado do Rio Grande do Sul em relação aos quais foi declarada calamidade pública pelos Decretos nº 57.600, de 4 de maio de 2024, nº 57.603, de 5 de maio de 2024, e nº 57.605, de 7 de maio de 2024, expedidos pelo Governador do Estado do Rio Grande do Sul, <b>o que segue</b>:</p><p>Eventuais multas que porventura ocorram na entrega da EFD-Contribuições em atraso, dos períodos e dos municípios referidos no item acima, serão monitoradas. O sistema da RFB fará o cancelamento da multa emitida, e enviará mensagem para a caixa postal eletrônica do contribuinte com a informação do cancelamento.</p><p>Caso persistam dúvidas quanto à aplicação e cancelamento das multas referidas por esta nota, orientamos que o contribuinte procure o <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/empresa/sped/efd-contribuicoes/efd-contribuicoes-prazos-e-obrigatoriedade-da-efd-contribuicoes" target="_blank">Fale Conosco</a> da EFD-Contribuições.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7431" target="_blank">Portal SPED</a> <br/>Publicada em 13/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

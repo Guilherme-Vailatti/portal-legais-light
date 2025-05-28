@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições  - Nota Fiscal Fatura de Serviços de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/01/2024 | SPED EFD Contribuições  - Nota Fiscal Fatura de Serviços de Comunicação Eletrônica - NFCom, modelo 62</h1>
+</div>
+<div class="noticia-corpo">
+<p>O ajuste SINIEF nº 7, de 7 de abril de 2022, instituiu a Nota Fiscal Fatura de Serviços de Comunicação Eletrônica - NFCom, modelo 62, e obriga a utilização pelos contribuintes do ICMS a partir 1º julho de 2024, em substituição aos seguintes documentos:</p><p><b>I</b> - Nota Fiscal de Serviço de Comunicação, modelo 21; e</p><p><b>II</b> - Nota Fiscal de Serviço de Telecomunicação, modelo 22.</p><p>Face a tal ajuste, a Receita Federal orienta aqueles contribuintes que anteciparem a emissão da NFCom para antes de 1º julho de 2024, que adotem o seguinte procedimento excepcional à escrituração do modelo 62, na EFD Contribuições, até que se publique nova versão do Programa Gerador de Escrituração – PGE:</p><p><b>Escrituração da prestação de serviço (Documento de Saída):</b>
+</p><p><b>D600</b> - Consolidação da Prestação de Serviços - Notas de Serviço de Comunicação (Código 21) e de Serviço de Telecomunicação (Código 22)</p><p>Para os fatos geradores ocorridos até publicação de nova versão do Programa Gerador de Escrituração – PGE, da EFD Contribuições, a escrituração das receitas auferidas mediante a emissão de NFCom (modelo 62) se fará de forma consolidada no registro D600, informando no campo 02 (COD_MOD) o código “55”, mesmo se tratando de receita decorrente de emissão de NFCom.</p><p><b>Escrituração de aquisições de serviço (Documento de Entrada):</b>
+</p><p><b>Registro D500</b> - Nota Fiscal de Serviço de Comunicação (Código 21) e Nota Fiscal de Serviço de Telecomunicação (Código 22).</p><p>Para os fatos geradores ocorridos até publicação de nova versão do Programa Gerador de Escrituração – PGE, da EFD Contribuições, a escrituração das aquisições de serviço de comunicação eletrônica auferidas mediante a emissão de NFCom se fará no registro D500, informando no campo 05 (COD_MOD) o código “55”, mesmo se tratando de aquisição decorrente de emissão de NFCom.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7297" target="_blank">Portal SPED</a> <br/>Publicada em 15/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

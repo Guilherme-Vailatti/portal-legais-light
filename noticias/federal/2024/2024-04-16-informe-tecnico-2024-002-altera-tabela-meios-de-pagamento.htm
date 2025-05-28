@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Informe Técnico nº 2024.002, v 1.00 - Altera ta - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/04/2024 | NF-e NFC-e - Informe Técnico nº 2024.002, v 1.00 - Altera tabela de meios de pagamento</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e, versão 1.00 do Informe Técnico 2024.002, que tem o objetivo de divulgar as alterações da Tabela de Meios de Pagamento, disponível no Portal Nacional da NF-e.</p><p>Alterações realizadas na Tabela de Meios de Pagamento na versão 1.00.</p><p>As alterações na tabela de meios de pagamentos <b>são para 01/07/2024 no ambiente de produção</b>.</p><p>Foi incluída uma coluna “Observações” para explicar o item quando necessário.</p><p>O item 5 teve o texto alterado de “Crédito de Loja” para “Cartão da Loja (Private Label)”, para melhor definir esse tipo de pagamento.</p><ul>
+<li>Foi adicionada observação para o item 14: “Duplicata Mercantil”;</li>
+<li>Foi alterado o item 17 para acrescentar a palavra “Dinâmico”. O objetivo é separar o os pagamentos de PIX com o “QR-Code Dinâmico” do tipo “QR-Code Estático”;</li>
+<li>Foi incluído o item 20: “Pagamento Instantâneo (PIX) – Estático”;</li>
+<li>Foi incluído o item 21: “Crédito em Loja”, que pode decorrer de: valor pago antecipadamente, devolução de mercadoria etc;</li>
+<li>Foi incluído o item 22: “Pagamento Eletrônico não Informado - falha de hardware do sistema emissor”. Usado para informar que o pagamento por meio eletrônico não foi integrado por falha no hardware do sistema emissor de documento fiscal eletrônico, exclusivamente quando, por tal falha, não for possível a emissão offline. É uma informação útil para as empresas que utilizam sistemas integrados, sobretudo para aquelas que são obrigadas à integração do pagamento eletrônico com o documento fiscal pela sua UF;</li>
+<li>Foi adicionada observação para o item 99: “Outros”</li>
+</ul><p>Para ter acesso a Tabela de Meios de Pagamento, <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=hXzemuyNHW4=" target="_blank">Informe Técnico nº 2023.004 versão 1.02</a> <br/>Publicada em 11/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

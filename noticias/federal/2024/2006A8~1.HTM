@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Legislação Federal - Ato Declaratório MCN nº 36/2024 - Trech - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>14/06/2024 | Legislação Federal - Ato Declaratório MCN nº 36/2024 - Trechos da MP nº 1.227/2024, que restringiam o aproveitamento de créditos das contribuições, foram rejeitados pelo Congresso Nacional</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Ato Declaratório MCN nº 36/2024 rejeitou os trechos da MP nº 1.227/2024 que limitavam o aproveitamento de créditos da Cofins e do PIS-Pasep. Foram rejeitados os incisos III e IV do art. 1º e os arts. 5º e 6º.</p><p style="font-weight: bold;">Razões que levaram a rejeição parcial da MP nº 1.227/2024:</p><ul>
+<li>Surpreendeu diversos setores da economia, sem conceder prazo para as empresas adaptarem seu fluxo de caixa às novas regras;</li>
+<li>Violou o princípio da não-surpresa;</li>
+<li>Afrontou o princípio constitucional da noventena (art. 195, § 6º, CF); e</li>
+<li>Atentou contra o princípio da não-cumulatividade, garantido pelo § 12 do art. 195 da CF, e reforçado no moderno Sistema Tributário Nacional aprovado pela Emenda Constitucional (EC) nº 132, de 23 de dezembro de 2023.</li>
+</ul><p>Em face disso, perdem efeito as restrições à compensação de créditos da Cofins/PIS-Pasep com outros tributos e as revogações das possibilidades de créditos presumidos de diversos setores, que vigorariam a partir de 04/06/2024.</p><p>Portanto, voltam a ser aplicáveis as regras de antes das restrições e revogações, como se não tivessem existido no ordenamento jurídico. Os demais trechos da citada MP permanecem tramitando.</p><p>Saiba mais acessando a <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2024/2024-06-13-mp-restringe-compensacao-creditos-tributarios-pis-cofins-com-mudancas-sistematica-de-nao-cumulativo.htm" target="_blank">MP nº 1227/2024</a>.</p><p>Fonte: <a href="https://in.gov.br/web/dou/-/ato-declaratorio-do-presidente-da-mesa-do-congresso-nacional-n-36-de-2024-565147635" target="_blank">DOU</a> e IOB Online</p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://in.gov.br/web/dou/-/ato-declaratorio-do-presidente-da-mesa-do-congresso-nacional-n-36-de-2024-565147635' target='_blank'>Ato Declaratório do Presidente da Mesa do Congresso Nacional nº 36/2024</a> <br>Publicada em 12/06/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST MS - Decreto nº 16.447 - Prorroga o recolhimento da  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | ICMS ST MS - Decreto nº 16.447 - Prorroga o recolhimento da ST dos Contribuintes do RS considerando a situação de calamidade pública</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Decreto 16.447, de 28/5/2024, publicado no DOE MS de 29/05/2024, prorroga os prazos de recolhimento da substituição tributária para contribuintes estabelecidos no Rio Grande do Sul, relativos aos fatos geradores de maio e junho de 2024. Esta medida entra em vigor a partir de 29/05/2024.</p><p>O Governo do Mato Grosso do Sul levou em conta as fortes chuvas que ocorreram no mês de maio de 2024 no Estado do Rio Grande do Sul, ocasionando enchentes e inundações, situação que culminou na decretação do estado de calamidade pública naquele Estado conforme as disposições do Convênio ICMS 59/24 do Conselho Nacional de Política Fazendária (CONFAZ).</p><p>Com isso, ficam prorrogadas por <b>2 (dois) meses</b>, as datas limites para o recolhimento do ICMS Substituição Tributária, cujos prazos de pagamento recaiam nos meses de maio e junho de 2024, relativamente aos contribuintes estabelecidos no Estado do Rio Grande do Sul.</p><p>Fica também dispensada a exigência de valores correspondentes a juros e multas relativos ao atraso de recolhimento estabelecido nas datas-limites originais. O disposto neste Decreto não autoriza a restituição ou a compensação de valores eventualmente recolhidos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.spdo.ms.gov.br/diariodoe/Index/Download/DO11506_29_05_2024" target="_blank">Decreto n° 16.447/2024</a> <br/>Publicada em 29/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

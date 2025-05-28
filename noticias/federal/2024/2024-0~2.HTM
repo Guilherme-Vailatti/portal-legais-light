@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPED ECF  - Publicado Ato Declaratório Executivo Cofis nº 59 - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>04/01/2024 | SPED ECF  - Publicado Ato Declaratório Executivo Cofis nº 59/2023 que dispõe sobre o Manual de Orientação do Leiaute 10 da Escrituração Contábil Fiscal - ECF</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p><b>ADE Cofis nº 59/2023</b>
+</p><p>ATO DECLARATÓRIO EXECUTIVO COFIS Nº 59, DE 22 DE DEZEMBRO DE 2023</p><p>Dispõe sobre o Manual de Orientação do Leiaute 10 da Escrituração Contábil Fiscal (ECF).</p><p>O COORDENADOR-GERAL DE FISCALIZAÇÃO, no uso das atribuições que lhe confere os incisos I e II do art. 121 e inciso II do art. 358 do Regimento Interno da Secretaria Especial da Receita Federal do Brasil, aprovado pela Portaria ME nº 284, de 27 de julho de 2020, declara:</p><p><b>Art. 1º</b> Fica aprovado o Manual de Orientação do Leiaute 10 da Escrituração Contábil Fiscal (ECF), constante do arquivo disponível para download na página da Secretaria Especial da Receita Federal do Brasil (RFB) na Internet, no endereço http://sped.rfb.gov.br/pasta/show/1644.</p><p><b>Art. 2º</b> Este Ato Declaratório Executivo entra em vigor na data de sua publicação no Diário Oficial da União.</p><p>Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7304" target="_blank">Portal SPED</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://sped.rfb.gov.br/pagina/show/7304' target='_blank'>Portal SPED</a> <br>Publicada em 27/12/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

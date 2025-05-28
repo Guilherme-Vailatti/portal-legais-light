@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2023.001, v. 1.51 e Informe Téc - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | NF-e NFC-e - Nota Técnica nº 2023.001, v. 1.51 e Informe Técnico nº 2023.003, v. 1.03 - Tributação monofásica sobre combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicadas a versão 1.51 da Nota Técnica nº 2023.001, a versão 1.03 do Informe Técnico nº 2023.003 e a nova versão da Nova Tabela referentes à Tributação Monofásica de Combustíveis.</p><p>A <b>versão 1.51 da Nota Técnica nº 2023.001</b> traz alterações específicas sobre a mistura do Etanol Anidro na Gasolina C:</p><p>Aqui estão alguns pontos importantes:</p><ul>
+<li>Alterada a exceção 2 da regra LA17-20 que passa a usar como parâmetro para validação o campo (tag:indfinal) igual a 1 no lugar do campo (indIEdest) igual a 9;</li>
+<li>Atualizada todas as indicações desta documentação referente ao campo pBIO de forma a constar que este campo também tem a finalidade de auxiliar no cálculo do volume do Etanol Anidro a ser misturado com Gasolina A, ou do volume do Etanol Anidro misturado nas operações com Gasolina C.</li>
+</ul><p> </p><p><b>Informe Técnico nº 2023.003, versão 1.03</b>
+</p><p>A versão 1.03 do Informe Técnico 2023.003 divulga a atualização da Tabela de Combustíveis Sujeitos à Tributação Monofásica do ICMS, cujos códigos são utilizados na Nota Técnica 2023.001, visando atender à Lei Complementar nº 192/2022 e alterações legislativas decorrentes.</p><ul>
+<li>Ambiente de Homologação: até 01/07/2024;</li>
+<li>Ambiente de Produção: 02/09/2024.</li>
+</ul><p> </p><p>Acesse na íntegra a <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=nyszXJzXYlk=">Nota Técnica 2023.001</a> e o <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=8NGLm789Z%200=">Informe Técnico 2023.003</a>.</p><p>Clique <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=roKnnK%20H7D0=" target="_blank">aqui</a> se desejar fazer o download da tabela de códigos de combustíveis sujeitos à tributação monofásica de ICMS.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2023.001, versão 1.51</a> <br/>Publicada em 27/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

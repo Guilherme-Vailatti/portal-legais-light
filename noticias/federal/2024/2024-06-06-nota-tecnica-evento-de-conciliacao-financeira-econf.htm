@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2024.002, v. 1.00 - Evento de C - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | NF-e NFC-e - Nota Técnica nº 2024.002, v. 1.00 - Evento de Conciliação Financeira – ECONF</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado no Portal da NF-e em 27/05/2024, versão 1.00 da Nota Técnica 2024.002</p><p>Esta Nota Técnica tem o objetivo de prover aos atores envolvidos nos processos da NF-e/NFC-e a possibilidade de anotar no documento fiscal eletrônico as transações financeiras relacionadas a operação, facilitando a vinculação entre documentos fiscais e recursos financeiros recebidos.</p><p>Com o intuito de uma solução para pagamentos que ocorrem distantes da data do fato gerador e da emissão do documento fiscal está sendo criado o Evento de Conciliação Financeira – ECONF, para que seja possível às empresas informarem que o recebimento de recurso está relacionado a determinado documento fiscal. Os Ajustes SINIEF nº 3/2023 e 10/2023 prevêem este evento.</p><p>A utilização do Evento de Conciliação Financeira – ECONF será opcional e visa ajudar empresas a demonstrar conformidade fiscal entre as informações financeiras e os documentos fiscais emitidos.</p><p> </p><p><b>Detalhes do Evento de Conciliação Financeira - ECONF</b>
+</p><ul>
+<li>Os eventos especificados nesta NT estarão disponíveis para os modelos 55 e 65;</li>
+<li>Para o modelo 55 (NF-e) a Sefaz Virtual do Rio Grande do Sul disponibiliza o <a href="https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" target="_blank">WebService (SVRS)</a>;</li>
+<li>Para o modelo 65 (NFC-e), os Contribuintes deverão usar o Webservice de Eventos próprio da UF (mesma URL utilizada para o Evento de Cancelamento);</li>
+<li>Há um serviço web específico para enviar eventos de conciliação financeira, que podem ser registrados em lotes de até 20 eventos;</li>
+<li>Será verificado várias regras para garantir que os eventos sejam registrados corretamente, como a validade do certificado digital e a conformidade dos dados do evento com as normas estabelecidas.</li>
+</ul><p> </p><p><b>Visão Geral</b>
+</p><p>O evento de Conciliação Financeira – ECONF inclui as seguintes etapas conforme leiautes:</p><ul>
+<li>Leiaute Mensagem de Entrada;</li>
+<li>Leiaute Mensagem de Retorno;</li>
+<li>Processo de Recepção de Evento;</li>
+<li>Validação do Certificado de Transmissão;</li>
+<li>Validação Inicial da Mensagem no Web Service;</li>
+<li>Validação da área de Dados;</li>
+<li>Validação das Regras de Negócio;</li>
+<li>Final do Processamento do Lote;</li>
+</ul><p>Além disso, a nota técnica também detalha o Evento “Cancelamento Conciliação Financeira – ECONF”.</p><p> </p><p><b>Cronograma de Implantação:</b>
+</p><ul>
+<li>Ambiente de Homologação: até 01/07/2024;</li>
+<li>Ambiente de Produção: 02/09/2024.</li>
+</ul><p> </p><p>Para ter acesso na integra desta Nota Técnica, <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=sNOtscnJo6w=" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=GJHv4Tef4pI=" target="_blank">Nota Técnica nº 2024.002, versão 1.00</a> <br/>Publicada em 27/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

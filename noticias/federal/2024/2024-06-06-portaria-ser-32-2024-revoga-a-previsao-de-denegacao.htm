@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e SP - Portaria SER nº 32/2024 - Revoga a previsão de den - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | NF-e SP - Portaria SER nº 32/2024 - Revoga a previsão de denegação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no DOE/SP em 14/05/2024, Portaria SRE nº 32/2024, que altera a Portaria CAT nº 162/2008, que dispõe sobre a emissão da Nota Fiscal Eletrônica - NF-e e do Documento Auxiliar da Nota Fiscal Eletrônica - DANFE, o credenciamento de contribuintes e dá outras providências.</p><p>A Portaria SER nº 32/2024 tendo em vista o disposto no Ajuste SINIEF nº 43/2023, de 8 de dezembro de 2023 e o artigo 212-O, I do RICMS/2000, revoga a previsão de denegação da numeração da Nota Fiscal Eletrônica, modelo 55, a partir de 01/08/2024. Cabe ressaltar que a denegação ocorre quando o fisco identifica alguma irregularidade fiscal do emitente ou do destinatário da NF-e. Como por exemplo: Inscrição Estadual baixada, cancelada ou suspensa.</p><p>A partir de <b>01/08/2024</b> quando for identificado irregularidade fiscal do emitente ou destinatário, ao invés de ocorrer a denegação da NF-e a mesma será rejeitada. Portanto, a referida portaria acrescenta as seguintes rejeições:</p><ul>
+<li>Irregularidade fiscal do emitente;</li>
+<li>Irregularidade fiscal do destinatário.</li>
+</ul><p>A Portaria <b>entra em vigor em 1º de agosto de 2024</b>.</p><p>Leia também: <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2024/2024-04-24-nt-2024-001-v-1-00-substitui-denegacao-nf-e-por-rejeicao-altera-campos-regras-emissao-nf-e-nfc-e-com-crt-4-mei.htm" target="_blank">Nota Técnica nº 2024.001</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.doe.sp.gov.br/executivo/secretaria-de-fazenda-e-planejamento/portaria-sre-32-de-13-de-maio-de-2024-2024051311265214308440" target="_blank">Portaria SRE 32/2024</a> <br/>Publicada em 14/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

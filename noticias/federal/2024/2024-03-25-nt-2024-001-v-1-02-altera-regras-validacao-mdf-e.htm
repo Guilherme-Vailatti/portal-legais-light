@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>MDF-e - Nota Técnica nº 2024.001, v. 1.02 - Altera regras de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/03/2024 | MDF-e - Nota Técnica nº 2024.001, v. 1.02 - Altera regras de validação do MDF-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Encontra-se publicada a Nota Técnica 2024.001, versão 1.02 que altera regras de validação do MDF-e.</p><p>Esta Nota Técnica visa adequar regras de validação do MDF-e para melhorar a qualidade da informação remetida ao ambiente de autorização e adequar a legislação aprovada no CONFAZ.</p><p>As alterações trazidas pela versão 1.02 foram:</p><ul>
+<li>Ampliação para até 20.000 documentos originários por município de descarregamento.</li>
+<li>Exceção as regras de validação da ANTT para transportador regular de passageiros (emitente de BP-e).</li>
+</ul><p> </p><p><b>Cronograma:</b>
+</p><ul>
+<li>Homologação: 11/03/2024</li>
+<li>Produção: 08/04/2024</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/mdfe/Documentos#" target="_blank">Nota Técnica nº 2024.001 v.1.02</a> <br/>Publicada em 12/03/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

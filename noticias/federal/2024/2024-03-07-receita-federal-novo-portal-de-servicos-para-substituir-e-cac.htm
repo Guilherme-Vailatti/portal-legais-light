@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Receita Federal lança novo portal de serviços para - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/03/2024 | Federal - Receita Federal lança novo portal de serviços para substituir o e-CAC</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal lançou um novo portal, que reunirá todos os serviços oferecidos aos cidadãos e empresários, visando unificar e melhorar a experiência dos usuários em relação à interação digital com o órgão.</p><p>A plataforma será implementada em fases e, na sua última etapa, substituirá o atual Centro de Atendimento Virtual, o Portal e-CAC. </p><p>O e-CAC seguirá funcionando normalmente até que todos os serviços sejam adaptados à tecnologia do novo Portal de Serviços.</p><p>Nesta primeira etapa, o novo portal funcionará como um agregador de sistemas, exibindo o <b>mapa de todos os serviços digitais</b>, organizados por segmentos de interesse como "Cidadão", "Responsáveis por Negócios", "Empresas no Simples Nacional", "MEIs" e outros. Os usuários poderão navegar por meio de ícones, menu lateral ou ferramenta de busca. Também estarão disponíveis funcionalidades para avaliação do Portal e eventual relato de erro de sistema, com orientações sobre como proceder.</p><p>O Novo Portal de Serviços é resultado de um longo de trabalho de pesquisas e entrevistas com diferentes perfis de usuários, que forneceram diagnósticos precisos sobre a experiência atual frente aos serviços da Receita Federal, além de percepções e ideias valiosas para a construção da nova plataforma.</p><p><a href="https://www.gov.br/receitafederal/pt-br" target="_blank">Acesse aqui</a> o novo portal, que também poderá ser acessado pela página inicial do site institucional da Receita Federal.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/marco/receita-federal-lanca-novo-portal-de-servicos-destinados-aos-contribuintes" target="_blank">Receita Federal</a> <br/>Publicada em 04/03/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

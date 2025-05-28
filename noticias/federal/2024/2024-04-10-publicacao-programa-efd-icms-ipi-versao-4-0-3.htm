@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - Publicação do programa EFD ICMS IPI vers - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/04/2024 | SPED EFD ICMS IPI - Publicação do programa EFD ICMS IPI versão 4.0.3</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi disponibilizada a versão 4.0.3 do PVA EFD ICMS IPI, com as seguintes alterações corretivas:</p><ul>
+<li>Correção da validação do campo 18 (COD_ITEM) do registro 1391, onde o PVA estava permitindo a inclusão de códigos de itens não cadastrados no registro 0200;</li>
+<li>Correção da validação do campo 02 (COD_ITEM_IPM) do registro 1400, onde o PVA estava apontando como “código inválido” alguns códigos corretamente cadastrados na tabela 5.9.1 (Itens UF Índice de Participação dos Municípios);</li>
+<li>Correção da validação do campo 03 (MUN) do registro 1400, onde o PVA permitiu incluir um código de município inválido.</li>
+</ul><p>Download através desse <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-fiscal-digital-efd/escrituracao-fiscal-digital-efd" target="_blank">link</a>. </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7399" target="_blank">Portal SPED</a> <br/>Publicada em 27/03/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

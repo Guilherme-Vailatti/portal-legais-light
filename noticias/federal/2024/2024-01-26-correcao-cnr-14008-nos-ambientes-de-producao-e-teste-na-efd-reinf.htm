@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf  - Correção CNR 14008 nos ambientes de produç - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2024 | SPED EFD Reinf  - Correção CNR 14008 nos ambientes de produção e de teste na EFD-Reinf</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado em produção e produção restrita, o ajuste do código de receita 938501 para o código de receita 938502, para a natureza de rendimento 14008 (Importâncias correspondentes a multas e qualquer outra vantagem, ainda que a título de indenização, em virtude de rescisão de contrato).</p><p>As empresas que fizeram o envio de eventos R-4010 com código de natureza 14008, e fatos geradores a partir de 01/01/2024, deverão enviar <b>evento de retificação</b> a fim de que o evento seja reprocessado gerando novo recibo com o código de receita correta, que permitirá o fechamento posteriormente.</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7320" target="_blank">Portal SPED</a> <br/>Publicada em 19/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

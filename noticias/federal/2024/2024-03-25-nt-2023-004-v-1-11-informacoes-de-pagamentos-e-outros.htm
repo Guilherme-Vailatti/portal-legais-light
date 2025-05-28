@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2023.004, v. 1.11 - Informações - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/03/2024 | NF-e NFC-e - Nota Técnica nº 2023.004, v. 1.11 - Informações de Pagamentos e Outros</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e em 19/03/2024, versão 1.11 da NT 2023.004, que prorroga a data de implantação de produção e aplica correções em regras de validação</p><p>:</p><ul>
+<li>Prorrogação da data de ativação em produção para 01/07/2024.</li>
+<li>O schema entra em produção em 06/05/2024</li>
+<li>A regra de validação YA09-20 será ativada em 01/10/2024.</li>
+<li>Correção das exceções 1 e 4 da regra de validação W16-10.</li>
+</ul><p>Para ter acesso na integra da versão 1.11 da NT 2023.004, clique no link a seguir: <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=gHveCSDQhSM=" target="_blank">NT nº 2023.004, versão 1.11</a>.</p><p>Acesse também as alterações promovidas pela versão 1.00 e 1.10 da NT 2023.004:</p><ul>
+<li>Publicação da <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2024/2024-02-09-nt-2023-004-v-1-10-inclusoes-alteracoes-de-campos-e-regras-de-validacao.htm" target="_blank">versão 1.10</a>.</li>
+<li>Publicação da <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2023/2023-12-14-nt-2023-004-v-1-00-criacao-de-evento-de-conciliacao-financeira-econf.htm" target="_blank">versão 1.00</a>.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica 2023.004 versão 1.11</a> <br/>Publicada em 19/03/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

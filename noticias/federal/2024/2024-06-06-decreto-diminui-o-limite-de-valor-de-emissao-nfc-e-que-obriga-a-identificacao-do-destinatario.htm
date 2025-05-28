@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFC-e RJ - Decreto nº 49.086/2024 - Diminui o limite de valo - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/06/2024 | NFC-e RJ - Decreto nº 49.086/2024 - Diminui o limite de valor de emissão NFC-e que obriga a identificação do destinatário</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no DOE RJ em 10/05/2024, Decreto nº 49.086/2024, que altera o Anexo I do Livro VI - Das obrigações acessórias em geral - Do Regulamento do ICMS, aprovado pelo Decreto nº 27.427/2000 - RICMS/00 para diminuir o limite de valor de emissão NFC-e que obriga a identificação do destinatário.</p><p>O decreto 49.086/2024, altera o valor que obriga o emitente da NFC-e ao preenchimento da identificação do destinatário, conforme abaixo:</p><p>A obrigatoriedade da identificação das informações do destinatário na NFC-e passa a ser com valor <b>igual ou superior</b> de R$ 2.000,00. Cabe ressaltar que a obrigatoriedade anterior era de R$ 10.000,00.</p><p>Para valores inferiores a R$ 2.000,00 fica <b>obrigatório</b> o preenchimento das informações do destinatário, quando solicitado pelo adquirente.</p><p>Este Decreto entra em vigor na data de sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.rj.gov.br/decreto-no-49-086-de-09-de-maio-de-2024/" target="_blank">Decreto 49.086/2024</a> <br/>Publicada em 10/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

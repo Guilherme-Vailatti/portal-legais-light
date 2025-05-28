@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI  - Contribuintes obrigados a EFD (ICMS/IPI - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/02/2024 | SPED EFD ICMS IPI  - Contribuintes obrigados a EFD (ICMS/IPI) devem promover o envio do Bloco H na competência fevereiro/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>Os contribuintes do ICMS e do IPI obrigados ao envio mensal da Escrituração Fiscal Digital (EFD) devem ficar atentos, pois na competência fevereiro/2024, esta obrigação acessória deve incluir a apresentação do <b>Bloco H</b>.</p><p>Este bloco é composto pelas informações do inventário, portanto, destina-se ao arrolamento de mercadorias, matérias-primas, produtos intermediários, materiais de embalagem, produtos manufaturados e em acabamento, existentes no estabelecimento na época do balanço.</p><p>Conforme especificado no <a href="http://sped.rfb.gov.br/arquivo/show/7291" target="_blank">Guia Prático da EFD</a>, o Bloco H deverá ser informado até a movimentação do 2º mês de apuração subsequente ao levantamento do balanço. Em regra, as empresas encerram seu balanço no dia 31 de dezembro, devendo apresentar o inventário na escrituração de fevereiro, entregue em março.</p><p>Contribuinte que apresente inventário com periodicidade anual ou trimestral, caso apresente o inventário de 31/12 na EFD-ICMS/IPI de dezembro ou janeiro, deve repetir a informação na escrituração de fevereiro. Havendo legislação específica, o inventário poderá ter periodicidade diferente da anual e ser exigido em outro período.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/arquivo/show/7291" target="_blank">Guia Prático EFD-ICMS/IPI</a> <br/>Publicada em 14/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

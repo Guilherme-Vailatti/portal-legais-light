@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Legislação Federal  - Resolução GECEX 553/2024 publica nova  - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>26/02/2024 | Legislação Federal  - Resolução GECEX 553/2024 publica nova lista de bens sem similar nacional para fins de aplicação da alíquota de 4% do ICMS</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Governo federal publicou no DOU do dia 14/02/2024 através da Resolução GECEX 553/2024 nova lista de bens <b>sem similar nacional</b>, lembrando que quando se trata de operação interestadual com mercadoria importada, somente será aplicada a alíquota de ICMS de 4% se a mercadoria <b>possuir similar nacional</b> conforme § 4º Resolução nº 13/2012.</p><p>Sendo assim, para identificar mercadorias, com alíquota de ICMS interestadual de 4%, utilize a lista constante da referida Resolução GECEX nº 553/2024.</p><p>Importante salientar que além da verificação da similaridade nacional, <b>devem ser observadas outros requisitos para aplicação</b>, tal como a limitação da incidência da alíquota de até 2% do imposto de importação.</p><p>Com efeito, foram revogadas as seguintes resoluções:</p><ul>
+<li>Resolução nº 326/2022; e</li>
+<li>Resolução nº 550/2023.</li>
+</ul><p>A norma entra em vigor a partir de <b>14/02/2024</b>.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/resolucao-gecex-n-553-de-9-de-fevereiro-de-2024-542779206" target="_blank">DOU</a> e IOB Online</p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/resolucao-gecex-n-553-de-9-de-fevereiro-de-2024-542779206' target='_blank'>Resolução GECEX 553/2024</a> <br>Publicada em 14/02/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

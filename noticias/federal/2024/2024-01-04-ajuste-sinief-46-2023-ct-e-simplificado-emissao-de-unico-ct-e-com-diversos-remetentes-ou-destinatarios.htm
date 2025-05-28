@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e  - Ajuste SINIEF 46/2023 – CT-e Simplificado, emissão d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/01/2024 | CT-e  - Ajuste SINIEF 46/2023 – CT-e Simplificado, emissão de um único CT-e com diversos remetentes ou destinatários</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Diário Oficial da União, <b>Ajuste SINIEF 46/2023</b>, que altera o Ajuste SINIEF nº 9/07 que institui o Conhecimento de Transporte Eletrônico e o Documento Auxiliar do Conhecimento de Transporte Eletrônico.</p><p>O Ajuste SINIEF 46/2023, acrescenta, <b>a partir de 01/10/2024</b>, a possibilidade de nas prestações de serviços de transporte intermunicipal ou interestadual de mercadorias, que envolvam diversos remetentes ou destinatários, e sendo um único tomador de serviço, o transportador poderá emitir um único CT-e, denominado nesta situação de Conhecimento de Transporte Eletrônico Simplificado (CT-e Simplificado) referente a todas as prestações realizadas para este tomador, por veículo e por viagem. Nessa hipótese, a emissão do CT-e Simplificado é condicionada a que:</p><ul>
+<li>A carga contenha mercadorias de no mínimo dois rementes ou dos destinatários;</li>
+<li>As mercadorias transportadas estejam acobertadas por notas fiscais eletrônicas;</li>
+<li>As prestações de serviço de transporte iniciem na mesma unidade federada;</li>
+<li>As prestações de serviço de transporte terminem na mesma unidade federada.</li>
+</ul><p>Na emissão do CT-e Simplificado, fica dispensado o preenchimento dos campos destinados ao remetente e destinatário, podendo ser utilizado no redespacho e na subcontratação.</p><p>O Ajuste SINIEF 46/2023 ainda prevê que o parágrafo 7º da cláusula décima primeira do Ajuste SINEF 09/2007 não se aplica para o Estado de Minas Gerais. Abaixo o referido parágrafo:</p><ul>
+<li>§ 7º É vedada a impressão do DACTE através do uso de Formulário de Segurança para Impressão de Documento Auxiliar de Documento Fiscal Eletrônico (FS-DA) ou formulário contínuo ou pré-impresso.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/ajustes/2023/ajuste-sinief-46-23" target="_blank">Ajuste SINIEF 46/2023</a> <br/>Publicada em 13/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

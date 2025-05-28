@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e  - Nota Técnica 2016.003 v.3.70 divulga nova tabe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/01/2024 | NF-e NFC-e  - Nota Técnica 2016.003 v.3.70 divulga nova tabela de NCM para fins de emissão da NF-e a partir de 01/04/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>Face a publicação da Resolução Gecex nº 547/2023, a qual promove diversos desdobramentos de determinadas NCM, foi divulgada no portal da NF-e nova versão da Nota Técnica 2016.003.</p><p>A versão 3.70 da Nota Técnica, adequa, para fins de emissão da NF-e, as alterações promovidas pela referida resolução com efeitos a partir de 01/04/2024.</p><p>Conforme Nota Técnica, os 57 (cinquenta e sete) códigos incluídos na tabela de NCM publicada no Portal estão realçados em verde com a informação de início de vigência em 01/04/2024. Os 17 (dezessete) códigos excluídos da tabela de NCM estão realçados em vermelho com a informação de fim de vigência em 31/03/2024.</p><p><b>Cronograma de implantação</b>
+</p><ul>
+<li>Ambiente de Homologação: 15/03/2024</li>
+<li>Ambiente de Produção: 01/04/2024</li>
+</ul><p>Para acessar a Tabela NCM publicada no Portal, <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica 2016.003 v.3.70</a> <br/>Publicada em 09/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

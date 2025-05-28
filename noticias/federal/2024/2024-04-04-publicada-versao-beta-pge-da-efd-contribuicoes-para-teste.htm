@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Publicada Versão Beta do PGE da EFD - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/04/2024 | SPED EFD Contribuições - Publicada Versão Beta do PGE da EFD Contribuições para teste</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi disponibilizada a <a href="http://sped.rfb.gov.br/pasta/show/7382" target="_blank">versão BETA 5.2.0.010</a> do Programa Gerador de Escrituração - PGE da EFD Contribuições.</p><p>Nessa versão, foram efetuadas otimizações no banco de dados, com o objetivo de melhorar o desempenho da aplicação na importação e na validação do arquivo da EFD Contribuições.</p><p>Testes internos apontaram melhoria de desempenho de 50% em relação à versão atual, para arquivos de tamanho superior a 500Mb.</p><p>Por tratar-se de uma versão beta, <b>não será possível realizar nenhuma transmissão de arquivos com este PGE e também não é possível garantir que arquivos gerados e até mesmo validados por esta versão do programa sejam aceitos na versão final a ser disponibilizada em breve</b>.</p><p>Cumpre informar que as escriturações a serem utilizadas nos testes devem corresponder a períodos iguais ou posterior a janeiro de 2023 e, antes da importação, deve-se excluir a assinatura do arquivo.</p><p>Eventuais problemas identificados devem ser encaminhados exclusivamente para o email <b>faleconosco-sped-contribuicoes@rfb.gov.br</b> , com assunto: <b>PGE Versão Beta</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7394" target="_blank">Portal SPED</a> <br/>Publicada em 02/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

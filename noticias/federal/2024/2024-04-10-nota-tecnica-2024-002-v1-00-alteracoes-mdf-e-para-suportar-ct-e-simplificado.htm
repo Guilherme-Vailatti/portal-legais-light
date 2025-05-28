@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>MDF-e - Nota Técnica nº 2024.002, v 1.00 - Define alterações - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/04/2024 | MDF-e - Nota Técnica nº 2024.002, v 1.00 - Define alterações no MDF-e para suportar o CT-e simplificado</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Técnica tem como objetivo adequar o leiaute e as regras de validação do MDF-e para retratar as hipóteses previstas no CT-e Simplificado.</p><p>Alterações versão 1.00 desta Nota Técnica:</p><ul>
+<li>Inclusão da entrega parcial de CT-e Simplificado com os novos campos “indPrestacaoParcial”, “InfNFePresParcial” e “ChNFe”;</li>
+<li>Alteração nas regras de validação para veículos do modal rodoviário, associadas ao CT-e simplificado com entrega parcial;</li>
+<li>Alinhamento das Regras do PAA (Provedor de Assinatura e Autorização).</li>
+</ul><p>Ambiente de Homologação: <b>02/09/2024</b>;</p><p>Ambiente de Produção: <b>07/10/2024</b>.</p><p>Junto com esta Nota Técnica também foi publicado o pacote de Schemas</p><p>Para conhecer os detalhes desta versão, acesse o <a href="https://dfe-portal.svrs.rs.gov.br/mdfe/Documentos#" target="_blank">Portal a NT 2024.002</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/mdfe/Documentos#" target="_blank">Nota Técnica nº 2024.002, versão 1.00</a> <br/>Publicada em 05/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

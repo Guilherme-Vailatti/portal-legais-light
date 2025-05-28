@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e  - Informe Técnico 2023.003, versão 1.02 - Altera Tabel - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/02/2024 | NF-e  - Informe Técnico 2023.003, versão 1.02 - Altera Tabela de Combustíveis Sujeitos à Tributação Monofásica do ICMS</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e, versão 1.02 do Informe Técnico 2023.003, que tem o objetivo de divulgar a atualização da Tabela de Combustíveis Sujeitos à Tributação Monofásica do ICMS e novos valores adRem a serem aplicados a partir de 01/03/2024.</p><p><b>Cronograma:</b>
+</p><ul>
+<li>Implantação Homologação: 26/02/2024</li>
+<li>Implantação Produção: 01/03/2024</li>
+</ul><p>Para ter acesso da tabela atualizada com vigência a partir de 01/03/2024, <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nfe.fazenda.gov.br%2Fportal%2FlistaConteudo.aspx%3FtipoConteudo%3D%2FNJarYc9nus%3D&amp;data=05%7C02%7CGuilherme.Vailatti%40senior.com.br%7Ce6078c256d244f48d51c08dc36d3d1d5%7C62c7b02da95c498b9a7f6e00acab728d%7C0%7C0%7C638445530600412399%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=CYsavq6iZw%2BirOH1lK6a8TCI%2FXcx3HW6E8WR8rOJK6w%3D&amp;reserved=0" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.nfe.fazenda.gov.br%2Fportal%2FexibirArquivo.aspx%3Fconteudo%3DGA462X%25203atA%3D&amp;data=05%7C02%7CGuilherme.Vailatti%40senior.com.br%7Ce6078c256d244f48d51c08dc36d3d1d5%7C62c7b02da95c498b9a7f6e00acab728d%7C0%7C0%7C638445530600407795%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=jCGxyzIfQHp%2B13f5fLZdOOeAA025txl1reCA%2BQmF1YQ%3D&amp;reserved=0" target="_blank">Informe Técnico 2023.003 v1.02</a> <br/>Publicada em 23/02/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

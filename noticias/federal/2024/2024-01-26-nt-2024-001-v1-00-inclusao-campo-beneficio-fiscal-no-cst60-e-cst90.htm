@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF3-e  - Nota Técnica nº 2024.001, v.1.00 - Inclusão do camp - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2024 | NF3-e  - Nota Técnica nº 2024.001, v.1.00 - Inclusão do campo de benefício fiscal no CST60 e CST90</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota Técnica modifica o leiaute da NF3-e inserindo campos opcionais nos grupos CST 60 e CST 90.</p><p>Os grupos CST60 e CST90 passam a contar com os campos adicionais e facultativos do benefício fiscal (cBenef), além disso, no CST90 foram incluídos os campos do Fundo de Combate à Pobreza.</p><p><b>Cronograma:</b>
+</p><ul>
+<li>Implantação Homologação: <b>26/02/2024</b></li>
+<li>Implantação Produção: <b>11/03/2024</b></li>
+</ul><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nf3e" target="_blank">Nota Técnica nº 2024.001 v.1.00</a> <br/>Publicada em 16/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

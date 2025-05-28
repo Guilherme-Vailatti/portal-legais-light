@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Ajuste SINIEF nº 1/2024 - Obrigatoriedade de NF - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/04/2024 | NF-e NFC-e - Ajuste SINIEF nº 1/2024 - Obrigatoriedade de NF-e e da NFC-e para produtores rurais tem novas regras</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ajuste SINIEF nº 1/2024, publicado no DOU de 26/04/24 altera o Ajuste SINIEF nº 10/2022 que estabelece a obrigatoriedade da utilização da Nota Fiscal Eletrônica - NF-e - em substituição à Nota Fiscal, modelo 4.</p><p>Os Estados e o Distrito Federal acordaram em estabelecer a obrigatoriedade para produtor rural de utilização da Nota Fiscal Eletrônica - NF-e - prevista no Ajuste SINIEF nº 7/2005, ou a Nota Fiscal de Consumidor Eletrônica - NFC-e - prevista no Ajuste SINIEF nº 19/2016, em substituição à Nota Fiscal, modelo 4 partir de:</p><ul>
+<li><b>1º de maio de 202</b>4, nas operações internas praticadas por produtores rurais que tenham faturamento, no ano de 2022, superior a R$ 1.000.000,00 (um milhão de reais), e nas operações interestaduais;</li>
+<li><b>1º de dezembro de 202</b>4, nas operações internas praticadas pelos demais produtores rurais.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despacho-n-18-de-25-de-abril-de-2024-556260819" target="_blank">Ajuste SINIEF nº 1/2024</a> <br/>Publicada em 26/04/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

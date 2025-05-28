@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Informe Técnico 2024.001, versão 1.00 - Alteraç - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>12/03/2024 | NF-e NFC-e - Informe Técnico 2024.001, versão 1.00 - Alterações na tabela de NCM</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e em 07/03/2024, versão 1.00 do Informe Técnico 2024.001, que divulga alterações na Tabela de NCM, disponível no Portal Nacional da NF-e.</p><p>A Resolução Gecex nº 563, de 19 de fevereiro de 2024, alterou a vigência da Resolução Gecex nº 547/2023, modificando, consequentemente, a tabela de NCM divulgada na <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2024/2024-01-11-nt-2016-003-v-3-70-divulga-nova-tabela-de-ncm-para-fins-de-emissao-da-nf-e-a-partir-de-01-04-2024.htm" target="_blank">NT 2016.003 v. 3.70</a>, conforme a seguir:</p><ul>
+<li>Alterou o término da vigência do código NCM 02071400 para 31/07/2024;</li>
+<li>Alterou o início da vigência dos códigos de NCM (02071411, 02071412, 02071413, 02071419, 02071421, 02071422, 02071423, 02071424, 02071429, 02071431, 02071432, 02071433, 02071434, 02071439) para 01/08/2024.</li>
+</ul><p>A Resolução Gecex nº 561, de 19 de fevereiro de 2024, determinou novas alterações de NCM, além daquelas já previstas na Nota Técnica 2016.003 v.3.70:</p><ul>
+<li>NCM extinto a partir de 30/06/2024: 85045000;</li>
+<li>NCM incluídos a partir de 01/07/2024: 48119020, 85045010, 85045090.</li>
+</ul><p style="font-weight: bold;">Ficam mantidas as demais alterações previstas na versão 3.70 da Nota Técnica 2016.003, que são:</p><ul>
+<li>NCM extintos em 31/03/2024: 27109100, 28201000, 28273998, 29299021, 29299022, 29299029, 29314930, 29398000, 30024993, 39072990, 39172200, 48119010, 74094010, 85059010, 85441910, 90029000;</li>
+<li>NCM incluídos a partir de 01/04/2024: 27109110, 27109120, 27919190, 28201010, 28201090, 28273931, 28273939, 28439040, 29299031, 29299039, 29299040, 29299050, 29299060, 29314931, 29314932, 29314939, 29315995, 29315996, 29315998, 29333936, 29333941, 29333942, 29398010, 29398090, 38249961, 38249962, 38249969, 39072991, 39072999, 39172210, 39172290, 48119011, 48119019,74094011, 74094019,84502020, 85043193, 85059011, 85059019, 85441911, 85441919, 90029010, 90029090.</li>
+</ul><p><b>Cronograma</b>
+</p><p>Altera tabela de NCM a partir de 01/04/2024, 01/07/2024 e 01/08/2024.</p><p>Para acessar a Tabela NCM publicada no Portal NF-e, <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=/NJarYc9nus=" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=hXzemuyNHW4=" target="_blank">Informe Técnico 2024.001 v1.00</a> <br/>Publicada em 07/03/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

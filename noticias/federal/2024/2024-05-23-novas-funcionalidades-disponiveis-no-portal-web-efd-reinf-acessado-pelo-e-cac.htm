@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Novas funcionalidades disponíveis no portal - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/05/2024 | SPED EFD Reinf - Novas funcionalidades disponíveis no portal web da EFD-Reinf acessado pelo e-CAC</h1>
+</div>
+<div class="noticia-corpo">
+<p>Para auxiliar os usuários do e-CAC que utilizam o portal web da EFD-Reinf e que estejam com dificuldades em encontrar eventos que originaram determinado código de receita no totalizador enviado à DCTFWeb, principalmente os órgãos públicos que não necessariamente precisam ter a raiz do estabelecimento igual à do declarante, foi retirada a obrigatoriedade do campo “Estabelecimento” na funcionalidade “Listar eventos enviados ou em rascunho” em “Visualizar pagamentos/crédito” da opção de menu “Rendimento pagos/Creditados (Série R-4000)”. Assim, deixando o campo em branco é possível identificar eventos que tenham sido enviados de forma equivocada para determinados estabelecimentos, e que o usuário eventualmente desconheça.</p><p>Foi disponibilizado também um relatório demonstrativo de fechamento que visa auxiliar na conferência dos eventos periódicos enviados ao sistema em determinado período de apuração. O relatório pode ser gerado após o fechamento do mês realizado exclusivamente pela aplicação WEB no eCAC, tanto da série R-2000 quanto da R-4000, e baixado acessando a tela do “Totalizador” e clicando em “Relatório do fechamento (PDF)”.</p><p>Por fim, assim como já havia para os eventos R-4010 e R-4020 na listagem do “Visualizar pagamentos/créditos”, os eventos R-4040 e R-4080 passam a contar também com a funcionalidade de copiar eventos, que pode ser utilizada para facilitar a inserção de eventos com informações repetidas ou que se assemelham alterando, por exemplo, o período de apuração ou a fonte pagadora.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7427" target="_blank">Portal SPED</a> <br/>Publicada em 09/05/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

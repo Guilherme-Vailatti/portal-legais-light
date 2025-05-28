@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e  - NT 2023.005 v.1.00 - Implantação do evento de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/01/2024 | NF-e NFC-e  - NT 2023.005 v.1.00 - Implantação do evento de Insucesso na Entrega da NF-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal NF-e em 20/12/2023, versão 1.00 da NT 2023.005, que cria o evento de insucesso na entrega da NF-e e seu cancelamento.</p><p>Essa Nota Técnica disponibiliza os <b>novos eventos de Insucesso na Entrega da NF-e</b> e <b>Cancelamento do evento de Insucesso na Entrega da NF-e</b>, conforme disposto no Ajuste SINIEF 58/2022, quando a entrega da mercadoria não envolver um Conhecimento de Transporte Eletrônico (CT-e), mas estiver diretamente relacionada com a NF-e.</p><p>O novo evento fiscal da NF-e visa registrar as operações de transporte que ocorreram, mas que por algum motivo não foi possível a conclusão do serviço com a efetivação da entrega da mercadoria ao recebedor — como, por exemplo, recusa do destinatário ou a sua não localização.</p><p>O evento permite ao remetente, quando a entrega for realizada acobertada pela NF-e, registrar, por meio de um evento fiscal, na respectiva nota fiscal eletrônica que acoberta a entrega da mercadoria os motivos que impediram a entrega. Evento similar foi criado na NT 2023.002 para as entregas realizadas por meio do Conhecimento de Transporte Eletrônico – CT-e.</p><p>Tais eventos visam substituir a ressalva que atualmente é aposta no verso do DANFE conforme previsto no § 3° da cláusula décima do Ajuste SINIEF 07/05, ao informar que o motivo do fato que ensejou o retorno da mercadoria não entregue ao destinatário deverá estar indicado no verso do DANFE.</p><p><b>Webservice de Evento</b>
+</p><p>O Ambiente Nacional disponibiliza um Webservice geral de Eventos, que é utilizado para Manifestação do Destinatário e outros tipos de Eventos.</p><p>Este evento de Insucesso na Entrega da NF-e será implementado unicamente no Webservice de Eventos do Ambiente Nacional, na URL: https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx </p><p>Evento <b>Insucesso na Entrega da NF-e</b></p><ul>
+<li>Função: Evento para indicar o insucesso na entrega da carga pelo emitente da NF-e;</li>
+<li>Autor do Evento: O autor do evento é o emissor da NF-e. A mensagem XML do evento será assinada com o certificado digital que tenha o CNPJ base do Emissor da NF-e;</li>
+<li>Modelo: Nota Fiscal eletrônica – NF-e (modelo 55);</li>
+<li>Código do Tipo de Evento 110192 (Este evento exige NF-e autorizada).</li>
+</ul><p>Evento <b>Cancelamento Insucesso na Entrega da NF-e</b></p><ul>
+<li>Função: Evento para indicar o cancelamento do evento de insucesso na entrega da carga pelo emitente da NF-e.</li>
+<li>Autor do Evento: O autor do evento é o emissor da NF-e. A mensagem XML do evento será assinada com o certificado digital que tenha o CNPJ base do Emissor da NF-e.</li>
+<li>Modelo: Nota Fiscal eletrônica – NF-e (modelo 55)</li>
+<li>Código do Tipo de Evento: 110193 (Este evento exige NF-e autorizada)</li>
+</ul><p><b>Cronograma de Implementação</b>:</p><ul>
+<li>Ambiente de homologação: 13/05/2024</li>
+<li>Ambiente de produção: 24/06/2024</li>
+</ul><p>Para acessar a integra da versão 1.00 da NT 2023.005, visite <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">o portal com as notas técnicas</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/despacho/2023/despacho-78-23" target="_blank">Nota Técnica 2023.005, versão 1.00</a> <br/>Publicada em 20/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

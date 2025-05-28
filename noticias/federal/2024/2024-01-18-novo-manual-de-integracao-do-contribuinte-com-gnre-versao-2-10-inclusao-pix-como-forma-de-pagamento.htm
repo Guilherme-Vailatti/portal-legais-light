@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>GNRE  - Novo Manual de Integração do Contribuinte com o GNRE - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/01/2024 | GNRE  - Novo Manual de Integração do Contribuinte com o GNRE, versão 2.10 - Inclusão de PIX como forma de pagamento</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Portal da Guia Nacional de Recolhimento de Tributos Estaduais, responsável pela emissão de guias de recolhimento, publicou a versão 2.10 do Manual de Integração do Contribuinte com o GNRE.</p><p>A nova versão do Manual contempla as seguintes atualizações:</p><ul>
+<li>Inclusão de PIX como forma de pagamento de GNRE.</li>
+<li>Retorno da geração de GNRE, com o “copia e cola”, item 4.2.2.</li>
+<li>Retorno da consulta de GNRE, com os dados do pagamento via PIX, item 4.5.2.</li>
+</ul><p>Com isso, a partir de janeiro/2024 é possível realizar pagamentos de GNRE via <b>PIX</b>.</p><p>A versão 2.10 do Manual está disponível para acesso na seção de <a href="https://www.gnre.pe.gov.br:444/gnre/portal/downloads.jsp#void" target="_blank">Downloads</a> do Portal da GNRE.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gnre.pe.gov.br:444/gnre/portal/downloads.jsp#void" target="_blank">Manual Integração Contribuinte, V.2.10</a> <br/>Publicada em 16/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

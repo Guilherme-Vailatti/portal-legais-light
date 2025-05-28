@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e CT-e OS  - Nota Técnica nº 2024.001 v1.01 - Suspensa al - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/01/2024 | CT-e CT-e OS  - Nota Técnica nº 2024.001 v1.01 - Suspensa alteração na regra de validação para informação da nota em papel</h1>
+</div>
+<div class="noticia-corpo">
+<p>Encontra-se publicada a Nota Técnica 2024.001 v.1.01 que altera leiaute e regras de validação do CT-e, CT-e OS e GTV-e.</p><p>Esta Nota Técnica tem como objetivo promover ajustes nas regras de validação do CT-e, CT-e OS e GTV-e visando evoluir a qualidade e adequar o sistema à legislação aprovada.</p><p>As alterações trazidas pela versão 1.01:</p><ul>
+<li>A versão 1.01 suspende a regra de validação prevista na versão 1.00 desta mesma Nota Técnica que vedava a utilização de Nota em Papel independente do remetente ser habilitado para emissão de NF-e, portanto fica mantida a regra vigente no Manual de Orientação do Contribuinte - MOC.</li>
+</ul><p> </p><p><b>Cronograma:</b>
+</p><ul>
+<li>Implantação Homologação: <b>11/03/2024</b></li>
+<li>Implantação Produção: <b>08/04/2024</b></li>
+</ul><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.cte.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=Y0nErnoZpsg=" target="_blank">Nota Técnica nº 2024.001, versão 1.01</a> <br/>Publicada em 19/01/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
