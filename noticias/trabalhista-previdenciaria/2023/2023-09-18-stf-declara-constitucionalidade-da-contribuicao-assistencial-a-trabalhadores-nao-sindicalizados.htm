@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdenciárias e Trabalhistas - STF declara constitucionali - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/09/2023 | Previdenciárias e Trabalhistas - STF declara constitucionalidade da contribuição assistencial a trabalhadores não sindicalizados</h1>
+</div>
+<div class="noticia-corpo">
+<p>De acordo com a decisão, a contribuição pode ser instituída por acordo ou convenção coletiva, desde que seja assegurado o direito de oposição pelo trabalhador.</p><p>O Supremo Tribunal Federal (STF) julgou constitucional a instituição, por acordo ou convenção coletivos, de contribuições assistenciais para todos os empregados de uma categoria, ainda que não sejam sindicalizados, desde que assegurado o direito de oposição. A decisão foi tomada na sessão virtual encerrada em 11/9.</p><p>O novo entendimento, firmado no julgamento de embargos de declaração, altera a decisão de 2017 no Agravo no Recurso Extraordinário (ARE) 1018459, com repercussão geral reconhecida (Tema 935). Na ocasião, o Plenário havia julgado inconstitucional a cobrança da contribuição a trabalhadores não filiados a sindicatos.</p><p>A contribuição assistencial não se confunde com a contribuição sindical, mais conhecida como imposto sindical, que foi extinto com a reforma trabalhista de 2017 e não foi analisado pelos ministros neste julgamento.</p><p>Em abril de 2023, ao analisar o pedido feito nos embargos, o relator, ministro Gilmar Mendes, aderiu aos fundamentos do voto do ministro Luís Roberto Barroso, especialmente em razão das alterações promovidas pela Reforma Trabalhista (Lei 13.467/2017) sobre a forma de custeio das atividades sindicais.</p><p>A mudança legislativa alterou, entre outros, o artigo 578 da Consolidação das Leis do Trabalho (CLT) para extinguir a contribuição sindical obrigatória (ou “imposto sindical”). Nesse novo cenário, os ministros passaram a entender que é constitucional a instituição, por acordo ou convenção coletiva, da chamada contribuição assistencial, imposta a todos os empregados da categoria, mesmo que não sindicalizados, desde que estes possam se opor a ela.</p><p>Segundo o relator, o fim do imposto sindical afetou a principal fonte de custeio das instituições sindicais. Como resultado, os sindicatos se viram esvaziados, e os trabalhadores, por consequência, perderam acesso a essa instância de deliberação e negociação coletiva.</p><p>Por isso, a possibilidade de criação da contribuição assistencial, destinada prioritariamente ao custeio de negociações coletivas, juntamente com a garantia do direito de oposição, assegura a existência do sistema sindicalista e a liberdade de associação.</p><p>A tese de repercussão geral fixada no Tema 935 foi a seguinte: “É constitucional a instituição, por acordo ou convenção coletivos, de contribuições assistenciais a serem impostas a todos os empregados da categoria, ainda que não sindicalizados, desde que assegurado o direito de oposição”.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=513910&amp;ori=1" target="_blank">Portal STF</a> <br/>Publicada em 12/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

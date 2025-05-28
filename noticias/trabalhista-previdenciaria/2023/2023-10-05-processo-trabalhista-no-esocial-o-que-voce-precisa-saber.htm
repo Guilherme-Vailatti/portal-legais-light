@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Processo Trabalhista no eSocial: o que você precis - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/10/2023 | eSocial - Processo Trabalhista no eSocial: o que você precisa saber</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir do dia 1º de outubro de 2023, tem início o novo evento do eSocial: Processo Trabalhista. Por meio dele, o empregador lançará as informações relativas aos acordos e decisões proferidas nos processos que tramitam na Justiça do Trabalho. Devem ser informados os processos que tenham decisões condenatórias ou homologatórias de acordo, que se tornem definitivas (decisões contra as quais não cabe mais recurso) a partir de 1º de outubro de 2023, ainda que o processo tenha se iniciado antes.</p><p>Devem informar os dados dessas decisões todos os empregadores, pessoas físicas ou jurídicas, inclusive os empregadores domésticos, MEIs e segurados especiais.</p><p>Até então, os débitos das contribuições previdenciárias e as contribuições sociais devidas a terceiros decorrentes das reclamatórias trabalhistas eram declarados na GFIP e recolhidos por meio de GPS. Contudo, a partir do dia 1º de outubro, esses débitos serão declarados na DCTFWeb, com recolhimento por meio de DARF numerado.</p><p>Importante observar que ainda deverão ser utilizadas GFIP e GPS para as decisões terminativas condenatórias ou homologatórias proferidas pela Justiça do Trabalho até a data de 30 de setembro de 2023, ainda que o recolhimento seja efetuado após 1º de outubro de 2023.</p><p>O FGTS incidente sobre os valores de remuneração reconhecidos no processo judicial seguirá sendo recolhido normalmente, por meio da GFIP, até que ela seja substituída pelo FGTS Digital, em janeiro de 2024.</p><p>Para informar o resultado do processo no eSocial, os empregadores ou um terceiro autorizado (contador ou advogado, por exemplo) poderão utilizar, além dos seus sistemas próprios de gestão de folha, o portal web do eSocial.</p><p>Foi criado um módulo web exclusivo de processos trabalhistas e pode ser utilizado por todos os empregadores pessoas físicas ou jurídicas. MEI e Doméstico também poderão utilizar esse módulo para transmissão de processos.</p><p>Para informações detalhadas sobre os dados a serem informados, prazos e tipos de ações a serem lançadas, consulte o Manual de Orientação do eSocial (MOS), disponível <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-2-consolidada-ate-a-no-s-1-2-02-2023.pdf">aqui</a>.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/processo-trabalhista-no-esocial-o-que-voce-precisa-saber" target="_blank">Portal eSocial</a> <br/>Publicada em 29/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

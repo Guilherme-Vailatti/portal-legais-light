@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Atualizadas das informações da RAIS 2022/2023 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/04/2023 | Trabalhista - Atualizadas das informações da RAIS 2022/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram atualizadas em 11/04/2023, no Portal da RAIS, as informações relativas à Relação Anual de Informações Sociais (RAIS) 2022, conforme segue:</p><ul>
+<li>o prazo para entrega da RAIS ano-base 2022 (GDRAIS 2022), e de anos-anteriores (pelo GDRAIS Genérico), se encerrou em 06/04/2023;</li>
+<li>as declarações da RAIS ano-base 2022 e anos-anteriores (extemporâneas) serão recepcionadas até 10/05/2023;</li>
+<li>alguns serviços disponíveis no site da RAIS (exclusão de vínculos e exclusão de estabelecimentos) ficarão disponíveis até 10/05/2023;</li>
+<li>após 10/05/2023, o retorno dessas atividades (recepção da RAIS e exclusão de vínculo e de estabelecimento) será a partir de março/2024.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.rais.gov.br/sitio/index.jsf#:~:text=PRAZO DE ENTREGA DA RAIS 2022&amp;text=Informamos que as declarações da,dia 10/05/2023." target="_blank">RAIS</a> <br/>Publicada em 11/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

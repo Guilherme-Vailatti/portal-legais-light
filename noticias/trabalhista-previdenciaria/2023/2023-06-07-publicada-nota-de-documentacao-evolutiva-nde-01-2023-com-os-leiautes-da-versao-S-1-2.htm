@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Publicada Nota de Documentação Evolutiva NDE 01/20 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/06/2023 | eSocial - Publicada Nota de Documentação Evolutiva NDE 01/2023 com os leiautes da versão S-1.2</h1>
+</div>
+<div class="noticia-corpo">
+<p> Foi publicada a <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nde-01-2023.pdf/">Nota de Documentação Evolutiva (NDE) 01/2023</a>, que traz os leiautes e os arquivos XSD da v. S-1.2, nos termos do art. 1º, III e art. 2º, II, da Resolução do Comitê Gestor do eSocial nº 15, de 12 de junho de 2018. A NDE dá publicidade aos leiautes da versão S-1.2 oficial de trabalho, que não sofrerão alterações até a data da sua implantação.</p><p>A versão S-1.2 contempla os ajustes dos eventos remuneratórios para a substituição da DIRF pelo eSocial em relação aos rendimentos do trabalho.</p><p>A versão S-1.2 será implantada em produção em 20/11/2023, com a produção restrita prevista para 18/09/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/publicada-nota-de-documentacao-evolutiva-nde-01-2023-com-os-leiautes-da-versao-s-1.2" target="_blank">Portal eSocial
+</a> <br/>Publicada em 30/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

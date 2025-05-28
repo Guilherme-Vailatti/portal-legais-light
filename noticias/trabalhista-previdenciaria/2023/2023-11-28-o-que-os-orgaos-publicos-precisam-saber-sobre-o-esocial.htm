@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - O que os órgãos públicos precisam saber sobre o eS - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/11/2023 | eSocial - O que os órgãos públicos precisam saber sobre o eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ministério do Trabalho e Emprego, com apoio do Ministério da Previdência Social e da Receita Federal do Brasil, realiza a 1ª edição da Semana eSocial, com objetivo de disseminar informações, novidades e boas práticas, tendo como público-alvo os entes públicos. As palestras online serão transmitidas ao vivo pelos canais <a href="https://www.youtube.com/@enit-escola" target="_blank">@enit-escola</a> e <a href="https://www.youtube.com/@canaltrabalho" target="_blank">@canaltrabalho</a> do YouTube.</p><p>O evento ocorrerá <b>nos dias 21, 22 e 23 de novembro, no horário das 14h às 16h</b>.</p><p>Para acesso à transmissão, clique nos links:</p><ul>
+<li>Dia 21 de novembro - <a href="https://www.youtube.com/watch?v=MHDmZzOxzaA" target="_blank">https://www.youtube.com/watch?v=MHDmZzOxzaA</a></li>
+<li>Dia 22 de novembro - <a href="https://www.youtube.com/watch?v=OJBBwqcnRPo" target="_blank">https://www.youtube.com/watch?v=OJBBwqcnRPo</a></li>
+<li>Dia 23 de novembro - <a href="https://www.youtube.com/watch?v=atHa5N36eUE" target="_blank">https://www.youtube.com/watch?v=atHa5N36eUE</a></li>
+</ul><p>Confira a seguir a programação do evento:</p><p>
+<img src="../../../Resources/Images/Notícias/2023-11-28.png" style="max-width: 100%"/>
+</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/semana-esocial-1a-edicao-o-que-os-orgaos-publicos-precisam-saber-sobre-o-esocial" target="_blank">Portal eSocial</a> <br/>Publicada em 20/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

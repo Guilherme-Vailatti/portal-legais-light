@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Previdenciária - Alterado o início de vigência do código DAR - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>13/07/2023 | Previdenciária - Alterado o início de vigência do código DARF para o recolhimento de contribuições previdenciárias pela Justiça do Trabalho</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi alterado para outubro/2023 (antes previsto para julho/2023) o início da utilização do código de <b>receita 6092 - Contribuições Previdenciárias - Recolhimento Exclusivo pela Justiça do Trabalho</b>, para ser informado em Documento de Arrecadação de Receitas Federais (DARF) no recolhimento da contribuição previdenciária de que trata o art. 43 da Lei nº 8.212/1991 (ações trabalhistas das quais resultem o pagamento de direitos sujeitos à incidência da citada contribuição).</p><p>Lembra-se que tal alteração está em consonância com a prorrogação, de julho para outubro/2023, do início de utilização da DCTFWeb relativa a contribuições previdenciárias e para terceiros em decorrência de decisões condenatórias ou homologatórias proferidas pela Justiça do Trabalho (Instrução Normativa RFB nº 2.147/2023).</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-codar-n-14-de-12-de-julho-de-2023-496080431">DOU</a> </p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-codar-n-14-de-12-de-julho-de-2023-496080431' target='_blank'>Ato Declaratório Executivo CODAR nº 14/2023</a> <br>Publicada em 13/07/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

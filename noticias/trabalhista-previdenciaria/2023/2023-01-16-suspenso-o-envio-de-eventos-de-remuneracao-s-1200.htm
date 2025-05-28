@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Suspenso o envio de eventos de remuneração S-1200  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | eSocial - Suspenso o envio de eventos de remuneração S-1200 da competência Janeiro/2023 até publicação da portaria com tabelas de alíquotas do INSS e salário-família para 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Eventos de Desligamento (S-2299) e Término do TSVE (S-2399), bem como Eventos de Remuneração (S-1200) referentes a competências anteriores, poderão ser enviados. Folha dos Módulos Simplificados (Doméstico, SE e MEI) de janeiro/2023 será liberada apenas após a publicação da portaria.</p><p>A recepção dos eventos S-1200 (Remuneração de trabalhador vinculado ao Regime Geral de Previd. Social) da competência <b>JANEIRO/2023</b> está <b>suspensa</b> até que seja publicada a portaria governamental que reajusta as faixas salariais que definem as alíquotas de desconto previdenciário do segurado (alíquotas progressivas de 7,5% a 14%) e o direito a percepção de salário família para 2023. Tal medida se faz necessária porque o eSocial precisa da tabela de alíquotas atualizada para retornar os eventos de totalização S-5001 para os empregadores.</p><p><b>Eventos de Desligamento (S-2299) e Término de TSVE (S-2399)</b>
+</p><p>A transmissão dos eventos de Desligamento (S-2299) e Término do Trabalhador Sem Vínculo de Emprego (S-2399) não será bloqueada. No entanto, caso a portaria com as novas alíquotas seja publicada com vigência retroativa, caberá ao empregador realizar, antes do fechamento da folha deste mês, a retificação dos eventos que já foram transmitidos, para considerar os valores devidos pelos empregados.</p><p><b>Módulos Simplificados (Doméstico, Segurado Especial e Microempreendedor Individual-MEI)</b>
+</p><p>A <b>folha de pagamento</b> de janeiro/2023 dos Módulos Simplificados será disponibilizada após a publicação da referida portaria.</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/suspenso-o-envio-de-eventos-de-remuneracao-s-1200-da-competencia-janeiro-2023-ate-publicacao-da-portaria-com-tabelas-de-aliquotas-do-inss-e-salario-familia-para-2023" target="_blank">Portal eSocial</a> <br/>Publicada em 11/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

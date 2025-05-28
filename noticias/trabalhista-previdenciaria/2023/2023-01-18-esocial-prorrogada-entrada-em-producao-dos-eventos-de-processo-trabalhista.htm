@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Prorrogada a entrada em produção dos eventos de pr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/01/2023 | eSocial - Prorrogada a entrada em produção dos eventos de processo trabalhista</h1>
+</div>
+<div class="noticia-corpo">
+<p>A versão S-1.1 do eSocial, conforme previsto, será implantada no dia 16/01/2023, mas os eventos de Processo Trabalhista só estarão disponíveis para envio a partir de abril de 2023.</p><p>A versão de produção do eSocial será atualizada para a S-1.1 em 16/01/2023, conforme previsto. Contudo, os eventos relativos ao envio das informações referentes aos processos trabalhistas só serão disponibilizados para envio a partir de 1º/04/2023, data a partir da qual a GFIP correspondente será substituída pela DCTFWeb.</p><p>A Instrução Normativa que trata da substituição da GFIP-Reclamatória pela DCTFWeb deverá ser alterada pela RFB para estabelecer que a partir do período de apuração 04/2023 as informações referentes a decisões condenatórias ou homologatórias proferidas pela Justiça do Trabalho deverão ser declaradas na DCTFWeb.</p><p>O módulo web dos eventos de processo trabalhista será também disponibilizado em 1º/04/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/prorrogada-a-entrada-em-producao-dos-eventos-de-processo-trabalhista" target="_blank">Portal eSocial</a> <br/>Publicada em 13/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

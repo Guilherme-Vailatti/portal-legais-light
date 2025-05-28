@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Fim da convivência das versões do leiaute do eSoci - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/03/2023 | eSocial - Fim da convivência das versões do leiaute do eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p>Conforme programação prévia, <b>no dia 19/03/2023</b>, ocorrerá o fim do período de convivência das versões S-1.0 e S-1.1 do leiaute do eSocial.</p><p><b>A partir do dia 20/03/2023</b>, todos os empregadores deverão adotar a versão mais recente do leiaute, que já está disponível desde 16/01/2023. A versão anterior, S-1.0, será desativada e não poderá mais ser utilizada para o envio das informações.</p><p>Os empregadores que ainda não atualizaram seu sistema para a nova versão do leiaute do eSocial devem fazê-lo o mais breve possível, para evitar problemas com o envio das informações.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/fim-da-convivencia-das-versoes-do-leiaute-do-esocial" target="_blank">Portal eSocial</a> <br/>Publicada em 20/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

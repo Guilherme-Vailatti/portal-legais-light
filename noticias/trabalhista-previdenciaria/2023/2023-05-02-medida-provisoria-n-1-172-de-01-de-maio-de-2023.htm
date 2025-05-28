@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Medida provisória nº 1.172 de 01 de maio de 20 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/05/2023 | Trabalhista - Medida provisória nº 1.172 de 01 de maio de 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p><b>O PRESIDENTE DA REPÚBLICA</b>, no uso da atribuição que lhe confere o art. 62 da Constituição, adota a seguinte Medida Provisória, com força de lei:</p><p>Art. 1º O valor do salário mínimo será de R$ 1.320,00 (mil trezentos e vinte reais), a partir de 1º de maio de 2023.</p><p>Parágrafo único. Em decorrência do disposto no <b>caput</b>, o valor diário e horário do salário mínimo corresponderá a R$ 44,00 (quarenta e quatro reais) e a R$ 6,00 (seis reais), a partir de 1º de maio de 2023.</p><p>Art. 2º Fica revogada a <a href="https://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2022/Mpv/mpv1143.htm">Medida Provisória nº 1.143, de 12 de dezembro de 2022</a>, a partir de 1º de maio de 2023.</p><p>Art. 3º Esta Medida Provisória entra em vigor na data de sua publicação e produz efeitos a partir de 1º de maio de 2023.</p><p>Brasília, 1º de maio de 2023; 202º da Independência e 135º da República.</p><p>LUIZ INÁCIO LULA DA SILVA</p><p>Fernando Haddad</p><p>Simone Nassar Tebet</p><p>Carlos Roberto Lupi</p><p>Luiz Marinho</p><p>Este texto não substitui o publicado no DOU de 1º.5.2023 - Edição extra</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/mpv/mpv1171.htm" target="_blank">MP nº 1.172 01/05/2023</a> <br/>Publicada em 01/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

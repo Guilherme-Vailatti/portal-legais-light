@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Substituição da DCTF pela DCTFWeb em relação ao IR - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/03/2023 | DCTFWeb - Substituição da DCTF pela DCTFWeb em relação ao IRRF decorrente das relações de trabalho, apurado por meio do eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.137, publicada em 24/03/2023, que modifica a Instrução Normativa RFB nº 2.005, de 2021, alterando o art. 19-A: para prorrogar para o mês de janeiro de 2024 a data em que a DCTFWeb substituirá a DCTF, como instrumento de confissão de dívida e de constituição de créditos tributários relativos ao IRRF e aos valores de retenção de IRPJ, CSLL, PIS/Pasep e Cofins. </p><p>Ademais, foi acrescentado à Instrução Normativa nº 2.005, o art. 19-B, com dois parágrafos, para estabelecer que, em relação ao IRRF decorrente das relações de trabalho, apurado por meio do eSocial, a substituição da DCTF pela DCTFWeb ocorrerá <b>a partir do mês de maio de 2023</b>.</p><p>Para otimizar os trabalhos, houve  o aperfeiçoamento do processamento da declaração retificadora, que não produzirá efeitos no caso de redução de débitos em procedimento de fiscalização, de pedido de parcelamento deferido, de declaração de compensação não passível de retificação ou cancelamento, ressalvada a ocorrência de  erro de fato com prova inequívoca e enquanto não extinto o direito de constituição do crédito tributário, incluindo os enviados para inscrição em dívida ativa.</p><p>O normativo define que, <b>a partir do período de apuração (PA) de maio de 2023 (mês de ocorrência dos fatos geradores)</b>, o Imposto de Renda Retido na Fonte (IRRF) decorrente de rendimentos do trabalho, informado no eSocial, <b>passará a ser declarado na DCTFWeb</b>. Isso se aplica aos seguintes códigos de receitas:</p><ul>
+<li> 0561 - IRRF - Rendimento do Trabalho Assalariado;</li>
+<li> 0588 - IRRF - Rendimento do Trabalho sem Vínculo Empregatício;</li>
+<li>1889 - IRRF - Rendimentos Acumulados - Art. 12-A da Lei nº 7.713, de 22 de dezembro de 1988;</li>
+<li>3533 - IRRF - Provento de aposentadoria, reserva ou reforma e de pensão civil ou militar pago por Previdência da União, Estados, DF ou Municípios (regime geral ou do servidor público);</li>
+<li> 3562 - IRRF - Participação dos trabalhadores nos lucros ou resultados (PLR) objeto de negociação entre a empresa e seus empregados;</li>
+<li> 0610 - IRRF - Rendimentos Prestação Serviços Transporte Rodoviário Internacional de Carga, Pagos Por PJ Domiciliada no País, Auferidos por Transportador Autônomo PF Residente no Paraguai;</li>
+<li> 0473 - IRRF - Rendimentos do Trabalho e de Qualquer Natureza, como os Provenientes de Pensão, Aposentadoria, Prêmios em Concursos e Comissões - Residentes no Exterior.</li>
+</ul><p>Ao serem declarados na DCTFWeb, esses códigos de receita <b>não devem mais ser informados no Programa Gerador da DCTF (PGD)</b>. Além disso, passam a ser pagos por meio de  DARF numerado  emitido pela própria DCTFWeb ou, excepcionalmente, no sistema SicalcWeb, a partir do PA 05/2023.</p><p>No dia <b>24/03/2023</b> foi liberada uma adequação do sistema nos cálculos de dissídio que envolvem o cálculo do RRA e envio ao eSocial (versão <a href="https://documentacao.senior.com.br/gestao-de-pessoas-hcm/notas-da-versao/6-10-1/6-10-1-86.htm#245941" target="_blank">6.10.1.86</a>). Para os clientes que não se encontram nessa situação, o recolhimento do IRRF na folha já está adequado, não havendo a necessidade de atualização do sistema.</p><p>Para mais informações sobre atualizações do sistema, acompanhe o <a href="https://documentacao.senior.com.br/exigenciaslegais/calendario-de-liberacao/hcm.htm" target="_blank">calendário de previsão das liberações do Gestão de Pessoas | HCM</a>.</p><p>As perguntas e respostas a seguir baseiam-se no <b>Art. 19-A</b> da Instrução Normativa RFB n° 2.005/2021:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.137-de-21-de-marco-de-2023-472363492" target="_blank">Instrução Normativa RFB nº 2.137/2023</a> <br/>Publicada em 24/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

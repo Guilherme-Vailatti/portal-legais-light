@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Decreto nº 11.795/2023 - Regulamentados o rela - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>29/11/2023 | Trabalhista - Decreto nº 11.795/2023 - Regulamentados o relatório e o plano de ação (igualdade salarial entre mulheres e homens) para empresas com mais de 100 empregados</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Por meio do Decreto nº 11.795/2023, foi regulamentada a Lei nº 14.611/2023, em relação aos mecanismos de transparência salarial e de critérios remuneratórios, para dispor sobre:</p><p>As medidas previstas no mencionado Decreto aplicam-se às pessoas jurídicas de direito privado:</p><p>O mencionado Decreto dispõe em relação a este Relatório sobre:</p><p>A publicação dos Relatórios deverá ocorrer nos meses de março e setembro, conforme detalhado em ato do Ministério do Trabalho e Emprego.</p><p>Para fins de fiscalização ou averiguação cadastral, o Ministério do Trabalho e Emprego poderá solicitar às empresas informações complementares às contidas no Relatório.</p><p>O mencionado Decreto também dispõe que, verificada a desigualdade salarial e de critérios remuneratórios entre mulheres e homens pelo Ministério do Trabalho e Emprego, as empresas com 100 ou mais empregados deverão elaborar e implementar Plano de Ação para Mitigação da Desigualdade Salarial e de Critérios Remuneratórios entre Mulheres e Homens, que deverá estabelecer:</p><p>Na elaboração e na implementação do mencionado Plano de Ação:</p><p>O mencionado Decreto estabeleceu vários atos de:</p><p>Fonte: <a href="https://www.in.gov.br/web/dou/-/portaria-mte-n-3.714-de-24-de-novembro-de-2023-525914843">DOU</a> e <a href="https://www.in.gov.br/en/web/dou/-/decreto-n-11.795-de-23-de-novembro-de-2023-525219143">DOU</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/web/dou/-/portaria-mte-n-3.714-de-24-de-novembro-de-2023-525914843' target='_blank'>Portaria SE/MTE nº 3.714/2023</a> <br>Publicada em 22/11/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista/Previdenciária - Lei nº 14.534/2023 - CPF será n - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | Trabalhista/Previdenciária - Lei nº 14.534/2023 - CPF será número único para identificação</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Lei nº 14.534/2023 definiu que o número de inscrição no Cadastro de Pessoas Físicas (CPF) fica estabelecido como número único e suficiente para identificação do cidadão nos bancos de dados de serviços públicos.</p><p style="font-weight: bold;">Prazo de Implantação</p><p>Ficam fixados os seguintes prazos:</p><ul style="list-style-type: square;">
+<li>12 meses - para que os órgãos e as entidades realizem a adequação dos sistemas e dos procedimentos de atendimento aos cidadãos, para adoção do número de inscrição no CPF como número de identificação; e</li>
+<li>24 meses - para que os órgãos e as entidades tenham a interoperabilidade entre os cadastros e as bases de dados a partir do número de inscrição no CPF.</li>
+</ul><p style="font-weight: bold;">Menção do CPF - Documentos Abrangidos</p><p>O número de inscrição no CPF:</p><ul style="list-style-type: square;">
+<li>deverá constar dos cadastros e dos documentos:</li>
+</ul><ul style="list-style-type: square;">
+<li>em especial nos seguintes documentos:</li>
+</ul><p style="font-weight: bold;">Novos Documentos</p><p>O número de inscrição no CPF será o número de identificação de novos documentos emitidos ou reemitidos por:</p><p style="font-weight: bold;">Carteira de Identidade - Lei nº 7.116/1983</p><p>O órgão emissor da Carteira de Identidade deverá, na emissão de novos documentos, utilizar o número de inscrição no CPF como número de registro geral da Carteira de Identidade.</p><p>Caso o requerente da Carteira de Identidade não esteja inscrito no CPF, o órgão de identificação realizará a sua inscrição.</p><p style="font-weight: bold;">Registro de Identidade Civil - Lei nº 9.454/1997</p><p>O número de inscrição no CPF também será adotado, nos documentos novos, para o número único do Registro de Identidade Civil.</p><p>O número de inscrição no CPF é único e definitivo para cada pessoa física.</p><p>Identificação Civil Nacional (ICN) - Lei nº 13.444/2017</p><p>A ICN, criada com o objetivo de identificar o brasileiro em suas relações com a sociedade e com os órgãos e entidades governamentais e privados, prevê a expedição do Documento Nacional de Identidade (DNI).</p><p>Na emissão dos novos DNIs, será adotado o número de inscrição no CPF como número único.</p><p style="font-weight: bold;">Prestação de Serviços Públicos - Lei nº 13.460/2017</p><p>Os cadastros, os formulários, os sistemas e outros instrumentos exigidos dos usuários para a prestação de serviço público deverão disponibilizar campo para registro do número de inscrição no CPF, de preenchimento obrigatório, que será suficiente para sua identificação, vedada a exigência de apresentação de qualquer outro número para esse fim.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/lei-n-14.534-de-11-de-janeiro-de-2023-457335009" target="_blank">Lei nº 14.534/2023</a> <br/>Publicada em 11/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

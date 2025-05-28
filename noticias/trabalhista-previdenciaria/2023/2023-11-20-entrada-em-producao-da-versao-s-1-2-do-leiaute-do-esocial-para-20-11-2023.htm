@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Entrada em produção da versão S-1.2 do leiaute do  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/11/2023 | eSocial - Entrada em produção da versão S-1.2 do leiaute do Social para 20/11/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Conforme agenda publicada no Portal do eSocial, a versão S-1.2 do leiaute do eSocial entra em produção em 20/11/2023</p><p>Os leiautes da versão S-1.2 do eSocial incorporam integralmente as evoluções previstas na Nota de Documentação Evolutiva - NDE 01/2023 – Versão S-1.2.</p><ul>
+<li><b>Ambiente de produção:</b> 20/11/2023</li>
+<li><b>Convivência v. S-1.1 com v.S-1.2:</b> até 21/01/2024 (2 meses) (*)</li>
+</ul><p>(*) Os eventos S-1210 (com seu respectivo retorno S-5002), S-2500 (com o seu respectivo retorno S-5503) e S-2501 (com seu respectivo retorno S-5501) devem ser enviados exclusivamente na versão S-1.2 a partir do período de apuração 01/2024, em virtude da substituição da captação das informações da DIRF pelo eSocial e da implantação do FGTS Digital. É importante ressaltar que os eventos remuneratórios referenciados pelo S-1210 devem ter sido enviados na versão S-1.1 ou posterior.</p><p>Próxima Agenda:</p><ul>
+<li><a href="https://www.gov.br/esocial/pt-br/noticias/publicacao-da-versao-s-1-2-do-leiaute-do-esocial" target="_blank">21/01/2024 - Último dia de convivência da versão S-1.1 com a S-1.2 do leiaute do eSocial</a>.</li>
+</ul><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br" target="_blank">Portal eSocial</a> <br/>Publicada em 16/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

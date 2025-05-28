@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial  - Entenda como será a fase de testes do FGTS Digita - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/08/2023 | eSocial  - Entenda como será a fase de testes do FGTS Digital</h1>
+</div>
+<div class="noticia-corpo">
+<p>O cronograma de implantação do FGTS Digital já foi apresentado e prevê uma fase de testes, para que os empregadores possam conhecer o sistema e ajustar processos internos. Confira como ficou:</p><ul>
+<li>19 de agosto de 2023 - Início da fase de testes em Produção Limitada para as empresas do Grupo 1 do eSocial (faturamento acima de R$ 78 milhões no ano de 2016).</li>
+<li>16 de setembro de 2023 (previsão) - Início da fase de testes em Produção Limitada para as empresas dos demais grupos do eSocial (2, 3 e 4).</li>
+<li>10 de novembro de 2023 - Término da fase testes em Produção Limitada.</li>
+<li>20 de novembro de 2023 - Início da fase de testes em Produção Restrita para os empregadores de todos os grupos.</li>
+<li>1º de janeiro de 2024 - Entrada em produção do FGTS Digital e substituição do SEFIP/Conectividade Social para os débitos de FGTS de fatos geradores a partir da competência janeiro/2024.</li>
+</ul><p> </p><ul>
+<li>Utilização dos dados reais transmitidos para o eSocial.</li>
+<li>Geração de guias simuladas e conhecimento de outras funcionalidades do FGTS DIGITAL.</li>
+<li>Início do serviço de atendimento ao empregador.</li>
+<li>Oportunidade para as empresas verificarem se as informações de bases de cálculo do FGTS geradas no eSocial estão de acordo com os recolhimentos atuais efetuados via GFIP/CAIXA.</li>
+<li>Atenção principal nas incidências das verbas/rubricas utilizadas e funcionamento do totalizador do FGTS (S-5003).</li>
+<li>Se o empregador encontrar divergências nos valores devidos de FGTS entre seu sistema de gestão de folha e o FGTS Digital, deverá verificar inicialmente todas as rubricas declaradas, sejam elas de vencimento, desconto ou informativas. Deverá corrigir as incidências em cada rubrica e reenviar os eventos de remuneração para cada trabalhador, para que os totalizadores do FGTS sejam processados novamente.</li>
+<li>Ajuste nos processos internos das empresas para realizar o recolhimento pelo novo canal.</li>
+<li>Durante esse período, os recolhimentos continuarão sendo realizados via guias GRF/GRRF geradas pelo Conectividade Social/Caixa.</li>
+<li>O link de acesso ao ambiente de testes será disponibilizado no banner "ACESSE", que será liberado no portal <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">www.gov.br/fgtsdigital</a> a partir do dia 19/08/2023.</li>
+</ul><ul>
+<li>Utilização de dados fictícios transmitidos pelos empregadores no ambiente de produção restrita do eSocial.</li>
+<li>Envio dos dados ao eSocial via webservice ou pelo portal WEB https://login.producaorestrita.esocial.gov.br/login.aspx.</li>
+<li>Geração de guias simuladas, sem valor legal.</li>
+<li>Oportunidade para empresas realizarem testes utilizando cenários diversos, como simular quanto será a multa rescisória (indenização compensatória) do FGTS.</li>
+<li>ENDEREÇO DE ACESSO: divulgação próxima da data de início desse ambiente.</li>
+</ul><ul>
+<li>Tipos de acesso:<ul style="list-style-type: circle;"><li>Via senha gov.br (selo prata ou ouro)</li><li>Certificado digital</li></ul></li>
+<li>Quem:<ul style="list-style-type: circle;"><li>Titular (Meu Perfil)</li><li>Responsável Legal pelo CNPJ na base da RFB</li><li>Procurador devidamente cadastrado no sistema de procurações do FGTS Digital</li></ul></li>
+</ul><p>O Procurador (outorgado) conseguirá acessar os dados da empresa (outorgante) que delegou o acesso apenas com certificado digital. O acesso via senha do gov.br será permitido apenas para o usuário visualizar dados próprios ou como representante legal perante o cadastro do CNPJ na Receita Federal.</p><ul>
+<li>O ambiente de produção limitada do FGTS Digital <b>não</b> terá uma carga inicial com toda a base de dados do eSocial.</li>
+<li>A primeira carga de dados será realizada individualmente para cada trabalhador da empresa, incluindo todo o histórico de eventos que o FGTS Digital necessita para realizar a gestão do FGTS.</li>
+<li>Terá início assim que o empregador enviar qualquer evento desse vínculo, a partir do início dos testes.</li>
+<li>Serão compartilhadas apenas as bases de cálculo do FGTS a partir da competência julho/23. Meses anteriores não aparecerão no FGTS Digital;</li>
+<li>Não será necessário fechar a folha para conseguir gerar guias. Dessa forma, à medida que a empresa enviar remunerações, poderá emitir guias de FGTS sobre essas bases de cálculos.</li>
+</ul><p><b>Exemplo 1</b> - Empresa do grupo 1 (início dos testes em 19/08/2023):</p><ul>
+<li>21/08/2023:<ul style="list-style-type: circle;"><li>Envia uma alteração cadastral do trabalhador “ABCDE”;</li><li>eSocial compartilha com o FGTS todos os dados do trabalhador “ABCDE”, inclusive as remunerações já transmitidas desde a competência julho/23;</li><li>Empregador conseguirá visualizar os dados cadastrais e contratuais desse trabalhador e simular emissão de guias da competência julho/23.</li></ul></li>
+<li>05/09/2023:<ul style="list-style-type: circle;"><li>Envia a remuneração do trabalhador “ABCDE” da competência agosto/23;</li><li>eSocial compartilha a remuneração com o FGTS Digital;</li><li>Empregador conseguirá visualizar os débitos de agosto/23, além dos que já estavam na base do sistema.</li></ul></li>
+</ul><p> </p><p><b>Exemplo 2</b> - Empresa do grupo 1 (início dos testes em 19/08/2023):</p><ul>
+<li>Empresa possui 40 trabalhadores;</li>
+<li>Não enviou nenhum evento entre os dias 19/08/23 e o dia 04/09/2023;</li>
+<li>05/09/2023:<ul style="list-style-type: circle;"><li>Envia a remuneração da competência agosto/23 referente a 25 trabalhadores;</li><li>Empregador conseguirá visualizar os débitos de agosto/23 apenas desses 25 trabalhadores. Se já tiver transmitido as remunerações de julho/23, também poderá simular guias dessa competência;</li><li>Conseguirá ver os dados contratuais apenas desses 25 trabalhadores. Os outros 15 trabalhadores não serão exibidos no FGTS Digital.</li></ul></li>
+</ul><ul>
+<li>No ambiente de testes do FGTS Digital, as guias mensais terão vencimento até o dia 07 do mês seguinte à competência.</li>
+<li>Essa data foi mantida para os empregadores poderem comparar as guias geradas pelo FGTS Digital com as guias geradas pelo SEFIP/Conectividade Social.</li>
+<li>Na entrada em produção do FGTS Digital, na competência JANEIRO/2024, as guias mensais terão vencimento até o dia 20 do mês seguinte à competência.</li>
+</ul><p>Ainda no ambiente de PRODUÇÃO LIMITADA, os empregadores poderão antecipar o cadastramento de procurações para que terceiros possam acessar seus dados e representá-lo no FGTS Digital. Essas procurações já terão validade jurídica e serão utilizadas quando houver a substituição do recolhimento do FGTS pelo novo sistema. Trata-se de uma grande oportunidade para as empresas organizarem seus processos internos de pagamento e deixar o sistema pronto para os operadores que serão constituídos.</p><p>Todos os débitos mensais e rescisórios de FGTS que tenham como referência o mês de janeiro/2024 deverão utilizar o FGTS Digital como meio para recolhimento dos valores nas contas vinculadas dos trabalhadores. Débitos até a competência dezembro/2023 continuarão a ser recolhidos via sistema da Caixa (SEFIP/GRRF/Conectividade Social).</p><p>Veja alguns exemplos:</p><ul>
+<li>FGTS mensal da competência dezembro/2023: o recolhimento será realizado via SEFIP/CAIXA, com vencimento até o dia 07/01/2024.</li>
+<li>FGTS rescisório de um desligamento que ocorreu em 26/12/2023: o recolhimento será realizado via GRRF/CAIXA, com vencimento em 05/01/2024.</li>
+<li>FGTS mensal da competência janeiro/2024: o recolhimento será realizado via FGTS Digital, com vencimento até o dia 20/02/2024.</li>
+<li>FGTS rescisório de um desligamento que ocorreu em 02/01/2024: o recolhimento será realizado via FGTS Digital, com vencimento até o dia 12/01/2024.</li>
+</ul><p>Esses empregadores continuarão a recolher o FGTS juntamente com o DAE mensal gerado pelo eSocial. Apenas o FGTS Rescisório será recolhido pelo FGTS Digital, em substituição à GRRF gerada pelo Conectividade Social. Dessa forma, se o MEI ou o SE demitir um trabalhador a partir de 01/01/2024 por um motivo de desligamento que gere direito ao saque do FGTS, deverá registrar a rescisão no eSocial e acessar o FGTS Digital para gerar a guia com os valores de FGTS incidentes sobre o mês da rescisão, 13º proporcional, aviso prévio indenizado e a multa do FGTS (40% ou 20%). Além disso, no mês do desligamento esses empregadores ainda terão que emitir o DAE no eSocial para recolhimento da contribuição previdenciária (INSS).</p><p>Continuará recolhendo o FGTS mensal e rescisório utilizando a guia DAE gerada pelo eSocial. O empregador doméstico utilizará o FGTS Digital futuramente apenas para requerer parcelamentos de débitos do FGTS. Enquanto essa funcionalidade não é implementada, caso queira realizar um parcelamento, deve procurar os canais de atendimento da CAIXA.</p><ul>
+<li>Serviço de Atendimento aos Usuários estará disponível durante o período de testes e contempla os seguintes canais:<ul style="list-style-type: circle;"><li>Formulário web (disponível a partir do dia 19/08/23) – empregador poderá descrever problemas de comportamento do sistema, dúvidas e sugestões etc.</li><li>Chatbot com atendimento humano, caso as opções automatizadas não sejam suficientes para solução do problema (disponível a partir do dia 25/08/23).</li><li>Whatsapp com atendimento humano (disponível a partir do dia 25/08/23).</li><li>Dúvidas sobre lançamentos de bases de cálculo no eSocial devem ser direcionadas para o canal próprio desse sistema, via telefone 0800 730 0888 ou <a href="https://www.gov.br/esocial/pt-br/canais_atendimento">https://www.gov.br/esocial/pt-br/canais_atendimento</a>.</li></ul></li>
+<li>Os empregadores também encontrarão um vasto material de suporte para conhecer melhor o sistema:<ul style="list-style-type: circle;"><li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital" target="_blank">Portal de notícias</a></li><li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes" target="_blank">Perguntas Frequentes</a></li><li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/manual" target="_blank">Manual do Usuário</a></li><li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/videos" target="_blank">Vídeos FGTS Digital na Prática</a></li></ul></li>
+</ul><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/ministerio-do-trabalho-e-emprego/entenda-como-sera-a-fase-de-testes-do-fgts-digital" target="_blank">Portal eSocial</a> <br/>Publicada em 14/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

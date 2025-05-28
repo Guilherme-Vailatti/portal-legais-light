@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Recolhimento via Pix sem custos para empregad - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/11/2023 | FGTS Digital - Recolhimento via Pix sem custos para empregadores</h1>
+</div>
+<div class="noticia-corpo">
+<p>Toda guia de FGTS deverá ser recolhida via Pix, com QR Code ou copia e cola. Modalidade de pagamento não gera custos para empregadores e não possui limite de guias pagas. Empregadores precisam verificar no seu banco se limite máximo de pagamento compreende o valor das guias geradas.</p><p>O FGTS Digital elegeu o Pix como a única maneira de recolhimento do FGTS. Trata-se de sistema de pagamento instantâneo instituído pelo Banco Central do Brasil, por meio do qual valores são transferidos, de forma segura, entre contas, em poucos segundos, 24 horas por dia, todos os dias do ano, inclusive feriados e finais de semana.</p><p>Poderá ser efetuado a partir de uma conta corrente, conta poupança ou conta de pagamento pré-paga; sendo <b>GRATUITO</b> tanto para pessoas físicas quanto jurídicas, na modalidade “Pix - Cobrança”, a utilizada pelas guias do FGTS Digital.</p><p>Conforme Resoluções BCB <a href="https://www.bcb.gov.br/estabilidadefinanceira/exibenormativo?tipo=Resolu%C3%A7%C3%A3o%20BCB&amp;numero=1" target="_blank">01/2020</a> e <a href="https://www.in.gov.br/en/web/dou/-/resolucao-bcb-n-19-de-1-de-outubro-de-2020-280799858" target="_blank">19/2020</a>, <b>as instituições financeiras não poderão cobrar tarifas ou colocar limites</b> aos usuários pagadores na referida modalidade.</p><p>Excepcionalmente, apenas no dia do vencimento da guia do FGTS Digital, o empregador terá uma pequena restrição, podendo efetuar o pagamento até as 22h59 (horário de Brasília). Nos dias que antecedem o vencimento, não há limitação de horário para pagamento.</p><p>É importante destacar, também, que com a adoção do Pix, o empregador contará com mais de 800 instituições (bancos, fintechs, instituições de pagamento) aprovadas pelo Banco Central para a realização de pagamentos, não ficando restrito às poucas atualmente conveniadas. Desta forma, além do estímulo à competitividade, significativa redução de custos, digitalização do processo de pagamento e facilidade de acesso, será ofertada ao usuário uma diversidade de instituições para que possa optar pela que melhor atenda às suas necessidades.</p><p>Por fim, é valido frisar que <b>não será possível realizar o pagamento via PIX com dinheiro em espécie</b>, conforme regras do Banco central que determinam que todo o pagamento nesta modalidade deve ter como origem valores depositados em conta bancária. Deste modo, o pagamento deverá ocorrer pelo usuário utilizando os sistemas disponibilizados pelo seu banco ou agente financeiro.</p><p>Ainda assim, o empregador poderá efetuar o pagamento de uma guia Pix em casas lotéricas, desde que o valor para pagamento tenha como origem um “Pix Saque”, ou seja, é realizado um saque na lotérica utilizando essa opção e, com este saldo, é efetuada a liquidação da guia Pix do FGTS. Cabe destacar que a modalidade de "Pix Saque" pode ser efetuada em qualquer lotérica, mesmo que a conta bancária seja de outro banco (Bradesco, Itaú, BB, NuBank etc.).</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/noticias/fgts-digital-recolhimento-via-pix-sem-custos-para-empregadores" target="_blank">Ministério do Trabalho e Emprego</a> <br/>Publicada em 27/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

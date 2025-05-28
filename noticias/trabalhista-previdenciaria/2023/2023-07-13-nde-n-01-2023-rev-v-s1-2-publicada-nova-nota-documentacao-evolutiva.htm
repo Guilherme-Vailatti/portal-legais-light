@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - NDE nº 01/2023 (rev.) v. S-1.2 - Publicada nova no - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/07/2023 | eSocial - NDE nº 01/2023 (rev.) v. S-1.2 - Publicada nova nota documentação evolutiva</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Nota de Documentação Evolutiva - NDE revisada tem como objetivo apresentar a versão S-1.2 dos leiautes do eSocial. Abaixo, seguem os respectivos links:</p><ul>
+<li><a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/nde-01-2023-rev-em-11-07-2023/index.html/">Leiautes em HTML</a>; </li>
+<li><a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/esocial-nde-01-2023-rev-versao-s-1-2-pdf.zip/">Leiautes em PDF</a>;</li>
+<li><a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/esocial-nde-01-2023-rev-versao-s-1-2-esquemas-xsd.zip/">Esquemas</a>; </li>
+<li><a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nde-01-2023-rev.pdf/">Controle de Alterações</a>. </li>
+</ul><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-orientativa-s-1-1-05-2023.pdf" target="_blank">Nota de Documentação Evolutiva nº 01/2023, versão S-1.2</a> <br/>Publicada em 11/07/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

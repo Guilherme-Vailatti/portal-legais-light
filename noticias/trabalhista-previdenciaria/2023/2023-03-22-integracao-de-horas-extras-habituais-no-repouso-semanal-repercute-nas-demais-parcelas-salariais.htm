@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - TST - Integração de horas extras habituais no  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>22/03/2023 | Trabalhista - TST - Integração de horas extras habituais no repouso semanal repercute nas demais parcelas salariais</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir do mês 20/03/2023 o evento Reflexo de DSR passa a compor a base de médias para férias, 13º salário, aviso prévio e FGTS, uma vez que o DSR mensal sobre as horas extras passa a compor a base de cálculo destas verbas, assim como ocorre com as horas extras.</p><p>O Tribunal Superior do Trabalho decidiu que o valor do descanso semanal remunerado majorado pelo pagamento habitual de horas extras deve repercutir, também, sobre outras parcelas salariais, como férias, 13º salário, aviso prévio e FGTS. O novo entendimento, definido no julgamento de incidente de recurso repetitivo (IRR), deverá ser aplicado às horas extras prestadas a partir de 20/3/23.</p><p>A tese jurídica aprovada para o Tema Repetitivo 9, que orientará a nova redação da OJ 394, foi a seguinte:</p><p>REPOUSO SEMANAL REMUNERADO. INTEGRAÇÃO DAS HORAS EXTRAS. REPERCUSSÃO NO CÁLCULO DAS FÉRIAS, DÉCIMO TERCEIRO SALÁRIO, AVISO PRÉVIO E DEPÓSITOS DO FGTS.</p><p>Ficaram vencidos os ministros Ives Gandra, Maria Cristina Peduzzi, Sergio Pinto Martins e Dora Maria da Costa, que mantinham a redação original da OJ 394.</p><p>Julgado o incidente, o processo retornará à SDI-1 para que prossiga o julgamento dos embargos interpostos pela Mix Ideal Atacado e Distribuidora de Alimentos Ltda. na reclamação ajuizada por um carregador, contratado pela empresa em Salvador (BA).</p><p>No módulo Administração de Pessoal, acesse o menu Tabelas &gt;Eventos &gt; Eventos &gt; Cadastro e realize as configurações conforme orientação a seguir:</p><ul>
+<li>Na guia Eventos, verifique se no cadastro do evento Reflexo de DSR de hora extra está configurado com a característica "<b>05C</b> - Repouso s/ Hora Extra" ou "<b>05D</b> - Rep. s/ H.Extras - Mensalistas 30 dias".</li>
+<li>Na guia Incidências, criar um novo histórico para a competência <b>03/2023</b> e informar a opção <b>S - Sim</b> para o campo <span class="campo_botao">Considerar p/ médias</span>.</li>
+</ul><p>No módulo Administração de Pessoal, acesse o menu Colaboradores &gt;Férias &gt; Totalizadores &gt; Cadastro e preencha os campos conforme exemplo a seguir:</p><p>
+<img src="../../../Resources/Images/2023-03-22-integracao-horas-extras-tela-hcm.png"/>
+</p><p>No totalizador de hora extra deve ser inserido novamente as características <b>05D</b> e <b>05C</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.tst.jus.br/-/pleno-do-tst-altera-oj-394-em-julgamento-de-recurso-repetitivo" target="_blank">Tribunal Superior do Trabalho</a> <br/>Publicada em 22/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

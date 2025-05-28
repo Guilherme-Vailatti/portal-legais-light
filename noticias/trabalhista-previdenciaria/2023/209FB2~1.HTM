@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial  - Produção limitada no FGTS Digital: confirmada a e - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>18/09/2023 | eSocial  - Produção limitada no FGTS Digital: confirmada a entrada no dia 23/09/2023 para os demais grupos de empresas</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A SECRETARIA DE INSPEÇÃO DO TRABALHO - SIT, no uso de suas atribuições legais, e:</p><p>Considerando a necessidade de interrupção da disponibilidade do ambiente do eSocial para viabilizar a entrada dos demais grupos de empresas no ambiente de produção e operação limitada do FGTS Digital, nos termos do artigo 2º da Portaria MTE nº 3211, de 18 de agosto de 2023;</p><p>Considerando que o eSocial é um sistema utilizado para o cumprimento de obrigações perante diversos órgãos públicos e que a sua interrupção interfere nesta rotina;</p><p>Considerando que a data originalmente prevista para a entrada dos demais grupos de empresas coincide com período de vultosa movimentação do ambiente do eSocial para o cumprimento das obrigações pelos usuários;</p><p>Resolve alterar o cronograma de implantação do FGTS Digital divulgado no Edital SIT nº 1/2023, que fica substituído pelo seguinte:</p><p>Permanecem inalteradas as demais previsões do Edital SIT nº 1/2023.</p><p>O presente Edital produzirá efeitos a partir da data de sua publicação.</p><p>LUIZ FELIPE BRANDÃO DE MELLO - Secretário</p><p>Este conteúdo não substitui o publicado na versão certificada.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/ministerio-do-trabalho-e-emprego/producao-limitada-confirmada-a-entrada-no-dia-23-09-2023-para-os-demais-grupos-de-empresas">Portal eSocial</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/edital-n-3/2023-509660150' target='_blank'>Edital nº 03/2023</a> <br>Publicada em 14/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

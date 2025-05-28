@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Anuais - Prazo de envio para RAIS (ano-base 2022) - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/03/2023 | Anuais - Prazo de envio para RAIS (ano-base 2022)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O prazo da Relação Anual de Informações Sociais – <a href="http://www.rais.gov.br/sitio/rais_ftp/PortariaRAIS2019.pdf" target="_blank">RAIS</a> tem início no dia 09 de março de 2023 e irá até o dia <b>06 de abril de 2023</b>.</p><p>Desde o ano-base 2019, as empresas que fazem parte do grupo de obrigatoriedade do envio de eventos periódicos ao eSocial tiveram a obrigação de declaração via RAIS substituída, conforme <a href="https://www.in.gov.br/en/web/dou/-/portaria-n-1.127-de-14-de-outubro-de-2019-221811213" target="_blank">Portaria SEPRT nº 1.127/2019</a>. Além disso, segundo o <a href="http://www.rais.gov.br/sitio/rais_ftp/ManualRAIS2021.pdf" target="_blank">Manual de Orientação da RAIS - Ano-Base 2022</a>, "todos órgãos públicos e organismos internacionais (grupo 4 do e-Social), devem fornecer ao Ministério do Trabalho e Emprego, por meio da Relação Anual de Informações Sociais (RAIS), as informações referentes a cada um de seus empregados, de acordo com a Portaria nº 671/2021 – Substituição ao Decreto nº 10.854, de 10 de novembro de 2021".</p><p>Para as empresas que devem declarar a RAIS, informamos que as versões do sistema compatíveis com o Validador (ano-base 2022) são a <b>6.10.1.69 ou versões superiores</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="#" target="_blank">Fonte Desconhecida</a> <br/>Publicada em </p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

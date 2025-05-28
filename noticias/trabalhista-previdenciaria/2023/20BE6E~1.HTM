@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - Parada temporária na integração dos eventos no CNI - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>16/01/2023 | eSocial - Parada temporária na integração dos eventos no CNIS para implantação da versão S-1.1 do leiaute</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A <b>parada</b> terá <b>início</b> às <b>18h</b> do dia <b>11/01/2023</b>, com <b>término</b> as <b>08h</b> do dia <b>16/01/2023</b>, visando <b>implantar a nova versão dos sistemas</b> preparada para a <b>versão S-1.1 do leiaute</b> do eSocial.</p><p>O Instituto Nacional do Seguro Social (INSS), por meio da Empresa de Processamento de Dados da Previdência Social (Dataprev), recepciona e processa os eventos do ambiente nacional do eSocial, a fim de alimentar o CNIS.</p><p>Deste modo, comunicamos que haverá uma parada temporária na integração dos eventos eSocial no CNIS para fins da implantação da versão 1.1 do leiaute do eSocial, que se dará no período citado acima.</p><p>Após concluída a manutenção, os eventos que foram transmitidos durante o período da parada serão incorporados à base do CNIS automaticamente, não sendo necessária qualquer intervenção pelos usuários.</p><p>Todos os sistemas integrados com o CNIS, ou que usam as informações constantes da base CNIS, ficarão temporariamente sem atualização e não refletirão novos eventos informados no eSocial, até a conclusão desse procedimento.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/parada-temporaria-na-integracao-dos-eventos-esocial-no-cnis-para-implantacao-da-versao-s-1-1-do-leiaute" target="_blank">Portal eSocial</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/parada-temporaria-na-integracao-dos-eventos-esocial-no-cnis-para-implantacao-da-versao-s-1-1-do-leiaute' target='_blank'>Portal eSocial</a> <br>Publicada em 11/01/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

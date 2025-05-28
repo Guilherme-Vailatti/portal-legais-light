@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - Liberado o envio de eventos de folha para o eSocia - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>24/05/2023 | eSocial - Liberado o envio de eventos de folha para o eSocial após publicação de portaria que reajusta valores previdenciários a partir de maio/2023</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi publicada no dia 08/05/2023 a <a href="https://www.in.gov.br/en/web/dou/-/portaria-interministerial-mps/mf-n-27-de-4-de-maio-de-2023-481520415">Portaria Interministerial MPS/MF nº 27, de 04/05/2023</a>, do Ministério da Previdência Social e do Ministério da Fazenda, que atualiza a tabela de faixas para atribuição de alíquotas previdenciárias, bem como limite de salários de contribuição ao INSS, com base no novo salário mínimo nacional de R$ 1.320,00, válido a partir do dia 01/05/2023.</p><p><b>A alteração foi implantada no dia 09/05/2023 às 13h18min, com a liberação do envio dos eventos de remuneração ao eSocial referentes à competência maio/2023</b>.</p><p>A transmissão dos eventos de Desligamento (S-2299) e Término do Trabalhador Sem Vínculo de Emprego (S-2399) não foi bloqueada. Como a portaria com as novas alíquotas foi publicada com vigência retroativa a 01/05/2023, cabe ao empregador realizar, antes do fechamento da folha do mês de maio/2023, a retificação dos eventos que foram transmitidos antes da implantação da alteração, para que os cálculos passem a contemplar os valores atualizados pela portaria.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/liberado-o-envio-de-eventos-de-folha-para-o-esocial-apos-publicacao-de-portaria-que-reajusta-valores-previdenciarios-a-partir-de-maio-2023">Portal eSocial</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/liberado-o-envio-de-eventos-de-folha-para-o-esocial-apos-publicacao-de-portaria-que-reajusta-valores-previdenciarios-a-partir-de-maio-2023' target='_blank'>Portal eSocial</a> <br>Publicada em 19/05/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista/Previdenciário - Portaria do MTE obriga registro - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>27/09/2023 | Trabalhista/Previdenciário - Portaria do MTE obriga registro dos serviços especializados em Segurança e Medicina no Trabalho via plataforma gov.br</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi publicada ontem, dia 21/09, a Portaria MTE nº 3.407, de 19 de setembro de 2023, que dispõe sobre a obrigatoriedade do registro dos Serviços Especializados em Segurança e Medicina no Trabalho - SESMT por meio da plataforma gov.br. Esses serviços vinham sendo registrados no Sistema Eletrônico de Informações (SEI), porém, a partir da publicação da Portaria nº 3.407, os empregadores têm 60 dias para migrar, obrigatoriamente, para a nova plataforma.</p><p>A obrigação abrange as modalidades do Serviço Especializado em Segurança e Saúde no Trabalho Rural – SESTR (NR 31), Serviços Especializados em Segurança e Saúde do Trabalhador Portuário – SESSTP e Serviços Especializados em Engenharia de Segurança e Medicina portuários - SESMT Portuário (ambos previstos na NR 29) e Serviço Especializado em Segurança e em Medicina do Trabalho a bordo da Plataforma de Petróleo - SESMT PP (NR 37).</p><p>Ressalta-se que o registro do SESMT previsto na Norma Regulamentadora nº 04 já estava sendo realizado no portal gov.br desde novembro de 2022 e segue sendo feito desta forma, não estando abrangido pelo prazo de 60 dias trazido pela Portaria MTE nº 3.407/2023. Para efetuar o registro das diversas modalidades previstas na Portaria, acesse o link: https://www.gov.br/pt-br/temas/registro-de-servico-especializado-em-seguranca-e-em-medicina-do-trabalho. Empregadores que não respeitarem o prazo de 60 dias poderão ser autuados por falta de SESMT.</p><p>Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2023/setembro/portaria-do-mte-obriga-registro-dos-servicos-especializados-em-seguranca-e-medicina-no-trabalho-via-plataforma-gov.br">Ministério do Trabalho e Emprego</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=20/09/2023&jornal=515&pagina=213&totalArquivos=239' target='_blank'>Portaria MTE nº 3.407/2023</a> <br>Publicada em 21/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

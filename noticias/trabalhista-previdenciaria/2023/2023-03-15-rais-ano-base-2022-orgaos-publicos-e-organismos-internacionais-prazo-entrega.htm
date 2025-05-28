@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - RAIS ano base 2022 - Órgãos Públicos e Organis - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>15/03/2023 | Trabalhista - RAIS ano base 2022 - Órgãos Públicos e Organismos Internacionais - prazo entrega</h1>
+</div>
+<div class="noticia-corpo">
+<p>A recepção das declarações da RAIS, ano-base 2022 e anos-anteriores (extemporâneas) iniciou em 09/03/2023 e continuarão sendo recepcionadas até o dia 06/04/2023, prazo legal, sem incidência de multa para o ano-base 2022, conforme Manual de Orientação da RAIS.</p><p>A declaração da RAIS, ano-base 2022, foi preparada para recepcionar dados de órgãos públicos e organismos internacionais. <b>As empresas dos grupos 1, 2 e 3 do e-Social deverão enviar os eventos diretamente ao sistema eSocial, conforme a Portaria 671/2021</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.rais.gov.br/sitio/rais_ftp/ManualRAIS2022.pdf" target="_blank">Manual RAIS 2022</a> <br/>Publicada em 15/03/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

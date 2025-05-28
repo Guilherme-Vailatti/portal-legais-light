@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial  - Bem-vindo ao período de testes do FGTS Digital - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/08/2023 | eSocial  - Bem-vindo ao período de testes do FGTS Digital</h1>
+</div>
+<div class="noticia-corpo">
+<p>Os testes no FGTS Digital já começaram. <a href="https://por-p-fgtsd.estaleiro.serpro.gov.br/login">Clique aqui</a> para acessar. O ambiente de Produção Limitada ficará disponível até o dia 10/11/2023. Aproveite esse período para ajustar processos internos em sua empresa e ficar preparado para a substituição que faremos a partir de janeiro/2024.</p><p><b>O MÓDULO DE PROCURAÇÕES</b> será liberado em breve. Acompanhe as atualizações pelo portal do <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">Ministério do Trabalho e Emprego</a>.</p><p>Após realizar os lançamentos de folha e desligamentos no eSocial, acesse o FGTS Digital e simule a emissão de guias para conferir se está tudo certo. Se o empregador encontrar divergências nos valores devidos de FGTS entre seu sistema de gestão de folha e o FGTS Digital, deverá verificar inicialmente todas as rubricas declaradas, sejam elas de vencimento, desconto ou informativas. Deverá corrigir as incidências em cada rubrica e reenviar os eventos de remuneração para cada trabalhador, para que os totalizadores do FGTS sejam processados novamente.</p><p>Lembre-se que, neste momento de testes, o FGTS Digital está integrado ao ambiente de produção do eSocial. Portanto, as informações declaradas ao esocial devem refletir a realidade.</p><p>Além de ser um período de testes para os empregadores, este momento também será de aprendizado para o próprio sistema FGTS Digital. Será possível localizar eventuais problemas e fazer os ajustes necessários sem o impacto na arrecadação real do FGTS.</p><p>Dessa forma, podemos ter alguns momentos de lentidão, indisponibilidade do sistema ou mesmo um erro em algumas funcionalidades. Não se preocupe! Nossa equipe técnica está acompanhando todo o comportamento do sistema para implementar as soluções necessárias.</p><p>O indicado nesse momento é tentar novamente mais tarde e acompanhar as notícias no portal <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">Ministério do Trabalho e Emprego</a>. Caso queira, poderá acessar nossos <a href="https://form.omni.serpro.gov.br/upperScreenForm/3511">Canais de Atendimento</a> e registrar uma ocorrência.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/ministerio-do-trabalho-e-emprego/bem-vindo-ao-periodo-de-testes-do-fgts-digital" target="_blank">Portal eSocial</a> <br/>Publicada em 20/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - IN RFB nº 2.147/2023 - Prorrogada a entrada em pro - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/07/2023 | eSocial - IN RFB nº 2.147/2023 - Prorrogada a entrada em produção dos eventos de processo trabalhista</h1>
+</div>
+<div class="noticia-corpo">
+<p>O início do envio dos eventos relativos às informações referentes aos processos trabalhistas <b>não</b> ocorrerá no dia 01/07/2023.</p><p>Foi prorrogada novamente, desta vez para o mês de outubro/2023, antes previsto para julho/2023, o início do envio da DCTFWeb em caso de confissão de dívida relativa a contribuições previdenciárias e para terceiros em decorrência de decisões condenatórias ou homologatórias proferidas pela Justiça do Trabalho. Lembramos que a DCTFWeb substitui a GFIP como instrumento de confissão de dívida e de constituição do crédito previdenciário.</p><p>Acesse a <a href="https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.147-de-30-de-junho-de-2023-493518374" target="_blank">Instrução Normativa RFB nº 2.147/2023</a> completa publicada em 30/06/2023.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.147-de-30-de-junho-de-2023-493518374" target="_blank">Instrução Normativa RFB nº 2.147/2023</a> <br/>Publicada em 30/06/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

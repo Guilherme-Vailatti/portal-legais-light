@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Gerar Guia Rápida ou Guia Parametrizada? - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/11/2023 | FGTS Digital - Gerar Guia Rápida ou Guia Parametrizada?</h1>
+</div>
+<div class="noticia-corpo">
+<p>Após enviar as remunerações pelo eSocial, o empregador deverá entrar no ambiente do FGTS Digital para emitir as guias de recolhimento dos valores ao FGTS, podendo utilizar uma das opções disponíveis no sistema para esta geração: Guia Rápida ou Guia Parametrizada.</p><p>Existe apenas um tipo de guia no FGTS Digital - a GFD - e todos os valores serão incluídos nela, sejam mensais e/ou rescisórios de uma ou várias competências. Não existirão códigos de recolhimento como ocorre hoje nas guias geradas pela Caixa/Conectividade Social.</p><p>Antes de emitir uma guia, o empregador terá relatórios detalhados dos débitos no formato PDF e planilha (CSV), onde poderá conferir as bases de cálculos. Esse relatório se assemelha ao "RE" gerado atualmente pela SEFIP/Caixa, mas com muito mais detalhes.</p><p>Indicada para quem precisa apenas gerar uma guia padrão com todos os débitos do mês e efetuar o pagamento dentro do vencimento ou gerar uma guia com débitos vencidos para pagamento imediato. Basta selecionar o mês, conferir os débitos exibidos e clicar em "Emitir Guia". Quando houver débitos mensais e rescisórios com mesmo vencimento, os valores são unificados em uma única <b>guia mista</b>.</p><p>Ferramenta que permite ao empregador personalizar sua guia, utilizando diversos filtros e selecionando os débitos que deseja inserir para pagamento. É possível, por exemplo, criar uma guia com os débitos agrupados por estabelecimento, lotação tributária, local de trabalho, por categoria de trabalhador e até de um único trabalhador, filtrando pelo CPF ou matrícula.</p><p>Funciona como um carrinho de compras pela internet, onde o empregador vai adicionando os itens que deseja para pagamento ao final. Na Guia Parametrizada o usuário aplica os filtros, seleciona os débitos dos trabalhadores e adiciona aquele valor à guia. No passo seguinte, poderá editar a data de vencimento da guia, podendo colocar até o dia 10 do mês seguinte.</p><p>O usuário ainda poderá editar o valor a pagar em cada débito selecionado, limitado ao seu valor máximo. Por exemplo, empresa possui um débito de R$ 2.000,00 a recolher de Multa do FGTS de determinado trabalhador, mas possui apenas R$ 1.500,00 disponíveis no momento. Poderá editar o valor, pagando apenas o valor que possuir e posteriormente gerar outra guia para pagar o valor restante.</p><p>A <b>guia mensal</b> da competência terá vencimento no dia 20 do mês subsequente, enquanto a <b>guia rescisória</b> terá vencimento até o décimo dia após a data desligamento.</p><p>Até a entrada do FGTS Digital, o vencimento dos débitos mensais continua até o dia 07 do mês seguinte e seu recolhimento deve ser efetuado pelos sistemas da Caixa/SEFIP/Conectividade Social.</p><p>Até o dia 10/11/2023, está no ar o ambiente de testes do FGTS Digital, disponível para todos os empregadores. Esse ambiente está ligado ao ambiente de produção do eSocial e o empregador poderá simular a emissão de guias e comparar os valores gerados com as guias da SEFIP/GRRF/Caixa. Trata-se de uma ótima oportunidade para sanear eventuais problemas nas bases de cálculo do eSocial, corrigindo incidência de rubricas, além de poder organizar processos internos para se adequar à nova forma de recolhimento do FGTS.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/ministerio-do-trabalho-e-emprego/fgts-digital-gerar-guia-rapida-ou-guia-parametrizada" target="_blank">Portal eSocial</a> <br/>Publicada em 30/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

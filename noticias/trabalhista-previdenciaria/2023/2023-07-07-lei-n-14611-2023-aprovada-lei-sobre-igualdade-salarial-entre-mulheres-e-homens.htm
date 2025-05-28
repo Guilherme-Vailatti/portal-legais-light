@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Lei nº 14.611/2023 - Aprovada lei sobre iguald - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/07/2023 | Trabalhista - Lei nº 14.611/2023 - Aprovada lei sobre igualdade salarial entre mulheres e homens</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Lei nº 14.611/2023 passa a dispor sobre a obrigatoriedade da igualdade salarial entre mulheres e homens, nos termos da regulamentação, para a realização de trabalho de igual valor ou o exercício da mesma função. Destacamos a seguir as disposições da referida Lei.</p><p>Além das disposições que já constavam no art. 461 da Consolidação das Leis do Trabalho (CLT) sobre equiparação salarial, foi acrescentado que:</p><p>A igualdade salarial e de critérios remuneratórios entre mulheres e homens será garantida por meio das seguintes medidas:</p><p>Fica ainda determinada a publicação semestral de relatórios de transparência salarial e de critérios remuneratórios pelas pessoas jurídicas de direito privado com 100 ou mais empregados, observada a proteção de dados pessoais de que trata a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD).</p><p>Na hipótese de descumprimento do disposto no parágrafo anterior, será aplicada multa administrativa cujo valor corresponderá a até 3% da folha de salários do empregador, limitado a 100 salários-mínimos, sem prejuízo das sanções aplicáveis aos casos de discriminação salarial e de critérios remuneratórios entre mulheres e homens.</p><p>Os mencionados relatórios de transparência salarial e de critérios remuneratórios conterão dados anonimizados e informações que permitam:</p><p>Nas hipóteses em que for identificada desigualdade salarial ou de critérios remuneratórios, independentemente do descumprimento do disposto no art. 461 da CLT, a pessoa jurídica de direito privado apresentará e implementará plano de ação para mitigar a desigualdade, com metas e prazos, garantida a participação de representantes das entidades sindicais e de representantes dos empregados nos locais de trabalho.</p><p>O Poder Executivo federal disponibilizará de forma unificada, em plataforma digital de acesso público, observada a LGPD, além das informações previstas nos relatórios de transparência salarial das empresas, indicadores atualizados periodicamente sobre mercado de trabalho e renda desagregados por sexo, inclusive indicadores de:</p><p>Ato do Poder Executivo instituirá protocolo de fiscalização contra a discriminação salarial e de critérios remuneratórios entre mulheres e homens.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/lei-n-14.611-de-3-de-julho-de-2023-494137808" target="_blank">Lei nº 14.611/2023</a> <br/>Publicada em 04/07/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

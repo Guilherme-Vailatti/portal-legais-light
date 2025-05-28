@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Assinado contrato para desenvolvimento e sustentaç - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | eSocial - Assinado contrato para desenvolvimento e sustentação do FGTS digital</h1>
+</div>
+<div class="noticia-corpo">
+<p>Plataforma já está em estado avançado de desenvolvimento e aguardava a assinatura do contrato de manutenção para poder colocá-la em produção.</p><p>Foi assinado no dia 22 de dezembro o contrato de desenvolvimento, sustentação e manutenção da plataforma FGTS Digital. O extrato do contrato também foi publicado no Diário Oficial da União. A partir desta assinatura, os prazos para início das fases de implantação do FGTS Digital serão estabelecidos.</p><p>Em breve, a Subsecretaria de Inspeção de Trabalho - SIT apresentará o cronograma de implantação da plataforma que permitirá o aprimoramento do processo de arrecadação e gestão dos recursos devidos pelos empregadores ao FGTS, agregando confiabilidade e agilidade nos depósitos devidos nas contas dos trabalhadores, com a observância, inclusive, da necessidade de adequação às alterações legislativas trazidas ao texto da Lei 8.036, de 11 de maio de 1990, pela Lei nº 13.932, de 11 de dezembro de 2019.</p><p>A especificação técnica, bem como todo o processo de gestão da arrecadação via FGTS Digital, ficará sob responsabilidade da Subsecretaria de Inspeção de Trabalho (SIT/STRAB/MTP). O SERPRO, empresa de tecnologia do Governo Federal com larga experiência em grandes bases de dados, desenvolverá, sustentará e manterá a Plataforma FGTS Digital, conforme as determinações da SIT. A CAIXA continuará com a gestão das contas vinculadas do trabalhador.</p><p>Para os empregadores, o FGTS Digital representa economia de horas de trabalhos para declaração e recolhimento dos valores devidos, uma vez que o sistema usará dados diretamente do eSocial, uma obrigação que já é realizada pelas empresas. Além disso, funcionalidades como parcelamento e restituição de valores pagos a maior, dentre várias outras, serão disponibilizadas de forma “online”.</p><p>Quanto aos trabalhadores, o principal benefício será a agilidade com que os valores recolhidos serão disponibilizados nas contas, de maneira confiável e muito mais transparente. O FGTS ganha em eficiência e controle dos valores devidos e arrecadados, com reflexo direto em todas as áreas da sociedade onde se faz presente através de financiamento como habitação, saneamento e infraestrutura.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/secretaria-de-trabalho/assinado-contrato-para-desenvolvimento-e-sustentacao-do-fgts-digital" target="_blank">Portal eSocial</a> <br/>Publicada em 29/12/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

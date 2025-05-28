@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - Integração com eSocial: todos os empregadores já c - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>27/09/2023 | eSocial - Integração com eSocial: todos os empregadores já conseguem visualizar débitos no ambiente de testes do FGTS Digital</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Na manhã de sábado (23/09) foi finalizada com sucesso a integração com o eSocial para os demais grupos de empresas. A partir de agora, se o empregador transmitir qualquer evento periódico ou não periódico no eSocial terá os dados desse trabalhador compartilhado com o FGTS Digital.</p><p>A Secretaria de Inspeção do Trabalho-SIT, gestora do projeto FGTS Digital, destaca o profissionalismo e dedicação de todos os profissionais do SERPRO, fundamental para a segunda fase do ambiente de testes e que caminham junto com a SIT para a entrada em produção efetiva do sistema em janeiro/2024. Destaque também para a equipe da CAIXA que trabalha para integração entre o FGTS Digital e os seus sistemas, deixando tudo pronto para alimentar as contas dos trabalhadores.</p><p><a href="https://por-p-fgtsd.estaleiro.serpro.gov.br/login">Clique aqui</a> para acessar o ambiente de testes em Produção Limitada, que ficará disponível até o dia 10/11/2023. Aproveite esse período para ajustar processos internos em sua empresa e ficar preparado para a substituição que faremos a partir de janeiro/2024.</p><p>Utilização dos dados reais transmitidos para o eSocial.</p><ul>
+<li>Geração de guias simuladas e conhecimento de outras funcionalidades do FGTS DIGITAL.</li>
+<li>Início do serviço de atendimento ao empregador.</li>
+<li>Oportunidade para as empresas verificarem se as informações de bases de cálculo do FGTS geradas no eSocial estão de acordo com os recolhimentos atuais efetuados via GFIP/CAIXA.</li>
+<li>Atenção principal nas incidências das verbas/rubricas utilizadas e funcionamento do totalizador do FGTS (S-5003).</li>
+<li>Se o empregador encontrar divergências nos valores devidos de FGTS entre seu sistema de gestão de folha e o FGTS Digital, deverá verificar inicialmente todas as rubricas declaradas, sejam elas de vencimento, desconto ou informativas. Deverá corrigir as incidências em cada rubrica e reenviar os eventos de remuneração para cada trabalhador, para que os totalizadores do FGTS sejam processados novamente.</li>
+<li>Ajuste nos processos internos das empresas para realizar o recolhimento pelo novo canal.</li>
+<li>Durante esse período, os recolhimentos continuarão sendo realizados via guias GRF/GRRF geradas pelo Conectividade Social/Caixa.</li>
+</ul><p>É fundamental que os usuários do sistema testem as funcionalidades e ferramentas já disponibilizadas, em especial: a geração de guias e a simulação de pagamentos. As informações de vínculo e de remuneração que forem prestadas no ambiente do eSocial irão refletir no FGTS Digital. Para concluir o teste de recolhimento do FGTS, é preciso gerar guias e simular o pagamento. Com isso, o empregador conseguirá entender alguns procedimentos necessários para cumprir com sua obrigação de recolhimento do FGTS.</p><p>Lembre-se que, neste momento de testes, o FGTS Digital está integrado ao ambiente de produção do eSocial. Portanto, as informações declaradas ao esocial devem refletir a realidade.</p><p>Além de ser um período de testes para os empregadores, este momento também será de aprendizado para o próprio sistema FGTS Digital. Será possível localizar eventuais problemas e fazer os ajustes necessários sem o impacto na arrecadação real do FGTS.</p><p>Dessa forma, podemos ter alguns momentos de lentidão, indisponibilidade do sistema ou mesmo um erro em algumas funcionalidades. Não se preocupe! Nossa equipe técnica está acompanhando todo o comportamento do sistema para implementar as soluções necessárias.</p><p>O indicado nesse momento é tentar novamente mais tarde e acompanhar as notícias no portal <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">https://gov.br/fgtsdigital</a>. Caso queira, poderá acessar nossos <a href="https://form.omni.serpro.gov.br/upperScreenForm/3511">Canais de Atendimento</a> e registrar uma ocorrência.</p><ul>
+<li>O ambiente de produção limitada do FGTS Digital não terá uma carga inicial com toda a base de dados do eSocial.</li>
+<li>A primeira carga de dados será realizada individualmente para cada trabalhador da empresa, incluindo todo o histórico de eventos que o FGTS Digital necessita para realizar a gestão do FGTS.</li>
+<li>Terá início assim que o empregador enviar qualquer evento desse vínculo, a partir do início dos testes.</li>
+<li>Serão compartilhadas apenas as bases de cálculo do FGTS a partir da competência julho/23. Meses anteriores não aparecerão no FGTS Digital;</li>
+<li>Não será necessário fechar a folha para conseguir gerar guias. Dessa forma, à medida que a empresa enviar remunerações, poderá emitir guias de FGTS sobre essas bases de cálculos.</li>
+</ul><p>Exemplo 1 - Empresa do grupo 3 (início dos testes em 23/09/2023):</p><ul>
+<li>26/09/2023:<ul style="list-style-type: circle;"><li> Envia uma alteração cadastral do trabalhador “ABCDE”;</li><li>eSocial compartilha com o FGTS todos os dados do trabalhador “ABCDE”, inclusive as remunerações já transmitidas desde a competência julho/23;</li><li>Empregador conseguirá visualizar os dados cadastrais e contratuais desse trabalhador e simular emissão de guias da competência julho/23.</li></ul></li>
+<li>05/10/2023:<ul style="list-style-type: circle;"><li>Envia a remuneração do trabalhador “ABCDE” da competência setembro/23;</li><li>eSocial compartilha a remuneração com o FGTS Digital;</li><li>Empregador conseguirá visualizar os débitos de setembro/23, além dos que já estavam na base do sistema.</li></ul></li>
+</ul><p>Exemplo 2 - Empresa do grupo 2 (início dos testes em 23/09/2023):</p><ul>
+<li>Empresa possui 25 trabalhadores;</li>
+<li>Não enviou nenhum evento entre os dias 23/09/23 e o dia 14/10/2023;</li>
+<li>15/10/2023:<ul style="list-style-type: circle;"><li>Envia a remuneração da competência setembro/23 referente a 15 trabalhadores;</li><li>Empregador conseguirá visualizar os débitos de setembro/23 apenas desses 15 trabalhadores. Se já tiver transmitido as remunerações de julho/23 e agosto/23, também poderá simular guias dessas competências;</li><li>Conseguirá ver os dados contratuais apenas desses 15 trabalhadores. Os outros 10 trabalhadores não serão exibidos no FGTS Digital.</li></ul></li>
+</ul><ul>
+<li>No ambiente de testes do FGTS Digital, as guias mensais terão vencimento até o dia 07 do mês seguinte à competência.</li>
+<li>Essa data foi mantida para os empregadores poderem comparar as guias geradas pelo FGTS Digital com as guias geradas pelo SEFIP/Conectividade Social.</li>
+<li>Na entrada em produção do FGTS Digital, na competência JANEIRO/2024, as guias mensais terão vencimento até o dia 20 do mês seguinte à competência.</li>
+</ul><p>Ainda no período de PRODUÇÃO LIMITADA, os empregadores poderão antecipar o cadastramento de procurações para que terceiros possam acessar seus dados e representá-lo no FGTS Digital. Essas procurações já terão validade jurídica e serão utilizadas quando houver a substituição do recolhimento do FGTS pelo novo sistema. Trata-se de uma grande oportunidade para as empresas organizarem seus processos internos de pagamento e deixar o sistema pronto para os operadores que serão constituídos.</p><p>Todos os débitos mensais e rescisórios de FGTS que tenham como referência o mês de janeiro/2024 deverão utilizar o FGTS Digital como meio para recolhimento dos valores nas contas vinculadas dos trabalhadores. Débitos até a competência dezembro/2023 continuarão a ser recolhidos via sistema da Caixa (SEFIP/GRRF/Conectividade Social).</p><p>Veja alguns exemplos:</p><ul>
+<li>FGTS mensal da competência dezembro/2023: o recolhimento será realizado via SEFIP/CAIXA, com vencimento até o dia 07/01/2024.</li>
+<li>FGTS rescisório de um desligamento que ocorreu em 26/12/2023: o recolhimento será realizado via GRRF/CAIXA, com vencimento em 05/01/2024.</li>
+<li>FGTS mensal da competência janeiro/2024: o recolhimento será realizado via FGTS Digital, com vencimento até o dia 20/02/2024.</li>
+<li>FGTS rescisório de um desligamento que ocorreu em 02/01/2024: o recolhimento será realizado via FGTS Digital, com vencimento até o dia 12/01/2024.</li>
+</ul><p>Esses empregadores continuarão a recolher o FGTS juntamente com o DAE mensal gerado pelo eSocial. Apenas o FGTS Rescisório será recolhido pelo FGTS Digital, em substituição à GRRF gerada pelo Conectividade Social. Dessa forma, se o MEI ou o SE demitir um trabalhador a partir de 01/01/2024 por um motivo de desligamento que gere direito ao saque do FGTS, deverá registrar a rescisão no eSocial e acessar o FGTS Digital para gerar a guia com os valores de FGTS incidentes sobre o mês da rescisão, 13º proporcional, aviso prévio indenizado e a multa do FGTS (40% ou 20%). Além disso, no mês do desligamento esses empregadores ainda terão que emitir o DAE no eSocial para recolhimento da contribuição previdenciária (INSS).</p><p>Continuará recolhendo o FGTS mensal e rescisório utilizando a guia DAE gerada pelo eSocial. O empregador doméstico utilizará o FGTS Digital futuramente apenas para requerer parcelamentos de débitos do FGTS.</p><ul>
+<li>Serviço de Atendimento aos Usuários estará disponível durante o período de testes e contempla os seguintes canais:<ul style="list-style-type: circle;"><li>Formulário web (disponível a partir do dia 19/08/23) – empregador poderá descrever problemas de comportamento do sistema, dúvidas e sugestões etc.</li><li>Chatbot com atendimento humano, caso as opções automatizadas não sejam suficientes para solução do problema (disponível a partir do dia 25/08/23).</li><li>Whatsapp com atendimento humano (disponível a partir do dia 25/08/23).</li><li>Dúvidas sobre lançamentos de bases de cálculo no eSocial devem ser direcionadas para o canal próprio desse sistema, via telefone 0800 730 0888 ou <a href="https://www.gov.br/esocial/pt-br/canais_atendimento">https://www.gov.br/esocial/pt-br/canais_atendimento</a>.</li></ul></li>
+<li>Os empregadores também encontrarão um vasto material de suporte para conhecer melhor o sistema:<ul style="list-style-type: circle;"><li>Portal de notícias: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">www.gov.br/fgtsdigital</a></li><li>Perguntas Frequentes: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes">https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes</a></li><li>Manual do Usuário: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/manual-e-documentacao-tecnica">https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/manual</a></li><li>Vídeos FGTS Digital na Prática: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/videos">https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/videos</a></li></ul></li>
+</ul><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/integracao-com-esocial-todos-os-empregadores-ja-conseguem-visualizar-debitos-no-ambiente-de-testes-do-fgts-digital">Portal eSocial</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/integracao-com-esocial-todos-os-empregadores-ja-conseguem-visualizar-debitos-no-ambiente-de-testes-do-fgts-digital' target='_blank'>Portal eSocial</a> <br>Publicada em 14/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

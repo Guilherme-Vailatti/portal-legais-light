@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Lei nº 14.553/2023 - Alterados artigos sobre o - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/04/2023 | Trabalhista - Lei nº 14.553/2023 - Alterados artigos sobre o Estatuto da Igualdade Racial no mercado de trabalho</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada no Diário Oficial da União, na data de hoje (24.04.2023), a Lei nº 14.453/2023, a qual altera os arts. 39 e 49 da Lei nº 12.288 , de 20 de julho de 2010 (Estatuto da Igualdade Racial), para determinar procedimentos e critérios de coleta de informações relativas à distribuição dos segmentos étnicos e raciais no mercado de trabalho.</p><p>Assim, os registros administrativos direcionados a órgãos e entidades da Administração Pública, a empregadores privados e a trabalhadores que lhes sejam subordinados conterão campos destinados a identificar o segmento étnico e racial a que pertence o trabalhador retratado no respectivo documento, com utilização do critério da autoclassificação em grupos previamente delimitados.</p><p>E sem prejuízo de extensão obrigatória a outros documentos ou registros de mesma natureza identificados em regulamento, será aplicado tal procedimento a:</p><p>Por fim, a Fundação Instituto Brasileiro de Geografia e Estatística (IBGE) realizará, a cada 5 (cinco) anos, pesquisa destinada a identificar o percentual de ocupação por parte de segmentos étnicos e raciais no âmbito do setor público, a fim de obter subsídios direcionados à implementação da Política Nacional de Promoção da Igualdade Racial (PNPIR).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/Lei/L14553.htm" target="_blank">Lei nº 14.553/2023</a> <br/>Publicada em 24/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

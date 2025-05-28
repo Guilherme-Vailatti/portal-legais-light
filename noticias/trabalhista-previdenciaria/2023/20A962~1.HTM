@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista/Previdenciária - ADE CORAT nº 13/2023 - Discipli - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>30/11/2023 | Trabalhista/Previdenciária - ADE CORAT nº 13/2023 - Disciplinadas informações/recolhimentos referentes a reclamações trabalhistas no eSocial/DCTFWeb, com o fim da GFIP</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Ato Declaratório Executivo Corat nº 13/2023 ratificou (*) que fica dispensada a apresentação da Guia de Recolhimento do FGTS e Informações à Previdência Social (GFIP) de que trata o art. 77 da Instrução Normativa RFB nº 2.110/2022, nas situações em que as decisões condenatórias ou homologatórias proferidas pela Justiça do Trabalho se tornarem definitivas a partir de 1º de outubro de 2023.</p><p>(*) Lembra-se que desde o mês de outubro/2023, a DCTFWeb substituiu a GFIP como instrumento de confissão de dívida e de constituição do crédito previdenciário e para terceiros, decorrentes de decisões condenatórias ou homologatórias proferidas pela Justiça do Trabalho (Instrução Normativa RFB nº 2.005/2021, art. 19, V).</p><p>Assim, as contribuições previdenciárias decorrentes das mencionadas decisões judiciais, cujos fatos geradores sejam referentes aos períodos de apuração:</p><p>Eventual pedido de parcelamento das contribuições previdenciárias decorrentes de decisões condenatórias ou homologatórias proferidas pela Justiça do Trabalho:</p><p>Lançamento de Débito Confessado (LDC) previsto no § 1º do art. 5º da Instrução Normativa RFB nº 2.063/2022, nas hipóteses:</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-corat-n-13-de-27-de-novembro-de-2023-526267279" target="_blank">DOU</a> e <a href="https://www.iobonline.com.br/index/login" target="_blank">IOB Online</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-corat-n-13-de-27-de-novembro-de-2023-526267279' target='_blank'>Ato Declaratório Executivo CORAT nº 13/2023</a> <br>Publicada em 28/11/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

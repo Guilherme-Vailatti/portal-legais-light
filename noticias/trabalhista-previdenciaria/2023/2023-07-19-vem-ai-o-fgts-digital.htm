@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Vem aí o FGTS Digital! - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/07/2023 | eSocial - Vem aí o FGTS Digital!</h1>
+</div>
+<div class="noticia-corpo">
+<p>Está prevista para janeiro de 2024 a implementação do FGTS Digital. O cronograma prevê uma etapa de testes (produção limitada – ambiente simulado das funcionalidades), que será também um período para os empregadores já irem se adaptando à nova sistemática de recolhimento do FGTS. Todos os empregadores que são obrigados a recolher o FGTS devem ficar atentos às novas regras e buscar participar do período de testes. A previsão é que o período de testes se inicie 16/08/2023 e termine 03/11/2023.</p><p>A nova sistemática a ser inaugurada com o FGTS Digital trará mudanças significativas na forma de cumprimento da obrigação de recolhimento do FGTS e na cultura dos empregadores, portanto, há necessidade de atenção redobrada para alguns detalhes, de forma a se evitar transtornos com a mudança que se aproxima.</p><p>Conheça o portal do novo sistema em <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">gov.br/fgtsdigital</a>.</p><p>O FGTS Digital é um conjunto de sistemas informatizados que se propõe a gerenciar os diversos processos relacionados ao cumprimento da obrigação de recolhimento do FGTS. Pode-se dizer que é uma solução tecnológica que busca facilitar o cumprimento dessa obrigação pelos empregadores e assegurar que os valores devidos aos trabalhadores sejam efetivamente depositados em suas contas vinculadas.</p><p>Através do FGTS Digital os empregadores poderão emitir guias rápidas e personalizadas, consultar extratos, solicitar compensação ou restituição de valores, contratar parcelamentos, tudo de forma simples e ágil.</p><p><b>Alteração na data de vencimento</b> - com a edição da Lei nº 14.438/2022 ficou confirmada a alteração do prazo de recolhimento do FGTS mensal para até o vigésimo dia do mês seguinte ao da competência. Mas atenção, esta alteração legislativa produzirá efeitos apenas para os fatos geradores ocorridos a partir da data de início do FGTS Digital. Os empregadores devem ficar atentos ao momento em que essa mudança vai ocorrer e devem adaptar seus processos, rotinas e sistemas à nova data de vencimento.</p><p><b>Competências anteriores ao FGTS Digital</b> - Outro ponto de atenção é que, para os fatos geradores de FGTS que ocorreram antes da efetiva implantação do FGTS Digital, os empregadores devem cumprir suas obrigações através do sistema Conectividade Social (CAIXA), assim como já fazem hoje. Portanto, haverá um ponto de corte. Os valores devidos de competências anteriores à implementação do FGTS Digital devem ser recolhidos pelo sistema conectividade da CAIXA (via SEFIP) e o valores devidos a partir da competência de implantação do FGTS Digital deverão ser recolhidos via FGTS Digital.</p><p><b>Recolhimento via PIX</b> - com a operacionalização do FGTS Digital, o recolhimento dos valores devidos ao Fundo será feito exclusivamente através do PIX, meio de pagamento recentemente criado pelo Banco Central. Os boletos gerados terão um QR Code para leitura e pagamento direto no aplicativo ou site da instituição financeira do empregador. Assim, as empresas devem estar com seus sistemas bancários preparados para utilização desse canal, inclusive no que diz respeito aos limites de pagamento via PIX.</p><p><b>eSocial como fonte de dados</b> - o FGTS Digital será alimentado de modo praticamente simultâneo pelas informações transmitidas ao ambiente do eSocial. De modo que, o valor devido de FGTS vai ser gerado com base nas informações prestadas pelos empregadores no sistema de escrituração eSocial. Portanto, é preciso atentar para as informações que impactam na base de cálculo do FGTS e para as que caracterizam o vínculo do trabalhador: dados de lotação, tipos de débito (mensal ou rescisório), eventos de remuneração (rubricas que incidem FGTS), etc.</p><p><b>Impactos na geração do Certificado de Regularidade do FGTS</b> - a partir do início de operação do FGTS Digital, o não recolhimento dos valores devidos no prazo do vencimento poderá gerar impacto imediato na emissão da CRF. Assim, é importante que o empregador fique atento e cumpra sua obrigação de recolhimento de FGTS no prazo, para evitar que isso afete a sua regularidade junto ao Fundo.</p><p><b>Fase de Produção Limitada (fase de testes e adaptação)</b> - A etapa de Produção Limitada, com previsão para ocorrer no período de 16/08/2023 a 03/11/2023, é um período de testes extremamente importante para os empregadores. Será uma grande oportunidade para empregadores efetuarem os cadastros necessários, conhecerem os sistemas, suas funcionalidades e ferramentas e simularem situações (de geração de guias, pagamentos, parcelamentos etc.). Tudo isso buscando uma transição tranquila, com período de adaptação para os empregadores.</p><p>No ambiente de Produção Limitada, embora seja um ambiente simulado (período de testes), o cadastro realizado pelo empregador no Portal do FGTS Digital utilizará as credenciais seguras do Portal Gov.br e já se tornará válido para quando o FGTS Digital estiver efetivamente implementado.</p><p>Além do mais, os empregadores poderão cadastrar procurações (no SPE – Sistema de Procurações Eletrônicas) e outorgar poderes para que seus mandatários possam acessar o FGTS Digital e realizar procedimentos. Importante registrar que as procurações também cadastradas nesse ambiente serão definitivas, já terão valor jurídico e produzirão todos os efeitos necessários para realização de procedimentos no FGTS Digital, não sendo necessário repetir a operação após a entrada em operação definitiva.</p><p>Na fase de Produção Limitada, vai ser possível realizar os testes de funcionamento do FGTS Digital, já utilizando os dados reais declarados pelo empregador no eSocial. Por se tratar de um ambiente de testes, as guias geradas pelo FGTS Digital não terão validade legal, mas o empregador poderá fazer a simulação dos pagamentos, acompanhando o processo desde o envio dos dados ao eSocial até a quitação da obrigação de recolhimento.</p><p>Por último, é preciso destacar que durante o período de testes (Produção Limitada), os empregadores devem cumprir suas obrigações para com o FGTS por meio do Conectividade Social (sistema CAIXA).</p><p><b>Fontes de Informação</b> - a Secretaria da Inspeção do Trabalho disponibilizou o Portal do FGTS Digital (site oficial), onde podem ser encontradas informações, notícias, orientações e manuais relacionados ao FGTS Digital, inclusive uma série de vídeos denominados FGTS Digital na Prática (tutoriais práticos com as principais funcionalidades do novo sistema). É possível também acessar informações a respeito do FGTS Digital por meio do canal do YouTube da ENIT - Escola Nacional da Inspeção do Trabalho (lives). Segue logo abaixo links de portais, canais e notícias onde podem ser encontradas informações sobre o FGTS Digital:</p><ul>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital">PORTAL DO FGTS DIGITAL - gov.br/fgtsdigital</a>
+</li>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/conheca-o-fgts-digital">CONHEÇA O FGTS DIGITAL</a>
+</li>
+<li><a href="https://www.gov.br/trabalho-e-empregopt-br/servicos/empregador/fgtsdigital/conheca-o-fgts-digital/origem-da-base-de-dados">ESOCIAL COMO ORIGEM DA BASE DE DADOS</a>
+</li>
+<li><a href="https://www.gov.br/trabalho-e-empregopt-br/servicos/empregador/fgtsdigital/conheca-o-fgts-digital/fgts-digital-recolhimento-via-pix">FGTS DIGITAL - RECOLHIMENTO VIA PIX</a>
+</li>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/noticias/fgts-2013-novo-prazo-de-recolhimento">ALTERAÇÃO DO VENCIMENTO
+</a>
+</li>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/perguntas-frequentes">FAQ – PERGUNTAS FREQUENTES</a>
+</li>
+<li><a href="https://www.youtube.com/watch?v=AZyd7TyCbzU&amp;list=PLXknSy3x3itlkiPOv5AV9Y9jjD8usiHlY">ENIT - Escola Nacional da Inspeção do Trabalho (canal no youtube.com)
+</a>
+</li>
+</ul><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/vem-ai-o-fgts-digital" target="_blank">Portal eSocial</a> <br/>Publicada em 14/07/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

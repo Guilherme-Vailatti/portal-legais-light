@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - Fim do código de acesso: a partir de 12 de junho,  - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>07/06/2023 | eSocial - Fim do código de acesso: a partir de 12 de junho, será obrigatório o acesso do eSocial via gov.br nível ouro ou prata</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p> O eSocial passará a ser acessado unicamente por meio do login via gov.br níveis ouro ou prata a partir de 12 de junho. O acesso via login único do gov.br traz camadas extras de segurança para os usuários do eSocial.</p><p>A descontinuação do código de acesso vem sendo realizada em etapas, desde dezembro/22, como <a href="https://www.gov.br/esocial/pt-br/noticias/fim-do-login-por-codigo-de-acesso-sera-realizado-por-fases">já noticiado anteriormente</a>. A retirada definitiva ocorrerá no próximo dia 12. Assim, os usuários que ainda não possuem o login via gov.br níveis ouro ou prata devem providenciá-lo, uma vez que não mais conseguirão acessar o módulo web do eSocial, inclusive o doméstico.</p><p>Isso significa que a folha de maio/23, com vencimento no dia 7 de junho, será a última folha que os usuários conseguirão encerrar utilizando o login por código de acesso. A partir da folha de junho/23, que vence em 07 de julho, os usuários somente conseguirão realizar o encerramento se acessarem por meio do gov.br.</p><p>Se você ainda não providenciou seu login do gov.br níveis ouro ou prata, esta é a sua última chance. Não deixe para a última hora. A folha de maio/23 será a última que poderá ser fechada com login por código de acesso.</p><p>Para verificar como se cadastrar ou aumentar seu nível de segurança para ouro ou prata no gov.br, acesse o site <a href="https://faq-login-unico.servicos.gov.br/en/latest/_perguntasdafaq/contaacesso.html">Conta de acesso</a>.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/fim-do-codigo-de-acesso-a-partir-de-12-de-junho-sera-obrigatorio-o-acesso-do-esocial-via-gov-br-nivel-ouro-ou-prata">Portal eSocial
+</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/fim-do-codigo-de-acesso-a-partir-de-12-de-junho-sera-obrigatorio-o-acesso-do-esocial-via-gov-br-nivel-ouro-ou-prata' target='_blank'>Portal eSocial
+</a> <br>Publicada em 02/06/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

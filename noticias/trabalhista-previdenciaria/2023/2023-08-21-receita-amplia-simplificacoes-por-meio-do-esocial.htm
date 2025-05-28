@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial  - Receita amplia simplificações por meio do eSocial - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/08/2023 | eSocial  - Receita amplia simplificações por meio do eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi aprovada, com o intuito de intensificar a simplificação no cumprimento das obrigações acessórias, versão S-1.2 do leiaute e do Manual de Orientação do Sistema Simplificado de Escrituração Digital das Obrigações Previdenciárias, Trabalhistas e Fiscais (eSocial).</p><p>A principal novidade desta versão é a inclusão das informações relativas ao Imposto sobre a Renda Retido na Fonte (IRRF) decorrentes de rendimentos do trabalho. Essa iniciativa abre caminho para a substituição da Declaração do Imposto sobre a Renda Retido na Fonte (Dirf).</p><p>As alterações presentes nessa versão também permitirão que a Justiça do Trabalho exerça a competência prevista no § 2º do art. 39 da Consolidação das Leis do Trabalho (CLT), relativa à anotação de ofício dos dados relativos ao contrato de trabalho na Carteira de Trabalho Digital, na hipótese de inércia do empregador.</p><p>Para verificar o texto da portaria na íntegra, acesse <a href="https://www.in.gov.br/en/web/dou/-/portaria-conjunta-rfb/mps/mte-n-44-de-11-de-agosto-de-2023-503776178" target="_blank">Portaria Conjunta RFB/MPS/MTE nº 44/2023</a>.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-conjunta-rfb/mps/mte-n-44-de-11-de-agosto-de-2023-503776178" target="_blank">Portaria Conjunta RFB/MPS/MTE nº 44/2023</a> <br/>Publicada em 17/08/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Ambiente de testes (Produção Limitada) terá p - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/11/2023 | FGTS Digital - Ambiente de testes (Produção Limitada) terá parada técnica para implantação de nova versão</h1>
+</div>
+<div class="noticia-corpo">
+<p>O ambiente de testes em Produção Limitada do FGTS Digital terá uma <b>parada técnica entre os dias 27/11/2023 até o dia 03/12/2023</b> para implantação de novas funcionalidades e adaptação aos leiautes da versão S-1.2 do eSocial. Durante esse período o sistema ficará fora do ar, sendo disponibilizado novamente a partir do dia 04/12/2023.</p><p>Haverá limpeza total da base de dados do sistema durante o processo de implantação da nova versão. Dessa forma, os empregadores conseguirão testar novamente a emissão de guias que já tenham sido emitidas anteriormente nesse ambiente de testes. Serão povoados os dados e débitos de trabalhadores que tenham algum evento transmitido no eSocial a partir do dia 27/11/2023. Serão carregados os débitos desde a competência julho/2023 para fins de emissão de guia.</p><p>O cadastro do empregador, bem como as procurações registradas no sistema continuarão válidos e não serão apagados. Apenas os trabalhadores e débitos serão limpos no ambiente de testes.</p><ul>
+<li>O ambiente de produção limitada do FGTS Digital não terá uma carga inicial com toda a base de dados do eSocial.</li>
+<li>A primeira carga de dados será realizada individualmente para cada trabalhador da empresa, incluindo todo o histórico de eventos que o FGTS Digital necessita para realizar a gestão do FGTS.</li>
+<li>Nessa segunda versão do ambiente de testes, terá início assim que o empregador enviar qualquer evento desse vínculo, a partir do dia 27/11/2023, que poderão ser visualizados no ambiente de testes no dia 04/12/2023 em diante.</li>
+<li>Serão compartilhadas apenas as bases de cálculo do FGTS a partir da competência julho/23. Meses anteriores não aparecerão no FGTS Digital;</li>
+<li>Não será necessário fechar a folha para conseguir gerar guias. Dessa forma, à medida que a empresa enviar remunerações, poderá emitir guias de FGTS sobre essas bases de cálculos.</li>
+</ul><p>Exemplo 1 (válido para todas as empresas):</p><ul>
+<li>05/12/2023:<ul style="list-style-type: circle;"><li>Envia uma alteração cadastral do trabalhador “ABCDE”;</li><li>eSocial compartilha com o FGTS todos os dados do trabalhador “ABCDE”, inclusive as remunerações já transmitidas desde a competência julho/23;</li><li>Empregador conseguirá visualizar os dados cadastrais e contratuais desse trabalhador e simular emissão de guias a partir da competência julho/23.</li></ul></li>
+<li>15/12/2023:<ul style="list-style-type: circle;"><li>Envia a remuneração do trabalhador “ABCDE” da competência novembro/23;</li><li>eSocial compartilha a remuneração com o FGTS Digital;</li><li>Empregador conseguirá visualizar os débitos de novembro/23, além dos que já estavam na base do sistema.</li></ul></li>
+</ul><p>Exemplo 2 (válido para todas as empresas):</p><ul>
+<li>Empresa possui 40 trabalhadores;</li>
+<li>Não enviou nenhum evento entre os dias 27/11/2023 e o dia 10/12/2023;</li>
+<li>11/12/2023:<ul style="list-style-type: circle;"><li>Envia a remuneração da competência novembro/23 referente a 25 trabalhadores;</li><li>Empregador conseguirá visualizar os débitos de novembro/23 apenas desses 25 trabalhadores. Se já tiver transmitido as remunerações de outros meses (desde julho/23), também poderá simular guias dessa competência;</li><li>Conseguirá ver os dados contratuais apenas desses 25 trabalhadores. Os outros 15 trabalhadores não serão exibidos no FGTS Digital.</li></ul></li>
+</ul><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/noticias/ambiente-de-testes-producao-limitada-tera-parada-tecnica-para-implantacao-de-nova-versao" target="_blank">Ministério do Trabalho e Emprego</a> <br/>Publicada em 24/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

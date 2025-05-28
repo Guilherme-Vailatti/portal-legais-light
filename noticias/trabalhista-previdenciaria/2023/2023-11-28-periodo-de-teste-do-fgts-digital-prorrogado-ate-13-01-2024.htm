@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Período de teste do FGTS Digital prorrogado a - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/11/2023 | FGTS Digital - Período de teste do FGTS Digital prorrogado até 13/01/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ministério do Trabalho e Emprego convoca todos os empregadores a participarem do Período de Testes do FGTS Digital (Produção Limitada), que foi prorrogado até <b>13/01/2024</b>.</p><p>É possível gerar guias rápidas e parametrizadas (personalizadas). O valor da indenização compensatória (multa de 40%) pode ser simulado por meio da funcionalidade “Histórico de Remuneração para Fins Rescisórios”. Após a geração de guias, é importante que os pagamentos sejam simulados por meio da opção “Simular Pagamento”.</p><p>Além disso, foi disponibilizada a ferramenta de “Consultas do Empregador”, que fornece ao usuário uma visão gerencial dos pagamentos realizados e das pendências ou irregularidades existentes.</p><p>As informações de vínculo e de remuneração que forem prestadas no ambiente do eSocial irão refletir no FGTS Digital. É fundamental que os usuários do sistema testem as funcionalidades e ferramentas já disponibilizadas, em especial: <b>a geração de guias e a simulação de pagamentos</b>. Com isso, o empregador conseguirá entender alguns procedimentos necessários para cumprir com sua obrigação de recolhimento do FGTS.</p><p><b>O período de testes terminará no dia 13 de janeiro de 2024. Portanto, é primordial que os empregadores aproveitem essa oportunidade para conhecerem a nova sistemática e adaptarem suas rotinas de trabalho</b>. Os testes de uso do sistema podem garantir aos empregadores uma transição tranquila e evitar dificuldades ou problemas quando houver a substituição do procedimento de geração de guias de recolhimento de FGTS em março de 2024.</p><p>Importante registrar que quanto mais usuários testarem o sistema e suas funcionalidades, maior será a possibilidade de se identificarem oportunidades de melhorias no novo processo de recolhimento do FGTS, que terá início em março de 2024, conforme novo <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/conheca-o-fgts-digital/cronograma-de-implantacao" target="_blank">cronograma de implantação do FGTS Digital</a>.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/noticias/periodo-de-teste-do-fgts-digital-prorrogado-ate-13-01-2024#:~:text=O período de testes terminará,adaptarem suas rotinas de trabalho." target="_blank">Portal MTE</a> <br/>Publicada em 22/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

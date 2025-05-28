@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>DCTFWeb - Receita Federal prorroga para julho/2023 prazo de  - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>14/04/2023 | DCTFWeb - Receita Federal prorroga para julho/2023 prazo de obrigatoriedade para o envio de informações de processos trabalhistas por meio da DCTFWeb</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>De acordo com <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.139-de-30-de-marco-de-2023-474126043">Instrução Normativa RFB Nº 2.139</a>, de 30 de março de 2023, em caso de confissão de dívida relativa a contribuições previdenciárias e contribuições sociais devidas a terceiros em decorrência de decisões condenatórias ou homologatórias proferidas pela justiça do trabalho, a apresentação da DCTFWeb torna-se obrigatória para fatos geradores ocorridos a partir de julho de 2023.</p><p>A prorrogação atende também às solicitações apresentadas por entidades e associações, sob a justificativa de que a implementação definitiva da nova sistemática de declaração, em que a GFIP será substituída pela DCTFWeb, demanda ajustes nos sistemas informatizados.</p><p>Assim, os contribuintes que estão obrigados a apresentar a DCTFWeb terão mais tempo para adequação dos sistemas e correto envio da declaração.</p><p>A DCTFWeb substituiu a Guia de Recolhimento do Fundo de Garantia do Tempo de Serviço e Informações à Previdência Social (GFIP) como instrumento de confissão de dívida e de constituição do crédito previdenciário.</p><p>Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/abril/receita-federal-prorroga-para-julho-2023-prazo-de-obrigatoriedade-para-o-envio-de-informacoes-de-processos-trabalhistas-por-meio-da-dctfweb">Receita Federal</a><![CDATA[ ]]></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.139-de-30-de-marco-de-2023-474126043' target='_blank'>Instrução Normativa RFB Nº 2.139/2023</a> <br>Publicada em 24/03/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

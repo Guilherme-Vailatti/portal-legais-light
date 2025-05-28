@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Lei nº 14.434/2022 - Piso Nacional de Enfermag - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/10/2023 | Trabalhista - Lei nº 14.434/2022 - Piso Nacional de Enfermagem - Entenda como será pago</h1>
+</div>
+<div class="noticia-corpo">
+<p>A atual gestão do Governo Federal assumiu o compromisso de efetivar o Piso Nacional da Enfermagem. Neste ano, os profissionais receberão nove parcelas retroativas a maio de 2023. Para os servidores vinculados à folha de pagamento do Ministério da Saúde, o piso foi implementado a partir do contracheque de agosto de 2023.</p><p>Em relação a estados, municípios e Distrito Federal, foi realizado com êxito um amplo processo de levantamento de dados dos profissionais da enfermagem junto aos estados e municípios, o que permitirá uma apuração mais precisa dos valores a serem repassados a cada ente federativo.</p><p>Conforme as orientações da Advocacia Geral da União (AGU), o cálculo do piso será aplicado considerando o vencimento básico e as gratificações de caráter geral, fixas e permanentes, excluindo aquelas de cunho pessoal, variável ou transitório.</p><p>A metodologia de repasse aos entes e o monitoramento da implementação do piso em nível nacional foram resultados de discussões em grupos de trabalho com a participação de diferentes pastas (Ministério da Saúde, Ministério da Gestão e Inovação em Serviços Públicos, Ministério do Planejamento e Orçamento, Advocacia-Geral da União e Controladoria-Geral da União), sob supervisão dos ministérios que integram a estrutura da Presidência da República e coordenação da Casa Civil.</p><p>O Governo Federal reafirma a importância dos trabalhadores do SUS e reitera seu compromisso em garantir a implementação do piso para os profissionais da enfermagem, sejam eles federais, estaduais, municipais ou que atuem em estabelecimentos que atendam pelo menos 60% dos seus pacientes pelo SUS.</p><p>Para verificar as informações na íntegra, acesse a <a href="https://www.gov.br/saude/pt-br/assuntos/noticias/2023/agosto/arquivos/cartilha_piso-enfermagem_2023.pdf">Cartilha Piso Salarial</a>.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/lei-n-14.434-de-4-de-agosto-de-2022-420535072" target="_blank">Lei nº 14.434/2022</a> <br/>Publicada em 05/08/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

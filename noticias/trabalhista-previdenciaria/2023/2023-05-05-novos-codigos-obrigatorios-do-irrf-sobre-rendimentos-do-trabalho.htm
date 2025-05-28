@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Novos códigos obrigatórios do IRRF sobre rendiment - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2023 | DCTFWeb - Novos códigos obrigatórios do IRRF sobre rendimentos do trabalho</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir do período de apuração (PA) de maio de 2023 (mês de pagamento), os valores de retenção de Imposto de Renda decorrentes de rendimentos do trabalho passarão a ser declarados na DCTFWeb e recolhidos por meio de DARF Numerado emitido pela própria declaração. Assim, tratando-se de IR retido sobre pagamento efetuado a partir de 01/05/2023, o eSocial enviará essa retenção para a DCTFWeb deste PA (05/2023), quando for feito o encerramento da folha. A partir daí, será declarado e pago no portal da DCTFWeb</p><p>Os seguintes códigos de receita passarão a ser declarados na DCTFWeb:</p><p style="font-weight: bold;">Recolhimento do Imposto de Renda retido de beneficiários residentes no exterior</p><p>Para os casos de retenção de imposto de renda de rendimentos atribuídos a beneficiários no exterior - Código de Receita 0473-01, em que o vencimento do tributo é diário (data de ocorrência do fato gerador) a geração do DARF numerado poderá ser efetuada no sistema SicalcWeb, disponível <a href="https://sicalc.receita.economia.gov.br/sicalc/principal" target="_blank">neste link</a>.</p><p>Nesses casos, antes de o contribuinte efetuar a confissão da dívida na DCTFWeb, poderá importar os DARF já pagos, de forma a abater os débitos declarados, evitando pagamentos em duplicidade. Outra opção é retirar o Código de Receita 0473-01 na edição do DARF, antes de emiti-lo na aplicação DCTFWeb.</p><p>Para mais informações, <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb" target="_blank">consulte aqui</a> o Manual de Orientação da DCTFWeb.</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/maio/dctfweb-2013-imposto-de-renda-retido-na-fonte-sobre-rendimentos-do-trabalho" target="_blank">Receita Federal</a> <br/>Publicada em 03/05/2022</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - RAIS ano-base 2022 para os entes que fazem parte d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/06/2023 | eSocial - RAIS ano-base 2022 para os entes que fazem parte do grupo 4 do eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p> O Ministério do Trabalho e Emprego informa que para os entes que fazem parte do grupo 4 do eSocial (todos os órgãos públicos e organizações internacionais), o prazo para entrega da declaração da RAIS ano-base 2022 (GDRAIS 2022) e de anos-anteriores (pelo GDRAIS Genérico), conforme Manual de Orientação da RAIS, se encerrou no dia 10/05/2023.</p><p>A partir do dia 11/05/2023, não haverá, para nenhum grupo de declarantes, recepção da RAIS Anual usando o programa GDRAIS. Isso significa que o cumprimento da obrigação da RAIS, <b>a partir do ano base 2023</b>, será aferido unicamente a partir da extração dos eventos informados pelos declarantes no sistema eSocial.</p><p>Dessa forma esclarecemos que é de suma importância todos os estabelecimentos públicos e privados garantirem o preenchimento completo da informação de seus trabalhadores no eSocial para todo o ano de 2023, sob pena de multa aos declarantes e perda de acesso a benefícios como o do Abono Salarial para os trabalhadores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/nota-tecnica-s-1-1-02-2023.pdf" target="_blank">Portal eSocial
+</a> <br/>Publicada em 30/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - IN RFB nº 2.128/2023 - Substituição da GFIP a part - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/02/2023 | DCTFWeb - IN RFB nº 2.128/2023 - Substituição da GFIP a partir de abril/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi alterada a <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/gp/2021/2021-02-01-in-rfb-n-2005-2021-apresentacao-da-dctf-dctfweb-2021.htm" target="_blank">Instrução Normativa RFB nº 2.005/2021</a>, referente a apresentação da DCTFWeb.</p><p>Assim, a DCTFWeb, a qual substitui a Guia de Recolhimento do Fundo de Garantia do Tempo de Serviço e Informações à Previdência Social (GFIP) como instrumento de confissão de dívida e de constituição do crédito previdenciário, terá <b>obrigatória a sua entrega a partir do mês de abril de 2023</b>, em caso de confissão de dívida relativa a contribuições previdenciárias e contribuições sociais devidas, por lei, a terceiros em decorrência de decisões condenatórias ou homologatórias proferidas pela justiça do trabalho.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.128-de-23-de-janeiro-de-2023-460123574" target="_blank">Instrução Normativa RFB nº 2.128/2023</a> <br/>Publicada em 26/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

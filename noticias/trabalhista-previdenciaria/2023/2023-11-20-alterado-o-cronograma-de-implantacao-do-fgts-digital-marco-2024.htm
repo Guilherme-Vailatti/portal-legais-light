@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>FGTS Digital - Alterado o cronograma de implantação do FGTS  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/11/2023 | FGTS Digital - Alterado o cronograma de implantação do FGTS Digital: MARÇO/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>Atendendo solicitação de diversas instituições patronais, que solicitaram mais prazo para realizar testes no sistema e ajustes em processos internos, a Secretaria de Inspeção do Trabalho prorrogou a entrada em produção do FGTS Digital para o dia 01/03/2024. Calamidade decretada em municípios do Rio Grande do Sul, bem como a substituição em janeiro/24 de outras obrigações acessórias pelo eSocial também contribuíram para a prorrogação.</p><p><b>ATUALIZAÇÃO EM 11/11/2023:</b> <a href="https://www.in.gov.br/en/web/dou/-/edital-n-4/2023-altera-o-edital-n-3/2023-que-divulga-o-cronograma-de-implantacao-do-fgts-digital-522343536" target="_blank">Publicado no DOU o edital SIT 004/2023</a>, com o novo cronograma.</p><p>A <b>data de implantação do FGTS Digital foi alterada para o dia 01/03/2024</b>. O Edital com a alteração do cronograma está previsto para ser publicado no Diário Oficial da União na próxima segunda-feira (13/11/2023).</p><p>O Ministério do Trabalho e Emprego realizou a alteração após receber quantidade expressiva de solicitações de empregadores para prorrogação da data de implantação do ambiente de produção e operação efetiva, a fim de minimizar impactos na sua rotina de processos de cumprimento de obrigações fiscais e trabalhistas decorrentes das recentes alterações normativas fiscais, e, ainda, de possibilitar-lhes maior período para teste do sistema.</p><p>A decretação do estado de calamidade pública decretada em alguns municípios do Rio Grande do Sul, que alterou o vencimento do FGTS para as competências de outubro/23 até janeiro/24, bem como a substituição em janeiro/24 de outras obrigações acessórias pelo eSocial contribuíram para essa decisão.</p><p>A Secretaria de Inspeção do Trabalho aproveitará esse prazo adicional para incluir melhorias e novas funcionalidades ao sistema.</p><p> </p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/servicos/empregador/fgtsdigital/noticias/alterado-o-cronograma-de-implantacao-do-fgts-digital-marco-2024" target="_blank">Portal MTE</a> <br/>Publicada em 24/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

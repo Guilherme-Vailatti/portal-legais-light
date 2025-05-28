@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Instrução Normativa RFB nº 2141 - Isenção de Impos - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/06/2023 | eSocial - Instrução Normativa RFB nº 2141 - Isenção de Imposto de Renda sobre Pensão Alimentícia</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2141, de 22 de maio de 2023, altera a Instrução Normativa RFB nº 1.500, de 29 de outubro de 2014, que dispõe sobre normas gerais de tributação relativas ao Imposto sobre a Renda das Pessoas Físicas.</p><p>Para verificar as alterações na íntegra, acesse publicação da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?naoPublicado=&amp;idAto=130822&amp;visao=anotado">Instrução Normativa RFB nº 2141 - 22/05/2023
+</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.141-de-22-de-maio-de-2023-485302288" target="_blank">Instrução Normativa RFB nº 2141 - 22/05/2023
+</a> <br/>Publicada em 24/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

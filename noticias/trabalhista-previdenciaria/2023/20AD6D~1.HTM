@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Portaria MTE nº 2.420/2023 - Disciplinada divu - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>12/07/2023 | Trabalhista - Portaria MTE nº 2.420/2023 - Disciplinada divulgação de informações sobre mercado de trabalho, declaradas pelos empregadores no eSocial</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Por meio da Portaria MTE nº 2.420/2023, foi definido que caberá ao Ministério do Trabalho e Emprego (MTE), no âmbito do Programa de Disseminação das Estatísticas do Trabalho (PDET), publicar mensalmente estatísticas consolidadas contendo informações sobre as movimentações ocorridas no mercado de trabalho formal, <b>declaradas pelos empregadores no eSocial</b>.</p><p>Referida publicação mensal ocorrerá no sítio eletrônico do PDET, disponível no portal gov.br. A divulgação de estatísticas consolidadas anteriormente ao eSocial, captadas unicamente pelo sistema CAGED *, passará a se denominar <b>Novo CAGED</b>.</p><p style="font-size: 10pt;"><b>* Lembra-se que a obrigação da comunicação de admissões e dispensas por meio do CAGED foi substituída pelo eSocial.</b>
+</p><p>Considerando-se o período de transição para a entrada de todos os estabelecimentos no eSocial, o Novo CAGED passará a ser composto também por declarações de movimentações realizadas:</p><p>O detalhamento metodológico dos procedimentos adotados no PDET está disponível no Anexo XV da Portaria MTE nº 2.420/2023.</p><p>Para acessar o texto na íntegra, acesse a portaria indicada no link da fonte da matéria logo abaixo.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-2.420-de-10-de-julho-de-2023-495502501">DOU</a> e IOB Online</p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/portaria-mte-n-2.420-de-10-de-julho-de-2023-495502501' target='_blank'>Portaria MTE nº 2.420/2023</a> <br>Publicada em 11/07/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

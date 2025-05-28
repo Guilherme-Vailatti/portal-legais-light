@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdenciária - Divulgados tabelas de desconto do empregado - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/01/2023 | Previdenciária - Divulgados tabelas de desconto do empregado, salário-família e outros valores</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por meio da Portaria Interministerial MPS/MF nº 26/2023, foram divulgados, entre outros, os seguintes valores/tabelas, aplicáveis a partir de janeiro de 2023:</p><p>I - tabela de contribuição dos segurados empregado, empregado doméstico e trabalhador avulso, para pagamento de remuneração a partir de 1º de janeiro de 2023:</p><p>II - o valor da cota do <b>salário-família</b> por filho ou equiparado de qualquer condição, até 14 anos de idade, ou inválido de qualquer idade, a partir de 1º de janeiro de 2023, é de <b>R$ 59,82, para o segurado com remuneração mensal não superior a R$ 1.754,18</b>;</p><p>III - os benefícios pagos pelo Instituto Nacional do Seguro Social (INSS) serão reajustados, a partir de 1º de janeiro de 2023, em 5,93%.</p><p>Os benefícios com data de início a partir de 1º de janeiro de 2022 serão reajustados de acordo com os percentuais indicados na tabela a seguir:</p><p>NOTA - acreditamos que a tabela a seguir será retificada, visto que benefícios concedidos em meses posteriores tiveram reajustes superiores aos concedidos em meses anteriores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/portaria-interministerial-mps/mf-n-26-de-10-de-janeiro-de-2023-457160869" target="_blank">Portaria Interministerial MPS/MF nº 26/2022</a> <br/>Publicada em 11/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

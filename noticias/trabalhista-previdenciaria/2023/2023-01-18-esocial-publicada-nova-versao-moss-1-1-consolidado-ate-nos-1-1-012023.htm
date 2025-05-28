@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Publicada nova versão do MOS S-1.1, consolidado at - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>18/01/2023 | eSocial - Publicada nova versão do MOS S-1.1, consolidado até a NO S-1.1 - 01/2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>As orientações constantes nesse manual são aplicáveis às informações prestadas nas versões S-1.0 e S-1.1 dos leiautes do eSocial. Contudo, algumas orientações referem-se a eventos, campos e regras existentes apenas na versão S-1.1 dos referidos leiautes.</p><p>Esta versão incorpora a NO S-1.0 2021-05, a NO S-1.0 2022-12, assim como a versão beta de orientações sobre os eventos relativos a processos trabalhistas publicada em 02/08/2022 e retificada em 05/10/2022.</p><p>As <b>marcações em verde representam textos alterados, incluídos ou excluídos</b> em relação à versão S-1.1 retificada em 01/12/2022.</p><p>Acesse o manual completo <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-1-consolidada-ate-a-no-s-1-1-01-2023-com-marcacoes.pdf" target="_blank">aqui</a></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/documentacao-tecnica/manuais/mos-s-1-1-consolidada-ate-a-no-s-1-1-01-2023-com-marcacoes.pdf" target="_blank">Manual de Orientação NO S-1.1 - 01/2023</a> <br/>Publicada em 13/01/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

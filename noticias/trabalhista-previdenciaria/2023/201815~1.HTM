@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Portaria nº 3.553/2023 - MTE autoriza suspensã - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>01/11/2023 | Trabalhista - Portaria nº 3.553/2023 - MTE autoriza suspensão de recolhimentos do FGTS em municípios do RS alcançados por estado de calamidade pública</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O MTE publicou no DOU nesta terça-feira (24), a Portaria nº 3.553 que autoriza a suspensão da exigibilidade dos recolhimentos do Fundo de Garantia do Tempo de Serviço - FGTS para os empregadores situados em municípios do Estado do Rio Grande do Sul alcançados por estado de calamidade pública reconhecido pelo Ministério da Integração e do Desenvolvimento Regional.</p><p>A medida alcança os municípios de Arroio do Meio, Bento Gonçalves, Bom Jesus, Bom Retiro do Sul, Colinas, Cruzeiro do Sul, Dois Lajeados, Encantado, Estrela, Farroupilha, Guaporé, Lajeado, Muçum, Paraí, Roca Sales, Santa Tereza, São Valentim do Sul, Serafina Corrêa, Taquari e Venâncio Aires e visa aliviar o ônus financeiro sobre empregadores das áreas afetadas pela calamidade pública, permitindo-lhes a suspensão temporária dos recolhimentos do FGTS, referentes às competências de outubro de 2023 a janeiro de 2024. Os depósitos correspondentes a essas competências suspensas serão realizados em até seis parcelas, a partir da competência de março de 2024.</p><p>A Caixa definirá os procedimentos operacionais para os empregadores afetados em até dez dias.</p><p>Fonte: <a href="https://in.gov.br/en/web/dou/-/portaria-mte-n-3.553-de-23-de-outubro-de-2023-518473284" target="_blank">DOU</a> e <a href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2023/outubro/portaria-do-mte-autoriza-suspensao-de-recolhimentos-do-fgts-em-municipios-do-rs-alcancados-por-estado-de-calamidade-publica" target="_blank">Portal MTE</a></p><p> </p><p> </p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://in.gov.br/en/web/dou/-/portaria-mte-n-3.553-de-23-de-outubro-de-2023-518473284' target='_blank'>Portaria nº 3.553</a> <br>Publicada em 24/10/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

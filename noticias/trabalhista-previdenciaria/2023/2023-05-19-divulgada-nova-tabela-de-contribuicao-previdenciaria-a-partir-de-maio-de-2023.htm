@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdenciária - PI MPS/MF nº 27/2023 - Divulgada nova tabel - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/05/2023 | Previdenciária - PI MPS/MF nº 27/2023 - Divulgada nova tabela de contribuição previdenciária a partir de maio de 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>Pulicada no DOU de 08/05/2023 a Portaria Interministerial MPS/MF nº 27/2023 estabelece as novas faixas de contribuição previdenciária atualizadas conforme o salário mínimo de R$ 1.320,00, aplicável a partir de maio de 2023.</p><p>Em face do novo salário-mínimo de R$1.320,00 (Medida Provisória nº 1.172/2023 ), foram alterados, entre outros valores constantes na Portaria Interministerial MPS/MF nº 26/2023:</p><p>a) tabela de contribuição previdenciária dos segurados empregados, inclusive o doméstico e do trabalhador avulso, relativamente aos fatos geradores que ocorrerem a partir da competência maio/2023, conforme a seguir:</p><p>b) o valor mínimo de R$ 1.320,00 do salário de benefício e do salário de contribuição;</p><p>c) os benefícios a seguir, que também desde 1º de maio de 2023 não podem ser inferiores a R$ 1.320,00:</p><p>Não foram alterados, entre outros valores:</p><p>a) o limite máximo (teto) de contribuição previdenciária, o qual permanece em R$ 7.507,49;</p><p>b) a cota do salário-família por filho ou equiparado de qualquer condição, até 14 anos de idade, ou inválido de qualquer idade, que continua sendo de R$ 59,82 para o segurado com remuneração mensal não superior a R$ 1.754,18.</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://in.gov.br/web/dou/-/portaria-interministerial-mps/mf-n-27-de-4-de-maio-de-2023-481520415" target="_blank">Portaria Interministerial MPS/MF nº 27/2023</a> <br/>Publicada em 08/05/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

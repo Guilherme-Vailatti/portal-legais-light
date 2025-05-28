@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - MP nº 1.171/2023 - Divulgada nova Tabela Progr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/05/2023 | Trabalhista - MP nº 1.171/2023 - Divulgada nova Tabela Progressiva Mensal a ser utilizada a partir de maio de 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Medida Provisória nº 1.171/2023, art. 13 divulgou a seguinte tabela progressiva mensal a ser utilizada, a partir do mês de maio do ano-calendário de 2023, no cálculo do Imposto de Renda Retido na Fonte (IRRF) sobre os rendimentos pagos a pessoas físicas:</p><p>Destacamos, por oportuno, que nenhuma dedução legal foi atualizada.</p><p>Por fim, uma novidade trazida pelo art. 14, § 2º da norma em referência, é que alternativamente às deduções legais, poderá ser utilizado um desconto simplificado mensal, correspondente a 25% do valor máximo da faixa com alíquota zero da tabela progressiva mensal (R$ 2.112,00 x 25% = R$ 528,00), caso seja mais benéfico ao contribuinte, dispensadas a comprovação da despesa e a indicação de sua espécie.</p><p>Exemplos práticos de cálculo de IRRF:</p><p>Acesse o caminho Menu - Tabelas &gt; Valores &gt; Imposto de Renda e preencha os campos conforme exemplo a seguir:</p><p>
+<img src="../../../Resources/Images/tabela-irrf.png"/>
+</p><p>
+<img src="../../../Resources/Images/faixas.ir.png"/>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.171-de-30-de-abril-de-2023-480184173" target="_blank">MP nº 1.171 30/04/2023</a> <br/>Publicada em 30/04/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
