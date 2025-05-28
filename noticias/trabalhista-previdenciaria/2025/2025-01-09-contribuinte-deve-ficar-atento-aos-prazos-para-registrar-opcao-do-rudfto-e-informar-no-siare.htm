@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS MG - Comunicado: Tributação na transferência de mercado - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | ICMS MG - Comunicado: Tributação na transferência de mercadoria: Contribuinte deve ficar atento aos prazos para registrar opção no Rudfto e informar no SIARE</h1>
+</div>
+<div class="noticia-corpo">
+<p>Contribuintes que optaram ou ainda vão optar pela “tributação na transferência de mercadoria”, referente a 2024 e/ou 2025, conforme prevista no art. 153B do Regulamento do ICMS, deverão informar à Secretaria de Estado de Fazenda de Minas Gerais (SEF/MG), até 31 de janeiro de 2025, a opção exercida.</p><p>Para facilitar essa informação, a SEF/MG disponibilizou uma nova funcionalidade no Sistema de Administração da Receita Estadual (SIARE). No menu principal do SIARE, basta acionar "Inscrição Estadual &gt; Opção pela tributação na transferência de mercadoria".</p><p>O sistema exibirá todos os estabelecimentos do contribuinte que estarão sob os efeitos da opção exercida. Na mesma tela há uma solicitação de informação que é importante o contribuinte responder: “Para o ano de 2024, a opção foi exercida nos termos do art. 6º do Decreto 48.930/2024?”. Caso a resposta seja positiva, é necessário marcar no cheque-box. A partir daí, é só confirmar.</p><p style="font-weight: bold;">Entenda a opção</p><p>Em substituição à "transferência de créditos na transferência de mercadoria entre estabelecimentos do mesmo titular" a que se refere o art.153A do RICMS/2023, o contribuinte pode exercer a opção prevista no art. 153B do regulamento, de forma que a operação de transferência da mercadoria seja equiparada à operação "fato gerador de imposto", para todos os fins.</p><p>O exercício da referida opção implica ciência de que a transferência de mercadoria entre estabelecimentos do mesmo titular será equiparada a uma operação tributada, nos termos do § 5º do art. 12 da Lei Complementar nº 87/96 e da cláusula sexta do Convênio ICMS nº 109/24. Ela alcançará todos os estabelecimentos do contribuinte e será anual, irretratável para todo o ano-calendário, devendo ser registrada até o último dia de dezembro para vigorar a partir de janeiro de 2025.</p><p>Feita a opção, a renovação será automática, a cada ano, até que o contribuinte manifeste a desistência, também, até o último dia de dezembro para vigorar a partir de janeiro do ano subsequente.</p><p>No entanto, é preciso ficar atento ao prazo para manifestar a opção no Livro de Registro de Utilização de Documentos e Termos de Ocorrências (Rudfto) ou no próprio SIARE, que é 31 de dezembro de 2024, nos termos do Decreto 48.930/2024.</p><p>Para mais informações, acesse:</p><p><a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/decretos/2024/d48930_2024.html" target="_blank">Decreto 48.930/24</a>
+</p><p><a href="https://www.fazenda.mg.gov.br/empresas/sistemas/siare/" target="_blank">SIARE</a>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.fazenda.mg.gov.br/noticias/2024/2024.12.19_transferencia/" target="_blank">SEF MG</a> <br/>Publicada em 19/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

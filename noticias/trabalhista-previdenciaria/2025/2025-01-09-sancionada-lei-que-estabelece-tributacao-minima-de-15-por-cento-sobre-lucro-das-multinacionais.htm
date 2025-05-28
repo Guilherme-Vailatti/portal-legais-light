@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CSLL - Lei nº 15.079/2024 - Sancionada lei que estabelece tr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | CSLL - Lei nº 15.079/2024 - Sancionada lei que estabelece tributação mínima de 15% sobre lucro das multinacionais</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi sancionada pelo presidente Lula a <a href="https://www2.camara.leg.br/legin/fed/lei/2024/lei-15079-27-dezembro-2024-796831-norma-pl.html" target="_blank">Lei 15.079/24</a>, que cria um adicional da Contribuição Social sobre o Lucro Líquido (CSLL) para empresas multinacionais instaladas no Brasil.</p><p>O objetivo da norma, que teve origem no Projeto de Lei (PL) 3817/24, é garantir uma tributação mínima efetiva de 15% dentro do acordo global para evitar erosão tributária (Regras GloBE).</p><p>O adicional incidirá sobre o lucro de empresas no Brasil integrantes de grupos multinacionais cuja receita anual consolidada seja superior a 750 milhões de euros (cerca de R$ 4,78 bilhões) durante pelo menos dois dos quatro anos fiscais consecutivos anteriores à apuração.</p><p>O texto sancionado foi apresentado pelo líder do governo na Câmara, deputado José Guimarães (PT-CE), e repetiu o conteúdo da <a href="https://www.camara.leg.br/noticias/1100691-medida-provisoria-cria-tributacao-minima-de-15-sobre-lucro-de-multinacionais" target="_blank">Medida Provisória (MP) 1262/24</a>, que segue em vigor até março de 2025 e não foi apreciada pelo Congresso.</p><p>O governo calcula que a norma gere um aumento de receita tributária de R$ 3,44 bilhões em 2026, de R$ 7,28 bilhões em 2027 e de R$ 7,69 bilhões em 2028.</p><p>O Ministério da Fazenda estima que aproximadamente 290 multinacionais atuantes no Brasil serão afetadas por essa nova regra. Dessas, cerca de 20 são multinacionais brasileiras.</p><p>Ainda de acordo com o governo, essa nova fonte de receita tributária foi formatada pelos países participantes para enfrentar os desafios decorrentes da digitalização da economia. Atualmente, 37 países já instituíram sua cobrança e, por esse modelo, se um dos países não tributar com a alíquota efetiva, essa subtributação poderá provocar o pagamento complementar em outro país que já tenha implantado as regras, implicando uma espécie de “exportação de arrecadação”.</p><p>A cobrança começará a partir do ano fiscal de 2025 e o pagamento deverá ocorrer até o último dia do sétimo mês após o fim do ano fiscal. Como o ano fiscal não coincide necessariamente com o ano civil para todas as empresas e grupos multinacionais, a data é variável.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/lei-n-15.079-de-27-de-dezembro-de-2024-604401715" target="_blank">Lei nº 15.079/2024</a> <br/>Publicada em 30/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

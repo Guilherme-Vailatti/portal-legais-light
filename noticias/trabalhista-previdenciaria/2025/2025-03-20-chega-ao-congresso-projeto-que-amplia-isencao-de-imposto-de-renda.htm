@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PL nº 1.087/2025 - Chega ao Congresso p - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/03/2025 | Congresso Nacional - PL nº 1.087/2025 - Chega ao Congresso projeto que amplia isenção de Imposto de Renda</h1>
+</div>
+<div class="noticia-corpo">
+<p>O governo enviou para o Congresso Nacional, nesta terça-feira (18), o projeto de lei que aumenta o limite de isenção do Imposto de Renda para quem ganha até R$ 5 mil por mês a partir de 2026. O presidente da Câmara, Hugo Motta (Republicanos-PB), disse que o Congresso terá a sensibilidade para ver o alcance social da proposta (PL 1087/25), mas não descartou alterações no sentido da melhoria das medidas</p><p>A proposta do governo é compensar a isenção para quem ganha menos – que deve custar R$ 25,8 bilhões por ano – taxando mais quem ganha acima de R$ 600 mil por ano. Segundo o Ministério da Fazenda, a medida atingirá 0,13% dos contribuintes, que hoje pagam, em média, apenas 2,54% de Imposto de Renda. Essa é a alíquota efetiva, ou seja, após as deduções legais.</p><p>A ideia da proposta é adotar alíquotas mínimas a partir de R$ 600 mil por ano, chegando ao mínimo de 10% para quem ganha mais de R$ 1,2 milhão por ano.</p><p>O presidente Lula disse que o projeto é neutro, ou seja, não aumenta as despesas públicas. “Estamos falando que 141 mil pessoas que ganham acima de R$ 600 mil, acima de R$ 1 milhão por ano, vão contribuir para que 10 milhões de pessoas não paguem Imposto de Renda. É simples assim”, disse.</p><p>Pelas simulações do governo, um sócio de empresa que recebe R$ 985 mil por ano e tem uma alíquota efetiva de 2,7% passará a pagar mais 3,72%, porque sua alíquota mínima será de 6,42%.</p><p>Já a professora que ganha o piso de R$ 4.867,77 vai deixar de pagar R$ 305,40 por mês, ou seja, R$ 3.970,18 em um ano. O projeto ainda beneficia quem ganha entre R$ 5 mil e R$ 7 mil com descontos menores.</p><p>O governo também informou que haverá elevação da isenção para R$ 3.036, ou dois salários mínimos, ainda neste ano.</p><p>Para o cálculo das rendas mais altas, serão usados todos os rendimentos, inclusive lucros e dividendos. Mas a tributação da pessoa física mais a da empresa não poderá superar 34% para empresas não financeiras ou 45%, no caso das financeiras. Os que recebem dividendos no exterior pagarão o mínimo de 10%.</p><p>Para o vice-líder do governo, deputado Rubens Pereira Júnior (PT-MA), o Congresso não vai deixar de contribuir para uma medida que combate a desigualdade de renda no País. “A bola agora está com o Congresso Nacional, que tem que aprovar o projeto. Então é uma vitória, é um dia histórico onde se garante menos imposto para quem mais precisa”, disse.</p><p>Já o líder do PL, deputado Sóstenes Cavalcante (RJ), apresentou proposta (PL 400/25) que amplia o limite de isenção para R$ 10 mil, mas sem sugerir medidas para compensar as perdas de arrecadação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1141174-chega-ao-congresso-projeto-que-amplia-isencao-de-imposto-de-renda/" target="_blank">Projeto de Lei nº 1.087/2025</a> <br/>Publicada em 18/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

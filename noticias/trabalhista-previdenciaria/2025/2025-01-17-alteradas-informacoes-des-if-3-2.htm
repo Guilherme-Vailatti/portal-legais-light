@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ISSQN DF - Portaria SEEC nº 23/2025 - Alteradas informações  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/01/2025 | ISSQN DF - Portaria SEEC nº 23/2025 - Alteradas informações da DES-IF 3.2</h1>
+</div>
+<div class="noticia-corpo">
+<p>Mediante alteração da Portaria SEEC nº 209/2022, as instituições financeiras e equiparadas, sujeitas à utilização do Plano de Contas das Instituições do Sistema Financeiro Nacional - COSIF, deverão apresentar a Declaração Eletrônica de Serviços de Instituições Financeiras (DES-IF)  na versão 3.2 ou em sua versão mais atualizada, disponível no Portal da Abrasf, conforme indicado na legislação vigente.</p><p>Também o módulo de Informações Comuns aos Municípios do PGCC deverá contemplar, obrigatoriamente, as contas patrimoniais detalhadas no modelo conceitual do arquivo a ser apresentado.</p><p>Confira o leiaute 3.2 da DES-IF <a href="https://abrasf.org.br/biblioteca/arquivos-publicos/des-if/modelo-conceitual" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://receita.fazenda.df.gov.br/" target="_blank">Portaria SEEC nº 23/2025</a> <br/>Publicada em 16/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

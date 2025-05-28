@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Ministério da Fazenda - MP nº1.288/2025 - Governo Federal ed - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/01/2025 | Ministério da Fazenda - MP nº1.288/2025 - Governo Federal edita Medida Provisória para reforçar gratuidade do Pix</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo Federal anunciou, nesta quarta-feira (15/1), a edição da <a href="https://www.in.gov.br/en/web/dou/-/medida-provisoria-n-1.288-de-16-de-janeiro-de-2025-607474433" target="_blank">Medida Provisória</a> para reforçar as regras já existentes sobre as transações financeiras via PIX e torná-las mais claras para toda a população. A iniciativa ocorre após a propagação de fake news sobre o método de pagamento, que tem como característica a gratuidade. Portanto, não pode haver incidência de cobrança de valor maior para os pagamentos feitos dessa forma.</p><p>“A MP blinda o Pix de toda mentira que diversos atores nas redes sociais produziram com um único objetivo: causar desassossego e desordem no ambiente digital. Isso, infelizmente, levou a diversas pessoas de boa fé a caírem em golpes. Golpes que foram incentivados a partir deste discurso, dessa narrativa, que, infelizmente, foi reproduzido por diversos políticos brasileiros”, ressaltou o advogado-geral da União, Jorge Messias, em entrevista à imprensa.</p><p>O ministro da Fazenda, Fernando Haddad, explicou que a Medida Provisória reforça a gratuidade do uso do Pix e todas as cláusulas de sigilo bancário em torno do método. “A Medida Provisória está garantindo que o consumidor tenha o direito de, se o pagamento em Pix estiver disponível no estabelecimento, que ele pague exatamente o valor que pagaria em dinheiro. E configura uma prática abusiva não adotar essa regra, porque Pix é dinheiro”, disse. “Essas práticas que estão sendo utilizadas hoje, com base na fake news, de cobrar a mais por aquilo que é pago em Pix na comparação com dinheiro, estão vedadas. Ou seja, o que você cobra em dinheiro, você vai poder cobrar em Pix, você não vai poder cobrar a mais”, frisou Haddad.</p><p>Em virtude dos crimes praticados envolvendo o Pix, Jorge Messias afirmou que “a Advocacia-Geral da União vai notificar a Polícia Federal para abertura de inquérito policial com o objetivo de identificar todos os atores nas redes sociais que geraram essa desordem informacional, que criaram essa narrativa e fizeram com que pessoas de boa fé, comerciantes, cidadãos em geral, caíssem nos golpes contra a economia popular”. Também serão investigados crimes utilizando os símbolos e a logomarca do Governo Federal, do Ministério da Fazenda e da Secretaria da Receita Federal.</p><p>“Da mesma maneira, nós identificamos práticas abusivas nas relações de consumo. Portanto, também estamos notificando a Secretaria Nacional de Defesa do Consumidor para que abra inquérito e investigue todos os crimes relacionados às relações de consumo e atue em articulação com os Procons dos estados em uma campanha de informação relacionada ao uso do Pix e de promoção das informações corretas para a população, para que a população fique protegida e não venha cair mais em novos golpes com o uso do Pix”, declarou Messias.</p><p>Haddad enfatizou que o objetivo do governo é “salvaguardar a economia popular e as finanças das pessoas mais pobres, do pequeno comerciante, da dona de casa que vai fazer suas compras”. Não ter a sua relação afetada por esse grupo inescrupuloso que tomou as redes”.</p><p>Na entrevista coletiva, o secretário da Receita Federal, Robinson Barreirinhas, anunciou a <a href="http://www.in.gov.br/web/dou/-/instrucao-normativa-rfb-n-2.247-de-15-de-janeiro-de-2025-607230293" target="_blank">revogação de ato normativo</a> que alterava as regras de fiscalização da Receita Federal sobre o Pix, após ela ter sido mal interpretada e alvo de fake news. O Pix tornou as transações mais rápidas e práticas. A ampliação do uso desse e outros métodos de pagamento exigiu atualizações nas regras de controle fiscal e, para acompanhar essa evolução, a Receita Federal atualizou o sistema de coleta de informações existente há mais de 20 anos. As atualizações têm gerado uma onda de desinformação. “Nos últimos dias, pessoas inescrupulosas distorceram e manipularam o ato normativo da Receita Federal, prejudicando muita gente no Brasil, milhões de pessoas, causando pânico principalmente na população mais humilde, desacreditando injustamente um instrumento de pagamento muito importante no dia a dia das pessoas. Por conta da continuidade do dano, dessa manipulação desse ato da Receita, eu decidi revogar esse ato”, disse Barreirinhas.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/janeiro/governo-federal-edita-medida-provisoria-para-reforcar-gratuidade-do-pix" target="_blank">Medida Provisória nº 1.288/2025</a> <br/>Publicada em 16/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

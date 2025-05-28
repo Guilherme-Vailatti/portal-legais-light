@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PL nº 141/2025 - Projeto reestrutura a  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/02/2025 | Congresso Nacional - PL nº 141/2025 - Projeto reestrutura a tabela mensal do Imposto de Renda</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei 141/25 reestrutura a tabela progressiva mensal do Imposto sobre a Renda das Pessoas Físicas (IRPF). A proposta em análise na Câmara dos Deputados prevê oito faixas, com alíquota final de 35% – o limite hoje é de 27,5%.</p><p style="font-weight: bold;">Proposta de Tabela para o Imposto de Renda</p><p><span style="font-size: 10pt;">*Mensal</span>
+</p><p>Os autores da proposta, deputados Sâmia Bomfim (Psol-SP), Fernanda Melchionna (Psol-RS) e Glauber Braga (Psol-RJ), explicam que a ideia é corrigir parte da defasagem na tabela, com isenção para pessoas físicas que ganham até R$ 5 mil e criar novas faixas que culminam em 35% para rendimentos acima de R$ 39,3 mil.</p><p>Recursos obtidos por meio da progressividade, segundo eles, poderão fomentar investimentos em desenvolvimento sustentável, ampliando oportunidades para a mobilidade social e contribuindo para a formalização das rendas.</p><p style="font-weight: bold;">Próximos passos</p><p>O projeto tramita em caráter conclusivo e será analisado pelas comissões de Finanças e Tributação; e de Constituição e Justiça e de Cidadania.</p><p>Para virar lei, terá de ser aprovado pela Câmara e pelo Senado.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=HfcGH9K3i3E=" target="_blank">Projeto de Lei nº 141/2025</a> <br/>Publicada em 18/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

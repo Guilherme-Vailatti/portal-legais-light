@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PLP nº 16/2025 - Projeto altera base de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/03/2025 | Congresso Nacional - PLP nº 16/2025 - Projeto altera base de cálculo de impostos sobre o consumo</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei Complementar (PLP) 16/25 exclui os tributos criados pela reforma tributária (IBS e CBS) da base de cálculo dos atuais impostos sobre o consumo: ICMS (estadual), ISS (municipal) e IPI (federal). A proposta está em análise na Câmara dos Deputados.</p><p>O texto altera a recém-sancionada <a href="https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-norma-pl.html" target="_blank">Lei Complementar 214/25</a>, que instituiu o Imposto sobre Bens e Serviços (IBS) e a Contribuição sobre Bens e Serviços (CBS). Também muda a <a href="https://www2.camara.leg.br/legin/fed/leicom/1996/leicomplementar-87-13-setembro-1996-370965-norma-pl.html" target="_blank">Lei Kandir</a>, que regula o ICMS.</p><p>O objetivo do projeto é evitar a cumulatividade tributária, quando impostos incidem sobre outros impostos, aumentando a carga tributária dos contribuintes.</p><p>A medida terá impacto sobre a fase de transição da reforma tributária, que vai de 2026 a 2032, quando os tributos novos e os atuais vão coexistir. A partir de 2033 começará a vigência integral do novo sistema.</p><p>O deputado Gilson Marques (Novo-SC), que assina a proposta com <a href="https://www.camara.leg.br/proposicoesWeb/prop_autores?idProposicao=2483205" target="_blank">outros parlamentares do Novo</a>, afirma que iniciativa evita distorções no sistema tributário, além de um possível contencioso tributário, com riscos futuros para a União, estados e municípios.</p><p>“Esse projeto se faz necessário para evitar insegurança jurídica e conflitos fiscais, garantindo um sistema tributário mais claro, eficiente e alinhado aos princípios constitucionais”, disse Marques.</p><p>O projeto será analisado pelas comissões de Finanças e Tributação; e de Constituição e Justiça e de Cidadania (CCJ). Depois seguirá para o Plenário.</p><p>Para virar lei, a proposta também precisa ser aprovada pelo Senado.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1136686-projeto-altera-base-de-calculo-de-impostos-sobre-o-consumo" target="_blank">Projeto de Lei Complementar nº 16/2025</a> <br/>Publicada em 18/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

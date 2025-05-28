@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>PIS/COFINS - Parecer SEI nº 4090/2024 - PGFN reconhece exclu - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/01/2025 | PIS/COFINS - Parecer SEI nº 4090/2024 - PGFN reconhece exclusão do ICMS ST da BC do PIS e COFINS</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Procuradoria-Geral da Fazenda Nacional (PGFN), em manifestação contida no Parecer SEI nº 4090/2024, alinhou o posicionamento consolidado pelo Superior Tribunal de Justiça (STJ) no julgamento do Tema 1125, no sentido de que o ICMS retido por substituição tributária (ICMS ST) não integra a base de cálculo das contribuições ao PIS e à COFINS, quando devidas pelo contribuinte substituído no regime de substituição tributária progressiva.</p><p>Confira o Parecer na <a href="https://www.gov.br/pgfn/pt-br/assuntos/representacao-judicial/documentos-portaria-502/sei_46383760_parecer_4090.pdf" target="_blank">íntegra</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/pgfn/pt-br/assuntos/representacao-judicial/documentos-portaria-502/sei_46383760_parecer_4090.pdf" target="_blank">Parecer SEI nº 4090/2024</a> <br/>Publicada em 16/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

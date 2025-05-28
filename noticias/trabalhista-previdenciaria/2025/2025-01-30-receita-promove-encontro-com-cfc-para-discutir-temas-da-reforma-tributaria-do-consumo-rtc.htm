@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - LC nº 214/2025 - Receita Federal promov - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/01/2025 | Reforma Tributária - LC nº 214/2025 - Receita Federal promove encontro com representantes do CFC para tratar de temas relacionados à implantação da Reforma Tributária do Consumo (RTC)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O encontro deu início ao processo de análise, mapeamento e identificação de soluções tecnológicas para a disponibilização dos serviços a serem consumidos por softwares necessários para a operacionalização da Contribuição sobre Bens e Serviços (CBS), criada pela Reforma Tributária do Consumo (RTC) e aprovada recentemente pelo Congresso Nacional.</p><p>Com a participação do Conselho Federal de Contabilidade (CFC); Federação Nacional das Empresas de Serviços Contábeis e das Empresas de Assessoramento, Perícias, Informações e Pesquisas (Fenacon); Federação Nacional das Empresas de Informática (Fenainfo); fintechs e empresas de tecnologia ligadas ao setor contábil, a área de tecnologia e dados da Receita Federal apresentou o modelo tecnológico que será adotado pela Receita Federal para a operacionalização da RTC no âmbito da União, destacando as possibilidades que essa reforma oferece para um avanço qualitativo e substancial no relacionamento entre fisco, contadores e contribuintes por meio de uso intensivo de dados e tecnologia.</p><p>Após a apresentação da Receita Federal, foi apresentada pelo Serviço Federal de Processamento de Dados (Serpro) a metodologia de trabalho sugerida para a identificação de melhorias e novas necessidades de serviços a serem aprimorados ou criados, com foco na construção transparente e conjunta de soluções tecnológicas que atendam ao efetivo interesse de entidades e empresas que atuam na área contábil e fiscal.</p><p>Os participantes apresentaram propostas, com base no processo atual de consumo de serviços, a serem consideradas para os novos serviços da RTC. Na sequência dos trabalhos, serão convidados outros interessados da sociedade, áreas de negócio e demais entes para contribuição na construção desses serviços.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/janeiro/receita-federal-promove-encontro-com-representantes-do-cfc-para-tratar-de-temas-relacionados-a-implantacao-da-reforma-tributaria-do-consumo-rtc" target="_blank">Lei Complementar nº 214/2025</a> <br/>Publicada em 30/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

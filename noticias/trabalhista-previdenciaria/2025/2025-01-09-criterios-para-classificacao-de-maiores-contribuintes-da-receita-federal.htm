@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Portaria RFB nº 505/2024 - Maiores contrib - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | Receita Federal - Portaria RFB nº 505/2024 - Maiores contribuintes da Receita Federal</h1>
+</div>
+<div class="noticia-corpo">
+<p>Esta Portaria dispõe sobre os critérios para a classificação de pessoas físicas e jurídicas como maiores contribuintes, especiais ou diferenciados, no âmbito da Secretaria Especial da Receita Federal do Brasil.</p><p>Essa informação é crucial, pois <b>identifica os contribuintes que serão submetidos a um acompanhamento fiscal mais rigoroso</b> no exercício de 2025.</p><p style="font-weight: bold;">I – maiores contribuintes pessoas físicas diferenciadas</p><ul>
+<li>Rendimentos declarados maiores ou iguais a R$ 15.000.000,00;</li>
+<li>Bens e direitos declarados maiores ou iguais a R$ 30.000.000,00; ou</li>
+<li>Operações em renda variável maiores ou iguais a R$ 15.000.000,00</li>
+</ul><p style="font-weight: bold;">II – maiores contribuintes pessoas físicas especiais</p><ul>
+<li>Rendimentos declarados maiores ou iguais a R$ 100.000.000,00;</li>
+<li>Bens e direitos declarados maiores ou iguais a R$ 200.000.000,00; ou</li>
+<li>Operações em renda variável maiores ou iguais a R$ 100.000.000,00</li>
+</ul><p style="font-weight: bold;">III – maiores contribuintes pessoas jurídicas diferenciadas</p><ul>
+<li>Receita bruta anual maior ou igual a R$ 340.000.000,00;</li>
+<li>Débitos declarados maiores ou iguais a R$ 80.000.000,00; ou</li>
+<li>Importações ou exportações maiores, ou iguais a R$ 340.000.000,00</li>
+</ul><p style="font-weight: bold;">IV – maiores contribuintes pessoas jurídicas especiais</p><ul>
+<li>Receita bruta anual maior ou igual a R$ 2.000.000.000,00;</li>
+<li>Débitos declarados maiores ou iguais a R$ 500.000.000,00</li>
+</ul><p>A medida estabelece também que poderão ser considerados estudos e análises referentes ao potencial econômico-tributário das pessoas físicas e jurídicas, inclusive em relação a seus respectivos setores econômicos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-rfb-n-505-de-30-de-dezembro-de-2024-605036174" target="_blank">Portaria RFB nº 505/2024</a> <br/>Publicada em 31/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

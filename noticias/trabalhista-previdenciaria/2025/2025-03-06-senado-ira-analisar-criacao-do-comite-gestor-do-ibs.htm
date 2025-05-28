@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - PLC nº 108/2024 - Senado vai analisar c - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/03/2025 | Reforma Tributária - PLC nº 108/2024 - Senado vai analisar criação do Comitê Gestor do IBS</h1>
+</div>
+<div class="noticia-corpo">
+<p>O senador Eduardo Braga (MDB-AM) será o relator do próximo passo para implementação da reforma tributária: a criação do Comitê Gestor do IBS, o Imposto sobre Bens e Serviços. A expectativa é que o projeto de lei complementar (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/166095" target="_blank">PLP 108/2024</a>) seja votado pelos senadores ainda neste semestre.</p><p>Confira a reportagem completa <a href="https://www.youtube.com/watch?v=QPHJnykPhug" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/videos/2025/02/reforma-tributaria-senado-vai-analisar-criacao-do-comite-gestor-do-ibs" target="_blank">Projeto de Lei Complementar nº 108/2024</a> <br/>Publicada em 27/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

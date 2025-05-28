@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - STF reafirma entendimento sobre não incidência de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/02/2025 | Federal - STF reafirma entendimento sobre não incidência de ICMS na transferência de bens do mesmo contribuinte</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Supremo Tribunal Federal (STF) reafirmou entendimento de que a não incidência do Imposto sobre Circulação de Mercadorias e Serviços (ICMS) no deslocamento de bens entre estabelecimentos do mesmo contribuinte localizados em estados distintos vale apenas a partir do exercício financeiro de 2024. A decisão, unânime, foi tomada no julgamento do Recurso Extraordinário <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=6907815" target="_blank">(RE) 1490708</a>.</p><p>O Tribunal já tinha entendimento sobre a matéria, mas agora ela foi julgada sob o rito da repercussão geral (Tema 1367). Assim, a tese fixada deve ser aplicada a todos os casos semelhantes em tramitação na Justiça.</p><p>A tese quanto à não incidência do imposto na transferência interestadual de mercadorias entre estabelecimentos de um mesmo contribuinte foi firmada pelo Supremo no julgamento do Recurso Extraordinário com Agravo (ARE) 1255885 (Tema 1099). Posteriormente, ao julgar recurso na Ação Declaratória de Constitucionalidade (ADC) 49, o Tribunal decidiu que o entendimento só passaria a valer a partir do exercício financeiro de 2024, ressalvados os processos em andamento.</p><p>No RE 1490708, o Estado de São Paulo questionava decisão do Tribunal de Justiça local que aplicou a tese da não incidência de ICMS no deslocamento de bens entre estabelecimentos de uma empresa importadora e exportadora de insumos agrícolas sem observar que esse entendimento só valeria a partir de 2024.</p><p>Em seu voto pelo reconhecimento da repercussão geral da matéria e pela reafirmação do entendimento do Tribunal, o relator, ministro Luís Roberto Barroso, ressaltou que desconsiderar a modulação dos efeitos temporais da decisão da ADC 49, além de violar a autoridade das decisões do Supremo, contraria a segurança jurídica e o equilíbrio fiscal que a justificaram.</p><p>A tese de repercussão geral firmada foi a seguinte:</p><p>“A não incidência de ICMS no deslocamento de bens de um estabelecimento para outro do mesmo contribuinte localizados em estados distintos, estabelecida no Tema 1.099/RG e na ADC 49, tem efeitos a partir do exercício financeiro de 2024, ressalvados os processos administrativos e judiciais pendentes de conclusão até a data de publicação da ata de julgamento da decisão de mérito da ADC 49 (29.04.2021)”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=6907815" target="_blank">(RE) 1490708</a> <br/>Publicada em 14/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

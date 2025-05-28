@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - Solução de Consulta - Receita Federal traz esclare - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/03/2025 | Federal - Solução de Consulta - Receita Federal traz esclarecimentos sobre a legislação tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria Especial da Receita Federal do Brasil (RFB) divulgou as seguintes normas com esclarecimentos sobre a aplicação da legislação tributária federal:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/solucao-de-consulta-n-22-de-27-de-fevereiro-de-2025-616160449" target="_blank">Solução de Consulta nº 22, 23, 25, 26, 27, 28, 30/2025</a> <br/>Publicada em 06/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

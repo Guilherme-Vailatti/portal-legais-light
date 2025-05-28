@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Informe Técnico nº 2024.001, v. 2.10 - Atualiza - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+
+  
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | NF-e NFC-e - Informe Técnico nº 2024.001, v. 2.10 - Atualização na tabela de NCM a partir de 02/01/2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado o Informe Técnico 2024.001 v.2.10 que divulga atualização na tabela de NCM a partir de 02/01/2025</p><p>A Resolução Gecex nº 641, de 19 de setembro de 2024, alterou a tabela, conforme segue:</p><p><b>3.</b> Extinção do NCM 07129010.</p><p><b>4.</b> Inclusão do NCM 07129020.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=SLTFe3dIJMI=" target="_blank">Informe Técnico nº 2024.001, versão 2.10</a> <br/>Publicada em 18/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
