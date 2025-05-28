@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS PR - NPF REPR nº 22/2025 - Padronização no preenchiment - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/04/2025 | ICMS PR - NPF REPR nº 22/2025 - Padronização no preenchimento de Nota Fiscal eletrônica, para determinadas operações de transferência</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Fisco incorporou na legislação estadual as orientações contidas no Ajuste Sinief nº 33/2024 que dispõe sobre o procedimento de emissão da Nota Fiscal Eletrônica, na transferência de créditos da remessa interestadual de mercadorias entre estabelecimentos de mesma titularidade.</p><p style="font-weight: bold;">“DA NOTA FISCAL DE REMESSA INTERESTADUAL DE MERCADORIAS ENTRE ESTABELECIMENTOS DE MESMA TITULARIDADE”</p><p>Art. 4.º-A Na remessa interestadual de mercadorias entre estabelecimentos de mesma titularidade, o contribuinte que utilizar a sistemática prevista nos artigos 579J a 579M do Regulamento do ICMS, aprovado pelo Decreto nº 7.871, de 29 de setembro de 2017, ao emitir a Nota Fiscal Eletrônica - NF-e, deverá informar:</p><p>§ 1.º O remetente deverá informar os valores a serem transferidos, obedecendo os limites previstos no Convênio ICMS nº 109/2024.</p><p>§ 2.º Este artigo não se aplica à transferência de mercadoria equiparada a operação tributada, nos termos do § 5º do art. 12 da Lei Complementar nº 87, de 13 de setembro de 1996.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sefanet.pr.gov.br/dados/SEFADOCUMENTOS/103202500022.pdf" target="_blank">Norma de Procedimento Fiscal REPR nº 22/2025</a> <br/>Publicada em 10/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

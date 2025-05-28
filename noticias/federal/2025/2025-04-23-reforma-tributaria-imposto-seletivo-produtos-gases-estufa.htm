@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Projeto aplica o Imposto Seletivo a pro - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/04/2025 | Reforma Tributária - Projeto aplica o Imposto Seletivo a produtos que geram gases de efeito estufa</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei Complementar 29/25, do deputado Nilto Tatto (PT-SP), aplica o Imposto Seletivo a produtos e serviços que geram emissão de gases de efeito estufa. Esse imposto incide sobre produtos considerados prejudiciais à saúde e ao meio ambiente.</p><p>A proposta altera a <a href="https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-norma-pl.html" target="_blank">Lei Complementar 214/25</a>, que regulamentou a reforma tributária, e está em análise na Câmara dos Deputados.</p><p>Pela proposta, toda atividade econômica que, durante sua produção ou comercialização, emita gás carbônico (CO2) ou equivalente será tributada com o Imposto Seletivo.</p><p>A base de cálculo desse Imposto Seletivo Ambiental será o volume de emissões de CO2 equivalente durante um mês.</p><p>CO2 equivalente é uma unidade padrão usada para expressar o impacto dos diferentes gases de efeito estufa em termos do potencial de aquecimento global do dióxido de carbono (CO2).</p><p>O valor do imposto será determinado por uma alíquota específica definida em lei, com base na quantidade de toneladas métricas de CO2 equivalente emitidas.</p><p>A lei poderá prever isenção ou alíquota zero para a agricultura familiar, agroecologia e pequenas empresas.</p><p>Também será definido em lei um limite mínimo de emissões mensais (em toneladas) a partir do qual o imposto será cobrado.</p><p>Segundo Tatto, a criação do imposto ajudará na competitividade das commodities agrícolas brasileiras, evitando sobretaxação da União Europeia.</p><p>O bloco econômico iniciou a implementação de um sistema de precificação de emissões de gases de efeito estufa em importações para evitar o deslocamento da produção para regiões sem regulação sobre emissões. A plena implementação está prevista para 2034.</p><p>"Caso o Brasil não adote um modelo efetivo, claro e rigoroso de tributação, a perda de competitividade, em especial de setores relevantes para as nossas exportações, como o agronegócio, será inevitável", afirma Tatto.</p><p>Estudo do Fundo Monetário Internacional (FMI) de 2022, citado por Tatto, indica que é mais indicado tributar as emissões de carbono do que criar um sistema de créditos do gás por ser mais simples, sem possível especulação financeira e promover mais efetivamente os cuidados ambientais.</p><p>A proposta será analisada pelas comissões de Meio Ambiente e Desenvolvimento Sustentável; de Finanças e Tributação; e de Constituição e Justiça e de Cidadania. Depois, seguirá para o Plenário.</p><p>Para virar lei, a proposta precisa ser aprovada pela Câmara e pelo Senado.</p><p><a href="https://www.camara.leg.br/noticias/606442-conheca-a-tramitacao-de-projetos-de-lei-complementar/" target="_blank">Saiba mais sobre a tramitação de projetos de lei complementar
+</a>
+</p><p style="text-align: center;">
+<img alt="" src="../../../Resources/Images/Notícias/imposto-seletivo-produtos-gases-estufa.jpg" title=""/>
+</p><p style="text-align: center;">
+<img alt="" src="../../../Resources/Images/Notícias/imposto-seletivo-produtos-gases-estufa-veiculos.jpg" title=""/>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1140419-projeto-aplica-o-imposto-seletivo-a-produtos-que-geram-gases-de-efeito-estufa/" target="_blank">Projeto de Lei Complementar nº 29/2025</a> <br/>Publicada em 16/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

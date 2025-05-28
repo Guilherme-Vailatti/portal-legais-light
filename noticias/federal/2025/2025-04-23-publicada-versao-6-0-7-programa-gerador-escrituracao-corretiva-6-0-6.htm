@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Publicada a versão 6.0.7 do Program - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/04/2025 | SPED EFD Contribuições - Publicada a versão 6.0.7 do Programa Gerador de Escrituração, corretiva da 6.0.6</h1>
+</div>
+<div class="noticia-corpo">
+<p>A versão 6.0.6 do PGE da EFD Contribuições apresentou erro na funcionalidade Visualizar Recibo de Transmissão.</p><p>Esse erro foi corrigido nesta versão 6.0.7</p><p>Recomenda-se realizar a Cópia de Segurança de todas as escriturações contidas na base de dados, antes de instalar uma nova versão do sistema. Também é possível efetuar a nova instalação em pasta distinta da atual. Neste último caso, as escriturações já registradas não serão acessíveis diretamente pela nova versão do sistema, sendo necessário efetuar o acesso através da pasta de instalação antiga.</p><p>Os contribuintes que criaram ou importaram a escrituração na versão 6.0.5 e 6.0.6 deverão exportar a escrituração, e, em seguida, importar novamente, editar, validar, assinar e transmitir na versão 6.0.7. Caso seja utilizado algum arquivo de escrituração assinado em versões anteriores do PGE, a assinatura deverá ser removida previamente à importação na versão 6.0.7.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7795" target="_blank">Portal SPED</a> <br/>Publicada em 22/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

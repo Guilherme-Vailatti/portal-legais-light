@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS RJ - Portaria Sucief nº 181/2025 - Aprovada nova versão - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>08/05/2025| ICMS RJ - Portaria Sucief nº 181/2025 - Aprovada nova versão das instruções de preenchimento da Declan-IPM 2025 (ano-base 2024)</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria de Estado de Fazenda do Rio de Janeiro (Sefaz/RJ) aprovou a terceira versão das Instruções de Preenchimento da Declan-IPM 2025 (ano-base 2024), com o objetivo de otimizar as orientações relativas ao preenchimento do Quadro <b>Ajustes do Valor Adicionado e Outras Informações Econômico-Fiscais</b>, notadamente os itens <b>'4.e'</b> e <b>'10.e'</b> da Tabela de Ajustes e Informações Econômico-Fiscais.</p><p>A nova versão das instruções de preenchimento da Declan-IPM 2025 será disponibilizada para consulta pela <a href="https://portal.fazenda.rj.gov.br/declan-ipm/" target="_blank">Sefaz/RJ</a>.</p><p>Informa-se que os contribuintes que, porventura, tenham preenchido e transmitido a Declan-IPM 2025 em desconformidade com as instruções de preenchimento deverão proceder com a retificação da respectiva declaração</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.rj.gov.br/relacao-das-portarias-sucief-2024/" target="_blank">Portaria Sucief nº 181/2025</a> <br/>Publicada em 06/05/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

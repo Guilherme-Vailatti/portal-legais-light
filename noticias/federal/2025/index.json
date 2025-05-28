@@ -1,0 +1,938 @@
+[
+  {
+    "id": "2025/2025-04-30-publicacao-versao-10-3-3-programa-ecd",
+    "data": "30/04/2025",
+    "titulo": "30/04/2025 | SPED ECD - Publicação da versão 10.3.3 do programa da ECD",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-30-publicados-convenios-e-ajustes-relacionados-aos-documentos-fiscais-e-beneficios",
+    "data": "30/04/2025",
+    "titulo": "30/04/2025 | Federal - Despacho nº 12/2025 - Publicados convênios e ajustes relacionados aos documentos fiscais e benefícios",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-30-sped-contribuicoes-versao-corretiva-6-0-8-publicada",
+    "data": "30/04/2025",
+    "titulo": "30/04/2025 | SPED EFD Contribuições - Publicada versão corretiva 6.0.8",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-alterada-as-disposicoes-que-possibilita-a-apuracao-do-imposto-pela-efd-icms-ipi-em-substituicao-a-dapi-1",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | ICMS MG - Portaria SRE nº 256/2025 - Alterada as disposições que possibilita a apuração do imposto pela EFD ICMS/IPI em substituição a Dapi 1",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-bc-moderniza-boleto-de-pagamento",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | Federal - Resolução BCB nº 443/2024 - BC moderniza o boleto de pagamento",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-comissao-aprova-projeto-que-libera-credito-para-quem-pedir-nota-fiscal",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | Congresso Nacional - Comissão aprova projeto que libera crédito para quem pedir nota fiscal",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-icms-ceara-allteracoes-relativas-ao-cfe-e-nfce",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | ICMS CE - Decreto nº 36.417/2025 - Alterações relativamente ao CF-e e NFC-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-nota-tecnica-divulga-atualzacao-para-adequacao-a-nff",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | NF-e NFC-e - Nota Técnica nº 2021.002, v. 1.12 - Divulga atualização para adequação à NFF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-novas-instrucoes-em-substituicao-da-efd-utilizado-na-geracao-da-gia-automatica",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | ICMS RS - Instrução Normativa RE nº 5/2025 - Novas instruções em substituição da EFD utilizado na geração da GIA Automática",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-publicacao-versao-11-0-2-programa-da-ecf",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | SPED ECF - Publicação da Versão 11.0.2 do programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-publicadas-normas-para-correcao-de-nfe-e-nfce-com-destaque-a-menor-aliquota-do-imposto",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | ICMS DF - Instrução Normativa SUREC nº 1/2025 - Publicadas normas para correção de NF-e e NFC-e com destaque a menor de alíquota do imposto",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-30-receita-promove-encontro-com-cfc-para-discutir-temas-da-reforma-tributaria-do-consumo-rtc",
+    "data": "30/01/2025",
+    "titulo": "30/01/2025 | Reforma Tributária - LC nº 214/2025 - Receita Federal promove encontro com representantes do CFC para tratar de temas relacionados à implantação da Reforma Tributária do Consumo (RTC)",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-29-alteracoes-creditos-acumulados-sistemas-custo-simplificado",
+    "data": "29/04/2025",
+    "titulo": "29/04/2025 | ICMS SP - Portaria SRE nº 15/2025 - Alteradas as disciplinas referentes às apurações de crédito acumulado pelos sistemas de custo e simplificado",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-29-reforma-tributaria-consumo-impacto-positivo-empresas-fluxo-caixa",
+    "data": "29/04/2025",
+    "titulo": "29/04/2025 | Reforma Tributária - Novas regras de tributação do consumo terão impacto positivo sobre o fluxo de caixa das empresas, afirma Appy",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-29-revogada-obrigatoriedade-preenchimento-imposto-desonerado-nfe-nfce",
+    "data": "29/04/2025",
+    "titulo": "29/04/2025 | ICMS SC - Ato DIAT nº 18/2025 - Revogada a obrigatoriedade de preenchimento da informação do imposto desonerado na NF-e e NFC-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-27-7-impactos-positivos-da-reforma-tributaria-no-comercio-exterior-brasileiro",
+    "data": "27/03/2025",
+    "titulo": "27/03/2025 | Reforma Tributária - 7 impactos positivos da Reforma Tributária no comércio exterior brasileiro",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-27-projeto-altera-base-de-calculo-de-impostos-sobre-consumo",
+    "data": "27/03/2025",
+    "titulo": "27/03/2025 | Congresso Nacional - PLP nº 16/2025 - Projeto altera base de cálculo de impostos sobre o consumo",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-27-simplificacao-operacional-com-leiaute-qr-code-resposta-assincrona-lote-1-nfe",
+    "data": "27/03/2025",
+    "titulo": "27/03/2025 | NF-e NFC-e - Nota Técnica nº 2025.001, v. 1.0 - Simplificação Operacional: Leiaute QR-Code, Resposta Assíncrona Lote 1 NF-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-camara-aprova-projeto-com-beneficio-tributario-para-micro-empresas-exportadoras",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | Congresso Nacional - PL nº 4.043/2024 - Câmara aprova projeto com benefício tributário para micro e pequenas empresas exportadoras",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-fisco-de-sc-revoga-obrigatoriedade-de-preenchimento-de-alguns-campos-nos-documentos-fiscais",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | ICMS SC - Ato Diat nº 10/2025 - Revoga dispositivo que estabelece a obrigatoriedade de preenchimento dos campos vICMSDeson e motDesICMS nos documentos fiscais eletrônicos",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-informe-tecnico-alteracao-tabela-fcp",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | NF-e NFC-e - Informe Técnico nº 2023.004, v. 1.03 - Alteração da tabela de FCP",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-nota-tecnica-divulga-alteracao-nas-regras-de-validacao-do-gtin",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | NF-e NFC-e - Nota Técnica nº 2021.003, v. 1.4 - Divulga alteração nas regras de validação do GTIN",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-postergacao-das-regras-de-validacao-do-codigo-de-seguranca-do-responsavel-tecnico-para-o-parana",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | NF-e NFC-e - Nota Técnica nº 2018.005 v. 1.50 - Postergação das regras de validação do código de segurança do responsável técnico para o estado do Paraná",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-publicada-versao-6-0-3-corretiva-do-pge-da-efd-contribuicoes",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | SPED EFD Contribuições - Publicada versão 6.0.3 corretiva do PGE da EFD Contribuições",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-27-receita-federal-institui-piloto-do-programa-receita-sintonia-para-estimular-conformidade-tributaria",
+    "data": "27/02/2025",
+    "titulo": "27/02/2025 | Receita Federal - Receita Federal institui piloto do programa Receita Sintonia para estimular conformidade tributária",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-25-alteradas-as-instrucoes-adicionais-para-a-geracao-dos-arquivos-da-efd",
+    "data": "25/03/2025",
+    "titulo": "25/03/2025 | ICMS SC - Ato DIAT nº 16/2025 - Alteradas as instruções adicionais para a geração dos arquivos da EFD",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-25-definidas-as-datas-de-obrigatoriedade-para-nf3e-e-nfcom",
+    "data": "25/03/2025",
+    "titulo": "25/03/2025 | ICMS SP - Portaria SRE nº 14/2025 - Definidas as datas de obrigatoriedade para a NF3e e NFCom",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-25-manual-de-orientacao-ao-desenvolvedor-da-efd-reinf-versao-2-6",
+    "data": "25/03/2025",
+    "titulo": "25/03/2025 | SPED EFD Reinf - MOD, v. 2.6 - Manual de Orientação ao Desenvolvedor da EFD-Reinf - Versão 2.6",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-25-receita-federal-informa-limite-de-15bi-para-perse-foi-atingido-e-beneficio-fiscal-sera-extinto",
+    "data": "25/03/2025",
+    "titulo": "25/03/2025 | Federal - ADE RFB nº 02/2025 - Receita Federal informa que o limite legal de R$ 15 bilhões para o PERSE foi atingido e o benefício fiscal será extinto",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-25-novas-regras-de-validacao-relativos-as-informacoes-de-produtos-da-agricultura-pecuaria-e-producao-florestal",
+    "data": "25/02/2025",
+    "titulo": "25/02/2025 | NF-e - Nota Técnica nº 2024.003, v. 1.03 - Novas regras de validação relativos as informações de produtos da agricultura, pecuária e produção florestal",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-25-projeto-desobriga-instituicoes-filantropicas-de-prestar-informacoes-sobre-incentivos-fiscais-recebidos",
+    "data": "25/02/2025",
+    "titulo": "25/02/2025 | Congresso Nacional - Projeto de Lei nº 4.252/24 - Projeto desobriga instituições filantrópicas de prestar informações sobre incentivos fiscais recebidos",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-24-federal-despacho-ajustes-documentos-fiscais",
+    "data": "24/04/2025",
+    "titulo": "24/04/2025 | Federal - Despacho nº 09/2025 - Publicados ajustes relacionados aos documentos fiscais",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-24-icms-sp-comunicado-aplicativo-manifestacao-destinatario",
+    "data": "24/04/2025",
+    "titulo": "24/04/2025 | ICMS SP - Comunicado: Aplicativo de manifestação do destinatário",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-24-reforma-tributaria-ccj-aprova-calendario-debates",
+    "data": "24/04/2025",
+    "titulo": "24/04/2025 | Reforma Tributária - Projeto Lei Complementar nº 108/2024 - CCJ aprova calendário de debates sobre segunda parte da reforma tributária",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-23-ajustes-leiautes-versao-2-1-2",
+    "data": "23/04/2025",
+    "titulo": "23/04/2025 | SPED EFD Reinf - NotaTécnica nº 01/2025 - Ajustes nos leiautes da versão 2.1.2",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-23-projeto-trabalhador-opta-deposito-mensal-fgts",
+    "data": "23/04/2025",
+    "titulo": "23/04/2025 | Congresso Nacional - Projeto de Lei nº 335/2025 - Projeto permite que trabalhador opte por receber mensalmente depósitos do FGTS",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-23-publicada-versao-6-0-7-programa-gerador-escrituracao-corretiva-6-0-6",
+    "data": "23/04/2025",
+    "titulo": "23/04/2025 | SPED EFD Contribuições - Publicada a versão 6.0.7 do Programa Gerador de Escrituração, corretiva da 6.0.6",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-23-reforma-tributaria-imposto-seletivo-produtos-gases-estufa",
+    "data": "23/04/2025",
+    "titulo": "23/04/2025 | Reforma Tributária - Projeto aplica o Imposto Seletivo a produtos que geram gases de efeito estufa",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-22-nova-versao-programa-gerador-de-escrituracao-versao-6-0-0",
+    "data": "22/01/2025",
+    "titulo": "22/01/2025 | SPED EFD Contribuições - Nova versão do Programa Gerador de Escrituração, versão 6.0.0",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-22-publicacao-versao-11-0-1-do-programa-da-ecf",
+    "data": "22/01/2025",
+    "titulo": "22/01/2025 | SPED ECF - Publicação da Versão 11.0.1 do Programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-adequacao-bpe",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | BP-e - Nota Técnica nº 2025.001, v. 1.03 - Reforma Tributária - Adequação no BP-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-adequacao-cte",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | CT-e - Nota Técnica nº 2025.001, v. 1.03 - Reforma Tributária - Adequação no CT-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-adequacao-nf3e",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | NF3-e - Nota Técnica nº 2025.001, v. 1.03 - Reforma Tributária - Adequação no NF3-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-adequacao-nfcom",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | NFCom - Nota Técnica nº 2025.001, v. 1.03 - Reforma Tributária - Adequação no NFCom",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-cnpj-alfanumerico-mdfe-schema-validacao",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | MDF-e - Nota Técnica nº 2025.001, v. 1.01 - CNPJ alfanumérico - Altera schema e regras de validação do MDF-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-conselho-superior-comite-gestor-ibs-membros-estaduais-posse",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | Reforma Tributária - Conselho Superior do Comitê Gestor do IBS é instalado e membros indicados pelos Estados tomam posse",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-nova-tabela-cclasstrib-indicadores-cst-2025",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | NF-e NFC-e - Informe Ténico nº 2025.002 v.1.00 - Publicado Informe Técnico 2025.002 v.1.00 para informar nova tabela de classificação tributária (cClassTrib) e indicadores de CST",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-21-reforma-tributaria-retoma-regulamentacao",
+    "data": "21/05/2025",
+    "titulo": "21/05/2025 | Reforma Tributária - PLP nº 108/2024 - CCJ retoma regulamentação da reforma tributária",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-alteracao-de-portaria-que-trata-da-emissao-de-conhecimento-de-transporte-eletronico",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | ICMS SP - Portaria SRE nº 69/2024 – Altera a portaria que trata da emissão de Conhecimento de Transporte Eletrônico",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-alteradas-instrucoes-para-apurar-e-estornar-o-credito-por-contribuinte-que-optar-pelo-credito-presumido",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | ICMS RS - Instrução Normativa RE nº 19/2025 - Alteradas instruções para apurar e estornar o crédito por contribuinte que optar pelo crédito presumido",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-camara-comeca-a-discutir-projeto-que-regulamenta-a-inteligencia-artificial-no-brasil",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | Congresso Nacional - PL nº 2338/2023 - Câmara começa a discutir projeto que regulamenta a inteligência artificial no Brasil",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-chega-ao-congresso-projeto-que-amplia-isencao-de-imposto-de-renda",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | Congresso Nacional - PL nº 1.087/2025 - Chega ao Congresso projeto que amplia isenção de Imposto de Renda",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-postergacao-das-regras-de-validacao-do-codigo-de-seguranca-do-responsavel-tecnico",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | NF-e NFC-e - Nota Técnica nº 2018.005, v. 1.51 - Postergação das regras de validação do Código de Segurança do Responsável Técnico",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-publicacao-da-versao-10-3-1-do-programa-da-ecd",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | SPED ECD - Publicação da Versão 10.3.1 do Programa da ECD",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-receita-esclarece-sobre-obrigatoriedade-ou-nao-para-despachantes-aduaneiros",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | SPED EFD Reinf e eSocial - Receita esclarece sobre obrigatoriedade ou não para despachantes aduaneiros",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-20-stf-mantem-obrigatoriedade-do-emissor-de-cupom-fiscal-para-empresas-varejistas-e-prestadoras-de-servico",
+    "data": "20/03/2025",
+    "titulo": "20/03/2025 | Federal - STF mantém obrigatoriedade do Emissor de Cupom Fiscal para empresas varejistas e prestadoras de serviço",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-20-alteracoes-no-perse-previstas-para-leiaute-da-efd-contribuicoes-para-2025",
+    "data": "20/02/2025",
+    "titulo": "20/02/2025 | SPED Contribuições - Nota Técnica nº 10/2025 - Alterações, quando ao Perse, previstas para o leiaute da EFD-Contribuições para o ano de 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-20-inclusao-de-novo-municipio-no-estado-do-mato-grosso",
+    "data": "20/02/2025",
+    "titulo": "20/02/2025 | NF-e - Informe Técnico nº 2025.001, v.1.00 - Inclusão de novo município no Estado do Mato Grosso",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-20-nota-fiscal-de-servicos-eletronica-de-padrao-nacional-para-2026",
+    "data": "20/02/2025",
+    "titulo": "20/02/2025 | NFS-e - LC nº 214/2025 - Nota Fiscal de Serviços Eletrônica de padrão nacional para 2026",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-20-projeto-reestrutura-a-tabela-mensal-do-imposto-de-renda",
+    "data": "20/02/2025",
+    "titulo": "20/02/2025 | Congresso Nacional - PL nº 141/2025 - Projeto reestrutura a tabela mensal do Imposto de Renda",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-20-stf-reafirma-entendimento-sobre-não-incidencia-de-icms-na-transferencia-de-bens-do-mesmo-contribuinte",
+    "data": "20/02/2025",
+    "titulo": "20/02/2025 | Federal - STF reafirma entendimento sobre não incidência de ICMS na transferência de bens do mesmo contribuinte",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-20-gia-sera-dispensada-a-partir-de-2026",
+    "data": "20/01/2025",
+    "titulo": "20/01/2025 | ICMS SP - Portaria SRE nº 2/2025 - GIA será dispensada a partir de janeiro de 2026",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-20-mudancas-no-ambiente-de-producao-restrita",
+    "data": "20/01/2025",
+    "titulo": "20/01/2025 | SPED EFD Reinf - Mudanças no ambiente de produção restrita",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-20-pais-tera-nova-tributacao-sobre-consumo-a-partir-de-2026",
+    "data": "20/01/2025",
+    "titulo": "20/01/2025 | Reforma Tributária - LC nº 214/2025 - País terá nova tributação sobre consumo a partir de 2026",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-17-alteradas-informacoes-des-if-3-2",
+    "data": "17/01/2025",
+    "titulo": "17/01/2025 | ISSQN DF - Portaria SEEC nº 23/2025 - Alteradas informações da DES-IF 3.2",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-17-governo-federal-edita-medida-provisoria-para-reforcar-gratuidade-do-pix",
+    "data": "17/01/2025",
+    "titulo": "17/01/2025 | Ministério da Fazenda - MP nº1.288/2025 - Governo Federal edita Medida Provisória para reforçar gratuidade do Pix",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-17-problemas-na-versao-11-0-0-programa-da-ecf",
+    "data": "17/01/2025",
+    "titulo": "17/01/2025 | SPED ECF - Problemas na versão 11.0.0 do programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-17-reforma-tributaria-obra-da-democracia-diz-rodrigo-pacheco",
+    "data": "17/01/2025",
+    "titulo": "17/01/2025 | Reforma Tributária - LC nº 214/2025 - Reforma tributária é obra da democracia, diz Rodrigo Pacheco",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-17-sancionada-lei-complementar-que-regulamenta-reforma-tributaria",
+    "data": "17/01/2025",
+    "titulo": "17/01/2025 | Reforma Tributária - LC nº 214/2025 - Sancionada Lei Complementar que regulamenta a Reforma Tributária",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-16-publicacao-programa-efd-icms-ipi",
+    "data": "16/05/2025",
+    "titulo": "16/05/2025 | SPED EFD ICMS IPI - Publicação do programa EFD ICMS IPI versão 5.0.3",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-padronizacao-no-preenchimento-de-nota-fiscal-eletronica-para-determinadas-operacoes-de-transferencia",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | ICMS PR - NPF REPR nº 22/2025 - Padronização no preenchimento de Nota Fiscal eletrônica, para determinadas operações de transferência",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-reforma-tributaria-nota-tecnica-adequacao-na-bpe",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | BP-e - Nota Técnica nº 2025.001, v. 1.01 - Reforma Tributária - Adequação na BP-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-reforma-tributaria-nota-tecnica-adequacao-nf3e",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | NF3-e - Nota Técnica nº 2025.001, v. 1.01 - Reforma Tributária - Adequação NF3-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-reforma-tributaria-nota-tecnica-adequacao-nfcom",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | NFCom - Nota Técnica nº 2025.001, v. 1.01 - Reforma Tributária - Adequação NFCom",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-reforma-tributaria-nota-tecnica-adequacao-nfe-nfce",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | NF-e NFC-e - Nota Técnica nº 2025.002, v. 1.01 - Reforma Tributária - Adequação NF-e NFC-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-reforma-tributaria-nota-tecnica-adequacao-no-cte",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | CT-e - Nota Técnica nº 2025.001, v. 1.01 - Reforma Tributária - Adequação no CT-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-reforma-tributaria-projeto-estende-impsoto-seletivo-para-alimentos-adocados",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | Reforma Tributária - PLC nº 31/2025 - Projeto estende o Imposto Seletivo para alimentos adoçados",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-16-sped-publicada-versao-11-1-1-do-programa-da-ecf",
+    "data": "16/04/2025",
+    "titulo": "16/04/2025 | SPED ECF - Publicada versão 11.1.1 do programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-15-adequacao-novo-regramento-nota-tecnica-2025-001-simplificacao-operacional-e-alteracoes-uso-do-servico-assincrono",
+    "data": "15/05/2025",
+    "titulo": "15/05/2025 | ICMS MS - Adequação ao novo regramento da NT 2025.001 - Simplificação operacional e alterações no uso do serviço assíncrono",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-15-nota-tecnica-2025-001-v1-02-reforma-tributaria-adequacao-bpe",
+    "data": "15/05/2025",
+    "titulo": "15/05/2025 | BP-e - Nota Técnica nº 2025.001, v. 1.02 - Reforma Tributária - Adequação no BP-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-15-nota-tecnica-2025-001-v1-02-reforma-tributaria-adequacao-cte",
+    "data": "15/05/2025",
+    "titulo": "15/05/2025 | CT-e - Nota Técnica nº 2025.001, v. 1.02 - Reforma Tributária - Adequação no CT-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-15-nota-tecnica-2025-001-v1-02-reforma-tributaria-adequacao-nf3e",
+    "data": "15/05/2025",
+    "titulo": "15/05/2025 | NF3-e - Nota Técnica nº 2025.001, v. 1.02 - Reforma Tributária - Adequação no NF3-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-15-nota-tecnica-2025-001-v1-02-reforma-tributaria-adequacao-nfcom",
+    "data": "15/05/2025",
+    "titulo": "15/05/2025 | NFCom - Nota Técnica nº 2025.001, v. 1.02 - Reforma Tributária - Adequação no NFCom",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-15-receita-federal-lanca-painel-que-facilita-acesso-a-informacoes-de-beneficios-fiscais-incluidos-na-dirbi",
+    "data": "15/05/2025",
+    "titulo": "15/05/2025 | Federal - Receita Federal lança painel que facilita acesso a informações sobre benefícios fiscais incluídos na DIRBI",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-15-alterada-lista-com-codigos-da-efd-vinculados-aos-beneficios-fiscais-listados-no-cbenef",
+    "data": "15/01/2025",
+    "titulo": "15/01/2025 | ICMS RJ - Portaria Sucief nº 172/2025 - Alterada lista com os códigos da EFD vinculados aos benefícios fiscais listados no Manual de Incentivos e Benefícios (cBenef)",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-15-publicacao-da-versao-11-0-0-do-programa-da-ecf",
+    "data": "15/01/2025",
+    "titulo": "15/01/2025 | SPED ECF - Publicação da Versão 11.0.0 do Programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-15-tabela-de-combustiveis-sujeitos-a-tributacao-monofasica",
+    "data": "15/01/2025",
+    "titulo": "15/01/2025 | NF-e NFC-e - Informe Técnico nº 2023.003, v. 1.05 - Tabela de Combustíveis Sujeitos à Tributação Monofásica",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-14-estabelecidas-normas-para-desembaraco-de-nfe-cancelaento-e-reanalise-da-tributacao",
+    "data": "14/04/2025",
+    "titulo": "14/04/2025 | ICMS/AM - Resolução GSEFAZ nº 9/2025 - Estabelecidas normas para o desembaraço de NF-e, cancelamento do desembaraço e reanálise da tributação",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-14-nova-tabela-progressiva-mensal-do-imposto-de-renda-para-2025",
+    "data": "14/04/2025",
+    "titulo": "14/04/2025 | Federal - MP nº 1.294/2025 - Nova tabela progressiva mensal do Imposto de Renda para 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-13-icms-sc-decreto-alteracoes-drcst",
+    "data": "13/05/2025",
+    "titulo": "13/05/2025 | ICMS SC - Decreto nº 974/2025 - Alterações na entrega do DRCST (Demonstrativo para Ressarcimento, Restituição e Complementação do ICMS ST)",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-13-ato-diat-11-2025-revoga-dispositivos-do-ato-diat-35-2024",
+    "data": "13/03/2025",
+    "titulo": "13/03/2025 | ICMS SC - Ato DIAT nº 11/2025 - Altera as regras de preenchimento do campo cBenef",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-13-novo-sistema-tributario-tem-como-efeito-um-federalismo-mais-justo-afirma-appy",
+    "data": "13/02/2025",
+    "titulo": "13/02/2025 | Reforma Tributária - Novo sistema tributário tem como efeito um federalismo mais justo, afirma Appy",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-13-comunicado-novas-regras-para-pix-nao-criam-tributos",
+    "data": "13/01/2025",
+    "titulo": "13/01/2025 | Receita Federal - Comunicado: Novas regras para Pix não criam tributos",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-13-fisco-dispensa-a-entrega-da-gia-st-por-contribuintes-de-outros-estados",
+    "data": "13/01/2025",
+    "titulo": "13/01/2025 | ICMS ES - Decreto nº 5.917-R/2025 - Fisco dispensa a entrega da GIA-ST por contribuintes de outros Estados",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-13-pgfn-reconhece-exclusao-do-icms-st-da-bc-do-pis-cofins",
+    "data": "13/01/2025",
+    "titulo": "13/01/2025 | PIS/COFINS - Parecer SEI nº 4090/2024 - PGFN reconhece exclusão do ICMS ST da BC do PIS e COFINS",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-13-senado-trabalha-para-viabilizar-o-drex-moeda-digital-brasileira",
+    "data": "13/01/2025",
+    "titulo": "13/01/2025 | Congresso Nacional - Senado trabalha para viabilizar o Drex, moeda digital brasileira",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-12-publicacao-versao-10-3-0-programa-ecd",
+    "data": "12/03/2025",
+    "titulo": "12/03/2025 | SPED ECD - Publicação da Versão 10.3.0 do Programa da ECD",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-12-segunda-turma-do-stf-reafirma-direito-ao-credito-de-icms-na-compra-de-produtos-intermediarios",
+    "data": "12/02/2025",
+    "titulo": "12/02/2025 | Federal - STF: Segunda Turma reafirma direito ao crédito de ICMS na compra de produtos intermediários",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-10-publicadas-tabelas-dinamicas-e-planos-de-contas-referenciais-cosif-2025-leiaute-11",
+    "data": "10/04/2025",
+    "titulo": "10/04/2025 | SPED ECD e ECF - Publicadas tabelas dinâmicas e planos de contas referenciais - COSIF 2025 - Leiaute 11",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-10-sped-publicacao-programa-efd-icms-ipi-versao-5-0-2",
+    "data": "10/04/2025",
+    "titulo": "10/04/2025 | SPED EFD ICMS IPI - Publicação do programa EFD ICMS IPI versão 5.0.2",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-09-dfe-nt-2025-001-cnpj-alfanumerico",
+    "data": "09/05/2025",
+    "titulo": "09/05/2025 | DFe - NT Conjunta nº 2025.001, v. 1.00 - Orientações sobre implementação do CNPJ alfanumérico nos documentos fiscais eletrônicos",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-09-appy-alerta-empresas-para-que-considerem-efeitos-da-reforma-nos-contratos",
+    "data": "09/04/2025",
+    "titulo": "09/04/2025 | Reforma Tributária - Appy alerta empresas para que já considerem efeitos da reforma nos contratos",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-09-motta-anuncia-comissao-especial-para-analisar-isencao-do-ir-para-quem-ganha-ate-5-mil",
+    "data": "09/04/2025",
+    "titulo": "09/04/2025 | Congresso Nacional - PL nº 1.087/2025 - Motta anuncia comissão especial para analisar isenção do IR para quem ganha até R$ 5 mil",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-09-nova-versao-10-3-2-programa-da-ecd",
+    "data": "09/04/2025",
+    "titulo": "09/04/2025 | SPED ECD - Nova versão 10.3.2 do programa da ECD",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-09-publicacao-do-programa-efd-icms-ipi-versao-5-0-1",
+    "data": "09/04/2025",
+    "titulo": "09/04/2025 | SPED EFD ICMS IPI - Publicação do programa EFD ICMS IPI versão 5.0.1",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-alteracoes-no-regulamento-do-imposto-relativas-a-devolucao-de-mercadorias",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS MG - Decreto nº 48.967/2024 - Alterações no regulamento do imposto relativas à devolução de mercadorias",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-aprovado-leiaute-11-da-escrituracao-contabil-fiscal-2025",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | SPED ECF - ADE Cofis nº 38/2024 - Aprovado o leiaute 11 da Escrituração Contábil Fiscal 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-atualizacao-na-tabela-de-ncm-a-partir-de-02-01-2025",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | NF-e NFC-e - Informe Técnico nº 2024.001, v. 2.10 - Atualização na tabela de NCM a partir de 02/01/2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-comunicado-esclarece-sobre-a-evolucao-na-e-financeira",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | Receita Federal - Comunicado: Esclarecimento sobre a evolução na e-Financeira",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-contribuinte-deve-ficar-atento-aos-prazos-para-registrar-opcao-do-rudfto-e-informar-no-siare",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS MG - Comunicado: Tributação na transferência de mercadoria: Contribuinte deve ficar atento aos prazos para registrar opção no Rudfto e informar no SIARE",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-criterios-para-classificacao-de-maiores-contribuintes-da-receita-federal",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | Receita Federal - Portaria RFB nº 505/2024 - Maiores contribuintes da Receita Federal",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-evento-pedido-de-prorrogacao-suspensao-do-icms-em-casos-de-remessa-para-industrializacao",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | NF-e MG - Comunicado: Evento Pedido de Prorrogação Suspensão do ICMS em casos de remessa para industrialização",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-incluido-na-apuracao-do-vaf-o-valor-do-ipi-que-não-integra-a-base-de-calculo-do-icms",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS MG - Decreto nº 48.966/2024 - Incluído na apuração do VAF o valor do IPI que não integra a base de cálculo do ICMS",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-novidade-no-pagamento-de-tributos-parcelados-agora-possivel-pagamento-com-cartao-de-credito",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | Receita Federal - Novidade no pagamento de tributos parcelados: Agora é possível pagar com Cartão de Crédito!",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-opcao-pelo-simples-nacional-e-pelo-simei-em-2025",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | Simples Nacional - Opção pelo Simples Nacional e pelo Simei em 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-programa-gerador-da-dmed-2025-disponivel-para-download",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | DMED - ATO COFIS nº 36/2024 - Programa Gerador da DMED 2025 disponível para download",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-promovida-adequacao-na-tipi-a-partir-de-janeiro-de-2025",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | IPI - ADI RFB nº 09/2024 - Promovida adequação na TIPI a partir de janeiro de 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-prorrogada-novamente-a-obrigatoriedade-de-preenchimento-do-campo-cbenef",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS SC - Ato DIAT nº 74/2024 - Prorrogada novamente a obrigatoriedade de preenchimento do campo cBenef",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-publicacao-da-versao-10-2-3-do-programa-da-ecd",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | SPED ECD - Publicação da Versão 10.2.3 do Programa da ECD",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-rfb-amplia-o-numero-de-incentivos-a-serem-declarados-na-dirbi",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | DIRBI - Instrução Normativa nº 2.241/2024 - RFB amplia o número de incentivos a serem declarados na DIRBI",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-rio-grande-do-sul-passara-a-gerar-a-gia-automatica-dispensando-o-contribuinte-da-entrega-da-gia-mensal",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS RS - Instrução Normativa  RE nº 123/2024 - Rio Grande do Sul passará a gerar a GIA automática, dispensando o contribuinte da entrega da GIA mensal",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-sancionada-lei-que-estabelece-tributacao-minima-de-15-por-cento-sobre-lucro-das-multinacionais",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | CSLL - Lei nº 15.079/2024 - Sancionada lei que estabelece tributação mínima de 15% sobre lucro das multinacionais",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-sefaz-volta-a-autorizar-ativacao-de-novos-equipamentos-sat",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS SP - Portaria SER nº 92/2024 - SEFAZ volta a autorizar ativação de novos equipamentos SAT",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-segunda-parte-da-regulamentacao-sera-votada-em-2025",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | Reforma Tributária - PLP nº 68/2024 - Segunda parte da regulamentação será votada em 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-01-09-ufs-divulgam-novas-aliquotas-para-2025",
+    "data": "09/01/2025",
+    "titulo": "09/01/2025 | ICMS - UFs divulgam novas alíquotas internas para 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-08-aprovada-nova-versao-instrucoes-declan-ipm-2025-ano-base-2024",
+    "data": "08/05/2025",
+    "titulo": "08/05/2025| ICMS RJ - Portaria Sucief nº 181/2025 - Aprovada nova versão das instruções de preenchimento da Declan-IPM 2025 (ano-base 2024)",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-08-camara-instala-comissao-imposto-de-renda",
+    "data": "08/05/2025",
+    "titulo": "08/05/2025| Congresso Nacional - Câmara instala comissão do Imposto de Renda nesta terça-feira",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-08-nova-tabela-cst-ibs-cbs-nfe-nfce",
+    "data": "08/05/2025",
+    "titulo": "08/05/2025 | NF-e NFC-e - Nova tabela de Código de Classificação Tributária (CST) do IBS e CBS",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-07-alteracoes-no-guia-pratico-em-virtude-da-reforma-tributaria-cbs-ibs-is",
+    "data": "07/02/2025",
+    "titulo": "07/02/2025 | SPED EFD ICMS IPI - Alterações no Guia Prático em virtude da reforma tributária (CBS/IBS/IS)",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-06-projeto-reforma-tributaria-do-consumo-documentos-fiscais-nova-versao-da-nfs-e",
+    "data": "06/03/2025",
+    "titulo": "06/03/2025 | Reforma Tributária - Nota Técnica nº 002, v. 1.00 - Projeto Reforma Tributária do Consumo - Documentos Fiscais - Nova versão da NFS-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-06-receita-federal-dialoga-com-cfc-e-febraban-sobre-novo-cnpj-alfanumerico",
+    "data": "06/03/2025",
+    "titulo": "06/03/2025 | Federal - Receita Federal dialoga com CFC e Febraban sobre o novo CNPJ Alfanumérico",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-06-receita-federal-traz-esclarecimentos-sobre-a-legislacao-tributaria",
+    "data": "06/03/2025",
+    "titulo": "06/03/2025 | Federal - Solução de Consulta - Receita Federal traz esclarecimentos sobre a legislação tributária",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-03-06-senado-ira-analisar-criacao-do-comite-gestor-do-ibs",
+    "data": "06/03/2025",
+    "titulo": "06/03/2025 | Reforma Tributária - PLC nº 108/2024 - Senado vai analisar criação do Comitê Gestor do IBS",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-06-receita-federal-disponibiliza-o-ultimo-perguntas-e-respostas-da-dirf-2025",
+    "data": "06/02/2025",
+    "titulo": "06/02/2025 | DIRF - Receita Federal disponibiliza o último perguntas e respostas da DIRF 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-05-federal-rfb-altera-consolidacao-contribuicoes",
+    "data": "05/05/2025",
+    "titulo": "05/05/2025 | Federal - IN RFB nº 2.264/2025 - RFB altera norma que consolida as contribuições",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-05-05-obrigatoriedade-nfce-bpe-sc",
+    "data": "05/05/2025",
+    "titulo": "05/05/2025 | ICMS SC - Ato Diat nº 23/2025 - Estabelece prazos para a obrigatoriedade de uso da NFC-e e BP-e no estado de Santa Catarina",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-04-ativacao-de-regras-de-validacao-nfe-modelo-55-e-nfce-modelo-65-beneficios-fiscais-icms-sc",
+    "data": "04/04/2025",
+    "titulo": "04/04/2025 | ICMS SC - Correio Eletrônico Circular SEF/DIAT nº 03/2025 - Ativação das regras de validação dos campos da NF-e (modelo 55) e NFC-e (modelo 65) relativos a benefícios fiscais",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-04-declan-ipm-2025-ano-base-2024-icms-rj",
+    "data": "04/04/2025",
+    "titulo": "04/04/2025 | ICMS RJ - Portaria SUCIEF nº 175/2025 - Declan-IPM 2025 (ano-base 2024)",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-04-novas-regras-para-validacao-da-efd-icms-ipi-icms-rj",
+    "data": "04/04/2025",
+    "titulo": "04/04/2025 | ICMS RJ - Portaria SUCIEF nº 176/2025 - Novas regras para validação da EFD ICMS IPI",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-04-comissao-aprova-projeto-que-atualiza-tributos-que-deverao-ser-informados-em-nota-fiscal",
+    "data": "04/02/2025",
+    "titulo": "04/02/2025 | Congresso Nacional - PL nº 1.310/2024 - Comissão aprova projeto que atualiza tributos que deverão ser informados em nota fiscal",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-04-gia-st-de-sao-paulo-sera-dispensada-a-partir-de-julho-de-2025",
+    "data": "04/02/2025",
+    "titulo": "04/02/2025 | ICMS SP - Portaria SRE nº 06/2025 - GIA-ST de São Paulo será dispensada a partir de julho de 2025",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-04-incorporada-previsao-de-dispensa-da-gia-st-para-contribuintes-de-outros-estados",
+    "data": "04/02/2025",
+    "titulo": "04/02/2025 | ICMS SP - Decreto nº 69.338/2025 - Incorporada previsão de dispensa da GIA-ST para contribuintes de outros Estados",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-04-publicacao-versao-11-0-3-do-programa-da-ecf",
+    "data": "04/02/2025",
+    "titulo": "04/02/2025 | SPED ECF - Publicação da versão 11.0.3 do programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-02-04-sped-efd-novo-pge-com-a-versao-6-0-2",
+    "data": "04/02/2025",
+    "titulo": "04/02/2025 | SPED EFD Contribuições - Novo PGE com a versão 6.0.2",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-adequacao-na-nfe-nfce-substitui-a-nt-2024-002-v1-10",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | NF-e e NFC-e - Nota Técnica nº 2025.002, v. 1.00 - Reforma Tributária - Adequação na NF-e e NFC-e, substitui a NT nº 2024.002 v.1.10",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-adequacao-no-cte-substitui-a-nt-2024-001-v1-10",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | CT-e - Nota Técnica nº 2025.001, v. 1.00 - Reforma Tributária - Adequação no CT-e, substitui a NT nº 2024.001, v.1.10",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-contribuinte-devera-informar-codigo-cbenef-em-notas-a-partir-de 5-de-maio",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | ICMS SC - Prorrogado: contribuinte deverá informar código de benefícios fiscais (cBenef) em notas a partir de 5 de maio",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-criacao-gt-publico-privado-para-colaborar-com-desenvolvimento-e-aprimoramento-da-nfse",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | Reforma Tributária - Resolução CGNFS-E nº 5/2025 - Cria Grupo de Trabalho Técnico público-privado com a finalidade de colaborar com o desenvolvimento e aprimoramento da NFS-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-exclusao-do-icms-da-bc-restituicao-ressarcimento-compesacao-constituicao-do-credito",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | Federal - Solução de Consulta COSIT nº 47/2025 - Exclusão do ICMS da BC - RE 574.706/PR - Restituição/Ressarcimento/Compensação - Constituição do Crédito",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-nota-tecnica-2025-001-v1-00-adequacao-nfcom",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | NFCom - Nota Técnica nº 2025.001, v. 1.00 - Reforma Tributária - Adequação na NFCom",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-projeto-regulamenta-cbs-para-criar-credito-presumido-para-setor-de-servicos",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | Reforma Tributária - PLC n° 63/2025 - Projeto regulamenta a CBS para criar o crédito presumido para o setor de serviços",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-publicada-versao-11-1-0-do-programa-da-ecf",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | SPED ECF - Publicada versão 11.1.0 do programa da ECF",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-publicada-versao-6-0-6-do-programa-gerador-de-escrituracao",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | SPED EFD Contribuições - Publicada versão 6.0.6 do Programa Gerador de Escrituração",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-reforma-tributaria-adequacao-na-bpe",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | BP-e - Nota Técnica nº 2025.001, v. 1.00 - Reforma Tributária - Adequação na BP-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-reforma-tributaria-adequacao-nf3e",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | NF3-e - Nota Técnica nº 2025.001, v. 1.00 - Reforma Tributária - Adequação na NF3-e",
+    "temaSlug": "federal"
+  },
+  {
+    "id": "2025/2025-04-02-relator-preve-votar-ainda-neste-semestre-projeto-do-comite-gestor-do-ibs",
+    "data": "02/04/2025",
+    "titulo": "02/04/2025 | Reforma Tributária - PLP 108/2024 - Relator prevê votar ainda neste semestre o projeto do comitê gestor do IBS",
+    "temaSlug": "federal"
+  }
+]

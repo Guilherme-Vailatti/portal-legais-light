@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Appy alerta empresas para que já consid - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/04/2025 | Reforma Tributária - Appy alerta empresas para que já considerem efeitos da reforma nos contratos</h1>
+</div>
+<div class="noticia-corpo">
+<p>O secretário extraordinário da Reforma Tributária, Bernard Appy, afirmou nesta sexta-feira (4/4), em seminário realizado pelo escritório Loria Advogados, em parceria com a Seta Public Affairs, em São Paulo, que as empresas precisam “fazer a lição de casa” para se ajustar ao novo sistema de tributação do consumo. Appy fez um alerta às empresas para que considerem os efeitos da Reforma Tributária nos contratos que se estendam até depois de 2027.  “A reforma corrige distorções nos preços relativos que tornam a economia menos eficiente”, disse.</p><p>“É preciso olhar a cadeia toda e entender como a não cumulatividade plena afeta as empresas”, acrescentou, referindo-se a um dos princípios basilares da Reforma Tributária, que trata da recuperação de créditos dos impostos pagos ao longo da cadeia produtiva.</p><p>Segundo Appy, a empresa que não estiver considerando os efeitos da Reforma Tributária nos contratos “está errando”. Ele enfatizou que, no novo sistema, o preço negociado será sem tributo. “As empresas têm que entender isso, e como isso as afetará”. Dúvidas sobre esse e outros temas da reforma poderão ser esclarecidos pelas empresas inclusive em 2026, ano de teste para a entrada em funcionamento do novo sistema de tributação do consumo.</p><p>O Governo Federal trabalha na criação de um canal de interlocução com o setor privado sobre a implementação das novas regras. “Esse diálogo é muito importante para que a regulamentação seja a mais clara possível e gera segurança jurídica para os atores envolvidos”, ressaltou Appy. Dessa forma, ele acredita, “a tensão e a ansiedade, que são naturais, passarão a ser reduzidas”.</p><p>Depois da sanção presidencial, ocorrida em janeiro, da Lei Complementar 214/2025, que regulamenta a maior parte da reforma, resta a tramitação legislativa do PLP 108/2024, que trata da instituição do Comitê Gestor do Imposto sobre Bens e Serviços (IBS) e está em apreciação pelo Senado. Appy comentou que a Secretaria Extraordinária da Reforma Tributária (Sert), criada no início de 2023 e responsável pelo apoio técnico do Governo Federal ao Congresso Nacional durante todo o processo que levou à promulgação da Emenda Constitucional (EC) 132/2023 e à conversão do PLP 68/2024 em LC 214/2025, passará agora a exercer um papel de apoio às administrações tributárias das três esferas da Federação, os “atores mais relevantes” na etapa atual, de elaboração dos regulamentos e sistemas operacionais dos novos tributos.</p><p>O seminário foi organizado pelo advogado tributarista e ex-diretor da Sert Daniel Loria e, contou, em seu primeiro painel – “Reforma Tributária: Avanços e Desafios” –, com a participação do senador Eduardo Braga (MDB-AM), relator da Proposta de Emenda à Constituição (PEC) 45/2019, transformada em EC 132/2023, e do PLP 68/2024, convertido em LC 214/2025; dos deputados Aguinaldo Ribeiro (PP-PB) e Mauro Benevides Filho (PDT-CE), respectivamente relatores da PEC 45/2019 e do PLP 108/2024 na Câmara dos Deputados, além do secretário Bernard Appy. O painel foi mediado pela advogada e cientista política Camilla Cavalcanti, ex-diretora da Sert.</p><p>O evento também teve a participação dos auditores da Receita Federal do Brasil (RFB) Roni Peterson de Brito e Marcos Flores; do assessor da Sert João Pedro Nobre; do assessor tributário do Gabinete da Advocacia-Geral da União (AGU), Leonardo Alvim; dos representantes do Pré-Comitê Gestor do IBS, Alberto Macedo e Luiz Dias; do representante do Serviço Federal de Processamento de Dados (Serpro), Robson Dias Lima; e da diretora jurídica da Confederação Nacional das Instituições Financeiras(CNF), Cristiane Coelho.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2025/abril/appy-alerta-empresas-para-que-ja-considerem-efeitos-da-reforma-nos-contratos" target="_blank">Receita Federal</a> <br/>Publicada em 04/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

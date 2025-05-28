@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS SC - Ato Diat nº 23/2025 - Estabelece prazos para a obr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2025 | ICMS SC - Ato Diat nº 23/2025 - Estabelece prazos para a obrigatoriedade de uso da NFC-e e BP-e no estado de Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p><b>Art. 1º</b> O Ato DIAT nº 56, de 17 de setembro de 2024, passa a vigorar acrescido do Art. 1º-A, com a seguinte redação:</p><ul>
+<li>“<b>Art. 1º</b> - <b>A partir de 1º de agosto de 2025</b>, os estabelecimentos varejistas dispensados da obrigatoriedade de uso de ECF ficam obrigados à emissão da NFC-e, modelo 65, em substituição à Nota Fiscal de Venda a Consumidor, modelo 2, série “D”.” (NR)</li>
+</ul><p><b>Art. 2º</b> - O art. 5° do Ato DIAT nº 56, de 2024, passa a vigorar com a seguinte redação:</p><ul>
+<li>“<b>Art. 5º</b> <b>Os estabelecimentos obrigados ao uso da NFC-e e do BP-e</b>, nos termos deste Ato, deverão providenciar a cessação de uso de ECF, na forma do disposto no art. 40 do Anexo 9 do RICMS/SC-01, <b>em até 360 (trezentos e sessenta) dias, contados da data de início da obrigatoriedade.</b></li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/atos_diat/2025/atodiat_25_023.htm" target="_blank">Ato Diat nº 23/2025</a> <br/>Publicada em 30/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
