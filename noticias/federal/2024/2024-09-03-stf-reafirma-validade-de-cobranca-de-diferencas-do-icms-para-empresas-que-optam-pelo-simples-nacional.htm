@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIFAL - STF reafirma validade de cobrança de diferenças do I - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/09/2024 | DIFAL - STF reafirma validade de cobrança de diferenças do ICMS para empresas que optam pelo Simples Nacional</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Supremo Tribunal Federal (STF) declarou válidos dispositivos de lei complementar federal que obrigam o recolhimento da diferença de alíquotas (interna x interestadual) do ICMS-ST pelas empresas optantes pelo Simples Nacional que realizarem operações interestaduais. A decisão foi tomada no julgamento da Ação Direta de Inconstitucionalidade <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=5562726" target="_blank">(ADI) 6030</a>, na sessão virtual encerrada em 16/8.</p><p>O Simples Nacional permite o recolhimento mensal de vários impostos e contribuições num único documento de arrecadação, mas, em relação ao ICMS, segue a legislação aplicável às demais pessoas jurídicas. Na ADI, o Conselho Federal da Ordem dos Advogados do Brasil (OAB) questionava os dispositivos da Lei Complementar 123/2006 que tratam desse tema. Entre outros pontos, a entidade alegava que, ao abrir exceção ao regime facilitado do Simples Nacional e impor o recolhimento de tributos em documento diferente, com alíquota variável, a lei prejudica a desburocratização tributária e afronta o tratamento favorecido e simplificado a empresas de pequeno porte previsto na Constituição Federal.</p><p>Na avaliação do ministro Gilmar Mendes, relator da ação, a lei não viola o tratamento diferenciado dado às microempresas e empresas de pequeno porte. Segundo ele, cabe ao legislador definir a base de cálculo, as alíquotas e a forma de apuração dos tributos contemplados pelo Simples Nacional e definir os impostos e as contribuições excluídos do regime de tributação simplificado.</p><p>O ministro acrescentou ainda que o STF, no julgamento do Recurso Extraordinário (RE) 970821 (Tema 517 da repercussão geral), já julgou constitucional a cobrança de diferencial da alíquota do Imposto sobre ICMS nas compras interestaduais feitas por empresas que optem pelo Simples Nacional.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://noticias.stf.jus.br/postsnoticias/stf-reafirma-validade-de-cobranca-de-diferencas-do-icms-para-empresas-que-optam-pelo-simples-nacional/" target="_blank">Portal STF</a> <br/>Publicada em 30/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

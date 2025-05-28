@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - Projeto busca aumentar arrecadação em R - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/09/2024 | Congresso Nacional - Projeto busca aumentar arrecadação em R$ 21 bilhões com alíquota maior de CSLL e IRRF</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Poder Executivo apresentou nesta sexta-feira (30) o Projeto de Lei 3394/24, que aumenta as alíquotas da Contribuição Social Sobre o Lucro Líquido (CSLL) e do Imposto sobre a Renda Retido na Fonte (IRRF) incidente sobre os juros sobre capital próprio. O Ministério da Fazenda estima que, com a medida, a arrecadação deve aumentar no ano que vem em R$ 21 bilhões - 14,93 bilhões com a alteração da alíquota da CSLL e R$ 6,01 bilhões com o IRRF.</p><p>Em 2026, o impacto na arrecadação será menor, com aumento de R$ 1,35 bilhões com a CSLL e R$ 4,99 bilhões com o IRFF, um total de R$ 6,34 bilhões. Isso porque as alíquotas serão fixadas de forma diferenciada de acordo com o ano e o tipo de empresa:</p><ul>
+<li>até 31 de dezembro de 2025, a alíquota da CSLL fica majorada dos atuais 15% para 22%, no caso de pessoas jurídicas de seguros privados; das de capitalização; distribuidoras de valores mobiliários; corretoras de câmbio e de valores mobiliários; sociedades de crédito, financiamento e investimentos; sociedades de crédito imobiliário; administradoras de cartões de crédito; sociedades de arrendamento mercantil; cooperativas de crédito; e associações de poupança e empréstimo. A partir 2026, essa alíquota volta a ser de 15%;</li>
+<li>até 31 de dezembro de 2025, a alíquota da CSLL fica majorada dos atuais 20% para 22%, no caso de bancos de qualquer espécie. A partir de 2026, essa alíquota volta a 20%;</li>
+<li>até 31 de dezembro de 2025, a alíquota da CSLL fica majorada de 9% para 10%, no caso das demais pessoas jurídicas. A partir de 2026, essa alíquota volta a 9%;</li>
+<li>a alíquota do IRRF subirá de 15% para 20% sobre os juros sobre capital próprio, apurados na data do pagamento ou crédito ao beneficiário.</li>
+</ul><p>O projeto ainda acaba com a dedução da contribuição para o PIS/Pasep ou da Cofins de empresas que pagam taxa pela utilização de equipamentos contadores de produção. O fim da renúncia fiscal se deve a decisão do Tribunal de Contas da União (TCU) que determinou à Secretaria da Receita Federal o restabelecimento do Sistema de Controle de Produção de Bebidas (Sicobe).</p><p>A dedução prevista como crédito presumido tem um custo estimado de R$ 1,8 bilhão por ano. Os fabricantes de cigarros também perderão o benefício fiscal, já que o projeto se aplica igualmente ao Sistema de Controle e Rastreamento de Cigarros (Scorpios) e aos custos de selos de cigarros e bebidas.</p><p>A proposta tramita em regime de urgência constitucional. "A urgência da medida está relacionada à necessária observância da anterioridade anual para a majoração da alíquota do Imposto sobre a Renda Retido na Fonte incidente sobre os juros sobre capital próprio e da anterioridade nonagesimal para a elevação das alíquotas da CSLL", justifica o ministro da Fazenda, Fernando Haddad.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1093189-projeto-busca-aumentar-arrecadacao-em-r-21-bilhoes-com-aliquota-maior-de-csll-e-irrf/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 30/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

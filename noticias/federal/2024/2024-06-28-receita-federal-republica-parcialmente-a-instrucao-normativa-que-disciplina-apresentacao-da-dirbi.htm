@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação Federal - Instrução Normativa RFB nº 2.198/2024 - - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/06/2024 | Legislação Federal - Instrução Normativa RFB nº 2.198/2024 - Receita Federal republica, parcialmente, a IN que disciplina a apresentação da DIRBI</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal do Brasil republicou parcialmente a Instrução Normativa 2.198, que disciplina a apresentação da DIRBI - Declaração de Incentivos, Renúncias, Benefícios e Imunidades de Natureza Tributária. A republicação ocorreu devido a uma incorreção na publicação original.</p><p>A DIRBI é um instrumento que permite às autoridades fiscais obter informações sobre os benefícios fiscais usufruídos pelas pessoas jurídicas. A Instrução Normativa especifica quais benefícios fiscais devem ser informados na DIRBI.</p><p>A republicação inclui o Anexo Único desta Instrução Normativa, que detalha os benefícios fiscais que devem ser informados na DIRBI. Esta medida visa aumentar a transparência e garantir que todas as empresas estejam em conformidade com as leis fiscais.</p><p>Lembrando que a instrução entrará em vigor a partir de <b>1º de julho de 2024</b>.</p><p>
+<img src="../../../Resources/Images/Notícias/in-rfb-2198-2024-tabela01.png"/>
+</p><p>
+<img src="../../../Resources/Images/Notícias/in-rfb-2198-2024-tabela02.png"/>
+</p><p>
+<img src="../../../Resources/Images/Notícias/in-rfb-2198-2024-tabela03.png"/>
+</p><p>
+<img src="../../../Resources/Images/Notícias/in-rfb-2198-2024-tabela04.png"/>
+</p><p>
+<img src="../../../Resources/Images/Notícias/in-rfb-2198-2024-tabela05.png"/>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.198-de-17-de-junho-de-2024-567495100" target="_blank">Instrução Normativa RFB Nº 2.198/2024</a> <br/>Publicada em 26/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

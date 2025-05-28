@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>DCTF/DCTFWeb - Fundações públicas vinculadas a regimes própr - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>17/07/2024 | DCTF/DCTFWeb - Fundações públicas vinculadas a regimes próprios de previdência devem declarar a Contribuição para o PIS/Pasep sobre a folha de salários na DCTF</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Desde janeiro de 2024, conforme previsto no art. 19-A da Instrução Normativa RFB nº 2.005, de 29 de janeiro de 2021, a Contribuição para o Programa de Integração Social e para o Programa de Formação do Patrimônio do Servidor Público - PIS/Pasep incidente sobre a folha de salários passou a ser escriturada no eSocial e declarada na DCTFWeb.</p><p>A nova regra, no entanto, não se aplica às fundações instituídas e mantidas pela União, estados, Distrito Federal ou municípios, em relação aos trabalhadores vinculados ao regime próprio de previdência social instituído pelo respectivo ente federativo. Para essas entidades, os valores da Contribuição para o PIS/Pasep apurados sobre a folha de pagamento devem continuar sendo informados na Declaração de Débitos e Créditos Tributários Federais - DCTF, utilizando, a partir de janeiro de 2024, o código 8301-03 (Pasep - Fundações - RPPS).</p><p>Vale ressaltar que não houve alteração nas regras de obrigatoriedade da DCTF.</p><p>Para obter mais informações sobre os códigos de receita que podem ser declarados na DCTF, <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dctf/tabelas-de-codigos-extensoes/dctf-tabelas-de-codigos-extensoes" target="_blank">acesse aqui</a>.</p><p>Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/julho/fundacoes-publicas-vinculadas-a-regimes-proprios-de-previdencia-devem-declarar-a-contribuicao-para-o-pis-pasep-sobre-a-folha-de-salarios-na-dctf" target="_blank">Receita Federal</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/julho/fundacoes-publicas-vinculadas-a-regimes-proprios-de-previdencia-devem-declarar-a-contribuicao-para-o-pis-pasep-sobre-a-folha-de-salarios-na-dctf' target='_blank'>Receita Federal</a> <br>Publicada em 10/07/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

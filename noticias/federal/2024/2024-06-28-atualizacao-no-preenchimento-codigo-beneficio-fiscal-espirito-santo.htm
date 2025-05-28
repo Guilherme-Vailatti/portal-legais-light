@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e ES - Atualização no preenchimento do Código de Benefíci - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/06/2024 | CT-e ES - Atualização no preenchimento do Código de Benefício Fiscal – cBenef conforme Nota Técnica CTe 2024.001</h1>
+</div>
+<div class="noticia-corpo">
+<p>De acordo com a Nota Técnica CTe 2024.001, foram introduzidos campos adicionais relacionados ao benefício fiscal, cuja aplicação varia conforme determinação de cada estado.</p><p>O Estado do Espírito Santo estipulou, por meio do Decreto nº 5.630-R, a obrigatoriedade do preenchimento do <b>Código de Benefício Fiscal – cBenef nas NF-e modelo 55, NF3e modelo 66 e CT-e modelo 57, a partir de 1º de julho de 2024</b>. Este requisito aplica-se às operações e prestações que se beneficiam de isenção, não incidência de ICMS ou redução de base de cálculo, conforme previsto na legislação tributária estadual.</p><p>Para auxiliar no preenchimento adequado dos documentos fiscais, a Secretaria da Fazenda (SEFAZ), através da Receita Estadual, desenvolveu a <a href="https://sefaz.es.gov.br/codigos-de-beneficios-fiscais-cbenef" target="_blank">Tabela cBenef</a>. Esta tabela lista os códigos específicos, descreve os benefícios fiscais correspondentes e indica a legislação aplicável.</p><p>Em caso de dúvidas sobre o preenchimento, você pode esclarecê-las entrando em contato com a Receita Estadual através da opção Fale Conosco, disponível <a href="https://s1-internet.sefaz.es.gov.br/faleconosco" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sefaz.es.gov.br/Notícia/preenchimento-de-documentos-fiscais-em-operacoes-com-isencoes-fiscais-tem-novas-regras#:~:text=A partir do dia 1º,base de cálculo, previstas na" target="_blank">SEFAZ ES</a> <br/>Publicada em 27/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - Projeto de Lei nº 3394/2024 - Projeto d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/09/2024 | Congresso Nacional - Projeto de Lei nº 3394/2024 - Projeto do governo eleva alíquotas de tributos de empresas para evitar perdas com desoneração</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei 3394/24, do Poder Executivo, aumenta as alíquotas da Contribuição Social Sobre o Lucro (CSLL) e do Imposto de Renda Retido na Fonte (IRRF) cobrado nos Juros sobre o Capital Próprio (JCP). A pedido do governo, a proposta está em regime de urgência constitucional, o que permite votá-la direto no Plenário da Câmara dos Deputados.</p><p>O projeto visa compensar a perda de receita do governo com a desoneração da folha de pagamentos. A desoneração está prevista em uma proposta do Senado, <a href="https://www.camara.leg.br/noticias/1091935-CAMARA-VAI-ANALISAR-O-FIM-GRADUAL-DA-DESONERACAO-DA-FOLHA-DE-PAGAMENTO" target="_blank">atualmente em análise na Câmara (PL 1847/24)</a>.</p><p>O Ministério da Fazenda projeta arrecadar R$ 20,94 bilhões com o aumento dos tributos já em 2025.</p><p>De acordo com o PL 3394/24, entre 1º de janeiro a 31 de dezembro de 2025 a alíquota da CSLL será de:</p><ul>
+<li>22% para os bancos (a atual é de 20%);</li>
+<li>16% para empresas de seguros privados, de capitalização, corretoras e sociedades de crédito (atualmente em 15%); e</li>
+<li>10% para as demais pessoas jurídicas (hoje é de 9%).</li>
+</ul><p>Em relação aos Juros sobre o Capital Próprio, o projeto prevê o aumento da alíquota do IRRF dos atuais 15% para 20%, sem previsão de redução posterior. Ou seja, trata-se de uma medida definitiva.</p><p>Os JCP são um instrumento usado por companhias para remunerar seus acionistas. Ele permite que a distribuição de lucros seja enquadrada como despesa e, assim, abatida do Imposto de Renda (IR) e da CSLL.</p><p>O projeto do governo também acaba com a possibilidade de empresas deduzirem do PIS e da Contribuição para o Financiamento da Seguridade Social (Cofins) a taxa cobrada pela Receita Federal sobre os selos de controle e os equipamentos contadores de produção. A taxa está prevista na <a href="https://www2.camara.leg.br/legin/fed/lei/2014/lei-12995-18-junho-2014-778936-norma-pl.html" target="_blank">Lei 12.995/14</a>.</p><p>A medida afeta os importadores e fabricantes de cigarros e bebidas, que usam os selos federais no lacre. Segundo o Executivo, o fim da dedução da taxa evita uma perda de receita anual de R$ 1,8 bilhão.</p><p>Para virar lei, a proposta precisa ser aprovada pela Câmara e pelo Senado.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1093853-projeto-do-governo-eleva-aliquotas-de-tributos-de-empresas-para-evitar-perdas-com-desoneracao/" target="_blank">Projeto de Lei nº 3394/2024</a> <br/>Publicada em 03/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

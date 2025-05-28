@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF3-e - Desativação do Serviço Assíncrono da NF3e - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/09/2024 | NF3-e - Desativação do Serviço Assíncrono da NF3e</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Nota Técnica 2024.002 da NF3e estabelece prazos para a desativação do modelo de autorização assíncrono com envio de lotes, mantendo somente o serviço de recepção síncrono para autorização da nota de energia elétrica.</p><p style="font-weight: bold;">Prazos para desativação dos WS Recepção e Retorno Recepção:</p><ul>
+<li>Homologação: 02/09/2024</li>
+<li>Produção: 07/10/2024</li>
+</ul><p>Nesta data o serviço de lotes passará a responder com cStat 998 - Rejeição: Serviço de recepção de lotes desativado (NT2024.002). Migrar para recepção síncrona.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nf3e/Avisos/2936" target="_blank">Portal DF-e</a> <br/>Publicada em 29/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

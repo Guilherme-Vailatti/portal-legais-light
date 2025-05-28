@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI - Publicado PVA versão 4.0.4 com alteraçõe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/06/2024 | SPED EFD ICMS IPI - Publicado PVA versão 4.0.4 com alterações corretivas</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi disponibilizada a versão <b>4.0.4</b> do PVA EFD ICMS IPI, com as seguintes atualizações:</p><ul>
+<li>Atualização da regra de validação da inscrição estadual do estado do Mato Grosso do Sul para permitir a inclusão de inscrições estaduais geradas a partir da nova sistemática adotada pelo estado;</li>
+<li>Atualização da regra de validação de inscrição estadual para seguir a mesma metodologia adotada pelo Cadastro Centralizado de Contribuintes (CCC);</li>
+<li>Correção de problema relacionado a transmissão de arquivos de período anterior a 2019;</li>
+<li>Correção no registro 1400, onde o Programa Validador estava permitindo a inclusão de códigos de item do registro 0200, mesmo nas situações onde o estado tenha códigos válidos da tabela 5.9.1 publicados para o período da escrituração.</li>
+</ul><p>Download disponível através desse <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/sped-sistema-publico-de-escrituracao-digital/escrituracao-fiscal-digital-efd/escrituracao-fiscal-digital-efd" target="_blank">link</a>. </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7450" target="_blank">Portal SPED</a> <br/>Publicada em 27/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

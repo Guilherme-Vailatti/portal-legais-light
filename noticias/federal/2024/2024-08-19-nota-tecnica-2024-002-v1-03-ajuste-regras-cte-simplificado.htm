@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>CT-e - Nota Técnica nº 2024.002, v. 1.03 - Ajuste nas regras - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/08/2024 | CT-e - Nota Técnica nº 2024.002, v. 1.03 - Ajuste nas regras do CTe Simplificado</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada nova versão da Nota Técnica que define a especificação do CTe Simplificado, com ajuste nas regras do PAA.</p><p><b>Cronograma:</b>
+</p><p>Homologação: 16/09/2024;</p><p>Produção: 21/10/2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Cte/Documentos" target="_blank">Nota Técnica nº 2024.002, versão 1.03</a> <br/>Publicada em 16/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

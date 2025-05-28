@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Receita Federal convoca contribuintes omis - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/09/2024 | Receita Federal - Receita Federal convoca contribuintes omissos das obrigações acessórias a regularizarem pendências</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal oferece uma nova oportunidade de autorregularização aos contribuintes omissos em relação às seguintes declarações e escriturações: Programa Gerador do Documento de Arrecadação do Simples Nacional - Declaratório (PGDAS-D), Declaração Anual Simplificada para o Microempreendedor Individual (DASN-Simei), Declaração de Débitos e Créditos Tributários Federais (DCTF), Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb), Declaração de Informações Socioeconômicas e Fiscais (Defis), Escrituração Contábil Fiscal (ECF) e Escrituração Fiscal Digital das Contribuições incidentes sobre a Receita (EFD-Contribuições), no caso de pessoa jurídica ou equiparada, e Declaração de Ajuste Anual do Imposto sobre a Renda da Pessoa Física (DIRPF), no caso de pessoa física.</p><p>Foram identificados mais de 10 milhões de contribuintes com pendências de obrigações acessórias, dentre pessoas físicas e pessoas jurídicas em atividade.</p><p style="font-weight: bold;">Saiba como verificar as pendências</p><p><a href="https://www.gov.br/pt-br/servicos/consultar-dividas-e-pendencias-fiscais" target="_blank">Clique aqui</a> para acessar o serviço de consulta a dívidas e pendências fiscais ou utilize diretamente a opção “Consulta Pendências - Situação Fiscal” no Centro Virtual de Atendimento da RFB - Portal e-CAC.</p><p>O sistema que aponta a omissão é atualizado com as entregas das declarações e escriturações em um intervalo de 5 a 30 minutos após a transmissão, dependendo do tipo de documento apresentado. Caso tenha interesse, o contribuinte pode acompanhar o processo de saneamento das omissões pelo relatório da situação fiscal, efetuando, por exemplo, uma nova verificação a cada hora.</p><p style="font-weight: bold;">Saiba como regularizar as pendências</p><p><b>Atenção!</b> Não é necessário comparecer às unidades da Receita Federal para regularizar a situação fiscal do contribuinte. Basta apresentar as declarações/escriturações apontadas na consulta de pendências.</p><p>A regularização da omissão é efetuada com a transmissão da(s) declaração(s)/escrituração(s) solicitada(s) por meio da Internet ou, se for o caso, com a comprovação de que a entrega já foi realizada. Na segunda hipótese, poderá ser necessário contatar a RFB por um dos canais de atendimento oficiais para comprovar a entrega dos documentos pendentes.</p><p>No entanto, se a omissão decorrer de incorreções cadastrais como, por exemplo, erro na indicação da natureza jurídica no Cadastro Nacional da Pessoa Jurídica - CNPJ, erro na data de baixa por incorporação ou mesmo falta de efetivação da baixa da pessoa jurídica, será preciso transmitir o ato de alteração cadastral pertinente para conseguir retirar a pendência.</p><p>A regularização ocorrerá de modo automático, exceto se houver ocorrências que indiquem a incompatibilidade das declarações e/ou das escriturações com alguma situação de fato de conhecimento do órgão.</p><p>Para obter mais informações sobre a omissão de obrigações acessórias, acesse a página <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cobrancas-e-intimacoes/controle-de-entrega-de-declaracoes/orientacoes-sobre-o-termo-de-intimacao-por-omissao-na-entrega-de-declaracoes" target="_blank">Receita Federal &gt; Assuntos &gt; Mais Orientações Tributárias &gt; Cobranças e Intimações &gt; Controle de Entrega de Declarações &gt; Orientações sobre o Termo de Intimação por Omissão na Entrega de Declarações</a>.</p><p style="font-weight: bold;">Saiba as consequências da não regularização</p><p>Para o contribuinte Pessoa Física:</p><p>Para o contribuinte Pessoa Jurídica:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1093853-projeto-do-governo-eleva-aliquotas-de-tributos-de-empresas-para-evitar-perdas-com-desoneracao/" target="_blank">Receita Federal</a> <br/>Publicada em 03/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

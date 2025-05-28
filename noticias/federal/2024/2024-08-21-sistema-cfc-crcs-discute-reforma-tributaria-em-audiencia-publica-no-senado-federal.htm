@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Sistema CFC/CRCs discute reforma tribut - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/08/2024 | Reforma Tributária - Sistema CFC/CRCs discute reforma tributária em audiência pública no Senado Federal</h1>
+</div>
+<div class="noticia-corpo">
+<p>O presidente do Conselho Regional de Contabilidade do Rio Grande do Sul (CRCRS) e membro do Grupo de Estudos da Reforma Tributária do Conselho Federal de Contabilidade (CFC), Márcio Schuch, representou o Sistema CFC/CRCs na audiência pública promovida pela Comissão de Assuntos Econômicos do Senado Federal. A não cumulatividade plena da CBS e do IBS, as indevidas restrições vinculadas pelo PLP nº 68, de 2024 e o mecanismo do <i>split payment</i> foram os temas centrais do debate realizado na tarde desta terça-feira (20/08).</p><p>Em sua participação, Schuch ponderou sobre o <i>split payment</i>, uma ferramenta usada para fazer a separação dos pagamentos, de forma automatizada. “Com esse sistema, temos a redução da inadimplência, da sonegação e da fraude. Ele simplifica todo o atual sistema e alavanca o desenvolvimento econômico, entretanto, nós temos, sim, desafios em fazer esse controle que, hoje, objetivamente, não é feito. Haverá nota fiscal de venda vinculada a pagamento – mas não necessariamente toda operação vai ter isso definido no momento da emissão da nota fiscal. Em algumas operações, isso pode vir a acontecer depois, como é o caso da tele-entrega. Precisamos estar em alerta, alguns pontos precisam ser esclarecidos nesse projeto”, ponderou.</p><p>A maior participação da sociedade nas mudanças do país também foi destaque na fala de Márcio Schuch. “Quando a pauta for obrigação acessória, por exemplo, é importante ter a participação do Conselho Federal de Contabilidade, para que possamos levar também os nossos argumentos. Depois da decisão tomada, sem a participação da sociedade, é muito mais difícil voltar atrás; é muito mais difícil voltar a obrigação acessória, e a gente tem inúmeras situações similares”, disse.</p><p>A audiência pública interativa da Comissão de Assuntos Econômicos do Senado Federal foi realizada a pedido do presidente da CAE, senador Vanderlan Cardoso (PSD-GO), e conduzida pelo contador e senador Izalci Lucas (PL-DF). Para conferir a audiência pública na íntegra, acesse <a href="https://legis.senado.leg.br/comissoes/reuniao?0&amp;reuniao=12912&amp;codcol=38" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://cfc.org.br/noticias/sistema-cfc-crcs-discute-reforma-tributaria-em-audiencia-publica-no-senado-federal/" target="_blank">Portal CFC</a> <br/>Publicada em 20/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

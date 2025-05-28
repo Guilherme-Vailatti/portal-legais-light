@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI CE - Instrução Normativa SEFAZ nº 79/2024  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | SPED EFD ICMS IPI CE - Instrução Normativa SEFAZ nº 79/2024 - Registros relativo à apuração do ICMS devido por substituição tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado do Ceará estabelece a responsabilidade na condição de substituto tributário, a rigor, a determinados estabelecimentos atacadistas e varejistas em diversos segmentos.</p><p>Essa responsabilidade tem como regulamentação a Lei nº 14.237/2008.</p><p>Nesse sentido, foi publicado as orientações para tais contribuintes efetuarem a escrituração na EFD, no que tange a apuração do Imposto.</p><p>Vale dizer que as orientações são voltadas ao preenchimento dos registros E200 e filhos, na operação de entrada interna e interestadual e nas saídas internas dentro do Estado.</p><p>Destacamos os códigos de ajustes do registro E220 para cada operação:</p><p><b>REGISTRO E220</b>
+</p><p>A norma entra em vigor na data de sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sefazlegis.sefaz.ce.gov.br/api/openFile?id=a4084102-350a-44d7-83d1-c74de6dcd110" target="_blank">Instrução Normativa SEFAZ nº 79/2024</a> <br/>Publicada em 10/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

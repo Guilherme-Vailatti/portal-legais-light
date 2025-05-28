@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Líder do governo comemora aprovação da  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/07/2024 | Reforma Tributária - Líder do governo comemora aprovação da regulamentação da reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>O líder do governo na Câmara, deputado José Guimarães (PT-CE), afirmou que a aprovação da regulamentação da reforma tributária é uma vitória do País que teve a participação do governo e do Legislativo. Guimarães destacou que o semestre legislativo termina com “chave de ouro”.</p><p>“A Câmara comemorou este momento histórico de entregar ao País esse esforço conjunto que fizemos, do Poder Executivo e Poder Legislativo e com todas as lideranças partidárias e construir essa vitória”, disse Guimarães, em entrevista coletiva após a votação da proposta (Projeto de Lei Complementar 68/24).</p><p>Guimarães disse que este foi um semestre vitorioso, ressaltando que foram aprovadas 82 matérias de interesse do governo na Câmara dos Deputados.</p><p>O relator da proposta, deputado Reginaldo Lopes (PT-MG), afirmou que a inclusão, em seu relatório, das proteínas de origem animal na isenção da cesta básica foi possível porque há espaço e não aumentaria a alíquota.</p><p>“É um momento histórico da reforma. É um momento de convergência no Brasil, entre o presidente Arthur Lira e o presidente Lula, de permitir a proteína animal no texto. Isso mostra a capacidade de diálogo”, disse Lopes.</p><p>“Ao garantir que não teríamos implicações para além de 26,5% da alíquota, fizemos um texto técnico, reduzimos e ampliamos a capacidade de arrecadação, daí foi possível incluir todas as proteínas”, finalizou o relator.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1082407-lider-do-governo-comemora-aprovacao-da-regulamentacao-da-reforma-tributaria/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 10/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

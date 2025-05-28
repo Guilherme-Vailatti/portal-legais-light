@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - SC nº 206/2024 - Receita Federal esclarece sobr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/07/2024 | Legislação - SC nº 206/2024 - Receita Federal esclarece sobre a exclusão do ICMS da base de cálculo das contribuições</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Solução de Consulta COSIT nº 206/2024 esclareceu que o contribuinte que tenha em seu desfavor decisão judicial transitada em julgado no sentido de manter o ICMS na base de cálculo da contribuição para o PIS-PASEP da COFINS, anteriormente ao julgamento do RE nº 574.706/PR pelo Supremo Tribunal Federal (STF), pode, a partir de 16/03/2017, pleitear administrativamente sua exclusão, nos termos do Parecer SEI Nº 7.698/2021/ME, observado o prazo prescricional de 5 anos, previsto no art. 168 do Código Tributário Nacional (CTN).</p><p>A norma esclareceu, ainda, que o ICMS a ser excluído da base de cálculo das contribuições é o destacado no documento fiscal.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/solucao-de-consulta-n-206-de-11-de-julho-de-2024-572613725" target="_blank">Solução de Consulta COSIT nº 206/2024</a> <br/>Publicada em 17/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

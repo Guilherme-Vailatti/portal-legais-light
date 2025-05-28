@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Transição para documentos fiscais eletr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/06/2024 | Reforma Tributária - Transição para documentos fiscais eletrônicos em Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria de Estado da Fazenda de Santa Catarina realizou uma reunião com entidades representativas do comércio, varejo, transporte e contabilidade para discutir os impactos da Reforma Tributária na utilização de documentos fiscais eletrônicos.</p><p>Confira o resumo dos principais pontos abordados:</p><ul>
+<li><b>Uso Obrigatório de Documentos Fiscais Eletrônicos:</b> A Reforma Tributária vai exigir o uso obrigatório de documento fiscal eletrônico em todo o Brasil a partir de 2026. Santa Catarina planeja estabelecer um período de transição para instituir a obrigatoriedade da Nota Fiscal de Consumidor Eletrônica (NFC-e) ao longo de 2025.</li>
+<li><b>Transição para NFC-e e BP-e</b>: A NFC-e atualmente é de uso opcional em Santa Catarina. A mesma transição ocorrerá com o Bilhete de Passagem Eletrônico (BP-e), usado para documentar as prestações de serviço de transporte de passageiros.</li>
+<li><b>Construção Conjunta de Soluções:</b> O secretário Cleverson Siewert destacou a importância de construir soluções conjuntas para enfrentar as mudanças exigidas pela Reforma Tributária, mantendo o alto padrão de desempenho do varejo catarinense.</li>
+<li><b>Formação de Grupo de Trabalho:</b> Um grupo de trabalho será organizado pela Federação das Associações Empresariais de Santa Catarina (Facisc), com apoio técnico do Fisco catarinense, para avançar nas propostas de implementação da reforma.</li>
+</ul><p>A iniciativa da Fazenda em buscar a aproximação junto ao setor produtivo para discutir a pauta foi reconhecida pelas entidades representativas. A colaboração entre o governo e o setor produtivo é fundamental para enfrentar os desafios da Reforma Tributária e garantir uma transição eficiente para os documentos fiscais eletrônicos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sef.sc.gov.br/noticias/documentos-fiscais-eletronicos-fazenda-analisa-propostas-de-adequacao-a-reforma-tributaria-junto-ao-setor-produtivo" target="_blank">SEFAZ SC</a> <br/>Publicada em 07/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

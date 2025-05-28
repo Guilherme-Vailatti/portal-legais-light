@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTF - Nova versão do programa da DCTF está disponível para  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/07/2024 | DCTF - Nova versão do programa da DCTF está disponível para download no site da RFB</h1>
+</div>
+<div class="noticia-corpo">
+<p>No dia 12 de julho de 2024, a Receita Federal disponibilizou a versão 3.7b do Programa Gerador da Declaração de Débitos e Créditos Tributários Federais - PGD DCTF para download. O PGD DCTF 3.7b deve ser utilizado para o preenchimento mensal da DCTF, original ou retificadora, inclusive da declaração a que estão obrigadas as pessoas jurídicas em situação de extinção, incorporação, fusão ou cisão, total ou parcial, relativa aos fatos geradores ocorridos a partir de 1º de agosto de 2014.</p><p><b>Principais novidades da nova versão do programa:</b>
+</p><ul>
+<li>Permite informar mais de um código do Imposto sobre Produtos Industrializados - IPI para o mesmo CNPJ de estabelecimento e mesmo período de apuração; e</li>
+<li>Atualização da tabela de códigos de receitas.</li>
+</ul><p>Antes de instalar o programa, recomenda-se gravar as DCTF elaboradas nas versões anteriores, a fim de que elas possam ser importadas caso desejado. As declarações elaboradas na versão 3.6 e 3.7 do PGD DCTF Mensal podem ser recuperadas mediante a utilização da função “Importar” do menu “Declaração”. Para verificar se a versão instalada do programa é a mais recente, basta conferir a data apresentada na tela “Sobre a DCTF Mensal 3.7”, acessada por meio do menu “Ajuda”, que deve ser igual a 11/07/2024.</p><p>Acesse o site oficial da Receita Federal para fazer o download do PGD DCTF <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dctf" target="_blank">clicando aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/julho/nova-versao-do-programa-da-dctf-esta-disponivel-para-download-no-site-da-rfb" target="_blank">Receita Federal</a> <br/>Publicada em 10/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

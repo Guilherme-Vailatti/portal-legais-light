@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação RJ - Resolução Sefaz nº 675/2024 - Governo torna  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | Legislação RJ - Resolução Sefaz nº 675/2024 - Governo torna obrigatório o envio de informações para fins de atualização cadastral referente ao uso de benefícios fiscais no Estado</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo fluminense disciplinou que os contribuintes que usufruem dos incentivos e benefícios fiscais de ICMS listados no Anexo Único da Resolução em fundamento, deverão formular comunicação perante a Sefaz informando os dados requeridos referentes aos seus respectivos processos de enquadramento e de adesão.</p><p>O preenchimento da referida comunicação deverá ser realizado exclusivamente de forma eletrônica, conforme estabelecida em ato a ser expedido pelo Subsecretário de Estado de Receita, não sendo aceita comunicação apresentada por outro meio.</p><p>Ressalta-se que a partir do 30º dia após a publicação desta Resolução e da disponibilização do portal eletrônico para envio de informações aqui tratadas, os contribuintes que tenham declarado ou venham a declarar na EFD ICMS IPI a utilização de incentivos e benefícios fiscais indevidamente, sem terem demonstrado a regularidade no enquadramento ou a adesão na forma disposta nos casos em que o ato normativo correspondente assim determinar, ficarão sujeitos às sanções previstas na legislação tributária.</p><p>Esta Resolução entrará em vigor na data de sua publicação em 08/07/2024.</p><p>Ainda com a publicação da Resolução Sefaz nº 675/2024 se tornou obrigatório o envio de informações para fins de atualização cadastral referente ao uso dos benefícios fiscais listados no Anexo Único da referida Resolução, foi disciplinado que, a partir de 10/07/2024, o preenchimento do formulário para fins dessa atualização, deverá ser realizado pelo Atendimento Digital. (Portaria SSER nº 368/2024 - DOE RJ de 09/07/2024).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.rj.gov.br/resolucao-sefaz-no-675-de-05-de-julho-de-2024#:~:text=TORNA OBRIGATÓRIO O ENVIO DE,ESTADO DO RIO DE JANEIRO." target="_blank">Resolução Sefaz nº 675/2024</a> <br/>Publicada em 08/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

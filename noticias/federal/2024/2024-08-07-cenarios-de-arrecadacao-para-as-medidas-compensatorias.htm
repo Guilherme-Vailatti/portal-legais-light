@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Desoneração da Folha - Cenários de arrecadação para as medid - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/08/2024 | Desoneração da Folha - Cenários de arrecadação para as medidas compensatórias</h1>
+</div>
+<div class="noticia-corpo">
+<p>O objetivo deste documento é realizar um levantamento do potencial arrecadatório das medidas tributárias que visam compensar a perda de receita decorrente da prorrogação da desoneração da folha de pagamentos. O levantamento indica que, no cenário sem a elevação da CSLL, as demais medidas não seriam suficientes para compensar a renúncia em nenhum ano entre 2024 e 2027. Por exemplo, as medidas cobririam 38% da perda em 2024 e 35% em 2027. No cenário oposto, quando as medidas são combinadas com a elevação da CSLL em 1 ponto percentual, a compensação seria mais do que suficiente (em 2026 corresponderia a 151% da renúncia).</p><p>Acesse o documento <a href="https://www12.senado.leg.br/ifi/publicacoes-1/pasta-notas-tecnicas/2024/agosto/nota-tecnica-no-56-desoneracao-da-folha-de-pagamentos-cenarios-de-arrecadacao-para-as-medidas-compensatorias-ago-2024" target="_blank">aqui</a>.</p><p>As Notas Técnicas permitem à IFI reagir de maneira tempestiva a eventos que tenham efeitos fiscais relevantes na conjuntura econômica e demandam, por essa razão, posicionamento mais ágil da instituição. O objetivo das Notas Técnicas é, por meio de um texto conciso, apresentar análises pontuais sobre tópicos fiscais e econômicos relevantes ao cumprimento das funções da IFI.</p><p>A desoneração da folha de pagamentos originalmente previa que empresas deixassem de pagar a contribuição patronal previdenciária, incidente sobre a folha salarial, para que, no lugar desse tributo, pagassem uma contribuição incidente sobre o faturamento bruto. Em sua primeira versão, aprovada em 2011, o benefício fiscal valeria até 2014. Após sucessivas prorrogações e alterações o benefício havia ficado com previsão de encerramento em 2023. Porém, no final do ano passado, o Congresso Nacional aprovou nova prorrogação (Lei nº 14.784/2023), até o fim de 2027, além de conceder renúncia fiscal para municípios até o mesmo ano.</p><p>A partir do início de 2024, com o objetivo de evitar perda de arrecadação, o Poder Executivo agiu, por meio de veto, medidas provisórias e ajuizamento de ação no Supremo Tribunal Federal (STF), para fazer valer o prazo anterior (2024), ao invés de 2027. Diante dessa ação, diversos agentes políticos e econômicos propuseram alternativas ao governo federal para que esse aceitasse manter a desoneração vigorando até 2027, mas, ao mesmo tempo, obtivesse a desejada arrecadação adicional, por meio de outras fontes. A receita dessas fontes teria o papel de compensar o governo federal pois, ao manter a desoneração até 2027, haveria renúncia de arrecadação por alguns anos (2024-2027). Ademais, as novas fontes atenderiam à Lei de Responsabilidade Fiscal, a qual exige compensação diante da criação ou ampliação de renúncias fiscais. Daí por que as medidas vêm sendo chamadas de medidas compensatórias no debate público.</p><p>Nas últimas semanas, em particular, as discussões têm se concentrado no conteúdo do Projeto de Lei (PL) nº 1.847/2024, cuja redação atual acata o interesse do Executivo de antecipar o fim da desoneração (de 2027 para 2024), mas, em contrapartida, estabelece um regime de transição gradual, ao invés de repentino, entre a situação atual (desoneração) e a nova situação (reoneração completa). O projeto está sob apreciação no Senado Federal, aguardando parecer do relator e, se aprovado, seguirá para a Câmara do Deputados.</p><p>À proposta original do PL 1.847/24, de autoria do Senador Efraim Filho (União-PB), que tratava exclusivamente de tornar a reoneração gradual, devem ser acrescentadas as medidas de compensação pelo relator, Senador Jaques Wagner (PT-BA), a julgar pelas informações do noticiário. Tais medidas serão abordadas na próxima seção.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/657986/NT_56_2024.pdf" target="_blank">Agência Senado</a> <br/>Publicada em 07/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

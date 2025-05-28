@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e - Nota Técnica nº 2020.004, v. 1.10 - Divulga o formato - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>21/08/2024 | NF-e - Nota Técnica nº 2020.004, v. 1.10 - Divulga o formato da impressão do Danfe Simplificado - Etiqueta</h1>
+</div>
+<div class="noticia-corpo">
+<p>Com o avanço do comércio eletrônico, surgiu a necessidade de simplificar o processo de impressão do Documento Auxiliar da Nota Fiscal Eletrônica.</p><p>A impressão do DANFE Simplificado – Etiqueta, possível de ser utilizado pelos contribuintes nas operações de venda a varejo para consumidor final em comércio eletrônico, venda por telemarketing ou processos semelhantes, ocorrerá seguindo os padrões técnicos estabelecidos nesta Nota Técnica, atendendo ao disposto no §5º-A da cláusula nona do Ajuste SINIEF 07/05.</p><p style="font-weight: bold;">Histórico de alteração:</p><p>Conforme Ajuste SINIEF 07/05, o valor total da NF-e no DANFE Simplificado – Etiqueta poderá ser suprimido.</p><p>“§ 15-A Poderá ser suprimida a informação do valor total da NF-e no DANFE Simplificado – Etiqueta.”</p><p style="font-weight: bold;">Cronograma:</p><ul>
+<li>Teste: Imediato</li>
+<li>Produção: Imediato</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=b9nWD7uPNHE=" target="_blank">Nota Técnica nº 2020.004, versão 1.10</a> <br/>Publicada em 19/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

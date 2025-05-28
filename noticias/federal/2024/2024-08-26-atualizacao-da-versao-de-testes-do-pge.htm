@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Atualização da versão de testes (BE - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/08/2024 | SPED EFD Contribuições - Atualização da versão de testes (BETA) do PGE</h1>
+</div>
+<div class="noticia-corpo">
+<p>A equipe da EFD Contribuições agradece a todos contribuintes que enviaram relatos sobre a versão anteriormente disponibilizada (5.2.0.010) e informa que foi disponibilizada a versão BETA 5.2.0.013 do Programa Gerador de Escrituração - PGE da EFD Contribuições, contendo correções nas funcionalidades de geração da apuração e validação da escrituração.  (<a href="https://nam10.safelinks.protection.outlook.com/?url=http%3A%2F%2Fsped.rfb.gov.br%2Fpasta%2Fshow%2F7382&amp;data=05%7C02%7Cmelina.cordeiro%40rfb.gov.br%7C865ee02d603e4bef375d08dcc21b75ae%7C6f49aa43822a4c209670db7700bf1eb0%7C0%7C0%7C638598670389522686%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=x5pwLoR48GQOeGkjqM56%2Fs%2BQkueuqVmZhmL1Fv%2FbwWw%3D&amp;reserved=0" target="_blank">Clique aqui para acessar</a>).</p><p>Cabe lembrar que a versão de testes contempla otimizações no banco de dados, com o objetivo de melhorar o desempenho da aplicação na importação e na validação do arquivo da EFD Contribuições.</p><p>Testes internos apontaram melhoria de desempenho de até 50% em relação à versão atual, para arquivos de tamanho superior a 500Mb.</p><p style="font-weight: bold;">Por tratar-se de uma versão beta, com fins exclusivamente para testes, não será possível realizar nenhuma transmissão de arquivos com este PGE e também não é possível garantir que arquivos gerados e até mesmo validados por esta versão do programa sejam aceitos na versão final a ser disponibilizada em breve.</p><p style="font-weight: bold;">Cumpre informar que as escriturações a serem utilizadas nos testes devem corresponder a períodos iguais ou posteriores a janeiro de 2023 e, antes da importação, deve-se excluir a assinatura do arquivo.</p><p style="font-weight: bold;">Orientamos aos usuários que efetuarem a instalação desta versão na mesma pasta da anterior (5.2.0.010), que excluam eventuais escriturações anteriormente importadas antes de efetuar novos testes.</p><p>Eventuais problemas identificados devem ser encaminhados exclusivamente para o email faleconosco-sped-contribuicoes@rfb.gov.br , assunto: PGE Versão Beta.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7503" target="_blank">Portal SPED</a> <br/>Publicada em 22/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

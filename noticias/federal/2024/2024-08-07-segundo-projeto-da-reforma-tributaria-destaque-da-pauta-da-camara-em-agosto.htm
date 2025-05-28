@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Segundo projeto da reforma tributária é - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/08/2024 | Reforma Tributária - Segundo projeto da reforma tributária é destaque da pauta da Câmara em agosto</h1>
+</div>
+<div class="noticia-corpo">
+<p>Deputados retomam as atividades após o recesso parlamentar com várias prioridades de votação neste segundo semestre. Por causa das eleições municipais de outubro, haverá sessões do Plenário da Câmara em semanas específicas. Serão duas semanas de esforço concentrado em agosto (12, 13 e 14 e 26, 27 e 28) e uma em setembro (9, 10 e 11).</p><p>Uma das prioridades de votação é o segundo projeto de regulamentação da reforma tributária (<a href="https://www.camara.leg.br/noticias/1069501-segundo-projeto-de-regulamentacao-da-reforma-tributaria-cria-comite-gestor-de-imposto-de-estados-e-municipios" target="_blank">PLP 108/24</a>), com foco no funcionamento do comitê gestor do novo Imposto sobre Bens e Serviços (IBS), que vai substituir os atuais ICMS e ISS.</p><p>Em entrevista à Rádio Câmara, o relator do grupo de trabalho sobre o tema, deputado Mauro Benevides Filho (PDT-CE), se disse otimista em relação à aprovação. "O nosso texto está tão redondo que eu até desconfio que a votação será mais fácil que a do primeiro projeto da reforma".</p><p>O primeiro projeto de regulamentação da reforma tributária (<a href="https://www.camara.leg.br/noticias/1056840-proposta-do-governo-regulamenta-impostos-criados-pela-reforma-tributaria" target="_blank">PLP 68/24</a>), que regulamenta o IBS e a Contribuição Social sobre Bens e Serviços (CBS), foi aprovado pela Câmara em julho e aguarda agora a análise do Senado.</p><p><a href="https://www.camara.leg.br/noticias/1057389-infografico-conheca-o-projeto-que-regulamenta-a-reforma-tributaria-aprovado-pela-camara/" target="_blank">Clique aqui</a> e conheça o projeto de reforma tributária aprovado pela Câmara.</p><p>Esta segunda etapa, segundo Mauro Benevides, trata da organização e distribuição desses tributos. "A nova estrutura tributária brasileira precisa ter um comitê gestor que vai organizar como a distribuição da receita vai ser feita entre estados e municípios e os julgamentos dos autos de infração", explicou.</p><p>Outros temas trazidos no texto elaborado pelo grupo de trabalho, segundo o relator são os impostos sobre patrimônio. "A gente também fez uma reorganização de como será tratado o Imposto Sobre Transmissão de Causa Morte e Doação e o Imposto sobre Transmissão de Bens Imóveis".</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1086160-segundo-projeto-da-reforma-tributaria-e-destaque-da-pauta-da-camara-em-agosto/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 02/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

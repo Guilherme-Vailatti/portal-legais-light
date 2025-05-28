@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Impactos da Reforma Tributária para a á - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/06/2024 | Reforma Tributária - Impactos da Reforma Tributária para a área médica</h1>
+</div>
+<div class="noticia-corpo">
+<p>O efeito positivo da Reforma Tributária sobre o crescimento da economia como um todo, com a elevação do poder de compra das famílias, levará ao aumento da demanda por serviços – incluindo os serviços médicos. A projeção do Ministério da Fazenda foi ressaltada pelo secretário extraordinário da Reforma Tributária, Bernard Appy, em transmissão online ao vivo realizada pelo Sindicato Médico do Rio Grande do Sul (Simers) nesta segunda-feira (24/06).</p><p>No evento – do qual também participou o senador Hiran Gonçalves (PP-AM), presidente da Frente Parlamentar da Medicina –, o secretário pontuou que os serviços de saúde estão entre os regimes específicos previstos na regulamentação da reforma, com alíquota reduzida em 60% em relação à alíquota de referência a ser adotada para a Contribuição sobre Bens e Serviços (CBS) e o Imposto sobre Bens e Serviços (IBS).</p><p>Appy destacou que, entre os médicos, os maiores beneficiados pelas novas regras de tributação serão aqueles que mais investem em insumos, como equipamentos. Isso se deverá à recuperação de créditos, resultado da não cumulatividade plena, um dos pilares conceituais do Imposto sobre Valor Adicionado (IVA) Dual – formado pela pela CBS e o IBS – , coração da Reforma Tributária do consumo promovida pela Emenda Constitucional (EC) 132, promulgada em dezembro pelo Congresso Nacional.</p><p>Questionado sobre a situação dos planos de saúde no novo sistema de tributação, Appy salientou que a situação deles será muito semelhante à de hoje. As operadoras de planos de saúde também estão contempladas pelo regime específico. Isso permite a aplicação de alíquota descontada sobre base de cálculo reduzida e a recuperação integral dos tributos pagos nas aquisições. Com isso, será mantida a carga tributária do setor, sem qualquer prejuízo aos consumidores. Como resultado do direito a um desconto de 60% na alíquota, os planos terão uma alíquota estimada de 10,6%, que será a mesma disponível aos médicos, hospitais e demais serviços de saúde.</p><p>“A base de cálculo da operadora do plano será apenas a sua margem com a intermediação, formada pela diferença entre os prêmios e contraprestações recebidos pela operadora e os valores pagos por ela para a cobertura de saúde dos beneficiários”, escreveu o diretor de programa da Secretaria Extraordinária da Reforma Tributária (Sert) Daniel Loria em recente artigo publicado na imprensa. “Se a operadora recebe R$ 1 mil do segurado e paga R$ 800 de reembolso no mês, a margem dela será de R$ 200, ou 20%. Só essa margem será tributada”, exemplificou.</p><p>As operadoras pagam hoje PIS e Cofins de 4,65% sobre a margem de intermediação, além de ISS de 2% a 5% sobre a margem, ou IOF/Seguros de 2,38% sobre os valores brutos dos prêmios recebidos. Esses tributos são calculados “por dentro” (incidem sobre eles mesmos). Quando esse cálculo é ajustado para a mecânica da reforma, que será “por fora” (sem a cobrança de imposto sobre imposto), as alíquotas atuais seriam de 7,1% a 10,7%, nos cenários com PIS, Cofins e ISS, podendo ser até maior no cenário com IOF/Seguros. “Portanto, a alíquota nova, de 10,6%, será muito similar, ou igual, à soma das alíquotas dos tributos que serão extintos com a reforma”, escreveu Daniel Loria.</p><p>“O que vai mudar, sim, é o sistema tributário, que passará a ser mais eficiente”, afirmou Bernard Appy na live desta segunda-feira (24/06).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/junho/bernard-appy-analisa-os-impactos-do-novo-sistema-para-a-area-medica" target="_blank">Ministério da Fazenda</a> <br/>Publicada em 24/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

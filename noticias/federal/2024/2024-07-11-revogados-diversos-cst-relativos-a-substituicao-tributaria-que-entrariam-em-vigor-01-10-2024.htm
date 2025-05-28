@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - Ajuste Sinief nº 20/2024 - Revogados diversos C - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | Legislação - Ajuste Sinief nº 20/2024 - Revogados diversos CST relativos à substituição tributária, que entrariam em vigor em 01/10/2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>Revogados os seguintes Códigos de Situação Tributária (CST) relativos a operações sujeitas ao regime de substituição tributária do ICMS:</p><p>Esses códigos entrariam em vigor em 01/10/2024.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despacho-n-31-de-8-de-julho-de-2024-570869131" target="_blank">Ajuste Sinief nº 20/2024, através do Despacho Confaz nº 31/2024</a> <br/>Publicada em 09/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

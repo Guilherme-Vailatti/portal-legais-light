@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIRBI - Instrução Normativa RFB nº 2.216/2024 - Incluídos no - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/09/2024 | DIRBI - Instrução Normativa RFB nº 2.216/2024 - Incluídos novos incentivos a serem declarados na DIRBI de forma retroativa</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.216/2024 substituiu o Anexo Único da <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2024/2024-06-28-receita-federal-republica-parcialmente-a-instrucao-normativa-que-disciplina-apresentacao-da-dirbi.htm" target="_blank">Instrução Normativa RFB nº 2.198/2024</a>, que dispõe sobre a apresentação da Declaração de Incentivos, Renúncias, Benefícios e Imunidades de Natureza Tributária (Dirbi).</p><p>As informações relativas aos incentivos, renúncias, benefícios e imunidades de que tratam os itens 17 a 43 do Anexo Único deverão ser prestadas nas declarações referentes ao período de apuração de janeiro de 2024 em diante.</p><p>As declarações com as informações mencionadas, relativamente aos períodos de apuração de janeiro a agosto de 2024, deverão ser apresentadas ou retificadas até o dia 20/10/2024.</p><p>Acesse o anexo completo <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.216-de-5-de-setembro-de-2024-582926115" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.216-de-5-de-setembro-de-2024-582926115" target="_blank">Instrução Normativa RFB nº 2.216/2024</a> <br/>Publicada em 06/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Câmara aprova urgência e pode votar nes - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | Reforma Tributária - Câmara aprova urgência e pode votar nesta quarta projeto que regulamenta a reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Câmara dos Deputados aprovou nesta terça-feira (9) o regime de urgência para o <a href="https://www.camara.leg.br/noticias/1080251-GRUPO-DE-TRABALHO-DA-REFORMA-TRIBUTARIA-INCLUI-JOGOS-DE-AZAR-E-CARROS-ELETRICOS-NO-IMPOSTO-SELETIVO" target="_blank">Projeto de Lei Complementar 68/24</a>, do Poder Executivo, que regulamenta a reforma tributária. O texto define regras para o Imposto sobre Bens e Serviços (IBS), a Contribuição Social sobre Bens e Serviços (CBS) e o Imposto Seletivo (IS).</p><p>O projeto deve começar a ser discutido em Plenário nesta quarta-feira (10), a partir das 9 horas. O presidente da Câmara, Arthur Lira, decidiu que, na quarta e na quinta-feira (11), somente o Plenário Ulysses Guimarães funcionará. Ficarão suspensas todas as atividades das comissões e de outros colegiados.</p><p style="font-weight: bold;">Debate amplo</p><p>Arthur Lira afirmou que foram mais de 220 horas de audiências e 300 entidades recebidas pelo grupo de trabalho que analisou a proposta. "Acusar esta Casa em um tema como este dizendo que faltou debate, faltou oportunidade não é correto", disse Lira.</p><p>A declaração foi uma resposta ao deputado deputado Bibo Nunes (PL-RS), que criticou o fato de o projeto não ter sido debatido nas comissões. Já a deputada Adriana Ventura (Novo-SP), vice-líder da Minoria, disse ter receio de ser criado um "Frankenstein" com o texto ao não seguir o rito de tramitação do Regimento da Câmara, que prevê análise nas comissões.</p><p>Para o líder do governo, deputado José Guimarães (PT-CE), o grupo de trabalho discutiu bastante o tema e, por isso, o projeto está maduro para ser votado. "Vamos oferecer uma proposta centrada na transparência, no fim da guerra fiscal, na unificação dos tributos e na isenção total dos produtos que compõem a cesta básica", afirmou.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://noticias.stf.jus.br/postsnoticias/stf-reafirma-validade-de-adicional-de-icms-para-fundo-de-combate-a-pobreza/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 09/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

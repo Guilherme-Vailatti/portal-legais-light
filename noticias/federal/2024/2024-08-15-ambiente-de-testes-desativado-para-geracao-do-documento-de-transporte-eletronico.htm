@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DT-e - Ambiente de testes desativado para a geração do Docum - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>15/08/2024 | DT-e - Ambiente de testes desativado para a geração do Documento de Transporte Eletrônico</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Documento Eletrônico de Transporte é o documento instituído pela Lei nº 14.206, de 27 de setembro de 2021, com objetivo principal de unificar, reduzir e simplificar dados sobre cadastros, registros, licenças e outras informações de identificação. Mais que um simples documento, o DT-e é a plataforma tecnológica digital que permitirá unificar os documentos e as informações de obrigações administrativas exigidas em operações de transporte de carga, em todos os modos de transporte: rodoviário, ferroviário, aquaviário, aéreo, intermodal, multimodal e dutoviário.</p><p>Em 12/09/2023 o Ministério dos Transportes atualizou a sua página de avisos com a última informação até então, que o ambiente de testes <a href="https://www.gov.br/transportes/pt-br/assuntos/dt-e/dte_avisos" target="_blank">passou a ficar desativado</a>. Essa ação está relacionada a uma nova orientação definida pela Secretaria do Ministério, onde de acordo com essa orientação, o foco principal do DT-e agora é a priorização e integração de documentos fiscais como CT-e (Conhecimento de Transporte Eletrônico) e MDF-e (Manifesto de Documentos Fiscais Eletrônicos).</p><p>Deste modo os contribuintes devem aguardar um posicionamento do governo com as novas orientações sobre o progresso do projeto.</p><p>Abaixo segue registro do aviso do Ministério dos Transportes, sobre a desativação do ambiente de testes.</p><p>
+<img src="../../../Resources/Images/Notícias/ambiente-testes-dte-desativado.png"/>
+</p><p><a href="https://www.senior.com.br/blog/dt-e-documento-de-transporte-o-que-e-e-como-funciona" target="_blank">Saiba mais sobre o que é e como funcionará o DT-e</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/transportes/pt-br/assuntos/dt-e/dte_avisos" target="_blank">Ministério dos Transportes</a> <br/>Publicada em 14/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

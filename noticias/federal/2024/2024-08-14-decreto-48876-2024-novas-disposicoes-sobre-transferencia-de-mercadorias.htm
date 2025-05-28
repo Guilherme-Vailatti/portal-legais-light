@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS MG - Decreto nº48.876/2024 - Novas disposições sobre tr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/08/2024 | ICMS MG - Decreto nº48.876/2024 - Novas disposições sobre transferência de mercadorias</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Fisco mineiro promoveu novas alterações nos procedimentos relativos às operações de transferência de mercadorias.</p><p>Foi instituída a possibilidade de concessão de crédito presumido do imposto, inclusive em regime especial, nas saídas em transferências com não incidência em que o remetente da mercadoria efetue a transferência de crédito para o estabelecimento destinatário, nos moldes do art. 153-A do RICMS-MG/2023 .</p><p>Cabe observar que a não incidência do ICMS nas operações de transferência de mercadorias ou bens não importa no cancelamento ou modificação do benefício fiscal concedido pelo Estado de Minas Gerais, hipótese em que, quando a legislação tributária, inclusive a estabelecida em regime especial, concessiva do benefício fiscal determinar o estorno de crédito, deverá ser efetuado o lançamento de débito a ele equiparado.</p><p>Para realização do lançamento do débito em questão, foi determinada a emissão de nota fiscal de ajuste, com CFOP 5.949.</p><p>Outra novidade está no fato do Estado de Minas Gerais determinar que a transferência do crédito poderá ser dispensada nas transferências de mercadorias entre estabelecimentos do mesmo titular situados no Estado, mediante regime especial concedido pelo Superintendente de Tributação.</p><p>Desde 01/01/2024, as operações de transferência de mercadorias estão sobre o abrigo da não incidência. Esta alteração impactou sensivelmente na legislação do ICMS, tendo sido publicado em 27/01/2024, pelo Estado de Minas Gerais, o Decreto nº 48.768/2024 com o objetivo de incorporar as novas tratativas no RICMS-MG/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.fazenda.mg.gov.br/empresas/legislacao_tributaria/decretos/2024/d48876_2024.html" target="_blank">Decreto nº 48.876/2024</a> <br/>Publicada em 13/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

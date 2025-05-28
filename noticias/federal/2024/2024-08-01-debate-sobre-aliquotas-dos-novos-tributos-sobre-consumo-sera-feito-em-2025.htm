@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Debate sobre as alíquotas dos novos tri - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/08/2024 | Reforma Tributária - Debate sobre as alíquotas dos novos tributos sobre consumo será feito em 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>Assim que a regulamentação da reforma tributária (<a href="https://www.camara.leg.br/noticias/1056840-proposta-do-governo-regulamenta-impostos-criados-pela-reforma-tributaria" target="_blank">PLP 68/24</a>) passar pelo Senado Federal e for levada à sanção presidencial, os técnicos do governo e do Congresso Nacional começam o debate sobre as alíquotas dos novos tributos sobre consumo: Imposto sobre Bens e Serviços (IBS), Contribuição sobre Bens e Serviços (CBS) e Imposto Seletivo. Os dois primeiros terão que ser definidos por uma resolução do Senado, e o Seletivo será objeto de um projeto de lei.</p><p>Como a CBS e o Seletivo entram em vigor plenamente em 2027, 2025 será um ano de debates sobre a regulamentação que falta para que, em 2026, o Tribunal de Contas da União (TCU) possa homologar os cálculos do IBS e da CBS até 15 de setembro. O Senado terá até 31 de outubro para votar a resolução.</p><p>Na reforma tributária, foi fixada uma estimativa máxima para as alíquotas de referência de IBS e CBS somadas, de 26,5%. Mas isso terá de ser debatido todo ano, na prática, para descobrir qual alíquota mantém a carga tributária inalterada. Conforme explica o consultor legislativo da Câmara, José Evande Carvalho Araújo, estados e municípios terão cada um a sua alíquota de referência de IBS. Mas eles poderão alterar isso por lei própria:</p><p>“Dentro da autonomia de cada ente, eles podem adotá-la ou não. Quem ficar com a alíquota de referência vai ser aquele valor. Mas se quiser, os entes, estados, municípios e a própria União podem, por lei própria, mudar essa alíquota de referência”, disse.</p><p>
+<img alt="Infografico com transição das alíquotas da reforma tributária até o ano de 2033." src="../../../Resources/Images/Notícias/transicao-aliquotas-reforma-tributaria.jpg" style="max-width: 100%;"/>
+</p><p>Estados e municípios também poderão aumentar, por lei própria, a devolução de imposto prevista na reforma, o cashback para os mais pobres. A devolução mínima foi definida em 20%.</p><p>Segundo Evande, ainda haverá a necessidade de atos da Receita Federal e do Comitê Gestor do IBS para regulamentar questões operacionais dos novos tributos como, por exemplo, a previsão de devolução de impostos para turistas estrangeiros, o chamado tax free.</p><p>“A questão do tax free e a própria regulamentação de tudo isso que está na lei complementar virá em um regulamento tanto do comitê gestor quanto da CBS. No caso, o que valer para os dois vai ser um ato conjunto. É lá que vai ser regulamentado”, explicou. “A questão do cashback, tudo isso vai vir em um ato, mas aí não é por lei ordinária. São atos dos entes federados, tanto da Receita Federal quanto do comitê gestor.”</p><p>Apesar da necessidade de várias normas, o conteúdo delas deverá ser o mesmo para União, estados e municípios, o que é uma grande diferença para a situação atual.</p><p>“Esse regulamento tem uma área de atuação pequena, apenas para regulamentar aquilo que está na lei complementar. Não é como hoje que você precisa conhecer 27 legislações”, disse o consultor. “Se você trabalha no Brasil inteiro, tem de conhecer 27 legislações do ICMS e de todas as legislações do ISS dos municípios em que a empresa trabalha. E não são similares, elas são muito diferentes. As regras são gerais, mas tem muita particularidade de regimes próprios, o que não vai acontecer mais no novo sistema”, acrescentou.</p><p>Os técnicos do governo também afirmaram durante audiências públicas sobre o tema na Câmara que estão trabalhando para tornar possível o mecanismo de split payment já em 2026, ano de início dos testes com a CBS. Esse mecanismo permitirá que uma empresa compradora de insumos tenha o crédito imediato dos impostos pagos pelos fornecedores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 26/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

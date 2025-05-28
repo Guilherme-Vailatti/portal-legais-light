@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2019.001, v. 1.64 - Novos prazo - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/09/2024 | NF-e NFC-e - Nota Técnica nº 2019.001, v. 1.64 - Novos prazos de ativação de regras para o Estado de Santa Catarina e inclusão a critério da UF</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada a versão 1.64 da Nota Técnica 2019.001 que cria e define ativação de regras de validação para Santa Catarina/SC.</p><p style="font-weight: bold;">Publicação de cronograma de ativação de regras de validação para SC.</p><ul>
+<li>Publicação de cronograma com data de ativação em homologação e produção de regras de validação para o Estado de Santa Catarina, conforme datas estabelecidas no item 3.6.1.</li>
+</ul><p style="font-weight: bold;">Inclusão das regras de validação N14a-10, N14a-20 e I05h-10 a critério da UF.</p><ul>
+<li>Incluídas regras de validação N14a-10, N14a-20 para NF-e, visando validar respectivamente a obrigatoriedade e o correto preenchimento do campo código de benefício fiscal de redução de BC do Grupo Tributação do ICMS= 51 (tag:ICMS51/cBenefRBC).</li>
+<li>Incluída regra de validação I05h-10 para NF-e e NFC-e, visando validar o correto preenchimento do campo código de crédito presumido (tag: cCredPresumido).</li>
+</ul><p>Estas regras de validação serão aplicadas neste cronograma:</p><p style="font-weight: bold;">Ativação da regra de validação N12-85 na NF-e para SC:</p><ul>
+<li>Teste: 04/11/2024</li>
+<li>Produção: 03/02/2025</li>
+</ul><p style="font-weight: bold;">Ativação da regra de validação N12-85 na NFC-e para SC:</p><ul>
+<li>Teste: 04/11/2024</li>
+<li>Produção: 01/04/2025</li>
+</ul><p style="font-weight: bold;">Inclusão das regras de validação N14a-20 e I05h-10 a critério da UF; e ativação das regras de validação N12-94, N12-98, N14a-20 e I05h10 para SC:</p><ul>
+<li>Teste: 02/12/2024</li>
+<li>Produção: 28/04/2025</li>
+</ul><p style="font-weight: bold;">Inclusão da regra de validação N14a-10 a critério da UF; e ativação das regras de validação N12-86 e N14a-10 para SC:</p><ul>
+<li>Teste: 02/12/2024</li>
+<li>Produção: 01/09/2025</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=AqpPGX8TVTQ=" target="_blank">Nota Técnica nº 2019.001, versão 1.64</a> <br/>Publicada em 03/09/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

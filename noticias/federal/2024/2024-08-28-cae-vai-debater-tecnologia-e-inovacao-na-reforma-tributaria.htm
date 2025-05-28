@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - CAE vai debater tecnologia e inovação n - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/08/2024 | Reforma Tributária - CAE vai debater tecnologia e inovação na reforma tributária</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Comissão de Assuntos Econômicos (CAE) promove, na quarta-feira (28), às 14h, audiência pública com o tema Tecnologia e Inovação na Reforma Tributária. A reforma tributária foi promulgada em dezembro de 2023, como <a href="https://normas.leg.br/?urn=urn:lex:br:federal:emenda.constitucional:2023-12-20;132" target="_blank">Emenda Constitucional 132</a>, e agora a sua regulamentação está em discussão no Senado (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/164914" target="_blank">PLP 68/2024</a>).</p><p>Já confirmaram presença o presidente da Federação das Associações das Empresas Brasileiras de Tecnologia da Informação, Christian Tadeu; o auditor fiscal da Receita Federal Marcos Flores; e o professor Jonathan Barros Vita, mestre e doutor em Direito pela PUC-SP, com especialização em Direito Tributário pela Universidade Comercial Luigi Bocconi, em Milão, na Itália.</p><p>Também foram convidados para o debate Sérgio Sgobbi, da Associação das Empresas de Tecnologia da Informação e Comunicação; Márcio Gonçalves, da Federação Nacional das Empresas de Informática; Marcelo Almeida, da Associação Brasileira de Empresas de Software; Gil Torquato, da Associação Brasileira de Internet;  Jorge Prates, da Associação Brasileira das Autoridades de Registro;  Vicente Braga, da Associação Nacional dos Procuradores dos Estados e do DF; e Miguel Abuhab, da empresa Datasul.</p><p>A <a href="https://legis.senado.leg.br/comissoes/reuniao?reuniao=12932&amp;codcol=38" target="_blank">audiência pública</a> será na sala 19 da Ala Alexandre Costa. O presidente da <a href="https://legis.senado.leg.br/comissoes/comissao?codcol=38" target="_blank">CAE</a> é o senador Vanderlan Cardoso (PSD-GO).</p><p><b>Como participar</b>
+</p><p>O evento será interativo: os cidadãos podem enviar perguntas e comentários pelo telefone da Ouvidoria do Senado (0800 061 2211) ou pelo <a href="https://www12.senado.leg.br/ecidadania/visualizacaoaudiencia?id=30763" target="_blank">Portal e‑Cidadania</a>, que podem ser lidos e respondidos pelos senadores e debatedores ao vivo. O Senado oferece uma declaração de participação, que pode ser usada como hora de atividade complementar em curso universitário, por exemplo. O <a href="http://www12.senado.leg.br/ecidadania" target="_blank">Portal e‑Cidadania</a> também recebe a opinião dos cidadãos sobre os projetos em tramitação no Senado, além de sugestões para novas leis.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2024/08/22/cae-vai-debater-tecnologia-e-inovacao-na-reforma-tributaria" target="_blank">Agência Senado</a> <br/>Publicada em 28/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

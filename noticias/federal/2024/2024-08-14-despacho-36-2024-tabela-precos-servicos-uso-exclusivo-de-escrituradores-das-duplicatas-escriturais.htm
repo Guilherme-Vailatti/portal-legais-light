@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Despacho nº 36/2024 - Tabela de preços dos serviços de uso e - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/08/2024 | Despacho nº 36/2024 - Tabela de preços dos serviços de uso exclusivo de escrituradores das Duplicatas Escriturais (D-e)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado o Despacho nº 36 de 09/08/2024, aonde é apresentado a Tabela de Preços dos Serviços de Uso Exclusivo de Escrituradores de Duplicatas Escriturais, conforme segue:</p><p><b>ACORDO</b>
+</p><p>Cláusula primeira A Nota Explicativa 1 fica acrescida ao Anexo II-a - Tabela de Preços dos Serviços de Uso Exclusivo de Escrituradores de Duplicatas Escriturais (D-e) do Acordo de Cooperação nº 1 - SVBA, de 15 de agosto de 2018, publicado no Diário Oficial da União no dia 17 de agosto de 2018, com a seguinte redação:</p><p>"Nota Explicativa 1: Visando possibilitar a realização de consultas massivas, os escrituradores poderão adquirir e pagar antecipadamente um pacote de quantidade de consultas da Faixa 8 (a partir de 50 milhões de transações), para serem consumidos em até 6 (seis) meses, limitado a uma vez por ano.".</p><p>Cláusula segunda este acordo entra em vigor na data da sua publicação no Diário Oficial da União.</p><p>Saiba o que é e como funciona a <a href="https://www.senior.com.br/blog/duplicata-eletronica" target="_blank">Duplicata Eletrônica</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/despacho-n-36-de-8-de-agosto-de-2024-577376451" target="_blank">Despacho nº 36/2024</a> <br/>Publicada em 13/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

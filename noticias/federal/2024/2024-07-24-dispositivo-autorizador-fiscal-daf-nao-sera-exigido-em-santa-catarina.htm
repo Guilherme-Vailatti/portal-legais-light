@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação SC - Dispositivo Autorizador Fiscal (DAF) não ser - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>24/07/2024 | Legislação SC - Dispositivo Autorizador Fiscal (DAF) não será exigido em Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em mais uma medida voltada à desburocratização e ao uso racional dos recursos públicos, a Secretaria de Estado da Fazenda (SEF/SC) decidiu <b>interromper o processo de implementação</b> do chamado Dispositivo Autorizador Fiscal (DAF) em Santa Catarina.</p><p>A obrigatoriedade do DAF, como era prevista anteriormente, demandaria a alocação permanente de recursos técnicos e mão de obra técnica para a manutenção dos sistemas tributários. Também implicaria em custos ao comércio varejista, que precisaria adquirir um novo hardware para emitir seus documentos fiscais eletrônicos.</p><p>A proposta de criação deste dispositivo considerava a premissa de que o varejo catarinense emite grande volume de documentos fiscais “em contingência”, ou seja, uma operação off-line e que ocorre sem a transmissão imediata de dados à administração tributária. A implantação do DAF foi planejada para reforçar o controle sobre os documentos emitidos nesta modalidade.</p><p>A estratégia mudou diante de novas informações levantadas pelo Fisco catarinense que mostraram, entre outros apontamentos, que o número de documentos fiscais emitidos em contingência é pouco expressivo. Há ainda outras alternativas de controle sobre o que é ou não transmitido, o que torna desnecessário o uso de uma nova ferramenta para manter o já elevado nível de controle fiscal sobre o varejo.</p><p>Com este novo cenário, a Diretoria de Administração Tributária (DIAT) da Fazenda concluiu que o modelo definitivo de controle da emissão e autorização das NFC-e em Santa Catarina deve se basear apenas nos softwares emissores de NFC-e (PAF-NFC-e) já usados atualmente.</p><p>A medida reduz a burocracia na atividade regular de emissão de documentos fiscais e traz mais segurança ao contribuinte quanto à regularidade do seu negócio. Em caso de dúvidas, a Central de Atendimento Fazendária (CAF) está disponível no <b>0800-048-1515</b> (horário de atendimento das 13h às 18h).</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">SEF SC</a> <br/>Publicada em 17/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

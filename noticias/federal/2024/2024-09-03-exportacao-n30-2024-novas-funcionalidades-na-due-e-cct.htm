@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SISCOMEX - Exportação nº 30/2024 - Novas funcionalidades na  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/09/2024 | SISCOMEX - Exportação nº 30/2024 - Novas funcionalidades na DU-E e no CCT</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Siscomex comunicou que, desde 04 de agosto de 2024, os sistemas Declaração Única de Exportação (DU-E) e Controle de Carga e Trânsito de Exportação (CCT) publicaram novas funcionalidades permitindo maior segurança e agilidade na prestação das informações em operações de exportação.</p><p>Seguem mais detalhes das novas funcionalidades:</p><p>Ao elaborar/retificar DU-E, via tela ou serviço, passou-se a permitir informar nota fiscal referenciada com NCM diferente da NCM da nota fiscal de exportação. Esta situação será permitida quando a NCM constante da nota referenciada não estiver mais vigente na data de registro da DU-E, tendo sido substituída pela NCM constante da nota fiscal de exportação. O prazo limite para utilização destas notas fiscais referenciadas será de 180 dias contados do fim da vigência da NCM.</p><p>Foi criado um novo serviço de recepção de notas fiscais, de forma assíncrona, onde o usuário informará os dados da recepção de carga e seus respectivos itens de nota. Por este novo processo o usuário receberá um protocolo e, através do mesmo, ele poderá consultar o sucesso ou não do envio das informações. Caso não obtenha sucesso, poderá consultar quais foram os motivos para a rejeição. Além disso, é altamente recomendada a utilização de notificações via PUSH. Dessa forma, o usuário receberá notificação PUSH do andamento de sua recepção de notas sem a necessidade de consultar a cada intervalo de tempo.</p><p>O serviço de manifestação de dados de embarque na exportação para um MIC-DTA pré-ACD (POST (URL)/ext/carga/manifestacao-dados-embarque-pre-acd) recebeu melhoria para que seja possível aceitar até 100 notas fiscais.</p><p>Um novo serviço de manifestação assíncrona do MIC-DTA está em desenvolvimento e deve ser publicado em produção entre dezembro/2024 e janeiro/2025 possibilitando a manifestação de MIC-DTA com mais de 100 notas fiscais.</p><p>Para mais informações técnicas e exemplos, <a href="https://docs.portalunico.siscomex.gov.br/" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/siscomex/pt-br/noticias/noticias-siscomex-exportacao/comunicados/exportacao-no-2024-030" target="_blank">Siscomex</a> <br/>Publicada em 30/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

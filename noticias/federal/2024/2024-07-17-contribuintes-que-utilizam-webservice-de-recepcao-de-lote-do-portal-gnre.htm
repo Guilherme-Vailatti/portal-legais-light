@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>GNRE - Contribuintes que Utilizam Webservice de Recepção de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>17/07/2024 | GNRE - Contribuintes que Utilizam Webservice de Recepção de Lote do Portal GNRE</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi divulgado no dia 12/06 um comunicado do portal do GNRE sobre a utilização de webservice de recepção de lote do portal GNRE:</p><p>"Prezados,</p><p>Com objetivo de melhorar a geração das guias em lote, a partir do dia <b>25/06/2024</b> (ambiente de Homologação), e <b>25/07/2024</b> (ambiente de Produção), o número de protocolo que é gerado no momento do processamento de um lote, passará a conter <b>14 dígitos</b>.</p><p>Alertamos que essa atualização poderá afetar a comunicação das aplicações dos contribuintes com o <b>Web Service de Recepção de Lote</b>: <a href="https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao" target="_blank">https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao</a></p><p>Os contribuintes que utilizam o Web Service de Recepção de Lote, e cujas aplicações fazem algum tipo de validação no campo <b>&lt;numeroRecibo&gt;</b>, terão que verificar a necessidade de ajuste em seus sistemas.</p><p>O Web Service de Consulta de Processamento de Lote continuará a aceitar também o padrão atual de 10 dígitos, após a referida data da manutenção.</p><p>Dúvidas devem ser encaminhadas para gnre@sefaz.pe.gov.br.</p><p>Atenciosamente,</p><p>Gestor Nacional do GNRE</p><p>Secretaria da Fazenda do Estado de Pernambuco"</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gnre.pe.gov.br:444/gnre/portal/GNRE_Principal.jsp" target="_blank">Portal GNRE</a> <br/>Publicada em 17/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

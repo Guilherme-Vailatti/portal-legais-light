@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Nota Técnica nº 001, v. 1.00 - Projeto  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/08/2024 | Reforma Tributária - Nota Técnica nº 001, v. 1.00 - Projeto Reforma Tributária do Consumo - Documentos Fiscais - Adequações NFS-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Este documento contempla a primeira versão dos novos agrupamentos e campos opcionais do layout da Nota Fiscal de Serviço eletrônica – NFS-e padrão nacional relacionados à tributação do Imposto sobre Bens e Serviços – IBS, da Contribuição sobre Bens e Serviços – CBS e do Imposto Seletivo – IS incidentes nas prestações de serviços, em atendimento às alterações previstas na Reforma Tributária do Consumo, conforme a Emenda Constitucional – EC nº 132, de 20 de dezembro de 2023.</p><p>Os novos agrupamentos de campos foram inseridos a partir do layout atual da NFS-e, presente no documento “AnexoIV-LeiautesRN_ADN-SNNFSe_V1.00.02-Produção.xlsx”, aba “LEIAUTE NFS-e ADN” que consta na sessão de <a href="https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica" target="_blank">documentação técnica</a> no Portal da NFS-e.</p><p>Importante esclarecer que o conjunto de campos apresentados neste documento é uma <b>primeira versão</b>, resultado de estudos técnicos realizados tomando como base o texto do Projeto de Lei Complementar – PLP nº 68, de 25 de abril de 2024, ainda em tramitação no Congresso Nacional e sua divulgação objetiva é dar transparência aos Municípios, empresas prestadoras de serviço e de Tecnologia da Informação – TI e contribuintes para que possam se familiarizar com o novo padrão que deverá vigorar a partir de janeiro de 2026. Os estudos técnicos permanecem e novas versões deverão ser publicadas nos próximos meses com atualizações do layout proposto.</p><p>Para melhor compreensão dos agrupamentos que serão apresentados no próximo tópico desta Nota Técnica, a seguir é apresentada a modelagem do processo de emissão da NFS-e. O emissor (prestador de serviços) preenche a Declaração de Prestação de Serviço (DPS) que será enviada à “Sefin Nacional”, responsável pela validação das informações, cálculo dos tributos e autorização da NFS-e. Caso as informações atendam aos requisitos, será gerada a NFS-e em formato XML com o destaque dos tributos devidos e que poderá ser acessada pelo emissor. É importante observar que a DPS é assinada e encapsulada no interior da nota gerada e que, dessa forma, há dois grupos de informações apresentados neste documento: um relativo à DPS com campos que serão informados pelo contribuinte e outro que, a partir dessas informações, terá campos calculados pela plataforma.</p><p>
+<img src="../../../Resources/Images/Notícias/processo-emissao-nfse.png" style="max-width: 100%;"/>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">Nota Técnica nº 001, versão 1.00</a> <br/>Publicada em 01/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

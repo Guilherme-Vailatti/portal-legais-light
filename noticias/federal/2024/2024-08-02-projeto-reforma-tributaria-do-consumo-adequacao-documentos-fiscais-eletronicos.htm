@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Nota Técnica nº 2024.002, v. 1.00 - Pro - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/08/2024 | Reforma Tributária - Nota Técnica nº 2024.002, v. 1.00 - Projeto Reforma Tributária do Consumo - Documentos Fiscais - Adequação NF-e e NFC-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei Complementar Federal PLP 68, aprovado na Câmara dos Deputados e encaminhado para aprovação junto ao Senado Federal, definiu na Seção VIII – Disposições Transitórias, Art. 61, a obrigatoriedade para Estados, o Distrito Federal e os Municípios adaptarem os sistemas autorizadores de Documentos Fiscais Eletrônicos (DFe) vigentes para utilização de leiaute padronizado, que permita aos contribuintes informarem os dados relativos ao Imposto sobre Bens e Serviços (IBS), Contribuição sobre Bens e Serviços (CBS) e Imposto Seletivo (IS).</p><p>Como as infraestruturas autorizadoras de Documentos Fiscais Eletrônicos (DFe) das Unidades Federadas e Municípios, além das aplicações e sistemas dos contribuintes, necessitam de, no mínimo, 1 ano para o desenvolvimento das alterações necessárias, estamos divulgando esta Nota Técnica (NT) para implantação, em produção, a partir do dia 31/10/2025, de forma a entrar em efetiva operacionalização a partir <b>01/01/2026</b>.</p><p>Como as discussões envolvendo a implantação da Reforma Tributária ainda estão em curso, esclarecemos que esta NT poderá ser ajustada ao longo do seu processo de execução, da mesma forma como ocorre com as demais NT já implementadas.</p><p>Desta forma, esta NT, discutida conjuntamente com a RFB e entidades representantes dos municípios, modifica o leiaute da NF-e e NFC-e, inserindo os grupos e campos opcionais relacionados a tributação do Imposto sobre Bens e Serviços (IBS), Contribuição sobre Bens e Serviços (CBS) e Imposto Seletivo (IS), em atendimento as alterações previstas na Emenda Constitucional 132 de 20 de dezembro de 2023 para implementação da Reforma Tributária.</p><p>Em busca de uma padronização entre os diversos documentos fiscais eletrônicos existentes, esta NT introduz o arquivo “DFeTiposBasicos_v1.00.xsd” ao conjunto dos arquivos que compõem do schema de todos os Documentos Fiscais Eletrônicos - DF-e, entre eles a NF-e e NFC-e.</p><p>Este arquivo define de forma estruturada a previsão de campos a serem informados para o registro das informações referentes a tributação do IBS e da CBS em um tipo complexo referenciado no leiaute padrão da NF-e e NFC-e conforme estrutura demonstrada no item 5.1, e também será utilizado nos demais documentos fiscais eletrônicos.</p><p>O grupo de informações do IBS, CBS e IS associado aos itens do documento fiscal devem ser classificados de acordo com Código de Situação Tributária (CST) e Código de Classificação Tributária (cClassTrib) do IBS, CBS e IS.</p><p>As duas tabelas estarão publicadas nos portais nacionais dos documentos fiscais eletrônicos e as ocorrências previstas para preenchimento estão relacionadas às previsões legais do texto da Reforma Tributária.</p><p>Associados a estas tabelas, serão publicados indicadores de obrigatoriedade de preenchimento dos grupos de informações do IBS, da CBS e do IS nos itens da DF-e. Essas configurações vinculam de forma dinâmica os CST e cClassTrib com as Regras de Validação descritas logo abaixo.</p><p>Notas de Débito e Crédito são nomes de instrumentos utilizados mundialmente para documentar situações contábeis onde é necessário corrigir informações comerciais que foram registradas em um documento, que no Brasil é a Nota Fiscal.</p><p>Esta Nota Técnica cria na NF-e modelo 55 as finalidades de emissão correspondentes. O sentido das palavras “débito” e “crédito” sempre se referem ao ponto de vista do emissor:</p><ul>
+<li>Uma nota de débito documenta uma situação na qual o emitente registra um aumento no imposto devido (consequentemente, uma redução no imposto devido pelo adquirente, que é o destinatário); - Uma nota de crédito documenta uma situação na qual o emitente registra uma redução no imposto devido (consequentemente, um aumento no imposto devido pelo adquirente, que é o destinatário);</li>
+</ul><p>As finalidades de emissão “Nota de Ajuste” e “Nota Complementar”, já existentes, são casos especiais de Nota de Débito; uma nota de entrada emitida para documentar, por exemplo, a devolução de mercadoria que havia sido vendida a um consumidor final, é um caso especial de Nota de Crédito.</p><p>A regulamentação do IBS disporá sobre a utilização de notas de crédito e notas de débito para lançamentos de ajuste, com a finalidade de instrumentalizar a preparação da declaração assistida a ser oferecida para os contribuintes, de maneira automatizada, a partir de documentos fiscais eletrônicos, em cumprimento ao que preconiza o PLP 68. A menos que ocorra alteração na regulamentação do ICMS e do IPI, notas de crédito e notas de débito não poderão ser utilizadas para ajustes relativos a estes tributos.</p><ul>
+<li>Homologação: 01/09/2025;</li>
+<li>Produção: 31/10/2025.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">Nota Técnica nº 2024.001, versão 1.00</a> <br/>Publicada em 31/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

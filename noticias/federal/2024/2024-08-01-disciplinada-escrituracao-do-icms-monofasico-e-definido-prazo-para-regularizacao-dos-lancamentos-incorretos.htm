@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI SP - Portaria SRE nº 54/2024 - Disciplinad - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/08/2024 | SPED EFD ICMS IPI SP - Portaria SRE nº 54/2024 - Disciplinada a escrituração do ICMS monofásico e definido prazo para regularização dos lançamentos incorretos</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Fisco paulista disciplinou o procedimento de escrituração dos documentos fiscais de combustíveis sujeitos à tributação monofásica e estabeleceu prazos para regularização de lançamentos feitos em desacordo a esta orientação.</p><p>Segundo o ato noticiado, o contribuinte deve escriturar os documentos fiscais seguindo os procedimentos definidos na "Nota Orientativa" disponibilizada no Portal do SPED. Portanto, para o contribuinte que tem direito ao crédito do ICMS sob a entrada de combustíveis, o reconhecimento desse crédito é mediante os registros C170 e C190.</p><p>O Fisco ainda esclarece que na escrituração dos documentos fiscais correspondentes a combustíveis monofásicos, não haverá lançamentos de ajustes, visto que, o crédito, se for de direito, será reconhecido na escrituração da própria entrada (registros C100, C170 e C190).</p><p>Por fim, fica estabelecido prazos para regularização para aqueles contribuintes que escrituraram de forma diversa ao que o ato noticiado orienta. Sendo assim, os contribuintes têm os seguintes prazos para proceder com a retificação da EFD e substituição da GIA, se for o caso:</p><p>O ato noticiado entra em vigor no dia 31/07/2024, data da sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">Portaria SRE nº 54/2024</a> <br/>Publicada em 31/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

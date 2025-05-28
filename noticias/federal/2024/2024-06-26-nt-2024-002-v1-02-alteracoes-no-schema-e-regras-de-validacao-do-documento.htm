@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFCom - Nota Técnica nº 2024.002, v1.02 - Alterações no sche - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>26/06/2024 | NFCom - Nota Técnica nº 2024.002, v1.02 - Alterações no schema e regras de validação do documento</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado no Portal da NFCom a Nota Técnica 2024/002 versão 1.02.</p><p>Esta Nota Técnica busca adequar o leiaute e as Regras de validação da NFCom contemplando ajustes identificados como melhorias e complementos da versão 1.00 estabelecida no MOC da NFCom.</p><p>Confira as aterações:</p><p>Será criado um Classificador de Produtos (cClass):</p><p>Código: <b>0450101</b>;</p><p>Descrição: Serviços Combinados (dados, voz, mensagens e outros).</p><p>No schema da NFCom foram inseridos os campos referentes a informação da Nota modelo 21/22 em papel na hipótese de um Cofaturamento referenciar documento anterior a implantação da nota eletrônica. Também foi criado um atributo opcional indicador no item da NFCom para apontar que uma nota anterior referenciada na nota de faturamento centralizado existe apenas no modelo papel (mod. 21/22).</p><p>Foram alteradas as regras obrigatórias de validação da rejeição 255, 515, 267;</p><p>Foram alteradas as regras facultativas de validação da rejeição 278, 279;</p><p>Foram incluídas as novas regras de validação de rejeição 697, 699, 698 e 700 sendo a 700 facultativa.</p><p> </p><p><b>Cronograma de implementação:</b>
+</p><ul>
+<li>Ambiente de homologação: 01/07/2024;</li>
+<li>Ambiente de produção: 15/07/2024</li>
+</ul><p>Para ter acesso na integra da NT 2024.002, versão 1.02 e ao novo pacote de schemas <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos" target="_blank">clique aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sef.sc.gov.br/noticias/documentos-fiscais-eletronicos-fazenda-analisa-propostas-de-adequacao-a-reforma-tributaria-junto-ao-setor-produtivo" target="_blank">Nota Técnica nº 2024.002, versão 1.02</a> <br/>Publicada em 18/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

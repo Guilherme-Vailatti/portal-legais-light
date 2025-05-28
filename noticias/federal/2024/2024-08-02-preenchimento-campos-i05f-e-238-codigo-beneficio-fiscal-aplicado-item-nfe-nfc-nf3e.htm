@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e DF - AD nº 1/2024 - Preenchimento dos campos I05f - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/08/2024 | NF-e NFC-e DF - AD nº 1/2024 - Preenchimento dos campos I05f e 238, "Código de Benefício Fiscal na UF aplicado ao item" na NF-e, NFC-e e na NF3-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi alterado o dispositivo que trata do preenchimento dos campos I05f e 238, "Código de Benefício Fiscal na UF aplicado ao item" na NF-e, NFC-e e na NF3-e.</p><p>Os campos I05f e 238, existentes na Nota Fiscal Eletrônica - NF-e, na Nota Fiscal de Consumidor Eletrônica - NFC-e e na Nota Fiscal de Energia Elétrica Eletrônica - NF3-e, modelos 55, 65 e 66, deverão ser preenchidos com os códigos estabelecidos no Anexo Único a este Ato Declaratório.</p><p>Importante observar que foram alteradas as redações dos Códigos de Benefícios Fiscais - cBenefs DF811012, DF814021, DF814059, DF814063, DF814104, DF814147, DF814151, DF814181, DF814500, DF814517, DF814518, DF816046, DF817502, DF826001, DF826003, constantes no Anexo Único ao Ato Declaratório nº 1/2021, dentre os quais destacam-se:</p><p>Tais disposições produzem efeitos a partir de <b>01/08/2024</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">Ato Declaratório GEREN/COAP/SUAE/SEF/SEEC nº 1/2024</a> <br/>Publicada em 30/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

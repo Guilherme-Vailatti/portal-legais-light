@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Integrantes do grupo de trabalho da ref - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | Reforma Tributária - Integrantes do grupo de trabalho da reforma tributária querem manter alíquota de referência</h1>
+</div>
+<div class="noticia-corpo">
+<p>Os deputados que compõem o Grupo de Trabalho do <a href="https://www.camara.leg.br/noticias/1056840-proposta-do-governo-regulamenta-impostos-criados-pela-reforma-tributaria" target="_blank">PLP 68/24</a>, que trata da Lei Geral do IBS, da CBS e do Imposto Seletivo, afirmaram que o esforço nas negociações com as bancadas é para manter a alíquota básica de 26,5% . Essa alíquota de referência vale para mercadorias e serviços que não são beneficiados com algum tipo de tratamento diferenciado.</p><p>Os integrantes do GT participaram da reunião de líderes partidários com o presidente da Câmara dos Deputados, Arthur Lira (PP-AL). O ministro da Fazenda, Fernando Haddad, também participou do encontro. A ideia é que a votação do projeto em Plenário tenha início amanhã, a partir das 10 horas. Os parlamentares se reunirão ainda nesta terça-feira com as bancadas para apresentar a proposta e acolher possíveis sugestões ao texto.</p><p>O deputado Luiz Gastão (PSD-CE) reforçou que o objetivo é não aumentar a alíquota de referência, mas disse que as discussões a partir de agora saem da parte técnica e vão para a área política. “Agora as discussões estão sendo feitas no âmbito da política, e temos que ter a compreensão de que não existe mais [a ideia] de dar um benefício para um setor que não afete a alíquota como um todo. Qualquer ação a ser feita vai impactar”, afirmou.</p><p>O deputado Claudio Cajado (PP-BA) destacou que é possível abrir um espaço para que algum setor seja beneficiado pela reforma, como a inclusão de proteínas na cesta básica, mas esse espaço precisa ser discutido pelos deputados. Cajado afirmou que é possível que os número de emendas e destaques seja o menor possível para que a tramitação do texto no Plenário seja mais célere.</p><p>“O texto está aceito, essa reforma vai fazer com que haja um melhor desempenho da economia e que tenha um aumento de até 2% do PIB só pela implementação da reforma”, explicou o deputado.</p><p>O deputado Mauro Benevides Filho (PDT-CE) afirmou que a inclusão das armas no Imposto Seletivo é uma questão que saiu da esfera técnica e foi para a área política. E que essa discussão vai ser resolvida em Plenário.</p><p>Setores de armas e munições pressionaram para que fossem retirados do Imposto Seletivo, o que poderia fazê-los pagar menos imposto. O IS (Imposto Seletivo), conhecido como "imposto do pecado", foi criado pela PEC da reforma tributária para tributar mais os produtos com potencial de prejudicar a saúde e o meio ambiente, como ultraprocessados, bebidas açucaradas e carros.</p><p>“Se vai aumentar a alíquota ou não, tem que ter um alicerce dos 513 deputados. A questão das armas é uma discussão que saiu da área técnica e foi para área política: os que são mais de direita acham que não deve ter [Imposto Seletivo] e outros acham que não deve ser do dia a dia das pessoas e, portanto, deve ter a incidência do imposto. Isso vai ser resolvido em Plenário”, afirmou Benevides Filho.</p><p style="font-weight: bold;">Cashback</p><p>O deputado Ivan Valente (Psol-SP) defendeu que haja a garantia da progressividade da cobrança dos impostos, isto é, que quem ganha mais, pague mais impostos. A bancada do Psol, segundo ele, vai propor uma emenda para aumentar o cashback dos atuais 20% propostos no texto para 50% para quem está no CadÚnico. O CadÚnico é um instrumento de coleta de dados e informações que objetiva identificar todas as famílias de baixa renda.</p><p>“Isso diminui o imposto de quem é pobre do CadÚnico, isso fala com a sociedade, o resto são setores querendo benefícios, estamos do lado de quem precisa. Agora, os lobbies são muito poderosos”, afirmou.</p><p style="font-weight: bold;">Higiene íntima</p><p>A secretária da Mulher da Câmara, deputada Benedita da Silva (PT-RJ), afirmou que é importante garantir que os produtos de higiene íntima da mulher sejam beneficiados pelo imposto zero.</p><p>“Estamos discutindo e vamos saber se o Plenário vai aceitar ou não. Tudo vai para o Plenário amanhã”, disse.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1081853-integrantes-do-grupo-de-trabalho-da-reforma-tributaria-querem-manter-aliquota-de-referencia/" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 09/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

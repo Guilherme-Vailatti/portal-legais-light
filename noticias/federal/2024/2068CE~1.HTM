@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Receita Federal - Receita Federal já recebeu mais de 250 mil - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>24/07/2024 | Receita Federal - Receita Federal já recebeu mais de 250 mil declarações de Pessoas Jurídicas que utilizam créditos tributários decorrentes de benefícios fiscais</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Receita Federal já recebeu mais de 250 mil declarações de Pessoas Jurídicas que utilizam créditos tributários decorrentes de benefícios fiscais (DIRBI), com volume diário próximo a 60 mil nos últimos dias.</p><p>O prazo para entrega da declaração teve início em 1º de julho e se encerrará no dia 20 deste mês. Importante destacar que esse prazo não foi prorrogado.</p><p>Atendendo a pedido das entidades representativas dos contadores, que demandaram mais tempo para que pudessem se adaptar à nova declaração, a Receita Federal prorrogou para 21 de setembro de 2024 a incidência das multas relativas à incorreção de dados prestados pelos contribuintes na Dirbi, referentes aos períodos de apuração de janeiro a julho de 2024.</p><p>A medida está na Instrução Normativa RFB nº 2.204/2024, já enviada para publicação em edição extra do Diário Oficial da União de 19/07/24.</p><p>Para o subsecretário de Arrecadação, Cadastros e Atendimento, Mário Dehon, "a Receita Federal entendeu como razoável a demanda das entidades representativas da classe contábil por um prazo maior para adaptação, mas tendo em vista a necessidade de obtenção das informações constantes da referida Declaração, manteve o prazo para entrega, mas prorrogou a data para a incidência das multas. Assim, os declarantes terão o tempo necessário para revisar as declarações entregues, e sendo o caso, retificá-las. O expressivo número de mais de 250 mil declarações já entregues atesta o acerto da DIRBI como instrumento para mensuração de benefícios fiscais. A prorrogação das multas, na verdade, além de premiar o esforço dos contadores substitui a punição por um incentivo à conformidade daqueles que usufruem de benefícios fiscais".</p><p>A instrução normativa prevê ainda que a entrega tempestiva das declarações e a correção dos dados prestados servirão como qualificador de incentivo dos programas de conformidade da RFB, como o Programa de Conformidade Cooperativa Fiscal - Confia, o Sintonia Programa de Estímulo à Conformidade Tributária - Sintonia e o Programa Brasileiro de Operador Econômico Autorizado - OEA.</p><p>Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/julho/receita-federal-ja-recebeu-mais-de-250-mil-declaracoes-de-pessoas-juridicas-que-utilizam-creditos-tributarios-decorrentes-de-beneficios-fiscais" target="_blank">Receita Federal</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados' target='_blank'>Receita Federal</a> <br>Publicada em 19/07/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

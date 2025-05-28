@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e SP - Portaria SER nº 40/2024 - Publicada nova disciplin - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | NF-e SP - Portaria SER nº 40/2024 - Publicada nova disciplina para a Nota Fiscal de Consumidor Eletrônica e contingência off-line</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Fisco paulista publicou nova disciplina para a Nota Fiscal de Consumidor Eletrônica (NFC-e) e o seu Documento Auxiliar (Danfe-NFC-e), revogando assim, a Portaria CAT nº 12/2015.</p><p>O contribuinte obrigado ao Cupom Fiscal Eletrônico (CF-e-SAT) que queira optar pela utilização da NFC-e, fica impedido de emitir:</p><p>Na hipótese de ocorrer problemas técnicos, a NFC-e será emitida em contingência, seguindo as disposições previstas no Ajuste Sinief nº 19/2016.</p><p>O credenciamento é realizado no endereço eletrônico <a href="http://nfce.fazenda.sp.gov.br/NFCePortal/" target="_blank">http://nfce.fazenda.sp.gov.br/NFCePortal/</a>, na opção "Credenciamento", com preenchimento dos dados solicitados no formulário eletrônico, observando que, deverá realizar credenciamento de forma individual, para cada estabelecimento.</p><p>O Fisco poderá alterar, cassar ou revogar o credenciamento, de modo que, a comunicação de tal ocorrido será feita através do Domicílio Eletrônico do Contribuinte (DEC) ou publicação no Diário Oficial do Estado.</p><p>Ressalta-se que, poderá suspender ou bloquear o acesso ao seu ambiente autorizador ao contribuinte que praticar, mesmo que de maneira não intencional, o consumo do ambiente de produção em desacordo com os padrões estabelecidos no Manual de Orientação do Contribuinte (MOC).</p><p>O ato noticiado produz efeitos imediatos.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-40-de-2024.aspx" target="_blank">Portaria SRE nº 40/2024</a> <br/>Publicada em 10/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

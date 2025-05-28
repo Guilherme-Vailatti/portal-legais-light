@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2024.001, v. 1.2 - Altera campo - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>03/09/2024 | NF-e NFC-e - Nota Técnica nº 2024.001, v. 1.2 - Altera campos e regras para permitir a emissão com CRT=4 (MEI)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Essa Nota Técnica tem o objetivo de alterar campos e regras de validação para permitir a emissão de NF-e/NFC-e nas operações por MEI utilizando o código de regime tributário (CRT) “4 - Simples Nacional - Microempreendedor Individual – MEI”, previstas no Convênio S/N de 1970.</p><p><b>Publicação em produção com campos e regras que não afetam o MEI:</b>
+</p><ul>
+<li>Homologação: -</li>
+<li>Produção: 16/09/2024</li>
+</ul><p> </p><p><b>N12a-80, N12a-81, N12a-90, N12a-91 e observação 2 da I08-140:</b>
+</p><ul>
+<li>Homologação: 01/07/2024</li>
+<li>Produção: 01/04/2025</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=/Tg+Yk1Cwbw=" target="_blank">Nota Técnica nº 2024.001, versão 1.2</a> <br/>Publicada em 29/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

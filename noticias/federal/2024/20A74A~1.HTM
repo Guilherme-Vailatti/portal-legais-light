@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reforma Tributária - Nota Técnica - Estimativa de Impacto so - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>27/08/2024 | Reforma Tributária - Nota Técnica - Estimativa de Impacto sobre a alíquota de referência do IBS e da CBS das mudanças introduzidas durante a tramitação da regulamentação da Reforma Tributária</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Esta nota apresenta estimativas elaboradas pelo Ministério da Fazenda para o impacto das mudanças introduzidas pela Câmara dos Deputados no Projeto de Lei Complementar nº 68, de 2024 (PLP 68/2024), sobre as alíquotas de referência do Imposto sobre Bens e Serviços (IBS) e da Contribuição sobre Bens e Serviços (CBS).</p><p>Para melhor compreender essas estimativas, faz-se necessário esclarecer que o eixo central da Reforma Tributária, instituída pela Emenda Constitucional nº 132, de 2023 (EC 132/2023), é promover uma reforma abrangente da tributação de bens e serviços no país, ao substituir uma cesta de tributos atuais (ISS, ICMS, IPI, PIS, Cofins e IOF-Seguros) por uma nova sistemática baseada em dois pilares:</p><p>A migração para o novo sistema tributário está prevista para ocorrer de maneira gradual, ao longo do período 2027-2032, e foi concebida sob o pressuposto de que não haverá aumento da carga tributária. Para tanto, a Reforma Tributária estabeleceu a diretriz constitucional de manutenção da carga tributária e criou um mecanismo de ajuste com o propósito de alcançar este objetivo, por meio da calibragem das alíquotas de referência do IBS e da CBS.</p><p>Na medida em que os tributos atuais vão sendo eliminados, as alíquotas de referência do IBS e da CBS deverão ser calibradas para repor a exata perda da arrecadação, após deduzir os ganhos de receita do Imposto Seletivo. Essas alíquotas de referência serão fixadas e revisadas anualmente por Resolução do Senado Federal, com base em cálculos realizados pelo Tribunal de Contas da União (TCU) que deverão considerar os efeitos sobre a arrecadação de quaisquer tratamentos diferenciados que resultem em arrecadação diferente daquela que seria obtida com a alíquota de referência.</p><p>Dito de outro modo, a Reforma Tributária não prevê a fixação prévia das alíquotas de referência do IBS e da CBS. O que ela faz é estabelecer critérios para o cálculo das alíquotas de referência que serão fixadas no decorrer do período de transição de modo a convergir aos valores necessários para repor a arrecadação dos tributos substituídos. Logo, as alíquotas de referência definitivas só serão conhecidas após o término da transição, quando estará em pleno vigor um sistema tributário radicalmente distinto e muito mais eficiente do que o atual.</p><p>Leia a Nota Técnica na integra <a href="https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/notas-informativas/2024/agosto/nota-tecnica-aliquotas-sertmf.pdf/view" target="_blank">aqui</a>.</p><p>As alterações realizadas pela Câmara dos Deputados na regulamentação da reforma tributária elevaram a projeção da alíquota do IVA de 26,5% para 28%, segundo cálculos do Ministério da Fazenda. Se confirmada, será a maior cobrança do mundo, de acordo com dados da Organização para a Cooperação e Desenvolvimento Econômico (OCDE).</p><p>
+<img src="../../../Resources/Images/Notícias/aliquotas-iva-paises-ocde.jpg" style="max-width: 100%;width: 718px;height: 428px;"/>
+</p><p>Fonte: <a href="https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/notas-informativas/2024/agosto/nota-tecnica-aliquotas-sertmf.pdf/view" target="_blank">Ministério da Fazenda</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/fazenda/pt-br/central-de-conteudo/publicacoes/notas-informativas/2024/agosto/nota-tecnica-aliquotas-sertmf.pdf/view' target='_blank'>Ministério da Fazenda</a> <br>Publicada em 23/08/2024</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

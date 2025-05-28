@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Nota Técnica 2024.001, v. 1.00 - Projet - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/08/2024 | Reforma Tributária - Nota Técnica 2024.001, v. 1.00 - Projeto Reforma Tributária do Consumo - Documentos Fiscais - Adequação CTe, BPe, NF3e e NFCom</h1>
+</div>
+<div class="noticia-corpo">
+<p>O PLP 68, aprovado na Câmara dos Deputados e encaminhado para aprovação junto ao Senado Federal, definiu na Seção VIII – Disposições transitórias, Art. 61, a obrigatoriedade para Estados, o Distrito Federal e os Municípios, adaptarem os sistemas autorizadores de Documentos Fiscais Eletrônicos (DFe) vigentes para utilização de leiaute padronizado, que permita aos contribuintes informarem os dados relativos ao Imposto sobre Bens e Serviços (IBS), Contribuição sobre Bens e Serviços (CBS) e Imposto Seletivo (IS)..</p><p>Como as infraestruturas autorizadoras de Documentos Fiscais Eletrônicos (DFe) das Unidades Federadas e Municípios, além das aplicações e sistemas dos contribuintes, necessitam de, no mínimo, 1 ano para o desenvolvimento das alterações necessárias, estamos divulgando esta Nota Técnica (NT) para implantação, em produção, a partir do dia 31/10/2025, de forma a entrar em efetiva operacionalização em <b>01/01/2026</b>.</p><p>Como as discussões envolvendo a implantação da Reforma Tributária ainda estão em curso, esclarecemos que esta NT poderá ser ajustada ao longo do seu processo de execução, da mesma forma como ocorre com as demais NT já implementadas.</p><p>A Nota Técnica modifica o leiaute dos DFe, inserindo os grupos e campos opcionais relacionados a tributação do IBS, CBS e IS, em atendimento as alterações previstas na Emenda Constitucional 132 de 20 de dezembro de 2023, para implementação da Reforma Tributária.</p><p>Esta documentação descreve as alterações aplicadas aos Documentos:</p><ul>
+<li>Conhecimento de Transporte Eletrônico (modelo 57);</li>
+<li>Conhecimento de Transporte Eletrônico para Outros Serviços (modelo 67);</li>
+<li>Bilhete de Passagem Eletrônico (modelo 63);</li>
+<li>Nota Fiscal de Energia Elétrica Eletrônica (modelo 66);</li>
+<li>Nota Fiscal Fatura de Serviço de Comunicação Eletrônica (modelo 62).</li>
+</ul><p><b>Observação:</b> A Nota Fiscal Eletrônica (modelo 55), juntamente com a Nota Fiscal de Consumidor Eletrônica (modelo 65) serão tratadas em Nota Técnica específica.</p><p><b>Importante:</b> Durante essa fase inicial, esta será uma NT conjunta para CTe, BPe, NF3e e NFCom. A versão final desta documentação deverá originar NT´s específicas de cada um desses DFe.</p><p>Em busca de uma padronização entre os diversos documentos fiscais eletrônicos, esta NT introduz o arquivo DFeTiposBasicos_v1.00.xsd ao conjunto dos arquivos que compõem do schema da DFe.</p><p>Este arquivo define de forma estruturada a previsão de campos a serem informados para o registro das informações referentes a tributação do IBS e da CBS em um tipo complexo referenciado no leiaute padrão da DFe conforme estrutura abaixo:</p><ul>
+<li>Homologação: 01/09/2025;</li>
+<li>Produção: 31/10/2025.</li>
+</ul><p>Confira a Nota Técnica completa <a href="https://dfe-portal.svrs.rs.gov.br/Nfe" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/julho/projeto-de-lei-complementar-que-institui-a-CBS-e-o-IBS-e-aprovado-na-camara-dos-deputados" target="_blank">Nota Técnica nº 2024.001, versão 1.00</a> <br/>Publicada em 31/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

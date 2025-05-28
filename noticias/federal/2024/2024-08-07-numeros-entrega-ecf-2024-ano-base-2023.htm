@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD - Números da entrega da ECF 2024, ano-base 2023 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/08/2024 | SPED EFD - Números da entrega da ECF 2024, ano-base 2023</h1>
+</div>
+<div class="noticia-corpo">
+<p>No período de 01/01/2024 a 31/07/2024 a Receita Federal do Brasil recebeu, referente ao ano-base 2023, um total de <b>1.590.473 (um milhão e quinhentos e noventa mil e quatrocentos e setenta e três)</b> escriturações.</p><p>Como habitualmente, o mês de julho foi o que mais ocorreu envios/recepções, totalizando 1.039.932 (um milhão e trinta e nove mil e novecentos e trinta e duas) escriturações.</p><p>Somente no último dia para envio/recepção sem multa, 31/07, foram enviadas/recebidas 120.491 (cento e vinte mil quatrocentos e noventa e um) escriturações, aproximadamente 11,58% do mês e 7,57% do ano. Uma média aproximada de 84 (oitenta e quatro) envios/recepção por minuto.</p><p>Tais números são “preliminares”, visto que, para o estado do Rio Grande do Sul, há, atualmente, postergação de prazo de entrega da escrituração.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7496" target="_blank">Portal SPED</a> <br/>Publicada em 06/08/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

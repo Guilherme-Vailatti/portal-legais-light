@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e SP - Portaria SER nº 41/2024 - Portaria SER Alteradas a - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/07/2024 | NF-e SP - Portaria SER nº 41/2024 - Portaria SER Alteradas as regras para dispensa da GIA</h1>
+</div>
+<div class="noticia-corpo">
+<p>Segundo o ato noticiado, passam a ser dispensados da entrega da GIA os contribuintes do Regime Periódico de Apuração (RPA) que no exercício de 2023 tenham auferido receita bruta de até R$ 4.800.000,00. Os contribuintes que se enquadrarem nessa hipótese, serão notificados e, ficam dispensados da GIA a partir do mês seguinte ao da referida notificação.</p><p>Para o contribuinte RPA que em 2023 auferiu receita bruta superior a R$ 4.800.000,00, somente será dispensado da GIA, mediante o atendimento das seguintes condições para todas as inscrições estaduais do mesmo CNPJ base:</p><p>Também será dispensado da GIA, mediante recebimento de notificação, o contribuinte que tiver alterado seu regime de apuração a contar de 1º.01.2024.</p><p>Com essas alterações o Governo de São Paulo deve alcançar com a dispensa da GIA, um grande número de contribuintes RPA que ainda têm a necessidade de entregar essa obrigação acessória.</p><p>O ato noticiado entra em vigor no dia 10/07/2024, data da sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Portaria-SRE-41-de-2024.aspx" target="_blank">Portaria SRE nº 41/2024</a> <br/>Publicada em 10/07/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

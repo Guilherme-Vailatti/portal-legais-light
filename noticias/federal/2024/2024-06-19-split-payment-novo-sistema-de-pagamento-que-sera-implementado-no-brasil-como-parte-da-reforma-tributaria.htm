@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - “Split Payment” - Novo sistema de pagam - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/06/2024 | Reforma Tributária - “Split Payment” - Novo sistema de pagamento que será implementado no Brasil como parte da reforma tributária e fará uso de tecnologia inteligente</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em participação na audiência pública do Grupo de Trabalho da Câmara dos Deputados dedicado ao Projeto de Lei Complementar (PLP) 68/2024 realizada, na quarta-feira (12/06), o secretário extraordinário da Reforma Tributária, Bernard Appy, e o assessor do Gabinete da Receita Federal Roni Peterson de Brito destacaram o papel do <b>split payment</b>. Esse método vincula o pagamento do tributo ao documento fiscal e à liquidação financeira da transação comercial (e, nesse momento, segrega automaticamente o valor do tributo e o da operação em si).</p><p>O split payment será fundamental para o ressarcimento rápido dos créditos tributários e para a <b>redução da inadimplência, da sonegação e da fraude</b>. Além disso, evitará o duplo recolhimento do tributo; simplificará, para as empresas, a forma de pagamento; evitará, de modo a garantir a arrecadação, a adoção de medidas tributárias como a substituição tributária; e promoverá a isonomia concorrencial.</p><p>Com o split payment, a Contribuição sobre Bens e Serviços (<b>CBS</b>) e o Imposto sobre Bens e Serviços (<b>IBS</b>) – que compõem o Imposto sobre Valor Adicionado (IVA) Dual, coração da Reforma Tributária do consumo – passarão a ser recolhidos no momento do pagamento ao fornecedor. O Ministério da Fazenda estima uma redução de até três pontos percentuais na alíquota de referência da CBS e do IBS em consequência do fechamento das possibilidades de fraude, sonegação e inadimplência no país.</p><p>O uso de tecnologia inteligente é uma das principais características do modelo do split payment a ser implementado no país, único no mundo. Appy ressaltou em sua apresentação que esse método “é apenas uma forma de assegurar que a CBS e o IBS serão pagos caso não haja pagamento por outras formas”.</p><p>Para as empresas adquirentes, significa a segurança de que obterão seus créditos, na hipótese de o fornecedor ficar inadimplente. A empresa emitirá Nota Fiscal eletrônica (NF-e) em suas vendas. As informações da NF-e estarão interligadas com a transação de pagamento da operação. Isso vale para todos os meios de pagamento eletrônico: PIX, boleto, cartão de crédito e de débito. A parcela a ser retida pelo split payment será apenas o saldo dos débitos que não tiver sido compensado com créditos ou pagos pelo fornecedor.</p><p>O secretário salientou que a adoção da medida apresenta uma relação custo-benefício muito favorável, pelas virtudes do modelo, ainda que implique alguns custos para as empresas, para a administração tributária e para o sistema financeiro. O desenho do split payment está em andamento desde 2023, em um trabalho conduzido pelo Ministério da Fazenda e do qual participam, entre outros atores, o Banco Central e os fiscos federal, estaduais e municipais.</p><p>“Abrimos agora a interlocução com os gestores dos meios de pagamento”, pontuou Appy. “O Banco Central está nos apoiando nesse processo. O Brasil tem duas grandes vantagens para poder implementar esse modelo: temos um dos sistemas de documentos fiscais eletrônicos e um dos sistemas de pagamento mais avançados do mundo”, acrescentou o secretário do Ministério da Fazenda.</p><p>Colaborador da Secretaria Extraordiária da Reforma Tributária (Sert), Roni Peterson de Brito destacou os conceitos básicos para a compreensão do funcionamento do split payment: período de apuração, o isolamento entre créditos e débitos, itens que serão considerados conjuntamente; a apuração propriamente dita (primeiramente a apuração do saldo e, na sequência, o quanto existe a pagar); e a data em que o fornecedor tem que efetuar o recolhimento.</p><p>“O split payment é uma proposta sincera das administrações tributárias e da Secretaria Extraordinária da Reforma Tributária de implementar como método de pagamento o que a tecnologia nos permite, com todas as virtudes que ele tem e todos os desafios”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/assuntos/noticias/2024/junho/uso-de-tecnologia-inteligente-e-uma-das-principais-caracteristicas-do-split-payment-ressalta-appy" target="_blank">Ministério da Fazenda</a> <br/>Publicada em 13/06/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
