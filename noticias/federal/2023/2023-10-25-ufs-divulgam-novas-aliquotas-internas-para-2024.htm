@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS - UFs divulgam novas alíquotas internas para 2024 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/10/2023 | ICMS - UFs divulgam novas alíquotas internas para 2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>O ano de 2023 foi marcado por uma série de alterações nas alíquotas internas dos Estados e, aparentemente, o ano de 2024 vai pelo mesmo caminho, tendo em vista que muitas Unidades da Federação (UF) já publicaram normas com o objetivo de promoverem mudanças em suas alíquotas.</p><p>*O Estado do Rio Grande do Norte desde 01/04/2023 exige uma alíquota de 20% (Lei nº 11.314/2022), a partir de 01/01/2024 a alíquota geral do ICMS, para este Estado, voltará a ser de 18%.</p><p>**O Estado do Espírito Santo publicou a Lei nº 11.981/2023 , com o objetivo de majorar a sua alíquota interna de ICMS de 17% para 19,5%, a partir de 01/04/2023. Contudo, em face da publicação da Lei nº 12.020/2023 o Estado não irá efetivar a majoração da alíquota geral do imposto, que permanecerá em 17%. A Lei nº 12.020/2023 promoveu a revogação da Lei nº 11.981/2023 .</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="#" target="_blank">Fonte Desconhecida</a> <br/>Publicada em 24/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

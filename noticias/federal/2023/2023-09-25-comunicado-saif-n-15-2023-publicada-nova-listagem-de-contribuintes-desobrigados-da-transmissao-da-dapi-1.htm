@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI MG - Comunicado SAIF nº 15/2023 - Publicad - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/09/2023 | SPED EFD ICMS IPI MG - Comunicado SAIF nº 15/2023 - Publicada nova listagem de contribuintes desobrigados da transmissão da DAPI 1</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Secretaria de Estado de Fazenda de Minas Gerais (SEF/MG) publicou a terceira lista dos contribuintes desobrigados "de ofício" da Declaração de Apuração e Informação do ICMS, modelo 1 (DAPI 1) - a partir do período de apuração de 11/2023. Nesta hipótese a apuração do ICMS será feita a partir das informações lançadas na EFD ICMS IPI nos termos do artigo 2º-A da Portaria 177 SRE/2020 e suas alterações.</p><p>Caso o contribuinte desobrigado a declaração da DAPI a partir do mês de referência novembro/2023 a transmita, receberá mensagem no seu Domicílio Tributário eletrônico (DT-e) informando que a mesma foi desprezada.</p><p>A SEF/MG irá gerar a "Dapi virtual" com base na Escrituração Fiscal Digital (EFD), que será utilizada na formação do Conta Corrente Fiscal e caso a EFD não tenha qualidade suficiente para gerar a "Dapi virtual", o contribuinte receberá comunicado no seu DT-e e deverá promover a substituição da EFD com as devidas correções, observando as "<a href="http://www.sped.fazenda.mg.gov.br/spedmg/efd/desobrigar-dapi/">Regras de Negócio Desobrigar Dapi</a>".</p><p>Para a geração do Documento de Arrecadação Estadual (DAE), foi disponibilizado o aplicativo "Gerar DAE", no Portal do Sped da SEF/MG. O aplicativo deve ser instalado no ambiente da empresa e permitirá importar a EFD (mesmo antes de ser transmitida) para geração do(s) DAE(s). Este aplicativo recebeu melhorias e, agora, além de gerar o DAE, valida o arquivo EFD mesmo antes da transmissão.</p><p>O projeto "Desobrigar Dapi" desde seu início já dispensou 17 mil contribuintes da entrega da declaração.</p><p>Para conferir a lista, divulgada no Diário Eletrônico da SEF de 14/9, acesse o <a href="http://www.sped.fazenda.mg.gov.br/spedmg/export/sites/spedmg/efd/downloads/Comunicado-SAIF-015-2023.pdf">Comunicado SAIF nº 15/2023</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.sped.fazenda.mg.gov.br/spedmg/export/sites/spedmg/efd/downloads/Comunicado-SAIF-015-2023.pdf" target="_blank">Comunicado SAIF nº 15/2023
+</a> <br/>Publicada em 14/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

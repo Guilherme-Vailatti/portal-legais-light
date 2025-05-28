@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPED EFD ICMS IPI - Ato Cotepe/ICMS nº 134/2023 - Aprovada a - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>27/09/2023 | SPED EFD ICMS IPI - Ato Cotepe/ICMS nº 134/2023 - Aprovada a versão 3.1.5 do guia prático da EFD ICMS IPI, com efeitos a partir de 01/01/2024</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi alterado o Ato que instituiu o manual de orientação do leiaute da Escrituração Fiscal Digital ICMS IPI, conforme disposições introduzidas pela Nota Técnica nº 01/2023, versão 1.1, devendo, a partir de 01/01/2024, ser observadas as regras de escrituração e de validação do Guia Prático, versão 3.1.5, a ser publicado no Portal Nacional do Sistema Público de Escrituração Digital.</p><p>Acesse aqui o novo <a href="2023-09-27-publicada-nova-versao-3-1-5-do-guia-pratico-leiaute-18-com-efeitos-a-partir-de-01-01-2024.htm">Guia Prático da Nota Técnica 2023.001, versão 1.1</a>.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-cotepe-icms-n-134-de-22-de-setembro-de-2023-511782866">DOU</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/ato-cotepe-icms-n-134-de-22-de-setembro-de-2023-511782866' target='_blank'>Ato Cotepe/ICMS nº 134/2023
+</a> <br>Publicada em 25/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

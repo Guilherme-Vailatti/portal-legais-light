@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Congresso Nacional  - PL nº 581/2019 - Comissão da Câmara de - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>07/12/2023 | Congresso Nacional  - PL nº 581/2019 - Comissão da Câmara de Deputados aprova projeto que isenta do Imposto de Renda a participação nos lucros destinada a empregados</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Comissão de Trabalho da Câmara dos Deputados aprovou o <a href="https://www.camara.leg.br/noticias/931760-projeto-isencao-de-ir-a-participacao-nos-lucros-destinada-a-empregados" target="_blank">Projeto de Lei 581/19</a>, que isenta os trabalhadores de Imposto de Renda (IR) sobre lucros ou resultados das empresas.</p><p>A proposta, já aprovada pelo Senado, altera a <a href="https://www2.camara.leg.br/legin/fed/lei/2000/lei-10101-19-dezembro-2000-353953-norma-pl.html" target="_blank">Lei de Participação nos Lucros das Empresas</a> para conferir aos empregados o mesmo tratamento fiscal dado a sócios e acionistas no momento da distribuição de lucros ou dividendos.</p><p>O relator, deputado Luiz Carlos Motta (PL-SP), recomendou a aprovação do texto. “É preciso conferir a maior efetividade possível à participação nos lucros das empresas, um direito dos trabalhadores consagrado na Constituição”, comentou.</p><p>“A mudança proposta dará tratamento equitativo na tributação sobre as parcelas de lucro apropriadas pelo capitalista e pelo trabalhador”, afirmou o ex-senador Alvaro Dias (PR), autor da proposta, ao defender as mudanças na legislação.</p><p><b>Tramitação</b>
+</p><p>O projeto ainda será analisado pelas comissões de Finanças e Tributação; e de Constituição e Justiça e de Cidadania. Depois seguirá para o Plenário.</p><p>Fonte: <a href="https://www.camara.leg.br/noticias/1018895-comissao-aprova-projeto-que-isenta-do-imposto-de-renda-a-participacao-nos-lucros-destinada-a-empregados/" target="_blank">Agência Câmara Deputados</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pl-581-2019' target='_blank'>Projeto de Lei nº 581/2019</a> <br>Publicada em 23/11/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

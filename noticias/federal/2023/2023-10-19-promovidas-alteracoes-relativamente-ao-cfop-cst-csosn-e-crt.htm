@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Legislação - Promovidas alterações relativamente ao CFOP, CS - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/10/2023 | Legislação - Promovidas alterações relativamente ao CFOP, CST/CSOSN e CRT</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram promovidas diversas alterações no Convênio Sinief s/n de 15.12.1970, relativamente ao CFOP, CST/CSOSN e CRT, das quais são utilizados na emissão da NF-e.</p><p>Uma das novidades é a revogação do anexo II-A do referido Convênio s/n de 1970, que estabelecia uma <b>nova relação de CFOP</b>, com vigência a partir de 01/04/2024. Com isso, <b>os CFOPs serão os mesmos já existentes</b>, constantes no anexo II.</p><p>Outra alteração importante foi a <b>inclusão dos CSOSN</b> ao Convênio s/n de 1970, inseridos ao anexo III-A, das quais são utilizados pelos contribuintes optantes pelo Simples Nacional. Ressalta-se que <b>não houve nenhuma alteração quanto aos códigos já existente</b>s.</p><p>Destacamos também que a partir de 01/04/2024, fica acrescido na relação de CST, constantes na tabela B - Tributação do ICMS - do Anexo I, do Convenio s/n, 1970, os seguintes novos CST:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="2023-10-05-despacho-confaz-n-55-2023-publicados-atos-que-dispoem-em-especial-sobre-documentos-eletronicos-cfop-e-cst.htm" target="_blank">Despacho CONFAZ nº 55/2023</a> <br/>Publicada em 04/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

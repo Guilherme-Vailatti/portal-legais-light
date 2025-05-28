@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e MT - Fisco estadual promoverá bloqueio da NF-e com erro - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>18/09/2023 | NF-e MT - Fisco estadual promoverá bloqueio da NF-e com erro enviadas repetidamente pelos contribuintes serão rejeitadas com o erro “656-Rejeição: Consumo indevido”</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Sefaz MT informa que a partir de 2 de outubro de 2023, passará a ser aplicada no ambiente de produção da NF-e e NFA-e a regra de validação de consumo do Web Service de autorização. As requisições com erro enviadas repetidamente (em “looping”) pelos contribuintes serão rejeitadas com o erro “656-Rejeição: Consumo indevido”.</p><p>A medida, que já estava em vigor no ambiente de homologação desde 2018, faz parte da Nota Técnica 2018/002, e visa reduzir o mau uso das aplicações de algumas empresas que, sem dar tratamento adequado aos erros, continuam enviando o mesmo evento com as mesmas incorreções. A consequência é o consumo indevido de recursos do ambiente autorizador da Sefaz, o que acaba por prejudicar todas as empresas emissoras.</p><p>A partir da data citada, o contribuinte que transmitir para autorização uma NF-e com o mesmo erro repetidas vezes, ficará bloqueado pelo prazo de 1 (uma) hora para novas requisições de autorização caso receba 200 rejeições pelo mesmo motivo no período. Passado esse prazo, o sistema será desbloqueado automaticamente.</p><p>Para evitar o bloqueio, é importante que o aplicativo das empresas seja ajustado e os arquivos rejeitados sejam corrigidos antes de novo reenvio.</p><p>Fonte: <a href="https://www5.sefaz.mt.gov.br/-/consumo-indevido">SEFAZ MT
+</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www5.sefaz.mt.gov.br/-/consumo-indevido' target='_blank'>SEFAZ MT
+</a> <br>Publicada em 06/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

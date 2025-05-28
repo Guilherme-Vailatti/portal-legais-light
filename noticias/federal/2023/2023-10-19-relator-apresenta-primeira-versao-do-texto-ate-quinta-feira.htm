@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Relator apresenta primeira versão do te - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/10/2023 | Reforma Tributária - Relator apresenta primeira versão do texto até quinta-feira</h1>
+</div>
+<div class="noticia-corpo">
+<p>Após reunião com o ministro da Fazenda, Fernando Haddad, o senador Eduardo Braga (MDB-AM) confirmou nesta quarta-feira (18) que deverá concluir a primeira versão de seu relatório sobre a PEC da reforma tributária até quinta-feira (19). Chamado de “versão 1.0” por Braga, o texto poderá ser alterado até a apresentação oficial de seu relatório, prevista para o próximo dia 24 de outubro. O avanço nas negociações com o governo, na avaliação de Braga, deverá garantir um aumento dos recursos para o Fundo de Desenvolvimento Regional (FDR), uma das principais demandas de estados e municípios.</p><p>— Não estamos falando em colocar recursos no curto prazo, mas podemos, e tenho certeza ser possível, se estabelecer ao longo do prazo de transição, colocarmos recursos adicionais para o Fundo de Desenvolvimento Regional. Eu tenho esperança de conseguir isso, sim. Não tenho ainda a dimensão de números, mas estamos em tratativas com o Ministério da Fazenda — afirmou Braga na saída do encontro.</p><p>Sobre mudanças no relatório, o senador destacou que pode acolher sugestões das Comissões de Assuntos Econômicos (CAE), da CCJ e de outros senadores até a conclusão da votação.</p><p>— Estamos avançando já em alguns textos e eu estou muito otimista de que, entre o final do dia de hoje e do dia de amanhã, nós teremos a versão 1.0 do relatório. Estou dizendo que teremos algumas versões do nosso relatório. Somente amanhã (19) vamos receber as contribuições da Comissão de Assuntos Econômicos (CAE) para a Comissão de Constituição e Justiça (CCJ) — disse.</p><p>Acompanhado pelo coordenador da bancada do Amazonas no Congresso Nacional, senador Omar Aziz (PSD-AM), Braga conversou com o ministro da Fazenda nesta quarta-feira (18) sobre alguns ajustes no texto em relação ao modelo da Zona Franca de Manaus.</p><p>— Na realidade, nós estamos tratando de alguns ajustes que são meramente de redação. Estamos construindo a desvinculação da competitividade da Zona Franca da questão do Imposto Seletivo, para que esse Imposto Seletivo seja aplicado exclusivamente sobre produtos com impactos sobre o meio ambiente e a saúde. Estamos estudando algumas alternativas. Uma delas seria a utilização de mecanismos que já existem e não estão sendo alcançados pela reforma neste momento — explicou.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2023/10/18/reforma-tributaria-relator-apresenta-primeira-versao-do-texto-ate-quinta-feira" target="_blank">Agência Senado</a> <br/>Publicada em 18/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

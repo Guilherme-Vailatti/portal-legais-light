@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - NT 2023.001 v.1.50 - Tributação monofásica dos  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/11/2023 | NF-e NFC-e - NT 2023.001 v.1.50 - Tributação monofásica dos combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi divulgada no Portal Nacional da Nota Fiscal Eletrônica, a versão 1.50 da NT 2023.001, referente à tributação monofásica sobre combustíveis, que altera a Regra de Validação LA18-10, a qual passa a ter implementação futura.</p><p>Esta regra visa obrigar o preenchimento do grupo de origem do combustível (tag: origComb) conforme indicador da coluna “origComb”, a partir da correspondência entre o Código ANP do combustível (tag; cProdANP) informado na nota e a coluna “cProdANP” da Tabela de Combustíveis Sujeitos à Tributação Monofásica.</p><ul>
+<li><b>Ambiente de Homologação:</b> Implementação Futura</li>
+<li><b>Ambiente de Produção:</b> Implementação Futura</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica 2023.001, versão 1.50</a> <br/>Publicada em 01/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

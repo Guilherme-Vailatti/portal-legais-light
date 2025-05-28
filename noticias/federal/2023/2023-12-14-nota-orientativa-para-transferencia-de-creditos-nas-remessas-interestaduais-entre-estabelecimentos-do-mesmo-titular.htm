@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI  - Nota Orientativa para transferência de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/12/2023 | SPED EFD ICMS IPI  - Nota Orientativa para transferência de créditos nas remessas interestaduais entre estabelecimentos do mesmo titular</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada Nota Orientativa que descreve, de forma provisória, o procedimento de emissão e escrituração de documentos fiscais nas remessas interestaduais de bens e mercadorias entre estabelecimentos de mesma titularidade, em decorrência da decisão do STF na ADC 49.</p><p>As orientações a seguir têm como objetivo não impactar as transferências até a adequação das obrigações acessórias para designarem, por meio de campos próprios, a não incidência nas remessas de bens e mercadorias entre estabelecimentos de mesma titularidade e a transferência de créditos de ICMS do remetente ao destinatário.</p><p><b>Emissão das notas fiscais:</b>
+</p><p>As orientações para emissão das notas fiscais de transferências de bens e mercadorias seguirão a legislação vigente até 2023, adotando os campos de ICMS já utilizados, ainda que não reflitam o significado jurídico da não incidência, de forma a documentar o valor do crédito a ser transferido. Essas notas fiscais devem ter o campo de informações adicionais do fisco preenchido com o texto “Nota fiscal de transferência de bens e mercadorias não sujeita à incidência de ICMS, de que trata a ADC 49, emitida de forma a operacionalizar a transferência de crédito de ICMS”.</p><p><b>Escrituração:</b>
+</p><p>A escrituração das notas fiscais de transferência de bens e mercadorias deverá seguir o modelo de escrituração com débitos e créditos nos campos de ICMS dos livros de entrada e de saída, no Registro C190, seguindo a legislação vigente em 2023.</p><p>Esta orientação é provisória e deverá ser observada na emissão e escrituração de notas fiscais relativas às transferências realizadas até a publicação de ato normativo definindo procedimentos específicos para explicitar a não incidência e a transferência do crédito do imposto.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7295" target="_blank">Portal SPED</a> <br/>Publicada em 06/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

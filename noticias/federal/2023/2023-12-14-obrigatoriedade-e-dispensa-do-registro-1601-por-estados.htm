@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI  - Obrigatoriedade e dispensa do registro  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/12/2023 | SPED EFD ICMS IPI  - Obrigatoriedade e dispensa do registro 1601 por Estados</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em virtude do conteúdo das informações exigidas pelo Registro 1601, a princípio se tinha presumido que a obrigatoriedade deste registro seria exclusivamente para os estabelecimentos varejistas.</p><p>Contudo, o próprio Guia Prático da EFD (ICMS/IPI) não trouxe qualquer especificação, ficando claro que qualquer contribuinte do ICMS poderia estar obrigado a informar este registro, a depender da regra fixada pela Unidade da Federação do declarante.</p><p><b>UF's que não se pronunciaram:</b>
+</p><p>MARANHÃO: Até o momento o Estado não publicou norma dispensando a exigência de informar o registro 1601 da EFD ICMS/IPI, desta forma entendemos pela obrigatoriedade de entrega desde janeiro/2023.</p><p>PIAUÍ: <a href="https://www.legisweb.com.br/legislacao?id=401898" target="_blank">Portaria SEFAZ nº 22/2020, art. 1º</a> . não se encontra dentre os registros dispensados, por isso entendemos que seja obrigatório.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="#" target="_blank">Fonte Desconhecida</a> <br/>Publicada em </p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

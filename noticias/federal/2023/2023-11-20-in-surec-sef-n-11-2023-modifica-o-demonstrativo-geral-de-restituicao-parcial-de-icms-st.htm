@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST DF - IN SUREC/SEF nº 11/2023 - Modifica o Demonstrat - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/11/2023 | ICMS ST DF - IN SUREC/SEF nº 11/2023 - Modifica o Demonstrativo Geral de Restituição Parcial de ICMS – ST</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram acrescidos os campos <b>D016</b> e <b>D017</b> no Anexo Único à Instrução Normativa SUREC/SEF/SEEC nº 16/2019, que disciplina a restituição parcial e a complementação do valor do ICMS, pago no regime de substituição tributária para frente sempre que a base de cálculo efetiva da operação for diversa da presumida.</p><p>Anexo único: Demonstrativo geral de valores passiveis de restituição parcial de ICMS - ST</p><p>Campos novos nas regras para apresentação dos dados:</p><ul>
+<li>p. Campo D16: Descrição do produto ou mercadoria (campo xProd) da NF-e de venda ou da NFC-e.</li>
+<li>q. Campo D17: Descrição do produto ou mercadoria (campo xProd) da NF-e de entrada.</li>
+</ul><p>Esta Instrução Normativa entra em vigor em 16/11/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.fazenda.df.gov.br//aplicacoes/legislacao/legislacao/TelaSaidaDocumento.cfm?txtNumero=11&amp;txtAno=2023&amp;txtTipo=8&amp;txtParte=." target="_blank">Instrução Normativa SUREC/SEF nº 11/2023</a> <br/>Publicada em 16/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

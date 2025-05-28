@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>SPED EFD ICMS IPI ES - Decreto nº 5.504-R/2023 - Fisco capix - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>25/09/2023 | SPED EFD ICMS IPI ES - Decreto nº 5.504-R/2023 - Fisco capixaba torna facultativa a apresentação do registro 1601 na EFD ICMS IPI e altera o prazo de envio da DOT</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Governo de Espírito Santo promoveu alterações no RICMS ES/2002 relativas ao registro 1601 da EFD ICMS IPI, prazo de envio da DOT e regras relativas aos livros fiscais escriturados por SPED.</p><p>Dessa forma, observadas as demais disposições, destacamos:</p><p>Este Decreto entra em vigor na data da sua publicação, exceto em relação ao novo prazo da DOT, que produzirá efeitos a partir de 1º.01.2024.</p><p>Fonte: <a href="https://sefaz.es.gov.br/Notícia/sefaz-implementa-medidas-para-simplificacao-e-desburocratizacao-de-obrigacoes-tributarias-acessorias">SEFAZ ES</a> e IOB Online</p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://sefaz.es.gov.br/Media/Sefaz/Documentos/Decreto20nc2ba205504-R.20232020-20dispensa20de20obrigac3a7c3b5es20acessc3b3rias.pdf' target='_blank'>Decreto nº 5.504-R/2023
+</a> <br>Publicada em 18/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>DCTF - Sociedade Anônima do Futebol deve declarar os valores - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>11/10/2023 | DCTF - Sociedade Anônima do Futebol deve declarar os valores referentes ao Regime de Tributação Específica do Futebol na DCTF</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Conforme determina os §§ 16 e 17 do art. 12 da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=115131">Instrução Normativa RFB nº 2.005, de 29 de janeiro de 202</a>1, a Sociedade Anônima do Futebol (SAF) constituída nos termos da Lei nº 14.193, de 6 de agosto de 2021, deve declarar na Declaração de Débitos e Créditos Tributários Federais (DCTF) os valores apurados pelo Regime de Tributação Específica do Futebol (TEF) a que está sujeita. A exigência é válida desde fevereiro de 2022, mês da entrada em vigor do referido regime, ou desde a data da constituição da SAF, se posterior.</p><p>A Sociedade Anônima do Futebol está, portanto, obrigada a apresentar DCTF original, ou a retificar as declarações porventura já apresentadas, para informar os valores apurados pelo TEF referentes ao período anunciado. Ressalta-se que não haverá cobrança de Multa por Atraso na Entrega das Declarações apresentadas intempestivamente até o dia 30 de novembro de 2023.</p><p>O <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=132694">Ato Declaratório Executivo Codar nº 17, de 14 de agosto de 2023</a>, instituiu o código de receita 6177 para ser utilizado, em substituição ao código de receita 1573, para recolhimento dos valores relativos ao TEF. Os pagamentos efetuados anteriormente com o código substituído serão retificados de ofício para o código 6177.</p><p>Os valores relativos ao TEF devem ser declarados no grupo Regime Especial de Tributaçãlo/Pagamento Unificado de Tributos da DCTF, por meio da extensão 6177-01. Para tanto, o usuário deverá inclui-la manualmente na Tabela de Códigos do Programa Gerador da Declaração (PGD DCTF), por meio da opção "Manutenção da Tabela de Códigos" do menu "Ferramentas". Para orientações mais detalhadas sobre o procedimento de inclusão, deverá ser consultado o conteúdo do menu “Ajuda” do programa. Os detalhes do novo código podem ser obtidos na página da Secretaria Especial da Receita Federal do Brasil (RFB) na Internet, no seguinte site: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/dctf/tabelas-de-codigos-extensoes/ret">Regime Especial de Tributação – Pagamento Unificado de Tributos - RET</a>.</p><p>Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/ajustes/2023/ajuste-sinief-36-23"><a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/outubro/sociedade-anonima-do-futebol-deve-declarar-os-valores-referentes-ao-regime-de-tributacao-especifica-do-futebol-na-dctf">Receita Federal</a></a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/outubro/sociedade-anonima-do-futebol-deve-declarar-os-valores-referentes-ao-regime-de-tributacao-especifica-do-futebol-na-dctf' target='_blank'>Receita Federal</a> <br>Publicada em 09/10/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

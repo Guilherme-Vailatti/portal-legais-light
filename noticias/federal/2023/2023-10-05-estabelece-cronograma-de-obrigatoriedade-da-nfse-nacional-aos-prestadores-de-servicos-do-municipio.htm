@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFS-e Porto Alegre/RS - Estabelece cronograma de obrigatorie - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/10/2023 | NFS-e Porto Alegre/RS - Estabelece cronograma de obrigatoriedade da NFS-e nacional aos prestadores de serviços do município</h1>
+</div>
+<div class="noticia-corpo">
+<p>Conforme a Resolução CGSN nº 169/2022, a obrigatoriedade na emissão da NFS-e Padrão Nacional foi aplicada somente aos MEIs, iniciando em 1º de setembro de 2023, os demais contribuintes prestadores de serviços dependem do convênio do Município com o Projeto.</p><p>Neste sentido Porto Alegre, através da Instrução Normativa nº 6/2023 é o primeiro município a divulgar um cronograma de início de obrigatoriedade da emissão da NFS-e Nacional aos outros prestadores de serviços não sujeitos à incidência de ICMS estabelecidos no Município.</p><ul>
+<li><b>MEIs:</b> a partir de 01/09/2023</li>
+<li><b>Sociedade de Profissionais:</b> a partir de 01/10/2023</li>
+<li><b>ME e EPP optantes do Simples Nacional:</b>  a partir de 01/11/2023</li>
+</ul><p>Além do cronograma a Instrução Normativa 006/2023 dispõe de orientações sobre a forma de acesso ao ambiente eletrônico da NFS-e de padrão Nacional, fixa condições e forma de adesão dos contribuintes, e dá outras providências.</p><p>Em síntese destacamos:</p><ul>
+<li>Orientação quanto ao cancelamento, que só poderá ser feito dentro do prazo de 180 dias da sua emissão, e exclusivamente no caso de o serviço não ter sido prestado.</li>
+<li>O prazo de 180 dias se aplica também para os casos em que for necessário ser feita a substituição da NFS-e por necessidade de correção ou alteração de informação do documento fiscal e não será permitido alterar as informações dos não emitentes na NFS-e substituta.</li>
+<li>O MEI está dispensado da emissão de NFS-e quando prestar serviço para consumidor final pessoa física, exceto quanto o tomador solicitar o documento fiscal.</li>
+<li>O prestador de serviço que estiver obrigado à emissão de NFS-e Padrão Nacional, ou que o utilize por opção, deverá utilizar o mesmo padrão e documento fiscal para todos os serviços prestados.</li>
+<li>Para os casos de contingência, o prestador de serviços está autorizado a gerar as NFS-e no modo assíncrono, convertendo a Declaração de Prestação de Serviços – DPS em até dois dias úteis a partir do momento em que os serviços de geração da nota estiverem disponíveis.</li>
+</ul><p>Acesse a matéria <a href="https://prefeitura.poa.br/smf/noticias/mudanca-na-emissao-de-nota-fiscal-de-servico-comeca-valer-nesta-sexta">Mudança na emissão de nota fiscal de serviço começa a valer nesta sexta</a> e confira mais detalhes!</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://lproweb.procempa.com.br/pmpa/prefpoa/cs/usu_doc/dopa_16_agosto_2023.pdf" target="_blank">Instrução Normativa nº 6/2023</a> <br/>Publicada em 01/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

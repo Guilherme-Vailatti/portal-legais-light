@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reforma Tributária - Portaria RFB nº 368/2023 - Receita Fede - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>25/10/2023 | Reforma Tributária - Portaria RFB nº 368/2023 - Receita Federal cria grupos de trabalho para discutir melhorias nos seus sistemas em adequação à Reforma Tributária sobre o Consumo</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Receita Federal publicou, no dia de hoje, a <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=134080" target="_blank">Portaria RFB nº 368</a>,  que Institui o Programa de Reforma Tributária do Consumo (RTC) e projetos vinculados para a proposição de modelo e soluções para a implantação da reforma tributária do consumo.  Este programa tem a finalidade de criar modelos e soluções que busquem a simplificação no cumprimento das obrigações tributárias, por meio de soluções integradas e de menor custo, com o fim de estimular a conformidade tributária no âmbito da instituição da Contribuição sobre Bens e Serviços (CBS), constante da Reforma tributária do consumo (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/158930" target="_blank">PEC 45/2019</a>), ora em tramitação no Senado Federal.</p><p>O programa RTC tratará da estruturação de dados para o cumprimento das obrigações tributárias na tributação do consumo pelos contribuintes, tanto para facilitar o recolhimento da referida contribuição, como no cumprimento das suas obrigações acessórias.</p><p>A importância desta medida está diretamente relacionada ao início da vigência da CBS, prevista para 2026, considerando que as soluções tecnológicas e de base de dados estruturados deverão estar prontas já no ano de 2025.</p><p>Esse programa pressupõe também um diálogo permanente com representantes dos Estados e Municípios para integrar as soluções propostas com aquelas desenvolvidas no âmbito do IBS.</p><p>Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/outubro/receita-federal-cria-grupos-de-trabalho-para-discutir-melhorias-nos-seus-sistemas-em-adequacao-a-reforma-tributaria-sobre-o-consumo" target="_blank">Receita Federal</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=134080' target='_blank'>Portaria RFB nº 368/2023</a> <br>Publicada em 18/10/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - NT 2016.003, v.3.62 - Nova Tabela de NCM e Tabe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/11/2023 | NF-e NFC-e - NT 2016.003, v.3.62 - Nova Tabela de NCM e Tabelas de Unidades de Medidas Tributáveis no Comércio Exterior - Utrib</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicada versão 3.62 da NT 2016.003 que divulga tabela de NCM e unidade tributária de comércio exterior vigente a partir de 01/11/2023 ou 01/01/2024, em decorrência dos novos prazos previstos na Resolução Gecex nº 529, de 19 de outubro de 2023.</p><ul>
+<li><b>Implantação:</b> 01/11/2023</li>
+<li><b>Ambiente de produção:</b> 01/11/2023 e 01/01/2024 - conforme o código de NCM</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=Z3OxyexP0Mo=" target="_blank">Nota Técnica 2016.003, v.3.62</a> <br/>Publicada em 30/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

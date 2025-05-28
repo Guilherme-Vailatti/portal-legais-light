@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Aprovada reforma tributária em dois tur - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/11/2023 | Reforma Tributária - Aprovada reforma tributária em dois turnos, com mudanças volta à Câmara</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Plenário do Senado concluiu a votação, em dois turnos, da reforma tributária (<a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/158930?_gl=1*he075p*_ga*MTIyNzQ4NzMzOS4xNjc1ODc1ODk0*_ga_CW3ZH25XMK*MTY5OTg3NzYxMi44LjEuMTY5OTg3ODYwMi4wLjAuMA.." target="_blank">PEC 45/2019</a>). A proposta unifica tributos para a criação do Imposto sobre Valor Agregado (IVA) a partir da Contribuição sobre Bens e Serviços (CBS), que será federal, e do Imposto sobre Bens e Serviços (IBS), que será estadual e municipal. O relatório do senador Eduardo Braga (MDB-AM) isenta a cesta básica e reduz os tributos da chamada cesta estendida, que conterá carnes e produtos de higiene pessoal. A proposição aprovada pelo Senado também devolve a cobrança de impostos na conta de luz e do gás para famílias de baixa renda. A oposição diz que a reforma aumenta a carga tributária porque exclui vários setores do pagamento da alíquota padrão, estimada em 27,5%, e só será implementada em 2033. Aprovada com mudanças pelo Senado, a reforma tributária volta para a Câmara dos Deputados.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/audios/2023/11/aprovada-reforma-tributaria-em-dois-turnos-com-mudancas-volta-a-camara" target="_blank">Agência Senado</a> <br/>Publicada em 08/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST SC - Portaria SEF nº 312/2023 - Alteradas especifica - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/10/2023 | ICMS ST SC - Portaria SEF nº 312/2023 - Alteradas especificações do manual de preenchimento do DRCST</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado de Santa Catarina alterou a Portaria SEF nº 378/2018, que aprovou as especificações do arquivo eletrônico e manual de preenchimento do Demonstrativo para Apuração Mensal do Ressarcimento, da Restituição e Complementação do ICMS Substituição Tributária (DRCST).</p><p>Foi impactado pela alteração o Bloco 0, que passa a ter o campo de registro 0004 de identificação do estabelecimento incorporador, a ser preenchido exclusivamente no caso de processo de sucessão devidamente registrado no CCICMS, quando o sujeito passivo da restituição ou complementação for o estabelecimento incorporado e apresentar a situação cadastral de "Baixado" no CCICMS na data do envio do arquivo.</p><p>Esta Portaria entra em vigor na data da sua publicação, 25/10/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.sef.sc.gov.br/html/portarias/2023/port_23_312.htm" target="_blank">Portaria SEF nº 312/2023</a> <br/>Publicada em 25/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

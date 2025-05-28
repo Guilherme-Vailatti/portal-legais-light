@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Regularização das contribuições a pagar es - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>19/10/2023 | Receita Federal - Regularização das contribuições a pagar escrituradas em EFD Contribuições e não informadas em DCTF</h1>
+</div>
+<div class="noticia-corpo">
+<p>Receita Federal notifica mais de 2300 contribuintes para regularizar divergências entre o recolhimento de PIS e Cofins informadas em EFD-Contribuições e os débitos declarados em DCTF</p><p>Respeitando a legislação vigente e com base nas informações prestadas pelas próprias pessoas jurídicas, foram identificadas divergências entre as contribuições a recolher informadas em EFD-Contribuições e os débitos declarados em DCTF no ano-calendário 2020. Para as pessoas jurídicas classificadas como maiores contribuintes, a apuração já abrange os anos-calendário 2020, 2021 e 2022.</p><p>Os contribuintes têm até 30 de novembro para aproveitar a oportunidade de autorregularização. Após esse prazo, as empresas estarão sujeitas ao lançamento de ofício dos tributos devidos, acrescidos de multa de ofício.</p><p>Neste sentido a Receita Federal salienta a importância de que os contribuintes estejam atentos aos avisos recebidos e procedam à autorregularização dentro do prazo estabelecido, evitando assim, maiores custos decorrentes de atuação da fiscalização.</p><p>Os avisos foram enviados por carta, para o endereço constante no CNPJ, e também para a caixa postal no Portal e-CAC (Centro Virtual de Atendimento). Para os maiores contribuintes, utilizou-se apenas o canal de comunicação e-MAC.</p><p>A divergência pode ter origem tanto no preenchimento das EFD-Contribuições como em omissões, incorreções ou inexatidões presentes nas DCTFs.</p><p>Inicialmente, verifique as informações escrituradas nas EFD-Contribuições, especialmente nos registros M205 (Contribuição para o PIS/Pasep a Recolher – Detalhamento por Código de Receita) e M605 (COFINS a Recolher – Detalhamento por Código de Receita). Confirme se os códigos de receita informados nesses registros estão relacionados com a incidência tributária do contribuinte, no regime cumulativo, não-cumulativo ou ambos.</p><p>Se identificar alguma irregularidade nas EFD-Contribuições, promova as correções necessárias (em quaisquer registros) e transmita as retificadoras.</p><p>Os códigos de receita e valores informados nos registros M205 e M605 devem ser reproduzidos de forma idêntica na DCTF. Importante lembrar que uma DCTF retificadora substitui integralmente a anterior. Não esqueça de informar todos os débitos e créditos do mês.</p><p>Importante: Verifique se foram informados TODOS os créditos em DCTF, tais como pagamentos, compensações, parcelamentos e suspensões, e houve a vinculação aos débitos. A pessoa jurídica ativa que não informar os créditos existentes está sujeito a multa no valor mínimo de R$ 500 por DCTF.</p><p>Esta orientação, e outras informações gerais sobre a ação, e orientações sobre como se regularizar estão disponíveis em <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/revisao-de-declaracao-malha/pj-parametro-20.001">Malha Fiscal Digital (MFD) – Parâmetro 20.001 – Insuficiência de Declaração PIS/Cofins</a>, no site da Receita Federal.</p><p>O detalhamento da quantidade de empresas e do montante da insuficiência apurada por Unidade da Federação consta da tabela publicada no Portal da Receita, acesse <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/outubro/mais-de-2-300-contribuintes-terao-a-oportunidade-de-regularizar-divergencias-de-pis-e-cofins-evitando-a-aplicacao-de-multa-de-oficio">Mais de 2.300 contribuintes poderão regularizar divergências de PIS e COFINS, evitando a aplicação de multa de ofício</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/outubro/mais-de-2-300-contribuintes-terao-a-oportunidade-de-regularizar-divergencias-de-pis-e-cofins-evitando-a-aplicacao-de-multa-de-oficio" target="_blank">Receita Federal</a> <br/>Publicada em 10/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

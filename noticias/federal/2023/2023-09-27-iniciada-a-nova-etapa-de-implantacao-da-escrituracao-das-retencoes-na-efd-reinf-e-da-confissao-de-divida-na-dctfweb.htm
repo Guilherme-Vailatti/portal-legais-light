@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Iniciada a nova etapa de implantação da esc - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/09/2023 | SPED EFD Reinf - Iniciada a nova etapa de implantação da escrituração das retenções na EFD Reinf e da confissão de dívida na DCTFWeb</h1>
+</div>
+<div class="noticia-corpo">
+<p>Essa nova etapa tem por objetivo complementar as informações necessárias para a substituição da DIRF e transferir a constituição desses créditos tributários da DCTF PGD para a DCTFWeb.</p><p>A substituição da DIRF e a inclusão dos débitos na DCTFWeb somente acontecerão para os fatos geradores que ocorrerem a partir de 01 de janeiro de 2024. Assim:</p><p>Recomenda-se que o período de setembro a dezembro de 2023 seja utilizado para fazer comparações e ajustes relacionados, principalmente, à mudança da periodicidade das informações, que deixa de ser anual (DIRF) e passa a ser mensal (EFD-Reinf).</p><p>Mais informações podem ser obtidas no Manual de Orientação do Usuário da EFD-Reinf.</p><p><a href="http://sped.rfb.gov.br/arquivo/show/7261">Manual de Orientação do Usuário da EFD-Reinf - Versão 2.1.2.1 (rfb.gov.br)</a>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2023/setembro/iniciada-a-nova-etapa-de-implantacao-da-escrituracao-das-retencoes-na-efd-reinf-e-da-confissao-de-divida-na-dctfweb" target="_blank">Receita Federal</a> <br/>Publicada em 25/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

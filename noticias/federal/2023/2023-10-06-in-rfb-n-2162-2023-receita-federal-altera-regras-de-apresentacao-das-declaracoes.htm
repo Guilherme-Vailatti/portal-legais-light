@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - IN RFB nº 2.162/2023 - Receita Federal altera regr - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/10/2023 | DCTFWeb - IN RFB nº 2.162/2023 - Receita Federal altera regras de apresentação das declarações</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.162/2023, entre outras providências, alterou a Instrução Normativa RFB nº 2.005/2021, que dispõe sobre apresentação da Declaração de Débitos e Créditos Tributários Federais (DCTF) e da Declaração de Débitos e Créditos Tributários Federais Previdenciários e de Outras Entidades e Fundos (DCTFWeb), destacando-se:</p><p>A norma em referência incluiu, ainda, os §§ 1º a 3º da Instrução Normativa RFB nº 2.121/2021 (que consolida as normas sobre a apuração, a cobrança, a fiscalização, a arrecadação e a administração da contribuição para o PIS-Pasep, da Cofins, da contribuição para o PIS/Pasep-Importação e da Cofins-Importação), os quais dispõem, respectivamente, que:</p><p>Por fim, a norma em referência revoga o parágrafo único do art. 6º da Instrução Normativa RFB nº 2.005/2021, o qual dispunha que, caso os fundos especiais de natureza contábil ou financeira, não dotados de personalidade jurídica, criados no âmbito de quaisquer dos poderes da União, dos estados, do Distrito Federal e dos municípios, apresentassem a DCTFWeb, o ente federativo responsável por sua criação ficará sujeito ao cumprimento das obrigações decorrentes da declaração.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.162-de-4-de-outubro-de-2023-514640715" target="_blank">Instrução Normativa RFB nº 2.162/2023</a> <br/>Publicada em 06/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

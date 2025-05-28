@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIFAL  - STF valida cobrança do DIFAL/ICMS em 2022 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/12/2023 | DIFAL  - STF valida cobrança do DIFAL/ICMS em 2022</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Supremo Tribunal Federal (STF) decidiu que o recolhimento do Diferencial de Alíquota do Imposto sobre Circulação de Mercadorias e Serviços (Difal/ICMS) sobre operações destinadas ao consumidor final deve valer sobre transações ocorridas 90 dias após a data da publicação da Lei Complementar (LC) 190/2022), que o regulamentou. A decisão majoritária foi tomada no julgamento das Ações Diretas de Inconstitucionalidade (ADIs) 7066, 7078 e 7070.</p><p>O Difal é utilizado para equilibrar a distribuição dos impostos nas transações interestaduais, dividindo a cobrança entre o estado de origem da empresa ou indústria e o estado do consumidor. Ele foi introduzido pela Emenda Constitucional (EC) 87/2015 e era regulamentada por um convênio do Conselho Nacional de Política Fazendária (Confaz).</p><p>Em fevereiro de 2021, o STF decidiu que esse mecanismo de compensação teria de ser disciplinado por meio de lei complementar. Em dezembro de 2021, foi aprovada a LC 190, mas a sanção presidencial ocorreu apenas em 4 de janeiro de 2022, o que deu origem à discussão sobre o início de sua vigência. De um lado, associações da indústria e comércio (contribuintes) defendiam que a cobrança só poderia ser exigida em 2023. Do lado oposto, os Estados apontavam preocupação com a queda na arrecadação sem a cobrança do Difal em 2022.</p><p><b>Noventena</b>
+</p><p>Prevaleceu no julgamento o voto do ministro Alexandre de Moraes (relator), para quem deve ser observado, no caso, o princípio da anterioridade nonagesimal, expressamente mencionado na parte final do artigo 3º da LC 190/2022. A regra diz que a lei deve produzir efeito após 90 dias da data de sua publicação.</p><p>De acordo com o ministro, não se aplica ao caso o princípio da anterioridade anual, na medida em que a LC 190/2022 não criou tributo, mas apenas estabeleceu regra de repartição de arrecadação tributária. A seu ver, houve o fracionamento do tributo entre o estado produtor e o estado de destino, sem repercussão econômica para o contribuinte.</p><p>Votaram nesse sentido os ministros Dias Toffoli, Gilmar Mendes, Nunes Marques, Luiz Fux e Luís Roberto Barroso.</p><p><b>Exercício financeiro</b>
+</p><p>Ficaram vencidos os ministros Edson Fachin, Ricardo Lewandowski (aposentado), André Mendonça, e as ministras Rosa Weber (aposentada) e Cármen Lúcia. Segundo Fachin, apesar de não ter sido criado pela LC 190/2022, não pode o tributo nela previsto e por ela regulamentado ser suscetível de cobrança no mesmo exercício financeiro, em ofensa ao princípio da anterioridade anual.</p><p> </p><p><a href="https://www.stf.jus.br/arquivo/cms/noticiaNoticiaStf/anexo/ADIs7.0667.070e7.078anterioridadeDifalICMSLOFSPAO.pdf" target="_blank">Confira aqui</a> mais informações sobre a decisão.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=521003&amp;ori=1#:~:text=O%20Plen%C3%A1rio%20decidiu%20que%20o,da%20lei%20que%20o%20regulamentou." target="_blank">Supremo Tribunal Federal</a> <br/>Publicada em 30/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

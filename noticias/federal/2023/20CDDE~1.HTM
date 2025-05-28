@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>MDF-e SC - Correio Eletrônico Circular SEF/DIAT nº 21/2023 - - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>19/10/2023 | MDF-e SC - Correio Eletrônico Circular SEF/DIAT nº 21/2023 - Orienta aos contribuintes catarinenses sobre a obrigatoriedade da emissão do MDF-e no transporte de cargas</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Diretoria de Administração Tributária da SEF/SC, com o objetivo de melhorar cada vez mais a relação do Fisco com os contribuintes, publica em 06/10/2023, Correio Eletrônico Circular SEF/DIAT/Nº 21 / 2023 no qual orienta os transportadores sobre a obrigatoriedade da emissão de Manifesto Eletrônico de Documentos Fiscais (MDF-e), modelo 58, na prestação de serviço de transporte de carga intermunicipal ou interestadual (Título VI do Anexo 11 do RICMS/SC).</p><p>O MDF-e é o documento emitido e armazenado eletronicamente, de existência apenas digital, ao qual são vinculados os documentos fiscais (NF-e e CT-e) relativos à carga transportada no veículo. A finalidade do MDF-e é agilizar o registro em lote de documentos fiscais em trânsito e identificar a unidade de carga utilizada e demais características do transporte.</p><p>Deverá ser emitido MDF-e sempre que for prestado, em qualquer modal, serviço de transporte de carga intermunicipal ou interestadual.</p><p>Via de regra, a obrigação de manifestar a carga é atribuída à pessoa que realiza o transporte:</p><p>Salientamos que a emissão de MDF-e pode ser verificada pela Fazenda Estadual tanto em operações presenciais de fiscalização no trânsito quanto em cruzamentos massivos de dados.</p><p>Observamos, ainda, que a emissão do MDF-e é uma obrigação acessória, que não envolve qualquer pagamento de tributo e seu descumprimento está sujeito a aplicação de multa (Lei n° 10.297/1996, art. 90).</p><p>Maiores esclarecimentos podem ser encontrados nas perguntas frequentes sobre MDF-e disponíveis no site da <a href="https://caf2.sef.sc.gov.br/Views/Shared/ConsultarBaseConhecimento.aspx?det=44">SEF em Central de Atendimento</a>.</p><p>Fonte: <a href="https://www.sef.sc.gov.br/arquivos_portal/servicos/128/Correio_Eletronico_2023_21__DIAT_Obrigatoriedade_da_emissao_de_Manifesto_Eletronico_de_Documentos_Fiscais_MDFe_no_transporte_de_cargas.pdf">SEFAZ SC</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.sef.sc.gov.br/arquivos_portal/servicos/128/Correio_Eletronico_2023_21__DIAT_Obrigatoriedade_da_emissao_de_Manifesto_Eletronico_de_Documentos_Fiscais_MDFe_no_transporte_de_cargas.pdf' target='_blank'>Correio Eletrônico Circular SEF/DIAT nº 21/2023</a> <br>Publicada em 06/10/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

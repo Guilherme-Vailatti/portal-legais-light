@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD ICMS IPI SC  - CEC SEF/DIAT nº 25/2023 - Tabela de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/12/2023 | SPED EFD ICMS IPI SC  - CEC SEF/DIAT nº 25/2023 - Tabela de padronização dos códigos e ajustes dos incentivos fiscais de Santa Catarina</h1>
+</div>
+<div class="noticia-corpo">
+<p>A SEFAZ de Santa Catarina publicou o Correio Eletrônico Circular <b>SEF/DIAT nº 25/2023</b>, que divulga planilha com a padronização dos incentivos fiscais.</p><p>Abaixo, publicação:</p><p>Dando continuidade à política de padronização dos incentivos fiscais e visando facilitar o trabalho dos contribuintes e dos profissionais da contabilidade e das demais áreas interessadas, a Diretoria de Administração Tributária da SEF/SC vem informar, por meio do presente correio eletrônico, que foi disponibilizada no site da SEF/SC a relação dos incentivos fiscais e das operações alcançadas por diferimento, não incidência e suspensão da exigibilidade do imposto, bem como seus respectivos regimes especiais, códigos e ajustes, conforme definidos na legislação tributária.</p><p>A relação acima está disponível para consulta e download no endereço eletrônico da Secretaria de Estado da Fazenda de Santa Catarina, no link “Tabela de incentivos fiscais”, na aba “Incentivos Fiscais”, localizada dentro da guia “Todos os Assuntos” da seção “Serviços e Orientações".</p><p>Para ter acesso a tabela, <a href="https://docs.google.com/spreadsheets/d/1ajYWrQbH_AIFyh252roZlc8bdxJp3zGedlpDfY0toNE/edit#gid=1584376849" target="_blank">clique aqui.</a></p><p>Leia também:</p><p><a href="https://documentacao.senior.com.br/exigenciaslegais/materias/erp/2023/2023-11-20-ato-diat-n-77-2023-prorroga-preenchimento-do-icms-desonerado-na-nfe-nfce-emitidos-pelos-contribuintes-catarinenses-suspende-guia-pratico-dos-beneficios-fiscais.htm" target="_blank">NF-e NFC-e SC - Ato DIAT nº 77/2023 - Prorroga preenchimento do ICMS Desonerado na NF-e e NFC-e emitidos pelos contribuintes catarinenses, e suspende Guia Prático dos Benefícios Fiscais</a>
+</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.sef.sc.gov.br/arquivos_portal/servicos/128/Correio_Eletronico_2023_25_DIAT_GEFIS_Tabela_de_padronizacao_dos_codigos_e_ajustes_dos_incentivos_fiscais_de_Santa_Catarina.pdf" target="_blank">Correio Eletrônico Circular SEF/DIAT nº 25/2023</a> <br/>Publicada em 20/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

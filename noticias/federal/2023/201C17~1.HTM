@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e NFC-e SC - Ato DIAT nº 77/2023 - Prorroga preenchimento - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>20/11/2023 | NF-e NFC-e SC - Ato DIAT nº 77/2023 - Prorroga preenchimento do ICMS Desonerado na NF-e e NFC-e emitidos pelos contribuintes catarinenses, e suspende Guia Prático dos Benefícios Fiscais</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Publicado no PeSEF em 14/11/2023, Ato DIAT 77/2023, que altera o Ato DIAT nº 59, de 2023, que estabelece a obrigatoriedade de preenchimento dos campos vICMSDeson e motDesICMS nos documentos fiscais eletrônicos emitidos pelos contribuintes catarinenses, e suspende a produção de efeitos do Ato DIAT nº 25, de 2023, que previa o guia prático de incentivo e benefícios fiscais.</p><p>Abaixo, alterações promovidas pelo Ato DIAT 77/2023:</p><p>Obrigatoriedade de preenchimento dos campos do ICMS desonerado (vICMSDeson e motDesICMS), foram prorrogados para 01/04/2024.</p><p>Suspende o Guia Prático e Escrituração de Incentivos e Benefícios Fiscais que previa diversos procedimentos.</p><p>Este Ato entra em vigor na data de sua publicação, produzindo efeitos a contar de 1º de novembro de 2023.</p><p>Fonte: <a href="https://legislacao.sef.sc.gov.br/html/atos_diat/2023/atodiat_23_077.htm" target="_blank">SEFAZ SC</a> e <a href="https://www.iobonline.com.br/index/login" target="_blank">IOB Online</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://legislacao.sef.sc.gov.br/html/atos_diat/2023/atodiat_23_077.htm' target='_blank'>Ato DIAT nº 77/2023</a> <br>Publicada em 14/11/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

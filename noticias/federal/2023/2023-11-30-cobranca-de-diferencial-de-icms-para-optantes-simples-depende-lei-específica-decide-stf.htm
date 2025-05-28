@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIFAL - Cobrança de diferencial de ICMS para optantes do Sim - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/11/2023 | DIFAL - Cobrança de diferencial de ICMS para optantes do Simples depende de lei específica, decide STF</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Supremo Tribunal Federal (STF), por unanimidade, reafirmou sua jurisprudência de que a cobrança de diferença entre as alíquotas interna e a interestadual de ICMS (Difal) de empresa optante do Simples Nacional depende de lei estadual. A decisão se deu no julgamento do Recurso Extraordinário com Agravo (ARE) 1460254, com repercussão geral (Tema 1.284).</p><p>O recurso foi interposto pelo Estado de Goiás contra decisão do Tribunal de Justiça estadual (TJ-GO) que isentou uma empresa de autopeças do recolhimento da alíquota de diferencial de ICMS, sob o argumento de que a obrigação tributária dependeria da edição de lei estadual, não bastando a regulamentação por decreto.</p><p>No STF, o estado argumentava que a cobrança do Difal de empresas optantes do Simples Nacional já estaria fundamentada na Lei Complementar 123/2006, no Código Tributário de Goiás e no próprio Decreto estadual 9.104/2017, que instituiu a cobrança.</p><p>O relator do recurso, ministro Luís Roberto Barroso, citou precedentes da Corte, entre eles, o RE 970821 (Tema 517), em que o Tribunal registrou que cabe aos estados, no exercício de sua competência tributária, editar lei específica para a cobrança do imposto. Esse entendimento, segundo Barroso, é de que não basta previsão em lei complementar federal que autorize a cobrança do Difal nem previsões legislativas gerais que não estabeleçam todos os critérios capazes de instituir a obrigação tributária.</p><p>A tese de repercussão geral fixada foi a seguinte: “A cobrança do ICMS-Difal de empresas optantes do Simples Nacional deve ter fundamento em lei estadual em sentido estrito”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=520843&amp;ori=1" target="_blank">Supremo Tribunal Federal</a> <br/>Publicada em 28/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

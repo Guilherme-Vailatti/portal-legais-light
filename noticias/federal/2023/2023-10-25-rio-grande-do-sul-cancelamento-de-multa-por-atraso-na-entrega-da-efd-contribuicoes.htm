@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - Rio Grande do Sul, cancelamento de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/10/2023 | SPED EFD Contribuições - Rio Grande do Sul, cancelamento de multa por atraso na entrega da EFD Contribuições</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em atendimento ao disposto na Portaria RFB nº 351, de 2023, com a redação dada pela Portaria RFB nº 357, de 2023, bem como considerando as disposições do Ato Declaratório Interpretativo-ADI RFB nº 2, de 2023, comunicamos aos contribuintes domiciliados nos 92 Municípios em relação aos quais foi declarado calamidade pública no Estado do Rio Grande do Sul  pelos Decretos nº 57.177, de 6 de setembro de 2023, nº 57.178, de 10 de setembro de 2023, e nº 57.197, de 15 de setembro de 2023, do Governador do Estado do Rio Grande do Sul, o que segue:</p><p>Cancelamento de todas as Multas por Atraso na Entrega de Escrituração - MAED da EFD-Contribuições, dos contribuintes domiciliados nos 92 municípios a que se refere o inciso II do caput do art. 1º do ADI RFB nº 2/2023, aplicadas até o dia 23/10/2023, referentes aos fatos geradores de julho de 2023, cujo prazo original de entrega estava previsto para 15/09/2023;</p><p>Cancelamento de todas as Multas por Atraso na Entrega de Escrituração - MAED da EFD-Contribuições, dos contribuintes domiciliados nos 20 Municípios que permaneceram em estado de calamidade pública, nos termos do inciso III do caput do art. 1º do ADI RFB nº 2/2023, aplicadas até o dia 23/10/2023, referentes aos fatos geradores de agosto de 2023, cujo prazo original de entrega estava previsto para 15/10/2023;</p><p>Eventuais multas por atraso na entrega da EFD-Contribuições, dos períodos e dos municípios referidos em cada um dos itens acima, emitidas após a data de 23/10/2023, serão monitoradas até o dia 29/12/2023, no caso do item 1,  e até o dia 31/01/2024, no caso do item 2. Em ambos os casos, o sistema da RFB fará o cancelamento da multa emitida ao final do dia, enviando uma mensagem para a caixa postal eletrônica do contribuinte, com a devida fundamentação legal para a prática do ato.</p><p>Caso persistam dúvidas quanto à aplicação e cancelamento das multas referidas por esta nota, orientamos que o contribuinte procure o <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/fale-conosco/empresa/sped/efd-contribuicoes" target="_blank">Fale Conosco da EFD-Contribuições</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7282" target="_blank">Portal SPED</a> <br/>Publicada em 24/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

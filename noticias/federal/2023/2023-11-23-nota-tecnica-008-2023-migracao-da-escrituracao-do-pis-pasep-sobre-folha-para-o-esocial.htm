@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Contribuições - NT nº 8/2023 - Migração da escritur - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/11/2023 | SPED EFD Contribuições - NT nº 8/2023 - Migração da escrituração do Pis-Pasep sobre folha para o eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada Nota Técnica 008/2023 com informações sobre a migração da escrituração do PIS/Pasep sobre folha da EFD Contribuições, registro M350, para o eSocial.</p><p>Considerando a IN RFB nº 2005/2021, onde estabelece que os créditos tributários decorrentes da Contribuição para o PIS/Pasep incidente sobre a folha de salários, cujos fatos geradores ocorrerem a partir do mês de Jan/2024 serão apurados mediante a escrituração do eSocial e confessados na DCTFWeb, a qual substituirá a DCTF como instrumento de confissão de dívida.</p><p>Considerando que atualmente a escrituração do PIS/Pasep sobre folha é realizada na EFD Contribuições, e que uns dos pressupostos do Decreto nº 6.022/07 que dispõe sobre a uniformização de processos de escrituração, que não incorra em replicação de dados existentes em mais de uma escrituração</p><p>Devem os contribuintes que apurem PIS/Pasep sobre a folha de salários, em relação aos fatos gerados ocorridos a partir da competência janeiro 2024, não mais proceder à regular apuração e escrituração desta modalidade de contribuição no registro M350 - PIS/Pasep – Folha de Salário, da EFD-Contribuições, passando a apuração e escrituração da referida contribuição a ser efetuada apenas no eSocial, integrando à DCTFWeb os valores devidos.</p><p>A Nota Técnica 008/2023 terá seu conteúdo incorporado à próxima versão do Guia Prático da EFD-Contribuições.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/arquivo/show/7288" target="_blank">Portal SPED</a> <br/>Publicada em 17/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

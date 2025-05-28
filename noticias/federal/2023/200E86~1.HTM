@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF3-e SP - Comunicado SRE nº 13/2203 - Esclarece sobre a não - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>13/11/2023 | NF3-e SP - Comunicado SRE nº 13/2203 - Esclarece sobre a não obrigatoriedade de emissão da Nota Fiscal de Energia Elétrica Eletrônica por contribuintes paulistas</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Publicado em 01/11/2023 no DOE/SP, o Comunicado SRE nº 13/2023, que esclarece sobre a não obrigatoriedade de emissão da Nota Fiscal de Energia Elétrica Eletrônica - NF3e (modelo 66) por contribuintes paulistas.</p><p>O Fisco Paulista, tendo em vista o disposto no Ajuste SINIEF nº 01/2019, com as alterações do Ajuste SINIEF nº 36/2023, esclarece que:</p><p>O Ajuste SINIEF nº 01/2019, o qual institui a Nota Fiscal de Energia Elétrica Eletrônica - NF3e, modelo 66, e o Documento Auxiliar da Nota Fiscal de Energia Elétrica Eletrônica, prevê, em sua cláusula primeira, que referido documento fiscal poderá ser utilizado pelos contribuintes do ICMS em substituição à Nota Fiscal/Conta de Energia Elétrica, modelo 6;</p><p><b>O Ajuste </b><a href="2023-10-11-ajuste-sinief-36-2023-exclui-o-estado-de-sao-paulo-da-obrigatoriedade-da-nf3e.htm" style="font-weight: bold;" target="_blank">SINIEF nº 36/2023</a><b>:</b>
+</p><p>Em sua cláusula primeira, estabelece que o Estado de São Paulo fica excluído das disposições do Ajuste SINIEF nº 01/2019; ou seja, os contribuintes paulistas do ICMS deverão continuar emitindo a Nota Fiscal/Conta de Energia Elétrica, modelo 6;</p><p>Em sua cláusula terceira, acrescenta a cláusula décima-nona-D ao Ajuste SINIEF nº 01/2019, para prever sua não aplicação ao Estado de São Paulo, que não adotará a Nota Fiscal de Energia Elétrica Eletrônica - NF3e, modelo 66, e o Documento Auxiliar da Nota Fiscal de Energia Elétrica Eletrônica;</p><p>Em sua cláusula quarta revoga o inciso VI do § 2º da cláusula décima-nona-A do Ajuste SINIEF nº 01/2019, o qual previa o início da obrigatoriedade da NF3e para o Estado de São Paulo até 1º de junho de 2024;</p><p>Dessa forma, os contribuintes paulistas não estarão obrigados à emissão da Nota Fiscal de Energia Elétrica Eletrônica, a partir de 1º de junho de 2024, como anteriormente previsto, e deverão continuar emitindo a Nota Fiscal/Conta de Energia Elétrica, modelo 6.</p><p>Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Comunicado-SRE-13-de-2023.aspx" target="_blank">SEFAZ SP</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/despacho-n-69-de-31-de-outubro-de-2023-520222592' target='_blank'>Comunicado SRE nº 13/2023</a> <br>Publicada em 01/11/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e NFC-e MT - Decreto nº 599/2023 - Prevê vínculo do compr - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>07/12/2023 | NF-e NFC-e MT - Decreto nº 599/2023 - Prevê vínculo do comprovante de pagamento eletrônico na emissão de NF-e e NFC-e, em operações com cartão de crédito, débito e Pix</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Publicado no DOE/MT em 29/11/2023, Decreto 599/2023, que introduz alterações no Regulamento do ICMS, aprovado pelo Decreto n° 2.212/2014, e dá outras providências.</p><p>O Decreto 599/2023, prevê o vínculo do comprovante de pagamento eletrônico (PIX, cartão de débito/crédito ou qualquer instrumento eletrônico), mediante interligação tecnológica, com a Nota Fiscal Eletrônica, modelo 55 e Nota Fiscal Consumidor Eletrônica, modelo 65.</p><p>Fica vedada a utilização de equipamentos que não permitam o vínculo do comprovante de pagamento eletrônico, mediante interligação tecnológica, com a NF-e e NFC-e.</p><p>Abaixo, texto legal:</p><p> </p><p><b>NF-e - Nota Fiscal Eletrônica</b>
+</p><p>Acrescentados os §§ 11-A e 11-B e a Nota 4 ao artigo 325 do Decreto 2.212/2014:</p><p>§ 11-A Nas operações de venda cujo pagamento seja efetuado por meio de cartão de crédito, débito, Pix ou outro instrumento de pagamento eletrônico, o comprovante de pagamento deverá ser vinculado à NF-e, mediante interligação tecnológica com o programa emissor de documento fiscal, nos termos previstos em normas complementares editadas pela Secretaria de Estado de Fazenda. (cf. cláusula segunda do Convênio ICMS 134/2016, com nova redação dada pelo Convênio ICMS n° 166/2022)</p><p>§ 11-B Fica vedada a utilização, no recinto de atendimento ao público, de equipamento de captura, registro ou processamento de dados relativos as operações com mercadorias que não possibilite a vinculação do comprovante da transação ou pagamento à correspondente NF-e, mediante interligação tecnológica com o programa emissor do documento fiscal, nos termos previstos em normas complementares editadas pela Secretaria de Estado de Fazenda.</p><p> </p><p><b>NFC-e - Nota Fiscal Consumidor Eletrônica</b>
+</p><p>Acrescentados os §§ 15-A e 15-B e a Nota 2 ao artigo 345 do Decreto 2.212/2014</p><p>§ 15-A Para fins do disposto no inciso III do § 9° deste artigo, nas operações de venda quando o pagamento for realizado com cartão de crédito, débito, Pix ou outro instrumento de pagamento eletrônico, o comprovante de pagamento deverá ser vinculado a NFC-e, mediante interligação tecnológica com o programa emissor de documento fiscal, nos termos previstos em normas complementares editadas pela Secretaria de Estado de Fazenda. (cf. cláusula segunda do Convênio ICMS 134/2016, com nova redação dada pelo Convênio ICMS n° 166/2022)</p><p>§ 15-B Fica vedada a utilização, no recinto de atendimento ao público, de equipamento de captura, registro ou processamento de dados relativos as operações com mercadorias que não possibilite a vinculação do comprovante da transação ou pagamento à correspondente NFC-e, mediante interligação tecnológica com o programa emissor do documento fiscal, nos termos previstos em normas complementares editadas pela Secretaria de Estado de Fazenda.</p><p>(...) Nota: (...) 2. Convênio ICMS 134/2016: alterado pelo Convênio ICMS n° 166/2022.”</p><p>Notas: (...) 4. Convênio ICMS 134/2016: alterado pelo Convênio ICMS n° 166/2022.”</p><p> </p><p>Este Decreto entra em vigor na data da sua publicação, <b>29/11/2023</b>.</p><p>Até a publicação deste artigo não havia sido divulgado o calendário de obrigatoriedade do vínculo do comprovante eletrônico para NF-e e NFC-e pela SEFAZ Estadual.</p><p>Fonte: <a href="https://app1.sefaz.mt.gov.br/sistema/legislacao/legislacaotribut.nsf/7c7b6a9347c50f55032569140065ebbf/5fec2f97d5ad548404258a760050b920?OpenDocument" target="_blank"><a href="http://sped.rfb.gov.br/pagina/show/7293" target="_blank">Portal SEFAZ/MT</a></a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://app1.sefaz.mt.gov.br/sistema/legislacao/legislacaotribut.nsf/7c7b6a9347c50f55032569140065ebbf/5fec2f97d5ad548404258a760050b920?OpenDocument' target='_blank'>Decreto nº 599/2023</a> <br>Publicada em 29/11/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

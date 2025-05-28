@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Legislação  - Solução de Consulta COSIT nº 295/2023 - Receit - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>07/12/2023 | Legislação  - Solução de Consulta COSIT nº 295/2023 - Receita Federal esclarece sobre o momento do reconhecimento da receita nos casos de faturamento antecipado</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A Solução de Consulta COSIT nº 295/2023 esclareceu que, nas operações de compra e venda com faturamento antecipado, em que o vendedor recebe um adiantamento pela alienação de mercadorias que ainda serão produzidas, a eficácia do ato jurídico encontra-se vinculada ao implemento de condição suspensiva, que depende da ocorrência de evento incerto e futuro, ou seja, a produção do bem e sua entrega ao adquirente.</p><p>A norma esclarece, ainda, que, nesse caso, somente com a efetiva entrega da mercadoria (tradição) e a emissão da nota fiscal em nome do adquirente é que haverá o implemento da condição suspensiva e será reconhecida a receita, para os efeitos do Imposto de Renda Pessoa Jurídica (IRPJ), da Contribuição Social sobre o Lucro (CSLL), da Cofins e da contribuição para o PIS-Pasep.</p><p>Fonte: <a href="https://www.in.gov.br/en/web/dou/-/solucao-de-consulta-n-295-de-17-de-novembro-de-2023-528487652" target="_blank">DOU</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.in.gov.br/en/web/dou/-/solucao-de-consulta-n-295-de-17-de-novembro-de-2023-528487652' target='_blank'>Solução de Consulta COSIT nº 295/2023</a> <br>Publicada em 06/12/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

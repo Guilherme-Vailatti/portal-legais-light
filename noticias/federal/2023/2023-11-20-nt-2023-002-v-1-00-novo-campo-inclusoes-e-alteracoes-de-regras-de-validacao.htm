@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFCom - NT 2023.002 v1.00 - Novo campo, inclusões e alteraçõ - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/11/2023 | NFCom - NT 2023.002 v1.00 - Novo campo, inclusões e alterações de regras de validação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Portal DF-e em 07/11/2023, versão 1.00 da NT 2023.002.</p><p>Esta Nota Técnica busca adequar o leiaute e as Regras de validação da NFCom contemplando ajustes identificados como melhorias e complementos da versão 1.00 estabelecida no MOC da NFCom.</p><p>Junto com a Nota Técnica um novo Schema também foi publicado</p><ul>
+<li><b>Ambiente de homologação:</b> 11/2023;</li>
+<li><b>Ambiente de produção:</b> Data ainda não definida.</li>
+</ul><p>Para ter acesso ao novo pacote de schemas, clique no link a seguir: <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos">Schemas da NT 2023.002</a>.</p><p>Para ter acesso na integra da NT 2023.002, versão 1.00, clique no link a seguir: <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos">NFCom - NT 2023.002 - v1.00</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://dfe-portal.svrs.rs.gov.br/Nfcom/Documentos" target="_blank">Nota Técnica 2023.002 -Versão 1.00</a> <br/>Publicada em 07/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

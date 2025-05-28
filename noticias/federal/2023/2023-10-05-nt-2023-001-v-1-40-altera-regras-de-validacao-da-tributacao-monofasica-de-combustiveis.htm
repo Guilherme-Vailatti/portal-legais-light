@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - INT 2023.001, v 1.40 - Altera regras de validaç - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/10/2023 | NF-e NFC-e - INT 2023.001, v 1.40 - Altera regras de validação da tributação monofásica de combustíveis</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi divulgada, no Portal Nacional da Nota Fiscal Eletrônica, na aba "Documentos", a Nota Técnica nº 2023.001, versão 1.40, que altera regras de validação da tributação monofásica de combustíveis.</p><p>Alterações na versão 1.40</p><p>Alterada a regra N12-70 para prever o CST 02 na exceção 8, permitindo assim a emissão de NFe de combustível para não contribuinte;</p><p>Alterada as regras LA17-20, LA18-10 e LA18-20 retirando a condição de exceção que verifica as datas nas chaves referenciadas.</p><ul>
+<li><b>Ambiente de Homologação:</b> até 16/10/2023</li>
+<li><b>Ambiente de Produção:</b> 30/10/2023 e 01/04/2024 (para a RV N43a-10)</li>
+</ul><p>Para verificar a Nota Técnica, acesse o <a href="http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=C/q14Ir%2B1W0=">Portal NF-e</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=C/q14Ir%2B1W0=" target="_blank">Nota Técnica 2023.001, versão 1.40</a> <br/>Publicada em 27/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

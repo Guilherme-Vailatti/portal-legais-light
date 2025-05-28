@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DMED - ADE COFIS nº 54/2023 - Aprovado o leiaute do PGD Dmed - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/11/2023 | DMED - ADE COFIS nº 54/2023 - Aprovado o leiaute do PGD Dmed 2024</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ato Declaratório Executivo Cofis nº 54/2023 provou o leiaute aplicável aos campos, registros e arquivos da Declaração de Serviços Médicos e de Saúde (Dmed 2024), para apresentação das informações relativas aos <b>anos-calendário de 2018 a 2023</b>, <b>situação normal</b>, e de <b>2018 a 2024</b>, <b>nos casos de situação especial</b>.</p><p>No preenchimento ou importação de dados pelo <b>Programa Gerador da Dmed (PGD Dmed 2024)</b> deverá ser observado o leiaute do arquivo constante do Anexo Único da norma em referência.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/ato-declaratorio-executivo-cofis-n-54-de-23-de-novembro-de-2023-526268228" target="_blank">Ato Declaratório Executivo COFIS nº 54/2023</a> <br/>Publicada em 28/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

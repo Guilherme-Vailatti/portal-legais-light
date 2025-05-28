@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e  - Nota Técnica 2023.004, v.1.00 - Criação de Eve - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/12/2023 | NF-e NFC-e  - Nota Técnica 2023.004, v.1.00 - Criação de Evento de Conciliação Financeira - ECONF</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Nota Técnica nº 2023.004 objetiva prover aos atores envolvidos nos processos da NF-e/NFC-e a possibilidade de anotar no documento fiscal eletrônico as transações financeiras relacionadas, facilitando a vinculação entre documentos fiscais e recursos financeiros recebidos.</p><p>Busca-se encontrar uma solução para pagamentos que ocorrem distantes da data do fato gerador e da emissão do documento fiscal. Portanto, para que seja possível às empresas informarem que o recebimento de recurso está relacionado a determinado documento fiscal, está sendo criado o Evento de Conciliação Financeira - ECONF. Os Ajustes SINIEF nº 3/2023 e 10/2023 prevê em este evento.</p><p>A utilização do Evento de Conciliação Financeira - ECONF é facultativa e tem o objetivo de auxiliar as empresas que buscam demonstrar a existência de conformidade fiscal entre as informações financeiras e de meios de pagamentos e os documentos fiscais emitidos.</p><p>Nessa NT, foram criados novos campos no grupo YA. Informações de Pagamento e nos Grupos Tributação do ICMS que possuem ICMS desonerado.</p><p>Também foram alterados campos dos grupos I01. Produtos e Serviços / Declaração de Importação e Z. Informações Adicionais da NF-e.</p><p><b>Cronograma de Implantação:</b>
+</p><p>Ambiente de Homologação: 05/02/2024</p><p>Ambiente de Produção: 01/04/2024</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=" target="_blank">Nota Técnica nº 2023.004, versão 1.00</a> <br/>Publicada em 11/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

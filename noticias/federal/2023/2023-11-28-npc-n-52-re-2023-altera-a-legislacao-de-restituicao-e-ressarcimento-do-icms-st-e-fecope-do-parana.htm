@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST PR - NPC nº 52 RE/2023 - Altera a legislação de rest - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/11/2023 | ICMS ST PR - NPC nº 52 RE/2023 - Altera a legislação de restituição e ressarcimento do ICMS ST e FECOPE do Paraná</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicada no DO-PR, a Norma de Procedimento Fiscal 52 RE/2023, que modificou a Norma de Procedimento Fiscal 3 RE/2020, a qual estabeleceu os procedimentos relativos aos pedidos de ressarcimento, de recuperação e de complementação de imposto retido por ST e do adicional destinado ao Fundo Estadual de Combate à Pobreza do Paraná.</p><p>Art. 1.º Ficam introduzidas as seguintes alterações na Norma de Procedimento Fiscal nº 3, de 28 de janeiro de 2020:</p><p>I - o inciso II do art. 11 passa a vigorar com a seguinte redação:</p><p>“II - a análise do pleito será da IRF - Inspetoria Regional de Fiscalização - da delegacia do contribuinte, que emitirá parecer definitivo em relação ao solicitado e encaminhará o processo à Delegacia de Contribuintes de Outros Estados – DCOE - para emissão do despacho.”;</p><p>II - o inciso III do art. 11 passa a vigorar com a seguinte redação:</p><p>“III - no caso de operações de saídas interestaduais, o valor do imposto debitado, relativamente à operação do substituído, poderá ser estornado mediante lançamento na EFD - Escrituração Fiscal Digital - com o código de ajuste da apuração PR030301 no campo 02 e lançamento do valor correspondente no campo 04 do Registro E111, identificando no campo 03 do mesmo registro a expressão "Estorno de Débito - Ressarcimento de ICMS-ST - Mês __/__ e o número do Protocolo ADRC-ST", condicionado ao prévio envio do ADRC-ST para o mês de referência em que ocorrer o estorno.”;</p><p>III - Fica acrescentado o inciso IV ao art. 11:</p><p>“IV - emitir nota fiscal com CFOP 5.603 ou 6.603, conforme o caso, com o valor autorizado no despacho emitido pela autoridade competente, identificando como Natureza da Operação “Ressarcimento de ICMS-ST”, e, se houver Fecop, emitir nota fiscal específica identificando “Ressarcimento do Adicional destinado ao Fecop”, tendo como destinatário do crédito o estabelecimento fornecedor substituto tributário indicado no pedido.”</p><p>Esta Norma de Procedimento Fiscal produzindo efeitos desde 13/11/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.documentos.dioe.pr.gov.br/dioe/consultaPublicaPDF.do?action=pgLocalizar&amp;enviado=true&amp;numero=&amp;search=Norma+de+Procedimento+Fiscal&amp;dataInicialEntrada=13%2F11%2F2023&amp;dataFinalEntrada=13%2F11%2F2023&amp;diarioCodigo=3&amp;submit=+%A0+Consultar+%9B%9B++%A0+" target="_blank">Norma de Procedimento Fiscal nº 52 RE/2023</a> <br/>Publicada em 13/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

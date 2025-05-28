@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST RJ  - Resolução SEFAZ nº 578/2023 - RASTSN - Novo re - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/12/2023 | ICMS ST RJ  - Resolução SEFAZ nº 578/2023 - RASTSN - Novo registro de apuração do ICMS ST para o Simples Nacional</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no DOERJ a Resolução SEFAZ nº 578/2023 com os procedimentos relativos ao Complemento e Restituição do ICMS-ST a serem observados a partir de <b>01/01/2024</b> pelo contribuinte substituído comércio varejista que apura o ICMS no regime normal ou no regime do Simples nacional.</p><p>Entre as alterações previstas pela Resolução fica incluído o Capítulo XI, composto pelos artigos 40 a 42 e Leiaute 3, na Parte III - Do Simples Nacional da Resolução SEFAZ nº 720/14, com a seguinte redação:</p><p>“<b>CAPÍTULO XI - DO REGISTRO DE APURAÇÃO DO ICMS-ST - SIMPLES NACIONAL</b></p><p><b>Art. 40</b>. O Registro de Apuração do ICMS-ST - Simples Nacional (RASTSN) destina-se ao lançamento, por período de apuração, dos totais dos valores de ICMS retidos anteriormente por substituição tributária e daquele efetivamente devido nas operações a consumidor final sujeitas ao regime de substituição tributária.</p><p>§ 1º Estão obrigados a utilizar o RASTSN os contribuintes varejistas optantes pelo Simples Nacional, não obrigados à Escrituração Fiscal Digital (EFD ICMS/IPI), que comercializem, na condição de substituídos, mercadorias sujeitas ao regime de substituição tributária.</p><p>§ 2º O RASTSN é composto pelos campos a seguir indicados, conforme Leiaute 3 constantes desta Parte:</p><p>I - Campo 1: Entradas com ICMS-ST retido;</p><p>II - Campo 2: ICMS efetivo nas saídas;</p><p>III - Campo 3: Apuração do ICMS-ST - Simples Nacional do período;</p><p>IV - Campo 4: Saldo a compensar até o período anterior;</p><p>V - Campo 5: ICMS a recolher ou a compensar em período futuro.</p><p>§ 3º O Campo 1 deverá ser preenchido com os seguintes dados de todas as NF-e de entrada que contenham mercadorias sujeitas ao regime de substituição tributária, excluídas as devoluções: chave de acesso, valor total da soma dos campos N26b (vICMSSubstituto) e valor total da soma dos campos N27 (vICMSSTRet) de cada NF-e.</p><p>§ 4º O Campo 2 deverá ser preenchido com os seguintes dados de todas as NFC-e e NF-e que contenham mercadorias sujeitas ao regime de substituição tributária, excluídas as devoluções: chave de acesso e valor total da soma dos campos N37 (vICMSEfet) de cada NFC-e ou NF-e, conforme o caso.</p><p>§ 5º O Campo 3 será apurado pela diferença entre os totais do Campo 2 e do Campo 1.</p><p>§ 6º O Campo 4 será preenchido com o valor do Campo 5 relativo ao período anterior, caso tenha sido apurado saldo negativo no referido campo naquele período.</p><p>§ 7º O Campo 5 será preenchido com a diferença entre o Campo 3 e o Campo 4.</p><p>§ 8º O contribuinte deverá manter o RASTSN sob sua guarda pelo prazo decadencial do imposto.</p><p><b>Art. 41.</b> Na hipótese de o Campo 5 resultar em valor positivo, este deverá ser recolhido em DARJ único, em separado, com natureza Operações Próprias - Apuração (Débitos/Créditos), até o dia 2 (dois) do segundo mês subsequente ao da saída da mercadoria.</p><p><b>Art. 42</b>. Caso o Campo 5 resulte em valor negativo, este constituirá saldo a compensar em período futuro, devendo ser transportado para o Campo 4, do período imediatamente posterior.</p><p>§ 1º Caso seja gerado saldo a compensar em período futuro por 6 (seis) períodos consecutivos, o contribuinte poderá protocolar pedido de restituição de indébito relativo a essa quantia, nos termos do disposto na Resolução SEFAZ nº 191/2017, juntando, ao pedido, as RASTSN dos respectivos períodos.</p><p>§ 2º Na hipótese prevista no § 1º, o Campo 4 deverá ser zerado naquele período.”.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.legisweb.com.br/legislacao?id=451731#:~:text=Altera%20a%20Resolu%C3%A7%C3%A3o%20SEFAZ%20N%C2%BA,de%20obriga%C3%A7%C3%B5es%20acess%C3%B3rias%20por%20contribuintes" target="_blank">Resolução SEFAZ nº 578/2023</a> <br/>Publicada em 09/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

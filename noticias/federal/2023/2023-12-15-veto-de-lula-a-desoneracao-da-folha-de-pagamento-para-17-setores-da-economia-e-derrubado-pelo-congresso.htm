@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional  - Veto de Lula à desoneração da folha de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>15/12/2023 | Congresso Nacional  - Veto de Lula à desoneração da folha de pagamento para 17 setores da economia é derrubado pelo Congresso</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Congresso Nacional rejeitou o veto do presidente da República, Luiz Inácio Lula da Silva, ao projeto de lei que prorroga a desoneração da folha de pagamento para 17 setores da economia. O texto, que havia sido vetado integralmente, será  agora promulgado como lei.</p><p>O benefício acabaria em 31 de dezembro de 2023 e será prorrogado até 31 de dezembro de 2027, como previa o Projeto de Lei 334/23. A renúncia com a desoneração no setor privado é estimada pelo Ministério da Fazenda em cerca de R$ 9,4 bilhões.</p><p>Com a desoneração, as empresas beneficiadas podem optar pelo pagamento das contribuições sociais sobre a receita bruta com alíquotas de 1% a 4,5% em vez de pagar 20% de INSS relativo aos empregados pela Consolidação das Leis do Trabalho (CLT).</p><p>No Senado Federal, foram 60 votos pela rejeição do veto e 13 a favor. Na Câmara dos Deputados, houve 78 votos a favor do veto e 378 por sua rejeição.</p><p><b>Municípios</b>
+</p><p>Outro ponto do projeto da desoneração que vai virar lei diminui, reduz de 20% para 8% a alíquota da contribuição previdenciária sobre a folha dos municípios com população de até 142.632 habitantes.</p><p>A medida beneficia 5.300 municípios, de acordo com a Confederação Nacional dos Municípios.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/despacho/2023/despacho-78-23" target="_blank">Agência Câmara de Notícias</a> <br/>Publicada em 14/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

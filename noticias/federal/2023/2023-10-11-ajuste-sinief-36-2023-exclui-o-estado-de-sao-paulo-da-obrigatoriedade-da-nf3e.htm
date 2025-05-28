@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF3-e - Ajuste SINIEF 36/2023 - Exclui o Estado de São Paulo - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/10/2023 | NF3-e - Ajuste SINIEF 36/2023 - Exclui o Estado de São Paulo da obrigatoriedade da NF3-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no Diário Oficial da União em 04/10/2023, Ajuste SINIEF 36/2023, que exclui o Estado de São Paulo do Ajuste SINIEF 01/2019, que institui a Nota Fiscal de Energia Elétrica Eletrônica, modelo 66, e o Documento Auxiliar da Nota Fiscal de Energia Elétrica Eletrônica.</p><p>Cabe ressaltar que a obrigatoriedade da NF3e no Estado de São Paulo estava prevista para 01/06/2024, porém, esse cronograma também foi revogado pelo Ajuste SINIEF 36/2023.</p><p>O Ajuste SINIEF 36/2023 ainda prevê alteração do prazo de obrigatoriedade da NF3e no Estado do Espírito Santo para 01/12/2023.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/ajustes/2023/ajuste-sinief-36-23" target="_blank">Ajuste SINIEF 36/2023</a> <br/>Publicada em 04/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

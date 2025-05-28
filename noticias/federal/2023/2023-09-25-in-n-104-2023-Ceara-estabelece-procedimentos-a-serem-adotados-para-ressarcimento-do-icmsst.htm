@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST CE - nº 104/2023 - Ceará estabelece procedimentos a  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/09/2023 | ICMS ST CE - nº 104/2023 - Ceará estabelece procedimentos a serem adotados para ressarcimento do ICMS ST</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Governo do Estado do Ceará considerando a necessidade de estabelecer a padronização quanto ao pedido de ressarcimento do ICMS pagos em razão de Substituição Tributária, nas operações internas e interestaduais, previsto nos incisos I e III do art. 438 do Decreto nº 24.569/97, publicou a Instrução Normativa nº 104/2023.</p><p>O disposto nesta IN aplica-se, inclusive, ao ressarcimento de ICMS em que haja retenção do ICMS na origem em valor superior ao devido relativamente às operações estabelecidas no inciso III do art. 6.º da Lei nº 14.237/2008.</p><p>O pedido de ressarcimento será formulado por período de referência mensal, no Sistema TRAMITA, no qual será anexado arquivo eletrônico no formato “.xlsx ou .csv”, contendo todas as informações necessárias para a apuração mensal do valor do ICMS a ser ressarcido, e em conformidade com as especificações definidas no Anexo I e II da IN nº 104/2023.</p><p>As informações constantes nos arquivos eletrônicos deverão refletir, em sua totalidade, os dados contidos nas NFEs de entrada e/ou de saída do contribuinte, conforme o caso.</p><p>Os pedidos de ressarcimentos de ICMS pagos por Substituição Tributária Interestadual decorrentes da celebração de Convênio e Protocolo deverão ser protocolados separadamente dos pedidos de Substituição Tributária interna.</p><p>O valor relativo ao pedido de ressarcimento de que trata o art. 1.º desta IN, deverá ser compensado com o débito de substituição tributária apurado no mês da sua homologação, devendo ser operacionalizado mediante a dedução do crédito nos sistemas corporativos da SEFAZ, sob a responsabilidade do órgão que emitiu a informação fiscal respectiva.</p><p>A utilização deste crédito tributário, será limitada a 50% (cinquenta por cento) do valor do ICMS substituição tributária apurado no mês em que o crédito for autorizado.</p><p>Na hipótese de não existir débito de ICMS substituição tributária apurado, o saldo do crédito tributário existente será transferido para os meses subsequentes em que exista débito, até o seu aproveitamento total.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://imagens.seplag.ce.gov.br/PDF/20230918/do20230918p02.pdf#page=9" target="_blank">Instrução Normativa nº 104/2023
+</a> <br/>Publicada em 18/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

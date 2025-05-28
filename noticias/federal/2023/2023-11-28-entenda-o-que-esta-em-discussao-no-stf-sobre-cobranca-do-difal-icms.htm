@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIFAL - Entenda o que está em discussão no STF sobre cobranç - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/11/2023 | DIFAL - Entenda o que está em discussão no STF sobre cobrança do Difal/ICMS</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Supremo Tribunal Federal (STF) retomou, nesta quinta-feira (23), o julgamento de três ações que tratam da definição do momento da cobrança do Diferencial de Alíquota do Imposto sobre Circulação de Mercadorias e Serviços (Difal/ICMS). O tema é objeto das Ações Diretas de Inconstitucionalidade (ADIs) 7066, 7078 e 7070, todas sob a relatoria do ministro Alexandre de Moraes.</p><p>Após a apresentação dos argumentos de partes e terceiros interessados, o julgamento foi suspenso e continuará na próxima quarta-feira (29), com o voto do ministro Alexandre de Moraes, relator das ações.</p><p>O Difal é utilizado para equilibrar a distribuição dos impostos nas transações interestaduais, dividindo a cobrança entre o estado de origem da empresa ou indústria e o estado do consumidor. A principal questão a ser decidida pelo Supremo é se o Difal poderá ser cobrado desde 2022 – já que a Lei Complementar 190/2022, que regulamentou a matéria, foi publicada em 5 de janeiro de 2022 – ou somente a partir de 1° de janeiro de 2023, em respeito à chamada anterioridade anual.</p><p>A cobrança do Difal/ICMS foi introduzida pela Emenda Constitucional (EC) 87/2015 e era regulamentada por um convênio do Conselho Nacional de Política Fazendária (Confaz). Em fevereiro de 2021, o STF decidiu que esse mecanismo de compensação teria de ser disciplinado por meio de lei complementar.</p><p>Na ocasião, ficou definido que a decisão teria efeitos apenas a partir de 2022, possibilitando que o Congresso Nacional editasse lei complementar sem que fosse necessário interromper a aplicação do diferencial. Em dezembro de 2021, foi aprovada a LC 190, mas a sanção ocorreu apenas em 4 de janeiro de 2022, o que deu origem à discussão sobre o início de sua vigência.</p><p>O representante da Associação Brasileira da Indústria de Máquinas e Equipamentos (Abimaq), autora da ADI 7066, defendeu que a cobrança só poderia ser retomada em 2023, em razão da anterioridade anual, conforme previsto na própria LC 190/2022. No mesmo sentido se manifestaram a Confederação Nacional da Indústria (CNI), a Associação Mineira de Supermercados, a Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação (Brasscom), a Associação Brasileira de Advocacia Tributária, o Sindicato da Indústria de Produtos Farmacêuticos (Sindusfarma) e o Instituto para o Desenvolvimento do Varejo.</p><p>O representante do Estado de Alagoas (ADI 7070) observou que a Difal foi instituída por leis estaduais a partir de 2015 e, portanto, não se aplica a anterioridade para sua cobrança. Segundo ele, interromper a cobrança de um tributo regulado por lei estadual em razão da entrada em vigor de uma norma federal contraria o espírito cooperativo da Constituição Federal, desregula o sistema tributário e acentua diferenças regionais, em prejuízo dos estados menos desenvolvidos.</p><p>Para o representante do Ceará (ADI 7078), a LC 190/ 2022 não criou novo tributo, apenas estabeleceu nova forma de repartição de tributos entre os estados, compensando distorções, especialmente em relação à tributação de compras à distância, de empresas de outros estados. No mesmo sentido se manifestou o representante do Colégio Nacional de Procuradores-Gerais dos Estados e do Distrito Federal, que figura na ação como terceiro interessado.</p><p>As ações foram a julgamento no Plenário Virtual. Contudo, em razão de pedido de destaque da ministra Rosa Weber (aposentada), os casos foram levados para o Plenário físico.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=520412&amp;ori=1" target="_blank">Supremo Tribunal Federal</a> <br/>Publicada em 23/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

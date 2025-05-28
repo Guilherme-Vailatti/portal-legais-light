@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS BA - Lei nº 14.629/2023 - Majora a alíquota geral de IC - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/11/2023 | ICMS BA - Lei nº 14.629/2023 - Majora a alíquota geral de ICMS de 19% para 20,5%, e modifica o setor de energia elétrica e comunicação</h1>
+</div>
+<div class="noticia-corpo">
+<p>Publicado no DOE/BA em 09/11/2023, Lei 14.629/2023, que altera a Lei nº 7.014, de 04 de dezembro de 1996, na forma que indica, e dá outras providências.</p><p>A Lei 14.629/2023 promove alterações nas alíquotas do ICMS para 2024, conforme demonstra abaixo:</p><ul>
+<li><b>Alíquota Geral do ICMS</b>
+<ul style="list-style-type: circle;">
+<li>A partir do dia 07/02/2024, a alíquota geral do ICMS passa de 19% para 20,5%;</li>
+</ul>
+</li>
+</ul><ul>
+<li><b>Alíquota do ICMS para energia elétrica</b>
+<ul style="list-style-type: circle;">
+<li>A partir do dia 01/01/2024 até 06/02/2024, a alíquota do ICMS para energia elétrica passa de 25% para 19%;</li>
+</ul>
+<ul style="list-style-type: circle;">
+<li>A partir do dia 07/02/2024, a alíquota do ICMS para energia elétrica passa de 19% para 20,5%;</li>
+</ul>
+</li>
+<li><b>Alíquota do ICMS para comunicação e telecomunicação</b>
+<ul style="list-style-type: circle;">
+<li>A partir do dia 01/01/2024 até 06/02/2024, a alíquota do ICMS para comunicação/telecomunicação passa de 26% para 19%;</li>
+</ul>
+<ul style="list-style-type: circle;">
+<li>A partir do dia 07/02/2024, a alíquota do ICMS para comunicação/telecomunicação passa de 19% para 20,5%;</li>
+</ul>
+</li>
+</ul><p>Esta Lei entra em vigor na data de sua publicação, produzindo efeitos:</p><ul>
+<li>Em 90 (noventa) dias após a data da publicação em relação a alteração da alíquota geral do ICMS (a partir do dia 07/02/2024), exceto em relação às operações com energia elétrica e prestações serviços de comunicação e telecomunicação, cujos efeitos ocorrerão a partir de 1º de janeiro de 2024.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://portal.sefaz.ba.gov.br/contribuinte/tributacao/legest_2023_14629.pdf" target="_blank">Lei 14.629/2023</a> <br/>Publicada em 09/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

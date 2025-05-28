@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>SPED EFD Reinf - Conjunto de TLS utilizado na conexão com a  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/10/2023 | SPED EFD Reinf - Conjunto de TLS utilizado na conexão com a EFD Reinf será revisado</h1>
+</div>
+<div class="noticia-corpo">
+<p>Antes de uma conexão segura ser estabelecida, protocolos são negociados entre o servidor da REINF e o servidor que enviará dados para a REINF. Com o objetivo de aprimorar a segurança no serviço, será aplicada uma revisão dos TLS aceitos, deixando de permitir conexões utilizando TLS 1.0 e TLS 1.1 <b>a partir do dia 21/10/2023</b>. Portanto, todos que precisarem enviar dados para a REINF devem se certificarem de que estejam realizando a conexão utilizando TLS com versão 1.2 ou superior.</p><p>Caso a empresa tente realizar a conexão para o envio de eventos e receba como resposta o erro abaixo, provavelmente estará tentando se comunicar usando uma versão de TLS não mais suportada:</p><ul>
+<li><b>"A conexão com o servidor foi redefinida ou encerrada, ou um protocolo SSL incompatível foi encontrado" ou "Could Not Establish Trust Relationship for the SSL/TLS Secure Channel with Authority" (ou outra mensagem que contenha as palavras-chave "SSL", "SSL/TLS", "handshake" ou "conexão segura").</b>
+</li>
+</ul><p>Nesse caso, para que seja possível se conectar, será necessário utilizar um Sistema Operacional (SO) compatível com a versão TLS 1.2 conforme detalhado abaixo.</p><ul>
+<ol>
+<li>Sobre o Sistema Operacional<ul style="list-style-type: circle;"><li>Microsoft Windows: O TLS 1.2 é suportado em versões mais recentes do Windows, incluindo Windows 7, Windows 8, Windows 10 e suas versões correspondentes para servidores.</li><li>Linux: A maioria das distribuições Linux modernas suporta o TLS 1.2, incluindo distribuições populares como Ubuntu, CentOS, Red Hat, Debian e outras.</li><li>macOS: O TLS 1.2 é suportado em versões recentes do macOS (anteriormente OS X), como macOS 10.9 Mavericks e posteriores.</li><li>iOS: O iOS suporta o TLS 1.2 em suas versões mais recentes.</li></ul></li>
+<li>Sobre o Software utilizado:</li>
+<ul style="list-style-type: circle;">
+<li>Também é necessário avaliar o software usado para o envio das requisições. Em alguns casos, o desenvolvimento pode ter codificado o sistema para acionar um TLS específico, não direcionando para o caminho padrão. Se isso ocorrer, é importante acompanhar o fornecedor do software para as devidas correções.</li>
+</ul>
+</ol>
+</ul><ul>
+<li><a href="https://therecord.media/ietf-officially-deprecates-tls-1-0-and-tls-1-1">IETF officially deprecates TLS 1.0 and TLS 1.1</a>
+</li>
+<li><a href="https://learn.microsoft.com/pt-br/lifecycle/announcements/transport-layer-security-1x-disablement">ATUALIZAÇÃO: Desativação do TLS (Transport Layer Security) 1.0 e 1.1</a>
+</li>
+<li><a href="https://www.ssl.com/pt/artigo/reprovando-tls-iniciais/">Descontinuação antecipada TLS para uma Internet mais segura
+</a>
+</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="http://sped.rfb.gov.br/pagina/show/7280" target="_blank">Portal SPED</a> <br/>Publicada em 02/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Calendário de votação da reforma tribut - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>28/11/2023 | Reforma Tributária - Calendário de votação da reforma tributária será definido hoje, diz relator</h1>
+</div>
+<div class="noticia-corpo">
+<p>O relator da reforma tributária na Câmara, deputado Aguinaldo Ribeiro (PP-PB), anunciou em entrevista coletiva na quarta-feira (22) que deverá apresentar na segunda-feira (27) os procedimentos e o calendário de votação da Proposta de Emenda à Constituição (PEC) 45/19, após concluir a análise das alterações aprovadas pelo Senado. O anúncio foi feito por Ribeiro após reunir-se com o presidente da Câmara, Arthur Lira (PP-AL), e com líderes partidários.</p><p>“Na segunda-feira, teremos uma nova reunião com o presidente Lira e com os líderes para, a partir daí, decidirmos a estratégia com relação a procedimentos regimentais da emenda constitucional e também o calendário de votação”, disse.</p><p>“Estamos concluindo o trabalho de avaliação do texto entregue pelo Senado no último dia 8. Até o final da semana devemos concluir a nossa análise”, acrescentou.</p><p>Em relação ao fatiamento do texto para facilitar a aprovação de pontos consensuais nas duas casas, o relator disse trabalhar com a ideia de aprovar uma reforma completa ainda neste ano. “Vamos descartar essa palavra [fatiamento]. Eu sugiro entregar ao País uma reforma tributária completa e não fatiada”, afirmou.</p><p>Segundo Ribeiro, um eventual fatiamento da PEC poderia, na verdade, comprometer a aprovação da reforma ainda em 2023. “Esse fatiamento que pessoas ventilam significa dizer o seguinte: aquilo que eu não concordo eu devolvo para o Senado na forma de outra PEC. E aí nós teríamos assuntos perdidos. Eu acho que isso ninguém quer, nem a Câmara nem o Senado, nem o Brasil merece isso depois de 50 anos.”</p><p>Ribeiro ainda negou que tenha feito qualquer acerto com o Ministro da Fazenda, Fernando Haddad, para alterar o período usado para calcular o rateio do Imposto sobre Bens e Serviços (IBS) entre estados, Distrito Federal e municípios durante a transição. “Não existe decisão de supressão de texto”, pontuou.</p><p>Em razão da queda de arrecadação provocada pela tributação, no destino, do IBS (que substituirá o ICMS e o ISS), o texto atual aprovado por deputados e senadores atribui ao Conselho Federativo do IBS - a ser criado pela PEC - o papel de fazer uma redistribuição do que for arrecadado no período de transição, que durará de 2029 a 2078.</p><p>Esse rateio será proporcional à média de arrecadação de cada ente federativo com ICMS e ISS de 2024 a 2028, considerando-se transferências entre os eles. Na prática, quem arrecadar mais no período terá direito a uma fatia maior do IBS. Diante disso, mais de 20 estados e o Distrito Federal anunciaram aumento alíquotas de ICMS no período.</p><p>Ribeiro, no entanto, negou qualquer relação dos aumentos de com a reforma tributária. “A questão de aumento de imposto se deve à recomposição de receitas que foram perdidas por esses estados e não têm nada a ver com a reforma tributária”, disse o relator. “Você acha que se um estado fizer os outros também não farão? Então não terá o menor impacto do ponto de vista da repartição. Não terá efeito prático nenhum”, finalizou.</p><p>A principal mudança da PEC aprovada por deputados e senadores é a simplificação de impostos sobre o consumo.  O eixo principal da proposta cria:</p><ul>
+<li>o Imposto sobre Bens e Serviços (IBS), substituindo o ICMS e o ISS;</li>
+<li>a Contribuição sobre Bens e Serviços (CBS), reunindo o PIS, o PIS-Importação, a Cofins e a Cofins-Importação; e</li>
+<li>um imposto seletivo (IS) para bens que causem dano à saúde ou ao meio ambiente, em substituição ao Imposto sobre Produtos Industrializados (IPI).</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1018680-calendario-de-votacao-da-reforma-tributaria-sera-definido-no-dia-27-diz-relator/" target="_blank">Agência Câmara Notícias</a> <br/>Publicada em 22/11/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

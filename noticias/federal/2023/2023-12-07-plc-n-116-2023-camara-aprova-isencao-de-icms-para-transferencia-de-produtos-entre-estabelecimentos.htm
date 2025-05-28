@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PLC nº 116/2023 - Câmara aprova isenção - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/12/2023 | Congresso Nacional - PLC nº 116/2023 - Câmara aprova isenção de ICMS para transferência de produtos entre estabelecimentos</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Câmara dos Deputados aprovou nesta terça-feira (5) projeto de lei complementar que inclui decisão do Supremo Tribunal Federal (STF) na legislação para <b>isentar de pagamento do ICMS</b> a transferência de produtos entre estabelecimentos de uma mesma empresa. A matéria será enviada à sanção presidencial.</p><p>O Projeto de Lei Complementar 116/23, do Senado, contou com parecer favorável do relator, deputado Da Vitória (PP-ES).</p><p>A questão já havia sido julgada em 2017, mas neste ano, após julgar embargos, o Supremo decidiu que as regras sobre o aproveitamento de créditos do ICMS deveriam ser disciplinadas até o fim do ano, senão seriam integralmente aproveitados pelo contribuinte a partir de 2024.</p><p>Como não houve acordo unânime no âmbito do Conselho Nacional de Política Fazendária (Confaz), que reúne secretários de Fazenda estaduais, o tema foi tratado pelo Senado no PLP.</p><p>O texto terá vigência a partir do próximo ano e muda a chamada Lei Kandir (Lei Complementar 87/96), prevendo, além da não incidência do imposto na transferência de mercadorias para outro depósito do mesmo contribuinte, que a empresa poderá aproveitar o crédito relativo às operações anteriores, inclusive quando ocorrer transferência interestadual para igual CNPJ.</p><p>Nesse caso, o crédito deverá ser assegurado pelo estado de destino da mercadoria deslocada por meio de transferência de crédito, mas limitado às alíquotas interestaduais aplicadas sobre o valor atribuído à operação de deslocamento.</p><p>As alíquotas interestaduais de ICMS são de 7% para operações com destino ao Espírito Santo e estados das regiões Norte, Nordeste e Centro-Oeste; e de 12% para operações com destino aos estados das regiões Sul e Sudeste (exceto Espírito Santo).</p><p>Se houver diferença positiva entre os créditos anteriores acumulados e a alíquota interestadual, ela deverá ser garantida pela unidade federada de origem da mercadoria deslocada.</p><p>“Esta Casa mostrou união para votar esse projeto, evitando conflitos nos tribunais ao fazer uma lei com base em decisão do Supremo Tribunal Federal. Se não avançássemos com esse tema, teríamos problemas em 2024”, disse o relator.</p><p>A fim de evitar que empresas beneficiadas por incentivos fiscais do ICMS deixem de usufruí-los por não pagarem o tributo nessas transferências de mercadorias, o texto permite a elas equiparar a operação àquelas que geram pagamento do imposto, aproveitando o crédito com as alíquotas do estado nas operações internas ou as alíquotas interestaduais nos deslocamentos entre estados diferentes.</p><p>Todas as medidas valem a partir de <b>1º de janeiro de 2024</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1023143-camara-aprova-isencao-de-icms-para-transferencia-de-produtos-entre-estabelecimentos/" target="_blank">Projeto de Lei Complementar 116/2023</a> <br/>Publicada em 05/12/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

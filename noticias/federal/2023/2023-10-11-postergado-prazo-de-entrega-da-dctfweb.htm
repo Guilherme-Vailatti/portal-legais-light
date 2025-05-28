@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Postergado prazo de entrega da DCTFWeb - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>11/10/2023 | DCTFWeb - Postergado prazo de entrega da DCTFWeb</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal alterou a regra relativa ao prazo de entrega da DCTFWeb. Conforme disposto no art. 10 da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=115131">Instrução Normativa RFB nº 2.005, de 29 de janeiro de 2021</a>, a DCTFWeb deverá ser apresentada mensalmente até o dia 15 do mês seguinte ao da ocorrência dos fatos geradores.</p><p>Pela regra antiga, na hipótese de o dia 15 cair em dia não útil, a entrega da declaração deveria ser antecipada para o dia útil imediatamente anterior.</p><p>A partir da publicação da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=133898"><a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=133898">Instrução Normativa RFB nº 2.162</a>, de 4 de outubro de 2023</a>, que alterou a IN RFB nº 2.005, de 2021, quando o dia 15 cair em dia não útil para fins fiscais, o prazo de entrega será postergado para o primeiro dia útil após o dia 15.</p><p>Trata-se de mais uma iniciativa da Receita Federal em prol do contribuinte, que será beneficiado pela aplicação da nova regra, conforme exemplo abaixo.</p><p>Exemplo: O prazo de entrega da DCTFWeb referente ao mês de setembro de 2023 venceria no dia 15 de outubro. Ocorre que 15 de outubro é dia não útil (domingo). Assim, com a nova regra, o vencimento da declaração referente ao mês de setembro de 2023 será postergado para 16 de outubro em vez de ser antecipado para 13 de outubro.</p><p>Outra simplificação ocorrida por meio da IN RFB nº 2.162, de 2023, foi a previsão de inclusão na DCTFWeb da contribuição para o Programa de Integração Social e de Formação de Patrimônio do Servidor Público (PIS/PASEP) incidente sobre a folha de salários, devido pelas entidades sem fins lucrativos.</p><p>Assim, em relação aos fatos geradores que ocorrerem a partir de janeiro de 2024, as entidades sem fins lucrativos passarão a declarar a contribuição para o PIS/PASEP incidente sobre a folha de salários na DCTFWeb (e não mais na DCTF PGD).</p><p>Na nova sistemática, o valor da referida contribuição será recebido automaticamente pela DCTFWeb a partir do fechamento do eSocial, o que proporciona segurança em relação à integridade da informação declarada, que não fica sujeita a erro de preenchimento.</p><p>Para mais informações sobre a DCTFWeb <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb">acesse aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.confaz.fazenda.gov.br/legislacao/ajustes/2023/ajuste-sinief-36-23" target="_blank">Receita Federal</a> <br/>Publicada em 09/10/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

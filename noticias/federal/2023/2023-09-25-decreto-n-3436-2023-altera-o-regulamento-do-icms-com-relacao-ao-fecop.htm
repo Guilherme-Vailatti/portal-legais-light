@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS ST PR - Decreto nº 3.436/2023 - Altera o regulamento do - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/09/2023 | ICMS ST PR - Decreto nº 3.436/2023 - Altera o regulamento do ICMS com relação ao FECOP</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Decreto 3.436/2023, publicado no DO-PR de 15/09/2023, alterou o RICMS/PR aprovado pelo Decreto 7.871/2017, referente aos lançamentos na EFD e GIA-ST do Fundo de Combate à Pobreza, os procedimentos serão estabelecidos em Norma de Procedimento, produzindo efeitos desde 15/09/2023.</p><p>Foram retiradas do RICMS-PR algumas disposições que tratavam do Fundo Estadual de Combate à Pobreza do Paraná (Fecop), relativamente a forma de lançamento e código de ajuste na EFD para as situações com a incidência do Fecop no diferencial de alíquotas devido por contribuintes nas aquisições interestaduais e também nas operações internas destinadas a consumidor final.</p><p>No mesmo sentido, o fisco fez adequação no Regulamento referente a forma de declarar o Fecop na GIA-ST e EFD quando a operação for realizada por substituto tributário com destino ao próprio Estado, e nas operações interestaduais com a incidência do DIFAL da EC 87/2015 destinadas a não contribuinte do Paraná.</p><p>No caso de devolução realizada por contribuinte paranaense que tenha havido o adicional pela entrada, o fisco divulgará instrução específica de como tratar essa operação na GIA-ST e EFD.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://leisestaduais.com.br/pr/decreto-n-3436-2023-parana-introduz-alteracoes-no-regulamento-do-imposto-sobre-operacoes-relativas-a-circulacao-de-mercadorias-e-sobre-prestacoes-de-servicos-de-transporte-interestadual-e-intermunicipal-e-de-comunicacao-ricms" target="_blank">Decreto nº 3.436/2023
+</a> <br/>Publicada em 19/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

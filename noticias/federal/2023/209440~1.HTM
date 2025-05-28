@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>ICMS ST DF - IN SUREC/SEEF/SEEC nº 8/2023 - Alterados dispos - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>05/10/2023 | ICMS ST DF - IN SUREC/SEEF/SEEC nº 8/2023 - Alterados dispositivos que tratam da restituição parcial e da complementação do valor do ICMS ST</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>O Distrito Federal alterou a Instrução Normativa SUREC/SEF/SEEC nº 16/2019 , que disciplina a restituição parcial e a complementação do valor do ICMS pago no regime de substituição tributária para frente sempre que a base de cálculo efetiva da operação for diversa da presumida.</p><p>Com as alterações, ao requerimento para fins de restituição, o contribuinte deverá anexar arquivo digital elaborado no leiaute constante no Anexo Unico da Instrução Normativa SUREC/SEF/SEEC nº 16/2019:</p><p>A norma entrou em vigor em 28/09/2023, data da sua publicação.</p><p>Fonte: <a href="https://www.in.gov.br/inicio"><a href="https://www.fazenda.df.gov.br/aplicacoes/legislacao/legislacao/TelaSaidaDocumento.cfm?txtNumero=8&amp;txtAno=2023&amp;txtTipo=8&amp;txtParte=SUREC">Instrução Normativa SUREC/SEEF/SEEC nº 8/2023</a></a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.fazenda.df.gov.br/aplicacoes/legislacao/legislacao/TelaSaidaDocumento.cfm?txtNumero=8&txtAno=2023&txtTipo=8&txtParte=SUREC' target='_blank'>Instrução Normativa SUREC/SEEF/SEEC nº 8/2023</a> <br>Publicada em 28/09/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

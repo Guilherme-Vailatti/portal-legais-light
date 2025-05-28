@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e SP - Contribuinte optante pelo Simples Nacional deve in - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>27/09/2023 | NF-e SP - Contribuinte optante pelo Simples Nacional deve informar valor do crédito em campo próprio da NF-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi realizada alteração no art. 63 do RICMS-SP/2000, para que fique em conformidade com a redação do § 5º do art. 60 da Resolução CGSN nº 140/2018.</p><p>Desse modo, o contribuinte do ICMS optante pelo Simples Nacional, deve informar o valor passível de crédito pelo destinatário, bem como o respectivo percentual, nos campos específicos da NF-e, sendo eles:</p><p>Desse modo, as referidas informações deixam de ser indicadas no campo de "Informações Complementares" e devem, obrigatoriamente, ser indicadas nos campos específicos da NF-e.</p><p>O ato entra em vigor em 22/09/2023, data de sua publicação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Decreto-67975-de-2023.aspx" target="_blank">Decreto nº 67.975/2023
+</a> <br/>Publicada em 22/09/2023</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
