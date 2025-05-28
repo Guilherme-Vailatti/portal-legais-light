@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NFS-e - LC nº 214/2025 - Nota Fiscal de Serviços Eletrônica  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/02/2025 | NFS-e - LC nº 214/2025 - Nota Fiscal de Serviços Eletrônica de padrão nacional para 2026</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir de 1º de janeiro de 2026, os Municípios e o Distrito Federal ficam obrigados a emitir a Nota Fiscal de Serviços Eletrônica de padrão nacional (NFS-e) no ambiente nacional ou, na hipótese de possuir emissor próprio, compartilhar os documentos fiscais eletrônicos gerados, conforme leiaute padronizado, para o ambiente de dados nacional da NFS-e. </p><p>Confira o que o Art. 62 da Lei Complementar nº 214/2025 na qual institui o IBS, CBS e IS, comenta sobre a emissão da NFS-e Nacional:</p><p style="font-style: italic;">Art. 62. Ficam a União, os Estados, o Distrito Federal e os Municípios obrigados a: <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm#art544-2" target="_blank">Produção de efeitos</a>.</p><p style="font-style: italic;">I - adaptar os sistemas autorizadores e aplicativos de emissão simplificada de documentos fiscais eletrônicos vigentes para utilização de leiaute padronizado, que permita aos contribuintes informar os dados relativos ao IBS e à CBS, necessários à apuração desses tributos; e</p><p style="font-style: italic;">II - compartilhar os documentos fiscais eletrônicos, após a recepção, validação e autorização, com o ambiente nacional de uso comum do Comitê Gestor do IBS e das administrações tributárias da União, dos Estados, do Distrito Federal e dos Municípios.</p><p style="font-style: italic;">§ 1º Para fins do disposto no caput deste artigo, os Municípios e o Distrito Federal <b>ficam obrigados, a partir de 1º de janeiro de 2026</b>, a:</p><p style="font-style: italic;"><b>I - autorizar seus contribuintes a emitir a Nota Fiscal de Serviços Eletrônica de padrão nacional (NFS-e) no ambiente nacional ou, na hipótese de possuir emissor próprio, compartilhar os documentos fiscais eletrônicos gerados, conforme leiaute padronizado, para o ambiente de dados nacional da NFS-e</b>; e</p><p style="font-style: italic;">II - compartilhar o conteúdo de outras modalidades de declaração eletrônica, conforme leiaute padronizado definido no regulamento, para o ambiente de dados nacional da NFS-e.</p><p style="font-style: italic;">§ 2º O disposto no § 1º deste artigo aplica-se até 31 de dezembro de 2032.</p><p style="font-style: italic;">§ 3º Os dados do ambiente centralizador nacional da NFS-e deverão ser imediatamente compartilhados em ambiente nacional nos termos do inciso II do § 1º deste artigo.</p><p style="font-style: italic;">§ 4º O padrão e o leiaute a que se referem os incisos I e II do § 1º deste artigo são aqueles definidos em convênio firmado entre a administração tributária da União, do Distrito Federal e dos Municípios que tiver instituído a NFS-e, desenvolvidos e geridos pelo Comitê Gestor da Nota Fiscal de Serviços Eletrônica de padrão nacional (CGNFS-e).</p><p style="font-style: italic;">§ 5º O ambiente de dados nacional da NFS-e é o repositório que assegura a integridade e a disponibilidade das informações constantes dos documentos fiscais compartilhados.</p><p style="font-style: italic;">§ 6º O Comitê Gestor do IBS e a RFB poderão definir soluções alternativas à plataforma NFS-e, respeitada a adoção do leiaute do padrão nacional da NFS-e para fins de compartilhamento em ambiente nacional.</p><p style="font-style: italic;">§ 7º O não atendimento ao disposto no caput deste artigo implicará a suspensão temporária das transferências voluntárias.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/lei-complementar-n-214-de-16-de-janeiro-de-2025-607430757" target="_blank">Lei Complementar nº 214/2025</a> <br/>Publicada em 16/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

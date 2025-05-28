@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Receita Federal - Comunicado: Esclarecimento sobre a evoluçã - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | Receita Federal - Comunicado: Esclarecimento sobre a evolução na e-Financeira</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal esclarece que a edição da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=140539" target="_blank">IN RFB nº 2219/2024</a> não implicou qualquer aumento de tributação, tratando-se de medida que visa a um melhor gerenciamento de riscos pela administração tributária, a partir da qual será possível oferecer melhores serviços à sociedade, em absoluto respeito às normas legais dos sigilos bancário e fiscal. Os dados recebidos poderão, por exemplo, ser disponibilizados na declaração pré-preenchida do imposto de renda da pessoa física no próximo ano, evitando-se divergências.</p><p>A Declaração de Operações com Cartões de Crédito (Decred) foi instituída em 2003, nos termos da <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=15232" target="_blank">IN SRF nº 341/2003</a>, a partir da qual a Receita Federal passou a receber montantes globais mensalmente movimentados por pessoas físicas e jurídicas, nos termos do <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp105.htm" target="_blank">art. 5º da Lei Complementar nº 105, de 2001</a>. À época, por discricionariedade, focou-se em operações de cartões de crédito, dispensando-se movimentações realizadas por cartões de débito ou de private label. A evolução tecnológica e as novas práticas comerciais foram alguns dos fatores que indicaram a conveniência de a Receita Federal atualizar a obrigação acessória, descontinuando a Decred. A e-Financeira, obrigação de tecnologia contemporânea, incorporou um módulo específico para as declarações anteriormente prestadas pela antiga Decred, passando-se a captar dados de um maior número de declarantes, alcançado valores recebidos por meio dos instrumentos de pagamento, operações hoje comumente utilizadas no mercado.</p><p>Tal como os demais módulos da e-Financeira, também no módulo de repasse previsto no capítulo V da IN da e-Financeira respeita os contornos legais, inexistindo qualquer elemento que permita identificar a origem ou a natureza dos gastos efetuados.</p><p>Por exemplo, quando uma pessoa realiza uma transferência de sua conta para um terceiro, seja enviando um PIX ou fazendo uma operação do tipo DOC ou TED, não se identifica, na e-Financeira, para quem ou a que título esse valor individual foi enviado. Ao final de um mês, somam-se todos os valores que saíram da conta, inclusive saques e, se ultrapassado o limite de R$ 5 mil para uma pessoa física, ou de R$15 mil para uma pessoa jurídica, a instituição financeira prestará essa informação à Receita Federal.</p><p>Da mesma forma que ocorre com o somatório dos valores que saem de uma conta, há, também, a contabilização dos valores que nela ingressam. Na e-Financeira, não se individualiza sequer a modalidade de transferência, se por PIX ou outra. Todos os valores são consolidados e devem ser informados os totais movimentados a débito e a crédito numa dada conta.</p><p>Haja vista a priorização do gerenciamento de risco, os limites mensais de obrigatoriedade foram atualizados. Antes, vigia o limite mensal de R$ 2 mil para as movimentações de pessoas físicas e de R$ 6 mil no caso de pessoas jurídicas. Não há, contudo, impedimento de valores inferiores aos limites da norma serem enviados pelas instituições declarantes.</p><p>O novo módulo da e-Financeira captará valores mensais para as operações realizadas a partir de janeiro de 2025. Os dados referentes ao primeiro semestre deverão ser apresentados até agosto de 2025. Os referentes ao segundo semestre, até fevereiro de 2026.</p><p>As alterações na e-Financeira foram previamente discutidas com entidades interessadas ao longo de 2024 e comunicadas em setembro de 2024 (<a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/setembro/receita-atualiza-regras-da-e-financeira-e-amplia-obrigatoriedade-para-novas-entidades" target="_blank">Receita atualiza regras da e-Financeira e amplia obrigatoriedade para novas entidades — Receita Federal</a>).</p><p>No <a href="http://sped.rfb.gov.br/pagina/show/7444" target="_blank">link e-Financeira - Apresentação das alterações para 2025</a> consta apresentação realizada em live com mais de 700 participantes no dia 4 de junho de 2024, na qual estão os detalhes da evolução normativa.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/fazenda/pt-br/canais_atendimento/imprensa/notas-a-imprensa/2025/janeiro/receita-federal-esclarece-evolucao-na-e-financeira" target="_blank">Receita Federal</a> <br/>Publicada em 07/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

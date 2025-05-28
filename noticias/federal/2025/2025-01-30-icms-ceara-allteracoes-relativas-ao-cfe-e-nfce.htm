@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS CE - Decreto nº 36.417/2025 - Alterações relativamente  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/01/2025 | ICMS CE - Decreto nº 36.417/2025 - Alterações relativamente ao CF-e e NFC-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Estado do Ceará, realizou algumas alterações no conjunto de normas que consolidam e regulamentam as obrigações acessórias dos contribuintes.</p><p>Dentre as principais mudanças, destacam-se:</p><ul>
+<li><b>Obrigatoriedade do cumprimento:</b> Independentemente de problemas técnicos, os contribuintes permanecem obrigados a cumprir todas as obrigações acessórias;</li>
+<li><b>Ampliação da emissão de CF-e:</b> A partir de 1º de fevereiro de 2025, todos os contribuintes poderão emitir o Cupom Fiscal Eletrônico (CF-e), inclusive aqueles já sujeitos a essa obrigação nos termos do Decreto nº 35.061/2022;</li>
+<li><b>Restrição ao uso do módulo fiscal eletrônico:</b> A partir de 1º de janeiro de 2026, fica vedada a utilização do módulo fiscal eletrônico para emissão do CF-e;</li>
+<li><b>Contingência da NFC-e:</b> Em situações de indisponibilidade do sistema da Secretaria da Fazenda para emissão da Nota Fiscal de Consumidor Eletrônico (NFC-e), o contribuinte poderá utilizar, como procedimentos de contingência:<ul style="list-style-type: circle;"><li>O Módulo Fiscal Eletrônico (MF-e);</li></ul><ul style="list-style-type: circle;"><li>A NFC-e off-line (tpEmis = 9), conforme as especificações do Ajuste SINIEF nº 19/2016 e do Manual de Orientação do Contribuinte.</li></ul></li>
+</ul><p>É importante ressaltar que as alterações introduzidas entrarão em vigor a partir de <b>1º de fevereiro de 2025</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://sefazlegis.sefaz.ce.gov.br/api/openFile?id=8ede79ea-72c0-44bd-aeee-9a7d0d5b9428" target="_blank">Decreto nº 36.417/2025</a> <br/>Publicada em 23/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

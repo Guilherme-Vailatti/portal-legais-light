@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DMED - ATO COFIS nº 36/2024 - Programa Gerador da DMED 2025  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | DMED - ATO COFIS nº 36/2024 - Programa Gerador da DMED 2025 disponível para download</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Programa Gerador da Declaração de Serviços Médicos e de Saúde (PGD Dmed 2025), aprovado pelo <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=141632" target="_blank">Ato Declaratório Executivo Cofis nº 36, de 18 de novembro de 2024</a>, foi antecipadamente disponibilizado para <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/download/pgd/dmed" target="_blank">download</a> no site da Receita Federal.</p><p>O PGD Dmed 2025 deve ser utilizado para a entrega de declarações originais e retificadoras relativas aos anos-calendário de 2019 a 2024, nos casos de situação normal, e de 2019 a 2025, nos casos de extinção de pessoa jurídica decorrente de liquidação, incorporação, fusão ou cisão total, devendo ser observado o leiaute aplicável aos campos, registros e arquivos da Dmed 2025, publicado por meio do <a href="http://normas.receita.fazenda.gov.br/sijut2consulta/link.action?idAto=141485" target="_blank">Ato Declaratório Executivo Cofis nº 34, de 7 de novembro de 2024</a>.</p><p>A Receita Federal esclarece, no entanto, que a antecipação do Programa referente ao exercício de 2025 não altera a data de início de transmissão da Dmed 2025, a ser liberada a partir do dia 2 de janeiro de 2025.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2024/dezembro/programa-gerador-da-dmed-2025-disponivel-para-download" target="_blank">ATO COFIS nº 36/2024</a> <br/>Publicada em 19/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

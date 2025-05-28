@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - Nota Técnica nº 002, v. 1.00 - Projeto  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/03/2025 | Reforma Tributária - Nota Técnica nº 002, v. 1.00 - Projeto Reforma Tributária do Consumo - Documentos Fiscais - Nova versão da NFS-e</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi publicado no último dia 28 de fevereiro, a nova versão da Nota Técnica nº 002, versão 1.00, que trata das adequações do layout da NFS-e, dado o contexto da Reforma Tributária do Consumo.</p><p>A nova Nota Técnica detalha a Nota Técnica 001/2024 sobre a Nota Fiscal de Serviço Eletrônica (NFS-e), as mudanças com campos destacados em vermelho, visam adaptar a NFS-e ao novo padrão. Confira a seguir as principais alterações:</p><ul>
+<li>Grupo de informações de compras governamentais relacionadas aos tributos IBS / CBS;</li>
+<li>Grupo de Informações do Crédito Presumido referente ao IBS;</li>
+<li>Grupo referente a compras governamentais;</li>
+<li>Grupo de Informações relativas aos valores do IBS Estadual;</li>
+<li>Grupo de Informações relativas aos valores do IBS Municipal;</li>
+<li>Grupo de Informações relativas aos valores da CBS.</li>
+</ul><p>Confira a NT completa <a href="https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/nota-tecnica-se-cgnfs-e-no-002-de-28-de-fevereiro-de-2025/view" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica" target="_blank">Nota Técnica nº 002, versão 1.00</a> <br/>Publicada em 28/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

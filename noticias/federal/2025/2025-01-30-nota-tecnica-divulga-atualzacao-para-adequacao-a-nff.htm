@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>NF-e NFC-e - Nota Técnica nº 2021.002, v. 1.12 - Divulga atu - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>30/01/2025 | NF-e NFC-e - Nota Técnica nº 2021.002, v. 1.12 - Divulga atualização para adequação à NFF</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram realizadas alterações relacionadas a série da NFF (000-999) e ajuste da lei de formação da série na chave de acesso da NFF.</p><p>O objetivo do Regime Especial Nota Fiscal Fácil (NFF) é tornar o processo de emissão de documentos fiscais eletrônicos, de vendas de mercadorias e prestação de serviços de transportes, mais simples para os contribuintes, deixando a complexidade trazida pela legislação fiscal sob a responsabilidade de um sistema centralizado, disponível no Portal Nacional da NFF, que a partir de sua “inteligência fiscal” possibilita uma emissão fácil e completamente intuitiva do documento.</p><p style="font-weight: bold;">Cronograma de Implantação:</p><ul>
+<li>Teste: Imediato;</li>
+<li>Produção: Imediato.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.nfe.fazenda.gov.br/portal/informe.aspx?ehCTG=false&amp;Informe=E5OaFq7+IWQ=" target="_blank">Nota Técnica nº 2021.002, versão 1.12</a> <br/>Publicada em 28/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

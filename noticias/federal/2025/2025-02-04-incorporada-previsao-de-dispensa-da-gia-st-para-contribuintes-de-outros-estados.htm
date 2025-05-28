@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>ICMS SP - Decreto nº 69.338/2025 - Incorporada previsão de d - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/02/2025 | ICMS SP - Decreto nº 69.338/2025 - Incorporada previsão de dispensa da GIA-ST para contribuintes de outros Estados</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foram realizadas alterações no Regulamento de ICMS de São Paulo, no que se refere à apresentação da Guia Nacional de Informação e Apuração do ICMS Substituição Tributária (GIA-ST).</p><p>De acordo com as novas disposições, o contribuinte estabelecido em outra Unidade da Federação que efetuar a entrega da EFD ICMS/IPI, seja por opção ou por obrigatoriedade, ficará dispensado da apresentação da GIA-ST, a partir da data a ser divulgada por ato normativo da Sefaz/SP.</p><p>Ressalta-se que com a dispensa dessa obrigação acessória, o valor do ICMS-ST a recolher ou do saldo credor a ser transportado para o período seguinte será declarado pelo contribuinte apenas no livro Registro de Apuração do ICMS, ou seja, no registro E200 e filhos da EFD ICMS/IPI.</p><p>O ato também altera o art. 282 do RICMS, que determina que a substituição tributária é declarada de acordo com forma e prazo definidos por ato da Sefaz/SP, deixando de ser observado, no que se refere aos prazos, o art. 254 do RICMS.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://legislacao.fazenda.sp.gov.br/Paginas/Decreto-69338-de-2025.aspx" target="_blank">Decreto nº 69.338/2025</a> <br/>Publicada em 31/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

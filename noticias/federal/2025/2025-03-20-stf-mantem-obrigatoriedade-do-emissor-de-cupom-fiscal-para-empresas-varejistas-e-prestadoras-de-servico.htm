@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - STF mantém obrigatoriedade do Emissor de Cupom Fis - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/03/2025 | Federal - STF mantém obrigatoriedade do Emissor de Cupom Fiscal para empresas varejistas e prestadoras de serviço</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Supremo Tribunal Federal (STF) validou lei federal que criou a obrigatoriedade do uso do Emissor de Cupom Fiscal (ECF) para empresas varejistas e prestadoras de serviço. A decisão unânime foi tomada no julgamento da Ação Direta de Inconstitucionalidade <a href="https://portal.stf.jus.br/processos/detalhe.asp?incidente=2234806" target="_blank">(ADI) 3270</a>, proposta pela Confederação Nacional do Comércio (CNC).</p><p>O ECF é um dispositivo de automação comercial que emite documentos fiscais e controla os valores de operações de circulação de mercadorias ou prestação de serviços. A exigência está prevista na Lei 9.532/1997 e no Convênio ECF 1/1998 e visa à comprovação de custos e despesas operacionais no âmbito do Imposto de Renda (IR) e da Contribuição Social sobre o Lucro Líquido (CSLL). Entre outros pontos, a entidade alegava que a medida violaria a competência tributária dos estados e do Distrito Federal para instituir imposto sobre as operações de venda ou revenda de bens a varejo por meio do ICMS.</p><p>Em seu voto, o relator, ministro Nunes Marques, afastou esses argumentos. Para ele, não há invasão da competência dos estados, do DF e dos municípios, pois a lei criou um dever instrumental para fiscalizar e combater a sonegação de tributos federais. A norma estabelece quais dados os documentos emitidos pelo ECF devem conter, sem fazer referência ao ICMS (imposto estadual) ou ao ISS (imposto municipal).</p><p>O relator também assinalou que o equipamento facilitou a fiscalização dos tributos e substituiu meios ultrapassados de emissão de documentos fiscais. Em relação à privacidade, Marques relembrou que o fato de os dados serem sigilosos não significa que não possam ser obtidos pela fiscalização tributária, desde que a medida respeite os limites da lei e não seja acessível ao público geral.</p><p>A ADI 3270 foi julgada na sessão virtual encerrada em 28/02.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://noticias.stf.jus.br/postsnoticias/stf-mantem-obrigatoriedade-do-emissor-de-cupom-fiscal-para-empresas-varejistas-e-prestadoras-de-servico/" target="_blank">Portal STF</a> <br/>Publicada em 17/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

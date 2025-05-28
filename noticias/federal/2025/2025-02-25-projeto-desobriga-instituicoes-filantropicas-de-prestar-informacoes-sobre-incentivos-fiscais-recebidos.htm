@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - Projeto de Lei nº 4.252/24 - Projeto de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/02/2025 | Congresso Nacional - Projeto de Lei nº 4.252/24 - Projeto desobriga instituições filantrópicas de prestar informações sobre incentivos fiscais recebidos</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Projeto de Lei 4252/24 dispensa instituições de educação e de assistência social sem fins lucrativos de prestarem informações à Receita Federal sobre os benefícios tributários recebidos. O texto altera a Lei 14.973/24, que, entre outros assuntos, regulamenta a declaração de incentivos fiscais.</p><p>Atualmente, a lei exige que as empresas informem à Receita Federal, por meio de declaração eletrônica, quais incentivos, renúncias, benefícios e imunidades tributárias estão recebendo, juntamente com o valor do crédito.</p><p>Autor do projeto, o deputado Evair Vieira de Melo (PP-ES) argumenta que impor condições adicionais para entidades filantrópicas acessarem benefícios fiscais acarreta custos administrativos elevados para instituições que frequentemente operam com orçamentos restritos.</p><p>“O cumprimento dessas exigências demanda pessoal especializado, tempo e recursos extras, o que acaba direcionando esforços que poderiam ser mais bem aplicados diretamente em suas atividades-fim", afirma o parlamentar.</p><p>"Dessa forma, a sobrecarga burocrática limita o potencial das instituições de educação e assistência social, que ajudam a suprir lacunas em regiões e setores onde a presença do poder público é limitada ou insuficiente”, alerta Vieira de Melo.</p><p style="font-weight: bold;">Próximas etapas</p><p>A proposta será analisada, em caráter conclusivo, pelas comissões de Educação; de Previdência, Assistência Social, Infância, Adolescência e Família; de Finanças e Tributação; e de Constituição e Justiça e de Cidadania.</p><p>Para virar lei, o texto precisa ser aprovado pela Câmara e pelo Senado.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1130421-projeto-desobriga-instituicoes-filantropicas-de-prestar-informacoes-sobre-incentivos-fiscais-recebidos/" target="_blank">Congresso Nacional</a> <br/>Publicada em 21/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

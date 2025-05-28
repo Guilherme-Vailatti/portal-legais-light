@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Reforma Tributária - PLC n° 63/2025 - Projeto regulamenta a  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/04/2025 | Reforma Tributária - PLC n° 63/2025 - Projeto regulamenta a CBS para criar o crédito presumido para o setor de serviços</h1>
+</div>
+<div class="noticia-corpo">
+<p>O projeto propõe alterar a lei que regulamenta a Contribuição sobre Bens e Serviços (CBS) para criar um crédito presumido para o setor de serviços. Isso significa que empresas de serviços poderão deduzir parte do valor da CBS a pagar, com base em um percentual da alíquota padrão, para compensar a falta de créditos tributários sobre seus principais custos, como a folha de pagamento.</p><p>As possíveis consequências desse projeto são diversas:</p><ul>
+<li>Para as empresas do setor de serviços, haverá uma redução na carga tributária, o que pode melhorar a competitividade e ajudar a manter empregos;</li>
+<li>Para os trabalhadores do setor de serviços, a medida pode aumentar a segurança no emprego, já que as empresas terão menos pressão tributária sobre seus custos;</li>
+<li>Para a economia em geral, a proposta pode estimular o crescimento do setor de serviços, que é uma parte significativa do PIB brasileiro, contribuindo para o desenvolvimento econômico do país.</li>
+</ul><p>Para mais informações acesse <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/167577#:~:text=Ementa: Altera o art.,CBS ao setor de serviços.&amp;text=O projeto propõe alterar a,para o setor de serviços." target="_blank">aqui</a>.<br/></p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/167577#:~:text=Ementa: Altera o art.,CBS ao setor de serviços.&amp;text=O projeto propõe alterar a,para o setor de serviços." target="_blank">Projeto de Lei Complementar n° 63/2025</a> <br/>Publicada em 17/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DIRF - Receita Federal disponibiliza o último perguntas e re - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>06/02/2025 | DIRF - Receita Federal disponibiliza o último perguntas e respostas da DIRF 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Declaração do Imposto sobre a Renda Retido na Fonte - Dirf é a declaração feita pela FONTE PAGADORA, com o objetivo de informar à Secretaria Especial da Receita Federal do Brasil, entre outras informações estabelecidas por ato normativo:</p><ul>
+<li>Os rendimentos pagos a pessoas físicas e jurídicas domiciliadas no País, inclusive os isentos e não tributáveis nas condições em que a legislação específica;</li>
+<li>O valor do imposto sobre a renda e/ou contribuições retidos na fonte, dos rendimentos pagos ou creditados para seus beneficiários;</li>
+<li>O pagamento, crédito, entrega, emprego ou remessa a residentes ou domiciliados no exterior, ainda que não tenha havido a retenção do imposto, inclusive nos casos de isenção ou alíquota zero;</li>
+<li>Os pagamentos a planos de assistência à saúde – coletivo empresarial, no caso de beneficiário pessoa física;</li>
+<li>Os valores relativos a deduções.</li>
+</ul><p>Conforme estabelecido pelo § 1º, do art. 3º, da Instrução Normativa RFB nº 2.043, de 12 de agosto de 2021, a Dirf, será integralmente substituída em relação aos fatos geradores ocorridos a partir de 1º de janeiro de 2025 pelas escriturações EFD-Reinf e eSocial.</p><p>Em razão do exposto, o Programa Gerador da Dirf 2025 (PGD Dirf 2025) deve ser utilizado para apresentação das informações relativas aos fatos geradores ocorridos durante o ano-calendário de 2024, independentemente de terem sido prestadas as mesmas informações por meio das escriturações mencionadas.</p><p>As informações relativas aos fatos ocorridos durante o ano-calendário de 2025 deverão ser prestadas apenas por meio das escriturações EFD-Reinf e eSocial, conforme disposto nos incisos I, II e III, do § 1º, do art. 3º, da Instrução Normativa RFB nº 2.043, de 2021, inclusive no que se refere aos eventos relativos a extinção de pessoa jurídica decorrente de liquidação, incorporação, fusão ou cisão total, de saída definitiva do país, e de encerramento de espólio.</p><p>A Dirf 2025, relativa ao ano-calendário de 2024, deverá ser entregue até as <b>23h59min59s</b> (vinte e três horas, cinquenta e nove minutos e cinquenta e nove segundos), horário de Brasília, do dia <b>28 de fevereiro de 2025</b>.</p><p>Acesse o Perguntas e Resposta <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirf/dirf2025-perguntas-respostas-v20241230.pdf/view" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/perguntas-e-respostas/dirf/dirf2025-perguntas-respostas-v20241230.pdf/view" target="_blank">Receita Federal</a> <br/>Publicada em 30/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Congresso Nacional - PL nº 1.310/2024 - Comissão aprova proj - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/02/2025 | Congresso Nacional - PL nº 1.310/2024 - Comissão aprova projeto que atualiza tributos que deverão ser informados em nota fiscal</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Comissão de Indústria, Comércio e Serviços da Câmara dos Deputados aprovou, em novembro de 2024, proposta que atualiza os tributos que deverão ser informados na nota fiscal de venda de mercadorias e serviços.</p><p>O texto altera a <a href="https://www2.camara.gov.br/legin/fed/lei/2012/lei-12741-8-dezembro-2012-774745-norma-pl.html" target="_blank">Lei 12.741/12</a>, que determina que todos os tributos incidentes na venda sejam listados na nota fiscal. A proposta altera essa lista, em virtude da aprovação da reforma tributária.</p><p>O Imposto sobre a Circulação de Mercadoria e Serviços (ICMS) será trocado pelo Imposto sobre Bens e Serviços (IBS); o Imposto sobre Serviços (ISS) será substituído pelo Imposto de Importação; e será incluída a Contribuição sobre Bens e Serviços para o financiamento da seguridade social.</p><p>Além disso, o texto determina que as notas fiscais, físicas ou eletrônicas, também incluam as seguintes informações do ano anterior:</p><ul>
+<li>percentual da arrecadação fiscal da União com os tributos listados no Produto Interno Bruto (PIB); e</li>
+<li>percentual do gasto com folha de pagamento da União, do estado e do município (incluindo pessoal ativo, aposentados e pensionistas).</li>
+</ul><p>O texto aprovado é o substitutivo do relator, deputado Jorge Goetten (Republicanos-SC), ao Projeto de Lei 1310/24, do deputado Kim Kataguiri (União-SP).</p><p>“A proposta atualiza a lei em relação às recentes PECs da reforma tributária, especialmente o IBS, o que é positivo”, avaliou o relator.</p><p>Jorge Goetten retirou do projeto original a previsão de que as notas fiscais trouxessem, em destaque, a mensagem: “O Estado brasileiro gasta (percentual)% da sua arrecadação com o funcionalismo público”.</p><p>Para o relator, “os valores totais da arrecadação fiscal e das despesas com o funcionalismo informam pouco o contribuinte sobre o real peso dos impostos”.</p><p>“Além de ser um valor compartilhado com todos os outros eleitores/contribuintes, é um número muito grande, na faixa dos bilhões/trilhões de reais (em 2023 foram R$ 2,3 trilhões só as receitas federais por exemplo)", argumentou o relator. "[Isso],  além de ocupar muito espaço na nota fiscal, é um número cuja dimensão é mal capturada onde interessa: no bolso do contribuinte”, disse Goetten.</p><p>Para o deputado, no ato de compra faz sentido esclarecer o peso dos tributos que incidem sobre os bens e serviços. Por isso, ele propõe que a mensagem em destaque na nota fiscal seja: “O Estado brasileiro arrecada (percentual)% em tributos sobre bens e serviços como os que você acabou de comprar como proporção do que se produz e gasta (percentual)% daqueles com despesas com o funcionalismo público”.</p><p>O projeto será analisado em caráter conclusivo pelas comissões de Defesa do Consumidor; de Administração e Serviço Público; de Finanças e Tributação; e de Constituição e Justiça e de Cidadania.</p><p>Para virar lei, a proposta precisa ser aprovada pelos deputados e pelos senadores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-federal.html">Federal</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.camara.leg.br/noticias/1128811-comissao-aprova-projeto-que-atualiza-tributos-que-deverao-ser-informados-em-nota-fiscal/" target="_blank">Projeto de Lei nº 1.310/2024</a> <br/>Publicada em 29/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
