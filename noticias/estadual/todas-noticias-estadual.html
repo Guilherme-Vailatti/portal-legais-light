@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Notícias Estadual</title>
+<link href="../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.noticia-lista {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+}
+
+#filtro-ano {
+  display: block;
+  margin: 0 auto 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+ul#lista-noticias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.noticia-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #3e8e41;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.noticia-item:hover {
+  border-left-color: #2c6b31;
+  background-color: #f4f4f4;
+}
+
+.noticia-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  display: block;
+}
+
+.noticia-item a:hover {
+  text-decoration: underline;
+  color: #2c6b31;
+}
+
+label[for="filtro-ano"] {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .noticia-item {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+
+
+<body class="pagina-listagem">
+  <div data-include="header"></div>
+
+  <section class="noticia-lista">
+    <h1>Todas as Notícias - Estadual</h1>
+    <label for="filtro-ano">Filtrar por ano:</label>
+    <select id="filtro-ano">
+      <option value="todos">Todos</option>
+    </select>
+    <ul id="lista-noticias"></ul>
+  </section>
+
+  <div data-include="footer"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+  const include = async (attr) => {
+    const el = document.querySelector(`[data-include="${attr}"]`);
+    if (!el) return;
+    const html = await fetch(`../partials/${attr}.html`).then(r => r.text());
+    el.innerHTML = html;
+  };
+
+  await include('header');
+  await include('footer');
+
+  const container = document.getElementById('lista-noticias');
+  const seletorAno = document.getElementById('filtro-ano');
+  const searchInput = document.querySelector('.search-box');
+  const searchButton = document.querySelector('.search-button');
+
+  const params = new URLSearchParams(window.location.search);
+  const termoInicial = params.get('busca');
+  if (termoInicial && searchInput) {
+    searchInput.value = termoInicial;
+  }
+
+  let todasNoticias = [];
+
+  try {
+    const anos = ['2023', '2024', '2025'];
+    for (const ano of anos) {
+      const noticias = await fetch(`${ano}/index.json`).then(r => r.json());
+      noticias.forEach(n => n.temaSlug = 'estadual');
+      todasNoticias.push(...noticias);
+    }
+
+    const anosUnicos = [...new Set(todasNoticias.map(n => n.data.split('/')[2]))].sort((a, b) => b - a);
+    anosUnicos.forEach(ano => {
+      const opt = document.createElement('option');
+      opt.value = ano;
+      opt.textContent = ano;
+      seletorAno.appendChild(opt);
+    });
+
+    const destacarTermo = (texto, termo) => {
+      const regex = new RegExp(`(${termo})`, 'gi');
+      return texto.replace(regex, '<mark>$1</mark>');
+    };
+
+    const renderNoticias = (anoFiltro, termo = '') => {
+      container.innerHTML = '';
+      todasNoticias
+        .filter(n =>
+          (anoFiltro === 'todos' || n.data.endsWith(anoFiltro)) &&
+          (termo === '' || (n.data + n.titulo).toLowerCase().includes(termo))
+        )
+        .sort((a, b) => new Date(b.data.split('/').reverse().join('-')) - new Date(a.data.split('/').reverse().join('-')))
+        .forEach(n => {
+          const [ano, id] = n.id.split('/');
+          const link = `${ano}/${id}.htm`;
+          const item = document.createElement('li');
+          item.classList.add('noticia-item');
+          const tituloFormatado = termo ? destacarTermo(`${n.data} - ${n.titulo}`, termo) : `${n.data} - ${n.titulo}`;
+          item.innerHTML = `<a href="${link}">${tituloFormatado}</a>`;
+          container.appendChild(item);
+        });
+    };
+
+    renderNoticias('todos', termoInicial?.toLowerCase() || '');
+
+    seletorAno.addEventListener('change', () => {
+      renderNoticias(seletorAno.value, searchInput?.value.trim().toLowerCase());
+    });
+
+    const executarBusca = () => {
+      renderNoticias(seletorAno.value, searchInput?.value.trim().toLowerCase());
+    };
+
+    searchButton?.addEventListener('click', executarBusca);
+    searchInput?.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') executarBusca();
+    });
+
+  } catch (err) {
+    console.error('Erro ao carregar notícias:', err);
+  }
+});
+
+  </script>
+</body>
+</html>
