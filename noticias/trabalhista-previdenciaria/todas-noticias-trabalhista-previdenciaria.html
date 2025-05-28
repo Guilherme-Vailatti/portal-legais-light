@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Notícias Trabalhista e Previdenciária</title>
-  <link rel="stylesheet" href="../partials/style-noticia.css">
+  <link rel="stylesheet" href="partials/style-noticia.css">
   <style>
 
 body {
@@ -103,7 +103,7 @@ label[for="filtro-ano"] {
   const include = async (attr) => {
     const el = document.querySelector(`[data-include="${attr}"]`);
     if (!el) return;
-    const html = await fetch(`../partials/${attr}.html`).then(r => r.text());
+    const html = await fetch(`partials/${attr}.html`).then(r => r.text());
     el.innerHTML = html;
   };
 
