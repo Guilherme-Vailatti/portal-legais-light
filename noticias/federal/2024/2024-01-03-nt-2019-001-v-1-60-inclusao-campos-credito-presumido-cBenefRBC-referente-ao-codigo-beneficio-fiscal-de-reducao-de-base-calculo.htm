@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NF-e NFC-e  - NT 2019.001 versão 1.60 – Inclusão de campos p - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>03/01/2024 | NF-e NFC-e  - NT 2019.001 versão 1.60 – Inclusão de campos para crédito presumido, e do campo cBenefRBC referente ao código de benefício fiscal de redução de base de cálculo</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Publicado, no portal NF-e em 28/12/2023, a versão 1.60 da NT 2019.001, com <b>Inclusão de campos para as informações do crédito presumido</b> e <b>Inclusão de campo para código de benefício fiscal de redução de base de cálculo dentro do CST51 quando acumular com o diferimento</b>.</p><p>Abaixo, alterações promovidas pela versão 1.60 da NT 2019.001:</p><ul>
+<li>Inclusão de campos para as informações do crédito presumido</li>
+</ul><p>No <b>Grupo I. Produtos e Serviços da NF-e</b> foi incluído um grupo opcional contendo campos para as informações do crédito presumido, que serão utilizados a critério de cada UF.</p><p>
+<img src="../../../Resources/Images/2024-01-03-nt-2019-001-v-1-60-inclusao-campos-credito-presumido-cBenefRBC-referente-ao-codigo-beneficio-fiscal-de-reducao-de-base-calculo.jpg" style="max-width: 100%;"/>
+</p><ul>
+<li>Inclusão de campo para código de benefício fiscal de redução de base de cálculo dentro do CST51 quando acumular com o diferimento</li>
+</ul><p>No <b>Grupo N07. Grupo Tributação do ICMS= 51</b> foi incluído um campo chamado cBenefRBC, para informar o código de benefício fiscal de redução de base de cálculo dentro do CST51 quando acumular com o diferimento. O campo será utilizado a critério de cada UF.</p><p>
+<img src="../../../Resources/Images/2024-01-03-nt-2019-001-v-1-60-inclusao-campos-credito-presumido-cBenefRBC-referente-ao-codigo-beneficio-fiscal-de-reducao-de-base-calculo-2.jpg" style="max-width: 100%;"/>
+</p><p><b>Cronograma de Implantação:</b>
+</p><ul>
+<li>Ambiente de homologação: 04/03/2024</li>
+<li>Ambiente de produção: 01/04/2024</li>
+</ul><p>Para download da NT 2019.001 versão 1.60 em sua integra, <a href="../../../Resources/Documentos para download/2024/NT2019_001_v1_60 - Regras de Validação.pdf">clique aqui</a>.</p><p>Fonte: <a href="https://www.camara.leg.br/noticias/1026419-congresso-derruba-veto-a-desoneracao-da-folha-de-pagamento-para-17-setores-da-economia-acompanhe/" target="_blank">Portal da NF-e</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=04BIflQt1aY=' target='_blank'>NT 2019.001 versão 1.60</a> <br>Publicada em 28/12/2023</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>
