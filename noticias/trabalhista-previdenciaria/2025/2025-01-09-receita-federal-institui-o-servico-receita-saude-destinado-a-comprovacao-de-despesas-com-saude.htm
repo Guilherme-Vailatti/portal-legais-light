@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>IRPF - Instrução Normativa RFB nº 2.240/2024 - Receita Feder - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | IRPF - Instrução Normativa RFB nº 2.240/2024 - Receita Federal institui o serviço Receita Saúde, destinado à comprovação de despesas com saúde</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.240/2024 instituiu o Recibo Eletrônico de Serviços de Saúde (Receita Saúde), documento hábil à comprovação de despesas com saúde para fins do disposto no art. 97 da Instrução Normativa RFB nº 1.500/2014 (dedução de despesas médicas na Declaração de Ajuste Anual).</p><p>Destacamos a seguir os principais aspectos relacionados à esse novo serviço:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.240-de-11-de-dezembro-de-2024-601125755" target="_blank">Instrução Normativa RFB nº 2.240/2024</a> <br/>Publicada em 08/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

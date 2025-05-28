@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Crédito do Trabalhador: orientações sobre o em - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/04/2025 | Trabalhista - Crédito do Trabalhador: orientações sobre o empréstimo consignado no eSocial</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Medida Provisória nº 1.292, de 12 de Março de 2025, alterou a Lei nº 10.820, de 17 de dezembro de 2003, para instituir o programa Crédito do Trabalhador.</p><p>Veja as principais orientações sobre os descontos das parcelas de empréstimo consignado do trabalhador no eSocial:</p><p>Para saber quais trabalhadores contrataram empréstimo consignado, os valores que devem ser descontados de seus salários em cada competência e demais informações relacionadas, o empregador deve acessar o <a href="https://servicos.mte.gov.br/spme-v2#/login" target="_blank">Portal Emprega Brasil</a> e consultar o relatório detalhado disponível.</p><p>Caso haja valores a serem descontados a título de parcela do crédito com consignação em folha de pagamento, o empregador deverá lançar essas informações nos eventos remuneratórios (S-1200, S-2299 ou S-2399) em rubrica cadastrada com natureza 9253 (evento S-1010). Os códigos de incidência de FGTS, contribuição previdenciária e imposto de renda da rubrica devem ser preenchidos com [31], [00] e [9], respectivamente.</p><p>Ao enviar o evento de remuneração com a referida rubrica, o empregador deverá indicar que se trata de desconto a título de empréstimo consignado, bem como informar o código da instituição financeira e o número do contrato referente ao empréstimo.</p><p>A partir dessa informação, o valor descontado irá constar no evento S-5003 e será incluído na guia de recolhimento do FGTS Digital.</p><p>As retificações ou alterações referentes ao empréstimo consignado no eSocial não terão efeito no FGTS Digital se o débito já estiver vencido ou se já estiver sido pago com os valores originalmente declarados. Neste caso, eventuais ajustes de pagamento deverão ser realizados diretamente com as instituições financeiras, seguindo suas orientações.</p><p>Para mais informações, consulte as <a href="https://www.gov.br/esocial/pt-br/empresas/perguntas-frequentes/perguntas-frequentes-producao-empresas-e-ambiente-de-testes" target="_blank">perguntas frequentes</a>.</p><p>Os valores de empréstimos consignados contratados por trabalhadores domésticos serão recolhidos via DAE do eSocial (mensal e rescisório). O eSocial buscará as informações diretamente na CTPS Digital e incluirá automaticamente a rubrica de desconto na folha de pagamento do trabalhador. O empregador deverá confirmar os valores e realizar a retenção no pagamento do trabalhador.</p><p>Em caso de saldo insuficiente para a efetivação integral do desconto, o sistema processará automaticamente um desconto parcial e informará o montante total que seria devido. Esta notificação permitirá ao empregador informar ao empregado a não realização do desconto ou a efetivação de desconto parcial.</p><p>Para mais informações, consulte as <a href="https://www.gov.br/esocial/pt-br/empregador-domestico/perguntas-frequentes" target="_blank">perguntas frequentes</a>.</p><p>Os valores de empréstimos consignados contratados por trabalhadores de MEI e de Segurados Especiais serão recolhidos via DAE Mensal do eSocial, quando for utilizado o módulo simplificado, seguindo a mesma lógica do empregador doméstico. A única diferença ocorre no desconto de empréstimo consignado em caso de desligamento do trabalhador.</p><p>Quando o trabalhador for demitido por um motivo que não permita o saque do FGTS (pedido de demissão, por exemplo), os valores do FGTS e do empréstimo consignado serão incluídos na guia mensal do DAE do eSocial, referente ao mês do desligamento.</p><p>Quando um trabalhador de MEI ou Segurado Especial é demitido por um motivo de rescisão que gere multa ou permita o saque do FGTS, o empregador deverá acessar o FGTS Digital para gerar a guia rescisória com os valores de FGTS sobre o mês da rescisão, 13º proporcional, aviso prévio indenizado e multa do FGTS. Nesse caso, os valores do empréstimo consignado também seguirão o mesmo vencimento do FGTS e serão incluídos na guia do FGTS Digital.</p><p>Para mais informações, consulte as <a href="https://www.gov.br/esocial/pt-br/microempreendedor-individual/perguntas-frequentes" target="_blank">perguntas frequentes</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/credito-do-trabalhador-orientacoes-sobre-o-emprestimo-consignado-no-esocial" target="_blank">Portal eSocial</a> <br/>Publicada em 08/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

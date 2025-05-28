@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - Liberado o envio de eventos de folha para o eSocia - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>15/01/2025 | eSocial - Liberado o envio de eventos de folha para o eSocial após publicação de portaria que reajusta valores previdenciários em 2025</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Foi publicada a Portaria Interministerial MPS/MF nº 6, de 10 de janeiro de 2025, do Ministério da Previdência Social e do Ministério da Fazenda, que divulga a tabela de faixas para atribuição de alíquotas previdenciárias, bem como limite de salários de contribuição ao INSS, além de reajustar os benefícios pagos pelo Instituto Nacional do Seguro Social (INSS) e os demais valores constantes do Regulamento da Previdência Social (RPS).</p><p>A cota de salário-família passou a ter o valor de R$ 65,00, sendo paga aos segurados com remuneração mensal não superior a R$ 1.906,04.</p><p>A publicação da Portaria era aguardada para que fosse desbloqueado o envio dos eventos periódicos de janeiro/2025 (folhas de pagamento) ao eSocial, uma vez que os cálculos realizados pelo sistema se baseiam nesses valores. Com isso, os empregadores já podem enviar os eventos de remuneração ao eSocial referentes à competência janeiro/2025.</p><p>Confira os novos valores das faixas de contribuição:</p><ul>
+<li>MÓDULOS SIMPLIFICADOS (Doméstico, Segurado Especial e Microempreendedor Individual)</li>
+</ul><p>Está liberada a folha de janeiro/2025 para o Módulo Doméstico do eSocial, já atualizado inclusive com o novo valor do salário-família.</p><p style="font-weight: bold;">ATENÇÃO:</p><ul>
+<li>EVENTOS DE DESLIGAMENTO (S-2299) E TÉRMINO DE TSVE (S-2399)</li>
+</ul><p>A transmissão dos eventos de Desligamento (S-2299) e Término do Trabalhador Sem Vínculo de Emprego (S-2399) não foi bloqueada. Como a portaria com as novas alíquotas foi publicada com vigência retroativa a 01/01/2025, cabe ao empregador realizar, antes do fechamento da folha do mês de janeiro/2025, a retificação dos eventos que foram transmitidos antes da implantação da alteração, para que os cálculos passem a contemplar os valores atualizados pela portaria.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/liberado-o-envio-de-eventos-de-folha-para-o-esocial-apos-publicacao-de-portaria-que-reajusta-valores-previdenciarios-em-2025" target="_blank">Portal eSocial</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/liberado-o-envio-de-eventos-de-folha-para-o-esocial-apos-publicacao-de-portaria-que-reajusta-valores-previdenciarios-em-2025' target='_blank'>Portal eSocial</a> <br>Publicada em 13/01/2025</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

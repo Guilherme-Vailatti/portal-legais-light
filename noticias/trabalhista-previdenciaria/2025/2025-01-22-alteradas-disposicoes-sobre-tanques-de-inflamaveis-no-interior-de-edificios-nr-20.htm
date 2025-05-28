@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 60/2025 - Alteradas disposiçõe - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>22/01/2025 | Trabalhista - Portaria MTE nº 60/2025 - Alteradas disposições sobre tanques de inflamáveis no interior de edifícios (Norma Regulamentadora nº 20 - NR-20)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O item 2.1.1 do Anexo III - Tanques de inflamáveis no interior de edifícios - da Norma Regulamentadora nº 20 (NR 20) - Segurança e Saúde no Trabalho com Inflamáveis e Combustíveis, aprovada pela Portaria SEPRT nº 1.360/2019, passa a dispor que:</p><p>"As alíneas "d" e "f" do item 2.1 deste Anexo não se aplicam a tanques de consumo, separados ou integrados na base do grupo gerador alimentados por diesel ou biodiesel."</p><p>Anteriormente, referido subitem dispunha:</p><p>"O contido na alínea d do item 2.1 deste Anexo não se aplica a tanques acoplados à estrutura do gerador."</p><p>As citadas alíneas "d" e "f" do item 2.1 (cujo caput transcrevemos para melhor compreensão), por sua vez, estabelecem:</p><p><b>2.1</b> A instalação do tanque no interior do edifício deve ser precedida de Projeto e de Análise Preliminar de Perigos/Riscos (APP/APR), ambos elaborados por profissional habilitado, contemplando os aspectos de segurança, saúde e meio ambiente previstos nas Normas Regulamentadoras, normas técnicas nacionais e, na ausência ou omissão destas, nas normas internacionais, bem como nas demais regulamentações pertinentes, e deve obedecer aos seguintes critérios:</p><p>[...]</p><p><b>d)</b> deve respeitar o máximo de até 5.000 (cinco mil) litros por tanque e por recinto, bem como o limite de 10.000 (dez mil) litros por edifício, sendo este limite aplicável a cada edifício, independentemente da existência de interligação entre edifícios por meio de garagens, passarelas, túneis, entre outros;</p><p>[...]</p><p><b>f)</b> os tanques devem ser metálicos;</p><p>[...]"</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-60-de-21-de-janeiro-de-2025-608239648" target="_blank">Portaria MTE nº 60/2025</a> <br/>Publicada em 22/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Empresas com 100 ou mais empregados têm até 31 - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>27/03/2025 | Trabalhista - Empresas com 100 ou mais empregados têm até 31 de março para divulgar Relatório de Transparência Salarial</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Empresas com 100 ou mais empregados têm até 31 de março para baixar e divulgar o 3º Relatório de Transparência Salarial e Critérios Remuneratórios. Disponibilizado pelo Ministério do Trabalho e Emprego (MTE) em 17 de março, o documento foi acessado por apenas 30,36% das 53.014 empresas obrigadas até o momento.</p><p>O relatório está disponível no Portal Emprega Brasil (<a href="https://servicos.mte.gov.br/empregador#/login" target="_blank">https://servicos.mte.gov.br/empregador/#/login</a>). Após o download, as empresas devem divulgá-lo em plataformas digitais, mídias similares ou jornais, garantindo ampla visibilidade para trabalhadores e o público em geral, conforme determina o Art. 14 da Instrução Normativa MTE/GM nº 6, de 17/9/2024.</p><p>O Relatório de Transparência Salarial e Critérios Remuneratórios reúne dados extraídos do Sistema Simplificado de Escrituração Digital das Obrigações Previdenciárias, Trabalhistas e Fiscais (eSocial). O documento inclui informações como CNPJ do estabelecimento, número total de trabalhadores separados por sexo, raça e etnia, além dos valores medianos do salário contratual, da remuneração bruta e da média dos últimos 12 meses. Também são detalhados os cargos ou ocupações conforme a Classificação Brasileira de Ocupações (CBO) e a proporção salarial entre mulheres e homens. Vale destacar que não há qualquer informação pessoal, como nome ou cargo individualizado.</p><p>Além disso, o Relatório inclui dados fornecidos pelas empresas via Portal Emprega Brasil, abrangendo critérios remuneratórios, políticas de contratação de mulheres de grupos específicos, estratégias de promoção para cargos de gerência e direção, além de iniciativas para o compartilhamento de responsabilidades familiares.</p><p>A iniciativa busca fortalecer a transparência e a equidade salarial nas empresas, ao mesmo tempo em que incentiva a implementação de políticas que promovam a diversidade e a igualdade de oportunidades no ambiente de trabalho.</p><p>Em 3 de julho de 2023, foi sancionada a Lei nº 14.611, que aborda a igualdade salarial e de critérios remuneratórios entre homens e mulheres no ambiente de trabalho, modificando o artigo 461 da Consolidação das Leis do Trabalho (CLT). Empresas com mais de 100 empregados devem adotar medidas para garantir essa igualdade, incluindo transparência salarial, fiscalização contra discriminação, canais de denúncia, programas de diversidade e inclusão, e apoio à capacitação de mulheres. A lei é uma iniciativa do Ministério do Trabalho e Emprego e do Ministério das Mulheres. Para mais informações, consulte a Instrução Normativa do MTE Nº 6, de 17 de setembro de 2024 - DOU - Imprensa Nacional.</p><p>Veja abaixo o modelo do Relatório de Transparência Salarial e Critérios Remuneratórios que deve ser baixado e publicado:</p><p>
+<img src="../../../Resources/Images/Notícias/exemplo-relatorio-transparencia-salarial.jpeg" style="max-width: 100%"/>
+</p><p>Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/marco/empresas-com-100-ou-mais-empregados-tem-ate-31-de-marco-para-divulgar-relatorio-de-transparencia-salarial" target="_blank">Ministério do Trabalho e Emprego</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/marco/empresas-com-100-ou-mais-empregados-tem-ate-31-de-marco-para-divulgar-relatorio-de-transparencia-salarial' target='_blank'>Ministério do Trabalho e Emprego</a> <br>Publicada em 24/03/2025</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

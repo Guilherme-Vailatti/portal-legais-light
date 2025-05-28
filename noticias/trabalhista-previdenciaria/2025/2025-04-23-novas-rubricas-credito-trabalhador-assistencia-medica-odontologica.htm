@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Disponibilizadas novas naturezas de rubrica relaci - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>23/04/2025 | eSocial - Disponibilizadas novas naturezas de rubrica relacionadas ao programa Crédito do Trabalhador e à assistência médica e odontológica</h1>
+</div>
+<div class="noticia-corpo">
+<p>Estão disponíveis em produção, na Tabela 03 – Natureza das Rubricas da Folha de Pagamento, as novas naturezas de rubrica cod. 9253 e 9912.</p><p>A natureza cód. 9253 - "Empréstimos e Consignado - desconto" é destinada ao registro de descontos referentes ao empréstimo consignado do programa Crédito do Trabalhador. Com esta publicação, as empresas já podem cadastrar suas rubricas específicas para efetuar o desconto do empréstimo consignado no eSocial. Apesar da disponibilização imediata, a aplicação dessas rubricas com natureza 9253 em eventos remuneratórios só será permitida para períodos de apuração a partir de maio de 2025. Ou seja, os descontos só poderão ser processados em folhas de pagamento com períodos de apuração a partir de maio.</p><p>Já a rubrica com natureza cód. 9912 – "Desconto de assistência médica ou odontológica (plano diferente de coletivo empresarial)", deve ser utilizada para registrar os descontos referentes a planos de saúde ou odontológicos que não correspondam à participação do empregado em planos coletivos empresariais. Aplica-se, por exemplo, aos casos em que o plano é contratado diretamente pelo trabalhador e o valor correspondente é descontado pela empresa na folha de pagamento, sendo posteriormente repassado à operadora ou administradora do plano.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/esocial-disponibiliza-natureza-de-rubrica-9253-para-desconto-do-credito-do-trabalhador" target="_blank">Portal eSocial</a> <br/>Publicada em 17/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

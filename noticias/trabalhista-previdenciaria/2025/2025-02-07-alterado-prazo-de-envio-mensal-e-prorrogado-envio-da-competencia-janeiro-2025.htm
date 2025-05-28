@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Instrução Normativa RFB nº 2.248/2025 - Alterado p - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>07/02/2025 | DCTFWeb - Instrução Normativa RFB nº 2.248/2025 - Alterado prazo de envio mensal e prorrogado envio da competência janeiro/2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Instrução Normativa RFB nº 2.237/2024, que regulamenta a DCTFWeb, sofreu algumas alterações em seus dispositivos:</p><ul>
+<li><b>DCTFWeb mensal:</b> Deverá ser apresentada até o último dia útil do mês seguinte ao da ocorrência dos fatos geradores. (anteriormente o prazo estava previsto para até o dia 25 do mês seguinte ao da ocorrência dos fatos geradores, ou até o primeiro dia útil subsequente.)</li>
+<li><b>DCTFWeb - Competência janeiro/2025:</b> Para os fatos geradores de janeiro/2025 fica prorrogado para o último dia útil de março/2025. Anteriormente estava previsto para entrega até 25/02/2025.</li>
+</ul><p>Também foi alterada o prazo da contribuição social incidente sobre a modalidade lotérica denominada aposta de quota fixa (art. 30, Lei nº 13.756/2018) deverá ser recolhida até o dia 20 do mês subsequente ao da apuração.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.248-de-5-de-fevereiro-de-2025-611353694" target="_blank">Instrução Normativa RFB nº 2.248/2025</a> <br/>Publicada em 07/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

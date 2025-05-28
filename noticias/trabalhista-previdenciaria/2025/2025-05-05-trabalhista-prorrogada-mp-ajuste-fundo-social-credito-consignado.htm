@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Ato Congresso Nacional nº 31/2025 - Prorrogada - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>05/05/2025 | Trabalhista - Ato Congresso Nacional nº 31/2025 - Prorrogada a vigência da Medida Provisória que ajusta o Fundo Social e do Crédito Consignado Privado</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Medida Provisória nº 1.292/2025, que regulamenta a concessão de crédito consignado via plataformas digitais para empregados CLT, trabalhadores rurais, domésticos e diretores não empregados com FGTS, teve sua vigência prorrogada por mais 60 dias.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/esocial-disponibiliza-natureza-de-rubrica-9253-para-desconto-do-credito-do-trabalhador" target="_blank">Ato do Presidente da Mesa do Congresso Nacional nº 31/2025</a> <br/>Publicada em 05/05/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

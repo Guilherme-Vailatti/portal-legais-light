@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Desligamento em Caso de Falecimento de Empregado - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/04/2025 | eSocial - Desligamento em Caso de Falecimento de Empregado</h1>
+</div>
+<div class="noticia-corpo">
+<p>O vínculo empregatício, por seu caráter personalíssimo, é considerado extinto automaticamente com o falecimento do trabalhador. Isso significa que o contrato de trabalho não pode ser continuado ou transferido após o óbito.</p><p>Diante disso, quando a extinção do contrato for motivada pelo óbito do trabalhador, a data de desligamento no eSocial deve coincidir, sempre, com a data do falecimento, mesmo que o empregador tenha tomado conhecimento do óbito em momento posterior.</p><p>A incorreção na informação da data do desligamento configura descumprimento das obrigações relativas ao registro do empregado, à anotação da CTPS e à prestação de informações à RAIS, conforme inciso VII do art. 14, inciso V do art. 15 e inciso II do art. 145, todos da Portaria MTP nº 671, de 08 de novembro de 2021.</p><p>Outro ponto que merece destaque é que a informação da data de desligamento no óbito do trabalhador de forma inequívoca assegura o correto processamento das informações no CNIS, proporcionando maior agilidade na análise do benefício de pensão por morte aos dependentes. Quando o empregador informa a data de desligamento posterior ao óbito de seu empregado, isso gera um indicador de pendência no respectivo vínculo, no CNIS, prejudicando possível reconhecimento automático do direito ao benefício do INSS.</p><p>Portanto, reforçamos ser fundamental que o empregador registre a data exata do falecimento no desligamento para garantir que o dependente do trabalhador não seja prejudicado no acesso a seus direitos previdenciários.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/desligamento-em-caso-de-falecimento-de-empregado" target="_blank">Portal eSocial</a> <br/>Publicada em 02/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

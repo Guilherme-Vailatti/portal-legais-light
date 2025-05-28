@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trabalhista - Empresas têm até 28/02 para entregar informaçõ - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>25/02/2025 | Trabalhista - Empresas têm até 28/02 para entregar informações para o 3º Relatório de Transparência Salarial</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>Até o momento, 21 mil das mais de 50 mil empresas com 100 ou mais empregados já preencheram o relatório com informações sobre critérios remuneratórios e ações para promover diversidade e parentalidade compartilhada. As empresas têm até o dia 28 de fevereiro para preencher esse relatório através do Portal do Emprega Brasil, na aba empregadores <a href="http://www.servicos.mte.gov.br/empregador" target="_blank">http://www.servicos.mte.gov.br/empregador</a>.  Essas informações serão processadas pelo Ministério do Trabalho e Emprego agregando dados da Relatório Anual de Informações Sociais (RAIS), e disponibilizadas, no Portal Emprega Brasil, para as empresas a partir do dia 17 de março.</p><p>Até o dia 31 de março, conforme determina a Lei de Igualdade Salarial, todas as empresas devem divulgar em suas em suas plataformas digitais o 3ºRelatório de Transparência Salarial e de Critérios Remuneratórios, . Em março, o MTE e o Ministério das Mulheres vão promover um evento para divulgar os dados consolidados dos Relatório, que não incluem informações pessoais como salários, nomes ou ocupações.</p><p>O relatório conterá informações da RAIS e os dados enviados pelas empresas, como critérios remuneratórios, políticas de contratação de mulheres (incluindo negras, com deficiências, em situação de violência, chefes de domicílio e LGBTQIA+), políticas de promoção de mulheres a cargos de gerência e direção e iniciativas de apoio para o compartilhamento de responsabilidades familiares.</p><p>"A Lei de Igualdade Salarial busca acelerar o processo de inclusão e promoção de mulheres de modo a obter a igualdade e corrigir as distorções salariais entre homens e mulheres. Essa é uma mudança cultural importante, que deve ser perseguida por todas as empresas, independentemente do número de empregados ou da divulgação do relatório de transparência e igualdade salarial", destaca a subsecretária de Estatísticas e Estudos do Trabalho do MTE, Paula Montagner.</p><p>O último relatório do MTE mostrou que 20,7% das mulheres ganham menos do que os homens nas 50.692 empresas com 100 ou mais empregados e, em mais de 15 mil empresas, essa diferença era de até 5%. Segundo Paula, esses resultados são animadores e mostram que há exemplos a serem seguidos.</p><p><b>Sobre a Lei</b> - Em 3 de julho de 2023, foi sancionada a Lei nº 14.611, que aborda a igualdade salarial e de critérios remuneratórios entre homens e mulheres no ambiente de trabalho, modificando o artigo 461 da Consolidação das Leis do Trabalho (CLT). Pela Lei, empresas com mais de 100 empregados devem adotar medidas para garantir essa igualdade, incluindo transparência salarial, fiscalização contra discriminação, canais de denúncia, programas de diversidade e inclusão, e apoio à capacitação de mulheres. A lei é uma iniciativa do Ministério do Trabalho e Emprego e do Ministério das Mulheres.</p><p>- Confira o tutorial de preenchimento do Relatório <a href="https://www.youtube.com/watch?v=r0iszJABldk" target="_blank">aqui</a>.</p><p>- Acesse as perguntas frequentes sobre o assunto <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/perguntas-frequentes" target="_blank">aqui</a>.</p><p>- Em caso de dúvidas, entre em contato pelo e-mail: igualdadesalarial@trabalho.gov.br.</p><p>Fonte: <a href="https://www.gov.br/trabalho-e-emprego/pt-br/noticias-e-conteudo/2025/fevereiro/empresas-tem-ate-28-02-para-entregar-informacoes-para-o-3o-relatorio-de-transparencia-salarial" target="_blank">Ministério do Trabalho e Emprego</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/trabalho-e-emprego/pt-br' target='_blank'>Ministério do Trabalho e Emprego</a> <br>Publicada em 21/02/2025</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

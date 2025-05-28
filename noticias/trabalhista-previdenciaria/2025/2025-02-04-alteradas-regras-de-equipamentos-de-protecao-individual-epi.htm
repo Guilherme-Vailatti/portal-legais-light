@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 122/2025 - Alteradas regras de - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>04/02/2025 | Trabalhista - Portaria MTE nº 122/2025 - Alteradas regras de equipamentos de proteção individual (EPI)</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Portaria MTE nº 122/2025 alterou diversas disposições da Portaria MTP nº 672/2021, que disciplina a segurança e saúde no trabalho, em especial os procedimentos de avaliação de equipamentos de proteção individual (EPI), previstos na Norma Regulamentadora nº 6 (NR 6).</p><p>Entre outras disposições, foram alterados os seguintes arts. e Anexos da Portaria MTP nº 672/2021:</p><p> </p><p style="font-weight: bold;">Ressalte-se que as referidas alterações:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-122-de-29-de-janeiro-de-2025-610305121" target="_blank">Portaria MTE nº 122/2025</a> <br/>Publicada em 03/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

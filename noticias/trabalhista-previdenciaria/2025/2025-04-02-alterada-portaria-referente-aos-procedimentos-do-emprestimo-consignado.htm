@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 491/2025 - Alterada Portaria r - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>02/04/2025 | Trabalhista - Portaria MTE nº 491/2025 - Alterada Portaria referente aos procedimentos do empréstimo consignado</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi alterada a Portaria MTE nº 435/2025, a qual estabeleceu critérios e procedimentos operacionais para a consignação dos descontos em folha de pagamento, de que trata o art. 1º da Lei nº 10.820/2003, com redação dada pela Medida Provisória nº 1.292/2025.</p><p>Conforme a referida Portaria, a soma dos descontos das parcelas de empréstimos consignados não poderá ultrapassar o limite de 35% (trinta e cinco por cento) da remuneração disponível do vínculo empregatício, conforme disposto no § 1º, do art. 1º, da Lei nº 10.820/2003. E, conforme alteração, para fins de cálculo da margem consignável, considera-se remuneração disponível o somatório das rubricas habituais de vencimento com incidência de contribuição previdenciária, subtraindo-se:</p><p>Ressalte-se ainda que instituições consignatárias deverão informar à Dataprev o CPF dos tomadores de crédito que possuíam, em 20 de março de 2025:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-491-de-31-de-marco-de-2025-621072137" target="_blank">Portaria MTE nº 491/2025</a> <br/>Publicada em 01/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

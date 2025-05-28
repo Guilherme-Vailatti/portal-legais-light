@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Disponibilizadas novas APIs que simplificam e faci - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/04/2025 | DCTFWeb - Disponibilizadas novas APIs que simplificam e facilitam o preenchimento e transmissão da DCTFWeb</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal do Brasil informa que foram disponibilizadas, pelo Serpro, novas API’s para permitir a consulta da apuração MIT, encerramento do MIT, emissão de Darf com a DCTFWeb em andamento, além de outras consultas relacionadas ao MIT. A disponibilização de API’s permite aos contribuintes o uso de instrumentos de automação para o cumprimento de obrigações tributárias com a RFB agilizando e facilitando a conformidade tributária.</p><p>A implantação do MIT representa um grande marco na simplificação das obrigações acessórias, pois elimina a DCTF fazendária (DCTF PGD), passando a DCTFWeb a ser a única declaração para confissão de débitos de pessoas jurídicas.</p><p>Dentre as melhorias implementadas na DCTFWeb merecem destaque:</p><p>A Receita Federal reforça a importância do cumprimento dos prazos para evitar penalidades e ressalta que o sucesso desta etapa reflete o compromisso da RFB com a simplificação e conformidade tributária.</p><p>Maiores informações e orientações sobre a DCTFWeb e o MIT podem ser acessados <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb" target="_blank">nesse link</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2025/abril/disponibilizadas-novas-apis-que-simplificam-e-facilitam-o-preenchimento-e-transmissao-da-dctfweb" target="_blank">Receita Federal</a> <br/>Publicada em 11/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

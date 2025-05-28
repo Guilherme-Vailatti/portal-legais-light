@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>MIT - Módulo de Inclusão de Tributos - Funcionalidades habil - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/02/2025 | MIT - Módulo de Inclusão de Tributos - Funcionalidades habilitadas</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal do Brasil (RFB) informa que o Módulo de Inclusão de Tributos (MIT) já está disponível na Declaração de Débitos e Créditos Tributários Federais Web (DCTFWeb). <b>O MIT foi disponibilizado em 15 de fevereiro de 2025</b>.</p><p>Essa nova funcionalidade centraliza a recepção de tributos anteriormente declarados pela PGD DCTF, otimizando a gestão tributária das empresas. Adicionalmente, a RFB publicou o Manual de Orientações da DCTFWeb. Confira:</p><p>O Módulo de Inclusão de Tributos – MIT, é um serviço integrado à Declaração de Débitos e Créditos Tributários Federais - DCTFWeb para recepção de débitos e créditos relativos a tributos administrados pela Receita Federal do Brasil – RFB que ainda não são transmitidos para a DCTFWeb por meio de uma escrituração fiscal específica.</p><p>O MIT pode ser preenchido diretamente no Atendimento Virtual (e-CAC) da Receita Federal, acessível pelo endereço <a href="https://www.gov.br/receitafederal/pt-br/canais_atendimento/atendimento-virtual" target="_blank">www.gov.br/receitafederal/pt-br/canais_atendimento/atendimento-virtual</a> ou por meio de importação de arquivo previamente preparado no ambiente do próprio contribuinte.</p><p style="font-weight: bold;">Devem ser informados pelo MIT, a partir do período de apuração igual a 01/2025, os seguintes tributos:</p><p>O Imposto de Renda da Pessoa Jurídica (IRPJ), a Contribuição Social sobre o Lucro Líquido (CSLL), bem como a Contribuição para o PIS/Pasep e a Cofins retidas na fonte, deverão continuar a ser escriturados na EFD-Reinf.</p><p>A Contribuição para o PIS/Pasep incidente sobre a folha de salários deve ser apurada no eSocial.</p><p>Os valores de IRRF a serem informados no MIT são apenas aqueles de que trata o art. 2º da Instrução Normativa SRF nº 137, de 23 de novembro de 1998.</p><p>Os valores apurados pelo Regime de Tributação Específica do Futebol - TEF, a que está sujeita a Sociedade Anônima do Futebol SAF constituída de acordo com o disposto na Lei nº 14.193, de 6 de agosto de 2021, deverão ser informados no MIT no grupo "RET/Pagamento Unificado".</p><p style="font-weight: bold;">As pessoas jurídicas optantes pelo Simples Nacional que apurarem os tributos abaixo elencados, deverão incluí-los no MIT:</p><p>Confira o manual de orientação do MIT <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf" target="_blank">aqui</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/manual-mit-1-0-14-02.pdf" target="_blank">Receita Federal</a> <br/>Publicada em 01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

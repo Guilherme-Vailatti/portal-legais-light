@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdenciária - Instrução Normativa RFB nº 2.242/2024 - Alt - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | Previdenciária - Instrução Normativa RFB nº 2.242/2024 - Alterada a Instrução Normativa referente a CPRB (Desoneração da Folha de Pagamento)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi alterada a Instrução Normativa RFB nº 2.053/2021, a qual dispõe sobre a Contribuição Previdenciária sobre a Receita Bruta destinada ao Regime Geral da Previdência Social, devida pelas empresas referidas nos arts. 7º e 8º da Lei nº 12.546/2011, conhecida popularmente como <b>Desoneração da Folha de Pagamento</b>.</p><p>Dentre outras disposições alteradas, A substituição das contribuições previstas no art. 22, caput, incisos I e III, da Lei nº 8.212, de 24 de julho de 1991, pela contribuição sobre a receita bruta a que se refere o art. 2º, excluídos os valores relativos às vendas canceladas e os descontos incondicionais concedidos, será:</p><p>Ressalte-se ainda que dentre as alterações se tem a disposição de que partir de 1º de janeiro de 2025 até 31 de dezembro de 2027, a empresa que optar por contribuir nos termos dos arts. 7º a 9º da Lei nº 12.546/2011, compromete-se a manter, em seus quadros funcionais, no decorrer de cada ano-calendário para o qual fez a opção, quantitativo médio de empregados igual ou superior a 75% (setenta e cinco por cento) da média verificada no ano-calendário imediatamente anterior. E, em caso de inobservância da manutenção da citada quantidade de empregados, a empresa não poderá usufruir da contribuição sobre a receita bruta a partir do ano-calendário subsequente ao descumprimento, hipótese em que se aplicam as contribuições previstas no art. 22, caput, incisos I e III, da Lei nº 8.212/1991, à alíquota de 20% (vinte por cento).</p><p>Também importante mencionar que a partir de 1º de janeiro de 2025 até 31 de dezembro de 2027, para fins de cálculo do valor devido sob o regime da substituição mencionado no art. 2º da IN RFB nº 2.053/2021, não haverá parcela referente às contribuições previstas no art. 22, caput, incisos I e III, da Lei nº 8.212/1991, incidentes sobre as remunerações pagas, devidas ou creditadas a título de décimo terceiro salário, não se aplicando tal disposição às obras de construção civil submetidas exclusivamente à contribuição sobre a folha de pagamentos nos termos do art. 22, caput, incisos I a III, da Lei nº 8.212/1991 .</p><p>Por fim, cabe ainda citar dentre as alterações ocorridas que:</p><p>As alterações entram em vigor em 1º de janeiro de 2025.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/instrucao-normativa-rfb-n-2.242-de-30-de-dezembro-de-2024-605034989" target="_blank">Instrução Normativa RFB nº 2.242/2024</a> <br/>Publicada em 02/01/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

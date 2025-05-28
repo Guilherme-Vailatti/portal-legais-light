@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Importância do registro dos afastamentos no eSocia - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>25/03/2025 | eSocial - Importância do registro dos afastamentos no eSocial para a concessão de benefícios por incapacidade</h1>
+</div>
+<div class="noticia-corpo">
+<p>Desde outubro de 2024, o Instituto Nacional do Seguro Social (INSS) busca automaticamente as informações de afastamento enviadas pelo ambiente nacional do eSocial para calcular o último dia de trabalho. Essa automatização assegura o correto processamento das informações e agiliza a concessão do auxílio por incapacidade temporária, proporcionando maior celeridade no atendimento aos segurados.</p><p>A ausência dessa informação pode impactar o tempo de espera do empregado para a concessão do benefício. Caso o afastamento não seja informado pelo empregador no eSocial, o trabalhador precisará apresentar uma declaração emitida pela empresa atestando o último dia de trabalho. Esse documento será submetido à análise de um servidor administrativo, que precisará transcrever manualmente as informações no sistema de benefícios, aumentando o tempo de processamento.</p><p>Nos casos de novo afastamento decorrente da mesma doença dentro do prazo de 60 (sessenta) dias, o preenchimento correto do campo {infoMesmoMtv} é também relevante para agilizar o processamento dos benefícios, após a avaliação da incapacidade. A ausência desta informação pode impactar na concessão do benefício e na responsabilidade no pagamento dos dias de afastamento pelo empregador.</p><p>Diante disso, é essencial que os empregadores realizem a comunicação dos afastamentos dos trabalhadores com a máxima brevidade possível, por meio do evento S-2230 – Afastamento Temporário, conforme estabelecido no Manual de Orientação do eSocial (MOS). Essa prática contribui para a redução do tempo de espera dos trabalhadores e aprimora a eficiência na análise dos benefícios pelo INSS.</p><p>Para mais informações, consulte o Manual de Orientação do eSocial (MOS) ou acesse os canais de suporte disponíveis.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/importancia-do-registro-dos-afastamentos-no-esocial-para-a-concessao-de-beneficios-por-incapacidade" target="_blank">Portal eSocial</a> <br/>Publicada em 21/03/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

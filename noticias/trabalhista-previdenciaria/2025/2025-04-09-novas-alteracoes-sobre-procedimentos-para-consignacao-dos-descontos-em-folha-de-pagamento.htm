@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 505/2025 - Novas alterações so - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/04/2025 | Trabalhista - Portaria MTE nº 505/2025 - Novas alterações sobre os procedimentos para a consignação dos descontos em folha de pagamento</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Portaria MTE nº 435/2025, na qual estabelece os procedimentos sobre o empréstimo consignado digital, teve novas alterações, dentre as quais destacamos:</p><p style="font-weight: bold;">EMPRÉSTIMOS ANTERIORES À 12/03/2025 - POSSIBILIDADE DE ALTERAÇÃO</p><p>Até a data da efetiva integração dos canais de atendimento das instituições consignatárias com a Plataforma Crédito do Trabalhador, as operações de consignação realizadas antes de 12/03/2025 (início de vigência da Medida Provisória nº 1.292/2025) poderão ser objeto de alteração contratual:</p><p style="font-weight: bold;">MUTUÁRIOS COM SALDO DEVEDOR</p><p>A Portaria MTE nº 435/2025, art. 2º-E, já dispunha que durante o período de 120 dias, contado da entrada em funcionamento dos sistemas ou das plataformas digitais, as operações de crédito realizadas com instituições consignatárias deverão ter seus recursos destinados exclusivamente para pagamento das seguintes modalidades, caso os mutuários tenham operações ativas nessas modalidades na data da concessão:</p><p>Foi acrescida a previsão de que, caso o valor do empréstimo consignado liberado ao tomador de crédito seja superior à soma do saldo devedor das operações de empréstimos mencionadas nas letras "a" e "b" do parágrafo anterior:</p><p style="font-weight: bold;">EMPRÉSTIMOS ANTERIORES À 12/03/2025 - TAXA DE JUROS MENORES</p><p>Ao término do prazo de 120 dias previsto no art. 2º-D da Lei nº 10.820/2003, as instituições consignatárias que já possuam autorizações de desconto em 12/03/2025 deverão, compulsoriamente, averbar no sistema ou na plataforma dos operadores públicos todas as autorizações de desconto de crédito consignado concedidas antes de 12/03/2025 (início de vigência da Medida Provisória nº 1.292/2025):</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-505-de-3-de-abril-de-2025-621904289" target="_blank">Portaria MTE nº 505/2025</a> <br/>Publicada em 01/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

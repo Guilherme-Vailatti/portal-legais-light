@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Decreto nº 12.342/2024 - Salário mínimo para 2 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | Trabalhista - Decreto nº 12.342/2024 - Salário mínimo para 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>Por meio de decreto, o Governo Federal definiu o <b>salário mínimo nacional em R$ 1.518,00</b> para o exercício de 2025, o que corresponde a um reajuste de R$ 106,00 em relação ao valor vigente em 2024.</p><p>A política de valorização do salário mínimo, estabelecida pela legislação de 2023 e atualizada em dezembro de 2024, fundamenta-se na correção anual pela variação do INPC, com um limite para o ganho real entre 0,6% e 2,5%.</p><p>O novo valor do salário mínimo entra em vigor a partir de 1º de janeiro de 2025:</p><ul>
+<li>R$ 1.518,00 - valor mensal;</li>
+<li>R$ 50,60 - valor diário; e</li>
+<li>R$ 6,90 - valor horário.</li>
+</ul>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/decreto-n-12.342-de-30-de-dezembro-de-2024-604984189" target="_blank">Decreto nº 12.342/2024</a> <br/>Publicada em 31/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

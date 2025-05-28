@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - ADE CORAT nº 19/2024 - Aprovado o leiaute do arqui - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>09/01/2025 | DCTFWeb - ADE CORAT nº 19/2024 - Aprovado o leiaute do arquivo de importação do Módulo de Inclusão de Tributos (MIT)</h1>
+</div>
+<div class="noticia-corpo">
+<p>O Ato Declaratório Executivo Corat nº <b>19/2024</b> aprovou a versão 1.0 do leiaute de importação do Módulo de Inclusão de Tributos (MIT) de que trata o art. 9º da Instrução Normativa nº <b>2.237/2024</b>.</p><p>A versão 1.0 do leiaute de importação do MIT está disponível para download no <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb" target="_blank">site da Receita Federal</a>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/web/dou/-/ato-declaratorio-executivo-corat-n-19-de-19-de-dezembro-de-2024-603283077" target="_blank">Ato Declaratório Executivo CORAT nº 19/2024</a> <br/>Publicada em 20/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

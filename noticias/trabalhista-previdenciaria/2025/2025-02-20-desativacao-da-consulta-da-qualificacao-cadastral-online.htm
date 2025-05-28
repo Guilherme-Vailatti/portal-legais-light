@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Desativação da Consulta da Qualificação Cadastral  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/02/2025 | eSocial - Desativação da Consulta da Qualificação Cadastral On-line</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Consulta Qualificação Cadastral online do eSocial foi descontinuada a partir de <b>10/02/2025</b>. A partir dessa data, empregadores e órgãos públicos que necessitarem realizar a qualificação cadastral deverão utilizar a Consulta Qualificação Cadastral em lote – CQC, por meio do seguinte link: <a href="https://esociallote.dataprev.gov.br/" target="_blank">esociallote.dataprev.gov.br</a> usando o seu certificado digital.</p><p>A consulta em lote será processada em até 48 (quarenta e oito) horas e seu retorno estará disponível para consulta por 15 (quinze) dias.</p><p>É importante lembrar que a Consulta Qualificação Cadastral fica sempre a cargo do empregador, não sendo um documento que possa ser exigido do trabalhador no momento de sua contratação.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/desativacao-da-consulta-da-qualificacao-cadastral-on-line" target="_blank">Portal eSocial</a> <br/>Publicada em 19/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

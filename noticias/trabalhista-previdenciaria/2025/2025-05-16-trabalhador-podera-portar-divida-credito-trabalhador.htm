@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Trabalhadores vão poder portar sua dívida dent - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/05/2025 | Trabalhista - Trabalhadores vão poder portar sua dívida dentro do Crédito do Trabalhador</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir desta sexta-feira (16), os trabalhadores formais que têm um empréstimo de consignado ou um crédito pessoal vão poder renegociar sua dívida utilizando a portabilidade para outra instituição financeira. A portabilidade permite que o trabalhador migre a sua dívida antiga para uma instituição financeira habilitada pelo programa que ofereça taxas de juros mais baixas. O trabalhador, porém, terá que procurar o banco, pois essa troca não poderá ser feita ainda pela Carteira do Trabalho Digital. No dia 6 de junho, poderá ocorrer a troca de dívida de todos os empréstimos do Crédito do Trabalhador.</p><p>A intenção é que o trabalhador possa reduzir a taxa de juros da sua dívida original e, caso tenha margem consignável, aumentar o valor do novo empréstimo. Quando o trabalhador migra para o crédito do trabalhador, ele automaticamente quita a dívida antiga, fazendo um novo empréstimo. Todos os bancos habilitados têm a lista de todos os trabalhadores com CDC ou consignados.  “Essa forma provoca uma espécie de leilão entre bancos, já que a instituição financeira pode baixar mais ainda os juros para não perder o cliente”, ressalta o ministro do Trabalho e Emprego, Luiz Marinho.</p><p>A expectativa é que a troca de bancos aumente ainda mais os empréstimos do Crédito do Trabalhador, que em menos de 2 meses já emprestou R$ 11,3 bilhões. Desde que começou a migração de dívida para o Crédito do Trabalhador em 25 de abril, que somente poderia ser feita no banco de origem do empréstimo, o volume de recursos emprestados supera os R$ 3 bilhões. Grande parte destes CDC e consignados, que hoje somam R$ 120 bilhões, devem migrar para o Crédito do Trabalhador.  “O CDC hoje tem uma taxa de juros muito de mais de 8%, e o trabalhador poderá conseguir nesta troca renegociar a dívida dele com juros por menos da metade. Com isso, terá um alívio financeiro do seu salário, e reduzirá o seu endividamento”, diz o ministro.</p><p>Até às 17h desta quinta-feira (15), o Crédito do Trabalhador já emprestou R$ 11,3 bilhões favorecendo mais de 2 milhões de trabalhadores no país. A média dos empréstimos da linha alcança R$ 5.383,22 por contrato, com uma prestação média de R$ 317,20 num prazo de 17 meses. Os maiores volumes de recursos contratados foram verificados nos estados de São Paulo (R$ 2,9 bi), Minas Gerais (R$ 948 milhões), Rio de Janeiro (R$ 927,7 milhões), Paraná (R$ 760,3 milhões) e Rio Grande do Sul (R$ 759,3).  Atualmente, o Programa conta com 35 instituições financeiras executando a linha, nas mais de 70 instituições já habilitadas. Dos R$ 10,3 bilhões de empréstimos, o Banco do Brasil acumula o maior volume de empréstimos, já tendo emprestado R$ 3,1 bilhões através do Crédito do Trabalhador, a maior parte para liquidar dívidas mais caras.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/esocial-disponibiliza-natureza-de-rubrica-9253-para-desconto-do-credito-do-trabalhador" target="_blank">Ministério do Trabalho e Emprego</a> <br/>Publicada em 15/05/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

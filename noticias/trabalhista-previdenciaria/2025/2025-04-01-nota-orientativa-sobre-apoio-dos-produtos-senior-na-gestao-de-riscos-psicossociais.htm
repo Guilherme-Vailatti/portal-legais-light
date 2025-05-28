@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Portaria MTE nº 1.419/2024 - Gestão de riscos  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>01/04/2025 | Trabalhista - Portaria MTE nº 1.419/2024 - Gestão de riscos psicossociais: Nota orientativa com os produtos Senior</h1>
+</div>
+<div class="noticia-corpo">
+<p>A partir de 26 de Maio de 2025 entra vigor a Portaria MTE 1.419, de 27 Agosto de 2024, que entre suas disposições, deixou mais explicitamente na nova redação do capítulo "1.5 Gerenciamento de riscos ocupacionais" a abrangência obrigatória sobre Fatores de Riscos Psicossociais.</p><p>Os Riscos Psicossociais são os aspectos da conceção e gestão do trabalho e dos seus contextos sociais (externos) e organizacionais (internos) que têm o potencial de causar danos psicológicos ou físicos ao trabalhador.</p><p>Alguns exemplos, condições de trabalho, ou situações que podem gerar o risco psicossocial:</p><ul>
+<li>Cargas de trabalho excessivas, além das possibilidades;</li>
+<li>Falta de clareza na definição das funções</li>
+<li>Metas elevadas, praticamente sem possibilidade de alcance;</li>
+<li>Precariedade, fatal de estrutura labora;</li>
+<li>Assédio psicológico e sexual;</li>
+<li>Falta de apoio para o equilíbrio entre vida profissional e familiar.</li>
+</ul><p>Alguns exemplos de consequências dos riscos psicossociais:</p><ul>
+<li>Estresse em excesso;</li>
+<li>Falta de motivação;</li>
+<li>Absenteísmo por doença;</li>
+<li>Rotatividade de pessoal;</li>
+<li>Redução na qualidade de vida;</li>
+<li>Acréscimos em gastos com cuidados de saúde.</li>
+</ul><p>A abrangência obrigatória sobre Fatores de Riscos Psicossociais, será uma adição ao que já existe sobre Gerenciamento de Riscos Ocupacionais (GRO). Não houve alteração nas etapas do processo (GRO) e seus Programas de Gerenciamento de Riscos (PGR).</p><p>
+<img src="../../../Resources/Images/Notícias/nr01-disposicoes-gerenciamento-riscos-ocupacionais.png" style="max-width: 100%;width: 898px;height: 537px;"/>
+</p><p> </p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-mte-n-1.419-de-27-de-agosto-de-2024-580778271" target="_blank">Portaria MTE nº 1.419/2024</a> <br/>Publicada em 01/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

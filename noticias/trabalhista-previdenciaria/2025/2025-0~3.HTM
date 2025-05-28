@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>eSocial - Comunicado: Suspenso o envio de eventos S-1200 da  - Portal de Exigências Legais</title>
+  <link rel="stylesheet" href="../../partials/style-noticia.css"/>
+  <style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+  <section class="noticia">
+    <div class="noticia-titulo">
+      <h1>09/01/2025 | eSocial - Comunicado: Suspenso o envio de eventos S-1200 da competência JANEIRO/2025 até publicação da portaria com tabelas de alíquotas do INSS e salário-família para 2025</h1>
+    </div>
+    <div class="noticia-corpo">
+      <p>A recepção dos eventos S-1200 (Remuneração de trabalhador vinculado ao Regime Geral de Previd. Social) da competência <b>JANEIRO/2025</b> está <b>suspensa</b> até que seja publicada a portaria governamental que reajusta as faixas salariais que definem as alíquotas de desconto previdenciário do segurado (alíquotas progressivas de 7,5% a 14%) e o direito a percepção de salário família para 2025. Tal medida se faz necessária porque o eSocial precisa da tabela de alíquotas atualizada para retornar os eventos de totalização S-5001 para os empregadores.</p><ul>
+<li style="font-weight: bold;">Eventos de Desligamento (S-2299) e Término de TSVE (S-2399)</li>
+</ul><p>A transmissão dos eventos de Desligamento (S-2299) e Término do Trabalhador Sem Vínculo de Emprego (S-2399) não será bloqueada. No entanto, caso a portaria com as novas alíquotas seja publicada com vigência retroativa, caberá ao empregador realizar, antes do fechamento da folha deste mês, a retificação dos eventos que já foram transmitidos, para considerar os valores devidos pelos empregados.</p><ul>
+<li style="font-weight: bold;">Módulos Simplificados (Doméstico, Segurado Especial e Microempreendedor Individual-MEI)</li>
+</ul><p>A <b>folha de pagamento</b> de janeiro/2025 dos Módulos Simplificados será disponibilizada após a publicação da referida portaria.</p><p>Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/suspenso-o-envio-de-eventos-s-1200-da-competencia-janeiro-2025-ate-publicacao-da-portaria-com-tabelas-de-aliquotas-do-inss-e-salario-familia-para-2025" target="_blank">Portal eSocial</a></p>
+    </div>
+    <div class="tema-noticia">
+      <h5>Notícia relacionada:</h5>
+      <div class="btn-tema-noticia">
+        <a href="estadual/todas-noticias-estadual.html">Estadual</a>
+      </div>
+    </div>
+    <div class="noticia-fonte"></div>
+    <p class='fonte'>Fonte: <a href='https://www.gov.br/esocial/pt-br/noticias/suspenso-o-envio-de-eventos-s-1200-da-competencia-janeiro-2025-ate-publicacao-da-portaria-com-tabelas-de-aliquotas-do-inss-e-salario-familia-para-2025' target='_blank'>Portal eSocial</a> <br>Publicada em 02/01/2025</p>
+  </section>
+  <div data-include="footer"></div>
+</body>
+</html>

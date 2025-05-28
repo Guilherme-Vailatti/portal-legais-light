@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Trabalhista - Comunicado - CFM entra com recurso (agravo de  - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>14/01/2025 | Trabalhista - Comunicado - CFM entra com recurso (agravo de instrumento) contra decisão judicial que suspende Atesta CFM e reforça o respaldo legal da plataforma</h1>
+</div>
+<div class="noticia-corpo">
+<p>Em 20 de dezembro de 2024, diante da decisão da Justiça Federal, que em primeira instância suspendeu os efeitos da Resolução nº 2.382/2024, a qual possibilita o funcionamento da plataforma Atesta CFM para validação e chancela de atestados médicos no País, o Conselho Federal de Medicina (CFM) informa que, após ser notificado, entrou com recurso (agravo de instrumento) contra essa decisão nas esferas competentes com base em fundamentação técnica, ética e legal.</p><p>A Autarquia reafirma que, no processo de desenvolvimento do Atesta CFM, atuou com base em sua competência legal e total respeito aos princípios que regem a administração pública e à Lei Geral de Proteção de Dados (LGPD). Além disso, por permitir integração a outras plataformas já usadas por médicos, não representa qualquer tentativa de monopólio.</p><p>O Atesta CFM oferece benefícios diretos a médicos, pacientes e empregadores ao assegurar a legitimidade dos atestados emitidos e fortalecer a relação de confiança entre profissionais e a sociedade. Também permite a verificação em tempo real da autenticidade dos documentos, garantindo sua validade jurídica.</p><p>Finalmente, com a criação do Atesta CFM, o Conselho Federal de Medicina entende que o País ganha uma resposta efetiva contra o aumento de fraudes em documentos médicos. Da mesma forma, essa plataforma ajuda a promover a segurança e integridade na emissão de atestados, a proteção do sigilo médico e a defesa da ética no exercício profissional, com o uso de tecnologia avançada e acesso gratuito para médicos, pacientes e empregadores.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.atestacfm.org.br/" target="_blank">Atesta CFM</a> <br/>Publicada em 20/12/2024</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Previdenciária - Portaria PRES/INSS nº 1.828/2025 - Prorroga - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>10/04/2025 | Previdenciária - Portaria PRES/INSS nº 1.828/2025 - Prorrogado novamente o uso obrigatório da Guia de Recolhimento da União (GRU) Cobrança do INSS</h1>
+</div>
+<div class="noticia-corpo">
+<p>Foi prorrogado para até 30 de junho de 2026, a permissão de utilização, em paralelo, de outros meios ou ferramentas de arrecadação, admitidos pelo Decreto nº 4.950/2004, estabelecendo-se então, após a referida data, a obrigatoriedade de uso do Sistema de Emissão da GRU Cobrança do INSS.</p><p>Referido Sistema destina-se à captação de receitas próprias não previdenciárias e à recuperação de despesas do INSS e do Fundo do Regime Geral de Previdência Social (FRGPS), em substituição à Guia da Previdência Social (GPS) e à GRU Simples, sendo que esse Sistema:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.in.gov.br/en/web/dou/-/portaria-pres/inss-n-1.828-de-7-de-abril-de-2025-622869033" target="_blank">Portaria PRES/INSS nº 1.828/2025</a> <br/>Publicada em 09/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

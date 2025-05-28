@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Federal - MP nº 1.294/2025 - Governo publica MP que reajusta - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>16/04/2025 | Federal - MP nº 1.294/2025 - Governo publica MP que reajusta faixa de isenção do Imposto de Renda</h1>
+</div>
+<div class="noticia-corpo">
+<p>O governo federal publicou, no Diário Oficial da União (DOU) desta segunda-feira (14), a Medida Provisória (MP) <a href="https://www.congressonacional.leg.br/materias/medidas-provisorias/-/mpv/168095" target="_blank">1.294/2025</a>, que atualiza os valores da tabela progressiva mensal do Imposto sobre a Renda da Pessoa Física (IRPF). A MP é assinada pelo presidente da República, Luiz Inácio Lula da Silva.</p><p>O texto eleva a faixa de isenção do Imposto de Renda para os contribuintes com rendimentos mensais de até R$ 3.036, equivalentes a dois salários mínimos, ao considerar o novo valor do piso nacional, que passou a ser de R$ 1.518.</p><p>A correção da tabela tem como objetivo manter a política de isenção do Imposto de Renda para trabalhadores que recebem até dois salários mínimos, praticada desde 2024 (então para o ano-base de 2023).</p><p>Com o reajuste salarial, a tabela anterior — que previa isenção até R$ 2.824, valor correspondente a dois salários mínimos em 2024 — deixaria de atender integralmente a esse grupo de contribuintes. A publicação da MP corrige essa defasagem.</p><p>Em março, o governo enviou à Câmara dos Deputados projeto de lei (<a href="https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2487436" target="_blank">PL 1.087/2025</a>) para isentar do Imposto de Renda quem ganha até R$ 5 mil, compensando isso com o aumento do valor pago por quem ganha mais de R$ 600 mil por ano, o que, segundo o Ministério da Fazenda, atingirá 0,13% dos contribuintes. Esse texto ainda tramita na Câmara. Paralelamente, a MP 1.294/2025 entra imediatamente em vigor, e limita-se ao reajuste anual da tabela do IRPF.</p><p>A nova tabela progressiva mensal do IRPF passará a vigorar a partir de maio de 2025:</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www12.senado.leg.br/noticias/materias/2025/04/14/governo-publica-mp-que-reajusta-faixa-de-isencao-do-imposto-de-renda" target="_blank">Medida Provisória nº 1.294/2025</a> <br/>Publicada em 14/04/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

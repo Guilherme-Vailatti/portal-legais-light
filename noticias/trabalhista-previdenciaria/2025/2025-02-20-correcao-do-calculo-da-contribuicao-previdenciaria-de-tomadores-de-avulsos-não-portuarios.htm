@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>eSocial - Correção do cálculo da contribuição previdenciária - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>20/02/2025 | eSocial - Correção do cálculo da contribuição previdenciária de tomadores de avulsos não portuários</h1>
+</div>
+<div class="noticia-corpo">
+<p>Tomadores de mão de obra avulsa não portuária, regida pela Lei nº 12.023/09, informam a base de cálculo das parcelas relativas ao 13º salário juntamente com a remuneração mensal do avulso, por meio do evento S-1270. Para esses contribuintes, foi feita uma correção no cálculo da contribuição previdenciária patronal, uma vez que tais parcelas não estavam compondo a base de cálculo.</p><p>A correção foi implantada dia 18/02/2025, às 08h no ambiente nacional do eSocial (webservice).</p><p>Os contribuintes abrangidos pela correção, que já enviaram as folhas de pagamento com período de apuração a partir de janeiro/2025, deverão reabri-las e encerrá-las novamente, para que seja recalculada a contribuição previdenciária no evento de totalização S-5011.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/esocial/pt-br/noticias/correcao-do-calculo-da-contribuicao-previdenciaria-de-tomadores-de-avulsos-nao-portuarios" target="_blank">Portal eSocial</a> <br/>Publicada em 18/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

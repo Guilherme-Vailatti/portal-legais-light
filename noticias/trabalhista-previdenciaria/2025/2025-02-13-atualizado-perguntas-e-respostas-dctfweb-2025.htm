@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>DCTFWeb - Atualizado perguntas e respostas da DCTFWeb 2025 - Portal de Exigências Legais</title>
+<link href="../../partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../../partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../../../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>13/02/2025 | DCTFWeb - Atualizado perguntas e respostas da DCTFWeb 2025</h1>
+</div>
+<div class="noticia-corpo">
+<p>A Receita Federal publicou, em 10 de fevereiro de 2025, um novo FAQ com informações atualizadas sobre a DCTFWeb. Confira as novidades:</p><p><b>5.10 [Incluído em 10/02/2025] Empresas inativas terão que enviar DCTFWeb sem movimento no primeiro mês do ano, assim como era feito na DCTF PGD?</b>
+</p><p>Em regra, não. Com a unificação das declarações, a RFB passará a utilizar apenas a DCTFWeb para identificar a omissão na entrega da declaração de tributos.  Como na DCTFWeb sem movimento não há obrigatoriedade de renovação anual, caso o contribuinte que se encontre na situação de inatividade tenha uma DCTFWeb sem movimento válida (ou seja, a última DCTFWeb entregue foi sem movimento) não há necessidade de enviar a DCTFWeb sem movimento em janeiro de 2025. Por outro lado, caso o contribuinte não tenha uma DCTFWeb sem movimento válida terá que apresentar a DCTFWeb sem movimento no período de apuração equivalente ao início da obrigatoriedade da DCTFWeb OU no período de apuração equivalente ao mês em que passou a não ter movimento OU ainda, no início de sua atividade, caso este seja posterior ao início da obrigatoriedade da DCTFWeb.</p><p><b>5.11 [Incluído em 10/02/2025] Como informar no MIT os pagamentos antecipados (por decisão do contribuinte) relativos ao IRPJ e CSLL trimestral?</b>
+</p><p>No MIT não são informados pagamentos. O IRPJ e a CSLL apurados trimestralmente devem ser DECLARADOS no último mês do trimestre (MIT e DCTFWeb). Caso o contribuinte opte por antecipar o RECOLHIMENTO destes tributos, deve emitir o DARF no Sicalcweb atentando-se para o preenchimento correto dos dados (código de receita, período de apuração, vencimento).  Na DCTFWeb, este DARF poderá ser utilizado para geração de DARF residual por meio da funcionalidade “Abater Pagamentos Anteriores”, caso exista saldo a pagar.</p><p><b>5.12 [Incluído em 10/02/2025] Com a implantação do MIT, como fazer para informar os pagamentos das quotas relativas ao 4º Trimestre do ano de 2024?</b>
+</p><p>Quem optou por dividir em quotas o IRPJ e a CSLL do 4º trimestre 2024 precisará apresentar, excepcionalmente, a DCTF (PGD) relativa ao período de apuração igual a 03/2025 com a pasta Trimestre Anterior preenchida com os dados dos pagamentos (quotas). O prazo para apresentação será o 15º dia útil do segundo mês subsequente (maio/2025) Em breve serão editados os atos necessários e preparado o PGD DCTF para esta finalidade.</p><p><b>5.13 [Incluído em 10/02/2025] É obrigatório o envio do MIT sem movimento?</b>
+</p><p>Não.  O MIT deve ser apresentado apenas quando houver informações relativas aos tributos nele apurados. Entretanto, quando o contribuinte necessitar enviar uma DCTFWeb sem movimento, poderá fazê-lo a partir do MIT. Esta opção permite a transmissão da DCTFWeb sem movimento sem a necessidade de enviar o eSocial ou a EFD-Reinf sem movimento.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="../todas-noticias-trabalhista-previdenciaria.html">Trabalhista / Previdenciária</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Fonte: <a href="https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/declaracoes-e-demonstrativos/DCTFWeb/arquivos/" target="_blank">Receita Federal</a> <br/>Publicada em 07/02/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>
