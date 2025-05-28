@@ -168,13 +168,15 @@ const btnNext = document.querySelector('.carousel-next');
 const btnPrev = document.querySelector('.carousel-prev');
 
 let currentIndex = 0;
+let autoScroll = setInterval(() => {
+  currentIndex = (currentIndex + 1) % thumbs.length;
+  updateCarousel();
+}, 4000);
 
-// Função para detectar dispositivos móveis
 function isMobile() {
   return window.innerWidth <= 768;
 }
 
-// Atualiza o carrossel com base no índice atual
 function updateCarousel() {
   const itemWidth = thumbs[0].offsetWidth;
   const offset = -currentIndex * itemWidth;
@@ -186,7 +188,13 @@ function updateCarousel() {
   });
 }
 
-// Adiciona funcionalidade aos thumbs de vídeo
+function stopAutoScroll() {
+  if (autoScroll) {
+    clearInterval(autoScroll);
+    autoScroll = null;
+  }
+}
+
 function addClickListener(thumb) {
   const videoId = thumb.dataset.videoId;
   const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
@@ -194,6 +202,8 @@ function addClickListener(thumb) {
 
   thumb.addEventListener('click', () => {
     if (thumb.classList.contains('playing')) return;
+
+    stopAutoScroll(); // Parar carrossel ao clicar no vídeo
 
     thumb.classList.add('playing');
     thumb.style.backgroundImage = 'none';
@@ -213,41 +223,23 @@ function addClickListener(thumb) {
   });
 }
 
-// Função para parar o auto-scroll
-function stopAutoScroll() {
-  clearInterval(autoScroll);
-  autoScroll = null;
-}
-
-// Botões de navegação com interrupção do auto-scroll
 btnNext.addEventListener('click', () => {
   currentIndex = (currentIndex + 1) % thumbs.length;
   updateCarousel();
-  stopAutoScroll(); // Interrompe o auto-scroll
+  stopAutoScroll();
 });
 
 btnPrev.addEventListener('click', () => {
   currentIndex = (currentIndex - 1 + thumbs.length) % thumbs.length;
   updateCarousel();
-  stopAutoScroll(); // Interrompe o auto-scroll
+  stopAutoScroll();
 });
 
-// Atualiza o carrossel ao redimensionar
-window.addEventListener('resize', () => {
-  updateCarousel();
-});
+window.addEventListener('resize', updateCarousel);
 
-// Adiciona os ouvintes de clique para os thumbs
 thumbs.forEach(addClickListener);
-
-// Inicializa o carrossel
 updateCarousel();
 
-// Auto-scroll a cada 5 segundos
-let autoScroll = setInterval(() => {
-  currentIndex = (currentIndex + 1) % thumbs.length;
-  updateCarousel();
-}, 4000);
 
 });
 
