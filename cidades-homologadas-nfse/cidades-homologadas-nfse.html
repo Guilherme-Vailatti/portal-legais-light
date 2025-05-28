@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cidades Homologadas NFS-e</title>
+  <link rel="stylesheet" href="../destaques/style-destaques.css"/>
+  <style>
+  body.noticia-template .search-container {
+    display: none !important;
+  }
+  .header-menu.hero {
+    height: 69px;
+  }
+</style>
+
+  
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+
+<section class="noticia">
+    <div class="noticia-titulo">
+      <h1>Consulta das cidades homologadas para envio e recebimento de NFS-e</h1>
+    </div>
+
+    <div class="clientes" style="margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center;">
+      <div>
+        <a href="https://documentacao.senior.com.br/documentoseletronicos/5.8.15#html_ajuda/municipioshomologados/cidadeshomologadas.htm?utm_source=portal-documentacao&amp;utm_medium=referral&amp;utm_campaign=link-home-portal-legais" class="button-link" target="_top" onclick="gtag('event', 'click', {'assunto': 'Botão Envio'});" style="font-size: 1.1rem; padding: 1rem 2rem;">Envio</a>
+      </div>
+      <div>
+        <a href="https://documentacao.senior.com.br/documentoseletronicos/5.8.15#html_ajuda/municipioshomologados/cidadeshomologadas-recebimento.htm?utm_source=portal-documentacao&amp;utm_medium=referral&amp;utm_campaign=link-home-portal-legais" class="button-link" target="_top" onclick="gtag('event', 'click', {'assunto': 'Botão Recebimento'});" style="font-size: 1.1rem; padding: 1rem 2rem;">Recebimento</a>
+      </div>
+    </div>
+
+    <hr class="light" style="margin: 2rem 0;" />
+
+    <div class="urgente" style="background-color: #fff4e5; border-left: 5px solid #ff8000; padding: 1rem; border-radius: 6px; margin-bottom: 2rem;">
+      <p><b>Importante:</b> Entenda as mudanças que a Reforma Tributária trará para NFS-e, e as orientações necessárias para clientes Senior.</p>
+      <p>Clique <a href="2025/2025-05-08-homologacao-reforma-tributaria-nfse.htm" target="_blank" style="font-weight: bold; color: #c85000;">aqui</a> e saiba como se preparar.</p>
+    </div>
+
+    <div style="text-align: center;">
+      <a href="https://www.senior.com.br/recebimento-nfse?utm_source=portal-documentacao&amp;utm_medium=referral&amp;utm_campaign=banner-portal-legais" target="_blank" onclick="gtag('event', 'click', {'assunto': 'Botão Banner'});">
+        <img src="../images/destaques/banner-nfse.png" style="max-width: 100%; border-radius: 8px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);" />
+      </a>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+
+
+
+    <script>
+      window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../noticias/partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+</body>
+</html>

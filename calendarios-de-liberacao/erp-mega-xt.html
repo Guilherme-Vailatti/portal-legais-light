@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Exa:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+  <link rel="shortcut icon" type="imagex/png" href="../images/icon.ico">
+  <title>Calendário de Liberação ERP MEGA XT</title>
+  <link rel="stylesheet" href="style-calendarios.css" />
+</head>
+<body>
+  <div data-include="header"></div>
+
+      <!--CALENDÁRIO DE LIBERAÇÕES-->
+
+      <h2 style="text-align: center; margin-top: 2rem; color: var(--texto-principal); font-size: 1.8rem;">
+        Calendário de Liberações<br>Gestão Empresarial | ERP MEGA XT
+      </h2>
+      <div class="container">
+      <div class="tabs">
+        <div class="tab active" data-tab="previsoes">📅 Previstas</div>
+        <div class="tab realizada" data-tab="realizadas">✅ Realizadas</div>
+      </div>
+  
+      <!-- Previsões -->
+<div class="tab-content active" id="previsoes">
+  <table>
+    <thead>
+      <tr>
+        <th>Ano</th>
+        <th>Mês</th>
+        <th>Previsões</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">2025</td>
+        <td>Junho</td>
+        <td>
+          <div class="container-dropdown">
+          <div class="accordion">Reforma Tributária | LC nº 214/2025 - Parametrizações e Cálculos<span class="arrow">&#9660;</span></div>
+          <div class="panel"><p><b>O que será liberado:</b> em atendimento a Lei Complementar nº 214/2025, será disponibilizado todas as parametrizações e cálculos nos documentos dos processos de compra e venda referentes ao CBS, IBS Estadual e IBS Municipal da Reforma Tributária. Será liberado a partir da versão Mega 5.02.</p></div>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Setembro</td>
+        <td>
+          <div class="container-dropdown">
+            <div class="accordion">Reforma Tributária | LC nº 214/2025 - Documentos fiscais<span class="arrow">&#9660;</span></div>
+            <div class="panel"><p><b>O que será liberado:</b> em atendimento a Lei Complementar nº 214/2025, será disponibilizado na emissão dos documentos fiscais (XMLs) os novos tributos referentes a Reforma Tributária, assim como a atualização no recebimento eletrônico destes mesmos documentos. Será liberado a partir da versão Mega 5.02.</p></div>
+          </div>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+  
+     <!-- Realizadas -->
+<div class="tab-content" id="realizadas">
+  <table class="realizada">
+    <thead>
+      <tr>
+        <th>Ano</th>
+        <th>Mês</th>
+        <th>Liberações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="1">2025</td>
+        <td>Março</td>
+        <td>
+          <div class="container-dropdown">
+          <div class="accordion">Reforma Tributária - LC nº 214/2025 - Documentação Técnica<span class="arrow">&#9660;</span></div>
+          <div class="panel"><p><b>O que foi liberado:</b>  em atendimento a Lei Complementar nº 214/2025, disponibilizamos a documentação técnica para possibilitar aos clientes avaliar pontos de customizações em seu ambiente e também de integrações entre outros sistemas da empresa.</p>
+          <p><b>Liberado em:</b> 03/25. <a href="https://documentacao.senior.com.br/exigenciaslegais/#materias/erp/destaques/mega-xt-reforma-tributaria.htm#3-27.htm%23604696" target="_blank">Saiba mais</a>Saiba mais.</p></div>
+        </div>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
+      </div>
+
+        <p class="texto-alteracoes">
+        Informamos que as previsões do calendário estão sujeitas a alterações, as quais podem ocorrer em função das atividades desenvolvidas pela Senior e de eventuais mudanças nos prazos estabelecidos pelo governo.
+      </p>
+
+
+      <div data-include="footer"></div>
+
+      <script src="../script.js"></script>
+      <script>
+// Carregar header e footer
+document.addEventListener('DOMContentLoaded', async () => {
+  const include = async (attr) => {
+    const el = document.querySelector(`[data-include="${attr}"]`);
+    if (!el) return;
+    const html = await fetch(`../noticias/partials/${attr}.html`).then(r => r.text());
+    el.innerHTML = html;
+  };
+
+  await include('header');
+  await include('footer');
+
+  const script = document.createElement('script');
+  script.src = '../script.js';
+  document.body.appendChild(script);
+});
+
+// Alternar abas
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById(tab.dataset.tab).classList.add('active');
+  });
+});
+
+// Acordeões com transição suave
+document.querySelectorAll('.accordion').forEach(acc => {
+  acc.addEventListener('click', () => {
+    acc.classList.toggle('active');
+    const panel = acc.nextElementSibling;
+
+    if (panel.classList.contains('open')) {
+      panel.style.maxHeight = null;
+      panel.classList.remove('open');
+    } else {
+      panel.classList.add('open');
+      requestAnimationFrame(() => {
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      });
+    }
+  });
+});
+
+// Função para realçar apenas texto, preservando estrutura HTML
+theHighlightTextNode = (node, term) => {
+  const regex = new RegExp(`(${term})`, 'gi');
+  const matches = node.nodeValue.match(regex);
+  if (matches) {
+    const span = document.createElement('span');
+    span.innerHTML = node.nodeValue.replace(regex, '<mark>$1</mark>');
+    node.parentNode.replaceChild(span, node);
+  }
+};
+
+// Ativar busca
+const activateSearch = () => {
+  const input = document.querySelector('.search-box');
+  const button = document.querySelector('.search-button');
+
+  const search = () => {
+    const term = input.value.trim().toLowerCase();
+    const dropdowns = document.querySelectorAll('.container-dropdown');
+    let firstMatch = null;
+
+    dropdowns.forEach(drop => {
+      const acc = drop.querySelector('.accordion');
+      const panel = drop.querySelector('.panel');
+
+      // Reset
+      acc.classList.remove('active');
+      panel.classList.remove('open');
+      panel.style.maxHeight = null;
+
+      // Remove <mark>
+      acc.querySelectorAll('mark').forEach(m => m.replaceWith(m.textContent));
+      panel.innerHTML = panel.innerHTML.replace(/<mark>|<\/mark>/gi, '');
+
+      const text = (acc.textContent + ' ' + panel.textContent).toLowerCase();
+
+      if (term && text.includes(term)) {
+        acc.classList.add('active');
+        panel.classList.add('open');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+
+        acc.childNodes.forEach(child => {
+          if (child.nodeType === 3) theHighlightTextNode(child, term);
+        });
+        panel.innerHTML = panel.innerHTML.replace(new RegExp(`(${term})`, 'gi'), '<mark>$1</mark>');
+
+        if (!firstMatch) firstMatch = drop;
+      }
+    });
+
+    if (firstMatch) firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Enter') search();
+  });
+
+  button.addEventListener('click', () => search());
+};
+
+window.addEventListener('load', () => setTimeout(activateSearch, 100));
+
+</script>
+    </body>
+    </html>
+    

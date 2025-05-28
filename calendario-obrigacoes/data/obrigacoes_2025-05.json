@@ -1,0 +1,22 @@
+[
+  {
+    "data": "2025-05-07",
+    "descricao": "Salário | Todo 5° dia útil ou anterior."
+  },
+  {
+    "data": "2025-05-15",
+    "descricao": "CIDE Combustíveis e Remessas ao Exterior | Todo dia 15 ou dia útil anterior;\n\nSPED EFD Reinf | Todo dia 15 ou dia útil posterior;\n\nSPED EFD Contribuições | Até o 10º dia útil do segundo mês subsequente ao de referência da escrituração."
+  },
+  {
+    "data": "2025-05-20",
+    "descricao": "DIRBI | Todo dia 20 ou dia útil anterior;\n\nFGTS Digital | Todo dia 20 ou dia útil anterior;\n\nPGDAS-D | Todo dia 20 ou dia útil posterior, relativos ao mês anterior;\n\nDAS | Todo dia 20 ou dia útil posterior;\n\nDARF (INSS e IRRF) | Até o dia 20 ou dia útil anterior;\n\nDARF (CPRB) | Todo dia 20 ou dia útil anterior."
+  },
+  {
+    "data": "2025-05-23",
+    "descricao": "DARF (PIS, COFINS e IPI) | Todo dia 25 ou dia útil anterior;\n\nDARF (PIS sobre a folha) | Todo dia 25 ou dia útil anterior."
+  },
+  {
+    "data": "2025-05-30",
+    "descricao": "DIRPF | Último dia útil;\n\nLCDPR | Último dia útil;\n\nDME | Último dia útil;\n\nDOI | Último dia útil;\n\nDARF (IRPJ e CSLL) | Último dia útil;\n\nDCTFWeb | Último dia útil ou anterior."
+  }
+]

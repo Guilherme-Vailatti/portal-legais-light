@@ -1,0 +1,32 @@
+[
+  
+  {
+    "data": "2025-02-06",
+    "descricao": "Salário | Todo 5° dia útil ou anterior"
+  },
+  {
+    "data": "2025-02-14",
+    "descricao": "CIDE Combustíveis e Remessas ao Exterior | Todo dia 15 ou dia útil anterior\n\nSPED EFD Contribuições | Até o 10º dia útil do segundo mês subsequente ao de referência da escrituração"
+  },
+  {
+    "data": "2025-02-17",
+    "descricao": "SPED EFD Reinf | Todo dia 15 ou dia útil posterior"
+  },
+  {
+    "data": "2025-02-20",
+    "descricao": "PGDAS-D | Todo dia 20 ou dia útil posterior, relativos ao mês anterior\n\nDIRBI | Todo dia 20 ou dia útil anterior\n\nFGTS Digital | Todo dia 20 ou dia útil anterior\n\nDAS | Todo dia 20 ou dia útil posterior\n\nDARF (INSS e IRRF) | Até o dia 20 ou dia útil anterior"
+  },
+  {
+    "data": "2025-02-25",
+    "descricao": "DARF (PIS, COFINS e IPI) | Todo dia 25 ou dia útil anterior\n\nDARF (PIS sobre a folha) | Todo dia 25 ou dia útil anterior"
+
+  },
+  {
+    "data": "2025-02-28",
+    "descricao": "DCTFWeb | Último dia útil ou anterior;\n\nDME | Último dia útil;\n\nDOI | Último dia útil;\n\nDARF (IRPJ e CSLL) | Último dia útil;\n\nDMED | Último dia útil;\n\nDMOB | Último dia útil;\n\nDIRF | Último dia útil;\n\nDECRED | Último dia útil;\n\ne-Financeira | Último dia útil"
+  },
+  {
+    "data": "2025-01-31",
+    "descricao": "Requerimento do 13º salário | Requerimento pelo empregado da 1ª parcela do 13º salário por ocasião de suas férias.\n\nDME | Último dia útil\n\nDOI | Último dia útil\n\nSimples Nacional | Comunicação da exclusão obrigatória\n\nSimples Nacional | Opção com efeitos a partir de 01/01/2024\n\nDARF (IRPJ e CSLL) | Último dia útil"
+  }
+]

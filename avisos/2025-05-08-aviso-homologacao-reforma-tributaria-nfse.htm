@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<title>Aviso eDocs - Homologação de Prefeituras para a Reforma Tributária (NFS-e)</title>
+<link href="../noticias/partials/style-noticia.css" rel="stylesheet"/>
+<style>
+  body.noticia-template .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+  </style>
+<script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../noticias/partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../script.js';
+      document.body.appendChild(script);
+    });
+  </script>
+
+  
+</head>
+<body class="noticia-template">
+<div data-include="header"></div>
+<section class="noticia">
+<div class="noticia-titulo">
+<h1>Aviso eDocs - Homologação de Prefeituras para a Reforma Tributária (NFS-e)</h1>
+</div>
+<div class="noticia-corpo">
+<p>Conforme estabelecido <a href="https://documentacao.senior.com.br/exigenciaslegais#materias/erp/2025/2025-02-20-nota-fiscal-de-servicos-eletronica-de-padrao-nacional-para-2026.htm" target="_blank">no artigo 62</a> da Lei Complementar nº 214/2025, na qual institui o IBS, CBS e IS e comenta sobre a emissão da NFS-e Nacional:</p>
+        <ul>
+            <li><i>§ 1º Para fins do disposto no caput deste artigo, os Municípios e o Distrito Federal ficam obrigados, a partir de 1º de janeiro de 2026, a:</i>
+                <ol style="list-style-type: upper-roman;">
+                    <li>autorizar seus contribuintes a emitir a Nota Fiscal de Serviços Eletrônica de padrão nacional (NFS-e) no ambiente nacional <b>OU</b>, na hipótese de possuir emissor próprio, compartilhar os documentos fiscais eletrônicos gerados, conforme leiaute padronizado, para o ambiente de dados nacional da NFS-e;</li>
+                </ol>
+            </li>
+        </ul>
+        <p>Isso quer dizer que, mesmo com a chegada da Reforma Tributária, os municípios permanecerão sendo autônomos em definir se manterão ou não um sistema próprio para gestão dos tributos municipais ou se irão aderir à NFS-e Nacional. O único requisito para aqueles que permanecerem usando um sistema próprio é que as NFS-es sejam sincronizadas com o Ambiente Nacional do governo.</p>
+        <p><u>Com isso, a partir de 2026, o desafio de existirem vários formatos de integração diferentes para cada uma das prefeituras continuará existindo.</u>
+        </p>
+        <p>Umas das primeiras prefeituras a se pronunciar sobre o assunto foi São Paulo/SP que, conforme <a href="https://capital.sp.gov.br/web/fazenda/w/emissaonfse" target="_blank">notícia</a>, definiu que seguirá usando o sistema atual e adaptará o XML da NFS-e para receber as tags relativas aos novos impostos.</p>
+        <h2>De que forma isso impacta a minha empresa?</h2>
+        <p>Isso significa que cada uma das prefeituras onde suas operações estão estabelecidas poderá seguir usando sistemas distintos e terá autonomia para definir de que forma os novos impostos serão enviados via webservice.</p>
+        <p>Isso traz um desafio técnico adicional para os contribuintes que usam as emissões de forma integrada ao seu ERP, pois será necessário aguardar que cada prefeitura defina como irá prosseguir para que seja possível “homologar” o novo formato de envio e deixá-lo apto para as emissões.</p>
+        <h2>O que devo fazer?</h2>
+        <ol>
+            <li><![CDATA[	]]><b>Entre em contato com as prefeituras</b> onde sua empresa possui operações.</li>
+            <li><b>Solicite informações antecipadas</b> sobre como a prefeitura vai tratar a implementação dos novos tributos criados pela Reforma Tributária, tais como documentação do layout, arquivos de exemplos, se existe ambiente para testes, etc.</li>
+            <li><b>Abra um chamado com seu canal de atendimento Senior</b> solicitando a homologação da prefeitura para a Reforma Tributária, anexando os materiais obtidos no tópico anterior. Para maiores orientações sobre como abrir esse tipo de chamado, clique <a href="https://suporte.senior.com.br/hc/pt-br/articles/4409372121108-ERP-eDocs-NFS-e-Como-solicitar-homologação-de-uma-cidade-para-Emissão-de-NFS-e" target="_blank">aqui</a>;</li>
+            <li><b>Evite deixar para o final do ano</b>, quando a demanda por suporte e homologações será maior.</li>
+        </ol>
+        <p>Quanto antes essas definições forem feitas, <b>mais cedo a Senior poderá realizar as adaptações e a homologação da prefeitura</b>, garantindo que sua empresa esteja pronta para emitir NFS-e de forma adequada a partir de <b>janeiro de 2026</b>.</p>
+</div>
+<div class="tema-noticia">
+<h5>Notícia relacionada:</h5>
+<div class="btn-tema-noticia">
+<a href="todos-os-avisos.html">Avisos</a>
+</div>
+</div>
+<div class="noticia-fonte"></div>
+<p class="fonte">Aviso | Reforma Tributária e Nota Fiscal de Serviço Eletrônica <br/>Publicada em 07/05/2025</p>
+</section>
+<div data-include="footer"></div>
+</body>
+</html>

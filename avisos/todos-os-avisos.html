@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Avisos</title>
+  <link rel="stylesheet" href="../noticias/partials/style-noticia.css">
+  <style>
+  
+  .search-container { display: none !important; }
+  .header-menu.hero { height: 69px; }
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.noticia-lista {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem 2rem;
+}
+
+ul#lista-noticias {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.noticia-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #3e8e41;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.noticia-item:hover {
+  border-left-color: #2c6b31;
+  background-color: #f4f4f4;
+}
+
+.noticia-item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  display: block;
+}
+
+.noticia-item a:hover {
+  text-decoration: underline;
+  color: #2c6b31;
+}
+
+
+
+@media (max-width: 600px) {
+  .noticia-item {
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+
+
+
+</head>
+<body class="pagina-listagem">
+  <div data-include="header"></div>
+
+  <section class="noticia-lista">
+    <h1>Avisos</h1>
+    
+    <ul id="lista-noticias"></ul>
+  </section>
+
+  <div data-include="footer"></div>
+
+  <script>
+   window.addEventListener('DOMContentLoaded', async () => {
+  const include = async (attr) => {
+    const el = document.querySelector(`[data-include="${attr}"]`);
+    if (!el) return;
+    const html = await fetch(`../noticias/partials/${attr}.html`).then(r => r.text());
+    el.innerHTML = html;
+  };
+
+  await include('header');
+  await include('footer');
+
+  const container = document.getElementById('lista-noticias');
+
+try {
+  const avisos = await fetch('index.json').then(r => r.json());
+
+  avisos
+    .sort((a, b) => {
+      const d1 = new Date(a.data.split('/').reverse().join('-'));
+      const d2 = new Date(b.data.split('/').reverse().join('-'));
+      return d2 - d1;
+    })
+    .forEach(aviso => {
+      const item = document.createElement('li');
+      item.classList.add('noticia-item');
+      item.innerHTML = `<a href="${aviso.arquivo}">${aviso.data} - ${aviso.titulo}</a>`;
+      container.appendChild(item);
+    });
+} catch (err) {
+  console.error('Erro ao carregar avisos:', err);
+}
+
+});
+
+  </script>
+</body>
+</html>

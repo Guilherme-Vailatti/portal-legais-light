@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>NFe e NFCe</title>
+  <link rel="stylesheet" href="style-destaques.css">
+  <link rel="shortcut icon" type="imagex/png" href="../images/icon.ico">
+  <style>
+    body.noticia-template .search-container { display: none !important; }
+    .header-menu.hero { height: 69px; }
+  </style>
+</head>
+<body class="noticia-template">
+  <div data-include="header"></div>
+
+  <section class="noticia">
+
+    <div class="noticia-titulo">
+    <h1>Saiba tudo sobre NFe e NFCe</h1>
+    </div>
+
+
+    <div class="noticia-fonte">
+      <p>Texto atualizado em 01/2025.</p>
+    </div>
+
+    <div class="noticia-corpo">
+       <p>A Nota Fiscal Eletrônica (NFe) instituída em 2007, vem recebendo atualizações de leiaute a cada dois anos. Em 2016 com a publicação da Nota Técnica 2016 002, houve o lançamento da nova versão 4.00 da NFe.</p>
+        <p>Com esse novo leiaute, é necessário ficar atento às diversas mudanças e impactos gerados nos processos de emissão de nota fiscal das empresas. Abaixo, veja informações mais detalhadas sobre essa nova versão da NFe.
+</p>
+        <h2>Como funciona?</h2>
+        <p>A emissão da NFe é um processo todo digital, no qual a empresa realiza a venda, emite eletronicamente um arquivo em XML, assina digitalmente e transmite para a Secretaria de Fazenda Estadual (SEFAZ).</p>
+        <p>O Fisco realiza a pré-validação da nota, autorizando a operação comercial e permitindo que a empresa imprima, em papel comum o Documento Auxiliar da Nota Fiscal Eletrônica (DANFE). A Receita Federal atua como o repositório nacional das NFe permitindo as empresas, clientes, fornecedores e demais interessados consultarem a validade das NFes.</p>
+        <p>Entenda o fluxo de informações:</p>
+        <p style="text-align: center;">
+            <img src="../images/destaques/fluxo-nfe.png" />
+        </p>
+        
+
+        <details class="dropdown">
+        <summary><strong>Versão 4.0 - Cronograma de implantação e a quem se aplica</strong></summary>
+        <p>Atualmente são aceitos os leiautes da NFe e NFCe nas versões 3.10 e 4.00, porém a partir de <b>02/08/2018</b> torna-se obrigatório a adesão e emissão na versão 4.00 para NFe e em 01/10/2018 para NFCe, pois após dessas datas, o ambiente de emissão na versão 3.10 para de operar.</p>
+                <div class="urgente">
+                    <p><b>IMPORTANTE</b>
+                    </p>
+                    <p>Além da necessidade de atualizar a versão do <b>Gestão Empresarial |&#160;ERP</b>, <b>Gestão Empresarial PME |&#160;GO&#160;UP</b>, <b>eDocs</b> e <b>Gestão de Lojas</b> para as versões descritas abaixo, as alterações da nova versão do leiaute exigem a adequação de parametrizações e customizações existentes na sua base. Confira todas as instruções no nosso <a href="checklist-migracao-nfe-3-10-para-4-00.htm" style="font-weight: bold; font-size: 14pt;">checklist de migração da versão</a>.</p>
+                    <p>Por isso, é imprescindível que cada cliente crie seu próprio planejamento de adequação dos processos e homologação das funcionalidades após atualizar os sistemas para as versões mínimas aceitas, conforme o checklist.í nSiommaesnte com esse planejamento será possível evitar <b style="font-size: 14pt;">indisponibilidade do faturamento e perdas financeiras</b> na sua empresa. </p>
+                    <p>Programe-se!</p>
+                </div>
+                <p style="font-weight: bold;">O prazo para que as empresas se adequem é:</p>
+                <p style="text-align: center;">
+                    <img src="../images/destaques/cronograma-nfe-4.png" />
+                </p>
+                <ul>
+                    <li><b>20/11/2017 - Ambiente de Homologação (para teste das empresas)</b>: Neste período ocorre o início dos testes para homologação dos programas emissores de NFe e NFCe.</li>
+                    <li><b>04/12/2017 - Ambiente de Produção</b>: Início da emissão de NFe e NFCe pela versão 4.00. Neste período é possível emitir notas fiscais nas duas versões simultaneamente, ou seja, será opcional a migração para a NFe e NFCe 4.00.</li>
+                    <li><b>02/08/2018 - Desativação da versão 3.10 da NFe</b>: Data limite de migração para a NFe 4.00. A partir deste dia, a versão 3.10 será desativada e será possível emitir NFe apenas na versão 4.00.</li>
+                    <li><b>01/10/2018 - Desativação da versão 3.10 da NFCe</b>: Data limite de migração para a NFCe 4.00. A partir deste dia, a versão 3.10 será desativada e será possível emitir NFCe apenas na versão 4.00.</li>
+                </ul>
+                <h2>O que muda, na prática?</h2>
+                <ul>
+                    <li>O protocolo de comunicação deixa de ser o SSL e é substituído pelo protocolo TLS 1.2 ou superior, que proporciona mais segurança</li>
+                    <li>No novo layout, as campos referentes ao Fundo de Combate à Pobreza (FCP) para operações internas ou interestaduais com substituição tributária poderão ter identificados os valores referente ao percentual de ICMS.
+</li>
+                    <li>
+O campo indicador de pagamento também muda e passa a integrar o Grupo de Informações de Pagamento. Nele, há a previsão do preenchimento de dados com os valores de troco, além de ser preciso informar a forma de pagamento – cartão (débito ou crédito), dinheiro, cheque ou vale-alimentação.
+
+</li>
+                    <li>O campo indicador de presença (indPres), do Grupo de Identificação da NFe, pode ser preenchido com a opção 5.
+
+</li>
+                    <li>O Grupo X (Informações do Transporte da NF-e) passa a permitir a inclusão de novas modalidades de frete (id X02)
+</li>
+                    <li>Criado o grupo Rastreabilidade de produto (Grupo I80), que permitirá rastrear produtos sujeitos a restrições sanitárias.
+
+</li>
+                    <li>No caso de medicamentos, o código da Anvisa deve ser informado em um campo específico</li>
+                </ul>
+      </details>
+
+
+      <h2>Para quem já é cliente Senior</h2>
+      <div class="clientes" style="display: flex; flex-wrap: wrap; gap: 1rem; margin: 2rem 0;">
+        <div class="button-link"><a href="checklist-migracao-nfe-3-10-para-4-00.htm">4.0 - Checklist de migração</a>
+        </div>
+        <div class="button-link"><a href="faq-nfe-4-00.htm">4.0 - Perguntas frequentes</a>
+        </div>
+        <div class="button-link"><a href="https://suporte.sara.senior.com.br/?assunto=nfe_nfce4" target="_blank" onclick="gtag('event', 'click', {'assunto': 'Link Sara na pagina centralizadora'});">Sara - Chatbot</a>
+        </div>
+        <div class="button-link"><a href="checklist-nota-tecnica-2020-005.htm">NT 2020.005 - Checklist para adequação</a>
+        </div>
+        <div class="button-link"><a href="checklist-nota-tecnica-2020-006.htm">NT 2020.006 - Checklist para adequação</a>
+        </div>
+        </div>
+
+        <section class="noticia-lista">
+        <h2><a name="noticias-relacionadas"></a>Notícias relacionadas</h2>
+        <ul>
+          <li class="noticia-item"><a href="../noticias/federal/2025/2025-04-02-adequacao-na-nfe-nfce-substitui-a-nt-2024-002-v1-10.htm">02/04/2025 | NF-e e NFC-e - Nota Técnica nº 2025.002, v. 1.00 - Reforma Tributária - Adequação na NF-e e NFC-e, substitui a NT nº 2024.002 v.1.10</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-03-27-simplificacao-operacional-com-leiaute-qr-code-resposta-assincrona-lote-1-nfe.htm">27/03/2025 | NF-e NFC-e - Nota Técnica nº 2025.001, v. 1.0 - Simplificação Operacional: Leiaute QR-Code, Resposta Assíncrona Lote 1 NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-03-20-postergacao-das-regras-de-validacao-do-codigo-de-seguranca-do-responsavel-tecnico.htm">20/03/2025 | NF-e NFC-e - Nota Técnica nº 2018.005, v. 1.51 - Postergação das regras de validação do Código de Segurança do Responsável Técnico</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-02-27-nota-tecnica-divulga-alteracao-nas-regras-de-validacao-do-gtin.htm">27/02/2025 | NF-e NFC-e - Nota Técnica nº 2021.003, v. 1.4 - Divulga alteração nas regras de validação do GTIN</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-02-27-informe-tecnico-alteracao-tabela-fcp.htm">27/02/2025 | NF-e NFC-e - Informe Técnico nº 2023.004, v. 1.03 - Alteração da tabela de FCP</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-02-27-postergacao-das-regras-de-validacao-do-codigo-de-seguranca-do-responsavel-tecnico-para-o-parana.htm">27/02/2025 | NF-e NFC-e - Nota Técnica nº 2018.005 v. 1.50 - Postergação das regras de validação do código de segurança do responsável técnico para o estado do Paraná</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-02-25-novas-regras-de-validacao-relativos-as-informacoes-de-produtos-da-agricultura-pecuaria-e-producao-florestal.htm">25/02/2025 | NF-e - Nota Técnica nº 2024.003, v. 1.03 - Novas regras de validação relativos as informações de produtos da agricultura, pecuária e produção florestal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-02-20-inclusao-de-novo-municipio-no-estado-do-mato-grosso.htm">20/02/2025 | NF-e - Informe Técnico nº 2025.001, v.1.00 - Inclusão de novo município no Estado do Mato Grosso</a>
+            </li>
+
+            </ul>
+            <ul id="noticias-ocultas" style="display: none; transition: max-height 0.5s ease; overflow: hidden;">
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-01-09-evento-pedido-de-prorrogacao-suspensao-do-icms-em-casos-de-remessa-para-industrializacao.htm">09/01/2025 | NF-e MG - Comunicado: Evento Pedido de Prorrogação Suspensão do ICMS em casos de remessa para industrialização</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2025/2025-01-09-atualizacao-na-tabela-de-ncm-a-partir-de-02-01-2025.htm">09/01/2025 | NF-e NFC-e - Informe Técnico nº 2024.001, v. 2.10 - Atualização na tabela de NCM a partir de 02/01/2025</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-12-10-tabela-de-codigo-de-classificacao-tributaria-do-ibs-e-cbs.htm">10/12/2024 | Reforma Tributária - Informe Técnico nº 2024.001, v. 1.00 - Tabela de Código de Classificação Tributária do IBS e da CBS</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-12-10-projeto-reforma-tributaria-do-consumo-documentos-fiscais-adequacao-nfe-e-nfce.htm">10/12/2024 | Reforma Tributária - Nota Técnica nº 2024.002, v. 1.10 - Projeto Reforma Tributária do Consumo - Documentos Fiscais - Adequação NF-e e NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-12-10-suspensao-do-icms-na-remessa-para-industrializacao.htm">10/12/2024 | NFe NFCe - Nota Técnica nº 2015.001, v. 1.3 - Suspensão do ICMS na remessa para industrialização</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-12-10-alteracoes-na-forma-de-credenciamento-para-emissao-da-nfce-e-bpe.htm">10/12/2024 | NFCe SC - CEC SEF/DIAT nº 22/2024 – Alterações na forma de credenciamento para emissão da NFCe e BPe</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-11-19-informe-tecnico-altera-tabela-de-produtos-da-anp.htm">19/11/2024 | NF-e - Informe Técnico nº 2023.001, v. 1.10 - Tabela de código de produtos da ANP</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-10-14-icms-na-operacao-interestadual-de-vendas-consumidor-final.htm">14/10/2024 | NF-e NFC-e - Nota Técnica nº 2022.005, v. 1.11 - ICMS na operação interestadual de vendas a consumidor final</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-10-14-versao-revisada-das-informacoes-de-produtos-da-agricultura-pecuaria-e-producao-florestal.htm">14/10/2024 | NF-e - Nota Técnica nº 2024.003, v. 1.01 - Versão revisada das Informações de produtos da agricultura, pecuária e produção florestal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-10-09-nota-tecnica-2023-003-v-1-2-inclusao-e-alteracao-de-campos-e-regras-de-validacao.htm">09/10/2024 | NF-e NFC-e - Nota Técnica nº 2023.003, v 1.2 - Inclusão e alteração de campos e regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-10-09-nota-tecnica-2023-004-v-1-2-inclusao-e-alteracao-de-campos-e-regras-de-validacao.htm">09/10/2024 | NF-e NFC-e - Nota Técnica nº 2023.004, v. 1.2 - Inclusão e alteração de campos e regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-10-03-atualizacao-tabela-ncm-a-partir-de-02-10-2024.htm">03/10/2024 | NF-e NFC-e - Informe Técnico nº 2024.001, v. 2.00 - Atualização na tabela de NCM a partir de 02/10/2024</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-09-19-nota-tecnica-2024-003-v1-0-informacoes-de-produtos-da-agricultura-pecuaria-e-producao-florestal.htm">19/09/2024 | NF-e - Nota Técnica nº 2024.003, v. 1.00 - Informações de Produtos da Agricultura, Pecuária e Produção Florestal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-09-18-estabelecidos-codigos-de-beneficio-fiscal-a-serem-preenchidos-na-nf-e-nfc-e-nf3-e.htm">18/09/2024 | ICMS DF - Ato Declaratório SEAE/SUAPOF/COREN nº 3/2024 - Estabelecidos códigos de benefício fiscal a serem preenchidos na NF-e, NFC-e e na NF3-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-09-18-unificacao-da-svan-svc-na-de-producao.htm">18/09/2024 | NF-e - Unificação da SVAN/SVC-AN de produção</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-09-18-nota-tecnica-2018-005-v1-40-ativa-algumas-regras-de-validacao-para-o-estado-do-parana.htm">18/09/2024 | NF-e NFC-e - Nota Técnica nº 2018.005, v. 1.40 - Ativa algumas regras de validação para o Estado do Paraná</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-09-03-nota-tecnica-2024-001-v1-2-altera-campos-e-regras-para-permitir-emissao-com-crt-a-mei.htm">03/09/2024 | NF-e NFC-e - Nota Técnica nº 2024.001, v. 1.2 - Altera campos e regras para permitir a emissão com CRT=4 (MEI)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-08-15-nota-tecnica-2019-001-v1-63-cbenef-para-o-df-criacao-de-nova-regra-de-validacao.htm">15/08/2024 | NF-e NFC-e - Nota Técnica nº2019.001, v. 1.63 - cBenef para o DF e criação de nova regra de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-08-14-decreto-48876-2024-novas-disposicoes-sobre-transferencia-de-mercadorias.htm">14/08/2024 | ICMS MG - Decreto nº48.876/2024 - Novas disposições sobre transferência de mercadorias</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-08-07-simples-nacional-fica-obrigado-ao-preenchimento-do-codigo-de-beneficio-fiscal-cbenef.htm">07/08/2024 | NF-e ES - Decreto nº 5.775-R/2024 - Simples Nacional fica obrigado ao preenchimento do código de benefício fiscal (Cbenef)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-08-05-nota-tecnica-2020-007-v-1-4-evento-ator-nfe-transportador.htm">05/08/2024 | NF-e - Nota Técnica nº 2020.007, v. 1.40 - Evento Ator Interessado na NF-e – Transportador</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-11-publicada-nova-disciplina-para-nota-fiscal-de-consumidor-eletronica-e-contingencia-off-line.htm">11/07/2024 | NF-e SP - Portaria SER nº 40/2024 - Publicada nova disciplina para a Nota Fiscal de Consumidor Eletrônica e contingência off-line</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-11-portaria-ser-alteradas-as-regras-para-dispensa-da-gia.htm">11/07/2024 | NF-e SP - Portaria SER nº 41/2024 - Portaria SER Alteradas as regras para dispensa da GIA</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-11-definido-prazo-obrigatoriedade-de-emissao-declaracao-de-conteudo-eletronica-dc-e.htm">11/07/2024 | Legislação - Ajuste Sinief nº 16/2024 - Definido o prazo da obrigatoriedade de emissão da Declaração de Conteúdo eletrônica - DC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-11-alteradas-disposicoes-relativas-a-emissao-de-ct-e-simplificado-e-regras-de-correcoes-do-ct-e.htm">11/07/2024 | Legislação - Ajuste Sinief nº 17/2024 - Alteradas disposições relativas à emissão de CT-e Simplificado e regras de correções do CT-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-11-revogados-diversos-cst-relativos-a-substituicao-tributaria-que-entrariam-em-vigor-01-10-2024.htm">11/07/2024 | Legislação - Ajuste Sinief nº 20/2024 - Revogados diversos CST relativos à substituição tributária, que entrariam em vigor em 01/10/2024</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-11-publicados-procedimentos-para-correcao-de-erro-identificado-na-nf-e.htm">11/07/2024 | Legislação - Ajuste Sinief nº 13/2024 - Publicados os procedimentos para correção de erro identificado na NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-07-04-prorrogado-prazo-de-obrigatoriedade-de-preenchimentos-campos-vicmsdeson-e-motdesicms.htm">04/07/2024 | NF-e NFC-e SC - Ato DIAT nº 59/2023 - Prorrogado o prazo de obrigatoriedade de preenchimento dos campos vICMSDeson e motDesICMS nos documentos fiscais eletrônicos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-26-nota-tecnica-2024-001-v1-10-codigo-de-regime-tributario-4-mei-denegacao.htm">26/06/2024 | NF-e NFC-e - Nota Técnica n° 2024.001, v 1.10 - Código de Regime Tributário 4 (MEI), Denegação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-13-mp-restringe-compensacao-creditos-tributarios-pis-cofins-com-mudancas-sistematica-de-nao-cumulativo.htm">12/06/2024 | NF-e - Informe Técnico nº 2024.002, v. 1.01 - Altera tabela de meios de pagamento</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-06-nota-tecnica-evento-de-conciliacao-financeira-econf.htm">06/06/2024 | NF-e NFC-e - Nota Técnica nº 2024.002, v. 1.00 - Evento de Conciliação Financeira – ECONF</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-06-legislacao-sc-prorroga-data-de-obrigatoriedade-nf-e-para-produtores-rurais.htm">06/06/2024 | NF-e - Decreto nº 601/2024 - Legislação de SC prorroga a data de obrigatoriedade de NF-e para Produtores Rurais</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-06-decreto-diminui-o-limite-de-valor-de-emissao-nfc-e-que-obriga-a-identificacao-do-destinatario.htm">06/06/2024 | NFC-e RJ - Decreto nº 49.086/2024 - Diminui o limite de valor de emissão NFC-e que obriga a identificação do destinatário</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-06-publicada-nota-tecnica-regulamentacao-servico-de-distribuicao-de-df-e-inclusao-do-evento-ator-interessado-nf-e.htm">06/06/2024 | NF-e - Nota Técnica nº 2014.002, v 1.20 - Serviço de Distribuição de DF-e - Inclusão do evento “Ator Interessado”</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-06-portaria-ser-32-2024-revoga-a-previsao-de-denegacao.htm">06/06/2024 | NF-e SP - Portaria SER nº 32/2024 - Revoga a previsão de denegação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-06-06-publicadas-nota-tecnica-e-informe-tecnico-tributacao-monofasica-sobre-combustiveis.htm">06/06/2024 | NF-e NFC-e - Nota Técnica nº 2023.001, v. 1.51 e Informe Técnico nº 2023.003, v. 1.03 - Tributação monofásica sobre combustíveis</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-04-30-obrigatoriedade-nf-e-nfc-para-produtores-rurais-novas-regras.htm">30/04/2024 | NF-e NFC-e - Ajuste SINIEF nº 1/2024 - Obrigatoriedade de NF-e e da NFC-e para produtores rurais tem novas regras</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-04-30-nota-tecnica-altera-o-ambiente-de-autorizacao-para-svrs-e-acertos-documentacao-evento-insucesso-entrega-nf-e.htm">30/04/2024 | NF-e - Nota Técnica nº 2023.005, v.1.02 - Altera o ambiente de autorização para a SVRS e apresenta acertos na documentação para o evento de insucesso na entrega da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-04-24-nt-2024-001-v-1-00-substitui-denegacao-nf-e-por-rejeicao-altera-campos-regras-emissao-nf-e-nfc-e-com-crt-4-mei.htm">24/04/2024 | NF-e NFC-e - Nota Técnica nº 2024.001, v. 100 - Substitui denegação da NF-e por rejeição e altera campos e regras para emissão de NF-e/NFC-e com CRT=4(MEI)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-04-16-informe-tecnico-2024-002-altera-tabela-meios-de-pagamento.htm">16/04/2024 | NF-e NFC-e - Informe Técnico nº 2024.002, v 1.00 - Altera tabela de meios de pagamento</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-04-10-nota-de-entrada-obrigatoria-na-aquisicao-de-mercadorias-de-produtores-rurais.htm">10/04/2024 | NF-e ES - Decreto nº 5672-R - Nota de entrada passa a ser obrigatória na aquisição de mercadorias de produtores rurais</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-03-25-nt-2019-001-v-1-62-criacao-atualizacao-regras-de-validacao.htm">25/03/2024 | NF-e NFC-e - Nota Técnica nº 2019.001, v.1.62 - Criação e Atualização de Regras de Validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-03-25-nt-2023-004-v-1-11-informacoes-de-pagamentos-e-outros.htm">25/03/2024 | NF-e NFC-e - Nota Técnica nº 2023.004, v. 1.11 - Informações de Pagamentos e Outros</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-03-12-informe-tecnico-2024-001-versao-1-00-alteracoes-tabela-ncm.htm">12/03/2024 | NF-e NFC-e - Informe Técnico 2024.001, versão 1.00 - Alterações na tabela de NCM</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-03-07-nt-2020-001-v-1-50-evento-manifestacao-destinatario.htm">07/03/2024 | NF-e  - Nota Técnica 2020.001 - v.1.50 - Evento de manifestação do destinatário</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-02-26-it-2023-003-versao-1-02-altera-tabela-combustiveis-sujeitos-tributacao-monofasica-icms.htm">26/02/2024 | NF-e  - Informe Técnico 2023.003, versão 1.02 - Altera Tabela de Combustíveis Sujeitos à Tributação Monofásica do ICMS</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-02-09-nt-2019-001-v-1-61-prorroga-ambiente-de-testes-e-comunicado-sobre-schemas.htm">09/02/2024 | NF-e NFC-e  - Nota Técnica 2019.001, v.1.61 - Prorroga ambiente de testes e comunicado sobre schemas</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-02-09-nt-2023-004-v-1-10-inclusoes-alteracoes-de-campos-e-regras-de-validacao.htm">09/02/2024 | NF-e NFC-e  - Nota Técnica 2023.004, v.1.10 - Inclusões e alterações de campos e regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-02-07-it-2023-004-v-1-02-altera-tabela-de-fcp-para-uf-ceara.htm">07/02/2024 | NF-e  - Informe Técnico 2023.004, v. 1.02 - Altera tabela de FCP para a UF do Ceará</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-02-01-it-2023-004-v-1-01-altera-tabela-de-fcp-para-as-ufs-do-am-e-mg.htm">01/02/2024 | NF-e  - Informe Técnico 2023.004, v. 1.01 - Altera a tabela de FCP para as UFs do AM e MG</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-01-11-nt-2016-003-v-3-70-divulga-nova-tabela-de-ncm-para-fins-de-emissao-da-nf-e-a-partir-de-01-04-2024.htm">11/01/2024 | NF-e NFC-e  - Nota Técnica 2016.003 v.3.70 divulga nova tabela de NCM para fins de emissão da NF-e a partir de 01/04/2024</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-01-08-publicada-nova-versao-da-tabela-de-combustiveis-sujeitos-a-tributacao-monofasica.htm">08/01/2024 | NF-e NFC-e  - Publicada nova versão da tabela de combustíveis sujeitos à tributação monofásica</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-01-03-nt-2019-001-v-1-60-inclusao-campos-credito-presumido-cBenefRBC-referente-ao-codigo-beneficio-fiscal-de-reducao-de-base-calculo.htm">03/01/2024 | NF-e NFC-e  - NT 2019.001 versão 1.60 – Inclusão de campos para crédito presumido, e do campo cBenefRBC referente ao código de benefício fiscal de redução de base de cálculo</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2024/2024-01-03-nt-2023-005-v-1-00-implantacao-evento-insucesso-entrega-nf-e.htm">03/01/2024 | NF-e NFC-e  - NT 2023.005 v.1.00 - Implantação do evento de Insucesso na Entrega da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-12-14-nt-2023-004-v-1-00-criacao-de-evento-de-conciliacao-financeira-econf.htm">14/12/2023 | NF-e NFC-e  - Nota Técnica 2023.004, v.1.00 - Criação de Evento de Conciliação Financeira - ECONF</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-12-14-resolucao-sefaz-n-578-2023-publica-procedimentos-preenchimento-dos-campos-icms-substituido-na-emissao-da-nf-e-nfc-e-para-contribuintes-do-rio-de-janeiro.htm">14/12/2023 | NF-e NFC-e RJ  - Resolução SEFAZ nº 578/2023 - Publica procedimentos no preenchimento dos campos para ICMS substituído na emissão da NF-e e NFC-e para os contribuintes do Rio de Janeiro</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-12-07-nt-2021-003-v-1-3-divulga-alteracao-nas-regras-de-validacao-do-gtin.htm">07/12/2023 | NF-e NFC-e  - Nota Técnica 2021.003, v. 1.3 - Divulga alteração nas regras de validação do GTIN</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-12-07-decreto-n-599-2023-preve-vinculo-do-comprovante-de-pagamento-eletronico-na-emissao-de-nf-e-e-nfc-e-em-operacoes-com-cartao-de-credito-debito-pix.htm">07/12/2023 | NF-e NFC-e MT - Decreto nº 599/2023 - Prevê vínculo do comprovante de pagamento eletrônico na emissão de NF-e e NFC-e, em operações com cartão de crédito, débito e Pix</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-11-20-ato-diat-n-77-2023-prorroga-preenchimento-do-icms-desonerado-na-nfe-nfce-emitidos-pelos-contribuintes-catarinenses-suspende-guia-pratico-dos-beneficios-fiscais.htm">20/11/2023 | NF-e NFC-e SC - Ato DIAT nº 77/2023 - Prorroga preenchimento do ICMS Desonerado na NF-e e NFC-e emitidos pelos contribuintes catarinenses, e suspende Guia Prático dos Benefícios Fiscais</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-11-13-nt-2023-001-v-1-50-tributacao-monofasica-dos-combustiveis.htm">13/11/2023 | NF-e NFC-e - NT 2023.001 v.1.50 - Tributação monofásica dos combustíveis</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-11-01-nt-2016-003-v3-62-nova-tabela-de-ncm-e-tabelas-de-unidades-de-medidas-tributaveis-no-comercio-exterior-utrib.htm">01/11/2023 | NF-e NFC-e - NT 2016.003, v.3.62 - Nova Tabela de NCM e Tabelas de Unidades de Medidas Tributáveis no Comércio Exterior - Utrib</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-11-01-guia-pratico-suspenso-temporariamente-a-pedido-de-entidades-em-santa-catarina.htm">01/11/2023 | NF-e NFC-e SC - Guia Prático é suspenso temporariamente a pedido de entidades em Santa Catarina</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-11-01-correio-eletronico-circular-sef-diat-n-22-2023-guia-pratico-de-escrituracao-incentivos-e-beneficios-fiscais-campos-cbenef-vicsmdeson-moticmsdes-e-registro-e115.htm">01/11/2023 | NF-e NFC-e SC - Correio Eletrônico Circular SEF/DIAT nº 22/2023 - Guia Prático de Escrituração: Incentivos e Benefícios Fiscais, campos cbenef, vICMSDeson, motICMSDes e registro E115</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-10-25-goias-alerta-aos-contribuintes-goianos-sobre-a-obrigatoriedade-de-informar-o-codigo-de-beneficios-fiscais.htm">25/10/2023 | NF-e NFC-e GO Goiás alerta aos contribuintes goianos sobre a obrigatoriedade de informar o código de benefícios fiscais</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-10-05-nt-2023-001-v-1-40-altera-regras-de-validacao-da-tributacao-monofasica-de-combustiveis.htm">05/10/2023 | NF-e NFC-e - INT 2023.001, v 1.40 - Altera regras de validação da tributação monofásica de combustíveis</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-09-27-contribuinte-optante-pelo-simples-nacional-deve-informar-valor-do-credito-em-campo-proprio-da-nfe.htm">27/09/2023 | NF-e SP - Contribuinte optante pelo Simples Nacional deve informar valor do crédito em campo próprio da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-09-18-fisco-estadual-promovera-bloqueio-da-nfe-com-erro-enviadas-repetidamente-pelos-contribuintes-serao-rejeitadas-com-o-erro-656-rejeicao-consumo-indevido.htm">18/09/2023 | NF-e MT - Fisco estadual promoverá bloqueio da NF-e com erro enviadas repetidamente pelos contribuintes serão rejeitadas com o erro “656-Rejeição: Consumo indevido”</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-08-30-publicada-nota-tecnica-2016-003-v-3-60.htm">30/08/2023 | NF-e e NFC-e NT 2016.003 v.3.61 - Nova tabela de NCM com unidade tributária de comércio exterior</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-07-04-ato-diat-n-49-2023-prorroga-a-obrigatoriedade-de-preenchimento-do-campo-cbenef-codigo-de-beneficio-fiscal-para-novembro.htm">04/07/2023 | NF-e NFC-e SC - Ato DIAT nº 49/2023 - Prorroga a obrigatoriedade de preenchimento do campo “cBenef” - Código de Benefício Fiscal para novembro</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-06-29-nt-2020-007-v-1-30-evento-ator-interessado-na-nfe-transportador.htm">29/06/2023 | NF-e - NT 2020.007 v.1.30 - Evento Ator Interessado na NF-e - Transportador</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-06-07-nt-2023-003-v-1-00-alteracao-de-regras-da-nfce-para-permitir-a-emissao-utilizando-o-cfop-5-949.htm">07/06/2023 | NF-e NFC-e - NT 2023.003, v.1.00 - Alteração de regras da NFC-e para permitir a emissão utilizando o CFOP 5.949</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-06-07-nt-2023-002-v-1-00-emitente-pessoa-fisica-cpf-com-inscricao-estadual-da-nfce.htm">07/06/2023 | NF-e NFC-e - NT 2021.003 v.1.21 - Divulga alteração nas regras de validação do GTIN</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-06-07-nt-2021-003-v-1-21-divulga-alteracao-nas-regras-de-validacao-do-gtin.htm">07/06/2023 | NF-e NFC-e - NT 2021.003 v.1.21 - Divulga alteração nas regras de validação do GTIN</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-05-24-ato-declaratorio-n-4-2023-divulgado-ato-que-dispoe-sobre-o-preenchimento-do-codigo-de-beneficio-fiscal.htm">24/05/2023 | NF-e NFC-e DF - Ato Declaratório GEREN/COAP/SUAE/SEF/SEFAZ nº 4/2023 - Divulgado ato que dispõe sobre o preenchimento do código de benefício fiscal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-05-19-alterado-o-prazo-de-obrigatoriedade-de-preenchimento-do-codigo-de-incentivos-fiscais-na-nota-fiscal.htm">19/05/2023 | NF-e NFC-e SC - Ato DIAT nº 35/2023 - Alterado o prazo de obrigatoriedade de preenchimento do código de incentivos fiscais na nota fiscal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-05-05-alteracao-tabela-do-fundo-de-combate-a-pobreza-fcp.htm" target="_blank">05/05/2023 | NF-e NFC-e - IT 2023.004, v. 1.00 - Alteração tabela do Fundo de Combate à Pobreza (FCP)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-04-28-atualizada-tabela-contendo-as-aliquotas-por-uf-do-fundo-de-combate-a-pobreza-fcp.htm">28/04/2023 | NF-e - Atualizada tabela contendo as alíquotas por UF do Fundo de Combate à Pobreza (FCP)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-04-20-it-2023-003-v-1-00-tabela-de-combustiveis-sujeitos-a-tributacao-monofasica.htm">20/04/2023 | NF-e NFC-e - IT 2023.003, v. 1.00 - Tabela de combustíveis sujeitos à tributação monofásica</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-04-13-it-2023-002-v-1-00-correcoes-na-tabela-de-cfop.htm">13/04/2023 | NF-e NFC-e - IT 2023.002, v. 1.00 - Correções na tabela de CFOP</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-04-13-nt-2023-001-v-1-20-tributacao-monofasica-sobre-combustiveis-criacao-de-campos-e-alteracao-em-regras-de-validacao.htm">13/04/2023 | NF-e NFC-e - NT 2023.001, v 1.20 - Tributação monofásica sobre combustíveis, criação de campos e alteração em regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-04-04-nt-2023-001-versao-1-11-tributacao-monofasica-sobre-combustiveis-alteracao-da-data-de-producao.htm">04/04/2023 | NF-e NFC-e - NT 2023.001, versão 1.11 - Tributação Monofásica sobre Combustíveis, alteração da data de produção</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-03-13-criacao-e-atualizacao-de-regras-de-validacao-para-atender-o-regime-tributacao-monofasica-sobre-combustiveis.htm">13/03/2023 | NF-e NFC-e - NT 2023.001, versão 1.10 - Criação e atualização de regras de validação para atender o regime tributação monofásica sobre combustíveis</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-23-alteracoes-na-escrituracao-e-nos-eventos-dos-documentos-fiscais-eletronicos.htm">23/02/2023 | Legislação MG - Decreto nº 48.573/2023 - Alterações na escrituração e nos eventos dos documentos fiscais eletrônicos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-23-tributacao-monofasica-sobre-combustiveis.htm">23/02/2023 | NF-e NFC-e - NT 2023.001, v. 1.00 - Tributação monofásica sobre combustíveis</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-14-nt-2022-004-v1-10-aperfeicoamento-de-regra-de-validacao-de-issqn.htm">14/02/2023 | NF-e NFC-e - NT 2022.004, v1.10 - Aperfeiçoamento de regra de validação de ISSQN</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-14-nfe-nfce-nt2019001-v1-53-alterado-para-o-distrito-federal-a-data-de-ativacao-das-regras-de-validacao.htm">14/02/2023 | NF-e NFC-e - NT 2019.001, v 1.53 - Alterado para o Distrito Federal a data de ativação das regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-03-nt-2020-007-v-1-23-alterada-data-do-novo-evento-gerado-pelo-emitente-ou-destinatario-quanto-ao-transportador-responsavel-pela-movimentacao-dacarga.htm">03/02/2023 | NF-e - NT 2020.007, v. 1.23 - Alterada data do novo evento gerado pelo emitente ou destinatário quanto ao transportador responsável pela movimentação da carga</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-03-if-2023-001-divulga-nova-tabela-de-codigo-de-produtos-da-anp-vigente-a-partir-de-marco-2023.htm">03/02/2023 | NF-e NFC-e - IF 2023.001 - Divulga nova tabela de código de produtos da ANP vigente a partir de março/2023</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-03-nt-2016-003-v-3-5-nova-tabela-de-ncm-com-efeitos-a-partir-de-abril-2023.htm">03/02/2023 | NF-e NFC-e - NT 2016.003, v.3.5 - Nova tabela de NCM com efeitos a partir de abril/2023</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-02-02-divulgada-duas-nt-com-novos-campos-e-regras-de-validacao-e-outra-sobre-icms-na-operacao-interestadual-de-vendas-a-consumidor-final.htm">02/02/2023 | NF-e - NT 2022.003 v.1.11 e 2022.005 v.1.10 - Divulgada duas NT com novos campos e regras de validação e outra sobre ICMS na operação interestadual de vendas a consumidor final</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-01-26-portaria-sef-n14-2023-alterada-disposicao-sobre-preenchimento-do-campo-relativo-ao-codigo-de-beneficio-fiscal-da-nfe-e-da-nfce.htm">26/01/2023 | NF-e NFC-e DF - Portaria SEF nº 14/2023 - Alterada disposição sobre o preenchimento do campo relativo ao código de benefício fiscal da NF-e e da NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2023/2023-01-16-nt-2022-003-v-1-10-altera-exclui-e-implementa-novas-regras-de-validacao.htm">16/01/2023 | NF-e NFC-e - NT 2022.003, v. 1.10 - Altera, exclui e implementa novas regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-12-19-nt-2022-005-v-1-00-icms-nas-operacoes-interestaduais-de-vendas-a-consumidor-final.htm">19/12/2022 | NF-e NFC-e - NT 2022.005, v. 1.00 - ICMS nas operações interestaduais de vendas a consumidor final</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-11-10-novos-campos-e-regras-de-validacao-da-nf-e-versao-4-0.htm">10/11/2022 | NF-e NFC-e - NT 2022.003, 1.0 - Novos campos e regras de validação da NF-e versão 4.0</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-11-03-nt-2021-004-v-1-35-implementacao-futura-para-as-regras-z02-10-e-z02-20.htm">03/11/2022 | NF-e NFC-e - NT 2021.004, v. 1.35 - Implementação futura para as regras Z02-10 e Z02-20</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-11-01-novo-prazo-do-evento-ator-interessado-na-nf-e-transportador.htm">01/11/2022 | NF-e - NT nº 2020.007 - Novo prazo do evento ator interessado na NF-e - transportador</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-10-20-comunicado-acesso-a-consultas-de-documentos-fiscais-eletronicos.htm">20/10/2022 | DF-e - Comunicado - Acesso a consultas de Documentos Fiscais Eletrônicos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-10-20-fisco-altera-normas-da-nf-e-e-da-nfc-e-com-efeitos-retroativos-a-dezembro-de-2021.htm">20/10/2022 | NF-e NFC-e AL - IN SEF nº 42/2022 - Fisco altera normas da NF-e e da NFC-e com efeitos retroativos a dezembro de 2021</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-09-27-alteracao-da-regra-i08-90-para-considerar-local-de-entrega-e-retirada.htm">27/09/2022 | NF-e NFC-e - NT 2020.006, v. 1.31 - Alteração da regra I08-90 para considerar local de entrega e retirada</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-09-22-retirada-de-mercadoria-adquirida-por-meio-eletronico.htm">22/09/2022 | Legislação PB - Decreto nº 42.874/2022 - Retirada de mercadoria adquirida por meio eletrônico</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-09-22-suspensao-da-regra-k01-10-e-alteracao-a-regra-k01-20.htm">22/09/2022 | NF-e NFC-e - NT 2021.004, v. 1.34 - Suspensão da regra K01-10 e alteração na regra K01-20</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-08-31-divulga-suspensao-da-implementacao-de-regras-e-alteracao-na-documentacao.htm">31/08/2022 | NF-e NFC-e - NT nº 2021.004, v. 1.33 - Divulga suspensão da implementação de regras e alteração na documentação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-08-31-altera-regras-de-validacao-de-beneficios-fiscais-para-o-estado-de-goias-e-o-distrito-federal.htm">31/08/2022 | NF-e NFC-e - NT nº 2019.001, v. 1.52 - Altera regras de validação de benefícios fiscais para o Estado de Goiás e o Distrito Federal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-08-18-procedimentos-a-serem-adotados-pelos-contribuintes.htm">1<a href="../noticias/federal/2022/2022-07-25-fisco-define-novas-normas-do-paf-daf-para-emissao-da-nota-fiscal-de-consumidor-eletronica.htm">8/08/2022 | NF-e SP - Portaria SRE nº 56/22 - Mercadorias destinadas a demonstração ou mostruário - Procedimentos a serem adotados pelos contribuintes</a></a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-07-25-fisco-define-novas-normas-do-paf-daf-para-emissao-da-nota-fiscal-de-consumidor-eletronica.htm">25/07/2022 | NFC-e SC - Ato DIAT nº 36/2022 - Fisco define novas normas do PAF-DAF para emissão da Nota Fiscal de Consumidor Eletrônica</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-07-25-regras-de-validacao-e-novos-campos.htm">25/07/2022 | NF-e NFC-e - NT 2021.004, v. 1.32 - Regras de Validação e Novos Campos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-07-11-nt-2021-003-v-1-1-validacao-gtin-substitui-a-nt-2017-001.htm">11/07/2022 | NF-e NFC-e - NT 2021.003, v. 1.1 - Validação GTIN - Substitui a NT 2017.001</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-07-11-nt-2021-004-v-1-31-regras-de-validacao-e-novos-campos.htm">11/07/2022 | NF-e NFC-e - NT 2021.004, v.1.31 - Regras de Validação e Novos Campos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-07-11-nt-2021-001-v-1-01-publicada-nova-versao-do-evento-comprovante-de-entrega-da-nf-e.htm">11/07/2022 | NF-e - NT 2021.001, v.1.01 - Publicada nova versão do evento Comprovante de Entrega da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-07-07-publicado-pelo-confaz-novos-atos-que-dispoem-sobre-bloco-k-nfcom-nf3-e-ct-e-os-ct-e-nfc-e-nf-e-nff-e-nf3-e.htm">07/07/2022 | Legislação - Despacho Confaz nº 42/2022 - Publicado pelo CONFAZ novos atos que dispõem sobre Bloco K, NFCom, NF3-e, CT-e OS, CT-e, NFC-e, NF-e, NFF e NF3-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-06-22-alteracao-na-consulta-do-epec-evento-previo-de-emissao-em-contingencia-no-portal-nacional-da-nf-e.htm">22/06/2022 | NF-e - NT 2014.001, v.1.30 - Alteração na consulta do EPEC (Evento Prévio de Emissão em Contingência) no Portal Nacional da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-06-03-nt-2020-001-v-1-40-divulga-atualizacao-do-servico-de-manifestacao-do-destinatario.htm">03/06/2022 | NF-e - NT 2020.001, v.1.40 - Divulga atualização do serviço de manifestação do destinatário</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-05-31-nt-2022-001-versao-1-0-consulta-gtin-via-webservices-e-schemas.htm">31/05/2022 | NF-e NFC-e - NT 2022.001, versão 1.0 - Consulta GTIN via webservices e schemas</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-05-27-publicada-versoes-1-13-a-1-15-que-disciplina-o-uso-do-web-service-de-distribuicao-da-nf-e-e-seus-eventos.htm">27/05/2022 | NF-e - Nota Técnica 2014.002 - Publicada versões 1.13 a 1.15 que disciplina o uso do Web Service de distribuição da NF-e e seus eventos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-05-12-nt-2021-004-versao-1-30-alteracao-no-prazo-de-entrada-em-producao-de-toda-a-nt.htm">12/05/2022 | NF-e NFC-e - NT 2021.004, versão 1.30 - Alteração no prazo de entrada em produção de toda a NT</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-05-09-atualizacao-de-regra-de-rejeicao-da-manifestacao-do-destinatario.htm">09/05/2022 | NF-e - NT 2020.001, Versão 1.30 - Atualização de regra de rejeição da manifestação do destinatário</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-05-05-nt-2016-003-versao-3-10-nova-tabela-de-ncm-com-efeitos-a-partir-de-01-07-2022.htm">05/05/2022 | NF-e NFC-e - NT 2016.003, versão 3.10 - Nova tabela de NCM com efeitos a partir de 01/07/2022</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-04-20-ato-diat-n-10-2022-prorrogada-a-validade-de-laudos-de-certificacao-de-paf-ecf-destinado-a-emissao-de-nfc-e-e-definida-nova-versao-do-daf.htm">20/04/2022 | NFC-e SC - Ato DIAT nº 10/2022 - Prorrogada a validade de laudos de certificação de PAF-ECF destinado à emissão de NFC-e e definida nova versão do DAF</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-04-20-nota-tecnica-2021-004-v-1-21-divulgada-atualizacao-de-regras-de-validacao.htm">20/04/2022 | NF-e NFC-e - Nota Técnica 2021.004, v.1.21 - Divulgada atualização de regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-04-13-portaria-sef-n-134-2022-alterados-os-procedimentos-relativos-ao-ressarcimento-e-restituicao-do-imposto-retido-por-substituicao-tributaria.htm">13/04/2022 | NFC-e SC - Portaria SEF nº 149/2022 - Definidos os requisitos do programa aplicativo (PAF-DAF) para emissão da NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-04-13-decreto-48-398-2022-altera-limite-de-valor-da-nfc-e-em-que-e-obrigatoria-a-identificacao-do-consumidor.htm">13/04/2022 |	NFC-e MG - Decreto 48.398/2022 - Altera limite de valor da NFC-e em que é obrigatória a identificação do consumidor</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-04-05-novas-aliquotas-de-ipi-para-os-ncm-incluidos-na-resolucao-gecex-n-272-2021.htm">05/04/2022 | NF-e - Novas alíquotas de IPI para os NCM incluídos na Resolução Gecex nº 272/2021</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-04-01-alteradas-instrucoes-sobre-o-preenchimento-de-campos-especificos-nos-documentos-fiscais-eletronicos.htm">01/04/2022 | NF-e NFC-e PR - NPF DRE nº 18/2022 - Alteradas instruções sobre o preenchimento de campos específicos nos documentos fiscais eletrônicos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-03-22-alteracao-do-prazo-de-implantacao-da-manifestacao-do-destinatario-da-nf-e.htm">22/03/2022 |&#160;NF-e - Publicada versão 1.2 da Nota Técnica 2020.001, com alteração do prazo de implantação da manifestação do destinatário da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-03-16-publicada-nova-versao-1-2-da-nt-2021-004-trazendo-atualizacao-de-campos-e-criacao-alteracao-de-regras-de-validacao.htm" target="_blank">16/03/2022 | NF-e NFC-e - Publicada nova versão 1.2 da NT 2021.004, trazendo atualização de campos e criação/alteração de regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-03-10-nt-2014-002-atualizacao-das-regras-de-uso-indevido-do-web-service-nfedistribuicaodfe.htm">10/03/2022 | NF-e - NT 2014.002 - Atualização das Regras de Uso Indevido do Web Service NFeDistribuicaoDFe</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-03-04-suspensao-dos-serviços-consnsu-e-conschnfe-da-nt-2014-002.htm">04/03/2022 | NF-e - Suspensão dos serviços "ConsNSU" e "ConsChNFe" da NT 2014.002</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-03-04-dispoe-sobre-a-operacionalizacao-de-que-trata-a-clausula-quinta-do-convenio-icms-n-235-21-que-institui-o-portal-difal.htm">04/03/2022 | DIFAL - Ato COTEPE/ICMS nº 14/2022 - Dispõe sobre a operacionalização de que trata a cláusula quinta do Convênio ICMS nº 235/21, que institui o Portal DIFAL</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-03-04-prorrogado-o-prazo-para-revogacao-da-autorizacao-para-disponibilizacao-de-dados-relativos-a-nf-e.htm">04/03/2022 | NF-e - Portaria RFB nº 147/2022 - Prorrogado o prazo para revogação da autorização para disponibilização de dados relativos à NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-02-28-novo-esquema-de-pacote-de-liberacao-n-9i.htm">28/02/2022 | NF-e NFC-e - Novo esquema de Pacote de liberação nº 9i</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-02-24-web-services-do-ambiente-nacional-da-nf-e-que-serao-desligados-em-23-05-22-e-seus-substitutos.htm">24/02/2022 | NF-e - Web services do Ambiente Nacional da NF-e que serão desligados em 23/05/22 e seus substitutos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-02-04-fazenda-inicia-desenvolvimento-de-serviços-do-dispositivo-autorizador-fiscal.htm">04/02/2022 | NFC-e SC - Fazenda inicia desenvolvimento de serviços do Dispositivo Autorizador Fiscal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-02-01-novos-prazos-de-homologacao-e-producao-da-versao-1-21-da-nt-2020-007-evento-ator-interessado-na-nf-e.htm">01/02/2022 | NF-e - Novos prazos de homologação e produção da versão 1.21 da NT 2020.007, Evento ator interessado na NF-e (transportador)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-01-18-publicada-nt-2021-004-v-1-10-com-alteracoes-do-prazo-de-implementacao.htm">18/01/2022 | NF-e NFC-e - Publicada NT 2021.004 v.1.10, com alterações do prazo de implementação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2022/2022-01-18-suspensao-de-regra-de-validacao-referente-a-difal.htm">18/01/2022 | NF-e NFC-e - Suspensão de regra de validação referente a DIFAL</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-12-09-publicada-nt-2016-003-v-3-00-que-divulga-nova-tabela-de-ncm-vigente-a-partir-de-abril-de-2022.htm">09/12/2021 | NF-e NFC-e - Publicada NT 2016.003 v.3.00 que divulga nova tabela de NCM vigente a partir de Abril de 2022</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-12-02-a-sefaz-ce-mudara-o-ambiente-de-producao-da-nf-e-a-partir-de-10-01-2022.htm">02/12/2021 | NF-e CE - A Sefaz-CE mudará o ambiente de produção da NF-e a partir de 10/01/2022</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-11-30-publicada-versao-1-0-da-nt-2021-004-trazendo-novos-campos-e-regras-de-validacao.htm">30/11/2021 | NF-e NFC-e - Publicada versão 1.0 da NT 2021.004, trazendo novos campos e regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-11-22-alterados-dispositivos-do-regulamento-relativos-a-nf-e-e-a-nfc-e.htm">22/11/2021 | NF-e/NFC-e MG - Decreto nº 48.302/2021 - Alterados dispositivos do regulamento relativos à NF-e e à NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-11-18-publicada-versao-1-11-da-nt-2014-002-web-service-de-distribuicao-de-df-e-de-interesse-dos-atores-da-nf-e.htm">18/11/2021 | NF-e - Publicada Versão 1.11 da NT 2014.002 - Web Service de Distribuição de DF-e de Interesse dos Atores da NF-e (PF ou PJ)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-11-01-auditores-fiscais-da-sef-sc-debatem-especificacoes-de-requisitos-do-paf-daf.htm">01/11/2021 | NFC-e SC - Auditores fiscais da SEF/SC debatem Especificações de Requisitos do PAF-DAF</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-10-19-publicada-nt-2020-007-v-1-20-que-trata-do-novo-evento-gerado-pelo-emitente-ou-destinatario-da-nf-e-intitulado-ator-interessado-na-nf-e.htm">19/10/2021 | NF-e - Publicada NT 2020.007 v.1.20 que trata do novo evento gerado pelo Emitente ou Destinatário da NF-e intitulado "Ator Interessado na NF-e”</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-10-18-publicada-nt-2014-002-1-10-que-trata-do-web-service-de-distribuicao-de-documentos-fiscais-eletronicos.htm">18/10/2021 | NF-e - Publicada NT 2014.002 v.1.10 que trata do Web Service de Distribuição de documentos fiscais eletrônicos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-10-18-publicada-atualizacao-da-nt-2020-005-versao-1-21-para-correcao-de-alguns-problemas-pontuais-reportados-por-empresas-emissoras.htm">18/10/2021 | NF-e NFC-e - Publicada atualização da NT 2020.005 (Versão 1.21) para correção de alguns problemas pontuais reportados por empresas emissoras</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-10-13-migracao-do-ceara-para-sefaz-virtual-do-rio-grande-do-sul.htm">13/10/2021 | NF-e CE - Migração do Ceará para Sefaz Virtual do Rio Grande do Sul</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-10-04-decreto-n-1493-2021-regulamentada-a-analise-do-dispositivo-autorizador-fiscal-utilizado-na-emissao-da-nfc-e.htm">04/10/2021 | NFC-e SC - Decreto nº 1.493/2021 -  Regulamentada a análise do Dispositivo Autorizador Fiscal, utilizado na emissão da NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-09-28-manual-de-orientacoes-do-contribuinte.htm">28/09/2021 | NF3-e - Manual de Orientações do Contribuinte</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-09-13-publicada-versao-1-00-nt-2021-003-nfe-trata-validacao-gtin.htm">13/09/2021 | NF-e NFC-e - Publicada a versão 1.00 da NT 2021.003 da NF-e, que trata da validação do GTIN</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-08-26-decreto-n-1431-2021-alterado-a-legislacao-que-trata-da-nfc-e.htm">26/08/2021 | NFC-e SC - Decreto nº 1.431/2021 - Alterado a legislação que trata da NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-07-12-definidos-requisitos-tecnicos-funcionais-dispositivo-autorizador-fiscal-nfc-e-daf.htm">12/07/2021 | NFC-e SC - Portaria SEF n° 284/2021 - Definidos os requisitos técnicos e funcionais do Dispositivo Autorizador Fiscal - DAF para a NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-07-12-consulta-publica-sobre-nota-tecnica-2021-003-versao-preliminar.htm">12/07/2021 | NF-e NFC-e - Consulta Pública sobre a Nota Técnica 2021.003 (versão preliminar)</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-06-29-publicada-nt-2020-005-trazendo-versao-1-20-melhorias-alteracoes-cronograma.htm">29/06/2021 | NF-e NFC-e - Publicada NT 2020.005 trazendo a versão 1.20 com melhorias e alterações no cronograma</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-06-29-publicada-nt-2016-003-v-2-00-altera-tabela-ncm-vigencia-partir-julho-2021.htm">29/06/2021 | NF-e - Publicada NT 2016.003 v.2.00 que altera a tabela de NCM com vigência a partir de julho de 2021</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-06-23-publicada-versao-1-10-nota-tecnica-2020-001-manifestacao-destinatario-nf-e.htm">23/06/2021 | NF-e - Publicada Versão.1.10 da Nota Técnica 2020.001 - Manifestação do destinatário da NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-06-18-cria-grupo-trabalho-implantacao-dispositivo-autorizador-fiscal-daf-nfc-e.htm">18/06/2021 | NFC-e SC - Ato DIAT nº 29/2021 - Cria grupo de trabalho para implantação do Dispositivo Autorizador Fiscal - DAF para a NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-06-16-ato-diat-30-2021-estabelece-regras-autorizacao-precaria-emissao-nota-fiscal-consumidor-eletronica.htm">16/06/2021 | NFCe SC - Ato DIAT n° 30/2021 - Estabelece regras para autorização precária de emissão da Nota Fiscal de Consumidor Eletrônica</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-03-11-publicada-nt2014-002-v-1-002d.htm">11/03/2021 | NFe - Publicada NT 2014.002 v.1.02d que divulga o web service de distribuição de documentos eletrônicos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-02-25-publicada-nt-2021-001-v100.htm">25/02/2021 | NFe - Publicada NT 2021.001 v.1.00 que divulga a especificação técnica do evento "Comprovante de entrega na NF-e"</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-02-23-publicada-nt-2016003-v190-altera-tabela-ncm-vigencia-abril-2021.htm">23/02/2021 | NFe - Publicada NT 2016.003 v.1.90 que altera a tabela de NCM com vigência a partir de abril de 2021</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-02-17-publicada-versao-1-10-nt-2020-006.htm">17/02/2021 | NFe NFCe - Publicada a versão 1.10 da NT 2020.006</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2021/2021-02-12-publicada-nova-versao-1-10-nt-2020007.htm">12/02/2021 | NFe - Publicada nova versão 1.10 da NT 2020.007: evento Ator Interessado na NFe - Transportador</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-12-23-publicada-versao-1-10-nt-2020005.htm">23/12/2020 | NFe NFCe - Publicada a versão 1.10 da NT 2020.005</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-12-17-publicado-manual-orientacao-contribuinte-7-e-anexos.htm">17/12/2020 | NFe NFCe -Publicado o Manual de Orientação ao Contribuinte versão 7.0 e respectivos anexos</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-12-09-manual-orientacao-do-contribuinte-versao-7-0.htm">09/12/2020 | NFe - Ato Cotepe ICMS nº 69/2020: divulgado o Manual de Orientação do Contribuinte, versão 7.0</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-11-24-regras-emissao-simultanea-cf-e-nfce-em-diferentes-pontos-de-venda.htm">24/11/2020 | NFCe SC - Ato DIAT nº 52/2020: estabelecida regras para emissão simultânea de CF e de NFCe em diferentes pontos de venda</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-11-17-publicada-nt-2016-003-v-1-81-que-altera-tabela-ncm-vigencia-2021.htm">17/11/2020 | NFe NFCe - Publicada NT 2016.003 v.1.81 que altera a tabela de NCM com vigência a partir de 2021</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-11-13-publicada-versao-1-da-nt-2020-005.htm">13/11/2020 |&#160;NFe NFCe - Publicada a versão 1.00 da NT 2020.005</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-11-10-alterados-limites-de-valores-para-validacao-nfe.htm">10/11/2020 | NFe RJ - Portaria SUCIEF nº 87/2020: alterados limites de valores para a validação da Nota Fiscal Eletrônica</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-11-06-ativacao-da-regra-de-validacao-n12-86-em-producao.htm">06/11/2020 | NFe NFCe RS - Ativação da Regra de Validação N12-86 em Produção</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-29-ativacao-regra-de-validacao-n12-98-em-producao-e-alterada-vigencia-preenchimento-campo-io5f.htm">29/10/2020 | NFCe NFe DF -  Ativação da Regra de Validação N12-98 em produção e alteração da vigência do preenchimento do campo I05f</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-26-regras-autorizacao-precaria-emissao-nfce-e-emissao-contingencia.htm">26/10/2020 | NFCe SC - Ato DIAT nº 38/2020: estabelece regras para autorização precária de emissão da NFCe e procedimentos na emissão em contingência</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-16-novas-alteracoes-nas-regras-emissao-nfce.htm">16/10/2020 | NFCe MG - Resolução SEF nº 5.403/2020: novas alterações nas regras de emissão da NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-16-publicada-nt-que-divulga-tabela-ncm-vigente-2021.htm">16/10/2020 | NFe/NFCe - Publicada NT 2016.003 v.1.80 que divulga nova tabela de NCM vigente a partir de 01/01/2021</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-09-portaria-331-2020-novas-regras-relativas-nfce-para-df.htm">09/10/2020 | NFCe DF - Portaria nº 331/2020: novas regras relativas à NFCe para o Distrito Federal</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-07-implantacao-evento-comprovante-entrega-cte-na-nfe.htm">07/10/2020 | NFe/CTe - Implantação do Evento Comprovante de Entrega do CT-e na NF-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-10-01-publicada-nt-2020-007-v100a.htm">01/10/2020 | NFe/NFCe - Publicada a Nota Técnica 2020.007 v.1.00a</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-09-30-ativacao-regra-de-validacao-n-12-86-em-producao.htm">30/09/2020 | NFe | NFCe RS - Ativação da Regra de Validação N12-86 em Produção</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-09-29-publicada-nt-2020-007.htm">29/09/2020 | NFe - Publicada Nota Técnica 2020.007</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-09-29-decreto-864-2020-fisco-faculta-uso-nfce.htm">29/09/2020 | NFCe SC - Decreto nº 864/2020: Fisco faculta o uso de NFCe</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-09-25-publicada-versao-1-5-1-nt-2019-001.htm">25/09/2020 | NFe/NFCe - Publicada a versão 1.51 da NT 2019.001</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-09-25-publicada-nt-2020-006.htm">25/09/2020 | NFe/NFCe - Publicada NT 2020.006 com criação e/ou alteração de campos e regras de validação</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-09-11-decreto-48037-2020-alteracoes-utilizacao-nfce.htm">11/09/2020 | NFCe MG -Decreto nº 48.037/2020: alterações na utilização da NFC-e</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-08-28-publicada-versao-1-02-c-nt-2014-002.htm">28/08/2020 | NFe - Publicação da versão 1.02c da Nota Técnica 2014.002</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-08-17-consulta-publica-nt-2020-005-a-ser-publicada-10-09-2020.htm">17/08/2020 | NFe/NFCe - Consulta Pública sobre NT 2020.005 a ser publicada em 10/09/2020</a>
+            </li>
+            <li class="noticia-item"><a href="../noticias/federal/2020/2020-08-05-comunicado-sefaz-rs.htm">05/08/2020 | NF-e/NFC-e - Comunicado SEFAZ/RS</a>
+            </li>
+        </ul>
+
+        
+   <div class="btn-ver-noticias" style="text-align: center;">
+    <button id="toggle-noticias" class="btn-expandir-noticias-btn" onclick="toggleNoticias()">+ Ver mais notícias</button>
+  </div>
+  <div class="btn-ver-noticias">
+    <a href="../noticias/todas-as-noticias.html" class="btn-ver-noticias-btn">+ Ver todas as notícias</a>
+  </div>
+</section>
+
+</section>
+
+  <div data-include="footer"></div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const include = async (attr) => {
+        const el = document.querySelector(`[data-include="${attr}"]`);
+        if (!el) return;
+        const html = await fetch(`../noticias/partials/${attr}.html`).then(r => r.text());
+        el.innerHTML = html;
+      };
+
+      await include('header');
+      await include('footer');
+
+      const script = document.createElement('script');
+      script.src = '../script.js';
+      document.body.appendChild(script);
+    });
+
+    function toggleNoticias() {
+    const ocultas = document.getElementById('noticias-ocultas');
+    const botao = document.getElementById('toggle-noticias');
+
+    if (ocultas.style.display === 'none') {
+      ocultas.style.display = 'block';
+      botao.textContent = 'Ver menos';
+    } else {
+      ocultas.style.display = 'none';
+      botao.textContent = '+ Ver mais notícias';
+      window.scrollTo({ top: document.getElementById('noticias-lista').offsetTop - 100, behavior: 'smooth' });
+    }
+  }
+  </script>
+</body>
+</html>
